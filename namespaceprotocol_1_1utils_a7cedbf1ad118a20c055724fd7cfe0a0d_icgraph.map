@@ -1,0 +1,11 @@
+<map id="protocol::utils::append_u32" name="protocol::utils::append_u32">
+<area shape="rect" id="Node000001" title="Append a 32&#45;bit unsigned integer to a byte buffer in network byte order." alt="" coords="232,80,431,105"/>
+<area shape="rect" id="Node000002" href="$GameProtocol_8cpp.html#aef673db680473943d3fe60004e4143c3" title="Serialize a CREATE_ENTITY payload into a raw byte buffer." alt="" coords="9,5,180,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="282,78,183,45,144,33,146,28,185,39,283,73"/>
+<area shape="rect" id="Node000003" href="$GameProtocol_8cpp.html#a8be9e4728ac725ccd6ed8dcc67c9adc5" title="Serialize a DESTROY_ENTITY payload into a raw byte buffer." alt="" coords="5,55,184,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="218,83,184,80,185,74,219,78"/>
+<area shape="rect" id="Node000004" href="$GameProtocol_8cpp.html#ad52de98185fb3e4334d4f9ebc452e3ff" title="Serialize a MOVE_ENTITY payload into a raw byte buffer." alt="" coords="11,104,178,129"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="219,107,178,111,178,106,218,101"/>
+<area shape="rect" id="Node000005" href="$GameProtocol_8cpp.html#a838e3fe3c91043bda24a4763100404e8" title="Serialize a PLAYER_INPUT payload into a raw byte buffer." alt="" coords="12,153,177,179"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="280,112,185,143,142,156,141,151,183,138,279,107"/>
+</map>

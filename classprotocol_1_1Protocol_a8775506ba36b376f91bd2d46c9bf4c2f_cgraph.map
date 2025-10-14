@@ -1,0 +1,16 @@
+<map id="protocol::Protocol::handle_receive" name="protocol::Protocol::handle_receive">
+<area shape="rect" id="Node000001" title="Handle completion of an async receive." alt="" coords="5,95,248,121"/>
+<area shape="rect" id="Node000002" href="$namespaceprotocol_1_1utils.html#afdcd44435a34419031d17e265fd32f4e" title="Convert endpoint to unique textual key &quot;ip:port&quot;." alt="" coords="329,5,505,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="168,93,295,55,325,46,326,52,297,60,170,98"/>
+<area shape="rect" id="Node000003" href="$namespaceprotocol_1_1utils.html#a08505e4df49b2ca7b58ca0cf13459cc8" title="Convert a network&#45;order 32&#45;bit value (big&#45;endian) to host byte order." alt="" coords="296,70,537,95"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="248,95,282,92,283,97,248,100"/>
+<area shape="rect" id="Node000004" href="$Protocol_8cpp.html#ac315d8e991103f6f885eabe69801eb95" title="Handle ordered&#45;delivery semantics for incoming packet." alt="" coords="325,119,508,145"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="248,115,312,121,311,126,248,121"/>
+<area shape="rect" id="Node000007" href="$Protocol_8cpp.html#a030fc36fea04b55ed306cf4cbeeebb11" title="Update the peer ack window (last_received / ack_bits) for piggybacking." alt="" coords="321,169,512,194"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="169,118,297,155,334,163,333,169,295,160,167,123"/>
+<area shape="rect" id="Node000005" href="$Protocol_8cpp.html#a055f77a563e0c71065726449228d1d99" title="Flush contiguous buffered packets starting at expected_sequence." alt="" coords="593,119,785,145"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="508,129,579,129,579,135,508,135"/>
+<area shape="rect" id="Node000006" href="$namespaceprotocol_1_1utils.html#aced25561098b88bc01dcf9961d62c57d" title="Helper: compare sequence numbers considering wrap&#45;around." alt="" coords="585,169,792,194"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="488,142,605,163,604,169,487,147"/>
+<area shape="poly" id="edge7_Node000007_Node000006" title=" " alt="" coords="512,179,571,179,571,184,512,184"/>
+</map>

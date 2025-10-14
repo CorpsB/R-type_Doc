@@ -1,0 +1,64 @@
+<map id="CollisionWorld.cpp" name="CollisionWorld.cpp">
+<area shape="rect" id="Node000001" title="Implementation of CollisionWorld: grid building, neighbor iteration and SAT tests." alt="" coords="834,5,977,31"/>
+<area shape="rect" id="Node000002" href="$Coordinator_8hpp.html" title="High&#45;level facade that connects entity/component/system managers." alt="" coords="379,79,528,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="834,33,540,79,539,74,833,28"/>
+<area shape="rect" id="Node000019" href="$CollisionWorld_8hpp.html" title="Spatial&#45;hash collision world API: grid building and narrow&#45;phase tests." alt="" coords="961,225,1103,251"/>
+<area shape="poly" id="edge29_Node000001_Node000019" title=" " alt="" coords="910,30,918,64,933,103,973,165,1014,213,1009,217,969,168,928,105,913,65,905,31"/>
+<area shape="rect" id="Node000024" title=" " alt="" coords="943,79,1028,104"/>
+<area shape="poly" id="edge38_Node000001_Node000024" title=" " alt="" coords="920,29,964,68,960,72,916,33"/>
+<area shape="rect" id="Node000003" href="$EntityManager_8hpp.html" title="Entity creation and lifecycle manager for the ECS." alt="" coords="100,152,244,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="409,107,231,151,230,146,407,101"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="221,225,280,251"/>
+<area shape="poly" id="edge28_Node000002_Node000007" title=" " alt="" coords="407,107,357,125,308,154,282,183,264,214,259,212,278,180,305,150,354,120,405,102"/>
+<area shape="rect" id="Node000009" href="$SystemManager_8hpp.html" title="Manager for registering systems and maintaining execution signatures." alt="" coords="319,152,473,177"/>
+<area shape="poly" id="edge9_Node000002_Node000009" title=" " alt="" coords="446,106,416,143,412,139,442,103"/>
+<area shape="rect" id="Node000013" title=" " alt="" coords="539,225,616,251"/>
+<area shape="poly" id="edge27_Node000002_Node000013" title=" " alt="" coords="466,103,561,213,557,217,461,106"/>
+<area shape="rect" id="Node000014" href="$ComponentManager_8hpp.html" title="Manager for registering and accessing component arrays in the ECS." alt="" coords="548,152,729,177"/>
+<area shape="poly" id="edge18_Node000002_Node000014" title=" " alt="" coords="484,102,597,145,595,149,482,107"/>
+<area shape="rect" id="Node000004" href="$Macro_8hpp.html" title="Global configuration macros for the ECS (component/entity limits)." alt="" coords="5,225,96,251"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="154,180,83,221,81,216,151,175"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="129,387,196,412"/>
+<area shape="poly" id="edge7_Node000003_Node000005" title=" " alt="" coords="174,178,166,373,161,372,169,178"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="186,175,230,214,226,218,183,179"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="282,306,345,331"/>
+<area shape="poly" id="edge8_Node000003_Node000008" title=" " alt="" coords="177,177,189,211,211,249,242,277,276,298,274,302,239,281,207,252,184,213,172,178"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="44,252,33,270,23,292,19,316,25,337,43,357,66,372,117,389,115,394,64,377,40,361,20,340,13,316,17,291,28,267,40,249"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="35,306,95,331"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="55,250,63,292,58,293,50,251"/>
+<area shape="poly" id="edge10_Node000009_Node000004" title=" " alt="" coords="341,180,110,227,109,222,340,175"/>
+<area shape="poly" id="edge15_Node000009_Node000007" title=" " alt="" coords="374,180,288,222,285,217,371,175"/>
+<area shape="rect" id="Node000010" href="$System_8hpp.html" title="Base class for systems in the ECS." alt="" coords="305,225,463,251"/>
+<area shape="poly" id="edge11_Node000009_Node000010" title=" " alt="" coords="397,178,391,212,386,211,391,177"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="437,306,561,331"/>
+<area shape="poly" id="edge17_Node000009_Node000012" title=" " alt="" coords="420,175,450,195,477,224,492,258,499,292,494,293,487,260,472,227,446,199,417,180"/>
+<area shape="poly" id="edge16_Node000009_Node000013" title=" " alt="" coords="426,175,536,218,534,223,424,180"/>
+<area shape="poly" id="edge13_Node000010_Node000005" title=" " alt="" coords="358,253,316,274,271,301,223,340,184,378,181,375,219,336,268,296,313,269,356,248"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="369,306,412,331"/>
+<area shape="poly" id="edge12_Node000010_Node000011" title=" " alt="" coords="388,251,391,292,386,292,382,251"/>
+<area shape="poly" id="edge14_Node000010_Node000012" title=" " alt="" coords="402,249,472,296,469,300,399,253"/>
+<area shape="poly" id="edge26_Node000014_Node000004" title=" " alt="" coords="548,180,110,232,110,227,547,174"/>
+<area shape="poly" id="edge25_Node000014_Node000013" title=" " alt="" coords="631,179,598,217,594,213,627,176"/>
+<area shape="rect" id="Node000015" href="$ComponentArray_8hpp.html" title="Component storage implementation for the ECS." alt="" coords="641,225,885,251"/>
+<area shape="poly" id="edge19_Node000014_Node000015" title=" " alt="" coords="660,175,732,216,729,221,657,180"/>
+<area shape="rect" id="Node000018" title=" " alt="" coords="855,306,911,331"/>
+<area shape="poly" id="edge24_Node000014_Node000018" title=" " alt="" coords="730,172,830,191,872,205,898,224,906,240,907,259,898,294,893,293,902,259,901,242,894,227,869,210,829,196,729,178"/>
+<area shape="poly" id="edge22_Node000015_Node000008" title=" " alt="" coords="665,253,495,276,358,301,350,304,349,299,357,296,494,271,665,248"/>
+<area shape="rect" id="Node000016" href="$IComponentArray_8hpp.html" title="Abstract base interface for component container types." alt="" coords="585,306,748,331"/>
+<area shape="poly" id="edge20_Node000015_Node000016" title=" " alt="" coords="750,253,693,299,690,295,747,249"/>
+<area shape="rect" id="Node000017" title=" " alt="" coords="772,306,831,331"/>
+<area shape="poly" id="edge23_Node000015_Node000017" title=" " alt="" coords="771,250,792,292,787,295,766,252"/>
+<area shape="poly" id="edge21_Node000016_Node000005" title=" " alt="" coords="612,334,572,341,371,373,210,395,209,389,370,367,572,336,611,329"/>
+<area shape="poly" id="edge34_Node000019_Node000008" title=" " alt="" coords="961,248,358,301,350,304,349,298,357,296,960,243"/>
+<area shape="poly" id="edge36_Node000019_Node000011" title=" " alt="" coords="961,248,644,277,425,301,421,302,420,297,423,296,643,272,960,243"/>
+<area shape="poly" id="edge35_Node000019_Node000012" title=" " alt="" coords="961,249,784,269,574,301,554,305,553,300,573,296,784,263,960,243"/>
+<area shape="poly" id="edge37_Node000019_Node000018" title=" " alt="" coords="1011,253,918,302,915,297,1009,248"/>
+<area shape="rect" id="Node000020" href="$Position_8hpp.html" title="ECS component representing the position of an entity in 2D space." alt="" coords="935,299,1131,339"/>
+<area shape="poly" id="edge30_Node000019_Node000020" title=" " alt="" coords="1035,251,1035,285,1030,285,1030,251"/>
+<area shape="rect" id="Node000021" href="$HitBox_8hpp.html" title="ECS component defining the hitbox dimensions of an entity." alt="" coords="1155,299,1351,339"/>
+<area shape="poly" id="edge31_Node000019_Node000021" title=" " alt="" coords="1065,248,1188,292,1186,297,1063,253"/>
+<area shape="rect" id="Node000022" href="$Direction_8hpp.html" title="ECS component representing directional movement in 2D space." alt="" coords="1375,299,1571,339"/>
+<area shape="poly" id="edge32_Node000019_Node000022" title=" " alt="" coords="1097,248,1362,295,1362,300,1096,253"/>
+<area shape="rect" id="Node000023" title=" " alt="" coords="1442,387,1505,412"/>
+<area shape="poly" id="edge33_Node000022_Node000023" title=" " alt="" coords="1476,339,1476,373,1471,373,1471,339"/>
+</map>

@@ -1,0 +1,85 @@
+<map id="Rtype.hpp" name="Rtype.hpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="1303,5,1391,31"/>
+<area shape="rect" id="Node000002" href="$Coordinator_8hpp.html" title="High&#45;level facade that connects entity/component/system managers." alt="" coords="307,79,536,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1303,25,550,83,550,78,1302,20"/>
+<area shape="rect" id="Node000019" href="$Protocol_8hpp.html" title="Low&#45;level UDP protocol singleton interface (signatures only)." alt="" coords="1192,152,1427,177"/>
+<area shape="poly" id="edge29_Node000001_Node000019" title=" " alt="" coords="1346,32,1318,139,1313,138,1341,30"/>
+<area shape="rect" id="Node000033" href="$config_8h.html" title="Command&#45;line and configuration file parsing for the R&#45;Type server." alt="" coords="1347,79,1421,104"/>
+<area shape="poly" id="edge47_Node000001_Node000033" title=" " alt="" coords="1355,30,1374,65,1369,68,1350,32"/>
+<area shape="rect" id="Node000034" title=" " alt="" coords="1445,79,1525,104"/>
+<area shape="poly" id="edge49_Node000001_Node000034" title=" " alt="" coords="1370,28,1452,70,1449,75,1368,33"/>
+<area shape="rect" id="Node000003" href="$EntityManager_8hpp.html" title="Entity creation and lifecycle manager for the ECS." alt="" coords="119,152,263,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="385,107,241,151,240,145,383,101"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="23,225,81,251"/>
+<area shape="poly" id="edge28_Node000002_Node000007" title=" " alt="" coords="312,107,193,126,143,139,108,154,93,167,81,182,63,214,59,211,77,179,90,163,105,150,141,134,192,121,312,101"/>
+<area shape="rect" id="Node000009" href="$SystemManager_8hpp.html" title="Manager for registering systems and maintaining execution signatures." alt="" coords="287,152,441,177"/>
+<area shape="poly" id="edge9_Node000002_Node000009" title=" " alt="" coords="414,106,384,143,380,139,410,103"/>
+<area shape="rect" id="Node000013" title=" " alt="" coords="505,225,583,251"/>
+<area shape="poly" id="edge27_Node000002_Node000013" title=" " alt="" coords="433,103,527,213,523,216,429,106"/>
+<area shape="rect" id="Node000014" href="$ComponentManager_8hpp.html" title="Manager for registering and accessing component arrays in the ECS." alt="" coords="516,152,697,177"/>
+<area shape="poly" id="edge18_Node000002_Node000014" title=" " alt="" coords="452,102,565,145,563,149,450,107"/>
+<area shape="rect" id="Node000004" href="$Macro_8hpp.html" title="Global configuration macros for the ECS (component/entity limits)." alt="" coords="391,225,481,251"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="231,175,384,219,382,224,229,180"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="465,372,532,397"/>
+<area shape="poly" id="edge7_Node000003_Node000005" title=" " alt="" coords="119,175,73,185,34,200,20,209,11,221,8,234,13,250,32,279,54,296,115,321,206,350,299,367,384,377,452,380,451,386,383,382,298,373,205,355,114,327,51,301,28,282,8,252,3,234,6,218,16,205,31,195,72,179,118,170"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="170,180,88,221,86,217,167,175"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="557,299,619,324"/>
+<area shape="poly" id="edge8_Node000003_Node000008" title=" " alt="" coords="214,175,287,210,379,248,466,276,544,297,543,302,465,281,378,253,285,215,212,180"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="446,249,474,298,495,357,490,359,469,300,442,252"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="401,299,461,324"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="438,251,435,285,430,285,432,251"/>
+<area shape="poly" id="edge10_Node000009_Node000004" title=" " alt="" coords="378,176,416,214,413,218,374,180"/>
+<area shape="poly" id="edge15_Node000009_Node000007" title=" " alt="" coords="308,180,95,228,94,223,307,175"/>
+<area shape="rect" id="Node000010" href="$System_8hpp.html" title="Base class for systems in the ECS." alt="" coords="106,225,265,251"/>
+<area shape="poly" id="edge11_Node000009_Node000010" title=" " alt="" coords="336,180,228,223,226,218,334,175"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="245,299,369,324"/>
+<area shape="poly" id="edge17_Node000009_Node000012" title=" " alt="" coords="362,179,319,287,314,285,357,177"/>
+<area shape="poly" id="edge16_Node000009_Node000013" title=" " alt="" coords="394,175,503,218,501,223,392,180"/>
+<area shape="poly" id="edge13_Node000010_Node000005" title=" " alt="" coords="191,250,205,286,218,306,234,322,259,338,286,351,345,369,402,378,452,381,451,387,402,384,344,374,285,356,256,343,230,326,213,309,201,289,186,252"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="127,299,169,324"/>
+<area shape="poly" id="edge12_Node000010_Node000011" title=" " alt="" coords="181,252,163,288,158,285,177,250"/>
+<area shape="poly" id="edge14_Node000010_Node000012" title=" " alt="" coords="206,248,277,289,274,294,203,253"/>
+<area shape="poly" id="edge26_Node000014_Node000004" title=" " alt="" coords="580,180,477,222,475,218,578,175"/>
+<area shape="poly" id="edge25_Node000014_Node000013" title=" " alt="" coords="598,179,565,217,561,213,594,176"/>
+<area shape="rect" id="Node000015" href="$ComponentArray_8hpp.html" title="Component storage implementation for the ECS." alt="" coords="738,225,982,251"/>
+<area shape="poly" id="edge19_Node000014_Node000015" title=" " alt="" coords="648,175,806,219,805,224,647,180"/>
+<area shape="rect" id="Node000018" title=" " alt="" coords="607,225,663,251"/>
+<area shape="poly" id="edge24_Node000014_Node000018" title=" " alt="" coords="614,177,628,212,623,214,609,179"/>
+<area shape="poly" id="edge22_Node000015_Node000008" title=" " alt="" coords="817,253,634,301,632,296,816,248"/>
+<area shape="rect" id="Node000016" href="$IComponentArray_8hpp.html" title="Abstract base interface for component container types." alt="" coords="644,299,807,324"/>
+<area shape="poly" id="edge20_Node000015_Node000016" title=" " alt="" coords="840,253,761,294,758,290,837,248"/>
+<area shape="rect" id="Node000017" title=" " alt="" coords="831,299,889,324"/>
+<area shape="poly" id="edge23_Node000015_Node000017" title=" " alt="" coords="863,251,863,285,857,285,857,251"/>
+<area shape="poly" id="edge21_Node000016_Node000005" title=" " alt="" coords="690,327,546,371,544,366,688,321"/>
+<area shape="poly" id="edge42_Node000019_Node000012" title=" " alt="" coords="1192,169,1091,173,973,183,849,200,727,228,702,240,675,253,556,275,383,302,382,296,555,270,674,248,699,235,726,223,848,195,973,177,1090,167,1191,163"/>
+<area shape="rect" id="Node000020" href="$ProtocolTypes_8hpp.html" title="Core protocol type definitions (packet headers, flags, events)." alt="" coords="1186,225,1326,251"/>
+<area shape="poly" id="edge30_Node000019_Node000020" title=" " alt="" coords="1303,179,1275,216,1271,213,1298,176"/>
+<area shape="rect" id="Node000024" title=" " alt="" coords="1463,299,1571,324"/>
+<area shape="poly" id="edge40_Node000019_Node000024" title=" " alt="" coords="1320,176,1350,211,1392,249,1433,273,1473,291,1471,296,1430,277,1389,253,1346,215,1316,179"/>
+<area shape="rect" id="Node000028" title=" " alt="" coords="1402,225,1465,251"/>
+<area shape="poly" id="edge41_Node000019_Node000028" title=" " alt="" coords="1330,175,1402,216,1400,221,1328,180"/>
+<area shape="rect" id="Node000029" title=" " alt="" coords="1489,225,1553,251"/>
+<area shape="poly" id="edge43_Node000019_Node000029" title=" " alt="" coords="1344,175,1477,219,1475,224,1342,180"/>
+<area shape="rect" id="Node000030" title=" " alt="" coords="1578,225,1721,251"/>
+<area shape="poly" id="edge44_Node000019_Node000030" title=" " alt="" coords="1364,175,1582,220,1580,225,1363,180"/>
+<area shape="rect" id="Node000031" title=" " alt="" coords="1007,225,1073,251"/>
+<area shape="poly" id="edge45_Node000019_Node000031" title=" " alt="" coords="1267,180,1087,227,1086,222,1265,175"/>
+<area shape="rect" id="Node000032" title=" " alt="" coords="1097,225,1161,251"/>
+<area shape="poly" id="edge46_Node000019_Node000032" title=" " alt="" coords="1281,180,1172,223,1170,218,1279,175"/>
+<area shape="poly" id="edge31_Node000020_Node000005" title=" " alt="" coords="1187,253,1058,277,954,301,928,314,902,327,804,351,706,368,546,384,546,378,705,363,803,346,900,321,926,309,952,296,1057,272,1186,248"/>
+<area shape="poly" id="edge32_Node000020_Node000008" title=" " alt="" coords="1186,252,1174,253,1023,266,905,272,785,281,633,302,633,296,785,275,904,267,1023,261,1173,248,1185,247"/>
+<area shape="rect" id="Node000021" title=" " alt="" coords="1663,299,1721,324"/>
+<area shape="poly" id="edge33_Node000020_Node000021" title=" " alt="" coords="1326,248,1649,300,1648,306,1326,253"/>
+<area shape="rect" id="Node000022" title=" " alt="" coords="1364,299,1439,324"/>
+<area shape="poly" id="edge34_Node000020_Node000022" title=" " alt="" coords="1280,248,1367,290,1364,295,1278,253"/>
+<area shape="rect" id="Node000023" title=" " alt="" coords="965,299,1033,324"/>
+<area shape="poly" id="edge35_Node000020_Node000023" title=" " alt="" coords="1215,253,1046,300,1045,294,1214,248"/>
+<area shape="poly" id="edge36_Node000020_Node000024" title=" " alt="" coords="1299,248,1462,292,1461,298,1297,253"/>
+<area shape="rect" id="Node000025" title=" " alt="" coords="1057,299,1175,324"/>
+<area shape="poly" id="edge37_Node000020_Node000025" title=" " alt="" coords="1235,253,1152,295,1150,290,1232,248"/>
+<area shape="rect" id="Node000026" title=" " alt="" coords="1199,299,1249,324"/>
+<area shape="poly" id="edge38_Node000020_Node000026" title=" " alt="" coords="1253,252,1237,287,1232,285,1248,250"/>
+<area shape="rect" id="Node000027" title=" " alt="" coords="1273,299,1340,324"/>
+<area shape="poly" id="edge39_Node000020_Node000027" title=" " alt="" coords="1266,249,1293,286,1288,289,1262,253"/>
+<area shape="poly" id="edge48_Node000033_Node000021" title=" " alt="" coords="1422,99,1500,119,1595,148,1682,184,1714,203,1735,224,1741,241,1738,259,1717,290,1713,287,1733,257,1736,241,1731,227,1711,208,1679,188,1593,153,1498,124,1420,104"/>
+</map>

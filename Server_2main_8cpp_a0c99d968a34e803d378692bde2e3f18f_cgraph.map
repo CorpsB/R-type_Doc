@@ -1,0 +1,51 @@
+<map id="main" name="main">
+<area shape="rect" id="Node000001" title="Program entry point." alt="" coords="5,153,60,179"/>
+<area shape="rect" id="Node000002" href="$Parser_8cpp.html#a4e81fe00b1244e8591db32f3ed55530c" title="Soft normalization of args (range clamping, defaults)." alt="" coords="174,5,281,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="35,152,59,97,79,66,106,40,132,27,159,19,161,24,134,32,110,44,83,69,63,100,40,154"/>
+<area shape="rect" id="Node000003" href="$classrtype_1_1exception_1_1Error.html#af1dff7f88c212195ebfbb2c40406eaf1" title="Returns the reason or message associated with the error." alt="" coords="112,55,343,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="41,151,68,120,86,103,107,89,121,82,124,87,109,94,89,107,71,123,45,155"/>
+<area shape="rect" id="Node000004" href="$classrtype_1_1exception_1_1Error.html#a75cf6799e69103e6bade63acd67d9029" title="Returns the context or location where the error occurred." alt="" coords="108,104,347,129"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="59,154,107,138,142,130,143,135,109,143,61,159"/>
+<area shape="rect" id="Node000005" href="$Parser_8cpp.html#a977f3c479a9e7e13468e7e5502fcf888" title="Load key/value pairs from a configuration file into args." alt="" coords="182,203,273,228"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="61,173,109,187,169,202,167,207,107,193,59,178"/>
+<area shape="rect" id="Node000008" href="$Parser_8cpp.html#a198eafd20829840aae7e1988780c25d1" title="Parse the entire argv array and update args." alt="" coords="180,153,275,179"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="60,163,166,163,166,169,60,169"/>
+<area shape="rect" id="Node000010" href="$Server_2main_8cpp.html#abab3acffc1548535ff14eea8cd0fd773" title="Print usage and option help to stdout." alt="" coords="184,252,271,277"/>
+<area shape="poly" id="edge10_Node000001_Node000010" title=" " alt="" coords="45,177,72,208,109,237,139,249,171,257,169,262,138,254,107,242,68,212,41,181"/>
+<area shape="rect" id="Node000011" href="$classrtype_1_1server.html#a703fd91ca5d705369acef8f6e505e32d" title=" " alt="" coords="160,305,295,331"/>
+<area shape="poly" id="edge11_Node000001_Node000011" title=" " alt="" coords="40,178,64,231,84,261,110,286,148,305,145,310,106,291,80,265,59,234,36,180"/>
+<area shape="rect" id="Node000006" href="$Parser_8cpp.html#a9d45519874215765ea4ef34f45fe429b" title="Check that a string is a (base&#45;10) non&#45;empty integer and convert it." alt="" coords="687,199,773,224"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="273,219,395,231,505,237,614,231,672,222,673,227,615,237,505,242,394,237,273,224"/>
+<area shape="rect" id="Node000007" href="$Parser_8cpp.html#a9d74770b447cda8f51f6d51a9ec1f5c5" title="Remove ASCII spaces and tabs from a string (in place)." alt="" coords="443,197,567,223"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="273,212,429,209,429,214,273,217"/>
+<area shape="rect" id="Node000009" href="$Parser_8cpp.html#aa950726646f1e09e185bafe6875153fd" title="Parse a single command&#45;line token and update args." alt="" coords="473,148,536,173"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="275,162,459,159,459,164,275,168"/>
+<area shape="poly" id="edge9_Node000009_Node000006" title=" " alt="" coords="537,165,615,182,674,196,673,201,614,187,535,170"/>
+<area shape="rect" id="Node000012" href="$namespaceprotocol_1_1game_1_1GameProtocol.html#a7d2c97816e355b078f53915f2bde1910" title="Retrieve and convert a core event into a game_event_t." alt="" coords="395,386,615,426"/>
+<area shape="poly" id="edge12_Node000011_Node000012" title=" " alt="" coords="269,328,429,379,427,384,268,333"/>
+<area shape="rect" id="Node000022" href="$namespaceprotocol_1_1game_1_1GameProtocol.html#a130c676aa88671a77987fa551982edf2" title="Non&#45;blocking probe: returns true if the underlying Protocol has an event available." alt="" coords="395,298,615,338"/>
+<area shape="poly" id="edge27_Node000011_Node000022" title=" " alt="" coords="295,315,381,315,381,321,295,321"/>
+<area shape="poly" id="edge13_Node000012_Node000012" title=" " alt="" coords="463,386,460,376,467,367,482,361,505,359,531,362,545,369,543,374,529,367,505,365,483,367,470,371,465,377,468,385"/>
+<area shape="rect" id="Node000013" href="$GameProtocol_8cpp.html#a3f3b75a96b838a72b594b63f15ce2dc2" title="Convert a core packet event (protocol::packet_t inside core_event_t) into a game&#45;level event." alt="" coords="663,393,797,419"/>
+<area shape="poly" id="edge14_Node000012_Node000013" title=" " alt="" coords="615,403,649,403,649,409,615,409"/>
+<area shape="rect" id="Node000014" href="$GameProtocol_8cpp.html#acf6b25d75eab1ab4ca361f6161a5fc7d" title="Attempt to deserialize a CREATE_ENTITY payload from a byte buffer." alt="" coords="849,417,1060,443"/>
+<area shape="poly" id="edge15_Node000013_Node000014" title=" " alt="" coords="798,410,836,415,836,420,797,416"/>
+<area shape="rect" id="Node000018" href="$GameProtocol_8cpp.html#a3c6ff5912781e697a7661a2cfe15291f" title="Attempt to deserialize a DESTROY_ENTITY payload." alt="" coords="845,319,1064,344"/>
+<area shape="poly" id="edge19_Node000013_Node000018" title=" " alt="" coords="755,391,796,372,844,353,872,345,873,350,846,358,798,376,757,396"/>
+<area shape="rect" id="Node000019" href="$GameProtocol_8cpp.html#a24c81f667e616a00fec9caf240a2ecb9" title="Attempt to deserialize a MOVE_ENTITY payload." alt="" coords="851,368,1058,393"/>
+<area shape="poly" id="edge21_Node000013_Node000019" title=" " alt="" coords="797,396,837,391,838,397,798,401"/>
+<area shape="rect" id="Node000020" href="$GameProtocol_8cpp.html#a12cd3dff895dc77b141e34e46507fdd9" title="Attempt to deserialize a PLAYER_INPUT payload." alt="" coords="851,467,1058,492"/>
+<area shape="poly" id="edge23_Node000013_Node000020" title=" " alt="" coords="758,416,846,453,874,461,873,466,844,458,756,421"/>
+<area shape="rect" id="Node000015" href="$namespaceprotocol_1_1utils.html#a6a93c5ea4728db8e307019cead08b1c2" title="Read a 32&#45;bit unsigned integer from a byte buffer at the given offset." alt="" coords="1112,368,1291,393"/>
+<area shape="poly" id="edge16_Node000014_Node000015" title=" " alt="" coords="1018,415,1123,393,1124,399,1019,420"/>
+<area shape="rect" id="Node000017" href="$namespaceprotocol_1_1utils.html#a16ec1b3d7f9492d02bb4fe144e5199a9" title="Read an 8&#45;bit unsigned integer from a byte buffer at the given offset." alt="" coords="1116,417,1287,443"/>
+<area shape="poly" id="edge18_Node000014_Node000017" title=" " alt="" coords="1060,427,1102,427,1102,433,1060,433"/>
+<area shape="rect" id="Node000016" href="$namespaceprotocol_1_1utils.html#a08505e4df49b2ca7b58ca0cf13459cc8" title="Convert a network&#45;order 32&#45;bit value (big&#45;endian) to host byte order." alt="" coords="1339,368,1580,393"/>
+<area shape="poly" id="edge17_Node000015_Node000016" title=" " alt="" coords="1291,378,1325,378,1325,383,1291,383"/>
+<area shape="poly" id="edge20_Node000018_Node000015" title=" " alt="" coords="1019,341,1124,363,1123,368,1018,347"/>
+<area shape="poly" id="edge22_Node000019_Node000015" title=" " alt="" coords="1058,378,1098,378,1098,383,1058,383"/>
+<area shape="poly" id="edge25_Node000020_Node000015" title=" " alt="" coords="1036,464,1063,453,1077,442,1086,429,1095,416,1111,404,1126,396,1129,401,1113,408,1099,420,1090,433,1081,445,1065,458,1039,469"/>
+<area shape="poly" id="edge26_Node000020_Node000017" title=" " alt="" coords="1018,464,1123,443,1124,448,1019,469"/>
+<area shape="rect" id="Node000021" href="$namespaceprotocol_1_1utils.html#afb9259032cb3c37612915e4a56bb49df" title="Read a 16&#45;bit unsigned integer from a byte buffer at the given offset." alt="" coords="1112,467,1291,492"/>
+<area shape="poly" id="edge24_Node000020_Node000021" title=" " alt="" coords="1058,477,1098,477,1098,482,1058,482"/>
+</map>

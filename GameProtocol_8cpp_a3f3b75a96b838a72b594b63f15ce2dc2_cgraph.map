@@ -1,0 +1,23 @@
+<map id="retrieve_package" name="retrieve_package">
+<area shape="rect" id="Node000001" title="Convert a core packet event (protocol::packet_t inside core_event_t) into a game&#45;level event." alt="" coords="5,80,140,105"/>
+<area shape="rect" id="Node000002" href="$GameProtocol_8cpp.html#acf6b25d75eab1ab4ca361f6161a5fc7d" title="Attempt to deserialize a CREATE_ENTITY payload from a byte buffer." alt="" coords="192,104,403,129"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="140,97,179,101,178,107,140,102"/>
+<area shape="rect" id="Node000006" href="$GameProtocol_8cpp.html#a3c6ff5912781e697a7661a2cfe15291f" title="Attempt to deserialize a DESTROY_ENTITY payload." alt="" coords="188,5,407,31"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="98,78,139,58,187,39,214,32,216,37,189,45,141,63,100,82"/>
+<area shape="rect" id="Node000007" href="$GameProtocol_8cpp.html#a24c81f667e616a00fec9caf240a2ecb9" title="Attempt to deserialize a MOVE_ENTITY payload." alt="" coords="194,55,401,80"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="140,82,180,78,181,83,140,88"/>
+<area shape="rect" id="Node000008" href="$GameProtocol_8cpp.html#a12cd3dff895dc77b141e34e46507fdd9" title="Attempt to deserialize a PLAYER_INPUT payload." alt="" coords="194,153,401,179"/>
+<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="101,103,189,139,217,148,215,153,187,145,99,108"/>
+<area shape="rect" id="Node000003" href="$namespaceprotocol_1_1utils.html#a6a93c5ea4728db8e307019cead08b1c2" title="Read a 32&#45;bit unsigned integer from a byte buffer at the given offset." alt="" coords="455,55,633,80"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="361,101,466,80,467,85,362,107"/>
+<area shape="rect" id="Node000005" href="$namespaceprotocol_1_1utils.html#a16ec1b3d7f9492d02bb4fe144e5199a9" title="Read an 8&#45;bit unsigned integer from a byte buffer at the given offset." alt="" coords="459,104,629,129"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="403,114,445,114,445,119,403,119"/>
+<area shape="rect" id="Node000004" href="$namespaceprotocol_1_1utils.html#a08505e4df49b2ca7b58ca0cf13459cc8" title="Convert a network&#45;order 32&#45;bit value (big&#45;endian) to host byte order." alt="" coords="681,55,923,80"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="634,65,667,65,667,70,634,70"/>
+<area shape="poly" id="edge6_Node000006_Node000003" title=" " alt="" coords="362,28,467,49,466,55,361,33"/>
+<area shape="poly" id="edge8_Node000007_Node000003" title=" " alt="" coords="401,65,441,65,441,70,401,70"/>
+<area shape="poly" id="edge11_Node000008_Node000003" title=" " alt="" coords="379,151,405,140,420,128,429,116,438,103,453,90,469,83,471,87,456,95,442,107,433,119,424,132,408,144,381,156"/>
+<area shape="poly" id="edge12_Node000008_Node000005" title=" " alt="" coords="361,151,466,129,467,135,362,156"/>
+<area shape="rect" id="Node000009" href="$namespaceprotocol_1_1utils.html#afb9259032cb3c37612915e4a56bb49df" title="Read a 16&#45;bit unsigned integer from a byte buffer at the given offset." alt="" coords="455,153,633,179"/>
+<area shape="poly" id="edge10_Node000008_Node000009" title=" " alt="" coords="401,163,441,163,441,169,401,169"/>
+</map>

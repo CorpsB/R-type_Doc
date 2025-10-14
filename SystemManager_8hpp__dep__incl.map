@@ -1,0 +1,19 @@
+<map id="SystemManager.hpp" name="SystemManager.hpp">
+<area shape="rect" id="Node000001" title="Manager for registering systems and maintaining execution signatures." alt="" coords="323,5,478,31"/>
+<area shape="rect" id="Node000002" href="$Coordinator_8hpp.html" title="High&#45;level facade that connects entity/component/system managers." alt="" coords="257,79,382,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="379,42,334,80,331,76,376,38"/>
+<area shape="rect" id="Node000009" href="$SystemManager_8cpp.html" title="Implementation file for non&#45;template SystemManager methods." alt="" coords="406,79,561,104"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="426,38,472,76,468,80,423,42"/>
+<area shape="rect" id="Node000003" href="$CollisionWorld_8cpp.html" title="Implementation of CollisionWorld: grid building, neighbor iteration and SAT tests." alt="" coords="5,152,148,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="268,110,117,154,115,149,267,105"/>
+<area shape="rect" id="Node000004" href="$Coordinator_8cpp.html" title="Implementation of Coordinator lifecycle and non&#45;template helpers." alt="" coords="172,152,296,177"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="297,115,250,154,246,150,294,110"/>
+<area shape="rect" id="Node000005" href="$MovementSystem_8cpp.html" title="Implementation of MovementSystem::update." alt="" coords="321,152,489,177"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="345,110,392,150,389,154,342,115"/>
+<area shape="rect" id="Node000006" href="$Rtype_8hpp.html" title=" " alt="" coords="513,152,601,177"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="371,105,519,149,517,154,370,110"/>
+<area shape="rect" id="Node000007" href="$Rtype_8cpp.html" title=" " alt="" coords="459,225,545,251"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="541,190,513,227,509,224,537,187"/>
+<area shape="rect" id="Node000008" href="$Server_2main_8cpp.html" title="Entry point for the R&#45;Type server executable." alt="" coords="570,225,653,251"/>
+<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="576,187,605,224,600,227,572,190"/>
+</map>

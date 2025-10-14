@@ -1,0 +1,29 @@
+<map id="CollisionSystem.cpp" name="CollisionSystem.cpp">
+<area shape="rect" id="Node000001" title="Implementation of CollisionSystem update pass (build + check)." alt="" coords="191,5,345,31"/>
+<area shape="rect" id="Node000002" href="$CollisionSystem_8hpp.html" title="Header for CollisionSystem — orchestrates broad&#45;phase and narrow&#45;phase checks." alt="" coords="191,79,345,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="271,31,271,65,265,65,265,31"/>
+<area shape="rect" id="Node000003" href="$System_8hpp.html" title="Base class for systems in the ECS." alt="" coords="135,152,233,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="256,106,210,145,207,141,253,102"/>
+<area shape="rect" id="Node000007" href="$CollisionWorld_8hpp.html" title="Spatial&#45;hash collision world API: grid building and narrow&#45;phase tests." alt="" coords="285,152,475,177"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="287,102,351,142,348,147,285,106"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="96,233,139,258"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="176,179,138,224,134,221,172,176"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="5,233,72,258"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="164,180,73,228,71,224,161,175"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="163,233,287,258"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="192,176,215,219,211,222,188,179"/>
+<area shape="poly" id="edge13_Node000007_Node000004" title=" " alt="" coords="321,180,240,199,153,228,150,229,148,224,151,223,239,194,320,175"/>
+<area shape="poly" id="edge12_Node000007_Node000006" title=" " alt="" coords="358,180,262,229,259,224,356,175"/>
+<area shape="rect" id="Node000008" href="$Position_8hpp.html" title="ECS component representing the position of an entity in 2D space." alt="" coords="393,225,589,265"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="398,175,455,215,452,220,395,180"/>
+<area shape="rect" id="Node000009" href="$HitBox_8hpp.html" title="ECS component defining the hitbox dimensions of an entity." alt="" coords="613,225,809,265"/>
+<area shape="poly" id="edge8_Node000007_Node000009" title=" " alt="" coords="429,175,618,220,617,225,427,180"/>
+<area shape="rect" id="Node000010" href="$Direction_8hpp.html" title="ECS component representing directional movement in 2D space." alt="" coords="833,225,1029,265"/>
+<area shape="poly" id="edge9_Node000007_Node000010" title=" " alt="" coords="472,175,819,222,818,228,471,180"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="1053,233,1115,258"/>
+<area shape="poly" id="edge11_Node000007_Node000012" title=" " alt="" coords="476,162,592,165,734,174,889,192,966,206,1042,223,1050,225,1048,230,1041,228,965,211,888,197,733,179,591,170,476,168"/>
+<area shape="rect" id="Node000013" title=" " alt="" coords="312,233,368,258"/>
+<area shape="poly" id="edge14_Node000007_Node000013" title=" " alt="" coords="376,179,354,222,350,219,372,176"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="899,313,962,339"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="933,266,933,299,928,299,928,266"/>
+</map>

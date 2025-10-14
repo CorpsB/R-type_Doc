@@ -1,0 +1,9 @@
+<map id="makeKey" name="makeKey">
+<area shape="rect" id="Node000001" title="Pack two 32&#45;bit signed cell coordinates into a single 64&#45;bit unsigned key." alt="" coords="540,45,623,70"/>
+<area shape="rect" id="Node000002" href="$classrtype_1_1ecs_1_1CollisionWorld.html#acba7533c8d42d6abb6c82fd03ee7b614" title="Run narrow&#45;phase collision checks across the grid and call collisionEffect on hits." alt="" coords="305,5,492,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="526,50,492,44,493,39,527,45"/>
+<area shape="rect" id="Node000004" href="$classrtype_1_1ecs_1_1CollisionWorld.html#a011eb492f2141005e5b7723f9015b238" title="Insert an entity id into the cell at coordinates (cx, cy)." alt="" coords="305,69,492,109"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="527,69,493,76,492,70,526,64"/>
+<area shape="rect" id="Node000003" href="$classrtype_1_1ecs_1_1CollisionSystem.html#afca69e9015066f94f6fe7cab90899e44" title="Run one collision pass: rebuild spatial grid and test collisions." alt="" coords="5,13,257,38"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="292,28,258,28,258,23,292,23"/>
+</map>
