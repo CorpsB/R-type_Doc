@@ -1,7 +1,9 @@
 <map id="rtype::ecs::factory::create_enemy" name="rtype::ecs::factory::create_enemy">
-<area shape="rect" id="Node000001" title="Creates an enemy entity with health, movement, and weapon setup." alt="" coords="305,31,545,56"/>
-<area shape="rect" id="Node000002" href="$namespacertype_1_1ecs_1_1factory.html#a20e6c6134ae9cf710eb5eabdb60178de" title="Dispatches entity creation based on its network schema type." alt="" coords="15,5,248,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="291,34,248,31,249,25,292,29"/>
-<area shape="rect" id="Node000003" href="$classrtype_1_1ecs_1_1SpawnerSystem.html#a43233061bedb890c68c419ec3ea6a5ee" title="Updates the system each tick and spawns new entities as needed." alt="" coords="5,55,257,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="292,57,258,60,257,54,292,52"/>
+<area shape="rect" id="Node000001" title="Creates an enemy entity with health, movement, and weapon setup." alt="" coords="592,31,832,56"/>
+<area shape="rect" id="Node000002" href="$namespacertype_1_1ecs_1_1factory.html#a20e6c6134ae9cf710eb5eabdb60178de" title="Dispatches entity creation based on its network schema type." alt="" coords="301,5,535,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="578,34,535,31,535,25,578,29"/>
+<area shape="rect" id="Node000004" href="$classrtype_1_1ecs_1_1SpawnerSystem.html#a43233061bedb890c68c419ec3ea6a5ee" title="Updates the system each tick and spawns new entities as needed." alt="" coords="292,55,544,80"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="579,57,544,60,544,54,578,52"/>
+<area shape="rect" id="Node000003" href="$classrtype_1_1client_1_1GameScene.html#a6942b138a7daf65e0c1f01a0bd4fb322" title="Main update loop for the scene." alt="" coords="5,5,244,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="287,21,244,21,244,15,287,15"/>
 </map>

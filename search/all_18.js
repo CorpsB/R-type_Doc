@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['name_0',['name',['../Name_8hpp.html#a61358768e634b69adada6182f1d39861',1,'name_attr_t::name'],['../classrtype_1_1client_1_1IScene.html#abf64368cfc867c234b355f1c6e6ba991',1,'rtype::client::IScene::name()'],['../classrtype_1_1client_1_1MainMenuScene.html#ac7d6c2d1e39bc2ca05a7cbc10360b33c',1,'rtype::client::MainMenuScene::name()'],['../classrtype_1_1client_1_1OptionsMenuScene.html#a4de3198433858d90b1178d1bae883d5b',1,'rtype::client::OptionsMenuScene::name()']]],
+  ['name_0',['name',['../Name_8hpp.html#a61358768e634b69adada6182f1d39861',1,'name_attr_t::name'],['../classrtype_1_1client_1_1GameScene.html#abdaed6773d84a68cca7a9c0d7c448e41',1,'rtype::client::GameScene::name()'],['../classrtype_1_1client_1_1IScene.html#abf64368cfc867c234b355f1c6e6ba991',1,'rtype::client::IScene::name()'],['../classrtype_1_1client_1_1MainMenuScene.html#ac7d6c2d1e39bc2ca05a7cbc10360b33c',1,'rtype::client::MainMenuScene::name()'],['../classrtype_1_1client_1_1OptionsMenuScene.html#a4de3198433858d90b1178d1bae883d5b',1,'rtype::client::OptionsMenuScene::name()']]],
   ['name_2ehpp_1',['Name.hpp',['../Name_8hpp.html',1,'']]],
   ['name_5fattr_5ft_2',['name_attr_t',['../Name_8hpp.html#structname__attr__t',1,'']]],
   ['narrowphase_3',['Mermaid — Collision Broadphase/Narrowphase',['../md_Doc_2Developer__doc.html#autotoc_md102',1,'']]],

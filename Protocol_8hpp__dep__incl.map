@@ -1,16 +1,21 @@
 <map id="Protocol.hpp" name="Protocol.hpp">
-<area shape="rect" id="Node000001" title="Low&#45;level UDP protocol singleton interface (signatures only)." alt="" coords="172,5,275,31"/>
-<area shape="rect" id="Node000002" href="$GameProtocol_8hpp.html" title="High&#45;level game protocol facade (header only)." alt="" coords="5,79,148,104"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="189,39,102,81,100,76,187,34"/>
-<area shape="rect" id="Node000005" href="$Protocol_8cpp.html" title="Implementation of the core UDP protocol (sending/receiving, piggyback acknowledgment,..." alt="" coords="172,79,275,104"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="226,44,226,79,221,79,221,44"/>
-<area shape="rect" id="Node000006" href="$Rtype_8hpp.html" title=" " alt="" coords="299,79,387,104"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="256,35,325,76,322,81,253,40"/>
-<area shape="rect" id="Node000003" href="$GameProtocol_8cpp.html" title="Game&#45;level packet (de)serialization helpers and conversion to game_event_t." alt="" coords="6,152,147,177"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="79,118,79,152,74,152,74,118"/>
-<area shape="rect" id="Node000004" href="$Rtype_8cpp.html" title="Implements the main server logic for the R&#45;Type project." alt="" coords="181,152,268,177"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="114,107,202,149,199,154,111,112"/>
-<area shape="poly" id="edge6_Node000006_Node000004" title=" " alt="" coords="314,113,245,154,243,149,311,109"/>
-<area shape="rect" id="Node000007" href="$Server_2main_8cpp.html" title="Entry point for the R&#45;Type server executable." alt="" coords="302,152,385,177"/>
-<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="346,118,346,152,341,152,341,118"/>
+<area shape="rect" id="Node000001" title="Low&#45;level UDP protocol singleton interface (signatures only)." alt="" coords="317,5,419,31"/>
+<area shape="rect" id="Node000002" href="$GameProtocol_8hpp.html" title="High&#45;level game protocol facade (header only)." alt="" coords="150,79,293,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="334,39,246,81,244,76,331,34"/>
+<area shape="rect" id="Node000007" href="$Protocol_8cpp.html" title="Implementation of the core UDP protocol (sending/receiving, piggyback acknowledgment,..." alt="" coords="317,79,419,104"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="371,44,371,79,365,79,365,44"/>
+<area shape="rect" id="Node000008" href="$Rtype_8hpp.html" title=" " alt="" coords="444,79,532,104"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="401,35,470,76,467,81,398,40"/>
+<area shape="rect" id="Node000003" href="$GameProtocol_8cpp.html" title="Game&#45;level packet (de)serialization helpers and conversion to game_event_t." alt="" coords="5,152,147,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="187,112,101,154,99,149,185,108"/>
+<area shape="rect" id="Node000004" href="$GameScene_8cpp.html" title=" " alt="" coords="171,225,298,251"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="216,118,211,146,212,177,220,203,231,224,226,226,215,205,207,178,206,146,211,117"/>
+<area shape="rect" id="Node000005" href="$GameScene_8hpp.html" title=" " alt="" coords="221,152,349,177"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="243,113,277,150,273,154,239,116"/>
+<area shape="rect" id="Node000006" href="$Rtype_8cpp.html" title="Implements the main server logic for the R&#45;Type project." alt="" coords="374,152,461,177"/>
+<area shape="poly" id="edge6_Node000002_Node000006" title=" " alt="" coords="266,106,386,149,384,154,265,111"/>
+<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="271,190,245,227,241,224,267,187"/>
+<area shape="poly" id="edge9_Node000008_Node000006" title=" " alt="" coords="469,116,431,154,427,150,465,112"/>
+<area shape="rect" id="Node000009" href="$Server_2main_8cpp.html" title="Entry point for the R&#45;Type server executable." alt="" coords="485,152,568,177"/>
+<area shape="poly" id="edge10_Node000008_Node000009" title=" " alt="" coords="503,115,523,151,518,153,499,118"/>
 </map>

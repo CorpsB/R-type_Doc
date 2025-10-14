@@ -37,6 +37,7 @@ var annotated_dup =
           [ "Sprite", "classrtype_1_1client_1_1ui_1_1Sprite.html", "classrtype_1_1client_1_1ui_1_1Sprite" ]
         ] ],
         [ "Game", "classrtype_1_1client_1_1Game.html", "classrtype_1_1client_1_1Game" ],
+        [ "GameScene", "classrtype_1_1client_1_1GameScene.html", "classrtype_1_1client_1_1GameScene" ],
         [ "GameSettings", "classrtype_1_1client_1_1GameSettings.html", "classrtype_1_1client_1_1GameSettings" ],
         [ "InputManager", "classrtype_1_1client_1_1InputManager.html", "classrtype_1_1client_1_1InputManager" ],
         [ "IScene", "classrtype_1_1client_1_1IScene.html", "classrtype_1_1client_1_1IScene" ],

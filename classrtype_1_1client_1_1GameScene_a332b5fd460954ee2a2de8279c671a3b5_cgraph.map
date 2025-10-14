@@ -1,0 +1,25 @@
+<map id="rtype::client::GameScene::GameScene" name="rtype::client::GameScene::GameScene">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,201,200,241"/>
+<area shape="rect" id="Node000002" href="$classrtype_1_1client_1_1GameScene.html#a4209205eabbf7520511a8fde247a7923" title=" " alt="" coords="264,123,509,148"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="151,198,247,163,306,148,307,154,249,169,153,203"/>
+<area shape="rect" id="Node000009" href="$classrtype_1_1ecs_1_1Coordinator.html#a1dbf9d999874674f05e2c848ed84d738" title="Initialize internal managers." alt="" coords="287,179,486,204"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="200,208,273,200,274,206,200,213"/>
+<area shape="rect" id="Node000010" href="$namespacertype_1_1ecs_1_1factory.html#ac493845a0bd714fbeb9baead17010d04" title="Registers all gameplay&#45;related components into the ECS Coordinator." alt="" coords="288,229,485,269"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="200,228,275,235,274,240,200,233"/>
+<area shape="rect" id="Node000012" href="$classrtype_1_1ecs_1_1Coordinator.html#aca7d6eb9299564682430b0362ce50149" title="Register a system instance of type T and return it." alt="" coords="248,293,525,319"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="147,238,195,259,249,278,288,288,287,293,247,283,193,264,145,243"/>
+<area shape="rect" id="Node000003" href="$namespaceprotocol_1_1game_1_1GameProtocol.html#a82bb05ba2e71bcf41f991da46853bad7" title="Initialize game protocol and bind a local UDP endpoint." alt="" coords="615,47,835,87"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="450,120,610,88,611,93,451,125"/>
+<area shape="rect" id="Node000007" href="$namespaceprotocol_1_1game_1_1GameProtocol.html#a0d915e98b8e2191ae722639b170e73ea" title="Send a CONNECT_REQ message to a server (client&#45;side convenience)." alt="" coords="615,111,835,151"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="510,131,601,130,601,135,510,137"/>
+<area shape="rect" id="Node000008" href="$namespaceprotocol_1_1game_1_1GameProtocol.html#a9e31e3918d2366ee2d8b3eb8b946c5de" title="Start the underlying Protocol IO loop (non&#45;blocking, spawns thread)." alt="" coords="615,175,835,215"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="460,145,601,171,600,176,459,151"/>
+<area shape="rect" id="Node000004" href="$classprotocol_1_1Protocol.html#a84c493e745daa3623898f5aa235774ba" title="Clear any previously stored endpoint." alt="" coords="925,5,1158,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="835,48,945,30,946,35,835,53"/>
+<area shape="rect" id="Node000005" href="$classprotocol_1_1Protocol.html#a4e019a5e18ff4fd1287beddceb4e1e2c" title="Initialize and bind the local UDP socket." alt="" coords="959,55,1124,80"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="835,65,945,65,945,70,835,70"/>
+<area shape="rect" id="Node000006" href="$classprotocol_1_1Protocol.html#a4ab1bbadf74acc6ae80a4cdfdbc30b19" title="Store a &quot;preferred&quot; remote endpoint for convenience operations." alt="" coords="924,104,1159,129"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="835,82,946,99,945,104,835,87"/>
+<area shape="rect" id="Node000011" href="$classrtype_1_1ecs_1_1Coordinator.html#ad06624ec5ef2024c2f6919eae1fea1d7" title="Register a component type T with the ComponentManager." alt="" coords="573,240,876,265"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="485,247,560,248,560,253,485,252"/>
+</map>

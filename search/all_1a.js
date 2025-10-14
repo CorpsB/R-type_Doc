@@ -42,7 +42,7 @@ var searchData=
   ['playing_39',['playing',['../Audio_8hpp.html#a93cd88bfd0accd1b57e736deae948c0d',1,'audio_attr_t']]],
   ['pointers_40',['pointers',['../md_Doc_2Developer__doc.html#autotoc_md141',1,'15. References (Code Pointers)'],['../md_Doc_2network__protocol.html#autotoc_md210',1,'18. Implementation Pointers']]],
   ['policy_41',['7. Retransmission Policy',['../md_Doc_2network__protocol.html#autotoc_md182',1,'']]],
-  ['pop_42',['pop',['../classrtype_1_1client_1_1SceneManager.html#aac2608885cc04b2ef126ee7fc1d1a757a0ae61bd0474e04c9f1195d4baa0213a0',1,'rtype::client::SceneManager::Pop'],['../classrtype_1_1client_1_1SceneManager.html#a293d85934f36700913d8e672acef100d',1,'rtype::client::SceneManager::pop()']]],
+  ['pop_42',['pop',['../classrtype_1_1client_1_1SceneManager.html#a293d85934f36700913d8e672acef100d',1,'rtype::client::SceneManager::pop()'],['../classrtype_1_1client_1_1SceneManager.html#aac2608885cc04b2ef126ee7fc1d1a757a0ae61bd0474e04c9f1195d4baa0213a0',1,'rtype::client::SceneManager::Pop']]],
   ['port_43',['port',['../config_8h.html#a03a218180f882180702d49d127ad7952',1,'parser_args_t']]],
   ['portability_44',['2.2 Cross-Platform Portability',['../md_Doc_2RayLib.html#autotoc_md220',1,'']]],
   ['portability_20and_20abstraction_45',['2.2 Portability and Abstraction',['../md_Doc_2Boost_8asio.html#autotoc_md56',1,'']]],
@@ -68,6 +68,6 @@ var searchData=
   ['protocol_3a_3autils_65',['utils',['../namespaceprotocol_1_1utils.html',1,'protocol']]],
   ['protocoltypes_2ehpp_66',['ProtocolTypes.hpp',['../ProtocolTypes_8hpp.html',1,'']]],
   ['pull_20requests_67',['3. Pull Requests',['../md_Doc_2Contributing.html#autotoc_md77',1,'']]],
-  ['push_68',['push',['../classrtype_1_1client_1_1SceneManager.html#aac2608885cc04b2ef126ee7fc1d1a757a9c6a9d9f033001a9b3104984d319563b',1,'rtype::client::SceneManager::Push'],['../classrtype_1_1client_1_1SceneManager.html#a336dad2b26d76e1c33f8379884021943',1,'rtype::client::SceneManager::push(ScenePtr scene)']]],
+  ['push_68',['push',['../classrtype_1_1client_1_1SceneManager.html#a336dad2b26d76e1c33f8379884021943',1,'rtype::client::SceneManager::push(ScenePtr scene)'],['../classrtype_1_1client_1_1SceneManager.html#aac2608885cc04b2ef126ee7fc1d1a757a9c6a9d9f033001a9b3104984d319563b',1,'rtype::client::SceneManager::Push']]],
   ['pushnew_69',['pushNew',['../classrtype_1_1client_1_1SceneManager.html#adf874684e7f4bc9c5be5ec81f0bf7087',1,'rtype::client::SceneManager']]]
 ];

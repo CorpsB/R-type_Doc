@@ -46,9 +46,9 @@
   </g>
 </defs>
 <script type="application/ecmascript">
-var viewWidth = 633;
+var viewWidth = 848;
 var viewHeight = 113;
-var sectionId = 'dynsection-12';
+var sectionId = 'dynsection-13';
 </script>
 <script type="application/ecmascript" xlink:href="svg.min.js"/>
 <svg id="graph" class="graph">
@@ -58,8 +58,8 @@ var sectionId = 'dynsection-12';
 <g id="Node000001" class="node">
 <title>Node1</title>
 <g id="a_Node000001"><a xlink:title="Adds movement&#45;related components (position, direction, speed).">
-<polygon fill="#999999" stroke="#666666" points="625,-62 441,-62 441,-43 625,-43 625,-62"/>
-<text text-anchor="middle" x="533" y="-50" font-family="Helvetica,sans-Serif" font-size="10.00">rtype::ecs::factory::set_movement</text>
+<polygon fill="#999999" stroke="#666666" points="840,-62 656,-62 656,-43 840,-43 840,-62"/>
+<text text-anchor="middle" x="748" y="-50" font-family="Helvetica,sans-Serif" font-size="10.00">rtype::ecs::factory::set_movement</text>
 </a>
 </g>
 </g>
@@ -67,8 +67,8 @@ var sectionId = 'dynsection-12';
 <g id="Node000002" class="node">
 <title>Node2</title>
 <g id="a_Node000002"><a xlink:href="namespacertype_1_1ecs_1_1factory.html#aadd8634669966a1015c4208fb07a4924" target="_top" xlink:title="Creates an enemy entity with health, movement, and weapon setup.">
-<polygon fill="white" stroke="#666666" points="405,-19 225,-19 225,0 405,0 405,-19"/>
-<text text-anchor="middle" x="315" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">rtype::ecs::factory::create_enemy</text>
+<polygon fill="white" stroke="#666666" points="620,-19 440,-19 440,0 620,0 620,-19"/>
+<text text-anchor="middle" x="530" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">rtype::ecs::factory::create_enemy</text>
 </a>
 </g>
 </g>
@@ -76,45 +76,45 @@ var sectionId = 'dynsection-12';
 <g id="edge1_Node000001_Node000002" class="edge">
 <title>Node1&#45;&gt;Node2</title>
 <g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M474.12,-40.98C439.62,-34.11 396.35,-25.5 363.8,-19.02"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="473.57,-44.44 484.06,-42.96 474.94,-37.57 473.57,-44.44"/>
-</a>
-</g>
-</g>
-<!-- Node5 -->
-<g id="Node000005" class="node">
-<title>Node5</title>
-<g id="a_Node000005"><a xlink:href="namespacertype_1_1ecs_1_1factory.html#a3c5bd23a9782afd2fc07153216b5b0d2" target="_top" xlink:title="Creates a player entity with full stats, movement, and weapon setup.">
-<polygon fill="white" stroke="#666666" points="403.5,-105 226.5,-105 226.5,-86 403.5,-86 403.5,-105"/>
-<text text-anchor="middle" x="315" y="-93" font-family="Helvetica,sans-Serif" font-size="10.00">rtype::ecs::factory::create_player</text>
-</a>
-</g>
-</g>
-<!-- Node1&#45;&gt;Node5 -->
-<g id="edge4_Node000001_Node000005" class="edge">
-<title>Node1&#45;&gt;Node5</title>
-<g id="a_edge4_Node000001_Node000005"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M474.12,-64.02C439.62,-70.89 396.35,-79.5 363.8,-85.98"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="474.94,-67.43 484.06,-62.04 473.57,-60.56 474.94,-67.43"/>
+<path fill="none" stroke="#63b8ff" d="M689.12,-40.98C654.62,-34.11 611.35,-25.5 578.8,-19.02"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="688.57,-44.44 699.06,-42.96 689.94,-37.57 688.57,-44.44"/>
 </a>
 </g>
 </g>
 <!-- Node6 -->
 <g id="Node000006" class="node">
 <title>Node6</title>
-<g id="a_Node000006"><a xlink:href="namespacertype_1_1ecs_1_1factory.html#a5a8314ddbfde6228ddddaa6989d791ba" target="_top" xlink:title="Creates a projectile entity with movement and damage attributes.">
-<polygon fill="white" stroke="#666666" points="385.5,-67.5 244.5,-67.5 244.5,-37.5 385.5,-37.5 385.5,-67.5"/>
-<text text-anchor="start" x="252.5" y="-55.5" font-family="Helvetica,sans-Serif" font-size="10.00">rtype::ecs::factory::create</text>
-<text text-anchor="middle" x="315" y="-44.5" font-family="Helvetica,sans-Serif" font-size="10.00">_projectile</text>
+<g id="a_Node000006"><a xlink:href="namespacertype_1_1ecs_1_1factory.html#a3c5bd23a9782afd2fc07153216b5b0d2" target="_top" xlink:title="Creates a player entity with full stats, movement, and weapon setup.">
+<polygon fill="white" stroke="#666666" points="618.5,-105 441.5,-105 441.5,-86 618.5,-86 618.5,-105"/>
+<text text-anchor="middle" x="530" y="-93" font-family="Helvetica,sans-Serif" font-size="10.00">rtype::ecs::factory::create_player</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node6 -->
-<g id="edge6_Node000001_Node000006" class="edge">
+<g id="edge5_Node000001_Node000006" class="edge">
 <title>Node1&#45;&gt;Node6</title>
-<g id="a_edge6_Node000001_Node000006"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M430.29,-52.5C415.18,-52.5 399.91,-52.5 385.66,-52.5"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="430.71,-56 440.71,-52.5 430.71,-49 430.71,-56"/>
+<g id="a_edge5_Node000001_Node000006"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M689.12,-64.02C654.62,-70.89 611.35,-79.5 578.8,-85.98"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="689.94,-67.43 699.06,-62.04 688.57,-60.56 689.94,-67.43"/>
+</a>
+</g>
+</g>
+<!-- Node7 -->
+<g id="Node000007" class="node">
+<title>Node7</title>
+<g id="a_Node000007"><a xlink:href="namespacertype_1_1ecs_1_1factory.html#a5a8314ddbfde6228ddddaa6989d791ba" target="_top" xlink:title="Creates a projectile entity with movement and damage attributes.">
+<polygon fill="white" stroke="#666666" points="600.5,-67.5 459.5,-67.5 459.5,-37.5 600.5,-37.5 600.5,-67.5"/>
+<text text-anchor="start" x="467.5" y="-55.5" font-family="Helvetica,sans-Serif" font-size="10.00">rtype::ecs::factory::create</text>
+<text text-anchor="middle" x="530" y="-44.5" font-family="Helvetica,sans-Serif" font-size="10.00">_projectile</text>
+</a>
+</g>
+</g>
+<!-- Node1&#45;&gt;Node7 -->
+<g id="edge7_Node000001_Node000007" class="edge">
+<title>Node1&#45;&gt;Node7</title>
+<g id="a_edge7_Node000001_Node000007"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M645.29,-52.5C630.18,-52.5 614.91,-52.5 600.66,-52.5"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="645.71,-56 655.71,-52.5 645.71,-49 645.71,-56"/>
 </a>
 </g>
 </g>
@@ -122,8 +122,8 @@ var sectionId = 'dynsection-12';
 <g id="Node000003" class="node">
 <title>Node3</title>
 <g id="a_Node000003"><a xlink:href="namespacertype_1_1ecs_1_1factory.html#a20e6c6134ae9cf710eb5eabdb60178de" target="_top" xlink:title="Dispatches entity creation based on its network schema type.">
-<polygon fill="white" stroke="#666666" points="182,-62 7,-62 7,-43 182,-43 182,-62"/>
-<text text-anchor="middle" x="94.5" y="-50" font-family="Helvetica,sans-Serif" font-size="10.00">rtype::ecs::factory::create_entity</text>
+<polygon fill="white" stroke="#666666" points="397,-62 222,-62 222,-43 397,-43 397,-62"/>
+<text text-anchor="middle" x="309.5" y="-50" font-family="Helvetica,sans-Serif" font-size="10.00">rtype::ecs::factory::create_entity</text>
 </a>
 </g>
 </g>
@@ -131,44 +131,62 @@ var sectionId = 'dynsection-12';
 <g id="edge2_Node000002_Node000003" class="edge">
 <title>Node2&#45;&gt;Node3</title>
 <g id="a_edge2_Node000002_Node000003"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M255.45,-21.02C220.55,-27.89 176.78,-36.5 143.86,-42.98"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="256.37,-24.41 265.51,-19.04 255.02,-17.54 256.37,-24.41"/>
+<path fill="none" stroke="#63b8ff" d="M470.45,-21.02C435.55,-27.89 391.78,-36.5 358.86,-42.98"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="471.37,-24.41 480.51,-19.04 470.02,-17.54 471.37,-24.41"/>
+</a>
+</g>
+</g>
+<!-- Node5 -->
+<g id="Node000005" class="node">
+<title>Node5</title>
+<g id="a_Node000005"><a xlink:href="classrtype_1_1ecs_1_1SpawnerSystem.html#a43233061bedb890c68c419ec3ea6a5ee" target="_top" xlink:title="Updates the system each tick and spawns new entities as needed.">
+<polygon fill="white" stroke="#666666" points="404,-19 215,-19 215,0 404,0 404,-19"/>
+<text text-anchor="middle" x="309.5" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">rtype::ecs::SpawnerSystem::update</text>
+</a>
+</g>
+</g>
+<!-- Node2&#45;&gt;Node5 -->
+<g id="edge4_Node000002_Node000005" class="edge">
+<title>Node2&#45;&gt;Node5</title>
+<g id="a_edge4_Node000002_Node000005"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M429.79,-9.5C421.21,-9.5 412.55,-9.5 404.02,-9.5"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="429.81,-13 439.81,-9.5 429.81,-6 429.81,-13"/>
 </a>
 </g>
 </g>
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a xlink:href="classrtype_1_1ecs_1_1SpawnerSystem.html#a43233061bedb890c68c419ec3ea6a5ee" target="_top" xlink:title="Updates the system each tick and spawns new entities as needed.">
-<polygon fill="white" stroke="#666666" points="189,-19 0,-19 0,0 189,0 189,-19"/>
-<text text-anchor="middle" x="94.5" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">rtype::ecs::SpawnerSystem::update</text>
+<g id="a_Node000004"><a xlink:href="classrtype_1_1client_1_1GameScene.html#a6942b138a7daf65e0c1f01a0bd4fb322" target="_top" xlink:title="Main update loop for the scene.">
+<polygon fill="white" stroke="#666666" points="179,-62 0,-62 0,-43 179,-43 179,-62"/>
+<text text-anchor="middle" x="89.5" y="-50" font-family="Helvetica,sans-Serif" font-size="10.00">rtype::client::GameScene::update</text>
 </a>
 </g>
 </g>
-<!-- Node2&#45;&gt;Node4 -->
-<g id="edge3_Node000002_Node000004" class="edge">
-<title>Node2&#45;&gt;Node4</title>
-<g id="a_edge3_Node000002_Node000004"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M214.79,-9.5C206.21,-9.5 197.55,-9.5 189.02,-9.5"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="214.81,-13 224.81,-9.5 214.81,-6 214.81,-13"/>
-</a>
-</g>
-</g>
-<!-- Node5&#45;&gt;Node3 -->
-<g id="edge5_Node000005_Node000003" class="edge">
-<title>Node5&#45;&gt;Node3</title>
-<g id="a_edge5_Node000005_Node000003"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M255.45,-83.98C220.55,-77.11 176.78,-68.5 143.86,-62.02"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="255.02,-87.46 265.51,-85.96 256.37,-80.59 255.02,-87.46"/>
+<!-- Node3&#45;&gt;Node4 -->
+<g id="edge3_Node000003_Node000004" class="edge">
+<title>Node3&#45;&gt;Node4</title>
+<g id="a_edge3_Node000003_Node000004"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M211.46,-52.5C200.7,-52.5 189.78,-52.5 179.13,-52.5"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="211.71,-56 221.71,-52.5 211.71,-49 211.71,-56"/>
 </a>
 </g>
 </g>
 <!-- Node6&#45;&gt;Node3 -->
-<g id="edge7_Node000006_Node000003" class="edge">
+<g id="edge6_Node000006_Node000003" class="edge">
 <title>Node6&#45;&gt;Node3</title>
-<g id="a_edge7_Node000006_Node000003"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M233.93,-52.5C217.1,-52.5 199.27,-52.5 182.21,-52.5"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="234.26,-56 244.26,-52.5 234.26,-49 234.26,-56"/>
+<g id="a_edge6_Node000006_Node000003"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M470.45,-83.98C435.55,-77.11 391.78,-68.5 358.86,-62.02"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="470.02,-87.46 480.51,-85.96 471.37,-80.59 470.02,-87.46"/>
+</a>
+</g>
+</g>
+<!-- Node7&#45;&gt;Node3 -->
+<g id="edge8_Node000007_Node000003" class="edge">
+<title>Node7&#45;&gt;Node3</title>
+<g id="a_edge8_Node000007_Node000003"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M448.93,-52.5C432.1,-52.5 414.27,-52.5 397.21,-52.5"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="449.26,-56 459.26,-52.5 449.26,-49 449.26,-56"/>
 </a>
 </g>
 </g>

@@ -1,7 +1,9 @@
 <map id="rtype::client::IScene" name="rtype::client::IScene">
-<area shape="rect" id="Node000001" title="Interface that all scenes must implement." alt="" coords="152,5,448,240"/>
-<area shape="rect" id="Node000002" href="$classrtype_1_1client_1_1MainMenuScene.html" title="Represents the primary interactive menu displayed at application startup." alt="" coords="5,288,288,497"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="229,253,208,289,204,287,224,250"/>
-<area shape="rect" id="Node000003" href="$classrtype_1_1client_1_1OptionsMenuScene.html" title="Scene representing the in&#45;game options menu." alt="" coords="312,298,595,487"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="376,251,402,297,397,299,371,253"/>
+<area shape="rect" id="Node000001" title="Interface that all scenes must implement." alt="" coords="327,5,580,160"/>
+<area shape="rect" id="Node000002" href="$classrtype_1_1client_1_1GameScene.html" title=" " alt="" coords="5,208,288,536"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="346,171,302,210,290,221,287,217,298,206,343,167"/>
+<area shape="rect" id="Node000003" href="$classrtype_1_1client_1_1MainMenuScene.html" title="Represents the primary interactive menu displayed at application startup." alt="" coords="312,267,595,477"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="456,173,456,267,451,267,451,173"/>
+<area shape="rect" id="Node000004" href="$classrtype_1_1client_1_1OptionsMenuScene.html" title="Scene representing the in&#45;game options menu." alt="" coords="619,277,901,467"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="564,167,608,206,678,275,674,279,605,210,560,171"/>
 </map>

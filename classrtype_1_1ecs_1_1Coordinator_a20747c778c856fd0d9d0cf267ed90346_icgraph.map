@@ -1,15 +1,17 @@
 <map id="rtype::ecs::Coordinator::createEntity" name="rtype::ecs::Coordinator::createEntity">
-<area shape="rect" id="Node000001" title="Create a new entity id." alt="" coords="593,63,851,88"/>
-<area shape="rect" id="Node000002" href="$namespacertype_1_1ecs_1_1factory.html#aadd8634669966a1015c4208fb07a4924" title="Creates an enemy entity with health, movement, and weapon setup." alt="" coords="305,120,545,145"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="642,93,492,123,491,117,641,88"/>
-<area shape="rect" id="Node000005" href="$namespacertype_1_1ecs_1_1factory.html#a3c5bd23a9782afd2fc07153216b5b0d2" title="Creates a player entity with full stats, movement, and weapon setup." alt="" coords="307,5,543,31"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="641,63,491,33,492,28,642,57"/>
-<area shape="rect" id="Node000006" href="$namespacertype_1_1ecs_1_1factory.html#a5a8314ddbfde6228ddddaa6989d791ba" title="Creates a projectile entity with movement and damage attributes." alt="" coords="331,55,519,95"/>
-<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="580,78,520,78,520,73,580,73"/>
-<area shape="rect" id="Node000003" href="$namespacertype_1_1ecs_1_1factory.html#a20e6c6134ae9cf710eb5eabdb60178de" title="Dispatches entity creation based on its network schema type." alt="" coords="15,63,248,88"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="345,120,197,91,198,85,346,115"/>
-<area shape="rect" id="Node000004" href="$classrtype_1_1ecs_1_1SpawnerSystem.html#a43233061bedb890c68c419ec3ea6a5ee" title="Updates the system each tick and spawns new entities as needed." alt="" coords="5,120,257,145"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="292,135,257,135,257,130,292,130"/>
-<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="346,36,198,65,197,60,345,31"/>
-<area shape="poly" id="edge7_Node000006_Node000003" title=" " alt="" coords="317,78,248,78,248,73,317,73"/>
+<area shape="rect" id="Node000001" title="Create a new entity id." alt="" coords="880,63,1137,88"/>
+<area shape="rect" id="Node000002" href="$namespacertype_1_1ecs_1_1factory.html#aadd8634669966a1015c4208fb07a4924" title="Creates an enemy entity with health, movement, and weapon setup." alt="" coords="592,120,832,145"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="929,93,779,123,778,117,928,88"/>
+<area shape="rect" id="Node000006" href="$namespacertype_1_1ecs_1_1factory.html#a3c5bd23a9782afd2fc07153216b5b0d2" title="Creates a player entity with full stats, movement, and weapon setup." alt="" coords="594,5,830,31"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="928,63,778,33,779,28,929,57"/>
+<area shape="rect" id="Node000007" href="$namespacertype_1_1ecs_1_1factory.html#a5a8314ddbfde6228ddddaa6989d791ba" title="Creates a projectile entity with movement and damage attributes." alt="" coords="618,55,806,95"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="866,78,806,78,806,73,866,73"/>
+<area shape="rect" id="Node000003" href="$namespacertype_1_1ecs_1_1factory.html#a20e6c6134ae9cf710eb5eabdb60178de" title="Dispatches entity creation based on its network schema type." alt="" coords="301,63,535,88"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="632,120,483,91,484,85,633,115"/>
+<area shape="rect" id="Node000005" href="$classrtype_1_1ecs_1_1SpawnerSystem.html#a43233061bedb890c68c419ec3ea6a5ee" title="Updates the system each tick and spawns new entities as needed." alt="" coords="292,120,544,145"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="578,135,544,135,544,130,578,130"/>
+<area shape="rect" id="Node000004" href="$classrtype_1_1client_1_1GameScene.html#a6942b138a7daf65e0c1f01a0bd4fb322" title="Main update loop for the scene." alt="" coords="5,63,244,88"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="287,78,244,78,244,73,287,73"/>
+<area shape="poly" id="edge6_Node000006_Node000003" title=" " alt="" coords="633,36,484,65,483,60,632,31"/>
+<area shape="poly" id="edge8_Node000007_Node000003" title=" " alt="" coords="604,78,535,78,535,73,604,73"/>
 </map>

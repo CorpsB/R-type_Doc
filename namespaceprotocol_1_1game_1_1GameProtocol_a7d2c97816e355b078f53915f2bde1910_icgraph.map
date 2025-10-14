@@ -1,8 +1,10 @@
 <map id="protocol::game::GameProtocol::get_event" name="protocol::game::GameProtocol::get_event">
-<area shape="rect" id="Node000001" title="Retrieve and convert a core event into a game_event_t." alt="" coords="291,29,511,69"/>
-<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="439,18,425,11,401,8,379,10,366,15,361,21,364,28,359,30,356,20,363,10,378,5,401,3,427,6,441,13"/>
-<area shape="rect" id="Node000002" href="$classrtype_1_1server.html#a703fd91ca5d705369acef8f6e505e32d" title="Starts the main execution loop of the server." alt="" coords="108,37,243,62"/>
-<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="277,52,243,52,243,47,277,47"/>
-<area shape="rect" id="Node000003" href="$Server_2main_8cpp.html#a0c99d968a34e803d378692bde2e3f18f" title="Program entry point." alt="" coords="5,37,60,62"/>
-<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="94,52,60,52,60,47,94,47"/>
+<area shape="rect" id="Node000001" title="Retrieve and convert a core event into a game_event_t." alt="" coords="395,29,615,69"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="552,18,535,11,505,8,478,10,461,15,455,21,458,28,453,30,450,20,459,10,477,5,505,3,537,5,554,13"/>
+<area shape="rect" id="Node000002" href="$classrtype_1_1server.html#a703fd91ca5d705369acef8f6e505e32d" title="Starts the main execution loop of the server." alt="" coords="160,11,295,37"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="381,41,294,33,295,27,381,35"/>
+<area shape="rect" id="Node000004" href="$classrtype_1_1client_1_1GameScene.html#a6942b138a7daf65e0c1f01a0bd4fb322" title="Main update loop for the scene." alt="" coords="108,61,347,86"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="381,63,347,66,347,60,381,57"/>
+<area shape="rect" id="Node000003" href="$Server_2main_8cpp.html#a0c99d968a34e803d378692bde2e3f18f" title="Program entry point." alt="" coords="5,11,60,37"/>
+<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="146,27,60,27,60,21,146,21"/>
 </map>

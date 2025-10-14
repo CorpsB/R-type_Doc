@@ -1,31 +1,33 @@
 <map id="rtype::ecs::Coordinator::destroyEntity" name="rtype::ecs::Coordinator::destroyEntity">
-<area shape="rect" id="Node000001" title="Destroy an entity and remove it from all managers." alt="" coords="1125,114,1391,139"/>
-<area shape="rect" id="Node000002" href="$namespacertype_1_1ecs_1_1factory.html#a7cf1b038cae209ff98ae6c2d74390d41" title="Helper template to add a component and destroy the entity on failure." alt="" coords="887,106,1077,146"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1112,129,1077,129,1077,124,1112,124"/>
-<area shape="rect" id="Node000003" href="$namespacertype_1_1ecs_1_1factory.html#aadd8634669966a1015c4208fb07a4924" title="Creates an enemy entity with health, movement, and weapon setup." alt="" coords="305,83,545,108"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="949,99,900,60,870,42,838,29,771,12,717,9,663,15,594,29,553,40,514,55,451,85,448,80,512,50,552,35,593,24,662,10,717,3,772,7,840,24,872,37,903,56,953,95"/>
-<area shape="rect" id="Node000006" href="$namespacertype_1_1ecs_1_1factory.html#a3c5bd23a9782afd2fc07153216b5b0d2" title="Creates a player entity with full stats, movement, and weapon setup." alt="" coords="307,132,543,158"/>
-<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="873,133,544,144,543,138,872,127"/>
-<area shape="rect" id="Node000007" href="$namespacertype_1_1ecs_1_1factory.html#a5a8314ddbfde6228ddddaa6989d791ba" title="Creates a projectile entity with movement and damage attributes." alt="" coords="331,182,519,222"/>
-<area shape="poly" id="edge7_Node000002_Node000007" title=" " alt="" coords="953,158,903,198,872,216,840,230,795,241,749,248,657,249,571,239,498,225,499,220,572,234,657,244,749,242,794,236,838,225,870,212,900,193,950,154"/>
-<area shape="rect" id="Node000008" href="$namespacertype_1_1ecs_1_1factory.html#abbec02b513c2ad4e3a2b9b00a491d755" title="Adds movement&#45;related components (position, direction, speed)." alt="" coords="593,190,839,215"/>
-<area shape="poly" id="edge9_Node000002_Node000008" title=" " alt="" coords="906,153,839,173,768,192,767,187,838,168,904,148"/>
-<area shape="rect" id="Node000009" href="$namespacertype_1_1ecs_1_1factory.html#aeabb5337b4bf656d02046fb676ce13b1" title="Adds hitbox and sprite components if provided." alt="" coords="615,88,817,114"/>
-<area shape="poly" id="edge13_Node000002_Node000009" title=" " alt="" coords="873,119,817,113,817,108,873,113"/>
-<area shape="rect" id="Node000010" href="$namespacertype_1_1ecs_1_1factory.html#a5479c88a043755974c85001d4336327a" title="Adds weapon&#45;related components (damage, frequency)." alt="" coords="603,39,829,64"/>
-<area shape="poly" id="edge17_Node000002_Node000010" title=" " alt="" coords="916,104,838,78,790,67,791,62,839,73,918,99"/>
-<area shape="rect" id="Node000004" href="$namespacertype_1_1ecs_1_1factory.html#a20e6c6134ae9cf710eb5eabdb60178de" title="Dispatches entity creation based on its network schema type." alt="" coords="15,132,248,158"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="336,113,208,135,207,130,335,108"/>
-<area shape="rect" id="Node000005" href="$classrtype_1_1ecs_1_1SpawnerSystem.html#a43233061bedb890c68c419ec3ea6a5ee" title="Updates the system each tick and spawns new entities as needed." alt="" coords="5,83,257,108"/>
-<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="292,98,257,98,257,93,292,93"/>
-<area shape="poly" id="edge6_Node000006_Node000004" title=" " alt="" coords="293,148,248,148,248,142,293,142"/>
-<area shape="poly" id="edge8_Node000007_Node000004" title=" " alt="" coords="317,184,197,160,198,155,318,179"/>
-<area shape="poly" id="edge10_Node000008_Node000003" title=" " alt="" coords="679,185,618,154,544,124,499,111,500,106,546,119,620,149,682,181"/>
-<area shape="poly" id="edge11_Node000008_Node000006" title=" " alt="" coords="637,190,490,160,491,155,638,184"/>
-<area shape="poly" id="edge12_Node000008_Node000007" title=" " alt="" coords="579,205,520,205,520,200,579,200"/>
-<area shape="poly" id="edge14_Node000009_Node000003" title=" " alt="" coords="601,102,545,101,546,95,601,96"/>
-<area shape="poly" id="edge15_Node000009_Node000006" title=" " alt="" coords="619,118,510,135,510,130,618,113"/>
-<area shape="poly" id="edge16_Node000009_Node000007" title=" " alt="" coords="675,122,546,173,508,185,506,180,544,168,673,117"/>
-<area shape="poly" id="edge18_Node000010_Node000003" title=" " alt="" coords="619,69,510,86,510,80,618,64"/>
-<area shape="poly" id="edge19_Node000010_Node000006" title=" " alt="" coords="610,71,595,78,580,89,571,100,562,112,547,123,518,135,516,130,544,119,558,108,567,97,577,85,592,73,608,66"/>
+<area shape="rect" id="Node000001" title="Destroy an entity and remove it from all managers." alt="" coords="1412,114,1677,139"/>
+<area shape="rect" id="Node000002" href="$namespacertype_1_1ecs_1_1factory.html#a7cf1b038cae209ff98ae6c2d74390d41" title="Helper template to add a component and destroy the entity on failure." alt="" coords="1173,106,1364,146"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1398,129,1364,129,1364,124,1398,124"/>
+<area shape="rect" id="Node000003" href="$namespacertype_1_1ecs_1_1factory.html#aadd8634669966a1015c4208fb07a4924" title="Creates an enemy entity with health, movement, and weapon setup." alt="" coords="592,83,832,108"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="1236,99,1186,60,1156,42,1124,29,1058,12,1004,9,949,15,881,29,840,40,801,55,737,85,735,80,798,50,838,35,879,24,948,10,1004,3,1059,7,1126,24,1159,37,1189,56,1239,95"/>
+<area shape="rect" id="Node000007" href="$namespacertype_1_1ecs_1_1factory.html#a3c5bd23a9782afd2fc07153216b5b0d2" title="Creates a player entity with full stats, movement, and weapon setup." alt="" coords="594,132,830,158"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="1159,133,830,144,830,138,1159,127"/>
+<area shape="rect" id="Node000008" href="$namespacertype_1_1ecs_1_1factory.html#a5a8314ddbfde6228ddddaa6989d791ba" title="Creates a projectile entity with movement and damage attributes." alt="" coords="618,182,806,222"/>
+<area shape="poly" id="edge8_Node000002_Node000008" title=" " alt="" coords="1240,158,1190,198,1159,216,1126,230,1082,241,1036,248,944,249,858,239,785,225,786,220,858,234,944,244,1036,242,1081,236,1124,225,1157,212,1187,193,1236,154"/>
+<area shape="rect" id="Node000009" href="$namespacertype_1_1ecs_1_1factory.html#abbec02b513c2ad4e3a2b9b00a491d755" title="Adds movement&#45;related components (position, direction, speed)." alt="" coords="880,190,1125,215"/>
+<area shape="poly" id="edge10_Node000002_Node000009" title=" " alt="" coords="1192,153,1126,173,1055,192,1054,187,1125,168,1191,148"/>
+<area shape="rect" id="Node000010" href="$namespacertype_1_1ecs_1_1factory.html#aeabb5337b4bf656d02046fb676ce13b1" title="Adds hitbox and sprite components if provided." alt="" coords="902,88,1103,114"/>
+<area shape="poly" id="edge14_Node000002_Node000010" title=" " alt="" coords="1159,119,1103,113,1104,108,1160,113"/>
+<area shape="rect" id="Node000011" href="$namespacertype_1_1ecs_1_1factory.html#a5479c88a043755974c85001d4336327a" title="Adds weapon&#45;related components (damage, frequency)." alt="" coords="890,39,1115,64"/>
+<area shape="poly" id="edge18_Node000002_Node000011" title=" " alt="" coords="1203,104,1125,78,1077,67,1078,62,1126,73,1205,99"/>
+<area shape="rect" id="Node000004" href="$namespacertype_1_1ecs_1_1factory.html#a20e6c6134ae9cf710eb5eabdb60178de" title="Dispatches entity creation based on its network schema type." alt="" coords="301,132,535,158"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="623,113,495,135,494,130,622,108"/>
+<area shape="rect" id="Node000006" href="$classrtype_1_1ecs_1_1SpawnerSystem.html#a43233061bedb890c68c419ec3ea6a5ee" title="Updates the system each tick and spawns new entities as needed." alt="" coords="292,83,544,108"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="578,98,544,98,544,93,578,93"/>
+<area shape="rect" id="Node000005" href="$classrtype_1_1client_1_1GameScene.html#a6942b138a7daf65e0c1f01a0bd4fb322" title="Main update loop for the scene." alt="" coords="5,132,244,158"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="287,148,244,148,244,142,287,142"/>
+<area shape="poly" id="edge7_Node000007_Node000004" title=" " alt="" coords="580,148,535,148,535,142,580,142"/>
+<area shape="poly" id="edge9_Node000008_Node000004" title=" " alt="" coords="604,184,483,160,484,155,605,179"/>
+<area shape="poly" id="edge11_Node000009_Node000003" title=" " alt="" coords="966,185,904,154,831,124,786,111,787,106,833,119,906,149,968,181"/>
+<area shape="poly" id="edge12_Node000009_Node000007" title=" " alt="" coords="924,190,777,160,778,155,925,184"/>
+<area shape="poly" id="edge13_Node000009_Node000008" title=" " alt="" coords="866,205,806,205,806,200,866,200"/>
+<area shape="poly" id="edge15_Node000010_Node000003" title=" " alt="" coords="888,102,832,101,832,95,888,96"/>
+<area shape="poly" id="edge16_Node000010_Node000007" title=" " alt="" coords="906,118,797,135,796,130,905,113"/>
+<area shape="poly" id="edge17_Node000010_Node000008" title=" " alt="" coords="961,122,833,173,794,185,793,180,831,168,959,117"/>
+<area shape="poly" id="edge19_Node000011_Node000003" title=" " alt="" coords="906,69,797,86,796,80,905,64"/>
+<area shape="poly" id="edge20_Node000011_Node000007" title=" " alt="" coords="897,71,881,78,867,89,858,100,849,112,833,123,805,135,803,130,831,119,845,108,854,97,863,85,879,73,894,66"/>
 </map>

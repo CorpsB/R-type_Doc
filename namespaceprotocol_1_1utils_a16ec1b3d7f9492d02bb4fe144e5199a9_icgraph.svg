@@ -46,7 +46,7 @@
   </g>
 </defs>
 <script type="application/ecmascript">
-var viewWidth = 882;
+var viewWidth = 960;
 var viewHeight = 69;
 var sectionId = 'dynsection-10';
 </script>
@@ -58,8 +58,8 @@ var sectionId = 'dynsection-10';
 <g id="Node000001" class="node">
 <title>Node1</title>
 <g id="a_Node000001"><a xlink:title="Read an 8&#45;bit unsigned integer from a byte buffer at the given offset.">
-<polygon fill="#999999" stroke="#666666" points="874,-37 746,-37 746,-18 874,-18 874,-37"/>
-<text text-anchor="middle" x="810" y="-25" font-family="Helvetica,sans-Serif" font-size="10.00">protocol::utils::read_u8</text>
+<polygon fill="#999999" stroke="#666666" points="952,-37 824,-37 824,-18 952,-18 952,-37"/>
+<text text-anchor="middle" x="888" y="-25" font-family="Helvetica,sans-Serif" font-size="10.00">protocol::utils::read_u8</text>
 </a>
 </g>
 </g>
@@ -67,8 +67,8 @@ var sectionId = 'dynsection-10';
 <g id="Node000002" class="node">
 <title>Node2</title>
 <g id="a_Node000002"><a xlink:href="GameProtocol_8cpp.html#acf6b25d75eab1ab4ca361f6161a5fc7d" target="_top" xlink:title="Attempt to deserialize a CREATE_ENTITY payload from a byte buffer.">
-<polygon fill="white" stroke="#666666" points="710,-56 552,-56 552,-37 710,-37 710,-56"/>
-<text text-anchor="middle" x="631" y="-44" font-family="Helvetica,sans-Serif" font-size="10.00">try_deserialize_create_entity</text>
+<polygon fill="white" stroke="#666666" points="788,-56 630,-56 630,-37 788,-37 788,-56"/>
+<text text-anchor="middle" x="709" y="-44" font-family="Helvetica,sans-Serif" font-size="10.00">try_deserialize_create_entity</text>
 </a>
 </g>
 </g>
@@ -76,26 +76,26 @@ var sectionId = 'dynsection-10';
 <g id="edge1_Node000001_Node000002" class="edge">
 <title>Node1&#45;&gt;Node2</title>
 <g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M735.49,-35.39C727.1,-36.29 718.54,-37.21 710.1,-38.12"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="736.03,-38.85 745.6,-34.31 735.28,-31.89 736.03,-38.85"/>
+<path fill="none" stroke="#63b8ff" d="M813.49,-35.39C805.1,-36.29 796.54,-37.21 788.1,-38.12"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="814.03,-38.85 823.6,-34.31 813.28,-31.89 814.03,-38.85"/>
 </a>
 </g>
 </g>
-<!-- Node7 -->
-<g id="Node000007" class="node">
-<title>Node7</title>
-<g id="a_Node000007"><a xlink:href="GameProtocol_8cpp.html#a12cd3dff895dc77b141e34e46507fdd9" target="_top" xlink:title="Attempt to deserialize a PLAYER_INPUT payload.">
-<polygon fill="white" stroke="#666666" points="708.5,-19 553.5,-19 553.5,0 708.5,0 708.5,-19"/>
-<text text-anchor="middle" x="631" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">try_deserialize_player_input</text>
+<!-- Node8 -->
+<g id="Node000008" class="node">
+<title>Node8</title>
+<g id="a_Node000008"><a xlink:href="GameProtocol_8cpp.html#a12cd3dff895dc77b141e34e46507fdd9" target="_top" xlink:title="Attempt to deserialize a PLAYER_INPUT payload.">
+<polygon fill="white" stroke="#666666" points="786.5,-19 631.5,-19 631.5,0 786.5,0 786.5,-19"/>
+<text text-anchor="middle" x="709" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">try_deserialize_player_input</text>
 </a>
 </g>
 </g>
-<!-- Node1&#45;&gt;Node7 -->
-<g id="edge7_Node000001_Node000007" class="edge">
-<title>Node1&#45;&gt;Node7</title>
-<g id="a_edge7_Node000001_Node000007"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M735.62,-20.04C726.69,-19.13 717.54,-18.2 708.56,-17.29"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="735.3,-23.52 745.6,-21.05 736,-16.56 735.3,-23.52"/>
+<!-- Node1&#45;&gt;Node8 -->
+<g id="edge8_Node000001_Node000008" class="edge">
+<title>Node1&#45;&gt;Node8</title>
+<g id="a_edge8_Node000001_Node000008"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M813.62,-20.04C804.69,-19.13 795.54,-18.2 786.56,-17.29"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="813.3,-23.52 823.6,-21.05 814,-16.56 813.3,-23.52"/>
 </a>
 </g>
 </g>
@@ -103,8 +103,8 @@ var sectionId = 'dynsection-10';
 <g id="Node000003" class="node">
 <title>Node3</title>
 <g id="a_Node000003"><a xlink:href="GameProtocol_8cpp.html#a3f3b75a96b838a72b594b63f15ce2dc2" target="_top" xlink:title="Convert a core packet event (protocol::packet_t inside core_event_t) into a game&#45;level event.">
-<polygon fill="white" stroke="#666666" points="516,-37 415,-37 415,-18 516,-18 516,-37"/>
-<text text-anchor="middle" x="465.5" y="-25" font-family="Helvetica,sans-Serif" font-size="10.00">retrieve_package</text>
+<polygon fill="white" stroke="#666666" points="594,-37 493,-37 493,-18 594,-18 594,-37"/>
+<text text-anchor="middle" x="543.5" y="-25" font-family="Helvetica,sans-Serif" font-size="10.00">retrieve_package</text>
 </a>
 </g>
 </g>
@@ -112,8 +112,8 @@ var sectionId = 'dynsection-10';
 <g id="edge2_Node000002_Node000003" class="edge">
 <title>Node2&#45;&gt;Node3</title>
 <g id="a_edge2_Node000002_Node000003"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M541.51,-36.22C532.93,-35.22 524.45,-34.23 516.45,-33.3"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="541.26,-39.71 551.6,-37.39 542.07,-32.76 541.26,-39.71"/>
+<path fill="none" stroke="#63b8ff" d="M619.51,-36.22C610.93,-35.22 602.45,-34.23 594.45,-33.3"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="619.26,-39.71 629.6,-37.39 620.07,-32.76 619.26,-39.71"/>
 </a>
 </g>
 </g>
@@ -121,9 +121,9 @@ var sectionId = 'dynsection-10';
 <g id="Node000004" class="node">
 <title>Node4</title>
 <g id="a_Node000004"><a xlink:href="namespaceprotocol_1_1game_1_1GameProtocol.html#a7d2c97816e355b078f53915f2bde1910" target="_top" xlink:title="Retrieve and convert a core event into a game_event_t.">
-<polygon fill="white" stroke="#666666" points="379,-42.5 214,-42.5 214,-12.5 379,-12.5 379,-42.5"/>
-<text text-anchor="start" x="222" y="-30.5" font-family="Helvetica,sans-Serif" font-size="10.00">protocol::game::GameProtocol</text>
-<text text-anchor="middle" x="296.5" y="-19.5" font-family="Helvetica,sans-Serif" font-size="10.00">::get_event</text>
+<polygon fill="white" stroke="#666666" points="457,-42.5 292,-42.5 292,-12.5 457,-12.5 457,-42.5"/>
+<text text-anchor="start" x="300" y="-30.5" font-family="Helvetica,sans-Serif" font-size="10.00">protocol::game::GameProtocol</text>
+<text text-anchor="middle" x="374.5" y="-19.5" font-family="Helvetica,sans-Serif" font-size="10.00">::get_event</text>
 </a>
 </g>
 </g>
@@ -131,8 +131,8 @@ var sectionId = 'dynsection-10';
 <g id="edge3_Node000003_Node000004" class="edge">
 <title>Node3&#45;&gt;Node4</title>
 <g id="a_edge3_Node000003_Node000004"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M404.59,-27.5C396.34,-27.5 387.74,-27.5 379.18,-27.5"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="404.85,-31 414.85,-27.5 404.85,-24 404.85,-31"/>
+<path fill="none" stroke="#63b8ff" d="M482.59,-27.5C474.34,-27.5 465.74,-27.5 457.18,-27.5"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="482.85,-31 492.85,-27.5 482.85,-24 482.85,-31"/>
 </a>
 </g>
 </g>
@@ -140,8 +140,8 @@ var sectionId = 'dynsection-10';
 <g id="edge4_Node000004_Node000004" class="edge">
 <title>Node4&#45;&gt;Node4</title>
 <g id="a_edge4_Node000004_Node000004"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M325.91,-53.1C321.89,-57.47 312.09,-60.5 296.5,-60.5 270.25,-60.5 260.41,-51.91 266.97,-42.78"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="329.41,-52.82 326.03,-42.78 322.41,-52.73 329.41,-52.82"/>
+<path fill="none" stroke="#63b8ff" d="M403.91,-53.1C399.89,-57.47 390.09,-60.5 374.5,-60.5 348.25,-60.5 338.41,-51.91 344.97,-42.78"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="407.41,-52.82 404.03,-42.78 400.41,-52.73 407.41,-52.82"/>
 </a>
 </g>
 </g>
@@ -149,8 +149,8 @@ var sectionId = 'dynsection-10';
 <g id="Node000005" class="node">
 <title>Node5</title>
 <g id="a_Node000005"><a xlink:href="classrtype_1_1server.html#a703fd91ca5d705369acef8f6e505e32d" target="_top" xlink:title="Starts the main execution loop of the server.">
-<polygon fill="white" stroke="#666666" points="178,-37 77,-37 77,-18 178,-18 178,-37"/>
-<text text-anchor="middle" x="127.5" y="-25" font-family="Helvetica,sans-Serif" font-size="10.00">rtype::server::run</text>
+<polygon fill="white" stroke="#666666" points="217,-56 116,-56 116,-37 217,-37 217,-56"/>
+<text text-anchor="middle" x="166.5" y="-44" font-family="Helvetica,sans-Serif" font-size="10.00">rtype::server::run</text>
 </a>
 </g>
 </g>
@@ -158,8 +158,26 @@ var sectionId = 'dynsection-10';
 <g id="edge5_Node000004_Node000005" class="edge">
 <title>Node4&#45;&gt;Node5</title>
 <g id="a_edge5_Node000004_Node000005"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M203.91,-27.5C195.05,-27.5 186.3,-27.5 178.08,-27.5"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="203.96,-31 213.96,-27.5 203.96,-24 203.96,-31"/>
+<path fill="none" stroke="#63b8ff" d="M281.64,-35.97C259.41,-38.02 236.48,-40.14 217.05,-41.93"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="282.15,-39.44 291.79,-35.04 281.51,-32.47 282.15,-39.44"/>
+</a>
+</g>
+</g>
+<!-- Node7 -->
+<g id="Node000007" class="node">
+<title>Node7</title>
+<g id="a_Node000007"><a xlink:href="classrtype_1_1client_1_1GameScene.html#a6942b138a7daf65e0c1f01a0bd4fb322" target="_top" xlink:title="Main update loop for the scene.">
+<polygon fill="white" stroke="#666666" points="256,-19 77,-19 77,0 256,0 256,-19"/>
+<text text-anchor="middle" x="166.5" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">rtype::client::GameScene::update</text>
+</a>
+</g>
+</g>
+<!-- Node4&#45;&gt;Node7 -->
+<g id="edge7_Node000004_Node000007" class="edge">
+<title>Node4&#45;&gt;Node7</title>
+<g id="a_edge7_Node000004_Node000007"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M281.58,-19.47C273.15,-18.73 264.63,-17.99 256.23,-17.25"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="281.52,-22.98 291.79,-20.36 282.13,-16 281.52,-22.98"/>
 </a>
 </g>
 </g>
@@ -167,8 +185,8 @@ var sectionId = 'dynsection-10';
 <g id="Node000006" class="node">
 <title>Node6</title>
 <g id="a_Node000006"><a xlink:href="Server_2main_8cpp.html#a0c99d968a34e803d378692bde2e3f18f" target="_top" xlink:title="Program entry point.">
-<polygon fill="white" stroke="#666666" points="41,-37 0,-37 0,-18 41,-18 41,-37"/>
-<text text-anchor="middle" x="20.5" y="-25" font-family="Helvetica,sans-Serif" font-size="10.00">main</text>
+<polygon fill="white" stroke="#666666" points="41,-56 0,-56 0,-37 41,-37 41,-56"/>
+<text text-anchor="middle" x="20.5" y="-44" font-family="Helvetica,sans-Serif" font-size="10.00">main</text>
 </a>
 </g>
 </g>
@@ -176,17 +194,17 @@ var sectionId = 'dynsection-10';
 <g id="edge6_Node000005_Node000006" class="edge">
 <title>Node5&#45;&gt;Node6</title>
 <g id="a_edge6_Node000005_Node000006"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M66.72,-27.5C57.53,-27.5 48.64,-27.5 41.2,-27.5"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="66.77,-31 76.77,-27.5 66.77,-24 66.77,-31"/>
+<path fill="none" stroke="#63b8ff" d="M105.82,-46.5C82.69,-46.5 57.81,-46.5 41.12,-46.5"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="105.94,-50 115.94,-46.5 105.94,-43 105.94,-50"/>
 </a>
 </g>
 </g>
-<!-- Node7&#45;&gt;Node3 -->
-<g id="edge8_Node000007_Node000003" class="edge">
-<title>Node7&#45;&gt;Node3</title>
-<g id="a_edge8_Node000007_Node000003"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M543,-19.08C533.75,-20.1 524.6,-21.1 516.01,-22.05"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="543.48,-22.55 553.04,-17.97 542.71,-15.59 543.48,-22.55"/>
+<!-- Node8&#45;&gt;Node3 -->
+<g id="edge9_Node000008_Node000003" class="edge">
+<title>Node8&#45;&gt;Node3</title>
+<g id="a_edge9_Node000008_Node000003"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M621,-19.08C611.75,-20.1 602.6,-21.1 594.01,-22.05"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="621.48,-22.55 631.04,-17.97 620.71,-15.59 621.48,-22.55"/>
 </a>
 </g>
 </g>

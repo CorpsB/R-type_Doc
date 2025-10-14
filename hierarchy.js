@@ -31,6 +31,7 @@ var hierarchy =
     [ "rtype::client::GameSettings", "classrtype_1_1client_1_1GameSettings.html", null ],
     [ "rtype::client::InputManager", "classrtype_1_1client_1_1InputManager.html", null ],
     [ "rtype::client::IScene", "classrtype_1_1client_1_1IScene.html", [
+      [ "rtype::client::GameScene", "classrtype_1_1client_1_1GameScene.html", null ],
       [ "rtype::client::MainMenuScene", "classrtype_1_1client_1_1MainMenuScene.html", null ],
       [ "rtype::client::OptionsMenuScene", "classrtype_1_1client_1_1OptionsMenuScene.html", null ]
     ] ],

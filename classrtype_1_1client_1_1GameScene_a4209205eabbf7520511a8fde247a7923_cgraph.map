@@ -1,0 +1,15 @@
+<map id="rtype::client::GameScene::connect" name="rtype::client::GameScene::connect">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,119,251,144"/>
+<area shape="rect" id="Node000002" href="$namespaceprotocol_1_1game_1_1GameProtocol.html#a82bb05ba2e71bcf41f991da46853bad7" title="Initialize game protocol and bind a local UDP endpoint." alt="" coords="299,47,519,87"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="184,116,306,88,308,93,186,121"/>
+<area shape="rect" id="Node000006" href="$namespaceprotocol_1_1game_1_1GameProtocol.html#a0d915e98b8e2191ae722639b170e73ea" title="Send a CONNECT_REQ message to a server (client&#45;side convenience)." alt="" coords="299,111,519,151"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="251,129,285,129,285,134,251,134"/>
+<area shape="rect" id="Node000007" href="$namespaceprotocol_1_1game_1_1GameProtocol.html#a9e31e3918d2366ee2d8b3eb8b946c5de" title="Start the underlying Protocol IO loop (non&#45;blocking, spawns thread)." alt="" coords="299,175,519,215"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="186,142,308,170,306,175,184,147"/>
+<area shape="rect" id="Node000003" href="$classprotocol_1_1Protocol.html#a84c493e745daa3623898f5aa235774ba" title="Clear any previously stored endpoint." alt="" coords="567,5,801,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="518,45,599,31,599,36,519,50"/>
+<area shape="rect" id="Node000004" href="$classprotocol_1_1Protocol.html#a4e019a5e18ff4fd1287beddceb4e1e2c" title="Initialize and bind the local UDP socket." alt="" coords="601,55,767,80"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="519,65,588,65,588,70,519,70"/>
+<area shape="rect" id="Node000005" href="$classprotocol_1_1Protocol.html#a4ab1bbadf74acc6ae80a4cdfdbc30b19" title="Store a &quot;preferred&quot; remote endpoint for convenience operations." alt="" coords="567,104,801,129"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="519,84,599,99,599,104,518,90"/>
+</map>
