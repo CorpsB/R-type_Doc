@@ -30,7 +30,7 @@ var namespaceprotocol_1_1game =
     [ "player_id_t", "namespaceprotocol_1_1game.html#af73509b55868f0169ae63813c0f7baae", null ],
     [ "position_t", "namespaceprotocol_1_1game.html#a6736533294d2876d3dc4bc0b248a9c97", null ],
     [ "entity_type_t", "namespaceprotocol_1_1game.html#a58051a0f9c1c650d605d71a73e9437bd", [
-      [ "NONE", "namespaceprotocol_1_1game.html#a58051a0f9c1c650d605d71a73e9437bdac659bc98b8d03c06a8b21e7c3a516d87", null ],
+      [ "NONE", "namespaceprotocol_1_1game.html#a58051a0f9c1c650d605d71a73e9437bda0d5f85390e63d94e3159332f8c8746c1", null ],
       [ "PLAYER", "namespaceprotocol_1_1game.html#a58051a0f9c1c650d605d71a73e9437bda36feead328784e91b2c8f5cafd543773", null ],
       [ "ENEMY", "namespaceprotocol_1_1game.html#a58051a0f9c1c650d605d71a73e9437bdaede731433a6fbec7240dc94ebe9ac41a", null ],
       [ "PROJECTILE", "namespaceprotocol_1_1game.html#a58051a0f9c1c650d605d71a73e9437bda1fb4b4514aa45ab3f36aba6806781b4e", null ]
@@ -56,6 +56,15 @@ var namespaceprotocol_1_1game =
       [ "CONNECT_REQ", "namespaceprotocol_1_1game.html#ad4d21ce1bb315afe579f5abed923f701ab772a6cd3e6b3c8294373940dd51265c", null ],
       [ "DISCONNECT_REQ", "namespaceprotocol_1_1game.html#ad4d21ce1bb315afe579f5abed923f701adc3880a1fff2a812ed3c53af23107839", null ],
       [ "PING", "namespaceprotocol_1_1game.html#ad4d21ce1bb315afe579f5abed923f701ae07ff41a486c27c095a15898dcca34d1", null ]
+    ] ],
+    [ "player_input_t", "namespaceprotocol_1_1game.html#aa65405265af95e2ad16de5c1bf6499c8", [
+      [ "NONE", "namespaceprotocol_1_1game.html#a58051a0f9c1c650d605d71a73e9437bda0d5f85390e63d94e3159332f8c8746c1", null ],
+      [ "FIRE", "namespaceprotocol_1_1game.html#aa65405265af95e2ad16de5c1bf6499c8ab9a98fc8ae0032750322256c6a61bb43", null ],
+      [ "UP", "namespaceprotocol_1_1game.html#aa65405265af95e2ad16de5c1bf6499c8a2be465b821070491d05cfcbbe59cf4fd", null ],
+      [ "DOWN", "namespaceprotocol_1_1game.html#aa65405265af95e2ad16de5c1bf6499c8af1919fc79fc549bfb7dd14ed5bcbcee9", null ],
+      [ "LEFT", "namespaceprotocol_1_1game.html#aa65405265af95e2ad16de5c1bf6499c8a53b74dc2a9d0fc30b42fbfe1c34166da", null ],
+      [ "RIGHT", "namespaceprotocol_1_1game.html#aa65405265af95e2ad16de5c1bf6499c8a8cc8fe6468baa99edc9894cd822d9a58", null ],
+      [ "ESC", "namespaceprotocol_1_1game.html#aa65405265af95e2ad16de5c1bf6499c8abda6ee89d49cf06583a8ae61a0e2fc20", null ]
     ] ],
     [ "DEFAULT_POSITION_SCALE", "namespaceprotocol_1_1game.html#a8ab44a0bd6915da4264d074ca1a4c87b", null ]
 ];

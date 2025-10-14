@@ -1,9 +1,13 @@
 <map id="Speed.hpp" name="Speed.hpp">
-<area shape="rect" id="Node000001" title="ECS component representing an entity&#39;s movement speed." alt="" coords="113,5,204,31"/>
+<area shape="rect" id="Node000001" title="ECS component representing an entity&#39;s movement speed." alt="" coords="201,5,292,31"/>
 <area shape="rect" id="Node000002" href="$EntityFactory_8hpp.html" title="Declares the entity creation and component registration helpers." alt="" coords="5,79,139,104"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="136,41,88,81,84,76,133,37"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="207,38,102,81,100,76,205,33"/>
 <area shape="rect" id="Node000004" href="$MovementSystem_8cpp.html" title="Implementation of MovementSystem::update." alt="" coords="163,79,331,104"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="185,37,234,76,231,81,182,41"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="249,44,249,79,244,79,244,44"/>
+<area shape="rect" id="Node000005" href="$PlayerSystem_8hpp.html" title="Header for PlayerSystem — ECS system handling player movement, firing, and score updates." alt="" coords="355,79,495,104"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="289,33,397,76,395,81,287,38"/>
 <area shape="rect" id="Node000003" href="$EntityFactory_8cpp.html" title="Implements the entity creation logic and component registration." alt="" coords="6,152,138,177"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="75,118,75,152,69,152,69,118"/>
+<area shape="rect" id="Node000006" href="$PlayerSystem_8cpp.html" title="Implementation of PlayerSystem — handles movement, firing, and scoring logic." alt="" coords="356,152,495,177"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="428,118,428,152,423,152,423,118"/>
 </map>

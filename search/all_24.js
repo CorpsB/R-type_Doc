@@ -9,7 +9,8 @@ var searchData=
   ['_7eioption_6',['~IOption',['../classrtype_1_1client_1_1ui_1_1IOption.html#ad6cd61a2162cd45f67a45c62ce4fbbb4',1,'rtype::client::ui::IOption']]],
   ['_7eiscene_7',['~IScene',['../classrtype_1_1client_1_1IScene.html#afdf796cdc4a4aac649e81de044969b57',1,'rtype::client::IScene']]],
   ['_7emovementsystem_8',['~MovementSystem',['../classrtype_1_1ecs_1_1MovementSystem.html#aa21184a30c7e86da976d0637a7d2a236',1,'rtype::ecs::MovementSystem']]],
-  ['_7eprotocol_9',['~Protocol',['../classprotocol_1_1Protocol.html#accb237985d708517a6e999bb4b993a47',1,'protocol::Protocol']]],
-  ['_7eserver_10',['~server',['../classrtype_1_1server.html#a1215d27093c4b67dd855f14e0532a117',1,'rtype::server']]],
-  ['_7esystem_11',['~System',['../classrtype_1_1ecs_1_1System.html#a00fae19d7a2b71808876ffbb80d82eb0',1,'rtype::ecs::System']]]
+  ['_7eplayersystem_9',['~PlayerSystem',['../classrtype_1_1ecs_1_1PlayerSystem.html#a78b7158bf65cd562caec5375bb5e5397',1,'rtype::ecs::PlayerSystem']]],
+  ['_7eprotocol_10',['~Protocol',['../classprotocol_1_1Protocol.html#accb237985d708517a6e999bb4b993a47',1,'protocol::Protocol']]],
+  ['_7eserver_11',['~server',['../classrtype_1_1server.html#a1215d27093c4b67dd855f14e0532a117',1,'rtype::server']]],
+  ['_7esystem_12',['~System',['../classrtype_1_1ecs_1_1System.html#a00fae19d7a2b71808876ffbb80d82eb0',1,'rtype::ecs::System']]]
 ];

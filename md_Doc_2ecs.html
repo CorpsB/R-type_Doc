@@ -100,16 +100,16 @@ $(document).ready(function(){initNavTree('md_Doc_2ecs.html',''); initResizable()
   <div class="headertitle"><div class="title">ECS Architecture Justification</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="autotoc_md142"></a> </p>
-<h1><a class="anchor" id="autotoc_md143"></a>
+<div class="textblock"><p><a class="anchor" id="autotoc_md143"></a> </p>
+<h1><a class="anchor" id="autotoc_md144"></a>
 Introduction</h1>
 <p>The R-Type project implements a custom <b>Entity-Component-System (ECS)</b> architecture to manage all gameplay objects and logic. <br  />
  This decision was made to achieve high modularity, efficient memory usage, and better scalability for both client and server components, compared to a traditional Object-Oriented approach.</p>
 <p>The ECS paradigm is especially suited for real-time games, where hundreds of entities interact simultaneously in a predictable, data-oriented manner.</p>
 <hr  />
-<h1><a class="anchor" id="autotoc_md145"></a>
+<h1><a class="anchor" id="autotoc_md146"></a>
 Why ECS?</h1>
-<h2><a class="anchor" id="autotoc_md146"></a>
+<h2><a class="anchor" id="autotoc_md147"></a>
 1. Modularity and Separation of Concerns</h2>
 <p>In classical OOP designs, behaviors and data are tightly coupled within class hierarchies. <br  />
  For example, an <code>EnemyShip</code> class may inherit from a <code>GameObject</code> and include logic for rendering, movement, and collisions. <br  />
@@ -122,11 +122,11 @@ Why ECS?</h1>
 </ul>
 <p>This structure promotes flexibility, enabling developers to add new behaviors without modifying existing code.</p>
 <hr  />
-<h2><a class="anchor" id="autotoc_md148"></a>
+<h2><a class="anchor" id="autotoc_md149"></a>
 2. Performance Benefits</h2>
 <p>Our ECS is implemented with <b>contiguous memory storage</b> (e.g., <code>std::vector</code>-based component arrays). <br  />
  This design minimizes cache misses and maximizes iteration speed through tight data locality.</p>
-<h3><a class="anchor" id="autotoc_md149"></a>
+<h3><a class="anchor" id="autotoc_md150"></a>
 Key performance advantages:</h3>
 <ul>
 <li><b>Cache efficiency</b>: Components of the same type are stored sequentially in memory.</li>
@@ -136,13 +136,13 @@ Key performance advantages:</h3>
 </ul>
 <p>On the server side, this design also supports <b>parallel system updates</b> in future extensions, thanks to the strict separation between read-only and write components.</p>
 <hr  />
-<h2><a class="anchor" id="autotoc_md151"></a>
+<h2><a class="anchor" id="autotoc_md152"></a>
 3. Scalability and Maintainability</h2>
 <p>The ECS makes it possible to handle a large number of entities efficiently, as each system only focuses on the subset of data it needs. <br  />
  Developers can add or remove components dynamically, modify behaviors by swapping systems, and integrate new features (e.g., AI, physics, sound) with minimal refactoring.</p>
 <p>In the context of <b>R-Type</b>, where numerous enemies, bullets, and effects coexist and update every frame, this scalability is crucial for maintaining stable frame rates across different hardware.</p>
 <hr  />
-<h1><a class="anchor" id="autotoc_md153"></a>
+<h1><a class="anchor" id="autotoc_md154"></a>
 Integration with Networking (Boost.Asio)</h1>
 <p>The ECS design also simplifies <b>state synchronization</b> between the client and server. <br  />
  Entities can be easily serialized by iterating over their active components and sending minimal deltas via UDP using Boost.Asio.</p>
@@ -153,7 +153,7 @@ Integration with Networking (Boost.Asio)</h1>
 </ul>
 <p>This modular separation ensures that networking logic remains independent of gameplay logic, improving maintainability and debugging efficiency.</p>
 <hr  />
-<h1><a class="anchor" id="autotoc_md155"></a>
+<h1><a class="anchor" id="autotoc_md156"></a>
 Integration with Rendering (Raylib)</h1>
 <p>The rendering system is built as one of the ECS systems. <br  />
  It queries entities with a <code><a class="el" href="Position_8hpp.html#structposition__attr__t" title="Component holding the 2D coordinates of an entity.">position_attr_t</a></code> and a <code><a class="el" href="Common_2ECS_2Components_2Attributes_2Sprite_8hpp.html#structsprite__attr__t" title="Component linking an entity to its visual representation.">sprite_attr_t</a></code> (or equivalent) and uses <b>Raylib</b> to draw them efficiently. <br  />
@@ -164,7 +164,7 @@ Integration with Rendering (Raylib)</h1>
 </ul>
 <p>This symmetry simplifies client-server consistency and eases debugging.</p>
 <hr  />
-<h1><a class="anchor" id="autotoc_md157"></a>
+<h1><a class="anchor" id="autotoc_md158"></a>
 Cross-Platform Considerations</h1>
 <p>The ECS framework was implemented entirely in standard C++17 and does not rely on platform-specific features. <br  />
  It compiles and runs identically on both <b>Linux</b> and <b>Windows</b>, ensuring consistent behavior across development and deployment environments.</p>
@@ -175,7 +175,7 @@ Cross-Platform Considerations</h1>
 </ul>
 <p>By maintaining strict code portability, our ECS design aligns perfectly with the R-Type project’s requirement to run on both platforms without modification.</p>
 <hr  />
-<h1><a class="anchor" id="autotoc_md159"></a>
+<h1><a class="anchor" id="autotoc_md160"></a>
 Summary</h1>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -194,7 +194,7 @@ Summary</h1>
 <td class="markdownTableBodyNone"><b>Cross-Platform</b>   </td><td class="markdownTableBodyNone">Fully compatible with Linux and Windows   </td></tr>
 </table>
 <hr  />
-<h1><a class="anchor" id="autotoc_md161"></a>
+<h1><a class="anchor" id="autotoc_md162"></a>
 Conclusion</h1>
 <p>Choosing an <b>Entity-Component-System</b> architecture was a fundamental design decision for R-Type. <br  />
  It ensures high performance, modularity, and maintainability across all parts of the codebase. <br  />

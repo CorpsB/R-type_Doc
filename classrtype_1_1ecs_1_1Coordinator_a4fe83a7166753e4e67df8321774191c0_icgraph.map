@@ -1,13 +1,19 @@
 <map id="rtype::ecs::Coordinator::getComponent" name="rtype::ecs::Coordinator::getComponent">
-<area shape="rect" id="Node000001" title="Get a pointer to a component instance attached to an entity." alt="" coords="855,103,1129,129"/>
+<area shape="rect" id="Node000001" title="Get a pointer to a component instance attached to an entity." alt="" coords="855,181,1129,206"/>
 <area shape="rect" id="Node000002" href="$classrtype_1_1ecs_1_1CollisionWorld.html#ac69ae2a63c6c404948683b9d2f6c9619" title="Build the spatial&#45;hash grid from a set of entity ids." alt="" coords="305,5,492,45"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="946,101,881,77,806,57,724,44,640,35,492,28,492,23,641,30,725,39,807,52,883,72,948,96"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="968,172,900,112,855,81,806,57,726,35,643,23,563,19,492,20,492,15,563,14,643,17,727,29,808,52,857,77,903,108,971,168"/>
 <area shape="rect" id="Node000004" href="$classrtype_1_1ecs_1_1CollisionWorld.html#abb2232374822919bf9fec24c33c0672c" title="Determine whether two entities collide (instant T) using oriented&#45;rectangle SAT checks." alt="" coords="580,67,767,107"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="841,105,767,98,767,93,841,99"/>
-<area shape="rect" id="Node000006" href="$classrtype_1_1ecs_1_1AudioSystem.html#a45f53638a70c193f533461ac3e611b67" title="Update all entities’ audio components for this frame." alt="" coords="557,131,790,157"/>
-<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="841,132,790,136,790,131,841,127"/>
-<area shape="rect" id="Node000007" href="$classrtype_1_1ecs_1_1MovementSystem.html#a9233aaad5e604a40646525d8bebd67c6" title="Advance positions for all entities matched by the system." alt="" coords="540,181,807,206"/>
-<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="939,135,807,172,753,183,752,178,806,167,938,130"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="948,177,882,150,806,123,760,109,762,104,807,117,884,145,950,172"/>
+<area shape="rect" id="Node000006" href="$classrtype_1_1ecs_1_1PlayerSystem.html#ad9a7096e21ee0cba87f942acdf2f9ab4" title="Manage player firing behavior based on input." alt="" coords="567,131,780,157"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="895,181,756,159,757,154,896,176"/>
+<area shape="rect" id="Node000007" href="$classrtype_1_1ecs_1_1PlayerSystem.html#a9e19d6c39cfc31b5c9dc8c838908171f" title="Apply player movement based on input direction." alt="" coords="559,181,788,206"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="841,196,788,196,788,191,841,191"/>
+<area shape="rect" id="Node000008" href="$classrtype_1_1ecs_1_1AudioSystem.html#a45f53638a70c193f533461ac3e611b67" title="Update all entities’ audio components for this frame." alt="" coords="557,230,790,255"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="896,211,757,233,756,227,895,206"/>
+<area shape="rect" id="Node000009" href="$classrtype_1_1ecs_1_1MovementSystem.html#a9233aaad5e604a40646525d8bebd67c6" title="Advance positions for all entities matched by the system." alt="" coords="540,279,807,305"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="952,215,885,243,807,271,760,282,758,277,806,265,883,238,950,210"/>
+<area shape="rect" id="Node000010" href="$classrtype_1_1ecs_1_1PlayerSystem.html#a0a096c739314aefeadca02c7aaa7a81a" title="Modify player score safely." alt="" coords="577,329,769,369"/>
+<area shape="poly" id="edge10_Node000001_Node000010" title=" " alt="" coords="967,217,898,269,854,296,808,320,770,333,769,328,806,315,851,291,895,264,964,213"/>
 <area shape="rect" id="Node000003" href="$classrtype_1_1ecs_1_1CollisionSystem.html#afca69e9015066f94f6fe7cab90899e44" title="Run one collision pass: rebuild spatial grid and test collisions." alt="" coords="5,45,257,70"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="292,41,238,47,237,42,291,35"/>
 <area shape="rect" id="Node000005" href="$classrtype_1_1ecs_1_1CollisionWorld.html#acba7533c8d42d6abb6c82fd03ee7b614" title="Run narrow&#45;phase collision checks across the grid and call collisionEffect on hits." alt="" coords="305,69,492,109"/>

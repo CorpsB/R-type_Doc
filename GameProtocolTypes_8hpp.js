@@ -29,7 +29,7 @@ var GameProtocolTypes_8hpp =
     [ "player_id_t", "GameProtocolTypes_8hpp.html#af73509b55868f0169ae63813c0f7baae", null ],
     [ "position_t", "GameProtocolTypes_8hpp.html#a6736533294d2876d3dc4bc0b248a9c97", null ],
     [ "entity_type_t", "GameProtocolTypes_8hpp.html#a58051a0f9c1c650d605d71a73e9437bd", [
-      [ "NONE", "GameProtocolTypes_8hpp.html#a58051a0f9c1c650d605d71a73e9437bdac659bc98b8d03c06a8b21e7c3a516d87", null ],
+      [ "NONE", "GameProtocolTypes_8hpp.html#a58051a0f9c1c650d605d71a73e9437bda0d5f85390e63d94e3159332f8c8746c1", null ],
       [ "PLAYER", "GameProtocolTypes_8hpp.html#a58051a0f9c1c650d605d71a73e9437bda36feead328784e91b2c8f5cafd543773", null ],
       [ "ENEMY", "GameProtocolTypes_8hpp.html#a58051a0f9c1c650d605d71a73e9437bdaede731433a6fbec7240dc94ebe9ac41a", null ],
       [ "PROJECTILE", "GameProtocolTypes_8hpp.html#a58051a0f9c1c650d605d71a73e9437bda1fb4b4514aa45ab3f36aba6806781b4e", null ]

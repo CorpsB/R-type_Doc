@@ -10,7 +10,8 @@ var searchData=
   ['peer_5freceive_5fstate_5ft_7',['peer_receive_state_t',['../namespaceprotocol.html#structprotocol_1_1peer__receive__state__t',1,'protocol']]],
   ['pending_5fsend_5ft_8',['pending_send_t',['../namespaceprotocol.html#structprotocol_1_1pending__send__t',1,'protocol']]],
   ['pendingop_9',['PendingOp',['../classrtype_1_1client_1_1SceneManager.html#structrtype_1_1client_1_1SceneManager_1_1PendingOp',1,'rtype::client::SceneManager']]],
-  ['position_10',['Position',['../structarcade_1_1types_1_1Position.html',1,'arcade::types']]],
-  ['position_5fattr_5ft_11',['position_attr_t',['../Position_8hpp.html#structposition__attr__t',1,'']]],
-  ['protocol_12',['Protocol',['../classprotocol_1_1Protocol.html',1,'protocol']]]
+  ['playersystem_10',['PlayerSystem',['../classrtype_1_1ecs_1_1PlayerSystem.html',1,'rtype::ecs']]],
+  ['position_11',['Position',['../structarcade_1_1types_1_1Position.html',1,'arcade::types']]],
+  ['position_5fattr_5ft_12',['position_attr_t',['../Position_8hpp.html#structposition__attr__t',1,'']]],
+  ['protocol_13',['Protocol',['../classprotocol_1_1Protocol.html',1,'protocol']]]
 ];

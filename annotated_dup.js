@@ -57,6 +57,7 @@ var annotated_dup =
         [ "EntityManager", "classrtype_1_1ecs_1_1EntityManager.html", "classrtype_1_1ecs_1_1EntityManager" ],
         [ "IComponentArray", "classrtype_1_1ecs_1_1IComponentArray.html", "classrtype_1_1ecs_1_1IComponentArray" ],
         [ "MovementSystem", "classrtype_1_1ecs_1_1MovementSystem.html", "classrtype_1_1ecs_1_1MovementSystem" ],
+        [ "PlayerSystem", "classrtype_1_1ecs_1_1PlayerSystem.html", "classrtype_1_1ecs_1_1PlayerSystem" ],
         [ "System", "classrtype_1_1ecs_1_1System.html", "classrtype_1_1ecs_1_1System" ],
         [ "SystemManager", "classrtype_1_1ecs_1_1SystemManager.html", "classrtype_1_1ecs_1_1SystemManager" ]
       ] ],

@@ -55,7 +55,8 @@ var hierarchy =
     [ "rtype::ecs::System", "classrtype_1_1ecs_1_1System.html", [
       [ "rtype::ecs::AudioSystem", "classrtype_1_1ecs_1_1AudioSystem.html", null ],
       [ "rtype::ecs::CollisionSystem", "classrtype_1_1ecs_1_1CollisionSystem.html", null ],
-      [ "rtype::ecs::MovementSystem", "classrtype_1_1ecs_1_1MovementSystem.html", null ]
+      [ "rtype::ecs::MovementSystem", "classrtype_1_1ecs_1_1MovementSystem.html", null ],
+      [ "rtype::ecs::PlayerSystem", "classrtype_1_1ecs_1_1PlayerSystem.html", null ]
     ] ],
     [ "rtype::ecs::SystemManager", "classrtype_1_1ecs_1_1SystemManager.html", null ],
     [ "rtype::server", "classrtype_1_1server.html", null ],

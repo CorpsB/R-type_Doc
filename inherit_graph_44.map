@@ -1,9 +1,11 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="Node000000" href="$classrtype_1_1ecs_1_1System.html" title="Abstract base type representing an executable system." alt="" coords="5,55,148,80"/>
+<area shape="rect" id="Node000000" href="$classrtype_1_1ecs_1_1System.html" title="Abstract base type representing an executable system." alt="" coords="5,80,148,105"/>
 <area shape="rect" id="Node000001" href="$classrtype_1_1ecs_1_1AudioSystem.html" title="ECS system that updates sound playback for entities." alt="" coords="213,5,393,31"/>
-<area shape="poly" id="edge6_Node000000_Node000001" title=" " alt="" coords="148,49,243,28,244,33,149,54"/>
+<area shape="poly" id="edge6_Node000000_Node000001" title=" " alt="" coords="116,71,195,39,236,28,237,33,197,45,118,76"/>
 <area shape="rect" id="Node000002" href="$classrtype_1_1ecs_1_1CollisionSystem.html" title="High&#45;level ECS system that delegates collision detection to a CollisionWorld." alt="" coords="203,55,402,80"/>
-<area shape="poly" id="edge7_Node000000_Node000002" title=" " alt="" coords="161,65,203,65,203,70,161,70"/>
+<area shape="poly" id="edge7_Node000000_Node000002" title=" " alt="" coords="161,81,203,76,204,81,162,86"/>
 <area shape="rect" id="Node000003" href="$classrtype_1_1ecs_1_1MovementSystem.html" title="System that applies movement to entities based on speed and direction." alt="" coords="196,104,409,129"/>
-<area shape="poly" id="edge8_Node000000_Node000003" title=" " alt="" coords="149,80,244,101,243,107,148,86"/>
+<area shape="poly" id="edge8_Node000000_Node000003" title=" " alt="" coords="162,99,196,103,196,108,161,104"/>
+<area shape="rect" id="Node000004" href="$classrtype_1_1ecs_1_1PlayerSystem.html" title="System that handles player input logic within the ECS." alt="" coords="211,153,395,179"/>
+<area shape="poly" id="edge9_Node000000_Node000004" title=" " alt="" coords="120,108,197,138,242,151,241,156,195,143,118,113"/>
 </map>
