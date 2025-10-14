@@ -28,6 +28,12 @@ var GameProtocolTypes_8hpp =
     [ "input_mask_t", "GameProtocolTypes_8hpp.html#a2964aab9b93472e0a76484074716a203", null ],
     [ "player_id_t", "GameProtocolTypes_8hpp.html#af73509b55868f0169ae63813c0f7baae", null ],
     [ "position_t", "GameProtocolTypes_8hpp.html#a6736533294d2876d3dc4bc0b248a9c97", null ],
+    [ "entity_type_t", "GameProtocolTypes_8hpp.html#a58051a0f9c1c650d605d71a73e9437bd", [
+      [ "NONE", "GameProtocolTypes_8hpp.html#a58051a0f9c1c650d605d71a73e9437bdac659bc98b8d03c06a8b21e7c3a516d87", null ],
+      [ "PLAYER", "GameProtocolTypes_8hpp.html#a58051a0f9c1c650d605d71a73e9437bda36feead328784e91b2c8f5cafd543773", null ],
+      [ "ENEMY", "GameProtocolTypes_8hpp.html#a58051a0f9c1c650d605d71a73e9437bdaede731433a6fbec7240dc94ebe9ac41a", null ],
+      [ "PROJECTILE", "GameProtocolTypes_8hpp.html#a58051a0f9c1c650d605d71a73e9437bda1fb4b4514aa45ab3f36aba6806781b4e", null ]
+    ] ],
     [ "game_event_type_t", "GameProtocolTypes_8hpp.html#ac979c495edcb78eaa548b5c7be45f118", [
       [ "NONE", "GameProtocolTypes_8hpp.html#ac979c495edcb78eaa548b5c7be45f118ab50339a10e1de285ac99d4c3990b8693", null ],
       [ "CONNECTED", "GameProtocolTypes_8hpp.html#ac979c495edcb78eaa548b5c7be45f118aa5afd6edd5336d91316964e493936858", null ],

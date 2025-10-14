@@ -1,23 +1,27 @@
 <map id="IComponentArray.hpp" name="IComponentArray.hpp">
-<area shape="rect" id="Node000001" title="Abstract base interface for component container types." alt="" coords="149,5,311,31"/>
-<area shape="rect" id="Node000002" href="$ComponentArray_8hpp.html" title="Component storage implementation for the ECS." alt="" coords="151,79,309,104"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="233,44,233,79,227,79,227,44"/>
-<area shape="rect" id="Node000003" href="$ComponentManager_8hpp.html" title="Manager for registering and accessing component arrays in the ECS." alt="" coords="139,152,321,177"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="233,118,233,152,227,152,227,118"/>
-<area shape="rect" id="Node000004" href="$ComponentManager_8cpp.html" title="Non&#45;template implementation parts for ComponentManager." alt="" coords="52,225,232,251"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="207,188,158,227,155,223,204,184"/>
-<area shape="rect" id="Node000005" href="$Coordinator_8hpp.html" title="High&#45;level facade that connects entity/component/system managers." alt="" coords="257,225,382,251"/>
-<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="257,184,306,223,303,227,253,188"/>
+<area shape="rect" id="Node000001" title="Abstract base interface for component container types." alt="" coords="217,5,379,31"/>
+<area shape="rect" id="Node000002" href="$ComponentArray_8hpp.html" title="Component storage implementation for the ECS." alt="" coords="219,79,377,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="301,44,301,79,295,79,295,44"/>
+<area shape="rect" id="Node000003" href="$ComponentManager_8hpp.html" title="Manager for registering and accessing component arrays in the ECS." alt="" coords="207,152,389,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="301,118,301,152,295,152,295,118"/>
+<area shape="rect" id="Node000004" href="$ComponentManager_8cpp.html" title="Non&#45;template implementation parts for ComponentManager." alt="" coords="120,225,300,251"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="275,188,226,227,223,223,272,184"/>
+<area shape="rect" id="Node000005" href="$Coordinator_8hpp.html" title="High&#45;level facade that connects entity/component/system managers." alt="" coords="325,225,450,251"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="325,184,374,223,371,227,321,188"/>
 <area shape="rect" id="Node000006" href="$CollisionWorld_8cpp.html" title="Implementation of CollisionWorld: grid building, neighbor iteration and SAT tests." alt="" coords="5,299,148,324"/>
-<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="268,257,117,301,115,296,267,252"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="325,256,128,301,126,296,324,251"/>
 <area shape="rect" id="Node000007" href="$Coordinator_8cpp.html" title="Implementation of Coordinator lifecycle and non&#45;template helpers." alt="" coords="172,299,296,324"/>
-<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="297,261,250,300,246,296,294,257"/>
-<area shape="rect" id="Node000008" href="$MovementSystem_8cpp.html" title="Implementation of MovementSystem::update." alt="" coords="321,299,489,324"/>
-<area shape="poly" id="edge7_Node000005_Node000008" title=" " alt="" coords="345,257,392,296,389,300,342,261"/>
-<area shape="rect" id="Node000009" href="$Rtype_8hpp.html" title=" " alt="" coords="513,299,601,324"/>
-<area shape="poly" id="edge8_Node000005_Node000009" title=" " alt="" coords="371,252,519,296,517,301,370,257"/>
-<area shape="rect" id="Node000010" href="$Rtype_8cpp.html" title=" " alt="" coords="459,372,545,397"/>
-<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="541,337,513,374,509,370,537,333"/>
-<area shape="rect" id="Node000011" href="$Server_2main_8cpp.html" title="Entry point for the R&#45;Type server executable." alt="" coords="570,372,653,397"/>
-<area shape="poly" id="edge10_Node000009_Node000011" title=" " alt="" coords="576,333,605,370,600,374,572,337"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="352,259,260,301,258,296,349,254"/>
+<area shape="rect" id="Node000008" href="$EntityFactory_8hpp.html" title="Declares the entity creation and component registration helpers." alt="" coords="321,299,454,324"/>
+<area shape="poly" id="edge7_Node000005_Node000008" title=" " alt="" coords="390,264,390,299,385,299,385,264"/>
+<area shape="rect" id="Node000010" href="$MovementSystem_8cpp.html" title="Implementation of MovementSystem::update." alt="" coords="478,299,646,324"/>
+<area shape="poly" id="edge9_Node000005_Node000010" title=" " alt="" coords="429,253,534,296,532,301,427,258"/>
+<area shape="rect" id="Node000011" href="$Rtype_8hpp.html" title=" " alt="" coords="670,299,758,324"/>
+<area shape="poly" id="edge10_Node000005_Node000011" title=" " alt="" coords="454,251,670,298,669,303,452,256"/>
+<area shape="rect" id="Node000009" href="$EntityFactory_8cpp.html" title="Implements the entity creation logic and component registration." alt="" coords="321,372,453,397"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="390,338,390,372,385,372,385,338"/>
+<area shape="rect" id="Node000012" href="$Rtype_8cpp.html" title=" " alt="" coords="616,372,703,397"/>
+<area shape="poly" id="edge11_Node000011_Node000012" title=" " alt="" coords="699,337,670,374,666,370,695,333"/>
+<area shape="rect" id="Node000013" href="$Server_2main_8cpp.html" title="Entry point for the R&#45;Type server executable." alt="" coords="727,372,810,397"/>
+<area shape="poly" id="edge12_Node000011_Node000013" title=" " alt="" coords="733,333,762,370,758,374,729,337"/>
 </map>

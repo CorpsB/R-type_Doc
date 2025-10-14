@@ -1,13 +1,17 @@
 <map id="Position.hpp" name="Position.hpp">
-<area shape="rect" id="Node000001" title="ECS component representing the position of an entity in 2D space." alt="" coords="207,5,310,31"/>
-<area shape="rect" id="Node000002" href="$CollisionWorld_8hpp.html" title="Spatial&#45;hash collision world API: grid building and narrow&#45;phase tests." alt="" coords="98,79,241,104"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="235,41,186,81,182,76,232,37"/>
-<area shape="rect" id="Node000006" href="$MovementSystem_8cpp.html" title="Implementation of MovementSystem::update." alt="" coords="265,79,433,104"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="286,37,336,76,333,81,283,41"/>
+<area shape="rect" id="Node000001" title="ECS component representing the position of an entity in 2D space." alt="" coords="366,5,469,31"/>
+<area shape="rect" id="Node000002" href="$CollisionWorld_8hpp.html" title="Spatial&#45;hash collision world API: grid building and narrow&#45;phase tests." alt="" coords="183,79,326,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="380,39,282,81,280,76,378,34"/>
+<area shape="rect" id="Node000006" href="$EntityFactory_8hpp.html" title="Declares the entity creation and component registration helpers." alt="" coords="351,79,484,104"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="420,44,420,79,415,79,415,44"/>
+<area shape="rect" id="Node000008" href="$MovementSystem_8cpp.html" title="Implementation of MovementSystem::update." alt="" coords="508,79,676,104"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="459,33,564,76,562,81,457,38"/>
 <area shape="rect" id="Node000003" href="$CollisionSystem_8hpp.html" title="Header for CollisionSystem — orchestrates broad&#45;phase and narrow&#45;phase checks." alt="" coords="5,152,160,177"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="147,115,99,154,95,150,143,110"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="216,112,112,154,110,149,214,107"/>
 <area shape="rect" id="Node000005" href="$CollisionWorld_8cpp.html" title="Implementation of CollisionWorld: grid building, neighbor iteration and SAT tests." alt="" coords="185,152,327,177"/>
-<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="195,110,244,150,240,154,192,115"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="258,118,258,152,253,152,252,118"/>
 <area shape="rect" id="Node000004" href="$CollisionSystem_8cpp.html" title="Implementation of CollisionSystem update pass (build + check)." alt="" coords="5,225,160,251"/>
 <area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="85,191,85,225,80,225,80,191"/>
+<area shape="rect" id="Node000007" href="$EntityFactory_8cpp.html" title="Implements the entity creation logic and component registration." alt="" coords="351,152,483,177"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="420,118,420,152,415,152,415,118"/>
 </map>

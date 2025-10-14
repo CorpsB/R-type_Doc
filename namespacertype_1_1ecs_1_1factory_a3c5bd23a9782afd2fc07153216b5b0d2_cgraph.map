@@ -1,0 +1,20 @@
+<map id="rtype::ecs::factory::create_player" name="rtype::ecs::factory::create_player">
+<area shape="rect" id="Node000001" title="Creates a player entity with full stats, movement, and weapon setup." alt="" coords="5,90,241,115"/>
+<area shape="rect" id="Node000002" href="$namespacertype_1_1ecs_1_1factory.html#a7cf1b038cae209ff98ae6c2d74390d41" title="Helper template to add a component and destroy the entity on failure." alt="" coords="595,108,785,148"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="144,88,207,54,247,38,289,25,361,10,419,3,477,7,548,25,580,39,611,57,661,97,657,101,608,62,578,44,546,31,476,13,419,9,362,16,290,31,249,43,209,59,146,92"/>
+<area shape="rect" id="Node000005" href="$classrtype_1_1ecs_1_1Coordinator.html#a20747c778c856fd0d9d0cf267ed90346" title="Create a new entity id." alt="" coords="289,41,547,66"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="199,87,327,66,328,71,200,93"/>
+<area shape="rect" id="Node000006" href="$namespacertype_1_1ecs_1_1factory.html#abbec02b513c2ad4e3a2b9b00a491d755" title="Adds movement&#45;related components (position, direction, speed)." alt="" coords="295,90,541,115"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="242,100,282,100,282,105,242,105"/>
+<area shape="rect" id="Node000007" href="$namespacertype_1_1ecs_1_1factory.html#aeabb5337b4bf656d02046fb676ce13b1" title="Adds hitbox and sprite components if provided." alt="" coords="317,139,519,165"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="200,113,328,134,327,140,199,118"/>
+<area shape="rect" id="Node000008" href="$namespacertype_1_1ecs_1_1factory.html#a5479c88a043755974c85001d4336327a" title="Adds weapon&#45;related components (damage, frequency)." alt="" coords="305,189,531,214"/>
+<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="150,113,212,143,290,173,326,183,325,188,288,179,210,148,147,118"/>
+<area shape="rect" id="Node000003" href="$classrtype_1_1ecs_1_1Coordinator.html#a83821656162c90a27785e03b4a09847b" title="Add a component instance for an entity." alt="" coords="833,90,1111,115"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="785,117,819,114,820,119,786,122"/>
+<area shape="rect" id="Node000004" href="$classrtype_1_1ecs_1_1Coordinator.html#a770d7357cc80caea3d70cba15f9655dc" title="Destroy an entity and remove it from all managers." alt="" coords="839,139,1105,165"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="786,133,826,137,825,142,785,139"/>
+<area shape="poly" id="edge6_Node000006_Node000002" title=" " alt="" coords="541,111,581,115,581,121,541,117"/>
+<area shape="poly" id="edge8_Node000007_Node000002" title=" " alt="" coords="519,140,581,135,581,140,519,146"/>
+<area shape="poly" id="edge10_Node000008_Node000002" title=" " alt="" coords="491,186,546,173,621,150,623,155,547,179,492,191"/>
+</map>
