@@ -103,7 +103,7 @@ $(document).ready(function(){initNavTree('GameSettings_8cpp.html',''); initResiz
 </div><!--header-->
 <div class="contents">
 
-<p>Core implementation of the <a class="el" href="classrtype_1_1client_1_1GameSettings.html">rtype::client::GameSettings</a> singleton class.  
+<p>Implementation of the GameSettings singleton for runtime scaling and configuration.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="GameSettings_8hpp_source.html">GameSettings.hpp</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -124,17 +124,20 @@ Namespaces</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Core implementation of the <a class="el" href="classrtype_1_1client_1_1GameSettings.html">rtype::client::GameSettings</a> singleton class. </p>
+<div class="textblock"><p>Implementation of the GameSettings singleton for runtime scaling and configuration. </p>
 <dl class="section since"><dt>Since</dt><dd>1.0</dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="GameSettings_8hpp.html" title="Declaration of the rtype::client::GameSettings singleton class.">GameSettings.hpp</a></dd></dl>
-<p>This file implements the runtime logic for the <a class="el" href="classrtype_1_1client_1_1GameSettings.html">rtype::client::GameSettings</a> class. It manages resolution scaling, synchronization with the render window, and automatic adjustment to maintain a 16:9 aspect ratio.</p>
-<p>Responsibilities:</p><ul>
-<li>Provide a globally accessible singleton instance.</li>
-<li>Maintain consistent scaling and offset for viewport rendering.</li>
-<li>Handle window resizing safely across fullscreen and windowed modes.</li>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="GameSettings_8hpp.html" title="Declaration of the GameSettings singleton managing client runtime and rendering configuration.">GameSettings.hpp</a></dd></dl>
+<p>Implements the logic behind global scaling, resolution management, and configuration synchronization for the R-Type client. The GameSettings class ensures visual consistency and proportional scaling across all rendering contexts.</p>
+<h3><a class="anchor" id="autotoc_md13"></a>
+Key Responsibilities:</h3>
+<ul>
+<li>Maintain proportional scaling according to a 16:9 reference.</li>
+<li>Handle fullscreen/windowed transitions.</li>
+<li>Manage and apply temporary language and display settings.</li>
+<li>Cache render width and height to avoid redundant scaling computations.</li>
 </ul>
-<dl class="section note"><dt>Note</dt><dd>Scaling updates are only recalculated when the window resolution changes. </dd></dl>
-<dl class="section warning"><dt>Warning</dt><dd>Must be used from the main rendering thread due to Raylib context access. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Scaling updates are only recalculated when the window size changes. </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>All Raylib interactions must occur on the main rendering thread. </dd></dl>
 
 <p class="definition">Definition in file <a class="el" href="GameSettings_8cpp_source.html">GameSettings.cpp</a>.</p>
 </div></div><!-- contents -->

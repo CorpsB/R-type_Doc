@@ -5,6 +5,5 @@ var searchData=
   ['payload_5flength_2',['payload_length',['../namespaceprotocol.html#a66bb0c548ecebb0c3caa7a2caa5cb68f',1,'protocol::packet_header_t']]],
   ['player_3',['player',['../namespaceprotocol_1_1game.html#af06031f752e8ef3902246ea9f18f5821',1,'protocol::game::payload_player_input_t']]],
   ['port_4',['port',['../config_8h.html#a03a218180f882180702d49d127ad7952',1,'parser_args_t']]],
-  ['pos_5',['pos',['../structarcade_1_1types_1_1Entity.html#a38d1d66ee0022a4e9c932147c0959beb',1,'arcade::types::Entity::pos'],['../namespacearcade_1_1types.html#a95aa2bfbef169ab614bd46a1de778e7a',1,'arcade::types::Mouse::pos']]],
-  ['pressedcolor_6',['pressedColor',['../classrtype_1_1client_1_1ui_1_1Button.html#aec6981631d84766a31940515bdb97cc5',1,'rtype::client::ui::Button::Style']]]
+  ['pos_5',['pos',['../structarcade_1_1types_1_1Entity.html#a38d1d66ee0022a4e9c932147c0959beb',1,'arcade::types::Entity::pos'],['../namespacearcade_1_1types.html#a95aa2bfbef169ab614bd46a1de778e7a',1,'arcade::types::Mouse::pos']]]
 ];

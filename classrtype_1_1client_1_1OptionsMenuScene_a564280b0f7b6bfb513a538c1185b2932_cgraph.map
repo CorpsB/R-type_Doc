@@ -1,5 +1,7 @@
 <map id="rtype::client::OptionsMenuScene::OptionsMenuScene" name="rtype::client::OptionsMenuScene::OptionsMenuScene">
-<area shape="rect" id="Node000001" title="Constructs and initializes all option menus." alt="" coords="5,5,239,45"/>
-<area shape="rect" id="Node000002" href="$classrtype_1_1client_1_1GameSettings.html#ad91efaa41fd095e80dd5dc8bb964c105" title="Retrieves the global singleton instance." alt="" coords="287,5,487,45"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="239,23,273,23,273,28,239,28"/>
+<area shape="rect" id="Node000001" title="Constructs and initializes the Options menu scene." alt="" coords="5,37,239,77"/>
+<area shape="rect" id="Node000002" href="$classrtype_1_1client_1_1SceneManager.html#afc7394d405bebecce3a60d10e3d4fea2" title="Retrieves the global singleton instance." alt="" coords="287,5,491,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="238,41,273,37,274,42,239,46"/>
+<area shape="rect" id="Node000003" href="$classrtype_1_1client_1_1GameSettings.html#ad91efaa41fd095e80dd5dc8bb964c105" title="Retrieves the global singleton instance." alt="" coords="289,69,489,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="239,69,275,73,275,78,238,74"/>
 </map>

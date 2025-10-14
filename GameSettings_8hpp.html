@@ -104,7 +104,7 @@ $(document).ready(function(){initNavTree('GameSettings_8hpp.html',''); initResiz
 </div><!--header-->
 <div class="contents">
 
-<p>Declaration of the <a class="el" href="classrtype_1_1client_1_1GameSettings.html">rtype::client::GameSettings</a> singleton class.  
+<p>Declaration of the GameSettings singleton managing client runtime and rendering configuration.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;iostream&gt;</code><br />
 <code>#include &lt;string&gt;</code><br />
@@ -130,7 +130,7 @@ $(document).ready(function(){initNavTree('GameSettings_8hpp.html',''); initResiz
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtype_1_1client_1_1GameSettings.html">rtype::client::GameSettings</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Singleton managing global runtime and rendering configuration.  <a href="classrtype_1_1client_1_1GameSettings.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Singleton managing runtime settings and UI scaling for the R-Type client.  <a href="classrtype_1_1client_1_1GameSettings.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
@@ -141,19 +141,20 @@ Namespaces</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Declaration of the <a class="el" href="classrtype_1_1client_1_1GameSettings.html">rtype::client::GameSettings</a> singleton class. </p>
-<dl class="section since"><dt>Since</dt><dd>1.0</dd></dl>
-<dl class="section see"><dt>See also</dt><dd>syncWithWindow, setScreenSize, getInstance</dd></dl>
-<p>This header defines the <a class="el" href="classrtype_1_1client_1_1GameSettings.html">rtype::client::GameSettings</a> class — a singleton responsible for managing global runtime and rendering configuration within the R-Type client.</p>
-<p>Responsibilities:</p><ul>
-<li>Maintain window and resolution information.</li>
-<li>Compute proportional UI scaling across various display sizes.</li>
-<li>Manage language localization tags and application state flags.</li>
-<li>Provide synchronization between the internal logical viewport and Raylib’s actual rendering window.</li>
+<div class="textblock"><p>Declaration of the GameSettings singleton managing client runtime and rendering configuration. </p>
+<p>The GameSettings class provides centralized management of global client parameters such as resolution, UI scaling, language, and active state. It ensures visual consistency across varying display sizes by maintaining proportional scaling based on a fixed 16:9 reference ratio.</p>
+<p>This singleton is used by UI components, rendering systems, and configuration menus to adapt layouts dynamically during runtime. It also synchronizes internal settings with Raylib’s rendering context.</p>
+<h3><a class="anchor" id="autotoc_md14"></a>
+Main Responsibilities:</h3>
+<ul>
+<li>Maintain and synchronize resolution and scaling parameters.</li>
+<li>Store and manage runtime language settings.</li>
+<li>Provide window state and activity control.</li>
+<li>Ensure consistent rendering behavior through scaling and centering logic.</li>
 </ul>
-<p>The scaling logic ensures consistent rendering behavior across devices by dynamically updating the global scale and viewport offset.</p>
-<dl class="section note"><dt>Note</dt><dd>The class cannot be instantiated directly; access it via getInstance(). </dd></dl>
-<dl class="section warning"><dt>Warning</dt><dd>Must be called from the main thread when interacting with Raylib. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Must be accessed through getInstance(). </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>All operations involving Raylib must occur on the main thread.</dd></dl>
+<dl class="section see"><dt>See also</dt><dd>syncWithWindow, setScreenSize, getInstance </dd></dl>
 
 <p class="definition">Definition in file <a class="el" href="GameSettings_8hpp_source.html">GameSettings.hpp</a>.</p>
 </div></div><!-- contents -->

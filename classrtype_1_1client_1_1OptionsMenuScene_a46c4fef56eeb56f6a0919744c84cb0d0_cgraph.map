@@ -1,5 +1,6 @@
 <map id="rtype::client::OptionsMenuScene::update" name="rtype::client::OptionsMenuScene::update">
-<area shape="rect" id="Node000001" title="Updates the options scene each frame." alt="" coords="5,13,292,38"/>
-<area shape="rect" id="Node000002" href="$classrtype_1_1client_1_1GameSettings.html#ad91efaa41fd095e80dd5dc8bb964c105" title="Retrieves the global singleton instance." alt="" coords="340,5,540,45"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="292,23,326,23,326,28,292,28"/>
+<area shape="rect" id="Node000001" title="Updates the scene state and handles user input." alt="" coords="5,29,292,55"/>
+<area shape="poly" id="edge2_Node000001_Node000001" title=" " alt="" coords="102,31,92,21,97,11,116,5,149,3,191,7,202,12,205,18,201,21,198,16,189,12,149,8,117,10,100,15,97,20,106,27"/>
+<area shape="rect" id="Node000002" href="$classrtype_1_1client_1_1GameSettings.html#ad91efaa41fd095e80dd5dc8bb964c105" title="Retrieves the global singleton instance." alt="" coords="340,22,540,62"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="292,39,326,39,326,45,292,45"/>
 </map>

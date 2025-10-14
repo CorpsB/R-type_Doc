@@ -103,16 +103,17 @@ $(document).ready(function(){initNavTree('ResourceManager_8cpp.html',''); initRe
 </div><!--header-->
 <div class="contents">
 
-<p>Implementation of the <a class="el" href="classrtype_1_1client_1_1ResourceManager.html">rtype::client::ResourceManager</a> class.  
+<p>Implementation of the ResourceManager class.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="ResourceManager_8hpp_source.html">ResourceManager.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Error_8hpp_source.html">../../../Common/Utils/Error.hpp</a>&quot;</code><br />
+<code>#include &lt;vector&gt;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for ResourceManager.cpp:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="ResourceManager_8cpp__incl.svg" width="544" height="183"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="ResourceManager_8cpp__incl.svg" width="599" height="183"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 <p><a href="ResourceManager_8cpp_source.html">Go to the source code of this file.</a></p>
@@ -125,16 +126,18 @@ Namespaces</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Implementation of the <a class="el" href="classrtype_1_1client_1_1ResourceManager.html">rtype::client::ResourceManager</a> class. </p>
+<div class="textblock"><p>Implementation of the ResourceManager class. </p>
 <dl class="section since"><dt>Since</dt><dd>1.0</dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="ResourceManager_8hpp.html" title="Declaration of the rtype::client::ResourceManager singleton class.">ResourceManager.hpp</a>, <a class="el" href="classrtype_1_1exception_1_1Error.html" title="Base exception class for errors occurring in the R-Type engine.">rtype::exception::Error</a></dd></dl>
-<p>This file contains the full implementation of the ResourceManager class. It defines the runtime logic for loading, retrieving, and unloading game assets such as textures, fonts, and sounds.</p>
-<p>Responsibilities:</p><ul>
-<li>Ensure that each resource is loaded only once.</li>
-<li>Provide safe, fast lookup of cached resources.</li>
-<li>Manage global cleanup of Raylib resources at shutdown.</li>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="ResourceManager_8hpp.html" title="Declaration of the ResourceManager singleton handling game asset caching.">ResourceManager.hpp</a>, <a class="el" href="classrtype_1_1exception_1_1Error.html" title="Base exception class for errors occurring in the R-Type engine.">rtype::exception::Error</a></dd></dl>
+<p>Implements the asset loading, retrieval, and unloading logic for the R-Type client. The ResourceManager caches all resources globally and ensures proper memory cleanup during shutdown.</p>
+<h3><a class="anchor" id="autotoc_md5"></a>
+Responsibilities:</h3>
+<ul>
+<li>Prevent redundant loading of textures, fonts, and sounds.</li>
+<li>Provide safe, efficient lookup of cached resources.</li>
+<li>Handle global unloading of Raylib assets.</li>
 </ul>
-<p>Error handling is performed through <a class="el" href="classrtype_1_1exception_1_1Error.html">rtype::exception::Error</a> exceptions to guarantee consistent failure reporting. </p>
+<dl class="section note"><dt>Note</dt><dd>Errors during loading throw <a class="el" href="classrtype_1_1exception_1_1Error.html" title="Base exception class for errors occurring in the R-Type engine.">rtype::exception::Error</a> exceptions. </dd></dl>
 
 <p class="definition">Definition in file <a class="el" href="ResourceManager_8cpp_source.html">ResourceManager.cpp</a>.</p>
 </div></div><!-- contents -->

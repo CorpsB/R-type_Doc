@@ -31,8 +31,10 @@ var annotated_dup =
     [ "rtype", "namespacertype.html", [
       [ "client", "namespacertype_1_1client.html", [
         [ "ui", "namespacertype_1_1client_1_1ui.html", [
-          [ "Button", "classrtype_1_1client_1_1ui_1_1Button.html", "classrtype_1_1client_1_1ui_1_1Button" ],
-          [ "DropMenu", "classrtype_1_1client_1_1ui_1_1DropMenu.html", "classrtype_1_1client_1_1ui_1_1DropMenu" ]
+          [ "IOption", "classrtype_1_1client_1_1ui_1_1IOption.html", "classrtype_1_1client_1_1ui_1_1IOption" ],
+          [ "MultipleOption", "classrtype_1_1client_1_1ui_1_1MultipleOption.html", "classrtype_1_1client_1_1ui_1_1MultipleOption" ],
+          [ "SingleOption", "classrtype_1_1client_1_1ui_1_1SingleOption.html", "classrtype_1_1client_1_1ui_1_1SingleOption" ],
+          [ "Sprite", "classrtype_1_1client_1_1ui_1_1Sprite.html", "classrtype_1_1client_1_1ui_1_1Sprite" ]
         ] ],
         [ "Game", "classrtype_1_1client_1_1Game.html", "classrtype_1_1client_1_1Game" ],
         [ "GameSettings", "classrtype_1_1client_1_1GameSettings.html", "classrtype_1_1client_1_1GameSettings" ],
@@ -75,5 +77,5 @@ var annotated_dup =
     [ "position_attr_t", "Position_8hpp.html#structposition__attr__t", "Position_8hpp_structposition__attr__t" ],
     [ "score_attr_t", "Score_8hpp.html#structscore__attr__t", "Score_8hpp_structscore__attr__t" ],
     [ "speed_attr_t", "Speed_8hpp.html#structspeed__attr__t", "Speed_8hpp_structspeed__attr__t" ],
-    [ "sprite_attr_t", "Sprite_8hpp.html#structsprite__attr__t", "Sprite_8hpp_structsprite__attr__t" ]
+    [ "sprite_attr_t", "Common_2ECS_2Components_2Attributes_2Sprite_8hpp.html#structsprite__attr__t", "Common_2ECS_2Components_2Attributes_2Sprite_8hpp_structsprite__attr__t" ]
 ];

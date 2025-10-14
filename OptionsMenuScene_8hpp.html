@@ -104,18 +104,21 @@ $(document).ready(function(){initNavTree('OptionsMenuScene_8hpp.html',''); initR
 </div><!--header-->
 <div class="contents">
 
-<p>Declaration of the <a class="el" href="classrtype_1_1client_1_1OptionsMenuScene.html">rtype::client::OptionsMenuScene</a> class.  
+<p>Declaration of the OptionsMenuScene class, handling the game’s settings menu.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="IScene_8hpp_source.html">../IScene.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="DropMenu_8hpp_source.html">../../UI/DropMenu/DropMenu.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="IOption_8hpp_source.html">../../UI/Options/IOption.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="SingleOption_8hpp_source.html">../../UI/Options/SingleOption/SingleOption.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="MultipleOption_8hpp_source.html">../../UI/Options/MultipleOption/MultipleOption.hpp</a>&quot;</code><br />
 <code>#include &lt;vector&gt;</code><br />
+<code>#include &lt;memory&gt;</code><br />
 <code>#include &lt;string&gt;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for OptionsMenuScene.hpp:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="OptionsMenuScene_8hpp__incl.svg" width="512" height="256"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="OptionsMenuScene_8hpp__incl.svg" width="100%" height="503"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> This graph shows which files directly or indirectly include this file:</div>
@@ -130,7 +133,7 @@ $(document).ready(function(){initNavTree('OptionsMenuScene_8hpp.html',''); initR
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtype_1_1client_1_1OptionsMenuScene.html">rtype::client::OptionsMenuScene</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scene displaying configurable in-game options such as resolution, display mode, and language.  <a href="classrtype_1_1client_1_1OptionsMenuScene.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scene representing the in-game options menu.  <a href="classrtype_1_1client_1_1OptionsMenuScene.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
@@ -141,17 +144,19 @@ Namespaces</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Declaration of the <a class="el" href="classrtype_1_1client_1_1OptionsMenuScene.html">rtype::client::OptionsMenuScene</a> class. </p>
-<dl class="section since"><dt>Since</dt><dd>1.0</dd></dl>
-<dl class="section see"><dt>See also</dt><dd>GameSettings, ui::DropMenu, SceneManager</dd></dl>
-<p>This file defines the <a class="el" href="classrtype_1_1client_1_1OptionsMenuScene.html">rtype::client::OptionsMenuScene</a>, a dedicated scene for managing and displaying configurable game options such as resolution, display mode, and language.</p>
-<p>Responsibilities:</p><ul>
-<li>Render and manage multiple dropdown menus through ui::DropMenu.</li>
-<li>Apply configuration updates immediately using GameSettings.</li>
-<li>Ensure UI elements remain centered and scaled to the current resolution.</li>
+<div class="textblock"><p>Declaration of the OptionsMenuScene class, handling the game’s settings menu. </p>
+<p>The OptionsMenuScene class represents the in-game options menu, allowing players to modify runtime settings such as resolution, display mode, and language. It provides navigation through different configurable options using keyboard input and interfaces with GameSettings to store and apply changes.</p>
+<p>This scene is part of the client’s scene management system and follows the IScene interface pattern.</p>
+<h3><a class="anchor" id="autotoc_md12"></a>
+Features:</h3>
+<ul>
+<li>Resolution selection (720p, 900p, 1080p)</li>
+<li>Windowed/fullscreen toggle</li>
+<li>Language selection (FR, EN, ZU)</li>
+<li>Apply and Back actions</li>
 </ul>
-<p>The scene is fully interactive and forms part of the in-game user interface system controlled by the SceneManager.</p>
-<dl class="section note"><dt>Note</dt><dd>This scene can be directly pushed or replaced in the SceneManager stack. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>The scene is fully navigable with arrow keys and Enter. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classrtype_1_1client_1_1GameSettings.html" title="Singleton managing runtime settings and UI scaling for the R-Type client.">rtype::client::GameSettings</a>, <a class="el" href="classrtype_1_1client_1_1SceneManager.html" title="Manages and orchestrates a stack of active scenes.">rtype::client::SceneManager</a> </dd></dl>
 
 <p class="definition">Definition in file <a class="el" href="OptionsMenuScene_8hpp_source.html">OptionsMenuScene.hpp</a>.</p>
 </div></div><!-- contents -->

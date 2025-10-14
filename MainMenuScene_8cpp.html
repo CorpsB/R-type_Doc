@@ -103,7 +103,7 @@ $(document).ready(function(){initNavTree('MainMenuScene_8cpp.html',''); initResi
 </div><!--header-->
 <div class="contents">
 
-<p>Implementation of the <a class="el" href="classrtype_1_1client_1_1MainMenuScene.html">rtype::client::MainMenuScene</a> class.  
+<p>Implementation of the MainMenuScene class managing the main menu interface.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="MainMenuScene_8hpp_source.html">MainMenuScene.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="SceneManager_8hpp_source.html">../SceneManager/SceneManager.hpp</a>&quot;</code><br />
@@ -116,7 +116,7 @@ $(document).ready(function(){initNavTree('MainMenuScene_8cpp.html',''); initResi
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="MainMenuScene_8cpp__incl.svg" width="100%" height="547"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="MainMenuScene_8cpp__incl.svg" width="100%" height="558"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 </div>
 <p><a href="MainMenuScene_8cpp_source.html">Go to the source code of this file.</a></p>
@@ -129,16 +129,17 @@ Namespaces</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Implementation of the <a class="el" href="classrtype_1_1client_1_1MainMenuScene.html">rtype::client::MainMenuScene</a> class. </p>
+<div class="textblock"><p>Implementation of the MainMenuScene class managing the main menu interface. </p>
 <dl class="section since"><dt>Since</dt><dd>1.0</dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="MainMenuScene_8hpp.html" title="Declaration of the rtype::client::MainMenuScene class.">MainMenuScene.hpp</a>, OptionsMenuScene, SceneManager, GameSettings</dd></dl>
-<p>This file implements the main menu scene of the R-Type client. It handles the initialization, update logic, and rendering of the primary menu interface.</p>
-<p>Responsibilities:</p><ul>
-<li>Create and configure interactive buttons (Start, Options, Quit).</li>
-<li>Manage layout scaling and centering using GameSettings.</li>
-<li>Handle scene transitions through SceneManager.</li>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="MainMenuScene_8hpp.html" title="Declaration of the MainMenuScene class, representing the main menu interface.">MainMenuScene.hpp</a>, OptionsMenuScene, SceneManager, GameSettings</dd></dl>
+<p>Implements the logic for the R-Type client’s main menu. It initializes interactive options, handles user input, and manages transitions between scenes using SceneManager. Menu scaling and alignment are updated dynamically through GameSettings.</p>
+<h3><a class="anchor" id="autotoc_md8"></a>
+Responsibilities:</h3>
+<ul>
+<li>Initialize menu layout and logo.</li>
+<li>Update selection state and option callbacks.</li>
+<li>Render menu items and the logo sprite each frame. </li>
 </ul>
-<p>Each frame, button states are updated based on input, and rendering is handled via the ui::Button component. </p>
 
 <p class="definition">Definition in file <a class="el" href="MainMenuScene_8cpp_source.html">MainMenuScene.cpp</a>.</p>
 </div></div><!-- contents -->

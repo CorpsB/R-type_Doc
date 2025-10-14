@@ -1,12 +1,14 @@
 <map id="rtype::client::SceneManager::getInstance" name="rtype::client::SceneManager::getInstance">
-<area shape="rect" id="Node000001" title="Retrieves the global singleton instance." alt="" coords="371,63,575,103"/>
-<area shape="rect" id="Node000002" href="$classrtype_1_1client_1_1MainMenuScene.html#a293adfde89e2f96f5aae7a9189caf1cb" title="Constructs and initializes the main menu interface." alt="" coords="108,5,323,45"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="368,62,305,48,306,43,369,57"/>
-<area shape="rect" id="Node000003" href="$classrtype_1_1client_1_1Game.html#a9c349ade2780c0a770c0b9d4485918e2" title="Executes the main game loop." alt="" coords="127,70,303,95"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="357,85,304,85,304,80,357,80"/>
-<area shape="rect" id="Node000005" href="$classrtype_1_1client_1_1Game.html#a14743f984bad6a06c8683af893247231" title="Starts the game with a specific scene as the entry point." alt="" coords="108,119,323,145"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="358,107,283,122,282,117,357,102"/>
-<area shape="rect" id="Node000004" href="$Client_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Main entry point of the R&#45;Type client." alt="" coords="5,95,60,121"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="114,99,60,107,60,102,113,94"/>
-<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="105,120,60,114,61,109,106,115"/>
+<area shape="rect" id="Node000001" title="Retrieves the global singleton instance." alt="" coords="389,99,593,139"/>
+<area shape="rect" id="Node000002" href="$classrtype_1_1client_1_1MainMenuScene.html#a293adfde89e2f96f5aae7a9189caf1cb" title="Constructs the main menu interface and initializes all components." alt="" coords="117,5,332,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="432,96,340,60,303,48,304,43,342,55,433,91"/>
+<area shape="rect" id="Node000003" href="$classrtype_1_1client_1_1OptionsMenuScene.html#a564280b0f7b6bfb513a538c1185b2932" title="Constructs and initializes the Options menu scene." alt="" coords="108,69,341,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="376,109,341,105,342,100,376,103"/>
+<area shape="rect" id="Node000004" href="$classrtype_1_1client_1_1Game.html#a9c349ade2780c0a770c0b9d4485918e2" title="Executes the main game loop." alt="" coords="137,134,313,159"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="376,133,313,140,312,135,375,128"/>
+<area shape="rect" id="Node000006" href="$classrtype_1_1client_1_1Game.html#a14743f984bad6a06c8683af893247231" title="Starts the game with a specific scene as the entry point." alt="" coords="117,183,332,209"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="426,146,342,173,291,186,290,181,341,168,424,141"/>
+<area shape="rect" id="Node000005" href="$Client_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Main entry point of the R&#45;Type client." alt="" coords="5,159,60,185"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="123,163,60,171,60,166,122,157"/>
+<area shape="poly" id="edge6_Node000006_Node000005" title=" " alt="" coords="109,184,60,178,61,173,110,179"/>
 </map>

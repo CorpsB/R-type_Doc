@@ -263,13 +263,13 @@ Workflow:</h3>
 <div class="line"><span class="lineno">   40</span>}</div>
 <div class="ttc" id="aclassrtype_1_1client_1_1LanguageManager_html_a8cbd77dd513cca5180832527133fcaa3"><div class="ttname"><a href="classrtype_1_1client_1_1LanguageManager.html#a8cbd77dd513cca5180832527133fcaa3">rtype::client::LanguageManager::LanguageManager</a></div><div class="ttdeci">LanguageManager()</div><div class="ttdoc">Private constructor (singleton pattern enforcement).</div><div class="ttdef"><b>Definition</b> <a href="LanguageManager_8hpp_source.html#l00134">LanguageManager.hpp:134</a></div></div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="Button_8cpp_source.html#l00061">rtype::client::ui::Button::draw()</a>, and <a class="el" href="Client_2main_8cpp_source.html#l00047">main()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="MultipleOption_8cpp_source.html#l00051">rtype::client::ui::MultipleOption::draw()</a>, <a class="el" href="SingleOption_8cpp_source.html#l00043">rtype::client::ui::SingleOption::draw()</a>, and <a class="el" href="Client_2main_8cpp_source.html#l00048">main()</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classrtype_1_1client_1_1LanguageManager_a2a0213d4ccd62e45bb5c084f2c6ecb99_icgraph.svg" width="100%" height="364"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classrtype_1_1client_1_1LanguageManager_a2a0213d4ccd62e45bb5c084f2c6ecb99_icgraph.svg" width="551" height="135"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
@@ -307,7 +307,7 @@ Workflow:</h3>
 </li>
 </ul>
 <dl class="section note"><dt>Note</dt><dd>The returned string reference is owned internally; do not modify it. </dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classrtype_1_1client_1_1LanguageManager.html#af73eaebd78644013f1c95aba8beb0bc8" title="Loads a JSON file containing all language translations.">loadFile</a>, <a class="el" href="classrtype_1_1client_1_1GameSettings.html" title="Singleton managing global runtime and rendering configuration.">GameSettings</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classrtype_1_1client_1_1LanguageManager.html#af73eaebd78644013f1c95aba8beb0bc8" title="Loads a JSON file containing all language translations.">loadFile</a>, <a class="el" href="classrtype_1_1client_1_1GameSettings.html" title="Singleton managing runtime settings and UI scaling for the R-Type client.">GameSettings</a> </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="LanguageManager_8cpp_source.html#l00063">63</a> of file <a class="el" href="LanguageManager_8cpp_source.html">LanguageManager.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   64</span>{</div>
@@ -325,10 +325,10 @@ Workflow:</h3>
 <div class="line"><span class="lineno">   76</span>        <span class="keywordflow">return</span> missingTranslation;</div>
 <div class="line"><span class="lineno">   77</span>    <span class="keywordflow">return</span> langIt-&gt;second;</div>
 <div class="line"><span class="lineno">   78</span>}</div>
-<div class="ttc" id="aclassrtype_1_1client_1_1GameSettings_html_ad91efaa41fd095e80dd5dc8bb964c105"><div class="ttname"><a href="classrtype_1_1client_1_1GameSettings.html#ad91efaa41fd095e80dd5dc8bb964c105">rtype::client::GameSettings::getInstance</a></div><div class="ttdeci">static GameSettings &amp; getInstance()</div><div class="ttdoc">Retrieves the global singleton instance.</div><div class="ttdef"><b>Definition</b> <a href="GameSettings_8cpp_source.html#l00033">GameSettings.cpp:33</a></div></div>
+<div class="ttc" id="aclassrtype_1_1client_1_1GameSettings_html_ad91efaa41fd095e80dd5dc8bb964c105"><div class="ttname"><a href="classrtype_1_1client_1_1GameSettings.html#ad91efaa41fd095e80dd5dc8bb964c105">rtype::client::GameSettings::getInstance</a></div><div class="ttdeci">static GameSettings &amp; getInstance()</div><div class="ttdoc">Retrieves the global singleton instance.</div><div class="ttdef"><b>Definition</b> <a href="GameSettings_8cpp_source.html#l00034">GameSettings.cpp:34</a></div></div>
 <div class="ttc" id="aclassrtype_1_1client_1_1LanguageManager_html_a1f304f1cd121167a7a771065fbe03934"><div class="ttname"><a href="classrtype_1_1client_1_1LanguageManager.html#a1f304f1cd121167a7a771065fbe03934">rtype::client::LanguageManager::_translations</a></div><div class="ttdeci">std::unordered_map&lt; std::string, LangMap &gt; _translations</div><div class="ttdoc">All loaded translations by key and language.</div><div class="ttdef"><b>Definition</b> <a href="LanguageManager_8hpp_source.html#l00139">LanguageManager.hpp:139</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="LanguageManager_8hpp_source.html#l00139">_translations</a>, and <a class="el" href="GameSettings_8cpp_source.html#l00033">rtype::client::GameSettings::getInstance()</a>.</p>
+<p class="reference">References <a class="el" href="LanguageManager_8hpp_source.html#l00139">_translations</a>, and <a class="el" href="GameSettings_8cpp_source.html#l00034">rtype::client::GameSettings::getInstance()</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">

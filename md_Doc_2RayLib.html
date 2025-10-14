@@ -100,14 +100,14 @@ $(document).ready(function(){initNavTree('md_Doc_2RayLib.html',''); initResizabl
   <div class="headertitle"><div class="title">Why We Chose Raylib for the Game Rendering and Input System</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h2><a class="anchor" id="autotoc_md209"></a>
+<div class="textblock"><h2><a class="anchor" id="autotoc_md213"></a>
 1. Introduction</h2>
 <p>In our R-Type project, we selected <b>raylib</b> as the main multimedia and rendering library. The primary goal behind this choice was to have a <b>simple, efficient, and cross-platform</b> solution to handle graphical display, user input, audio, and resource management.</p>
 <p>Raylib is a lightweight, open-source C library designed specifically for learning, rapid prototyping, and small to mid-scale game projects. It provides a clean, minimal, and intuitive API that allows developers to focus on <b>game logic rather than graphics engine complexity</b>. This makes it particularly well-suited for an educational project like R-Type, which emphasizes real-time systems, modularity, and clarity of design.</p>
 <hr  />
-<h2><a class="anchor" id="autotoc_md211"></a>
+<h2><a class="anchor" id="autotoc_md215"></a>
 2. Why raylib?</h2>
-<h3><a class="anchor" id="autotoc_md212"></a>
+<h3><a class="anchor" id="autotoc_md216"></a>
 2.1 Simplicity and Readability</h3>
 <p>Unlike heavier frameworks such as <b>SDL</b>, <b>SFML</b>, or raw <b>OpenGL</b>, raylib provides an <b>extremely clean and easy-to-understand API</b>. Its primary design philosophy is "learn by doing" — giving developers direct access to graphics and input functions without excessive boilerplate code.</p>
 <p><b>Example:</b></p>
@@ -121,17 +121,17 @@ $(document).ready(function(){initNavTree('md_Doc_2RayLib.html',''); initResizabl
 <div class="line">CloseWindow();</div>
 </div><!-- fragment --><p>This small snippet demonstrates a fully functional rendering loop, ready to integrate into our ECS engine. The clarity and compactness of raylib’s API significantly accelerate development and debugging.</p>
 <hr  />
-<h3><a class="anchor" id="autotoc_md214"></a>
+<h3><a class="anchor" id="autotoc_md218"></a>
 2.2 Cross-Platform Portability</h3>
 <p>Raylib runs seamlessly on <b>Windows</b>, <b>Linux</b>, <b>macOS</b>, and even the <b>Web (via WebAssembly)</b>. This ensures that the game can be built and tested on multiple platforms without any code changes — an essential feature in a multi-environment academic setting such as Epitech.</p>
 <p>The same code compiles everywhere, making our R-Type project both portable and maintainable.</p>
 <hr  />
-<h3><a class="anchor" id="autotoc_md216"></a>
+<h3><a class="anchor" id="autotoc_md220"></a>
 2.3 Easy Integration with C++ and ECS Architecture</h3>
 <p>Although raylib is written in C, it is <b>fully compatible with C++</b>, making integration into our <b>Entity-Component-System (ECS)</b> straightforward. Each entity with a <code><a class="el" href="Position_8hpp.html#structposition__attr__t" title="Component holding the 2D coordinates of an entity.">position_attr_t</a></code> or <code>render_attr_t</code> component can directly use raylib’s drawing functions.</p>
 <p>Raylib acts as the <b>rendering and input layer</b>, while our ECS engine manages game logic, entities, and updates. This separation of responsibilities keeps the architecture <b>clean, modular, and scalable</b>.</p>
 <hr  />
-<h3><a class="anchor" id="autotoc_md218"></a>
+<h3><a class="anchor" id="autotoc_md222"></a>
 2.4 Built-in Multimedia Management</h3>
 <p>Raylib includes native support for all essential multimedia tasks:</p><ul>
 <li>Loading and drawing <b>textures</b> (PNG, JPG, BMP, etc.)</li>
@@ -141,7 +141,7 @@ $(document).ready(function(){initNavTree('md_Doc_2RayLib.html',''); initResizabl
 </ul>
 <p>Because these features are built-in, we avoid the complexity of linking multiple libraries (such as stb_image, OpenAL, or FreeType) manually. This significantly simplifies dependency management and reduces project setup time.</p>
 <hr  />
-<h3><a class="anchor" id="autotoc_md220"></a>
+<h3><a class="anchor" id="autotoc_md224"></a>
 2.5 Performance and Lightweight Design</h3>
 <p>Despite its simplicity, raylib is built on top of <b>OpenGL</b>, which ensures excellent rendering performance even on modest hardware. It supports static compilation, resulting in very lightweight executables with minimal startup time.</p>
 <p>This design provides:</p><ul>
@@ -151,7 +151,7 @@ $(document).ready(function(){initNavTree('md_Doc_2RayLib.html',''); initResizabl
 </ul>
 <p>In a fast-paced game like R-Type, where timing precision is crucial, this efficiency is a major advantage.</p>
 <hr  />
-<h3><a class="anchor" id="autotoc_md222"></a>
+<h3><a class="anchor" id="autotoc_md226"></a>
 2.6 Comparison with Other Libraries</h3>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -168,7 +168,7 @@ $(document).ready(function(){initNavTree('md_Doc_2RayLib.html',''); initResizabl
 <td class="markdownTableBodyNone"><b>Raylib</b>   </td><td class="markdownTableBodyNone">Lightweight, open-source, portable, and simple to integrate with custom ECS logic.   </td></tr>
 </table>
 <hr  />
-<h2><a class="anchor" id="autotoc_md224"></a>
+<h2><a class="anchor" id="autotoc_md228"></a>
 3. Benefits for the R-Type Project</h2>
 <p>Raylib offers multiple advantages that align perfectly with our project requirements:</p>
 <ul>
@@ -185,7 +185,7 @@ $(document).ready(function(){initNavTree('md_Doc_2RayLib.html',''); initResizabl
 </ul>
 <p>These features make raylib an all-in-one framework for small-to-medium games built in C/C++.</p>
 <hr  />
-<h2><a class="anchor" id="autotoc_md226"></a>
+<h2><a class="anchor" id="autotoc_md230"></a>
 4. Conclusion</h2>
 <p>We chose <b>raylib</b> because it offers the <b>best balance between simplicity, performance, and flexibility</b> for a lightweight, modular game engine. Its straightforward API, strong portability, and efficient OpenGL-based rendering make it ideal for developing R-Type’s visual layer and player interaction system.</p>
 <p>By using raylib, we can focus our efforts on <b>game logic, networking, and ECS architecture</b> instead of low-level rendering details. In short, raylib is not just a graphics library — it’s a <b>complete, educational, and modern framework</b> that perfectly fits the spirit of a technical, performance-oriented project like R-Type. </p>

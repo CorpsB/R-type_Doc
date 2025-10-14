@@ -103,17 +103,19 @@ $(document).ready(function(){initNavTree('OptionsMenuScene_8cpp.html',''); initR
 </div><!--header-->
 <div class="contents">
 
-<p>Implementation of the <a class="el" href="classrtype_1_1client_1_1OptionsMenuScene.html">rtype::client::OptionsMenuScene</a> class.  
+<p>Implementation of the OptionsMenuScene class for managing user configuration menus.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="OptionsMenuScene_8hpp_source.html">OptionsMenuScene.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="GameSettings_8hpp_source.html">../../Settings/GameSettings.hpp</a>&quot;</code><br />
-<code>#include &lt;raylib.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="InputManager_8hpp_source.html">../../Inputs/InputManager.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="SceneManager_8hpp_source.html">../SceneManager/SceneManager.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="MainMenuScene_8hpp_source.html">../MainMenu/MainMenuScene.hpp</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for OptionsMenuScene.cpp:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="OptionsMenuScene_8cpp__incl.svg" width="100%" height="547"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="OptionsMenuScene_8cpp__incl.svg" width="100%" height="558"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 </div>
 <p><a href="OptionsMenuScene_8cpp_source.html">Go to the source code of this file.</a></p>
@@ -126,15 +128,19 @@ Namespaces</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Implementation of the <a class="el" href="classrtype_1_1client_1_1OptionsMenuScene.html">rtype::client::OptionsMenuScene</a> class. </p>
+<div class="textblock"><p>Implementation of the OptionsMenuScene class for managing user configuration menus. </p>
 <dl class="section since"><dt>Since</dt><dd>1.0</dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="OptionsMenuScene_8hpp.html" title="Declaration of the rtype::client::OptionsMenuScene class.">OptionsMenuScene.hpp</a>, GameSettings, ui::DropMenu</dd></dl>
-<p>This file implements the runtime logic of the <a class="el" href="classrtype_1_1client_1_1OptionsMenuScene.html">rtype::client::OptionsMenuScene</a>, responsible for displaying configurable dropdown menus for resolution, display mode, and language.</p>
-<p>Responsibilities:</p><ul>
-<li>Initialize UI dropdowns with callback bindings.</li>
-<li>Synchronize UI layout with GameSettings.</li>
-<li>Update and render the options menu dynamically each frame. </li>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="OptionsMenuScene_8hpp.html" title="Declaration of the OptionsMenuScene class, handling the game’s settings menu.">OptionsMenuScene.hpp</a>, GameSettings, SceneManager</dd></dl>
+<p>This file defines the logic for the options menu scene in the R-Type client. It provides a configurable menu interface that allows users to change resolution, display mode, and language at runtime. The menu also includes options to apply or cancel changes.</p>
+<h3><a class="anchor" id="autotoc_md11"></a>
+Responsibilities:</h3>
+<ul>
+<li>Manage menu option initialization and rendering.</li>
+<li>Handle navigation and selection input.</li>
+<li>Interface with GameSettings for configuration persistence.</li>
 </ul>
+<dl class="section note"><dt>Note</dt><dd>All UI elements are scaled dynamically based on GameSettings. </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>Input handling assumes keyboard navigation. </dd></dl>
 
 <p class="definition">Definition in file <a class="el" href="OptionsMenuScene_8cpp_source.html">OptionsMenuScene.cpp</a>.</p>
 </div></div><!-- contents -->

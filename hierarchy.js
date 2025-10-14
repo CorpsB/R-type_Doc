@@ -37,9 +37,12 @@ var hierarchy =
     [ "rtype::client::ResourceManager", "classrtype_1_1client_1_1ResourceManager.html", null ],
     [ "rtype::client::SceneManager", "classrtype_1_1client_1_1SceneManager.html", null ],
     [ "rtype::client::SceneManager::PendingOp", "classrtype_1_1client_1_1SceneManager.html#structrtype_1_1client_1_1SceneManager_1_1PendingOp", null ],
-    [ "rtype::client::ui::Button", "classrtype_1_1client_1_1ui_1_1Button.html", null ],
-    [ "rtype::client::ui::Button::Style", "classrtype_1_1client_1_1ui_1_1Button.html#structrtype_1_1client_1_1ui_1_1Button_1_1Style", null ],
-    [ "rtype::client::ui::DropMenu", "classrtype_1_1client_1_1ui_1_1DropMenu.html", null ],
+    [ "rtype::client::ui::IOption", "classrtype_1_1client_1_1ui_1_1IOption.html", [
+      [ "rtype::client::ui::MultipleOption", "classrtype_1_1client_1_1ui_1_1MultipleOption.html", null ],
+      [ "rtype::client::ui::SingleOption", "classrtype_1_1client_1_1ui_1_1SingleOption.html", null ]
+    ] ],
+    [ "rtype::client::ui::MultipleOption::Choice", "classrtype_1_1client_1_1ui_1_1MultipleOption.html#structrtype_1_1client_1_1ui_1_1MultipleOption_1_1Choice", null ],
+    [ "rtype::client::ui::Sprite", "classrtype_1_1client_1_1ui_1_1Sprite.html", null ],
     [ "rtype::ecs::CollisionWorld", "classrtype_1_1ecs_1_1CollisionWorld.html", null ],
     [ "rtype::ecs::ComponentManager", "classrtype_1_1ecs_1_1ComponentManager.html", null ],
     [ "rtype::ecs::Coordinator", "classrtype_1_1ecs_1_1Coordinator.html", null ],
@@ -56,7 +59,7 @@ var hierarchy =
     [ "rtype::server", "classrtype_1_1server.html", null ],
     [ "score_attr_t", "Score_8hpp.html#structscore__attr__t", null ],
     [ "speed_attr_t", "Speed_8hpp.html#structspeed__attr__t", null ],
-    [ "sprite_attr_t", "Sprite_8hpp.html#structsprite__attr__t", null ],
+    [ "sprite_attr_t", "Common_2ECS_2Components_2Attributes_2Sprite_8hpp.html#structsprite__attr__t", null ],
     [ "std::exception", null, [
       [ "rtype::exception::Error", "classrtype_1_1exception_1_1Error.html", null ]
     ] ],

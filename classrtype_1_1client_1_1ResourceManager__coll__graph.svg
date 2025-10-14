@@ -21,7 +21,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title="Singleton class managing global asset loading and caching.">
+<g id="a_Node000001"><a xlink:title="Singleton responsible for loading, caching, and managing Raylib assets.">
 <polygon fill="#999999" stroke="transparent" points="230,-361 0,-361 0,0 230,0 230,-361"/>
 <text text-anchor="start" x="38.5" y="-348.5" font-family="Helvetica,sans-Serif" font-size="10.00">rtype::client::ResourceManager</text>
 <text text-anchor="start" x="6.5" y="-333.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>

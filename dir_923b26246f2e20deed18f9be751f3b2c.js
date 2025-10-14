@@ -9,5 +9,5 @@ var dir_923b26246f2e20deed18f9be751f3b2c =
     [ "Position.hpp", "Position_8hpp.html", "Position_8hpp" ],
     [ "Score.hpp", "Score_8hpp.html", "Score_8hpp" ],
     [ "Speed.hpp", "Speed_8hpp.html", "Speed_8hpp" ],
-    [ "Sprite.hpp", "Sprite_8hpp.html", "Sprite_8hpp" ]
+    [ "Sprite.hpp", "Common_2ECS_2Components_2Attributes_2Sprite_8hpp.html", "Common_2ECS_2Components_2Attributes_2Sprite_8hpp" ]
 ];

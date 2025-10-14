@@ -104,7 +104,7 @@ $(document).ready(function(){initNavTree('ResourceManager_8hpp.html',''); initRe
 </div><!--header-->
 <div class="contents">
 
-<p>Declaration of the <a class="el" href="classrtype_1_1client_1_1ResourceManager.html">rtype::client::ResourceManager</a> singleton class.  
+<p>Declaration of the ResourceManager singleton handling game asset caching.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;string&gt;</code><br />
 <code>#include &lt;unordered_map&gt;</code><br />
@@ -121,7 +121,7 @@ $(document).ready(function(){initNavTree('ResourceManager_8hpp.html',''); initRe
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="ResourceManager_8hpp__dep__incl.svg" width="178" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="ResourceManager_8hpp__dep__incl.svg" width="100%" height="382"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 </div>
 <p><a href="ResourceManager_8hpp_source.html">Go to the source code of this file.</a></p>
@@ -129,7 +129,7 @@ $(document).ready(function(){initNavTree('ResourceManager_8hpp.html',''); initRe
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtype_1_1client_1_1ResourceManager.html">rtype::client::ResourceManager</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Singleton class managing global asset loading and caching.  <a href="classrtype_1_1client_1_1ResourceManager.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Singleton responsible for loading, caching, and managing Raylib assets.  <a href="classrtype_1_1client_1_1ResourceManager.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
@@ -140,16 +140,18 @@ Namespaces</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Declaration of the <a class="el" href="classrtype_1_1client_1_1ResourceManager.html">rtype::client::ResourceManager</a> singleton class. </p>
+<div class="textblock"><p>Declaration of the ResourceManager singleton handling game asset caching. </p>
 <dl class="section since"><dt>Since</dt><dd>1.0</dd></dl>
 <dl class="section see"><dt>See also</dt><dd>Texture2D, Font, Sound, GameSettings</dd></dl>
-<p>The <b>ResourceManager</b> class provides a centralized caching system for Raylib resources such as textures, fonts, and sounds. It ensures that assets are loaded only once and shared across the entire client, avoiding redundant resource allocation.</p>
-<p>Responsibilities:</p><ul>
-<li>Load and store assets using unique string keys.</li>
-<li>Retrieve assets efficiently from internal maps.</li>
-<li>Release all resources upon shutdown.</li>
+<p>The ResourceManager provides a global caching and lifecycle management system for Raylib resources such as textures, fonts, and sounds. It ensures assets are loaded only once and shared efficiently across the client.</p>
+<h3><a class="anchor" id="autotoc_md6"></a>
+Responsibilities:</h3>
+<ul>
+<li>Load and store resources using string-based keys.</li>
+<li>Provide fast retrieval through hash map lookup.</li>
+<li>Release all loaded assets during shutdown.</li>
 </ul>
-<p>The singleton pattern ensures global accessibility while maintaining strict lifetime control over Raylib resources. </p>
+<p>The singleton pattern guarantees safe, centralized access to all resources. </p>
 
 <p class="definition">Definition in file <a class="el" href="ResourceManager_8hpp_source.html">ResourceManager.hpp</a>.</p>
 </div></div><!-- contents -->
