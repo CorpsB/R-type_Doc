@@ -30,7 +30,7 @@ var namespaceprotocol_1_1game =
     [ "player_id_t", "namespaceprotocol_1_1game.html#af73509b55868f0169ae63813c0f7baae", null ],
     [ "position_t", "namespaceprotocol_1_1game.html#a6736533294d2876d3dc4bc0b248a9c97", null ],
     [ "entity_type_t", "namespaceprotocol_1_1game.html#a58051a0f9c1c650d605d71a73e9437bd", [
-      [ "NONE", "namespaceprotocol_1_1game.html#a58051a0f9c1c650d605d71a73e9437bda0d5f85390e63d94e3159332f8c8746c1", null ],
+      [ "NONE", "namespaceprotocol_1_1game.html#aa65405265af95e2ad16de5c1bf6499c8a0d5f85390e63d94e3159332f8c8746c1", null ],
       [ "PLAYER", "namespaceprotocol_1_1game.html#a58051a0f9c1c650d605d71a73e9437bda36feead328784e91b2c8f5cafd543773", null ],
       [ "ENEMY", "namespaceprotocol_1_1game.html#a58051a0f9c1c650d605d71a73e9437bdaede731433a6fbec7240dc94ebe9ac41a", null ],
       [ "PROJECTILE", "namespaceprotocol_1_1game.html#a58051a0f9c1c650d605d71a73e9437bda1fb4b4514aa45ab3f36aba6806781b4e", null ]
@@ -58,13 +58,36 @@ var namespaceprotocol_1_1game =
       [ "PING", "namespaceprotocol_1_1game.html#ad4d21ce1bb315afe579f5abed923f701ae07ff41a486c27c095a15898dcca34d1", null ]
     ] ],
     [ "player_input_t", "namespaceprotocol_1_1game.html#aa65405265af95e2ad16de5c1bf6499c8", [
-      [ "NONE", "namespaceprotocol_1_1game.html#a58051a0f9c1c650d605d71a73e9437bda0d5f85390e63d94e3159332f8c8746c1", null ],
-      [ "FIRE", "namespaceprotocol_1_1game.html#aa65405265af95e2ad16de5c1bf6499c8ab9a98fc8ae0032750322256c6a61bb43", null ],
-      [ "UP", "namespaceprotocol_1_1game.html#aa65405265af95e2ad16de5c1bf6499c8a2be465b821070491d05cfcbbe59cf4fd", null ],
-      [ "DOWN", "namespaceprotocol_1_1game.html#aa65405265af95e2ad16de5c1bf6499c8af1919fc79fc549bfb7dd14ed5bcbcee9", null ],
-      [ "LEFT", "namespaceprotocol_1_1game.html#aa65405265af95e2ad16de5c1bf6499c8a53b74dc2a9d0fc30b42fbfe1c34166da", null ],
-      [ "RIGHT", "namespaceprotocol_1_1game.html#aa65405265af95e2ad16de5c1bf6499c8a8cc8fe6468baa99edc9894cd822d9a58", null ],
-      [ "ESC", "namespaceprotocol_1_1game.html#aa65405265af95e2ad16de5c1bf6499c8abda6ee89d49cf06583a8ae61a0e2fc20", null ]
+      [ "NONE", "namespaceprotocol_1_1game.html#aa65405265af95e2ad16de5c1bf6499c8a0d5f85390e63d94e3159332f8c8746c1", null ],
+      [ "FIRE", "namespaceprotocol_1_1game.html#aa65405265af95e2ad16de5c1bf6499c8a86e33279dd7d3537f99fac026649ca3c", null ],
+      [ "UP", "namespaceprotocol_1_1game.html#aa65405265af95e2ad16de5c1bf6499c8a7aff1d6aa4d5d4eb6fe29c164f6b2388", null ],
+      [ "DOWN", "namespaceprotocol_1_1game.html#aa65405265af95e2ad16de5c1bf6499c8a02c435875240fea34b7aac801b4c2c03", null ],
+      [ "LEFT", "namespaceprotocol_1_1game.html#aa65405265af95e2ad16de5c1bf6499c8a5786fd962d38ad7c3c995832c6e148f2", null ],
+      [ "RIGHT", "namespaceprotocol_1_1game.html#aa65405265af95e2ad16de5c1bf6499c8ae3643c2e847f43d390c197fa7d53d9dc", null ],
+      [ "ESC", "namespaceprotocol_1_1game.html#aa65405265af95e2ad16de5c1bf6499c8a8e3e881c9d05725b1e387e20a4e74e89", null ],
+      [ "NONE", "namespaceprotocol_1_1game.html#aa65405265af95e2ad16de5c1bf6499c8a0d5f85390e63d94e3159332f8c8746c1", null ],
+      [ "FIRE", "namespaceprotocol_1_1game.html#aa65405265af95e2ad16de5c1bf6499c8a86e33279dd7d3537f99fac026649ca3c", null ],
+      [ "UP", "namespaceprotocol_1_1game.html#aa65405265af95e2ad16de5c1bf6499c8a7aff1d6aa4d5d4eb6fe29c164f6b2388", null ],
+      [ "DOWN", "namespaceprotocol_1_1game.html#aa65405265af95e2ad16de5c1bf6499c8a02c435875240fea34b7aac801b4c2c03", null ],
+      [ "LEFT", "namespaceprotocol_1_1game.html#aa65405265af95e2ad16de5c1bf6499c8a5786fd962d38ad7c3c995832c6e148f2", null ],
+      [ "RIGHT", "namespaceprotocol_1_1game.html#aa65405265af95e2ad16de5c1bf6499c8ae3643c2e847f43d390c197fa7d53d9dc", null ],
+      [ "ESC", "namespaceprotocol_1_1game.html#aa65405265af95e2ad16de5c1bf6499c8a8e3e881c9d05725b1e387e20a4e74e89", null ]
+    ] ],
+    [ "player_input_t", "namespaceprotocol_1_1game.html#aa65405265af95e2ad16de5c1bf6499c8", [
+      [ "NONE", "namespaceprotocol_1_1game.html#aa65405265af95e2ad16de5c1bf6499c8a0d5f85390e63d94e3159332f8c8746c1", null ],
+      [ "FIRE", "namespaceprotocol_1_1game.html#aa65405265af95e2ad16de5c1bf6499c8a86e33279dd7d3537f99fac026649ca3c", null ],
+      [ "UP", "namespaceprotocol_1_1game.html#aa65405265af95e2ad16de5c1bf6499c8a7aff1d6aa4d5d4eb6fe29c164f6b2388", null ],
+      [ "DOWN", "namespaceprotocol_1_1game.html#aa65405265af95e2ad16de5c1bf6499c8a02c435875240fea34b7aac801b4c2c03", null ],
+      [ "LEFT", "namespaceprotocol_1_1game.html#aa65405265af95e2ad16de5c1bf6499c8a5786fd962d38ad7c3c995832c6e148f2", null ],
+      [ "RIGHT", "namespaceprotocol_1_1game.html#aa65405265af95e2ad16de5c1bf6499c8ae3643c2e847f43d390c197fa7d53d9dc", null ],
+      [ "ESC", "namespaceprotocol_1_1game.html#aa65405265af95e2ad16de5c1bf6499c8a8e3e881c9d05725b1e387e20a4e74e89", null ],
+      [ "NONE", "namespaceprotocol_1_1game.html#aa65405265af95e2ad16de5c1bf6499c8a0d5f85390e63d94e3159332f8c8746c1", null ],
+      [ "FIRE", "namespaceprotocol_1_1game.html#aa65405265af95e2ad16de5c1bf6499c8a86e33279dd7d3537f99fac026649ca3c", null ],
+      [ "UP", "namespaceprotocol_1_1game.html#aa65405265af95e2ad16de5c1bf6499c8a7aff1d6aa4d5d4eb6fe29c164f6b2388", null ],
+      [ "DOWN", "namespaceprotocol_1_1game.html#aa65405265af95e2ad16de5c1bf6499c8a02c435875240fea34b7aac801b4c2c03", null ],
+      [ "LEFT", "namespaceprotocol_1_1game.html#aa65405265af95e2ad16de5c1bf6499c8a5786fd962d38ad7c3c995832c6e148f2", null ],
+      [ "RIGHT", "namespaceprotocol_1_1game.html#aa65405265af95e2ad16de5c1bf6499c8ae3643c2e847f43d390c197fa7d53d9dc", null ],
+      [ "ESC", "namespaceprotocol_1_1game.html#aa65405265af95e2ad16de5c1bf6499c8a8e3e881c9d05725b1e387e20a4e74e89", null ]
     ] ],
     [ "DEFAULT_POSITION_SCALE", "namespaceprotocol_1_1game.html#a8ab44a0bd6915da4264d074ca1a4c87b", null ]
 ];

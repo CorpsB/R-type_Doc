@@ -100,9 +100,18 @@ $(document).ready(function(){initNavTree('Rtype_8cpp.html',''); initResizable();
   <div class="headertitle"><div class="title">Rtype.cpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Implements the main server logic for the R-Type project.  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="Rtype_8hpp_source.html">Rtype.hpp</a>&quot;</code><br />
 <code>#include &quot;time.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="GameProtocol_8hpp_source.html">../Common/Protocol/GameProtocol.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="CollisionSystem_8hpp_source.html">../Common/ECS/Systems/CollisionSystem.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="MovementSystem_8hpp_source.html">../Common/ECS/Systems/MovementSystem.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="EntityFactory_8hpp_source.html">../Common/Factory/EntityFactory.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="SpawnerSystem_8hpp_source.html">../Common/ECS/Systems/SpawnerSystem.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="utils_8hpp_source.html">../Common/Protocol/Utils/utils.hpp</a>&quot;</code><br />
+<code>#include &lt;iostream&gt;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for Rtype.cpp:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -112,7 +121,13 @@ $(document).ready(function(){initNavTree('Rtype_8cpp.html',''); initResizable();
 </div>
 </div>
 <p><a href="Rtype_8cpp_source.html">Go to the source code of this file.</a></p>
-</div><!-- contents -->
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Implements the main server logic for the R-Type project. </p>
+<dl class="section since"><dt>Since</dt><dd>1.0</dd></dl>
+<p>This file defines the implementation of the <code><a class="el" href="classrtype_1_1server.html" title="Core class representing the R-Type game server.">rtype::server</a></code> class, which manages the initialization and main execution loop of the server. It sets up the ECS systems, handles player connections and disconnections, and updates the game state at each tick using a controlled server clock. </p>
+
+<p class="definition">Definition in file <a class="el" href="Rtype_8cpp_source.html">Rtype.cpp</a>.</p>
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

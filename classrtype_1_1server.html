@@ -105,6 +105,9 @@ $(document).ready(function(){initNavTree('classrtype_1_1server.html',''); initRe
 </div><!--header-->
 <div class="contents">
 
+<p>Core class representing the R-Type game server.  
+ <a href="classrtype_1_1server.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="Rtype_8hpp_source.html">Rtype.hpp</a>&gt;</code></p>
 <div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Collaboration diagram for rtype::server:</div>
@@ -116,24 +119,43 @@ $(document).ready(function(){initNavTree('classrtype_1_1server.html',''); initRe
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a1de0e948dca9a64f464c7663c77a25e0" id="r_a1de0e948dca9a64f464c7663c77a25e0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtype_1_1server.html#a1de0e948dca9a64f464c7663c77a25e0">server</a> ()</td></tr>
-<tr class="separator:a1de0e948dca9a64f464c7663c77a25e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78e8de275d928b0fc4575286b4dbbd8a" id="r_a78e8de275d928b0fc4575286b4dbbd8a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtype_1_1server.html#a78e8de275d928b0fc4575286b4dbbd8a">server</a> (<a class="el" href="config_8h.html#structparser__args__t">parser_args_t</a> args)</td></tr>
+<tr class="memdesc:a78e8de275d928b0fc4575286b4dbbd8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs the server with the provided configuration arguments.  <br /></td></tr>
+<tr class="separator:a78e8de275d928b0fc4575286b4dbbd8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1215d27093c4b67dd855f14e0532a117" id="r_a1215d27093c4b67dd855f14e0532a117"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtype_1_1server.html#a1215d27093c4b67dd855f14e0532a117">~server</a> ()=default</td></tr>
+<tr class="memdesc:a1215d27093c4b67dd855f14e0532a117"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default destructor.  <br /></td></tr>
 <tr class="separator:a1215d27093c4b67dd855f14e0532a117"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a703fd91ca5d705369acef8f6e505e32d" id="r_a703fd91ca5d705369acef8f6e505e32d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtype_1_1server.html#a703fd91ca5d705369acef8f6e505e32d">run</a> ()</td></tr>
+<tr class="memdesc:a703fd91ca5d705369acef8f6e505e32d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts the main execution loop of the server.  <br /></td></tr>
 <tr class="separator:a703fd91ca5d705369acef8f6e505e32d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a0da33fe3243f5a685808a3c4045d6167" id="r_a0da33fe3243f5a685808a3c4045d6167"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classrtype_1_1ecs_1_1Coordinator.html">rtype::ecs::Coordinator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtype_1_1server.html#a0da33fe3243f5a685808a3c4045d6167">_coo</a></td></tr>
+<tr class="memdesc:a0da33fe3243f5a685808a3c4045d6167"><td class="mdescLeft">&#160;</td><td class="mdescRight">Central ECS coordinator handling entities and components.  <br /></td></tr>
 <tr class="separator:a0da33fe3243f5a685808a3c4045d6167"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed0f43fa8aeb461813866b3aa50b633b" id="r_aed0f43fa8aeb461813866b3aa50b633b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classServerClock.html">ServerClock</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtype_1_1server.html#aed0f43fa8aeb461813866b3aa50b633b">_clock</a></td></tr>
+<tr class="memdesc:aed0f43fa8aeb461813866b3aa50b633b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internal timing mechanism for managing server ticks.  <br /></td></tr>
+<tr class="separator:aed0f43fa8aeb461813866b3aa50b633b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec434d9ad480ba7155cfbab0cd78625e" id="r_aec434d9ad480ba7155cfbab0cd78625e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="config_8h.html#structparser__args__t">parser_args_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtype_1_1server.html#aec434d9ad480ba7155cfbab0cd78625e">_args</a></td></tr>
+<tr class="memdesc:aec434d9ad480ba7155cfbab0cd78625e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parsed runtime configuration for the server.  <br /></td></tr>
+<tr class="separator:aec434d9ad480ba7155cfbab0cd78625e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad24843905d7c8243eff77dac7238bf72" id="r_ad24843905d7c8243eff77dac7238bf72"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtype_1_1server.html#ad24843905d7c8243eff77dac7238bf72">_isEnd</a></td></tr>
+<tr class="memdesc:ad24843905d7c8243eff77dac7238bf72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates whether the server should terminate its main loop.  <br /></td></tr>
+<tr class="separator:ad24843905d7c8243eff77dac7238bf72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa28ce7b1ee2eeee0a326a62aa31ce904" id="r_aa28ce7b1ee2eeee0a326a62aa31ce904"><td class="memItemLeft" align="right" valign="top">std::optional&lt; protocol::udp::endpoint &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtype_1_1server.html#aa28ce7b1ee2eeee0a326a62aa31ce904">_last_client</a></td></tr>
+<tr class="separator:aa28ce7b1ee2eeee0a326a62aa31ce904"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="Rtype_8hpp_source.html#l00017">17</a> of file <a class="el" href="Rtype_8hpp_source.html">Rtype.hpp</a>.</p>
+<div class="textblock"><p>Core class representing the R-Type game server. </p>
+<p>This class encapsulates the initialization and runtime logic of the R-Type server. It manages the ECS coordinator responsible for entities and components, uses <code><a class="el" href="classServerClock.html" title="Manages the server’s fixed-timestep update loop.">ServerClock</a></code> to maintain a stable tick rate, and interprets the configuration provided through <code><a class="el" href="config_8h.html#structparser__args__t" title="Aggregates all configurable server parameters.">parser_args_t</a></code>.</p>
+<p>The main loop is handled by the <code><a class="el" href="classrtype_1_1server.html#a703fd91ca5d705369acef8f6e505e32d" title="Starts the main execution loop of the server.">run()</a></code> method, which executes until <code>_isEnd</code> becomes true, typically when the server is instructed to shut down.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classrtype_1_1ecs_1_1Coordinator.html" title="Central coordinator that orchestrates entities, components and systems.">rtype::ecs::Coordinator</a>, <a class="el" href="classServerClock.html" title="Manages the server’s fixed-timestep update loop.">ServerClock</a>, <a class="el" href="config_8h.html#structparser__args__t" title="Aggregates all configurable server parameters.">parser_args_t</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="Rtype_8hpp_source.html#l00052">52</a> of file <a class="el" href="Rtype_8hpp_source.html">Rtype.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a1de0e948dca9a64f464c7663c77a25e0" name="a1de0e948dca9a64f464c7663c77a25e0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1de0e948dca9a64f464c7663c77a25e0">&#9670;&#160;</a></span>server()</h2>
+<a id="a78e8de275d928b0fc4575286b4dbbd8a" name="a78e8de275d928b0fc4575286b4dbbd8a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78e8de275d928b0fc4575286b4dbbd8a">&#9670;&#160;</a></span>server()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -141,16 +163,46 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="memname">rtype::server::server </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="config_8h.html#structparser__args__t">parser_args_t</a>&#160;</td>
+          <td class="paramname"><em>args</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Rtype_8cpp_source.html#l00013">13</a> of file <a class="el" href="Rtype_8cpp_source.html">Rtype.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   14</span>{</div>
-<div class="line"><span class="lineno">   15</span>}</div>
+<p>Constructs the server with the provided configuration arguments. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">args</td><td>Parsed command-line arguments and configuration.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Initializes the ECS coordinator and the server clock, and prepares the server to accept connections. No network activity starts until <code><a class="el" href="classrtype_1_1server.html#a703fd91ca5d705369acef8f6e505e32d" title="Starts the main execution loop of the server.">run()</a></code> is called. </p>
+
+<p class="definition">Definition at line <a class="el" href="Rtype_8cpp_source.html#l00031">31</a> of file <a class="el" href="Rtype_8cpp_source.html">Rtype.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   31</span>                                      : <a class="code hl_variable" href="classrtype_1_1server.html#a0da33fe3243f5a685808a3c4045d6167">_coo</a>(), <a class="code hl_variable" href="classrtype_1_1server.html#aed0f43fa8aeb461813866b3aa50b633b">_clock</a>(60), <a class="code hl_variable" href="classrtype_1_1server.html#aec434d9ad480ba7155cfbab0cd78625e">_args</a>(args)</div>
+<div class="line"><span class="lineno">   32</span>{</div>
+<div class="line"><span class="lineno">   33</span>    <a class="code hl_variable" href="classrtype_1_1server.html#ad24843905d7c8243eff77dac7238bf72">_isEnd</a> = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">   34</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="classrtype_1_1server.html#aec434d9ad480ba7155cfbab0cd78625e">_args</a>.<a class="code hl_variable" href="config_8h.html#aa5c4c5ada39985d28d541919f4939bce">debug</a> &gt;= 1)</div>
+<div class="line"><span class="lineno">   35</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;[DEBUG] - Server configuration&quot;</span> &lt;&lt; std::endl &lt;&lt;</div>
+<div class="line"><span class="lineno">   36</span>        <span class="stringliteral">&quot;Configuration path: &quot;</span>&lt;&lt; <a class="code hl_variable" href="classrtype_1_1server.html#aec434d9ad480ba7155cfbab0cd78625e">_args</a>.<a class="code hl_variable" href="config_8h.html#a102c96c5eece8417b92538211790b44b">cfg_path</a> &lt;&lt; std::endl &lt;&lt;</div>
+<div class="line"><span class="lineno">   37</span>        <span class="stringliteral">&quot;Debug lvl: &quot;</span> &lt;&lt; args.<a class="code hl_variable" href="config_8h.html#aa5c4c5ada39985d28d541919f4939bce">debug</a> &lt;&lt; std::endl &lt;&lt;</div>
+<div class="line"><span class="lineno">   38</span>        <span class="stringliteral">&quot;Server ip: &quot;</span> &lt;&lt; args.<a class="code hl_variable" href="config_8h.html#a6ebfa3230a76f74ed3e8f7094457b12c">ip</a> &lt;&lt; std::endl &lt;&lt;</div>
+<div class="line"><span class="lineno">   39</span>        <span class="stringliteral">&quot;Server port: &quot;</span> &lt;&lt; args.<a class="code hl_variable" href="config_8h.html#a03a218180f882180702d49d127ad7952">port</a> &lt;&lt; std::endl &lt;&lt;</div>
+<div class="line"><span class="lineno">   40</span>        <span class="stringliteral">&quot;Server seed&quot;</span> &lt;&lt; args.<a class="code hl_variable" href="config_8h.html#a678947cccd3f8ad4cec428886fa74d94">seed</a> &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">   41</span>}</div>
+<div class="ttc" id="aclassrtype_1_1server_html_a0da33fe3243f5a685808a3c4045d6167"><div class="ttname"><a href="classrtype_1_1server.html#a0da33fe3243f5a685808a3c4045d6167">rtype::server::_coo</a></div><div class="ttdeci">rtype::ecs::Coordinator _coo</div><div class="ttdoc">Central ECS coordinator handling entities and components.</div><div class="ttdef"><b>Definition</b> <a href="Rtype_8hpp_source.html#l00087">Rtype.hpp:87</a></div></div>
+<div class="ttc" id="aclassrtype_1_1server_html_ad24843905d7c8243eff77dac7238bf72"><div class="ttname"><a href="classrtype_1_1server.html#ad24843905d7c8243eff77dac7238bf72">rtype::server::_isEnd</a></div><div class="ttdeci">bool _isEnd</div><div class="ttdoc">Indicates whether the server should terminate its main loop.</div><div class="ttdef"><b>Definition</b> <a href="Rtype_8hpp_source.html#l00090">Rtype.hpp:90</a></div></div>
+<div class="ttc" id="aclassrtype_1_1server_html_aec434d9ad480ba7155cfbab0cd78625e"><div class="ttname"><a href="classrtype_1_1server.html#aec434d9ad480ba7155cfbab0cd78625e">rtype::server::_args</a></div><div class="ttdeci">parser_args_t _args</div><div class="ttdoc">Parsed runtime configuration for the server.</div><div class="ttdef"><b>Definition</b> <a href="Rtype_8hpp_source.html#l00089">Rtype.hpp:89</a></div></div>
+<div class="ttc" id="aclassrtype_1_1server_html_aed0f43fa8aeb461813866b3aa50b633b"><div class="ttname"><a href="classrtype_1_1server.html#aed0f43fa8aeb461813866b3aa50b633b">rtype::server::_clock</a></div><div class="ttdeci">ServerClock _clock</div><div class="ttdoc">Internal timing mechanism for managing server ticks.</div><div class="ttdef"><b>Definition</b> <a href="Rtype_8hpp_source.html#l00088">Rtype.hpp:88</a></div></div>
+<div class="ttc" id="aconfig_8h_html_a03a218180f882180702d49d127ad7952"><div class="ttname"><a href="config_8h.html#a03a218180f882180702d49d127ad7952">parser_args_t::port</a></div><div class="ttdeci">int port</div><div class="ttdoc">TCP/UDP port in [1..65535]; 0 means &quot;unset&quot;.</div><div class="ttdef"><b>Definition</b> <a href="config_8h_source.html#l00039">config.h:39</a></div></div>
+<div class="ttc" id="aconfig_8h_html_a102c96c5eece8417b92538211790b44b"><div class="ttname"><a href="config_8h.html#a102c96c5eece8417b92538211790b44b">parser_args_t::cfg_path</a></div><div class="ttdeci">std::string cfg_path</div><div class="ttdoc">Path to the configuration file.</div><div class="ttdef"><b>Definition</b> <a href="config_8h_source.html#l00041">config.h:41</a></div></div>
+<div class="ttc" id="aconfig_8h_html_a678947cccd3f8ad4cec428886fa74d94"><div class="ttname"><a href="config_8h.html#a678947cccd3f8ad4cec428886fa74d94">parser_args_t::seed</a></div><div class="ttdeci">int seed</div><div class="ttdef"><b>Definition</b> <a href="config_8h_source.html#l00042">config.h:42</a></div></div>
+<div class="ttc" id="aconfig_8h_html_a6ebfa3230a76f74ed3e8f7094457b12c"><div class="ttname"><a href="config_8h.html#a6ebfa3230a76f74ed3e8f7094457b12c">parser_args_t::ip</a></div><div class="ttdeci">std::string ip</div><div class="ttdoc">Bind address or advertised IP.</div><div class="ttdef"><b>Definition</b> <a href="config_8h_source.html#l00040">config.h:40</a></div></div>
+<div class="ttc" id="aconfig_8h_html_aa5c4c5ada39985d28d541919f4939bce"><div class="ttname"><a href="config_8h.html#aa5c4c5ada39985d28d541919f4939bce">parser_args_t::debug</a></div><div class="ttdeci">int debug</div><div class="ttdoc">Debug level in [0..3]; 0 disables extra logs.</div><div class="ttdef"><b>Definition</b> <a href="config_8h_source.html#l00038">config.h:38</a></div></div>
 </div><!-- fragment -->
+<p class="reference">References <a class="el" href="Rtype_8hpp_source.html#l00089">_args</a>, <a class="el" href="Rtype_8hpp_source.html#l00090">_isEnd</a>, <a class="el" href="config_8h_source.html#l00041">parser_args_t::cfg_path</a>, <a class="el" href="config_8h_source.html#l00038">parser_args_t::debug</a>, <a class="el" href="config_8h_source.html#l00040">parser_args_t::ip</a>, <a class="el" href="config_8h_source.html#l00039">parser_args_t::port</a>, and <a class="el" href="config_8h_source.html#l00042">parser_args_t::seed</a>.</p>
+
 </div>
 </div>
 <a id="a1215d27093c4b67dd855f14e0532a117" name="a1215d27093c4b67dd855f14e0532a117"></a>
@@ -176,6 +228,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Default destructor. </p>
+<p>Cleans up any remaining resources gracefully. Since the server’s lifetime is tied to its run loop, the destructor is usually called at program termination. </p>
+
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -194,60 +249,112 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Rtype_8cpp_source.html#l00017">17</a> of file <a class="el" href="Rtype_8cpp_source.html">Rtype.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   18</span>{</div>
-<div class="line"><span class="lineno">   19</span>    <a class="code hl_struct" href="namespaceprotocol_1_1game.html#structprotocol_1_1game_1_1game__event__t">protocol::game::game_event_t</a> event;</div>
-<div class="line"><span class="lineno">   20</span>    <span class="comment">//Logique de clock</span></div>
-<div class="line"><span class="lineno">   21</span>    <span class="keywordflow">while</span> (!this.iswin()) {</div>
-<div class="line"><span class="lineno">   22</span>        <span class="keywordflow">if</span> (<a class="code hl_function" href="namespaceprotocol_1_1game_1_1GameProtocol.html#a130c676aa88671a77987fa551982edf2">protocol::game::GameProtocol::is_event</a>()) {</div>
-<div class="line"><span class="lineno">   23</span>            <a class="code hl_function" href="namespaceprotocol_1_1game_1_1GameProtocol.html#a7d2c97816e355b078f53915f2bde1910">protocol::game::GameProtocol::get_event</a>(event);</div>
-<div class="line"><span class="lineno">   24</span>            <span class="keywordflow">switch</span> (event.<a class="code hl_variable" href="namespaceprotocol_1_1game.html#a383feecaeb4a172a39d5fb71a65ec0d1">type</a>) {</div>
-<div class="line"><span class="lineno">   25</span>            <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespaceprotocol_1_1game.html#ac979c495edcb78eaa548b5c7be45f118aa5afd6edd5336d91316964e493936858">protocol::game::game_event_type_t::CONNECTED</a>:</div>
-<div class="line"><span class="lineno">   26</span>                </div>
-<div class="line"><span class="lineno">   27</span>                <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">   28</span>            <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespaceprotocol_1_1game.html#ac979c495edcb78eaa548b5c7be45f118a99c8ce56e7ab246445d3b134724428f3">protocol::game::game_event_type_t::DISCONNECTED</a>:</div>
-<div class="line"><span class="lineno">   29</span>                </div>
-<div class="line"><span class="lineno">   30</span>                <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">   31</span>            <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespaceprotocol_1_1game.html#ac979c495edcb78eaa548b5c7be45f118a016e1171067ff064c151e0a5fef52ca2">protocol::game::game_event_type_t::CREATE_ENTITY</a>:</div>
-<div class="line"><span class="lineno">   32</span>                </div>
-<div class="line"><span class="lineno">   33</span>                <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">   34</span>            <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespaceprotocol_1_1game.html#ac979c495edcb78eaa548b5c7be45f118ae66cbaf5e7fa7ca722d61f5326f418a8">protocol::game::game_event_type_t::MOVE_ENTITY</a>:</div>
-<div class="line"><span class="lineno">   35</span>                </div>
-<div class="line"><span class="lineno">   36</span>                <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">   37</span>            <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespaceprotocol_1_1game.html#ac979c495edcb78eaa548b5c7be45f118af399392cc4fe0ec00204f4ae5c55e64c">protocol::game::game_event_type_t::DESTROY_ENTITY</a>:</div>
-<div class="line"><span class="lineno">   38</span>                </div>
-<div class="line"><span class="lineno">   39</span>                <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">   40</span>            <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespaceprotocol_1_1game.html#ac979c495edcb78eaa548b5c7be45f118a180c1b797f83d66065d0313fa7e863d1">protocol::game::game_event_type_t::PLAYER_INPUT</a>:</div>
-<div class="line"><span class="lineno">   41</span>                </div>
-<div class="line"><span class="lineno">   42</span>                <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">   43</span>            <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespaceprotocol_1_1game.html#ac979c495edcb78eaa548b5c7be45f118ab459b0b196b23ddac2d1e061943537b4">protocol::game::game_event_type_t::RAW_PACKET</a>:</div>
-<div class="line"><span class="lineno">   44</span>                </div>
-<div class="line"><span class="lineno">   45</span>                <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">   46</span>            <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespaceprotocol_1_1game.html#ac979c495edcb78eaa548b5c7be45f118af8f025aba2f4634fc77839c6af60cd2c">protocol::game::game_event_type_t::TRANSMIT_FAILED</a>:</div>
-<div class="line"><span class="lineno">   47</span>                </div>
-<div class="line"><span class="lineno">   48</span>                <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">   49</span>            <span class="keywordflow">default</span>:</div>
-<div class="line"><span class="lineno">   50</span>                <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">   51</span>            }</div>
-<div class="line"><span class="lineno">   52</span>        }</div>
-<div class="line"><span class="lineno">   53</span>    }</div>
-<div class="line"><span class="lineno">   54</span>    </div>
-<div class="line"><span class="lineno">   55</span>    std::cerr &lt;&lt; <span class="stringliteral">&quot;Je tourne !&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><span class="lineno">   56</span>}</div>
+<p>Starts the main execution loop of the server. </p>
+<p>This method handles incoming messages, updates entities, synchronizes state between clients, and enforces tick consistency. The loop continues until <code>_isEnd</code> is set to true. </p>
+
+<p class="definition">Definition at line <a class="el" href="Rtype_8cpp_source.html#l00043">43</a> of file <a class="el" href="Rtype_8cpp_source.html">Rtype.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   44</span>{</div>
+<div class="line"><span class="lineno">   45</span>    <span class="keyword">auto</span> ec = <a class="code hl_function" href="namespaceprotocol_1_1game_1_1GameProtocol.html#a82bb05ba2e71bcf41f991da46853bad7">protocol::game::GameProtocol::initialize</a>(<a class="code hl_variable" href="classrtype_1_1server.html#aec434d9ad480ba7155cfbab0cd78625e">_args</a>.<a class="code hl_variable" href="config_8h.html#a6ebfa3230a76f74ed3e8f7094457b12c">ip</a>, <span class="keyword">static_cast&lt;</span>uint16_t<span class="keyword">&gt;</span>(<a class="code hl_variable" href="classrtype_1_1server.html#aec434d9ad480ba7155cfbab0cd78625e">_args</a>.<a class="code hl_variable" href="config_8h.html#a03a218180f882180702d49d127ad7952">port</a>));</div>
+<div class="line"><span class="lineno">   46</span>    <span class="keywordflow">if</span> (ec) {</div>
+<div class="line"><span class="lineno">   47</span>        std::cerr &lt;&lt; <span class="stringliteral">&quot;[ERROR] GameProtocol::initialize failed: &quot;</span> &lt;&lt; ec.message() &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><span class="lineno">   48</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">   49</span>    }</div>
+<div class="line"><span class="lineno">   50</span>    <a class="code hl_function" href="namespaceprotocol_1_1game_1_1GameProtocol.html#a9e31e3918d2366ee2d8b3eb8b946c5de">protocol::game::GameProtocol::start_io</a>();</div>
+<div class="line"><span class="lineno">   51</span> </div>
+<div class="line"><span class="lineno">   52</span>    <a class="code hl_struct" href="namespaceprotocol_1_1game.html#structprotocol_1_1game_1_1game__event__t">protocol::game::game_event_t</a> event;</div>
+<div class="line"><span class="lineno">   53</span>    <a class="code hl_variable" href="classrtype_1_1server.html#aed0f43fa8aeb461813866b3aa50b633b">_clock</a>.<a class="code hl_function" href="classServerClock.html#a33b32b84b336e983c3ebd9029db7483d">start</a>();</div>
+<div class="line"><span class="lineno">   54</span> </div>
+<div class="line"><span class="lineno">   55</span>    <span class="keyword">auto</span> collision = <a class="code hl_variable" href="classrtype_1_1server.html#a0da33fe3243f5a685808a3c4045d6167">_coo</a>.<a class="code hl_function" href="classrtype_1_1ecs_1_1Coordinator.html#aca7d6eb9299564682430b0362ce50149">registerSystem</a>&lt;ecs::CollisionSystem&gt;();</div>
+<div class="line"><span class="lineno">   56</span>    <span class="keyword">auto</span> movement =<a class="code hl_variable" href="classrtype_1_1server.html#a0da33fe3243f5a685808a3c4045d6167">_coo</a>.<a class="code hl_function" href="classrtype_1_1ecs_1_1Coordinator.html#aca7d6eb9299564682430b0362ce50149">registerSystem</a>&lt;ecs::MovementSystem&gt;();</div>
+<div class="line"><span class="lineno">   57</span>    <span class="keyword">auto</span> spawner = <a class="code hl_variable" href="classrtype_1_1server.html#a0da33fe3243f5a685808a3c4045d6167">_coo</a>.<a class="code hl_function" href="classrtype_1_1ecs_1_1Coordinator.html#aca7d6eb9299564682430b0362ce50149">registerSystem</a>&lt;ecs::SpawnerSystem&gt;();</div>
+<div class="line"><span class="lineno">   58</span> </div>
+<div class="line"><span class="lineno">   59</span>    <a class="code hl_function" href="namespacertype_1_1ecs_1_1factory.html#ac493845a0bd714fbeb9baead17010d04">rtype::ecs::factory::register_game_components</a>(<a class="code hl_variable" href="classrtype_1_1server.html#a0da33fe3243f5a685808a3c4045d6167">_coo</a>);</div>
+<div class="line"><span class="lineno">   60</span> </div>
+<div class="line"><span class="lineno">   61</span>    <span class="keywordflow">while</span> (!<a class="code hl_variable" href="classrtype_1_1server.html#ad24843905d7c8243eff77dac7238bf72">_isEnd</a>) {</div>
+<div class="line"><span class="lineno">   62</span>        <a class="code hl_variable" href="classrtype_1_1server.html#aed0f43fa8aeb461813866b3aa50b633b">_clock</a>.<a class="code hl_function" href="classServerClock.html#a5ed4fe48f95b86e3f87fd471e48d9221">waitNextTick</a>();</div>
+<div class="line"><span class="lineno">   63</span> </div>
+<div class="line"><span class="lineno">   64</span>        <span class="keywordflow">while</span> (<a class="code hl_function" href="namespaceprotocol_1_1game_1_1GameProtocol.html#a130c676aa88671a77987fa551982edf2">protocol::game::GameProtocol::is_event</a>()) {</div>
+<div class="line"><span class="lineno">   65</span>            <span class="keywordflow">if</span> (!<a class="code hl_function" href="namespaceprotocol_1_1game_1_1GameProtocol.html#a7d2c97816e355b078f53915f2bde1910">protocol::game::GameProtocol::get_event</a>(event))</div>
+<div class="line"><span class="lineno">   66</span>                <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">   67</span> </div>
+<div class="line"><span class="lineno">   68</span>            <span class="keywordflow">switch</span> (event.<a class="code hl_variable" href="namespaceprotocol_1_1game.html#a383feecaeb4a172a39d5fb71a65ec0d1">type</a>) {</div>
+<div class="line"><span class="lineno">   69</span>            <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespaceprotocol_1_1game.html#ac979c495edcb78eaa548b5c7be45f118aa5afd6edd5336d91316964e493936858">protocol::game::game_event_type_t::CONNECTED</a> : {</div>
+<div class="line"><span class="lineno">   70</span>                <span class="keywordflow">if</span> (<a class="code hl_variable" href="classrtype_1_1server.html#aec434d9ad480ba7155cfbab0cd78625e">_args</a>.<a class="code hl_variable" href="config_8h.html#aa5c4c5ada39985d28d541919f4939bce">debug</a> &gt;= 2)</div>
+<div class="line"><span class="lineno">   71</span>                    std::cout &lt;&lt; <span class="stringliteral">&quot;[DEBUG] - New player connected.&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">   72</span>                <a class="code hl_struct" href="namespaceprotocol_1_1game.html#structprotocol_1_1game_1_1payload__create__entity__t">protocol::game::payload_create_entity_t</a> entity;</div>
+<div class="line"><span class="lineno">   73</span>                entity.<a class="code hl_variable" href="namespaceprotocol_1_1game.html#afd78b1f4927ae30d26866bc3aa2937a8">entity_id</a> = 1;</div>
+<div class="line"><span class="lineno">   74</span>                entity.<a class="code hl_variable" href="namespaceprotocol_1_1game.html#a6fc370cc948021a33d22001855ba7dcf">entity_type</a> = <a class="code hl_enumvalue" href="namespaceprotocol_1_1game.html#a58051a0f9c1c650d605d71a73e9437bda36feead328784e91b2c8f5cafd543773">protocol::game::entity_type_t::PLAYER</a>;</div>
+<div class="line"><span class="lineno">   75</span>                entity.<a class="code hl_variable" href="namespaceprotocol_1_1game.html#ac7d6dc67a2607a11ef974b9207328067">x</a> = 100;</div>
+<div class="line"><span class="lineno">   76</span>                entity.<a class="code hl_variable" href="namespaceprotocol_1_1game.html#adc23f6c79ede3c4b44387d9b62c27ac7">y</a> = 100;</div>
+<div class="line"><span class="lineno">   77</span> </div>
+<div class="line"><span class="lineno">   78</span>                <a class="code hl_function" href="namespaceprotocol_1_1game_1_1GameProtocol.html#af2f2ced57f66cc62b072f4d999f997c0">protocol::game::GameProtocol::send_create_entity</a>(NULL, entity, <a class="code hl_enumvalue" href="namespaceprotocol.html#a1d4d9634cbc99b8530d0d75ce961f0bcac4878517fb38ded510bd28639895348b">protocol::flag_t::RELIABLE_ORDERED</a>);</div>
+<div class="line"><span class="lineno">   79</span>                <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">   80</span>            }</div>
+<div class="line"><span class="lineno">   81</span>            <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespaceprotocol_1_1game.html#ac979c495edcb78eaa548b5c7be45f118a99c8ce56e7ab246445d3b134724428f3">protocol::game::game_event_type_t::DISCONNECTED</a> : {</div>
+<div class="line"><span class="lineno">   82</span>                <span class="keywordtype">int</span> <span class="keywordtype">id</span> = 1;</div>
+<div class="line"><span class="lineno">   83</span> </div>
+<div class="line"><span class="lineno">   84</span>                <span class="keywordflow">if</span> (<a class="code hl_variable" href="classrtype_1_1server.html#aec434d9ad480ba7155cfbab0cd78625e">_args</a>.<a class="code hl_variable" href="config_8h.html#aa5c4c5ada39985d28d541919f4939bce">debug</a> &gt;= 2)</div>
+<div class="line"><span class="lineno">   85</span>                    std::cout &lt;&lt; <span class="stringliteral">&quot;[DEBUG] - Player disconnected (ID: &quot;</span> &lt;&lt; <span class="keywordtype">id</span> &lt;&lt; <span class="stringliteral">&quot;)&quot;</span>&lt;&lt;  std::endl;</div>
+<div class="line"><span class="lineno">   86</span>                <a class="code hl_struct" href="namespaceprotocol_1_1game.html#structprotocol_1_1game_1_1payload__destroy__entity__t">protocol::game::payload_destroy_entity_t</a> entity;</div>
+<div class="line"><span class="lineno">   87</span>                entity.<a class="code hl_variable" href="namespaceprotocol_1_1game.html#add0a6c5fe555d80f4ae143eef224e965">entity_id</a> = id;</div>
+<div class="line"><span class="lineno">   88</span> </div>
+<div class="line"><span class="lineno">   89</span>                <a class="code hl_function" href="namespaceprotocol_1_1game_1_1GameProtocol.html#aff987d5c0fefe92469fd759acce67986">protocol::game::GameProtocol::send_destroy_entity</a>(NULL, entity, <a class="code hl_enumvalue" href="namespaceprotocol.html#a1d4d9634cbc99b8530d0d75ce961f0bcac4878517fb38ded510bd28639895348b">protocol::flag_t::RELIABLE_ORDERED</a>);</div>
+<div class="line"><span class="lineno">   90</span>                <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">   91</span>            }</div>
+<div class="line"><span class="lineno">   92</span>            <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespaceprotocol_1_1game.html#ac979c495edcb78eaa548b5c7be45f118a180c1b797f83d66065d0313fa7e863d1">protocol::game::game_event_type_t::PLAYER_INPUT</a>:</div>
+<div class="line"><span class="lineno">   93</span>                <span class="keywordflow">if</span> (<a class="code hl_variable" href="classrtype_1_1server.html#aec434d9ad480ba7155cfbab0cd78625e">_args</a>.<a class="code hl_variable" href="config_8h.html#aa5c4c5ada39985d28d541919f4939bce">debug</a> &gt;= 2)</div>
+<div class="line"><span class="lineno">   94</span>                    std::cout &lt;&lt; <span class="stringliteral">&quot;[DEBUG] - Player send :&quot;</span>&lt;&lt;  std::endl;</div>
+<div class="line"><span class="lineno">   95</span>                <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">   96</span>            <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespaceprotocol_1_1game.html#ac979c495edcb78eaa548b5c7be45f118af8f025aba2f4634fc77839c6af60cd2c">protocol::game::game_event_type_t::TRANSMIT_FAILED</a>: {</div>
+<div class="line"><span class="lineno">   97</span>                <span class="keyword">auto</span> <span class="keyword">const</span> &amp;tf = std::get&lt;protocol::transmit_failed_t&gt;(event.<a class="code hl_variable" href="namespaceprotocol_1_1game.html#aaa178d940515c73c2f0b082319929414">payload</a>);</div>
+<div class="line"><span class="lineno">   98</span>                std::cout &lt;&lt; <span class="stringliteral">&quot;[DEBUG] - [TX FAIL] seq=&quot;</span> &lt;&lt; tf.sequence &lt;&lt; <span class="stringliteral">&quot; msg=&quot;</span> &lt;&lt; tf.message_type &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><span class="lineno">   99</span>                <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  100</span>            }</div>
+<div class="line"><span class="lineno">  101</span>            <span class="keywordflow">default</span>:</div>
+<div class="line"><span class="lineno">  102</span>                <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  103</span>            }</div>
+<div class="line"><span class="lineno">  104</span>        }</div>
+<div class="line"><span class="lineno">  105</span>        collision-&gt;update(<a class="code hl_variable" href="classrtype_1_1server.html#a0da33fe3243f5a685808a3c4045d6167">_coo</a>);</div>
+<div class="line"><span class="lineno">  106</span>        movement-&gt;update(<a class="code hl_variable" href="classrtype_1_1server.html#a0da33fe3243f5a685808a3c4045d6167">_coo</a>, 1);</div>
+<div class="line"><span class="lineno">  107</span>        spawner-&gt;update(<a class="code hl_variable" href="classrtype_1_1server.html#a0da33fe3243f5a685808a3c4045d6167">_coo</a>, <a class="code hl_variable" href="classrtype_1_1server.html#aec434d9ad480ba7155cfbab0cd78625e">_args</a>.<a class="code hl_variable" href="config_8h.html#a678947cccd3f8ad4cec428886fa74d94">seed</a>, <a class="code hl_variable" href="classrtype_1_1server.html#aed0f43fa8aeb461813866b3aa50b633b">_clock</a>.<a class="code hl_function" href="classServerClock.html#af36c1a2b668e744dbbf4c1edec17dc43">getTick</a>());</div>
+<div class="line"><span class="lineno">  108</span> </div>
+<div class="line"><span class="lineno">  109</span>        <a class="code hl_function" href="namespaceprotocol_1_1game_1_1GameProtocol.html#a65d178b72ee4697a3b58b9a2c8804f04">protocol::game::GameProtocol::process_pending</a>(std::chrono::steady_clock::now());</div>
+<div class="line"><span class="lineno">  110</span>    }</div>
+<div class="line"><span class="lineno">  111</span>    <a class="code hl_function" href="namespaceprotocol_1_1game_1_1GameProtocol.html#a6ae30c729a1c4790454dfde7dc3ef426">protocol::game::GameProtocol::stop_io</a>();</div>
+<div class="line"><span class="lineno">  112</span>    <a class="code hl_function" href="namespaceprotocol_1_1game_1_1GameProtocol.html#acfadc92851b8cb4ff9571aa797e07584">protocol::game::GameProtocol::shutdown</a>();</div>
+<div class="line"><span class="lineno">  113</span>}</div>
+<div class="ttc" id="aclassServerClock_html_a33b32b84b336e983c3ebd9029db7483d"><div class="ttname"><a href="classServerClock.html#a33b32b84b336e983c3ebd9029db7483d">ServerClock::start</a></div><div class="ttdeci">void start()</div><div class="ttdoc">Starts the internal clock thread.</div><div class="ttdef"><b>Definition</b> <a href="ServerClock_8cpp_source.html#l00032">ServerClock.cpp:32</a></div></div>
+<div class="ttc" id="aclassServerClock_html_a5ed4fe48f95b86e3f87fd471e48d9221"><div class="ttname"><a href="classServerClock.html#a5ed4fe48f95b86e3f87fd471e48d9221">ServerClock::waitNextTick</a></div><div class="ttdeci">void waitNextTick()</div><div class="ttdoc">Waits for the next tick to occur.</div><div class="ttdef"><b>Definition</b> <a href="ServerClock_8cpp_source.html#l00061">ServerClock.cpp:61</a></div></div>
+<div class="ttc" id="aclassServerClock_html_af36c1a2b668e744dbbf4c1edec17dc43"><div class="ttname"><a href="classServerClock.html#af36c1a2b668e744dbbf4c1edec17dc43">ServerClock::getTick</a></div><div class="ttdeci">std::uint64_t getTick()</div><div class="ttdoc">Gets the current tick count.</div><div class="ttdef"><b>Definition</b> <a href="ServerClock_8cpp_source.html#l00056">ServerClock.cpp:56</a></div></div>
+<div class="ttc" id="aclassrtype_1_1ecs_1_1Coordinator_html_aca7d6eb9299564682430b0362ce50149"><div class="ttname"><a href="classrtype_1_1ecs_1_1Coordinator.html#aca7d6eb9299564682430b0362ce50149">rtype::ecs::Coordinator::registerSystem</a></div><div class="ttdeci">std::shared_ptr&lt; T &gt; registerSystem(Args &amp;&amp;... args)</div><div class="ttdoc">Register a system instance of type T and return it.</div><div class="ttdef"><b>Definition</b> <a href="Coordinator_8hpp_source.html#l00225">Coordinator.hpp:225</a></div></div>
 <div class="ttc" id="anamespaceprotocol_1_1game_1_1GameProtocol_html_a130c676aa88671a77987fa551982edf2"><div class="ttname"><a href="namespaceprotocol_1_1game_1_1GameProtocol.html#a130c676aa88671a77987fa551982edf2">protocol::game::GameProtocol::is_event</a></div><div class="ttdeci">bool is_event() noexcept</div><div class="ttdoc">Non-blocking probe: returns true if the underlying Protocol has an event available.</div><div class="ttdef"><b>Definition</b> <a href="GameProtocol_8cpp_source.html#l00293">GameProtocol.cpp:293</a></div></div>
+<div class="ttc" id="anamespaceprotocol_1_1game_1_1GameProtocol_html_a65d178b72ee4697a3b58b9a2c8804f04"><div class="ttname"><a href="namespaceprotocol_1_1game_1_1GameProtocol.html#a65d178b72ee4697a3b58b9a2c8804f04">protocol::game::GameProtocol::process_pending</a></div><div class="ttdeci">void process_pending(protocol::steady_timepoint now) noexcept</div><div class="ttdoc">Process pending reliable sends (wrapper around Protocol::process_pending).</div><div class="ttdef"><b>Definition</b> <a href="GameProtocol_8cpp_source.html#l00479">GameProtocol.cpp:479</a></div></div>
+<div class="ttc" id="anamespaceprotocol_1_1game_1_1GameProtocol_html_a6ae30c729a1c4790454dfde7dc3ef426"><div class="ttname"><a href="namespaceprotocol_1_1game_1_1GameProtocol.html#a6ae30c729a1c4790454dfde7dc3ef426">protocol::game::GameProtocol::stop_io</a></div><div class="ttdeci">void stop_io()</div><div class="ttdoc">Stop the underlying Protocol IO loop and join the IO thread.</div><div class="ttdef"><b>Definition</b> <a href="GameProtocol_8cpp_source.html#l00242">GameProtocol.cpp:242</a></div></div>
 <div class="ttc" id="anamespaceprotocol_1_1game_1_1GameProtocol_html_a7d2c97816e355b078f53915f2bde1910"><div class="ttname"><a href="namespaceprotocol_1_1game_1_1GameProtocol.html#a7d2c97816e355b078f53915f2bde1910">protocol::game::GameProtocol::get_event</a></div><div class="ttdeci">bool get_event(game_event_t &amp;out_event) noexcept</div><div class="ttdoc">Retrieve and convert a core event into a game_event_t.</div><div class="ttdef"><b>Definition</b> <a href="GameProtocol_8cpp_source.html#l00397">GameProtocol.cpp:397</a></div></div>
+<div class="ttc" id="anamespaceprotocol_1_1game_1_1GameProtocol_html_a82bb05ba2e71bcf41f991da46853bad7"><div class="ttname"><a href="namespaceprotocol_1_1game_1_1GameProtocol.html#a82bb05ba2e71bcf41f991da46853bad7">protocol::game::GameProtocol::initialize</a></div><div class="ttdeci">std::error_code initialize(const std::string &amp;local_address, uint16_t local_port, const std::optional&lt; std::string &gt; &amp;server_address=std::nullopt, const std::optional&lt; uint16_t &gt; &amp;server_port=std::nullopt) noexcept</div><div class="ttdoc">Initialize game protocol and bind a local UDP endpoint.</div><div class="ttdef"><b>Definition</b> <a href="GameProtocol_8cpp_source.html#l00205">GameProtocol.cpp:205</a></div></div>
+<div class="ttc" id="anamespaceprotocol_1_1game_1_1GameProtocol_html_a9e31e3918d2366ee2d8b3eb8b946c5de"><div class="ttname"><a href="namespaceprotocol_1_1game_1_1GameProtocol.html#a9e31e3918d2366ee2d8b3eb8b946c5de">protocol::game::GameProtocol::start_io</a></div><div class="ttdeci">void start_io()</div><div class="ttdoc">Start the underlying Protocol IO loop (non-blocking, spawns thread).</div><div class="ttdef"><b>Definition</b> <a href="GameProtocol_8cpp_source.html#l00237">GameProtocol.cpp:237</a></div></div>
+<div class="ttc" id="anamespaceprotocol_1_1game_1_1GameProtocol_html_acfadc92851b8cb4ff9571aa797e07584"><div class="ttname"><a href="namespaceprotocol_1_1game_1_1GameProtocol.html#acfadc92851b8cb4ff9571aa797e07584">protocol::game::GameProtocol::shutdown</a></div><div class="ttdeci">void shutdown() noexcept</div><div class="ttdoc">Shutdown the game protocol and the underlying core.</div><div class="ttdef"><b>Definition</b> <a href="GameProtocol_8cpp_source.html#l00232">GameProtocol.cpp:232</a></div></div>
+<div class="ttc" id="anamespaceprotocol_1_1game_1_1GameProtocol_html_af2f2ced57f66cc62b072f4d999f997c0"><div class="ttname"><a href="namespaceprotocol_1_1game_1_1GameProtocol.html#af2f2ced57f66cc62b072f4d999f997c0">protocol::game::GameProtocol::send_create_entity</a></div><div class="ttdeci">std::error_code send_create_entity(const protocol::udp::endpoint &amp;remote, const payload_create_entity_t &amp;entity, protocol::flag_t reliability=protocol::flag_t::RELIABLE_UNORDERED) noexcept</div><div class="ttdoc">Send a CREATE_ENTITY message to a remote endpoint (server -&gt; client).</div></div>
+<div class="ttc" id="anamespaceprotocol_1_1game_1_1GameProtocol_html_aff987d5c0fefe92469fd759acce67986"><div class="ttname"><a href="namespaceprotocol_1_1game_1_1GameProtocol.html#aff987d5c0fefe92469fd759acce67986">protocol::game::GameProtocol::send_destroy_entity</a></div><div class="ttdeci">std::error_code send_destroy_entity(const protocol::udp::endpoint &amp;remote, const payload_destroy_entity_t &amp;del, protocol::flag_t reliability=protocol::flag_t::RELIABLE_UNORDERED) noexcept</div><div class="ttdoc">Send a DESTROY_ENTITY message to a remote endpoint (server -&gt; client).</div></div>
 <div class="ttc" id="anamespaceprotocol_1_1game_html_a383feecaeb4a172a39d5fb71a65ec0d1"><div class="ttname"><a href="namespaceprotocol_1_1game.html#a383feecaeb4a172a39d5fb71a65ec0d1">protocol::game::game_event_t::type</a></div><div class="ttdeci">game_event_type_t type</div><div class="ttdoc">logical event kind</div><div class="ttdef"><b>Definition</b> <a href="GameProtocolTypes_8hpp_source.html#l00174">GameProtocolTypes.hpp:174</a></div></div>
-<div class="ttc" id="anamespaceprotocol_1_1game_html_ac979c495edcb78eaa548b5c7be45f118a016e1171067ff064c151e0a5fef52ca2"><div class="ttname"><a href="namespaceprotocol_1_1game.html#ac979c495edcb78eaa548b5c7be45f118a016e1171067ff064c151e0a5fef52ca2">protocol::game::game_event_type_t::CREATE_ENTITY</a></div><div class="ttdeci">@ CREATE_ENTITY</div></div>
+<div class="ttc" id="anamespaceprotocol_1_1game_html_a58051a0f9c1c650d605d71a73e9437bda36feead328784e91b2c8f5cafd543773"><div class="ttname"><a href="namespaceprotocol_1_1game.html#a58051a0f9c1c650d605d71a73e9437bda36feead328784e91b2c8f5cafd543773">protocol::game::PLAYER</a></div><div class="ttdeci">@ PLAYER</div><div class="ttdef"><b>Definition</b> <a href="GameProtocolTypes_8hpp_source.html#l00180">GameProtocolTypes.hpp:180</a></div></div>
+<div class="ttc" id="anamespaceprotocol_1_1game_html_a6fc370cc948021a33d22001855ba7dcf"><div class="ttname"><a href="namespaceprotocol_1_1game.html#a6fc370cc948021a33d22001855ba7dcf">protocol::game::payload_create_entity_t::entity_type</a></div><div class="ttdeci">uint8_t entity_type</div><div class="ttdoc">small type tag</div><div class="ttdef"><b>Definition</b> <a href="GameProtocolTypes_8hpp_source.html#l00082">GameProtocolTypes.hpp:82</a></div></div>
+<div class="ttc" id="anamespaceprotocol_1_1game_html_aaa178d940515c73c2f0b082319929414"><div class="ttname"><a href="namespaceprotocol_1_1game.html#aaa178d940515c73c2f0b082319929414">protocol::game::game_event_t::payload</a></div><div class="ttdeci">game_event_payload_t payload</div><div class="ttdoc">variant carrying event data</div><div class="ttdef"><b>Definition</b> <a href="GameProtocolTypes_8hpp_source.html#l00175">GameProtocolTypes.hpp:175</a></div></div>
+<div class="ttc" id="anamespaceprotocol_1_1game_html_ac7d6dc67a2607a11ef974b9207328067"><div class="ttname"><a href="namespaceprotocol_1_1game.html#ac7d6dc67a2607a11ef974b9207328067">protocol::game::payload_create_entity_t::x</a></div><div class="ttdeci">position_t x</div><div class="ttdoc">fixed-point X</div><div class="ttdef"><b>Definition</b> <a href="GameProtocolTypes_8hpp_source.html#l00083">GameProtocolTypes.hpp:83</a></div></div>
 <div class="ttc" id="anamespaceprotocol_1_1game_html_ac979c495edcb78eaa548b5c7be45f118a180c1b797f83d66065d0313fa7e863d1"><div class="ttname"><a href="namespaceprotocol_1_1game.html#ac979c495edcb78eaa548b5c7be45f118a180c1b797f83d66065d0313fa7e863d1">protocol::game::game_event_type_t::PLAYER_INPUT</a></div><div class="ttdeci">@ PLAYER_INPUT</div></div>
 <div class="ttc" id="anamespaceprotocol_1_1game_html_ac979c495edcb78eaa548b5c7be45f118a99c8ce56e7ab246445d3b134724428f3"><div class="ttname"><a href="namespaceprotocol_1_1game.html#ac979c495edcb78eaa548b5c7be45f118a99c8ce56e7ab246445d3b134724428f3">protocol::game::game_event_type_t::DISCONNECTED</a></div><div class="ttdeci">@ DISCONNECTED</div></div>
 <div class="ttc" id="anamespaceprotocol_1_1game_html_ac979c495edcb78eaa548b5c7be45f118aa5afd6edd5336d91316964e493936858"><div class="ttname"><a href="namespaceprotocol_1_1game.html#ac979c495edcb78eaa548b5c7be45f118aa5afd6edd5336d91316964e493936858">protocol::game::game_event_type_t::CONNECTED</a></div><div class="ttdeci">@ CONNECTED</div></div>
-<div class="ttc" id="anamespaceprotocol_1_1game_html_ac979c495edcb78eaa548b5c7be45f118ab459b0b196b23ddac2d1e061943537b4"><div class="ttname"><a href="namespaceprotocol_1_1game.html#ac979c495edcb78eaa548b5c7be45f118ab459b0b196b23ddac2d1e061943537b4">protocol::game::game_event_type_t::RAW_PACKET</a></div><div class="ttdeci">@ RAW_PACKET</div></div>
-<div class="ttc" id="anamespaceprotocol_1_1game_html_ac979c495edcb78eaa548b5c7be45f118ae66cbaf5e7fa7ca722d61f5326f418a8"><div class="ttname"><a href="namespaceprotocol_1_1game.html#ac979c495edcb78eaa548b5c7be45f118ae66cbaf5e7fa7ca722d61f5326f418a8">protocol::game::game_event_type_t::MOVE_ENTITY</a></div><div class="ttdeci">@ MOVE_ENTITY</div></div>
-<div class="ttc" id="anamespaceprotocol_1_1game_html_ac979c495edcb78eaa548b5c7be45f118af399392cc4fe0ec00204f4ae5c55e64c"><div class="ttname"><a href="namespaceprotocol_1_1game.html#ac979c495edcb78eaa548b5c7be45f118af399392cc4fe0ec00204f4ae5c55e64c">protocol::game::game_event_type_t::DESTROY_ENTITY</a></div><div class="ttdeci">@ DESTROY_ENTITY</div></div>
 <div class="ttc" id="anamespaceprotocol_1_1game_html_ac979c495edcb78eaa548b5c7be45f118af8f025aba2f4634fc77839c6af60cd2c"><div class="ttname"><a href="namespaceprotocol_1_1game.html#ac979c495edcb78eaa548b5c7be45f118af8f025aba2f4634fc77839c6af60cd2c">protocol::game::game_event_type_t::TRANSMIT_FAILED</a></div><div class="ttdeci">@ TRANSMIT_FAILED</div></div>
+<div class="ttc" id="anamespaceprotocol_1_1game_html_adc23f6c79ede3c4b44387d9b62c27ac7"><div class="ttname"><a href="namespaceprotocol_1_1game.html#adc23f6c79ede3c4b44387d9b62c27ac7">protocol::game::payload_create_entity_t::y</a></div><div class="ttdeci">position_t y</div><div class="ttdoc">fixed-point Y</div><div class="ttdef"><b>Definition</b> <a href="GameProtocolTypes_8hpp_source.html#l00084">GameProtocolTypes.hpp:84</a></div></div>
+<div class="ttc" id="anamespaceprotocol_1_1game_html_add0a6c5fe555d80f4ae143eef224e965"><div class="ttname"><a href="namespaceprotocol_1_1game.html#add0a6c5fe555d80f4ae143eef224e965">protocol::game::payload_destroy_entity_t::entity_id</a></div><div class="ttdeci">entity_id_t entity_id</div><div class="ttdoc">id of entity to destroy</div><div class="ttdef"><b>Definition</b> <a href="GameProtocolTypes_8hpp_source.html#l00106">GameProtocolTypes.hpp:106</a></div></div>
+<div class="ttc" id="anamespaceprotocol_1_1game_html_afd78b1f4927ae30d26866bc3aa2937a8"><div class="ttname"><a href="namespaceprotocol_1_1game.html#afd78b1f4927ae30d26866bc3aa2937a8">protocol::game::payload_create_entity_t::entity_id</a></div><div class="ttdeci">entity_id_t entity_id</div><div class="ttdoc">entity id</div><div class="ttdef"><b>Definition</b> <a href="GameProtocolTypes_8hpp_source.html#l00081">GameProtocolTypes.hpp:81</a></div></div>
 <div class="ttc" id="anamespaceprotocol_1_1game_html_structprotocol_1_1game_1_1game__event__t"><div class="ttname"><a href="namespaceprotocol_1_1game.html#structprotocol_1_1game_1_1game__event__t">protocol::game::game_event_t</a></div><div class="ttdoc">Top-level game event exposed by GameProtocol.</div><div class="ttdef"><b>Definition</b> <a href="GameProtocolTypes_8hpp_source.html#l00173">GameProtocolTypes.hpp:173</a></div></div>
+<div class="ttc" id="anamespaceprotocol_1_1game_html_structprotocol_1_1game_1_1payload__create__entity__t"><div class="ttname"><a href="namespaceprotocol_1_1game.html#structprotocol_1_1game_1_1payload__create__entity__t">protocol::game::payload_create_entity_t</a></div><div class="ttdoc">Payload for CREATE_ENTITY messages.</div><div class="ttdef"><b>Definition</b> <a href="GameProtocolTypes_8hpp_source.html#l00080">GameProtocolTypes.hpp:80</a></div></div>
+<div class="ttc" id="anamespaceprotocol_1_1game_html_structprotocol_1_1game_1_1payload__destroy__entity__t"><div class="ttname"><a href="namespaceprotocol_1_1game.html#structprotocol_1_1game_1_1payload__destroy__entity__t">protocol::game::payload_destroy_entity_t</a></div><div class="ttdoc">Payload for DESTROY_ENTITY messages.</div><div class="ttdef"><b>Definition</b> <a href="GameProtocolTypes_8hpp_source.html#l00105">GameProtocolTypes.hpp:105</a></div></div>
+<div class="ttc" id="anamespaceprotocol_html_a1d4d9634cbc99b8530d0d75ce961f0bcac4878517fb38ded510bd28639895348b"><div class="ttname"><a href="namespaceprotocol.html#a1d4d9634cbc99b8530d0d75ce961f0bcac4878517fb38ded510bd28639895348b">protocol::flag_t::RELIABLE_ORDERED</a></div><div class="ttdeci">@ RELIABLE_ORDERED</div><div class="ttdoc">retransmit; ordered delivery</div></div>
+<div class="ttc" id="anamespacertype_1_1ecs_1_1factory_html_ac493845a0bd714fbeb9baead17010d04"><div class="ttname"><a href="namespacertype_1_1ecs_1_1factory.html#ac493845a0bd714fbeb9baead17010d04">rtype::ecs::factory::register_game_components</a></div><div class="ttdeci">void register_game_components(Coordinator &amp;coord)</div><div class="ttdoc">Registers all gameplay-related components into the ECS Coordinator.</div><div class="ttdef"><b>Definition</b> <a href="EntityFactory_8cpp_source.html#l00026">EntityFactory.cpp:26</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="namespaceprotocol_1_1game.html#ac979c495edcb78eaa548b5c7be45f118aa5afd6edd5336d91316964e493936858">protocol::game::CONNECTED</a>, <a class="el" href="namespaceprotocol_1_1game.html#ac979c495edcb78eaa548b5c7be45f118a016e1171067ff064c151e0a5fef52ca2">protocol::game::CREATE_ENTITY</a>, <a class="el" href="namespaceprotocol_1_1game.html#ac979c495edcb78eaa548b5c7be45f118af399392cc4fe0ec00204f4ae5c55e64c">protocol::game::DESTROY_ENTITY</a>, <a class="el" href="namespaceprotocol_1_1game.html#ac979c495edcb78eaa548b5c7be45f118a99c8ce56e7ab246445d3b134724428f3">protocol::game::DISCONNECTED</a>, <a class="el" href="GameProtocol_8cpp_source.html#l00397">protocol::game::GameProtocol::get_event()</a>, <a class="el" href="GameProtocol_8cpp_source.html#l00293">protocol::game::GameProtocol::is_event()</a>, <a class="el" href="namespaceprotocol_1_1game.html#ac979c495edcb78eaa548b5c7be45f118ae66cbaf5e7fa7ca722d61f5326f418a8">protocol::game::MOVE_ENTITY</a>, <a class="el" href="namespaceprotocol_1_1game.html#ac979c495edcb78eaa548b5c7be45f118a180c1b797f83d66065d0313fa7e863d1">protocol::game::PLAYER_INPUT</a>, <a class="el" href="namespaceprotocol_1_1game.html#ac979c495edcb78eaa548b5c7be45f118ab459b0b196b23ddac2d1e061943537b4">protocol::game::RAW_PACKET</a>, <a class="el" href="namespaceprotocol_1_1game.html#ac979c495edcb78eaa548b5c7be45f118af8f025aba2f4634fc77839c6af60cd2c">protocol::game::TRANSMIT_FAILED</a>, and <a class="el" href="GameProtocolTypes_8hpp_source.html#l00174">protocol::game::game_event_t::type</a>.</p>
+<p class="reference">References <a class="el" href="namespaceprotocol_1_1game.html#ac979c495edcb78eaa548b5c7be45f118aa5afd6edd5336d91316964e493936858">protocol::game::CONNECTED</a>, <a class="el" href="namespaceprotocol_1_1game.html#ac979c495edcb78eaa548b5c7be45f118a99c8ce56e7ab246445d3b134724428f3">protocol::game::DISCONNECTED</a>, <a class="el" href="GameProtocolTypes_8hpp_source.html#l00081">protocol::game::payload_create_entity_t::entity_id</a>, <a class="el" href="GameProtocolTypes_8hpp_source.html#l00106">protocol::game::payload_destroy_entity_t::entity_id</a>, <a class="el" href="GameProtocolTypes_8hpp_source.html#l00082">protocol::game::payload_create_entity_t::entity_type</a>, <a class="el" href="GameProtocol_8cpp_source.html#l00397">protocol::game::GameProtocol::get_event()</a>, <a class="el" href="GameProtocol_8cpp_source.html#l00205">protocol::game::GameProtocol::initialize()</a>, <a class="el" href="GameProtocol_8cpp_source.html#l00293">protocol::game::GameProtocol::is_event()</a>, <a class="el" href="GameProtocolTypes_8hpp_source.html#l00175">protocol::game::game_event_t::payload</a>, <a class="el" href="GameProtocolTypes_8hpp_source.html#l00180">protocol::game::PLAYER</a>, <a class="el" href="namespaceprotocol_1_1game.html#ac979c495edcb78eaa548b5c7be45f118a180c1b797f83d66065d0313fa7e863d1">protocol::game::PLAYER_INPUT</a>, <a class="el" href="GameProtocol_8cpp_source.html#l00479">protocol::game::GameProtocol::process_pending()</a>, <a class="el" href="EntityFactory_8cpp_source.html#l00026">rtype::ecs::factory::register_game_components()</a>, <a class="el" href="namespaceprotocol.html#a1d4d9634cbc99b8530d0d75ce961f0bcac4878517fb38ded510bd28639895348b">protocol::RELIABLE_ORDERED</a>, <a class="el" href="namespaceprotocol_1_1game_1_1GameProtocol.html#af2f2ced57f66cc62b072f4d999f997c0">protocol::game::GameProtocol::send_create_entity()</a>, <a class="el" href="namespaceprotocol_1_1game_1_1GameProtocol.html#aff987d5c0fefe92469fd759acce67986">protocol::game::GameProtocol::send_destroy_entity()</a>, <a class="el" href="GameProtocol_8cpp_source.html#l00232">protocol::game::GameProtocol::shutdown()</a>, <a class="el" href="GameProtocol_8cpp_source.html#l00237">protocol::game::GameProtocol::start_io()</a>, <a class="el" href="GameProtocol_8cpp_source.html#l00242">protocol::game::GameProtocol::stop_io()</a>, <a class="el" href="namespaceprotocol_1_1game.html#ac979c495edcb78eaa548b5c7be45f118af8f025aba2f4634fc77839c6af60cd2c">protocol::game::TRANSMIT_FAILED</a>, <a class="el" href="GameProtocolTypes_8hpp_source.html#l00174">protocol::game::game_event_t::type</a>, <a class="el" href="CollisionSystem_8cpp_source.html#l00021">rtype::ecs::CollisionSystem::update()</a>, <a class="el" href="MovementSystem_8cpp_source.html#l00030">rtype::ecs::MovementSystem::update()</a>, <a class="el" href="GameProtocolTypes_8hpp_source.html#l00083">protocol::game::payload_create_entity_t::x</a>, and <a class="el" href="GameProtocolTypes_8hpp_source.html#l00084">protocol::game::payload_create_entity_t::y</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="Server_2main_8cpp_source.html#l00082">main()</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -255,7 +362,7 @@ Private Attributes</h2></td></tr>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classrtype_1_1server_a703fd91ca5d705369acef8f6e505e32d_cgraph.svg" width="100%" height="438"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classrtype_1_1server_a703fd91ca5d705369acef8f6e505e32d_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -268,6 +375,60 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="aec434d9ad480ba7155cfbab0cd78625e" name="aec434d9ad480ba7155cfbab0cd78625e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec434d9ad480ba7155cfbab0cd78625e">&#9670;&#160;</a></span>_args</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="config_8h.html#structparser__args__t">parser_args_t</a> rtype::server::_args</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Parsed runtime configuration for the server. </p>
+
+<p class="definition">Definition at line <a class="el" href="Rtype_8hpp_source.html#l00089">89</a> of file <a class="el" href="Rtype_8hpp_source.html">Rtype.hpp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="Rtype_8cpp_source.html#l00031">server()</a>.</p>
+
+</div>
+</div>
+<a id="aed0f43fa8aeb461813866b3aa50b633b" name="aed0f43fa8aeb461813866b3aa50b633b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed0f43fa8aeb461813866b3aa50b633b">&#9670;&#160;</a></span>_clock</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classServerClock.html">ServerClock</a> rtype::server::_clock</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Internal timing mechanism for managing server ticks. </p>
+
+<p class="definition">Definition at line <a class="el" href="Rtype_8hpp_source.html#l00088">88</a> of file <a class="el" href="Rtype_8hpp_source.html">Rtype.hpp</a>.</p>
+
+</div>
+</div>
 <a id="a0da33fe3243f5a685808a3c4045d6167" name="a0da33fe3243f5a685808a3c4045d6167"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0da33fe3243f5a685808a3c4045d6167">&#9670;&#160;</a></span>_coo</h2>
 
@@ -288,7 +449,61 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Rtype_8hpp_source.html#l00026">26</a> of file <a class="el" href="Rtype_8hpp_source.html">Rtype.hpp</a>.</p>
+<p>Central ECS coordinator handling entities and components. </p>
+
+<p class="definition">Definition at line <a class="el" href="Rtype_8hpp_source.html#l00087">87</a> of file <a class="el" href="Rtype_8hpp_source.html">Rtype.hpp</a>.</p>
+
+</div>
+</div>
+<a id="ad24843905d7c8243eff77dac7238bf72" name="ad24843905d7c8243eff77dac7238bf72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad24843905d7c8243eff77dac7238bf72">&#9670;&#160;</a></span>_isEnd</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool rtype::server::_isEnd</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Indicates whether the server should terminate its main loop. </p>
+
+<p class="definition">Definition at line <a class="el" href="Rtype_8hpp_source.html#l00090">90</a> of file <a class="el" href="Rtype_8hpp_source.html">Rtype.hpp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="Rtype_8cpp_source.html#l00031">server()</a>.</p>
+
+</div>
+</div>
+<a id="aa28ce7b1ee2eeee0a326a62aa31ce904" name="aa28ce7b1ee2eeee0a326a62aa31ce904"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa28ce7b1ee2eeee0a326a62aa31ce904">&#9670;&#160;</a></span>_last_client</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::optional&lt;protocol::udp::endpoint&gt; rtype::server::_last_client</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Rtype_8hpp_source.html#l00091">91</a> of file <a class="el" href="Rtype_8hpp_source.html">Rtype.hpp</a>.</p>
 
 </div>
 </div>

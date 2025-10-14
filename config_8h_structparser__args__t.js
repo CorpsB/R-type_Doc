@@ -4,5 +4,6 @@ var config_8h_structparser__args__t =
     [ "debug", "config_8h.html#aa5c4c5ada39985d28d541919f4939bce", null ],
     [ "ip", "config_8h.html#a6ebfa3230a76f74ed3e8f7094457b12c", null ],
     [ "need_help", "config_8h.html#a2505bbf8e7fb0038f3ed72f77fd24871", null ],
-    [ "port", "config_8h.html#a03a218180f882180702d49d127ad7952", null ]
+    [ "port", "config_8h.html#a03a218180f882180702d49d127ad7952", null ],
+    [ "seed", "config_8h.html#a678947cccd3f8ad4cec428886fa74d94", null ]
 ];

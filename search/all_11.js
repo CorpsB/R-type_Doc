@@ -41,12 +41,13 @@ var searchData=
   ['getsound_38',['getSound',['../classrtype_1_1client_1_1ResourceManager.html#a803c76260c9bccfa198b9a72a3a1439d',1,'rtype::client::ResourceManager']]],
   ['getsystemtypeid_39',['getSystemTypeID',['../classrtype_1_1ecs_1_1SystemManager.html#a81024e350e5ca485584721ce00a480c5',1,'rtype::ecs::SystemManager']]],
   ['gettexture_40',['getTexture',['../classrtype_1_1client_1_1ResourceManager.html#a2f27062001ff3b24a155331ac413727e',1,'rtype::client::ResourceManager']]],
-  ['gettranslation_41',['getTranslation',['../classrtype_1_1client_1_1LanguageManager.html#a80815bdb6fbd220a344949ede27bd120',1,'rtype::client::LanguageManager']]],
-  ['getwhat_42',['getWhat',['../classrtype_1_1exception_1_1Error.html#af1dff7f88c212195ebfbb2c40406eaf1',1,'rtype::exception::Error']]],
-  ['getwhere_43',['getWhere',['../classrtype_1_1exception_1_1Error.html#a75cf6799e69103e6bade63acd67d9029',1,'rtype::exception::Error']]],
-  ['getwindowtitle_44',['getWindowTitle',['../classrtype_1_1client_1_1GameSettings.html#a3dcb397c1ef36d623608bb831c833df3',1,'rtype::client::GameSettings']]],
-  ['git_20workflow_45',['1. Git Workflow',['../md_Doc_2Contributing.html#autotoc_md71',1,'']]],
-  ['glossary_46',['20. Glossary',['../md_Doc_2network__protocol.html#autotoc_md214',1,'']]],
-  ['goals_47',['goals',['../md_Doc_2network__protocol.html#autotoc_md167',1,'2. Design Goals'],['../md_Doc_2Developer__doc.html#autotoc_md93',1,'Key goals']]],
-  ['guide_48',['Contributing Guide',['../md_Doc_2Contributing.html',1,'']]]
+  ['gettick_41',['getTick',['../classServerClock.html#af36c1a2b668e744dbbf4c1edec17dc43',1,'ServerClock']]],
+  ['gettranslation_42',['getTranslation',['../classrtype_1_1client_1_1LanguageManager.html#a80815bdb6fbd220a344949ede27bd120',1,'rtype::client::LanguageManager']]],
+  ['getwhat_43',['getWhat',['../classrtype_1_1exception_1_1Error.html#af1dff7f88c212195ebfbb2c40406eaf1',1,'rtype::exception::Error']]],
+  ['getwhere_44',['getWhere',['../classrtype_1_1exception_1_1Error.html#a75cf6799e69103e6bade63acd67d9029',1,'rtype::exception::Error']]],
+  ['getwindowtitle_45',['getWindowTitle',['../classrtype_1_1client_1_1GameSettings.html#a3dcb397c1ef36d623608bb831c833df3',1,'rtype::client::GameSettings']]],
+  ['git_20workflow_46',['1. Git Workflow',['../md_Doc_2Contributing.html#autotoc_md71',1,'']]],
+  ['glossary_47',['20. Glossary',['../md_Doc_2network__protocol.html#autotoc_md214',1,'']]],
+  ['goals_48',['goals',['../md_Doc_2network__protocol.html#autotoc_md167',1,'2. Design Goals'],['../md_Doc_2Developer__doc.html#autotoc_md93',1,'Key goals']]],
+  ['guide_49',['Contributing Guide',['../md_Doc_2Contributing.html',1,'']]]
 ];

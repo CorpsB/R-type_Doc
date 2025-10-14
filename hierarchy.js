@@ -56,11 +56,13 @@ var hierarchy =
       [ "rtype::ecs::AudioSystem", "classrtype_1_1ecs_1_1AudioSystem.html", null ],
       [ "rtype::ecs::CollisionSystem", "classrtype_1_1ecs_1_1CollisionSystem.html", null ],
       [ "rtype::ecs::MovementSystem", "classrtype_1_1ecs_1_1MovementSystem.html", null ],
-      [ "rtype::ecs::PlayerSystem", "classrtype_1_1ecs_1_1PlayerSystem.html", null ]
+      [ "rtype::ecs::PlayerSystem", "classrtype_1_1ecs_1_1PlayerSystem.html", null ],
+      [ "rtype::ecs::SpawnerSystem", "classrtype_1_1ecs_1_1SpawnerSystem.html", null ]
     ] ],
     [ "rtype::ecs::SystemManager", "classrtype_1_1ecs_1_1SystemManager.html", null ],
     [ "rtype::server", "classrtype_1_1server.html", null ],
     [ "score_attr_t", "Score_8hpp.html#structscore__attr__t", null ],
+    [ "ServerClock", "classServerClock.html", null ],
     [ "speed_attr_t", "Speed_8hpp.html#structspeed__attr__t", null ],
     [ "sprite_attr_t", "Common_2ECS_2Components_2Attributes_2Sprite_8hpp.html#structsprite__attr__t", null ],
     [ "std::exception", null, [

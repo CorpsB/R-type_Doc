@@ -12,5 +12,7 @@ var searchData=
   ['_7eplayersystem_9',['~PlayerSystem',['../classrtype_1_1ecs_1_1PlayerSystem.html#a78b7158bf65cd562caec5375bb5e5397',1,'rtype::ecs::PlayerSystem']]],
   ['_7eprotocol_10',['~Protocol',['../classprotocol_1_1Protocol.html#accb237985d708517a6e999bb4b993a47',1,'protocol::Protocol']]],
   ['_7eserver_11',['~server',['../classrtype_1_1server.html#a1215d27093c4b67dd855f14e0532a117',1,'rtype::server']]],
-  ['_7esystem_12',['~System',['../classrtype_1_1ecs_1_1System.html#a00fae19d7a2b71808876ffbb80d82eb0',1,'rtype::ecs::System']]]
+  ['_7eserverclock_12',['~ServerClock',['../classServerClock.html#a82febbb3f1c11a3f48487b151bff62d8',1,'ServerClock']]],
+  ['_7espawnersystem_13',['~SpawnerSystem',['../classrtype_1_1ecs_1_1SpawnerSystem.html#aa550d6ffc44d324d9d69dab3acc9728a',1,'rtype::ecs::SpawnerSystem']]],
+  ['_7esystem_14',['~System',['../classrtype_1_1ecs_1_1System.html#a00fae19d7a2b71808876ffbb80d82eb0',1,'rtype::ecs::System']]]
 ];

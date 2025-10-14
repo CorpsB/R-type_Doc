@@ -1,7 +1,9 @@
 <map id="Damage.hpp" name="Damage.hpp">
-<area shape="rect" id="Node000001" title="ECS component representing damage attributes for an entity." alt="" coords="19,5,125,31"/>
-<area shape="rect" id="Node000002" href="$EntityFactory_8hpp.html" title="Declares the entity creation and component registration helpers." alt="" coords="5,79,139,104"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="75,44,75,79,69,79,69,44"/>
-<area shape="rect" id="Node000003" href="$EntityFactory_8cpp.html" title="Implements the entity creation logic and component registration." alt="" coords="6,152,138,177"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="75,118,75,152,69,152,69,118"/>
+<area shape="rect" id="Node000001" title="ECS component representing damage attributes for an entity." alt="" coords="85,5,191,31"/>
+<area shape="rect" id="Node000002" href="$EntityFactory_8hpp.html" title="Declares the entity creation and component registration helpers." alt="" coords="71,79,205,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="141,44,141,79,135,79,135,44"/>
+<area shape="rect" id="Node000003" href="$EntityFactory_8cpp.html" title="Implements the entity creation logic and component registration." alt="" coords="5,152,137,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="119,116,84,154,80,150,116,113"/>
+<area shape="rect" id="Node000004" href="$Rtype_8cpp.html" title="Implements the main server logic for the R&#45;Type project." alt="" coords="161,152,248,177"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="160,113,196,150,192,154,157,116"/>
 </map>

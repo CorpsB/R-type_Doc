@@ -21,8 +21,9 @@ var searchData=
   ['getsound_18',['getSound',['../classrtype_1_1client_1_1ResourceManager.html#a803c76260c9bccfa198b9a72a3a1439d',1,'rtype::client::ResourceManager']]],
   ['getsystemtypeid_19',['getSystemTypeID',['../classrtype_1_1ecs_1_1SystemManager.html#a81024e350e5ca485584721ce00a480c5',1,'rtype::ecs::SystemManager']]],
   ['gettexture_20',['getTexture',['../classrtype_1_1client_1_1ResourceManager.html#a2f27062001ff3b24a155331ac413727e',1,'rtype::client::ResourceManager']]],
-  ['gettranslation_21',['getTranslation',['../classrtype_1_1client_1_1LanguageManager.html#a80815bdb6fbd220a344949ede27bd120',1,'rtype::client::LanguageManager']]],
-  ['getwhat_22',['getWhat',['../classrtype_1_1exception_1_1Error.html#af1dff7f88c212195ebfbb2c40406eaf1',1,'rtype::exception::Error']]],
-  ['getwhere_23',['getWhere',['../classrtype_1_1exception_1_1Error.html#a75cf6799e69103e6bade63acd67d9029',1,'rtype::exception::Error']]],
-  ['getwindowtitle_24',['getWindowTitle',['../classrtype_1_1client_1_1GameSettings.html#a3dcb397c1ef36d623608bb831c833df3',1,'rtype::client::GameSettings']]]
+  ['gettick_21',['getTick',['../classServerClock.html#af36c1a2b668e744dbbf4c1edec17dc43',1,'ServerClock']]],
+  ['gettranslation_22',['getTranslation',['../classrtype_1_1client_1_1LanguageManager.html#a80815bdb6fbd220a344949ede27bd120',1,'rtype::client::LanguageManager']]],
+  ['getwhat_23',['getWhat',['../classrtype_1_1exception_1_1Error.html#af1dff7f88c212195ebfbb2c40406eaf1',1,'rtype::exception::Error']]],
+  ['getwhere_24',['getWhere',['../classrtype_1_1exception_1_1Error.html#a75cf6799e69103e6bade63acd67d9029',1,'rtype::exception::Error']]],
+  ['getwindowtitle_25',['getWindowTitle',['../classrtype_1_1client_1_1GameSettings.html#a3dcb397c1ef36d623608bb831c833df3',1,'rtype::client::GameSettings']]]
 ];

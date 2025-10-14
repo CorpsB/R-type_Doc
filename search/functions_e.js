@@ -17,6 +17,6 @@ var searchData=
   ['resourcemanager_14',['resourcemanager',['../classrtype_1_1client_1_1ResourceManager.html#a8d5497d39e323460249e65817177e67a',1,'rtype::client::ResourceManager::ResourceManager()'],['../classrtype_1_1client_1_1ResourceManager.html#ac212920e1578b0fabc1cefcc797b6b01',1,'rtype::client::ResourceManager::ResourceManager(const ResourceManager &amp;)=delete']]],
   ['retransmit_5fsequence_15',['retransmit_sequence',['../classprotocol_1_1Protocol.html#a0255860f1280d2f73d60156fd0e8549d',1,'protocol::Protocol']]],
   ['retrieve_5fpackage_16',['retrieve_package',['../GameProtocol_8cpp.html#a3f3b75a96b838a72b594b63f15ce2dc2',1,'GameProtocol.cpp']]],
-  ['run_17',['run',['../classarcade_1_1core_1_1Core.html#a90737119821ed677792162eeb34a3498',1,'arcade::core::Core::run()'],['../classrtype_1_1server.html#a703fd91ca5d705369acef8f6e505e32d',1,'rtype::server::run()'],['../classrtype_1_1client_1_1Game.html#a9c349ade2780c0a770c0b9d4485918e2',1,'rtype::client::Game::run()']]],
+  ['run_17',['run',['../classarcade_1_1core_1_1Core.html#a90737119821ed677792162eeb34a3498',1,'arcade::core::Core::run()'],['../classServerClock.html#a607c386860440f25ef12cded66794774',1,'ServerClock::run()'],['../classrtype_1_1server.html#a703fd91ca5d705369acef8f6e505e32d',1,'rtype::server::run()'],['../classrtype_1_1client_1_1Game.html#a9c349ade2780c0a770c0b9d4485918e2',1,'rtype::client::Game::run()']]],
   ['runsinglegame_18',['runSingleGame',['../classarcade_1_1core_1_1Core.html#a4e758361e3842775a9830a5dcbbcc175',1,'arcade::core::Core']]]
 ];

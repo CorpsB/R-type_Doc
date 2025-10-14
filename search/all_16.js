@@ -8,7 +8,7 @@ var searchData=
   ['last_5fsent_5',['last_sent',['../namespaceprotocol.html#a06f6070f419ad323c15ecb893b49dc96',1,'protocol::pending_send_t']]],
   ['layer_6',['Why We Chose Boost.Asio for the R-Type Network Layer',['../md_Doc_2Boost_8asio.html',1,'']]],
   ['layout_7',['2. Repository &amp; Build Layout',['../md_Doc_2Developer__doc.html#autotoc_md95',1,'']]],
-  ['left_8',['left',['../namespacearcade_1_1types.html#a486c77632eb0d8d22b5e643dc4d55300a02afa2966812781f1445e081a1aba957',1,'arcade::types::LEFT'],['../namespaceprotocol_1_1game.html#aa65405265af95e2ad16de5c1bf6499c8a53b74dc2a9d0fc30b42fbfe1c34166da',1,'protocol::game::LEFT']]],
+  ['left_8',['left',['../namespacearcade_1_1types.html#a486c77632eb0d8d22b5e643dc4d55300a02afa2966812781f1445e081a1aba957',1,'arcade::types::LEFT'],['../namespaceprotocol_1_1game.html#aa65405265af95e2ad16de5c1bf6499c8a5786fd962d38ad7c3c995832c6e148f2',1,'protocol::game::LEFT']]],
   ['length_9',['length',['../structarcade_1_1types_1_1Sprite.html#a83b338bbf2a4062db54173b534f05f9c',1,'arcade::types::Sprite']]],
   ['level_20facade_3a_20tt_20gameprotocol_20tt_10',['4.2 Game-level Facade: &lt;tt&gt;GameProtocol&lt;/tt&gt;',['../md_Doc_2Developer__doc.html#autotoc_md109',1,'']]],
   ['level_20overview_11',['1. High-Level Overview',['../md_Doc_2Developer__doc.html#autotoc_md92',1,'']]],

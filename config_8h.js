@@ -5,7 +5,8 @@ var config_8h =
       [ "debug", "config_8h.html#aa5c4c5ada39985d28d541919f4939bce", null ],
       [ "ip", "config_8h.html#a6ebfa3230a76f74ed3e8f7094457b12c", null ],
       [ "need_help", "config_8h.html#a2505bbf8e7fb0038f3ed72f77fd24871", null ],
-      [ "port", "config_8h.html#a03a218180f882180702d49d127ad7952", null ]
+      [ "port", "config_8h.html#a03a218180f882180702d49d127ad7952", null ],
+      [ "seed", "config_8h.html#a678947cccd3f8ad4cec428886fa74d94", null ]
     ] ],
     [ "check_config", "config_8h.html#a25bdb7c1b84575332fca57c03aa1d5de", null ],
     [ "check_config", "config_8h.html#a4406c78c2726a16ae2f47d22b933ccec", null ],

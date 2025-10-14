@@ -23,6 +23,7 @@ var namespacertype_1_1ecs =
     [ "IComponentArray", "classrtype_1_1ecs_1_1IComponentArray.html", "classrtype_1_1ecs_1_1IComponentArray" ],
     [ "MovementSystem", "classrtype_1_1ecs_1_1MovementSystem.html", "classrtype_1_1ecs_1_1MovementSystem" ],
     [ "PlayerSystem", "classrtype_1_1ecs_1_1PlayerSystem.html", "classrtype_1_1ecs_1_1PlayerSystem" ],
+    [ "SpawnerSystem", "classrtype_1_1ecs_1_1SpawnerSystem.html", "classrtype_1_1ecs_1_1SpawnerSystem" ],
     [ "System", "classrtype_1_1ecs_1_1System.html", "classrtype_1_1ecs_1_1System" ],
     [ "SystemManager", "classrtype_1_1ecs_1_1SystemManager.html", "classrtype_1_1ecs_1_1SystemManager" ],
     [ "INVALID_ID", "namespacertype_1_1ecs.html#ad13c6297cdab9d3f8547dbe389857200", null ]

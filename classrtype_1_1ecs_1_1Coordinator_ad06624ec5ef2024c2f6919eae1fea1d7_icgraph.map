@@ -1,5 +1,9 @@
 <map id="rtype::ecs::Coordinator::registerComponent" name="rtype::ecs::Coordinator::registerComponent">
-<area shape="rect" id="Node000001" title="Register a component type T with the ComponentManager." alt="" coords="251,13,553,38"/>
-<area shape="rect" id="Node000002" href="$namespacertype_1_1ecs_1_1factory.html#ac493845a0bd714fbeb9baead17010d04" title="Registers all gameplay&#45;related components into the ECS Coordinator." alt="" coords="5,5,203,45"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="237,28,203,28,203,23,237,23"/>
+<area shape="rect" id="Node000001" title="Register a component type T with the ComponentManager." alt="" coords="536,13,839,38"/>
+<area shape="rect" id="Node000002" href="$namespacertype_1_1ecs_1_1factory.html#ac493845a0bd714fbeb9baead17010d04" title="Registers all gameplay&#45;related components into the ECS Coordinator." alt="" coords="291,5,488,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="522,28,488,28,488,23,522,23"/>
+<area shape="rect" id="Node000003" href="$classrtype_1_1server.html#a703fd91ca5d705369acef8f6e505e32d" title="Starts the main execution loop of the server." alt="" coords="108,13,243,38"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="277,28,243,28,243,23,277,23"/>
+<area shape="rect" id="Node000004" href="$Server_2main_8cpp.html#a0c99d968a34e803d378692bde2e3f18f" title="Program entry point." alt="" coords="5,13,60,38"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="94,28,60,28,60,23,94,23"/>
 </map>
