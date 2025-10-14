@@ -100,12 +100,12 @@ $(document).ready(function(){initNavTree('md_Doc_2network__protocol.html',''); i
   <div class="headertitle"><div class="title">Network Protocol Specification (UDP)</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="autotoc_md161"></a> Version: 1.0 <br  />
+<div class="textblock"><p><a class="anchor" id="autotoc_md162"></a> Version: 1.0 <br  />
  Status: Stable <br  />
  Applies to: R-Type (client/server) <br  />
  Transport: UDP (connectionless), Boost.Asio</p>
 <hr  />
-<h1><a class="anchor" id="autotoc_md163"></a>
+<h1><a class="anchor" id="autotoc_md164"></a>
 1. Overview</h1>
 <p>The R-Type networking layer is a lightweight, UDP-based protocol designed for real‑time game traffic. It prioritizes <b>low latency</b>, <b>predictable bandwidth</b>, and <b>graceful degradation</b> under packet loss. Reliability and ordering are provided <em>selectively</em> via per‑packet flags to avoid the overhead of TCP for time‑sensitive updates.</p>
 <p>This document specifies:</p><ul>
@@ -123,7 +123,7 @@ $(document).ready(function(){initNavTree('md_Doc_2network__protocol.html',''); i
 <li><code>protocol/Protocol.cpp</code></li>
 </ul>
 <hr  />
-<h1><a class="anchor" id="autotoc_md165"></a>
+<h1><a class="anchor" id="autotoc_md166"></a>
 2. Design Goals</h1>
 <ol type="1">
 <li><b>Real-time first</b>: time-sensitive updates (e.g., positions) must not block on retransmits. <br  />
@@ -138,7 +138,7 @@ $(document).ready(function(){initNavTree('md_Doc_2network__protocol.html',''); i
 </li>
 </ol>
 <hr  />
-<h1><a class="anchor" id="autotoc_md167"></a>
+<h1><a class="anchor" id="autotoc_md168"></a>
 3. Transport</h1>
 <ul>
 <li><b>Protocol</b>: UDP (IPv4/IPv6) via Boost.Asio.</li>
@@ -147,7 +147,7 @@ $(document).ready(function(){initNavTree('md_Doc_2network__protocol.html',''); i
 <li><b>Threading</b>: I/O served by Boost.Asio’s <code>io_context</code>; optional dedicated IO thread (<code>start_io()/stop_io()</code>).</li>
 </ul>
 <hr  />
-<h1><a class="anchor" id="autotoc_md169"></a>
+<h1><a class="anchor" id="autotoc_md170"></a>
 4. Packet Header (Wire Format)</h1>
 <p>All multi-byte integers are <b>big-endian</b> on the wire (network byte order).</p>
 <div class="fragment"><div class="line">+-------------------- Packet Header (packed) --------------------+</div>
@@ -167,7 +167,7 @@ $(document).ready(function(){initNavTree('md_Doc_2network__protocol.html',''); i
 <div class="line">    uint32_t ack_bits;       <span class="comment">// bitmask for ack-1 .. ack-32</span></div>
 <div class="line">    uint16_t payload_length; <span class="comment">// bytes following the header</span></div>
 <div class="line">};</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md170"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md171"></a>
 4.1 Fields</h2>
 <ul>
 <li><b>message_type</b>: 16-bit application identifier. Serialized with <code>htons</code>.</li>
@@ -192,7 +192,7 @@ $(document).ready(function(){initNavTree('md_Doc_2network__protocol.html',''); i
 </li>
 <li><b>payload_length</b>: size of the payload; <code>htons</code> on send, <code>ntohs</code> on receive.</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md171"></a>
+<h2><a class="anchor" id="autotoc_md172"></a>
 4.2 Serialization</h2>
 <ul>
 <li>Function: <code>serialize_packet_ack(packet_t, peer_state*)</code>.</li>
@@ -200,10 +200,10 @@ $(document).ready(function(){initNavTree('md_Doc_2network__protocol.html',''); i
 <li>Copies header + payload into a single contiguous buffer for send.</li>
 </ul>
 <hr  />
-<h1><a class="anchor" id="autotoc_md173"></a>
+<h1><a class="anchor" id="autotoc_md174"></a>
 5. Reliability &amp; Ordering</h1>
 <p>Reliability is per-packet, chosen by the caller at send time.</p>
-<h2><a class="anchor" id="autotoc_md174"></a>
+<h2><a class="anchor" id="autotoc_md175"></a>
 5.1 Flags</h2>
 <ul>
 <li><b>UNRELIABLE</b> <br  />
@@ -229,15 +229,15 @@ $(document).ready(function(){initNavTree('md_Doc_2network__protocol.html',''); i
 </li>
 </ul>
 <hr  />
-<h1><a class="anchor" id="autotoc_md176"></a>
+<h1><a class="anchor" id="autotoc_md177"></a>
 6. Sequence, ACK, and ACK Bits</h1>
-<h2><a class="anchor" id="autotoc_md177"></a>
+<h2><a class="anchor" id="autotoc_md178"></a>
 6.1 Sender sequences</h2>
 <ul>
 <li>Global per-sender 32-bit counter (<code>_next_sequence</code>), starts at <code>1</code>.</li>
 <li>Only applied to reliable packets. Unreliable packets keep <code>sequence = 0</code>.</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md178"></a>
+<h2><a class="anchor" id="autotoc_md179"></a>
 6.2 Receiver ACK window</h2>
 <ul>
 <li>State per peer: <code>peer_receive_state_t</code> maintains:<ul>
@@ -263,7 +263,7 @@ $(document).ready(function(){initNavTree('md_Doc_2network__protocol.html',''); i
 </ul>
 <p>Implementation: <code><a class="el" href="Protocol_8cpp.html#a030fc36fea04b55ed306cf4cbeeebb11" title="Update the peer ack window (last_received / ack_bits) for piggybacking.">update_peer_ack_window()</a></code>.</p>
 <hr  />
-<h1><a class="anchor" id="autotoc_md180"></a>
+<h1><a class="anchor" id="autotoc_md181"></a>
 7. Retransmission Policy</h1>
 <ul>
 <li><b>Timerless</b> design: retransmission is driven by the application calling <code>process_pending(now)</code>.</li>
@@ -273,7 +273,7 @@ $(document).ready(function(){initNavTree('md_Doc_2network__protocol.html',''); i
 </ul>
 </li>
 </ul>
-<h2><a class="anchor" id="autotoc_md181"></a>
+<h2><a class="anchor" id="autotoc_md182"></a>
 7.1 Pending table</h2>
 <ul>
 <li>Stored in <code>_pending_sends: map&lt;sequence, pending_send_t&gt;</code>.</li>
@@ -286,7 +286,7 @@ $(document).ready(function(){initNavTree('md_Doc_2network__protocol.html',''); i
 </ul>
 </li>
 </ul>
-<h2><a class="anchor" id="autotoc_md182"></a>
+<h2><a class="anchor" id="autotoc_md183"></a>
 7.2 Resend/Fail workflow</h2>
 <ul>
 <li>If <code>now - last_sent &gt;= RESEND_MS_INTERVAL</code>: schedule resend and increment <code>attempts</code>.</li>
@@ -297,7 +297,7 @@ $(document).ready(function(){initNavTree('md_Doc_2network__protocol.html',''); i
 </li>
 </ul>
 <hr  />
-<h1><a class="anchor" id="autotoc_md184"></a>
+<h1><a class="anchor" id="autotoc_md185"></a>
 8. Ordered Delivery</h1>
 <p>For <code>RELIABLE_ORDERED</code>, the receiver enforces in-order delivery:</p>
 <p>State: <code>expected_sequence</code>, <code>buffered&lt;seq, (packet, time)&gt;</code>, <code>waiting_since</code>.</p>
@@ -318,7 +318,7 @@ $(document).ready(function(){initNavTree('md_Doc_2network__protocol.html',''); i
 </ul>
 </li>
 </ol>
-<h2><a class="anchor" id="autotoc_md185"></a>
+<h2><a class="anchor" id="autotoc_md186"></a>
 8.1 Timeout-based advancement</h2>
 <ul>
 <li>After waiting <code>10 * RESEND_MS_INTERVAL</code> (i.e., 2000 ms) without progress:<ul>
@@ -334,13 +334,13 @@ $(document).ready(function(){initNavTree('md_Doc_2network__protocol.html',''); i
 </ul>
 </li>
 </ul>
-<h2><a class="anchor" id="autotoc_md186"></a>
+<h2><a class="anchor" id="autotoc_md187"></a>
 8.2 Buffer expiry</h2>
 <ul>
 <li>Entries older than <code>100 * RESEND_MS_INTERVAL</code> (i.e., 20,000 ms) are dropped.</li>
 </ul>
 <hr  />
-<h1><a class="anchor" id="autotoc_md188"></a>
+<h1><a class="anchor" id="autotoc_md189"></a>
 9. Event Model</h1>
 <p>Core emits <code>core_event_t</code> with:</p><ul>
 <li><code>event_type_t::PACKET_RECEIVED</code> <br  />
@@ -372,7 +372,7 @@ $(document).ready(function(){initNavTree('md_Doc_2network__protocol.html',''); i
 <li><code>bool get_event(core_event_t &amp;out)</code> — pop next event</li>
 </ul>
 <hr  />
-<h1><a class="anchor" id="autotoc_md190"></a>
+<h1><a class="anchor" id="autotoc_md191"></a>
 10. Application Message Types</h1>
 <p><code>packet_header_t::message_type</code> is application-defined (16-bit). <br  />
  The <b>game layer</b> maps higher-level events (e.g., create/move/destroy, input) to numeric IDs and packs payload bytes accordingly. See <code><a class="el" href="GameProtocolTypes_8hpp.html" title="Game-level protocol type definitions (payloads, game enums).">GameProtocolTypes.hpp</a></code>.</p>
@@ -383,7 +383,7 @@ $(document).ready(function(){initNavTree('md_Doc_2network__protocol.html',''); i
 <li><code>PLAYER_INPUT = 100</code> (Exact list may vary per build; the core does not interpret these values.)</li>
 </ul>
 <hr  />
-<h1><a class="anchor" id="autotoc_md192"></a>
+<h1><a class="anchor" id="autotoc_md193"></a>
 11. Example Wire Packet</h1>
 <p>Example: RELIABLE_ORDERED move update</p>
 <p>Assumptions:</p><ul>
@@ -404,7 +404,7 @@ $(document).ready(function(){initNavTree('md_Doc_2network__protocol.html',''); i
 <li>Payload endianness is application-defined; in our implementation, payload integers are serialized as big-endian via helpers in <code>utils</code>.</li>
 </ul>
 <hr  />
-<h1><a class="anchor" id="autotoc_md194"></a>
+<h1><a class="anchor" id="autotoc_md195"></a>
 12. Error Handling &amp; Resilience</h1>
 <p>Receiver-side:</p><ul>
 <li><b>Short datagram</b> (<code>bytes_transferred &lt; sizeof(header)</code>): drop silently, reschedule receive.</li>
@@ -421,7 +421,7 @@ $(document).ready(function(){initNavTree('md_Doc_2network__protocol.html',''); i
 <li><b>Resend exhaustion</b>: emit <code>TRANSMIT_FAILED</code> and drop from pending table.</li>
 </ul>
 <hr  />
-<h1><a class="anchor" id="autotoc_md196"></a>
+<h1><a class="anchor" id="autotoc_md197"></a>
 13. Timing &amp; Tuning</h1>
 <ul>
 <li><code>RESEND_MS_INTERVAL</code> (default <b>200 ms</b>): global resend cadence.</li>
@@ -434,7 +434,7 @@ $(document).ready(function(){initNavTree('md_Doc_2network__protocol.html',''); i
 </ul>
 <p>These values are balanced for WAN latency spikes and moderate loss. For LAN-only play, intervals can be reduced.</p>
 <hr  />
-<h1><a class="anchor" id="autotoc_md198"></a>
+<h1><a class="anchor" id="autotoc_md199"></a>
 14. Security Considerations</h1>
 <ul>
 <li>UDP lacks connection semantics; always validate message type and payload sizes.</li>
@@ -443,7 +443,7 @@ $(document).ready(function(){initNavTree('md_Doc_2network__protocol.html',''); i
 <li>Prefer dropping malformed/out-of-window data rather than attempting recovery.</li>
 </ul>
 <hr  />
-<h1><a class="anchor" id="autotoc_md200"></a>
+<h1><a class="anchor" id="autotoc_md201"></a>
 15. Interoperability &amp; Platform Constraints</h1>
 <ul>
 <li><b>Endianness</b>: all header fields use network byte order (big-endian). <br  />
@@ -459,9 +459,9 @@ $(document).ready(function(){initNavTree('md_Doc_2network__protocol.html',''); i
 <li><b>Buffering</b>: internal receive buffer is pre-sized to <code>MAX_PACKET_SIZE_BYTES</code>.</li>
 </ul>
 <hr  />
-<h1><a class="anchor" id="autotoc_md202"></a>
+<h1><a class="anchor" id="autotoc_md203"></a>
 16. Sequence Diagrams</h1>
-<h2><a class="anchor" id="autotoc_md203"></a>
+<h2><a class="anchor" id="autotoc_md204"></a>
 16.1 Reliable Unordered send/ack</h2>
 <div class="fragment"><div class="line">sequenceDiagram</div>
 <div class="line">    participant C as Client</div>
@@ -472,7 +472,7 @@ $(document).ready(function(){initNavTree('md_Doc_2network__protocol.html',''); i
 <div class="line">Process packet immediately</div>
 <div class="line">    S--&gt;&gt;C: Next outgoing packet with piggyback ack=N, ack_bits updated</div>
 <div class="line">    C-&gt;&gt;C: Pending[N] removed on ack reception</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md204"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md205"></a>
 16.2 Reliable Ordered with gap and advancement</h2>
 <div class="fragment"><div class="line">sequenceDiagram</div>
 <div class="line">    participant C as Client</div>
@@ -486,7 +486,7 @@ $(document).ready(function(){initNavTree('md_Doc_2network__protocol.html',''); i
 <div class="line">    S-&gt;&gt;S: advance expected to lowest buffered (12)</div>
 <div class="line">    S-&gt;&gt;S: flush contiguous buffered -&gt; deliver 12</div>
 </div><!-- fragment --><hr  />
-<h1><a class="anchor" id="autotoc_md206"></a>
+<h1><a class="anchor" id="autotoc_md207"></a>
 17. Versioning &amp; Extensibility</h1>
 <ul>
 <li>The protocol is version-less at header level to minimize overhead. <br  />
@@ -496,7 +496,7 @@ $(document).ready(function(){initNavTree('md_Doc_2network__protocol.html',''); i
 <li>If a header version is introduced, reserve the <code>reserved</code> byte for a version tag.</li>
 </ul>
 <hr  />
-<h1><a class="anchor" id="autotoc_md208"></a>
+<h1><a class="anchor" id="autotoc_md209"></a>
 18. Implementation Pointers</h1>
 <ul>
 <li>Sending: <code>Protocol::send_packet()</code> <br  />
@@ -510,7 +510,7 @@ $(document).ready(function(){initNavTree('md_Doc_2network__protocol.html',''); i
 <li>Events: <code>enqueue_packet_event()</code>, <code>emit_transmit_failed()</code>, <code>get_event()</code></li>
 </ul>
 <hr  />
-<h1><a class="anchor" id="autotoc_md210"></a>
+<h1><a class="anchor" id="autotoc_md211"></a>
 19. Compliance Checklist</h1>
 <ul>
 <li>[x] Header fields serialized big-endian</li>
@@ -522,7 +522,7 @@ $(document).ready(function(){initNavTree('md_Doc_2network__protocol.html',''); i
 <li>[x] MTU cap ≤ 1200 bytes</li>
 </ul>
 <hr  />
-<h1><a class="anchor" id="autotoc_md212"></a>
+<h1><a class="anchor" id="autotoc_md213"></a>
 20. Glossary</h1>
 <ul>
 <li><b>ACK</b>: Acknowledgment of receipt. <br  />

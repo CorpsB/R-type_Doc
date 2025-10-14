@@ -1,5 +1,6 @@
 var dir_923b26246f2e20deed18f9be751f3b2c =
 [
+    [ "Audio.hpp", "Audio_8hpp.html", "Audio_8hpp" ],
     [ "Damage.hpp", "Damage_8hpp.html", "Damage_8hpp" ],
     [ "Direction.hpp", "Direction_8hpp.html", "Direction_8hpp" ],
     [ "Frequency.hpp", "Frequency_8hpp.html", "Frequency_8hpp" ],

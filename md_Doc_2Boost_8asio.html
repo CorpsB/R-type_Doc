@@ -100,19 +100,19 @@ $(document).ready(function(){initNavTree('md_Doc_2Boost_8asio.html',''); initRes
   <div class="headertitle"><div class="title">Why We Chose Boost.Asio for the R-Type Network Layer</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h2><a class="anchor" id="autotoc_md49"></a>
+<div class="textblock"><h2><a class="anchor" id="autotoc_md50"></a>
 1. Introduction</h2>
 <p>In our R-Type server implementation, we needed a robust and flexible networking solution capable of handling real-time communication between multiple clients and the game server. The project specification required the use of <b>UDP</b>, which is a connectionless and lightweight transport protocol ideal for fast-paced games. However, UDP also lacks built-in reliability, ordering, and connection management, which means that a low-level yet efficient network layer was necessary to implement those mechanisms manually.</p>
 <p>After evaluating several alternatives, we decided to use <b>Boost.Asio</b>, the networking and asynchronous I/O library from the Boost C++ collection. Boost.Asio provides a clean, portable, and efficient abstraction over system-level sockets while supporting asynchronous operations, timers, and multithreading. This makes it perfectly suited for a high-performance real-time game server such as R-Type.</p>
 <hr  />
-<h2><a class="anchor" id="autotoc_md51"></a>
+<h2><a class="anchor" id="autotoc_md52"></a>
 2. Why Boost.Asio?</h2>
-<h3><a class="anchor" id="autotoc_md52"></a>
+<h3><a class="anchor" id="autotoc_md53"></a>
 2.1 Maturity and Industry Adoption</h3>
 <p>Boost.Asio is not just another third-party networking library. It is widely regarded as the <b>de facto standard</b> for asynchronous networking in modern C++. It has been used in numerous production-grade software systems such as Unreal Engine, MongoDB, and high-performance network servers. Because of its proven reliability, cross-platform consistency, and strong community support, Boost.Asio was a natural choice for our project.</p>
 <p>The library’s design also heavily influenced the upcoming <b>C++ Networking TS</b> and the future <b>std::net</b> standard, making it a forward-compatible choice that aligns with modern C++ best practices.</p>
 <hr  />
-<h3><a class="anchor" id="autotoc_md54"></a>
+<h3><a class="anchor" id="autotoc_md55"></a>
 2.2 Portability and Abstraction</h3>
 <p>One of the biggest challenges in network programming is handling platform-specific differences between <b>BSD sockets</b> (on Linux/macOS) and <b>Winsock2</b> (on Windows). Boost.Asio abstracts all of this complexity, allowing us to write code once and have it work on every major platform with zero modification.</p>
 <p>Example:</p>
@@ -120,7 +120,7 @@ $(document).ready(function(){initNavTree('md_Doc_2Boost_8asio.html',''); initRes
 <div class="line">socket.open(boost::asio::ip::udp::v4());</div>
 </div><!-- fragment --><p>This simple example replaces multiple lines of low-level socket setup code and error handling. As a result, our codebase remains cleaner, safer, and easier to maintain.</p>
 <hr  />
-<h3><a class="anchor" id="autotoc_md56"></a>
+<h3><a class="anchor" id="autotoc_md57"></a>
 2.3 Asynchronous I/O Model</h3>
 <p>A real-time multiplayer game like R-Type must be able to handle network events (packets received or sent) <b>without blocking the main game loop</b>. Boost.Asio’s asynchronous model, based on <code>io_context</code> and non-blocking handlers, fits this requirement perfectly.</p>
 <p>Using asynchronous operations means the server can process game logic, physics, and player input concurrently while network operations continue in the background.</p>
@@ -134,12 +134,12 @@ $(document).ready(function(){initNavTree('md_Doc_2Boost_8asio.html',''); initRes
 <div class="line">);</div>
 </div><!-- fragment --><p>This design eliminates the need for busy waiting or manual polling loops, resulting in <b>lower latency</b> and <b>better scalability</b>.</p>
 <hr  />
-<h3><a class="anchor" id="autotoc_md58"></a>
+<h3><a class="anchor" id="autotoc_md59"></a>
 2.4 Integration with Threads and Timers</h3>
 <p>Boost.Asio also offers built-in tools for multithreading and timing, such as <code>io_context::run()</code> for threaded event loops and <code>steady_timer</code> for time-based operations. This means we can manage retransmission intervals, connection timeouts, or scheduled tasks directly within the same framework — no need for external synchronization libraries or ad-hoc thread management.</p>
 <p>In our R-Type project, the server runs its <code>Protocol</code> logic in a dedicated I/O thread, ensuring that network events are handled independently of gameplay updates.</p>
 <hr  />
-<h3><a class="anchor" id="autotoc_md60"></a>
+<h3><a class="anchor" id="autotoc_md61"></a>
 2.5 Full UDP Support</h3>
 <p>Because the project specification mandates <b>UDP</b>, Boost.Asio’s low-level UDP support is a perfect fit. It provides fine-grained control over packet sending and receiving while still offering the safety and convenience of C++ abstractions.</p>
 <p>Using Boost.Asio’s UDP socket, we can:</p><ul>
@@ -149,7 +149,7 @@ $(document).ready(function(){initNavTree('md_Doc_2Boost_8asio.html',''); initRes
 </ul>
 <p>This balance between low-level access and high-level abstraction allows us to build custom reliability mechanisms (ACKs, retransmissions, sequence tracking) directly inside our <code>Protocol</code> class.</p>
 <hr  />
-<h3><a class="anchor" id="autotoc_md62"></a>
+<h3><a class="anchor" id="autotoc_md63"></a>
 2.6 Comparison with Other Solutions</h3>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -167,7 +167,7 @@ $(document).ready(function(){initNavTree('md_Doc_2Boost_8asio.html',''); initRes
 </table>
 <p>Boost.Asio, in contrast, provides the right balance between <b>control</b>, <b>performance</b>, and <b>modern C++ integration</b>.</p>
 <hr  />
-<h2><a class="anchor" id="autotoc_md64"></a>
+<h2><a class="anchor" id="autotoc_md65"></a>
 3. Benefits for R-Type</h2>
 <p>Using Boost.Asio allowed us to implement a <b>custom UDP-based reliable protocol</b> within our ECS-driven architecture. The key benefits are:</p>
 <ul>
@@ -178,7 +178,7 @@ $(document).ready(function(){initNavTree('md_Doc_2Boost_8asio.html',''); initRes
 <li><b>Cross-platform support:</b> The same codebase runs on both Windows and Linux.</li>
 </ul>
 <hr  />
-<h2><a class="anchor" id="autotoc_md66"></a>
+<h2><a class="anchor" id="autotoc_md67"></a>
 4. Conclusion</h2>
 <p>We chose <b>Boost.Asio</b> because it provides the perfect combination of <b>low-level control</b>, <b>asynchronous design</b>, and <b>modern C++ abstractions</b> required for a fast, reliable, and maintainable UDP-based game server. It allows our R-Type server to remain efficient, portable, and compliant with real-time constraints — all while keeping the codebase clean and future-proof.</p>
 <p>In short, Boost.Asio is not just a networking library. It is the <b>foundation of a modern, scalable, event-driven network engine</b> in C++. </p>

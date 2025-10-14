@@ -100,7 +100,7 @@ $(document).ready(function(){initNavTree('md_Doc_2Developer__doc.html',''); init
   <div class="headertitle"><div class="title">R-Type — Developer Documentation</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="autotoc_md88"></a> </p><blockquote class="doxtable">
+<div class="textblock"><p><a class="anchor" id="autotoc_md89"></a> </p><blockquote class="doxtable">
 <p>&zwj;This document describes the internal architecture and developer-facing guidelines for the <b>r-type</b> project. It is tailored to this repository (client/server split, ECS stack in <code>Common/ECS</code>, UDP protocol in <code>Common/Protocol</code>, and Raylib client UI) and complements the auto-generated API docs (Doxygen). </p>
 </blockquote>
 <ul>
@@ -112,14 +112,14 @@ $(document).ready(function(){initNavTree('md_Doc_2Developer__doc.html',''); init
 <li>Repos paths referenced below: <code>Client/</code>, <code>Server/</code>, <code>Common/</code>, <code>Configs/</code>, <code>Tests/</code>, <code>Doc/</code></li>
 </ul>
 <hr  />
-<h1><a class="anchor" id="autotoc_md90"></a>
+<h1><a class="anchor" id="autotoc_md91"></a>
 1. High-Level Overview</h1>
 <p>R-Type is implemented as a <b>client–server</b> application:</p><ul>
 <li>The <b>Server</b> (<code>Server/</code>) owns the authoritative simulation, runs game logic, and broadcasts state over <b>UDP</b>.</li>
 <li>The <b>Client</b> (<code>Client/</code>) renders the game using <b>raylib</b>, handles input/UI, and syncs to the server state.</li>
 <li>The <b>Common</b> (<code>Common/</code>) module hosts shared code: ECS core (<code>Common/ECS</code>), the network <b>Protocol</b> (<code>Common/Protocol</code>), and utilities.</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md91"></a>
+<h2><a class="anchor" id="autotoc_md92"></a>
 Key goals</h2>
 <ul>
 <li><b>Deterministic &amp; responsive</b> simulation under UDP constraints.</li>
@@ -128,7 +128,7 @@ Key goals</h2>
 <li><b>Separation of concerns</b>: rendering in client; simulation and authority on server; shared code in <code>Common/</code>.</li>
 </ul>
 <hr  />
-<h1><a class="anchor" id="autotoc_md93"></a>
+<h1><a class="anchor" id="autotoc_md94"></a>
 2. Repository &amp; Build Layout</h1>
 <div class="fragment"><div class="line">R-Type/</div>
 <div class="line">├─ Client/                      # Raylib client</div>
@@ -176,10 +176,10 @@ Key goals</h2>
 <div class="line">├─ conanfile.txt</div>
 <div class="line">└─ README.md</div>
 </div><!-- fragment --><hr  />
-<h1><a class="anchor" id="autotoc_md95"></a>
+<h1><a class="anchor" id="autotoc_md96"></a>
 3. ECS Architecture (Common/ECS)</h1>
 <p>The ECS is split into managers and systems:</p>
-<h2><a class="anchor" id="autotoc_md96"></a>
+<h2><a class="anchor" id="autotoc_md97"></a>
 3.1 Core Managers</h2>
 <ul>
 <li><b>EntityManager</b><ul>
@@ -211,7 +211,7 @@ Key goals</h2>
 </ul>
 </li>
 </ul>
-<h3><a class="anchor" id="autotoc_md97"></a>
+<h3><a class="anchor" id="autotoc_md98"></a>
 Mermaid — Manager Interaction</h3>
 <div class="fragment"><div class="line">flowchart LR</div>
 <div class="line">    E[EntityManager] -- create/destroy --&gt; Coo[Coordinator]</div>
@@ -219,7 +219,7 @@ Mermaid — Manager Interaction</h3>
 <div class="line">    S[SystemManager] -- filter &amp; signatures --&gt; Coo</div>
 <div class="line">    Coo -- set/clear bits --&gt; E</div>
 <div class="line">    Coo -- notify changes --&gt; S</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md98"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md99"></a>
 3.2 Components (Attributes)</h2>
 <p>Located in <code>Common/ECS/Components/Attributes/</code>:</p><ul>
 <li><code><a class="el" href="Position_8hpp.html" title="ECS component representing the position of an entity in 2D space.">Position.hpp</a></code> (x, y)</li>
@@ -231,7 +231,7 @@ Mermaid — Manager Interaction</h3>
 <blockquote class="doxtable">
 <p>&zwj;Components are <b>POD-like</b> structs to keep storage dense and cache-friendly. </p>
 </blockquote>
-<h2><a class="anchor" id="autotoc_md99"></a>
+<h2><a class="anchor" id="autotoc_md100"></a>
 3.3 Systems</h2>
 <ul>
 <li><b>MovementSystem</b><ul>
@@ -247,7 +247,7 @@ Mermaid — Manager Interaction</h3>
 </ul>
 </li>
 </ul>
-<h3><a class="anchor" id="autotoc_md100"></a>
+<h3><a class="anchor" id="autotoc_md101"></a>
 Mermaid — Collision Broadphase/Narrowphase</h3>
 <div class="fragment"><div class="line">sequenceDiagram</div>
 <div class="line">    participant Sys as CollisionSystem</div>
@@ -261,7 +261,7 @@ Mermaid — Collision Broadphase/Narrowphase</h3>
 <div class="line">            World-&gt;&gt;Sys: collisionEffect(e1, e2)</div>
 <div class="line">        end</div>
 <div class="line">    end</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md101"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md102"></a>
 3.4 Extending the ECS</h2>
 <p><b>Add a new component</b></p><ol type="1">
 <li>Create <code>Common/ECS/Components/Attributes/MyComponent.hpp</code>.</li>
@@ -275,9 +275,9 @@ Mermaid — Collision Broadphase/Narrowphase</h3>
 <li>In the game loop: call <code>sys-&gt;update(coordinator, dt/ ticks...)</code>.</li>
 </ol>
 <hr  />
-<h1><a class="anchor" id="autotoc_md103"></a>
+<h1><a class="anchor" id="autotoc_md104"></a>
 4. Networking Architecture (Common/Protocol)</h1>
-<h2><a class="anchor" id="autotoc_md104"></a>
+<h2><a class="anchor" id="autotoc_md105"></a>
 4.1 Low-level UDP Core: &lt;tt&gt;Protocol&lt;/tt&gt;</h2>
 <ul>
 <li>Files: <code>Common/Protocol/Protocol.{{hpp,cpp}}</code>, <code><a class="el" href="ProtocolTypes_8hpp.html" title="Core protocol type definitions (packet headers, flags, events).">ProtocolTypes.hpp</a></code>, <code>Utils/utils.*</code></li>
@@ -298,14 +298,14 @@ Mermaid — Collision Broadphase/Narrowphase</h3>
 <li>Per-peer state <code>peer_receive_state_t</code> holds <code>expected_sequence</code>, <code>buffered</code>, <code>ack_bits</code>.</li>
 <li><code>handle_ordered_delivery</code> flushes contiguous sequences, buffers gaps, expires stale entries.</li>
 </ul>
-<h3><a class="anchor" id="autotoc_md105"></a>
+<h3><a class="anchor" id="autotoc_md106"></a>
 Mermaid — Send Path</h3>
 <div class="fragment"><div class="line">flowchart LR</div>
 <div class="line">    App[Game code] --&gt;|send_packet| Proto(Protocol)</div>
 <div class="line">    Proto --&gt;|serialize_packet_ack| Buffer[wire buffer]</div>
 <div class="line">    Proto --&gt;|async_send_to| Socket[UDP socket]</div>
 <div class="line">    Proto --&gt; Pending[_pending_sends (reliable only)]</div>
-</div><!-- fragment --><h3><a class="anchor" id="autotoc_md106"></a>
+</div><!-- fragment --><h3><a class="anchor" id="autotoc_md107"></a>
 Mermaid — Receive Path</h3>
 <div class="fragment"><div class="line">sequenceDiagram</div>
 <div class="line">    participant Sock as UDP socket</div>
@@ -320,7 +320,7 @@ Mermaid — Receive Path</h3>
 <div class="line">    end</div>
 <div class="line">    Proto-&gt;&gt;Proto: enqueue PACKET_RECEIVED</div>
 <div class="line">    Proto--&gt;&gt;Sock: schedule_receive() again</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md107"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md108"></a>
 4.2 Game-level Facade: &lt;tt&gt;GameProtocol&lt;/tt&gt;</h2>
 <ul>
 <li>Files: <code>Common/Protocol/GameProtocol.{{hpp,cpp}}</code>, <code><a class="el" href="GameProtocolTypes_8hpp.html" title="Game-level protocol type definitions (payloads, game enums).">GameProtocolTypes.hpp</a></code></li>
@@ -329,7 +329,7 @@ Mermaid — Receive Path</h3>
 <li>Translates core events to <b>game_event_t</b> categories.</li>
 </ul>
 <hr  />
-<h1><a class="anchor" id="autotoc_md109"></a>
+<h1><a class="anchor" id="autotoc_md110"></a>
 5. Client Architecture (Client/)</h1>
 <ul>
 <li><b>Raylib</b>-based rendering and input:<ul>
@@ -346,7 +346,7 @@ Mermaid — Receive Path</h3>
 <li>Render via raylib.</li>
 </ol>
 <hr  />
-<h1><a class="anchor" id="autotoc_md111"></a>
+<h1><a class="anchor" id="autotoc_md112"></a>
 6. Server Architecture (Server/)</h1>
 <ul>
 <li>Entry point: <code><a class="el" href="Server_2main_8cpp.html" title="Entry point for the R-Type server executable.">Server/main.cpp</a></code><ul>
@@ -362,9 +362,9 @@ Mermaid — Receive Path</h3>
 <li>Apply <b>rate controls</b>: tick frequency, resend windows, snapshot throttling.</li>
 </ul>
 <hr  />
-<h1><a class="anchor" id="autotoc_md113"></a>
+<h1><a class="anchor" id="autotoc_md114"></a>
 7. Performance Notes</h1>
-<h2><a class="anchor" id="autotoc_md114"></a>
+<h2><a class="anchor" id="autotoc_md115"></a>
 7.1 ECS Storage &amp; Cache Locality</h2>
 <ul>
 <li><code>ComponentArray&lt;T&gt;</code> uses <b>dense vectors</b> with swap-remove to keep arrays contiguous.</li>
@@ -379,14 +379,14 @@ Mermaid — Receive Path</h3>
 </ul>
 </li>
 </ul>
-<h2><a class="anchor" id="autotoc_md115"></a>
+<h2><a class="anchor" id="autotoc_md116"></a>
 7.2 Collision World</h2>
 <ul>
 <li>Spatial hashing into cells sized by <code>PIXELS_PER_CLUSTER</code> reduces pair checks.</li>
 <li><b>Axis separation</b> tests operate on <b>4 corners</b> with pre-normalized axes.</li>
 <li>Only checks neighbor cells with <b>larger keys</b> to avoid duplicate pairs.</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md116"></a>
+<h2><a class="anchor" id="autotoc_md117"></a>
 7.3 Networking</h2>
 <ul>
 <li>UDP with optional <b>reliability</b> means:<ul>
@@ -397,14 +397,14 @@ Mermaid — Receive Path</h3>
 <li><b>Piggybacked ACKs</b> minimizes overhead for reliability on game traffic.</li>
 <li><b>No internal timers</b> for periodic resend: <code>process_pending(now)</code> lets the host control pacing and avoid contention with the render thread.</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md117"></a>
+<h2><a class="anchor" id="autotoc_md118"></a>
 7.4 Multithreading &amp; IO</h2>
 <ul>
 <li><code>Protocol::start_io()</code> runs <code>io_context</code> in a dedicated thread guarded by an executor work guard.</li>
 <li>Avoids blocking the main thread; keep critical sections in <code>_pending_mutex</code> / <code>_peer_mutex</code> short.</li>
 <li>Use <b>lock-elision</b> patterns (copy-before-unlock) on resend to reduce contention.</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md118"></a>
+<h2><a class="anchor" id="autotoc_md119"></a>
 7.5 Allocation &amp; Copies</h2>
 <ul>
 <li>Prefer <b>emplace</b> into ECS arrays.</li>
@@ -412,7 +412,7 @@ Mermaid — Receive Path</h3>
 <li>Keep payloads <b>small</b>: aim under ~1200B (<code>MAX_PACKET_SIZE_BYTES</code>) to fit within typical MTUs.</li>
 </ul>
 <hr  />
-<h1><a class="anchor" id="autotoc_md120"></a>
+<h1><a class="anchor" id="autotoc_md121"></a>
 8. Windows &amp; Linux Constraints</h1>
 <ul>
 <li><b>Sockets</b><ul>
@@ -439,9 +439,9 @@ Mermaid — Receive Path</h3>
 </li>
 </ul>
 <hr  />
-<h1><a class="anchor" id="autotoc_md122"></a>
+<h1><a class="anchor" id="autotoc_md123"></a>
 9. Adding Features</h1>
-<h2><a class="anchor" id="autotoc_md123"></a>
+<h2><a class="anchor" id="autotoc_md124"></a>
 9.1 New Message Type (network)</h2>
 <ol type="1">
 <li>Add ID in <code>GameProtocolTypes.hpp::game_message_type_t</code>.</li>
@@ -450,20 +450,20 @@ Mermaid — Receive Path</h3>
 <li>Extend <code>GameProtocol::retrieve_package</code> switch to map to a <code>game_event_type_t</code>.</li>
 <li>Handle in server/client application layer.</li>
 </ol>
-<h2><a class="anchor" id="autotoc_md124"></a>
+<h2><a class="anchor" id="autotoc_md125"></a>
 9.2 New System (gameplay)</h2>
 <ol type="1">
 <li>Create <code>Common/ECS/Systems/MySystem.{{hpp,cpp}}</code> derived from <code>System</code>.</li>
 <li>Register in bootstrap; set execution signature.</li>
 <li>Call <code>update</code> each tick in server loop (authoritative) and optionally in client for prediction.</li>
 </ol>
-<h2><a class="anchor" id="autotoc_md125"></a>
+<h2><a class="anchor" id="autotoc_md126"></a>
 9.3 New Component</h2>
 <ul>
 <li>As described earlier; ensure you set/unset signature bits via <code>Coordinator</code>.</li>
 </ul>
 <hr  />
-<h1><a class="anchor" id="autotoc_md127"></a>
+<h1><a class="anchor" id="autotoc_md128"></a>
 10. Testing</h1>
 <ul>
 <li>Unit tests live in <code>Tests/</code> and use <b>Criterion</b>.</li>
@@ -475,7 +475,7 @@ Mermaid — Receive Path</h3>
 </li>
 </ul>
 <hr  />
-<h1><a class="anchor" id="autotoc_md129"></a>
+<h1><a class="anchor" id="autotoc_md130"></a>
 11. Logging &amp; Error Handling</h1>
 <ul>
 <li><code>Common/Utils/Error.*</code> wraps exceptions with contextual <code>where</code> strings.</li>
@@ -483,7 +483,7 @@ Mermaid — Receive Path</h3>
 <li>Prefer returning <code>std::error_code</code> from operations that may fail without being exceptional (e.g., <code>init</code>, <code>send_packet</code>).</li>
 </ul>
 <hr  />
-<h1><a class="anchor" id="autotoc_md131"></a>
+<h1><a class="anchor" id="autotoc_md132"></a>
 12. Configuration &amp; CLI</h1>
 <ul>
 <li>Default server config: <code>Configs/DefaultServ.cfg</code>.</li>
@@ -492,9 +492,9 @@ Mermaid — Receive Path</h3>
 </div><!-- fragment --></li>
 </ul>
 <hr  />
-<h1><a class="anchor" id="autotoc_md133"></a>
+<h1><a class="anchor" id="autotoc_md134"></a>
 13. Diagrams — End-to-End</h1>
-<h2><a class="anchor" id="autotoc_md134"></a>
+<h2><a class="anchor" id="autotoc_md135"></a>
 13.1 Client/Server Data Flow</h2>
 <div class="fragment"><div class="line">sequenceDiagram</div>
 <div class="line">    participant Client</div>
@@ -509,7 +509,7 @@ Mermaid — Receive Path</h3>
 <div class="line">    Server-&gt;&gt;ProtoS: send SNAPSHOT or MOVE_ENTITY</div>
 <div class="line">    ProtoS-&gt;&gt;ProtoC: UDP datagram</div>
 <div class="line">    ProtoC-&gt;&gt;Client: event -&gt; update ECS -&gt; render</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md135"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md136"></a>
 13.2 ECS Update Loop (Server)</h2>
 <div class="fragment"><div class="line">flowchart TD</div>
 <div class="line">    A[Poll Protocol events] --&gt; B[Apply inputs to components]</div>
@@ -518,7 +518,7 @@ Mermaid — Receive Path</h3>
 <div class="line">    D --&gt; E[send_packet to clients]</div>
 <div class="line">    E --&gt; F[process_pending(now)]</div>
 </div><!-- fragment --><hr  />
-<h1><a class="anchor" id="autotoc_md137"></a>
+<h1><a class="anchor" id="autotoc_md138"></a>
 14. Roadmap &amp; Extension Ideas</h1>
 <ul>
 <li>Add rendering system to client ECS (sprite batching).</li>
@@ -527,7 +527,7 @@ Mermaid — Receive Path</h3>
 <li>Replay/record via serialized game events.</li>
 </ul>
 <hr  />
-<h1><a class="anchor" id="autotoc_md139"></a>
+<h1><a class="anchor" id="autotoc_md140"></a>
 15. References (Code Pointers)</h1>
 <ul>
 <li>Movement: <code><a class="el" href="MovementSystem_8cpp.html" title="Implementation of MovementSystem::update.">Common/ECS/Systems/MovementSystem.cpp</a></code></li>

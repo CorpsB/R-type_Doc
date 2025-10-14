@@ -1,10 +1,5 @@
 var searchData=
 [
-  ['game_2ecpp_0',['Game.cpp',['../Game_8cpp.html',1,'']]],
-  ['game_2ehpp_1',['Game.hpp',['../Game_8hpp.html',1,'']]],
-  ['gameprotocol_2ecpp_2',['GameProtocol.cpp',['../GameProtocol_8cpp.html',1,'']]],
-  ['gameprotocol_2ehpp_3',['GameProtocol.hpp',['../GameProtocol_8hpp.html',1,'']]],
-  ['gameprotocoltypes_2ehpp_4',['GameProtocolTypes.hpp',['../GameProtocolTypes_8hpp.html',1,'']]],
-  ['gamesettings_2ecpp_5',['GameSettings.cpp',['../GameSettings_8cpp.html',1,'']]],
-  ['gamesettings_2ehpp_6',['GameSettings.hpp',['../GameSettings_8hpp.html',1,'']]]
+  ['file_2ecpp_0',['file.cpp',['../file_8cpp.html',1,'']]],
+  ['frequency_2ehpp_1',['Frequency.hpp',['../Frequency_8hpp.html',1,'']]]
 ];

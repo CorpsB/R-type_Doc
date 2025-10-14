@@ -47,6 +47,7 @@ var annotated_dup =
         [ "SceneManager", "classrtype_1_1client_1_1SceneManager.html", "classrtype_1_1client_1_1SceneManager" ]
       ] ],
       [ "ecs", "namespacertype_1_1ecs.html", [
+        [ "AudioSystem", "classrtype_1_1ecs_1_1AudioSystem.html", "classrtype_1_1ecs_1_1AudioSystem" ],
         [ "CollisionSystem", "classrtype_1_1ecs_1_1CollisionSystem.html", "classrtype_1_1ecs_1_1CollisionSystem" ],
         [ "CollisionWorld", "classrtype_1_1ecs_1_1CollisionWorld.html", "classrtype_1_1ecs_1_1CollisionWorld" ],
         [ "ComponentArray", "classrtype_1_1ecs_1_1ComponentArray.html", "classrtype_1_1ecs_1_1ComponentArray" ],
@@ -67,6 +68,7 @@ var annotated_dup =
     [ "std", "namespacestd.html", [
       [ "hash< arcade::types::Position >", "structstd_1_1hash_3_01arcade_1_1types_1_1Position_01_4.html", "structstd_1_1hash_3_01arcade_1_1types_1_1Position_01_4" ]
     ] ],
+    [ "audio_attr_t", "Audio_8hpp.html#structaudio__attr__t", "Audio_8hpp_structaudio__attr__t" ],
     [ "damage_attr_t", "Damage_8hpp.html#structdamage__attr__t", "Damage_8hpp_structdamage__attr__t" ],
     [ "direction_attr_t", "Direction_8hpp.html#structdirection__attr__t", "Direction_8hpp_structdirection__attr__t" ],
     [ "frequency_attr_t", "Frequency_8hpp.html#structfrequency__attr__t", "Frequency_8hpp_structfrequency__attr__t" ],

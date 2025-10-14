@@ -1,14 +1,16 @@
 <map id="rtype::ecs::Coordinator::getComponent" name="rtype::ecs::Coordinator::getComponent">
-<area shape="rect" id="Node000001" title="Get a pointer to a component instance attached to an entity." alt="" coords="855,75,1129,101"/>
+<area shape="rect" id="Node000001" title="Get a pointer to a component instance attached to an entity." alt="" coords="855,103,1129,129"/>
 <area shape="rect" id="Node000002" href="$classrtype_1_1ecs_1_1CollisionWorld.html#ac69ae2a63c6c404948683b9d2f6c9619" title="Build the spatial&#45;hash grid from a set of entity ids." alt="" coords="305,5,492,45"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="913,75,806,59,640,42,492,32,492,27,640,37,807,53,914,70"/>
-<area shape="rect" id="Node000004" href="$classrtype_1_1ecs_1_1CollisionWorld.html#abb2232374822919bf9fec24c33c0672c" title="Determine whether two entities collide (instant T) using oriented&#45;rectangle SAT checks." alt="" coords="580,68,767,108"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="841,91,767,91,767,85,841,85"/>
-<area shape="rect" id="Node000006" href="$classrtype_1_1ecs_1_1MovementSystem.html#a9233aaad5e604a40646525d8bebd67c6" title="Advance positions for all entities matched by the system." alt="" coords="540,133,807,158"/>
-<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="908,106,745,135,744,130,907,101"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="946,101,881,77,806,57,724,44,640,35,492,28,492,23,641,30,725,39,807,52,883,72,948,96"/>
+<area shape="rect" id="Node000004" href="$classrtype_1_1ecs_1_1CollisionWorld.html#abb2232374822919bf9fec24c33c0672c" title="Determine whether two entities collide (instant T) using oriented&#45;rectangle SAT checks." alt="" coords="580,67,767,107"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="841,105,767,98,767,93,841,99"/>
+<area shape="rect" id="Node000006" href="$classrtype_1_1ecs_1_1AudioSystem.html#a45f53638a70c193f533461ac3e611b67" title="Update all entities’ audio components for this frame." alt="" coords="557,131,790,157"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="841,132,790,136,790,131,841,127"/>
+<area shape="rect" id="Node000007" href="$classrtype_1_1ecs_1_1MovementSystem.html#a9233aaad5e604a40646525d8bebd67c6" title="Advance positions for all entities matched by the system." alt="" coords="540,181,807,206"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="939,135,807,172,753,183,752,178,806,167,938,130"/>
 <area shape="rect" id="Node000003" href="$classrtype_1_1ecs_1_1CollisionSystem.html#afca69e9015066f94f6fe7cab90899e44" title="Run one collision pass: rebuild spatial grid and test collisions." alt="" coords="5,45,257,70"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="292,41,238,47,237,42,291,35"/>
 <area shape="rect" id="Node000005" href="$classrtype_1_1ecs_1_1CollisionWorld.html#acba7533c8d42d6abb6c82fd03ee7b614" title="Run narrow&#45;phase collision checks across the grid and call collisionEffect on hits." alt="" coords="305,69,492,109"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="567,91,492,92,492,86,566,86"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="567,90,492,91,492,86,566,85"/>
 <area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="291,79,237,73,238,67,292,74"/>
 </map>

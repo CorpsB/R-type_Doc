@@ -6,6 +6,7 @@ var hierarchy =
     [ "arcade::types::Mouse", "namespacearcade_1_1types.html#structarcade_1_1types_1_1Mouse", null ],
     [ "arcade::types::Position", "structarcade_1_1types_1_1Position.html", null ],
     [ "arcade::types::Sprite", "structarcade_1_1types_1_1Sprite.html", null ],
+    [ "audio_attr_t", "Audio_8hpp.html#structaudio__attr__t", null ],
     [ "damage_attr_t", "Damage_8hpp.html#structdamage__attr__t", null ],
     [ "direction_attr_t", "Direction_8hpp.html#structdirection__attr__t", null ],
     [ "frequency_attr_t", "Frequency_8hpp.html#structfrequency__attr__t", null ],
@@ -52,6 +53,7 @@ var hierarchy =
       [ "rtype::ecs::ComponentArray< T >", "classrtype_1_1ecs_1_1ComponentArray.html", null ]
     ] ],
     [ "rtype::ecs::System", "classrtype_1_1ecs_1_1System.html", [
+      [ "rtype::ecs::AudioSystem", "classrtype_1_1ecs_1_1AudioSystem.html", null ],
       [ "rtype::ecs::CollisionSystem", "classrtype_1_1ecs_1_1CollisionSystem.html", null ],
       [ "rtype::ecs::MovementSystem", "classrtype_1_1ecs_1_1MovementSystem.html", null ]
     ] ],

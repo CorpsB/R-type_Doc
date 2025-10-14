@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['game_0',['Game',['../classrtype_1_1client_1_1Game.html',1,'rtype::client']]],
-  ['game_5fevent_5ft_1',['game_event_t',['../namespaceprotocol_1_1game.html#structprotocol_1_1game_1_1game__event__t',1,'protocol::game']]],
-  ['gamesettings_2',['GameSettings',['../classrtype_1_1client_1_1GameSettings.html',1,'rtype::client']]]
+  ['frequency_5fattr_5ft_0',['frequency_attr_t',['../Frequency_8hpp.html#structfrequency__attr__t',1,'']]]
 ];

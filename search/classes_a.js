@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['optionsmenuscene_0',['OptionsMenuScene',['../classrtype_1_1client_1_1OptionsMenuScene.html',1,'rtype::client']]]
+  ['name_5fattr_5ft_0',['name_attr_t',['../Name_8hpp.html#structname__attr__t',1,'']]]
 ];
