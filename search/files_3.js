@@ -1,8 +1,8 @@
 var searchData=
 [
   ['class_2ehpp_0',['class.hpp',['../class_8hpp.html',1,'']]],
-  ['client_2fgame_2fui_2fsprite_2fsprite_2ehpp_1',['Sprite.hpp',['../Client_2Game_2UI_2Sprite_2Sprite_8hpp.html',1,'']]],
-  ['client_2fmain_2ecpp_2',['main.cpp',['../Client_2main_8cpp.html',1,'']]],
+  ['client_2fmain_2ecpp_1',['main.cpp',['../Client_2main_8cpp.html',1,'']]],
+  ['client_2fui_2fsprite_2fsprite_2ehpp_2',['Sprite.hpp',['../Client_2UI_2Sprite_2Sprite_8hpp.html',1,'']]],
   ['collisionsystem_2ecpp_3',['CollisionSystem.cpp',['../CollisionSystem_8cpp.html',1,'']]],
   ['collisionsystem_2ehpp_4',['CollisionSystem.hpp',['../CollisionSystem_8hpp.html',1,'']]],
   ['collisionworld_2ecpp_5',['CollisionWorld.cpp',['../CollisionWorld_8cpp.html',1,'']]],

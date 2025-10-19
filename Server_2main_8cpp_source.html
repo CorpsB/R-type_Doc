@@ -134,98 +134,95 @@ $(document).ready(function(){initNavTree('Server_2main_8cpp_source.html',''); in
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#include &quot;<a class="code" href="Rtype_8hpp.html">Rtype.hpp</a>&quot;</span></div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#include &quot;../Common/Utils/Error.hpp&quot;</span></div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="preprocessor">#include &quot;<a class="code" href="config_8h.html">config.h</a>&quot;</span></div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment"></span> </div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment">/**</span></div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="comment"> * @brief Print usage and option help to stdout.</span></div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="comment"> * @details</span></div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="comment"> * Describes the purpose of the executable, supported flags and their effects,</span></div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="comment"> * notes about precedence between flags and the configuration file, and a usage example.</span></div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="comment"> * @return Always returns 0.</span></div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="comment"> */</span></div>
-<div class="foldopen" id="foldopen00039" data-start="{" data-end="}">
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="Server_2main_8cpp.html#abab3acffc1548535ff14eea8cd0fd773">   39</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="Server_2main_8cpp.html#abab3acffc1548535ff14eea8cd0fd773">print_help</a>(<span class="keywordtype">void</span>)</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>{</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Usage: ./r-type_server [options]&quot;</span> &lt;&lt; std::endl &lt;&lt; std::endl;</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;The r-type_server executable launches our version of the R-TYPE game.&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;The game allows one or more players to face waves of enemy ships&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;that shoot at them. Compatible with both Windows and Linux.&quot;</span> &lt;&lt; std::endl &lt;&lt; std::endl;</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Available options:&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;  -h, --help             Display this help message.&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;  -d                     Enable debug mode.&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;  -dd                    Show extended debug logs.&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;  -ddd                   Show all debug logs.&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;  -port=&lt;number&gt;         Set the server port.&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;  -ip=&lt;address&gt;          Set the server IP address.&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;  -path=&lt;file&gt;           Specify the path to the configuration file.&quot;</span> &lt;&lt; std::endl &lt;&lt; std::endl;</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Behavior notes:&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;  • If no arguments are provided, the server will load the configuration from:&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;      /Serv/Configs/Default.cfg&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;  • Command-line flags always override the values specified in the configuration file.&quot;</span> &lt;&lt; std::endl &lt;&lt; std::endl;</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Example:&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;  ./r-type_server -d -port=8080 -ip=192.168.1.10 -path=server.cfg&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>}</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="comment"></span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment">/**</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment"> * @brief Print usage and option help to stdout.</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="comment"> * @details</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="comment"> * Describes the purpose of the executable, supported flags and their effects,</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="comment"> * notes about precedence between flags and the configuration file, and a usage example.</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="comment"> * @return Always returns 0.</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="comment"> */</span></div>
+<div class="foldopen" id="foldopen00038" data-start="{" data-end="}">
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="Server_2main_8cpp.html#abab3acffc1548535ff14eea8cd0fd773">   38</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="Server_2main_8cpp.html#abab3acffc1548535ff14eea8cd0fd773">print_help</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>{</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Usage: ./r-type_server [options]&quot;</span> &lt;&lt; std::endl &lt;&lt; std::endl</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        &lt;&lt; <span class="stringliteral">&quot;The r-type_server executable launches our version of the R-TYPE game.&quot;</span> &lt;&lt; std::endl</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        &lt;&lt; <span class="stringliteral">&quot;The game allows one or more players to face waves of enemy ships&quot;</span> &lt;&lt; std::endl</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        &lt;&lt; <span class="stringliteral">&quot;that shoot at them. Compatible with both Windows and Linux.&quot;</span> &lt;&lt; std::endl &lt;&lt; std::endl</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        &lt;&lt; <span class="stringliteral">&quot;Available options:&quot;</span> &lt;&lt; std::endl</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        &lt;&lt; <span class="stringliteral">&quot;  -h, --help             Display this help message.&quot;</span> &lt;&lt; std::endl</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        &lt;&lt; <span class="stringliteral">&quot;  -d                     Enable debug mode.&quot;</span> &lt;&lt; std::endl</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        &lt;&lt; <span class="stringliteral">&quot;  -dd                    Show extended debug logs.&quot;</span> &lt;&lt; std::endl</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        &lt;&lt; <span class="stringliteral">&quot;  -ddd                   Show all debug logs.&quot;</span> &lt;&lt; std::endl</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        &lt;&lt; <span class="stringliteral">&quot;  -port=&lt;number&gt;         Set the server port.&quot;</span> &lt;&lt; std::endl</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        &lt;&lt; <span class="stringliteral">&quot;  -ip=&lt;address&gt;          Set the server IP address.&quot;</span> &lt;&lt; std::endl</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        &lt;&lt; <span class="stringliteral">&quot;  -path=&lt;file&gt;           Specify the path to the configuration file.&quot;</span> &lt;&lt; std::endl &lt;&lt; std::endl</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        &lt;&lt; <span class="stringliteral">&quot;Behavior notes:&quot;</span> &lt;&lt; std::endl</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        &lt;&lt; <span class="stringliteral">&quot;  • If no arguments are provided, the server will load the configuration from:&quot;</span> &lt;&lt; std::endl</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        &lt;&lt; <span class="stringliteral">&quot;      /Serv/Configs/Default.cfg&quot;</span> &lt;&lt; std::endl</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        &lt;&lt; <span class="stringliteral">&quot;  • Command-line flags always override the values specified in the configuration file.&quot;</span> &lt;&lt; std::endl &lt;&lt; std::endl</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        &lt;&lt; <span class="stringliteral">&quot;Example:&quot;</span> &lt;&lt; std::endl</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        &lt;&lt; <span class="stringliteral">&quot;  ./r-type_server -d -port=8080 -ip=192.168.1.10 -path=server.cfg&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>}</div>
 </div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="comment"></span> </div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="comment">/**</span></div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="comment"> * @brief Program entry point.</span></div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="comment"> * @details</span></div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="comment"> * Steps:</span></div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="comment"> *  1. Parse flags once to capture an optional -path for the config file.</span></div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="comment"> *  2. Load configuration key/values from the file if available.</span></div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="comment"> *  3. Re-apply flags so that CLI values override file values.</span></div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="comment"> *  4. Normalize and validate the final configuration.</span></div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="comment"> *  5. If requested, print help and exit; otherwise construct and run the server.</span></div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="comment"> *  6. Report any runtime error and exit with a failure code.</span></div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="comment"> *</span></div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="comment"> * @param ac Argument count.</span></div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="comment"> * @param av Argument vector.</span></div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="comment"> * @return 0 on success; 84 on invalid configuration or runtime error.</span></div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="comment"> * @see parser_flag, parser_cfg, check_config, print_help</span></div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="comment"> */</span></div>
-<div class="foldopen" id="foldopen00082" data-start="{" data-end="}">
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno"><a class="line" href="Server_2main_8cpp.html#a0c99d968a34e803d378692bde2e3f18f">   82</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="Client_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a>(<span class="keywordtype">int</span> ac, <span class="keywordtype">char</span>** av)</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>{</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    <a class="code hl_struct" href="config_8h.html#structparser__args__t">parser_args_t</a> args;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="comment"></span> </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="comment">/**</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="comment"> * @brief Program entry point.</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="comment"> * @details</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="comment"> * Steps:</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="comment"> *  1. Parse flags once to capture an optional -path for the config file.</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="comment"> *  2. Load configuration key/values from the file if available.</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="comment"> *  3. Re-apply flags so that CLI values override file values.</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="comment"> *  4. Normalize and validate the final configuration.</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="comment"> *  5. If requested, print help and exit; otherwise construct and run the server.</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="comment"> *  6. Report any runtime error and exit with a failure code.</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="comment"> * @param ac Argument count.</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="comment"> * @param av Argument vector.</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="comment"> * @return 0 on success; 84 on invalid configuration or runtime error.</span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="comment"> * @see parser_flag, parser_cfg, check_config, print_help</span></div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="comment"> */</span></div>
+<div class="foldopen" id="foldopen00080" data-start="{" data-end="}">
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno"><a class="line" href="Server_2main_8cpp.html#a0c99d968a34e803d378692bde2e3f18f">   80</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="Client_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a>(<span class="keywordtype">int</span> ac, <span class="keywordtype">char</span>** av)</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>{</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    <a class="code hl_struct" href="config_8h.html#structparser__args__t">parser_args_t</a> args;</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    <a class="code hl_function" href="config_8h.html#a198eafd20829840aae7e1988780c25d1">parser_flag</a>(args, ac, av);</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    <a class="code hl_function" href="config_8h.html#a977f3c479a9e7e13468e7e5502fcf888">parser_cfg</a>(args, ac, av);</div>
 <div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    <a class="code hl_function" href="config_8h.html#a198eafd20829840aae7e1988780c25d1">parser_flag</a>(args, ac, av);</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    <a class="code hl_function" href="config_8h.html#a977f3c479a9e7e13468e7e5502fcf888">parser_cfg</a>(args, ac, av);</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    <a class="code hl_function" href="config_8h.html#a198eafd20829840aae7e1988780c25d1">parser_flag</a>(args, ac, av);</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    <a class="code hl_function" href="config_8h.html#a4406c78c2726a16ae2f47d22b933ccec">check_config</a>(args, ac, av);</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    std::string why;</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    <span class="keywordflow">if</span> (!<a class="code hl_function" href="config_8h.html#a4406c78c2726a16ae2f47d22b933ccec">check_config</a>(args, why)) {</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>        std::cerr &lt;&lt; why &lt;&lt; std::endl &lt;&lt;<span class="stringliteral">&quot;[INFO] - You can use -h to see help message.&quot;</span> &lt;&lt;std::endl;</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>        <span class="keywordflow">return</span> 84;</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    }</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    <span class="keywordflow">if</span> (args.<a class="code hl_variable" href="config_8h.html#a2505bbf8e7fb0038f3ed72f77fd24871">need_help</a>) {</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="Server_2main_8cpp.html#abab3acffc1548535ff14eea8cd0fd773">print_help</a>();</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    }</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    <span class="keywordflow">try</span> {</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>        <a class="code hl_class" href="classrtype_1_1server.html">rtype::server</a> server(av);</div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    </div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>        server.<a class="code hl_function" href="classrtype_1_1server.html#a703fd91ca5d705369acef8f6e505e32d">run</a>();</div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>        <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    } <span class="keywordflow">catch</span> (<span class="keyword">const</span> <a class="code hl_class" href="classrtype_1_1exception_1_1Error.html">rtype::exception::Error</a> &amp;e) {</div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>        std::cerr &lt;&lt; <span class="stringliteral">&quot;[ERROR] - &quot;</span> &lt;&lt; e.<a class="code hl_function" href="classrtype_1_1exception_1_1Error.html#a75cf6799e69103e6bade63acd67d9029">getWhere</a>() &lt;&lt; std::endl &lt;&lt; e.<a class="code hl_function" href="classrtype_1_1exception_1_1Error.html#af1dff7f88c212195ebfbb2c40406eaf1">getWhat</a>() &lt;&lt; std::endl;</div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>        <span class="keywordflow">return</span> 84;</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    }</div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>}</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    <a class="code hl_function" href="config_8h.html#a4406c78c2726a16ae2f47d22b933ccec">check_config</a>(args, ac, av);</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    std::string why;</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    <span class="keywordflow">if</span> (!<a class="code hl_function" href="config_8h.html#a4406c78c2726a16ae2f47d22b933ccec">check_config</a>(args, why)) {</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        std::cerr &lt;&lt; why &lt;&lt; std::endl &lt;&lt;<span class="stringliteral">&quot;[INFO] - You can use -h to see help message.&quot;</span> &lt;&lt;std::endl;</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>        <span class="keywordflow">return</span> 84;</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    }</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    <span class="keywordflow">if</span> (args.<a class="code hl_variable" href="config_8h.html#a2505bbf8e7fb0038f3ed72f77fd24871">need_help</a>)</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="Server_2main_8cpp.html#abab3acffc1548535ff14eea8cd0fd773">print_help</a>();</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    <span class="keywordflow">try</span> {</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>        <a class="code hl_class" href="classrtype_1_1server.html">rtype::server</a> server(args);</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>        server.<a class="code hl_function" href="classrtype_1_1server.html#a703fd91ca5d705369acef8f6e505e32d">run</a>();</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>        <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    } <span class="keywordflow">catch</span> (<span class="keyword">const</span> <a class="code hl_class" href="classrtype_1_1exception_1_1Error.html">rtype::exception::Error</a> &amp;e) {</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>        std::cerr &lt;&lt; <span class="stringliteral">&quot;[ERROR] - &quot;</span> &lt;&lt; e.<a class="code hl_function" href="classrtype_1_1exception_1_1Error.html#a75cf6799e69103e6bade63acd67d9029">getWhere</a>() &lt;&lt; std::endl &lt;&lt; e.<a class="code hl_function" href="classrtype_1_1exception_1_1Error.html#af1dff7f88c212195ebfbb2c40406eaf1">getWhat</a>() &lt;&lt; std::endl;</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>        <span class="keywordflow">return</span> 84;</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    }</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>}</div>
 </div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
-<div class="ttc" id="aClient_2main_8cpp_html_ae66f6b31b5ad750f1fe042a706a4e3d4"><div class="ttname"><a href="Client_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a></div><div class="ttdeci">int main()</div><div class="ttdoc">Main entry point of the R-Type client.</div><div class="ttdef"><b>Definition</b> <a href="Client_2main_8cpp_source.html#l00048">Client/main.cpp:48</a></div></div>
+<div class="ttc" id="aClient_2main_8cpp_html_ae66f6b31b5ad750f1fe042a706a4e3d4"><div class="ttname"><a href="Client_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a></div><div class="ttdeci">int main()</div><div class="ttdoc">Main entry point of the R-Type client.</div><div class="ttdef"><b>Definition</b> <a href="Client_2main_8cpp_source.html#l00047">Client/main.cpp:47</a></div></div>
 <div class="ttc" id="aRtype_8hpp_html"><div class="ttname"><a href="Rtype_8hpp.html">Rtype.hpp</a></div></div>
-<div class="ttc" id="aServer_2main_8cpp_html_abab3acffc1548535ff14eea8cd0fd773"><div class="ttname"><a href="Server_2main_8cpp.html#abab3acffc1548535ff14eea8cd0fd773">print_help</a></div><div class="ttdeci">int print_help(void)</div><div class="ttdoc">Print usage and option help to stdout.</div><div class="ttdef"><b>Definition</b> <a href="Server_2main_8cpp_source.html#l00039">Server/main.cpp:39</a></div></div>
+<div class="ttc" id="aServer_2main_8cpp_html_abab3acffc1548535ff14eea8cd0fd773"><div class="ttname"><a href="Server_2main_8cpp.html#abab3acffc1548535ff14eea8cd0fd773">print_help</a></div><div class="ttdeci">int print_help(void)</div><div class="ttdoc">Print usage and option help to stdout.</div><div class="ttdef"><b>Definition</b> <a href="Server_2main_8cpp_source.html#l00038">Server/main.cpp:38</a></div></div>
 <div class="ttc" id="aclassrtype_1_1exception_1_1Error_html"><div class="ttname"><a href="classrtype_1_1exception_1_1Error.html">rtype::exception::Error</a></div><div class="ttdoc">Base exception class for errors occurring in the R-Type engine.</div><div class="ttdef"><b>Definition</b> <a href="Error_8hpp_source.html#l00039">Error.hpp:39</a></div></div>
 <div class="ttc" id="aclassrtype_1_1exception_1_1Error_html_a75cf6799e69103e6bade63acd67d9029"><div class="ttname"><a href="classrtype_1_1exception_1_1Error.html#a75cf6799e69103e6bade63acd67d9029">rtype::exception::Error::getWhere</a></div><div class="ttdeci">std::string getWhere() const noexcept</div><div class="ttdoc">Returns the context or location where the error occurred.</div><div class="ttdef"><b>Definition</b> <a href="Error_8cpp_source.html#l00035">Error.cpp:35</a></div></div>
 <div class="ttc" id="aclassrtype_1_1exception_1_1Error_html_af1dff7f88c212195ebfbb2c40406eaf1"><div class="ttname"><a href="classrtype_1_1exception_1_1Error.html#af1dff7f88c212195ebfbb2c40406eaf1">rtype::exception::Error::getWhat</a></div><div class="ttdeci">std::string getWhat() const noexcept</div><div class="ttdoc">Returns the reason or message associated with the error.</div><div class="ttdef"><b>Definition</b> <a href="Error_8cpp_source.html#l00044">Error.cpp:44</a></div></div>
 <div class="ttc" id="aclassrtype_1_1server_html"><div class="ttname"><a href="classrtype_1_1server.html">rtype::server</a></div><div class="ttdoc">Core class representing the R-Type game server.</div><div class="ttdef"><b>Definition</b> <a href="Rtype_8hpp_source.html#l00052">Rtype.hpp:52</a></div></div>
-<div class="ttc" id="aclassrtype_1_1server_html_a703fd91ca5d705369acef8f6e505e32d"><div class="ttname"><a href="classrtype_1_1server.html#a703fd91ca5d705369acef8f6e505e32d">rtype::server::run</a></div><div class="ttdeci">void run()</div><div class="ttdoc">Starts the main execution loop of the server.</div><div class="ttdef"><b>Definition</b> <a href="Rtype_8cpp_source.html#l00043">Rtype.cpp:43</a></div></div>
+<div class="ttc" id="aclassrtype_1_1server_html_a703fd91ca5d705369acef8f6e505e32d"><div class="ttname"><a href="classrtype_1_1server.html#a703fd91ca5d705369acef8f6e505e32d">rtype::server::run</a></div><div class="ttdeci">void run()</div><div class="ttdoc">Starts the main execution loop of the server.</div><div class="ttdef"><b>Definition</b> <a href="Rtype_8cpp_source.html#l00045">Rtype.cpp:45</a></div></div>
 <div class="ttc" id="aconfig_8h_html"><div class="ttname"><a href="config_8h.html">config.h</a></div><div class="ttdoc">Command-line and configuration file parsing for the R-Type server.</div></div>
 <div class="ttc" id="aconfig_8h_html_a198eafd20829840aae7e1988780c25d1"><div class="ttname"><a href="config_8h.html#a198eafd20829840aae7e1988780c25d1">parser_flag</a></div><div class="ttdeci">void parser_flag(parser_args_t &amp;args, int ac, char **av)</div><div class="ttdoc">Parse the entire argv array and update args.</div><div class="ttdef"><b>Definition</b> <a href="Parser_8cpp_source.html#l00090">Parser.cpp:90</a></div></div>
 <div class="ttc" id="aconfig_8h_html_a2505bbf8e7fb0038f3ed72f77fd24871"><div class="ttname"><a href="config_8h.html#a2505bbf8e7fb0038f3ed72f77fd24871">parser_args_t::need_help</a></div><div class="ttdeci">bool need_help</div><div class="ttdoc">Set when -h/–help is present.</div><div class="ttdef"><b>Definition</b> <a href="config_8h_source.html#l00037">config.h:37</a></div></div>

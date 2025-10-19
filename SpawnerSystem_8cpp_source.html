@@ -128,7 +128,7 @@ $(document).ready(function(){initNavTree('SpawnerSystem_8cpp_source.html',''); i
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#include &quot;<a class="code" href="SpawnerSystem_8hpp.html">SpawnerSystem.hpp</a>&quot;</span></div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#include &quot;../Coordinator.hpp&quot;</span></div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#include &quot;../Factory/EntityFactory.hpp&quot;</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#include &quot;../../Factory/EntityFactory.hpp&quot;</span></div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#include &lt;random&gt;</span></div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#include &quot;../Macro.hpp&quot;</span></div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#include &lt;cmath&gt;</span></div>
@@ -159,7 +159,7 @@ $(document).ready(function(){initNavTree('SpawnerSystem_8cpp_source.html',''); i
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        schema.x = <a class="code hl_define" href="Macro_8hpp.html#a96d2cd952a467a5b554ce9617c298b10">VIRTUAL_SCREEN_WIDTH</a> + 10;</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        schema.y = y;</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        <a class="code hl_function" href="namespacertype_1_1ecs_1_1factory.html#aadd8634669966a1015c4208fb07a4924">rtype::ecs::factory::create_enemy</a>(coord, schema, std::nullopt);</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        <a class="code hl_function" href="namespacertype_1_1ecs_1_1factory.html#ad6884eef896d6f5d00c251ac5081a24b">rtype::ecs::factory::create_enemy</a>(coord, schema);</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    }</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>}</div>
 </div>
@@ -171,7 +171,7 @@ $(document).ready(function(){initNavTree('SpawnerSystem_8cpp_source.html',''); i
 <div class="ttc" id="anamespaceprotocol_1_1game_html_a58051a0f9c1c650d605d71a73e9437bdaede731433a6fbec7240dc94ebe9ac41a"><div class="ttname"><a href="namespaceprotocol_1_1game.html#a58051a0f9c1c650d605d71a73e9437bdaede731433a6fbec7240dc94ebe9ac41a">protocol::game::ENEMY</a></div><div class="ttdeci">@ ENEMY</div><div class="ttdef"><b>Definition</b> <a href="GameProtocolTypes_8hpp_source.html#l00181">GameProtocolTypes.hpp:181</a></div></div>
 <div class="ttc" id="anamespaceprotocol_1_1game_html_afd78b1f4927ae30d26866bc3aa2937a8"><div class="ttname"><a href="namespaceprotocol_1_1game.html#afd78b1f4927ae30d26866bc3aa2937a8">protocol::game::payload_create_entity_t::entity_id</a></div><div class="ttdeci">entity_id_t entity_id</div><div class="ttdoc">entity id</div><div class="ttdef"><b>Definition</b> <a href="GameProtocolTypes_8hpp_source.html#l00081">GameProtocolTypes.hpp:81</a></div></div>
 <div class="ttc" id="anamespaceprotocol_1_1game_html_structprotocol_1_1game_1_1payload__create__entity__t"><div class="ttname"><a href="namespaceprotocol_1_1game.html#structprotocol_1_1game_1_1payload__create__entity__t">protocol::game::payload_create_entity_t</a></div><div class="ttdoc">Payload for CREATE_ENTITY messages.</div><div class="ttdef"><b>Definition</b> <a href="GameProtocolTypes_8hpp_source.html#l00080">GameProtocolTypes.hpp:80</a></div></div>
-<div class="ttc" id="anamespacertype_1_1ecs_1_1factory_html_aadd8634669966a1015c4208fb07a4924"><div class="ttname"><a href="namespacertype_1_1ecs_1_1factory.html#aadd8634669966a1015c4208fb07a4924">rtype::ecs::factory::create_enemy</a></div><div class="ttdeci">uint32_t create_enemy(Coordinator &amp;coord, const entity_schema &amp;schema, const std::optional&lt; sprite_attr_t &gt; &amp;spriteTag)</div><div class="ttdoc">Creates an enemy entity with health, movement, and weapon setup.</div><div class="ttdef"><b>Definition</b> <a href="EntityFactory_8cpp_source.html#l00105">EntityFactory.cpp:105</a></div></div>
+<div class="ttc" id="anamespacertype_1_1ecs_1_1factory_html_ad6884eef896d6f5d00c251ac5081a24b"><div class="ttname"><a href="namespacertype_1_1ecs_1_1factory.html#ad6884eef896d6f5d00c251ac5081a24b">rtype::ecs::factory::create_enemy</a></div><div class="ttdeci">uint32_t create_enemy(Coordinator &amp;coord, const entity_schema &amp;schema)</div><div class="ttdoc">Creates an enemy entity with health, movement, and weapon setup.</div><div class="ttdef"><b>Definition</b> <a href="EntityFactory_8cpp_source.html#l00106">EntityFactory.cpp:106</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

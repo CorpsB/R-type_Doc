@@ -10,6 +10,7 @@ var classprotocol_1_1Protocol =
     [ "get_event", "classprotocol_1_1Protocol.html#a6a6e12f798d29b0fc631df911b4e895d", null ],
     [ "get_packet_loss_rate", "classprotocol_1_1Protocol.html#a83d3f70a1b45549ec29cdf31dfb7b165", null ],
     [ "get_rtt_ms", "classprotocol_1_1Protocol.html#a0258041b0b7c8164dbf928365d283ee8", null ],
+    [ "getStoredEndpoints", "classprotocol_1_1Protocol.html#aeb0a9956e7fdb0d1a8357544ceb0b573", null ],
     [ "handle_receive", "classprotocol_1_1Protocol.html#a8775506ba36b376f91bd2d46c9bf4c2f", null ],
     [ "init", "classprotocol_1_1Protocol.html#a4e019a5e18ff4fd1287beddceb4e1e2c", null ],
     [ "instance", "classprotocol_1_1Protocol.html#a11aa2e64ab4c07f299495a0249f9e347", null ],
@@ -41,7 +42,8 @@ var classprotocol_1_1Protocol =
     [ "_receive_buffer", "classprotocol_1_1Protocol.html#aa5f15843028a982095c3232c092a2f0f", null ],
     [ "_running", "classprotocol_1_1Protocol.html#a3f0befeebdc5538378a0784cdb2cc04f", null ],
     [ "_socket", "classprotocol_1_1Protocol.html#a06c27ec67e384e01671d7909b4490009", null ],
-    [ "_stored_endpoint", "classprotocol_1_1Protocol.html#a83a55606b2d78bf675222f291bca2096", null ],
+    [ "_stored_endpoints", "classprotocol_1_1Protocol.html#af463162db164265ef9d820cda4ad7bc4", null ],
+    [ "_stored_mutex", "classprotocol_1_1Protocol.html#a1e657519d4135c4c8e10f224bc28ec2e", null ],
     [ "_winsock_started", "classprotocol_1_1Protocol.html#ac43c1895b33a2c13dd182653a727a146", null ],
     [ "_work_guard", "classprotocol_1_1Protocol.html#a2decf340528f4c08e56739e05436a19e", null ]
 ];

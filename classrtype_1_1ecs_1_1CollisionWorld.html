@@ -134,9 +134,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a861a23df9017145e3937ec34c3812789" id="r_a861a23df9017145e3937ec34c3812789"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtype_1_1ecs_1_1CollisionWorld.html#a861a23df9017145e3937ec34c3812789">clearGrid</a> ()</td></tr>
 <tr class="memdesc:a861a23df9017145e3937ec34c3812789"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove all entries from the internal spatial grid.  <br /></td></tr>
 <tr class="separator:a861a23df9017145e3937ec34c3812789"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a62ae2fb2c98052e3dbe8194499402621" id="r_a62ae2fb2c98052e3dbe8194499402621"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtype_1_1ecs_1_1CollisionWorld.html#a62ae2fb2c98052e3dbe8194499402621">collisionEffect</a> (uint32_t e1, uint32_t e2)</td></tr>
-<tr class="memdesc:a62ae2fb2c98052e3dbe8194499402621"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default collision effect callback invoked when two entities overlap.  <br /></td></tr>
-<tr class="separator:a62ae2fb2c98052e3dbe8194499402621"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23469c76ef6bc0b63ba8872192b20ce3" id="r_a23469c76ef6bc0b63ba8872192b20ce3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtype_1_1ecs_1_1CollisionWorld.html#a23469c76ef6bc0b63ba8872192b20ce3">collisionEffect</a> (<a class="el" href="classrtype_1_1ecs_1_1Coordinator.html">Coordinator</a> &amp;coord, uint32_t e1, uint32_t e2)</td></tr>
+<tr class="memdesc:a23469c76ef6bc0b63ba8872192b20ce3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default collision effect callback invoked when two entities overlap.  <br /></td></tr>
+<tr class="separator:a23469c76ef6bc0b63ba8872192b20ce3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-types" name="pri-types"></a>
 Private Types</h2></td></tr>
@@ -314,32 +314,32 @@ Private Attributes</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>true when rectangles are NOT separated on any tested axis (i.e. they overlap).</dd></dl>
 <p>The function computes two edge axes per rectangle and tests each axis for projection separation. If any axis separates the intervals, rectangles do not overlap. The function returns false when a separating axis is found; otherwise true (meaning overlap). </p>
 
-<p class="definition">Definition at line <a class="el" href="CollisionWorld_8cpp_source.html#l00154">154</a> of file <a class="el" href="CollisionWorld_8cpp_source.html">CollisionWorld.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  157</span>{</div>
-<div class="line"><span class="lineno">  158</span>    <span class="keywordtype">float</span> ax0x = hb1[1].first - hb1[0].first;</div>
-<div class="line"><span class="lineno">  159</span>    <span class="keywordtype">float</span> ax0y = hb1[1].second - hb1[0].second;</div>
-<div class="line"><span class="lineno">  160</span>    <span class="keywordtype">float</span> ax1x = hb1[2].first - hb1[0].first;</div>
-<div class="line"><span class="lineno">  161</span>    <span class="keywordtype">float</span> ax1y = hb1[2].second - hb1[0].second;</div>
-<div class="line"><span class="lineno">  162</span> </div>
-<div class="line"><span class="lineno">  163</span>    <span class="keywordtype">float</span> bx0x = hb2[1].first - hb2[0].first;</div>
-<div class="line"><span class="lineno">  164</span>    <span class="keywordtype">float</span> bx0y = hb2[1].second - hb2[0].second;</div>
-<div class="line"><span class="lineno">  165</span>    <span class="keywordtype">float</span> bx1x = hb2[2].first - hb2[0].first;</div>
-<div class="line"><span class="lineno">  166</span>    <span class="keywordtype">float</span> bx1y = hb2[2].second - hb2[0].second;</div>
-<div class="line"><span class="lineno">  167</span> </div>
-<div class="line"><span class="lineno">  168</span>    <a class="code hl_function" href="Direction_8hpp.html#a4f3fd0ff57692fa2ddc325c423bb04d7">normalize</a>(ax0x, ax0y);</div>
-<div class="line"><span class="lineno">  169</span>    <a class="code hl_function" href="Direction_8hpp.html#a4f3fd0ff57692fa2ddc325c423bb04d7">normalize</a>(ax1x, ax1y);</div>
-<div class="line"><span class="lineno">  170</span>    <a class="code hl_function" href="Direction_8hpp.html#a4f3fd0ff57692fa2ddc325c423bb04d7">normalize</a>(bx0x, bx0y);</div>
-<div class="line"><span class="lineno">  171</span>    <a class="code hl_function" href="Direction_8hpp.html#a4f3fd0ff57692fa2ddc325c423bb04d7">normalize</a>(bx1x, bx1y);</div>
-<div class="line"><span class="lineno">  172</span> </div>
-<div class="line"><span class="lineno">  173</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="classrtype_1_1ecs_1_1CollisionWorld.html#ac5aeff7bebb7c20d9867b0ab4b6ce54d">isAxisSeparation</a>(hb1, hb2, ax0x, ax0y) ||</div>
-<div class="line"><span class="lineno">  174</span>    <a class="code hl_function" href="classrtype_1_1ecs_1_1CollisionWorld.html#ac5aeff7bebb7c20d9867b0ab4b6ce54d">isAxisSeparation</a>(hb1, hb2, ax1x, ax1y) ||</div>
-<div class="line"><span class="lineno">  175</span>    <a class="code hl_function" href="classrtype_1_1ecs_1_1CollisionWorld.html#ac5aeff7bebb7c20d9867b0ab4b6ce54d">isAxisSeparation</a>(hb1, hb2, bx0x, bx0y) ||</div>
-<div class="line"><span class="lineno">  176</span>    <a class="code hl_function" href="classrtype_1_1ecs_1_1CollisionWorld.html#ac5aeff7bebb7c20d9867b0ab4b6ce54d">isAxisSeparation</a>(hb1, hb2, bx1x, bx1y))</div>
-<div class="line"><span class="lineno">  177</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">  178</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">  179</span>}</div>
+<p class="definition">Definition at line <a class="el" href="CollisionWorld_8cpp_source.html#l00156">156</a> of file <a class="el" href="CollisionWorld_8cpp_source.html">CollisionWorld.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  159</span>{</div>
+<div class="line"><span class="lineno">  160</span>    <span class="keywordtype">float</span> ax0x = hb1[1].first - hb1[0].first;</div>
+<div class="line"><span class="lineno">  161</span>    <span class="keywordtype">float</span> ax0y = hb1[1].second - hb1[0].second;</div>
+<div class="line"><span class="lineno">  162</span>    <span class="keywordtype">float</span> ax1x = hb1[2].first - hb1[0].first;</div>
+<div class="line"><span class="lineno">  163</span>    <span class="keywordtype">float</span> ax1y = hb1[2].second - hb1[0].second;</div>
+<div class="line"><span class="lineno">  164</span> </div>
+<div class="line"><span class="lineno">  165</span>    <span class="keywordtype">float</span> bx0x = hb2[1].first - hb2[0].first;</div>
+<div class="line"><span class="lineno">  166</span>    <span class="keywordtype">float</span> bx0y = hb2[1].second - hb2[0].second;</div>
+<div class="line"><span class="lineno">  167</span>    <span class="keywordtype">float</span> bx1x = hb2[2].first - hb2[0].first;</div>
+<div class="line"><span class="lineno">  168</span>    <span class="keywordtype">float</span> bx1y = hb2[2].second - hb2[0].second;</div>
+<div class="line"><span class="lineno">  169</span> </div>
+<div class="line"><span class="lineno">  170</span>    <a class="code hl_function" href="Direction_8hpp.html#a4f3fd0ff57692fa2ddc325c423bb04d7">normalize</a>(ax0x, ax0y);</div>
+<div class="line"><span class="lineno">  171</span>    <a class="code hl_function" href="Direction_8hpp.html#a4f3fd0ff57692fa2ddc325c423bb04d7">normalize</a>(ax1x, ax1y);</div>
+<div class="line"><span class="lineno">  172</span>    <a class="code hl_function" href="Direction_8hpp.html#a4f3fd0ff57692fa2ddc325c423bb04d7">normalize</a>(bx0x, bx0y);</div>
+<div class="line"><span class="lineno">  173</span>    <a class="code hl_function" href="Direction_8hpp.html#a4f3fd0ff57692fa2ddc325c423bb04d7">normalize</a>(bx1x, bx1y);</div>
+<div class="line"><span class="lineno">  174</span> </div>
+<div class="line"><span class="lineno">  175</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="classrtype_1_1ecs_1_1CollisionWorld.html#ac5aeff7bebb7c20d9867b0ab4b6ce54d">isAxisSeparation</a>(hb1, hb2, ax0x, ax0y) ||</div>
+<div class="line"><span class="lineno">  176</span>    <a class="code hl_function" href="classrtype_1_1ecs_1_1CollisionWorld.html#ac5aeff7bebb7c20d9867b0ab4b6ce54d">isAxisSeparation</a>(hb1, hb2, ax1x, ax1y) ||</div>
+<div class="line"><span class="lineno">  177</span>    <a class="code hl_function" href="classrtype_1_1ecs_1_1CollisionWorld.html#ac5aeff7bebb7c20d9867b0ab4b6ce54d">isAxisSeparation</a>(hb1, hb2, bx0x, bx0y) ||</div>
+<div class="line"><span class="lineno">  178</span>    <a class="code hl_function" href="classrtype_1_1ecs_1_1CollisionWorld.html#ac5aeff7bebb7c20d9867b0ab4b6ce54d">isAxisSeparation</a>(hb1, hb2, bx1x, bx1y))</div>
+<div class="line"><span class="lineno">  179</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  180</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  181</span>}</div>
 <div class="ttc" id="aDirection_8hpp_html_a4f3fd0ff57692fa2ddc325c423bb04d7"><div class="ttname"><a href="Direction_8hpp.html#a4f3fd0ff57692fa2ddc325c423bb04d7">normalize</a></div><div class="ttdeci">void normalize(float &amp;dx, float &amp;dy)</div><div class="ttdef"><b>Definition</b> <a href="Direction_8hpp_source.html#l00046">Direction.hpp:46</a></div></div>
-<div class="ttc" id="aclassrtype_1_1ecs_1_1CollisionWorld_html_ac5aeff7bebb7c20d9867b0ab4b6ce54d"><div class="ttname"><a href="classrtype_1_1ecs_1_1CollisionWorld.html#ac5aeff7bebb7c20d9867b0ab4b6ce54d">rtype::ecs::CollisionWorld::isAxisSeparation</a></div><div class="ttdeci">bool isAxisSeparation(const std::array&lt; std::pair&lt; float, float &gt;, 4 &gt; &amp;hb1, const std::array&lt; std::pair&lt; float, float &gt;, 4 &gt; &amp;hb2, float ax, float ay)</div><div class="ttdoc">Test separation on a single axis defined by (ax, ay).</div><div class="ttdef"><b>Definition</b> <a href="CollisionWorld_8cpp_source.html#l00181">CollisionWorld.cpp:181</a></div></div>
+<div class="ttc" id="aclassrtype_1_1ecs_1_1CollisionWorld_html_ac5aeff7bebb7c20d9867b0ab4b6ce54d"><div class="ttname"><a href="classrtype_1_1ecs_1_1CollisionWorld.html#ac5aeff7bebb7c20d9867b0ab4b6ce54d">rtype::ecs::CollisionWorld::isAxisSeparation</a></div><div class="ttdeci">bool isAxisSeparation(const std::array&lt; std::pair&lt; float, float &gt;, 4 &gt; &amp;hb1, const std::array&lt; std::pair&lt; float, float &gt;, 4 &gt; &amp;hb2, float ax, float ay)</div><div class="ttdoc">Test separation on a single axis defined by (ax, ay).</div><div class="ttdef"><b>Definition</b> <a href="CollisionWorld_8cpp_source.html#l00183">CollisionWorld.cpp:183</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="Direction_8hpp_source.html#l00046">normalize()</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -426,10 +426,10 @@ Private Attributes</h2></td></tr>
 <div class="ttc" id="aDirection_8hpp_html_structdirection__attr__t"><div class="ttname"><a href="Direction_8hpp.html#structdirection__attr__t">direction_attr_t</a></div><div class="ttdoc">Component storing a 2D direction vector.</div><div class="ttdef"><b>Definition</b> <a href="Direction_8hpp_source.html#l00041">Direction.hpp:41</a></div></div>
 <div class="ttc" id="aHitBox_8hpp_html_structhitbox__attr__t"><div class="ttname"><a href="HitBox_8hpp.html#structhitbox__attr__t">hitbox_attr_t</a></div><div class="ttdoc">Component specifying hitbox size for collision detection.</div><div class="ttdef"><b>Definition</b> <a href="HitBox_8hpp_source.html#l00039">HitBox.hpp:39</a></div></div>
 <div class="ttc" id="aPosition_8hpp_html_structposition__attr__t"><div class="ttname"><a href="Position_8hpp.html#structposition__attr__t">position_attr_t</a></div><div class="ttdoc">Component holding the 2D coordinates of an entity.</div><div class="ttdef"><b>Definition</b> <a href="Position_8hpp_source.html#l00038">Position.hpp:38</a></div></div>
-<div class="ttc" id="aclassrtype_1_1ecs_1_1CollisionWorld_html_a011eb492f2141005e5b7723f9015b238"><div class="ttname"><a href="classrtype_1_1ecs_1_1CollisionWorld.html#a011eb492f2141005e5b7723f9015b238">rtype::ecs::CollisionWorld::insertEntityToCell</a></div><div class="ttdeci">void insertEntityToCell(int cx, int cy, uint32_t id)</div><div class="ttdoc">Insert an entity id into the cell at coordinates (cx, cy).</div><div class="ttdef"><b>Definition</b> <a href="CollisionWorld_8cpp_source.html#l00117">CollisionWorld.cpp:117</a></div></div>
-<div class="ttc" id="aclassrtype_1_1ecs_1_1CollisionWorld_html_a6e1bc93414e78c8a3b05569d7d758837"><div class="ttname"><a href="classrtype_1_1ecs_1_1CollisionWorld.html#a6e1bc93414e78c8a3b05569d7d758837">rtype::ecs::CollisionWorld::getCellsCount</a></div><div class="ttdeci">std::pair&lt; int, int &gt; getCellsCount(float xf, float yf) const</div><div class="ttdoc">Convert world-space coordinates (xf,yf) to integer grid cell indices.</div><div class="ttdef"><b>Definition</b> <a href="CollisionWorld_8cpp_source.html#l00258">CollisionWorld.cpp:258</a></div></div>
-<div class="ttc" id="aclassrtype_1_1ecs_1_1CollisionWorld_html_a73f8f3c1eddaf3c4ba9b03e04b95e8e0"><div class="ttname"><a href="classrtype_1_1ecs_1_1CollisionWorld.html#a73f8f3c1eddaf3c4ba9b03e04b95e8e0">rtype::ecs::CollisionWorld::fillBoxCorners</a></div><div class="ttdeci">void fillBoxCorners(const position_attr_t &amp;posInt, const hitbox_attr_t &amp;hbInt, const direction_attr_t *dir, std::array&lt; std::pair&lt; float, float &gt;, 4 &gt; &amp;out) const</div><div class="ttdoc">Compute the four corner points of a (possibly oriented) rectangle.</div><div class="ttdef"><b>Definition</b> <a href="CollisionWorld_8cpp_source.html#l00192">CollisionWorld.cpp:192</a></div></div>
-<div class="ttc" id="aclassrtype_1_1ecs_1_1CollisionWorld_html_af3eb6d7c6cfa6dbcb1ed11e4c1279241"><div class="ttname"><a href="classrtype_1_1ecs_1_1CollisionWorld.html#af3eb6d7c6cfa6dbcb1ed11e4c1279241">rtype::ecs::CollisionWorld::cornersToAABB</a></div><div class="ttdeci">void cornersToAABB(const std::array&lt; std::pair&lt; float, float &gt;, 4 &gt; &amp;corners, int &amp;minX, int &amp;minY, int &amp;maxX, int &amp;maxY) const</div><div class="ttdoc">Convert 4 corner points to an integer AABB extent.</div><div class="ttdef"><b>Definition</b> <a href="CollisionWorld_8cpp_source.html#l00219">CollisionWorld.cpp:219</a></div></div>
+<div class="ttc" id="aclassrtype_1_1ecs_1_1CollisionWorld_html_a011eb492f2141005e5b7723f9015b238"><div class="ttname"><a href="classrtype_1_1ecs_1_1CollisionWorld.html#a011eb492f2141005e5b7723f9015b238">rtype::ecs::CollisionWorld::insertEntityToCell</a></div><div class="ttdeci">void insertEntityToCell(int cx, int cy, uint32_t id)</div><div class="ttdoc">Insert an entity id into the cell at coordinates (cx, cy).</div><div class="ttdef"><b>Definition</b> <a href="CollisionWorld_8cpp_source.html#l00119">CollisionWorld.cpp:119</a></div></div>
+<div class="ttc" id="aclassrtype_1_1ecs_1_1CollisionWorld_html_a6e1bc93414e78c8a3b05569d7d758837"><div class="ttname"><a href="classrtype_1_1ecs_1_1CollisionWorld.html#a6e1bc93414e78c8a3b05569d7d758837">rtype::ecs::CollisionWorld::getCellsCount</a></div><div class="ttdeci">std::pair&lt; int, int &gt; getCellsCount(float xf, float yf) const</div><div class="ttdoc">Convert world-space coordinates (xf,yf) to integer grid cell indices.</div><div class="ttdef"><b>Definition</b> <a href="CollisionWorld_8cpp_source.html#l00260">CollisionWorld.cpp:260</a></div></div>
+<div class="ttc" id="aclassrtype_1_1ecs_1_1CollisionWorld_html_a73f8f3c1eddaf3c4ba9b03e04b95e8e0"><div class="ttname"><a href="classrtype_1_1ecs_1_1CollisionWorld.html#a73f8f3c1eddaf3c4ba9b03e04b95e8e0">rtype::ecs::CollisionWorld::fillBoxCorners</a></div><div class="ttdeci">void fillBoxCorners(const position_attr_t &amp;posInt, const hitbox_attr_t &amp;hbInt, const direction_attr_t *dir, std::array&lt; std::pair&lt; float, float &gt;, 4 &gt; &amp;out) const</div><div class="ttdoc">Compute the four corner points of a (possibly oriented) rectangle.</div><div class="ttdef"><b>Definition</b> <a href="CollisionWorld_8cpp_source.html#l00194">CollisionWorld.cpp:194</a></div></div>
+<div class="ttc" id="aclassrtype_1_1ecs_1_1CollisionWorld_html_af3eb6d7c6cfa6dbcb1ed11e4c1279241"><div class="ttname"><a href="classrtype_1_1ecs_1_1CollisionWorld.html#af3eb6d7c6cfa6dbcb1ed11e4c1279241">rtype::ecs::CollisionWorld::cornersToAABB</a></div><div class="ttdeci">void cornersToAABB(const std::array&lt; std::pair&lt; float, float &gt;, 4 &gt; &amp;corners, int &amp;minX, int &amp;minY, int &amp;maxX, int &amp;maxY) const</div><div class="ttdoc">Convert 4 corner points to an integer AABB extent.</div><div class="ttdef"><b>Definition</b> <a href="CollisionWorld_8cpp_source.html#l00221">CollisionWorld.cpp:221</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="Coordinator_8hpp_source.html#l00219">rtype::ecs::Coordinator::getComponent()</a>.</p>
 
@@ -495,7 +495,7 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">   45</span>            <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> j = i + 1; j &lt; n; ++j) {</div>
 <div class="line"><span class="lineno">   46</span>                uint32_t e2 = vec[j];</div>
 <div class="line"><span class="lineno">   47</span>                <span class="keywordflow">if</span> (<a class="code hl_function" href="classrtype_1_1ecs_1_1CollisionWorld.html#abb2232374822919bf9fec24c33c0672c">checkPairCollision</a>(coord, e1, e2))</div>
-<div class="line"><span class="lineno">   48</span>                    <a class="code hl_function" href="classrtype_1_1ecs_1_1CollisionWorld.html#a62ae2fb2c98052e3dbe8194499402621">collisionEffect</a>(e1, e2);</div>
+<div class="line"><span class="lineno">   48</span>                    <a class="code hl_function" href="classrtype_1_1ecs_1_1CollisionWorld.html#a23469c76ef6bc0b63ba8872192b20ce3">collisionEffect</a>(coord, e1, e2);</div>
 <div class="line"><span class="lineno">   49</span>            }</div>
 <div class="line"><span class="lineno">   50</span>        }</div>
 <div class="line"><span class="lineno">   51</span> </div>
@@ -518,7 +518,7 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">   68</span>                <span class="keywordflow">for</span> (uint32_t e1 : vec) {</div>
 <div class="line"><span class="lineno">   69</span>                    <span class="keywordflow">for</span> (uint32_t e2 : other) {</div>
 <div class="line"><span class="lineno">   70</span>                        <span class="keywordflow">if</span> (<a class="code hl_function" href="classrtype_1_1ecs_1_1CollisionWorld.html#abb2232374822919bf9fec24c33c0672c">checkPairCollision</a>(coord, e1, e2))</div>
-<div class="line"><span class="lineno">   71</span>                            <a class="code hl_function" href="classrtype_1_1ecs_1_1CollisionWorld.html#a62ae2fb2c98052e3dbe8194499402621">collisionEffect</a>(e1, e2);</div>
+<div class="line"><span class="lineno">   71</span>                            <a class="code hl_function" href="classrtype_1_1ecs_1_1CollisionWorld.html#a23469c76ef6bc0b63ba8872192b20ce3">collisionEffect</a>(coord, e1, e2);</div>
 <div class="line"><span class="lineno">   72</span>                    }</div>
 <div class="line"><span class="lineno">   73</span>                }</div>
 <div class="line"><span class="lineno">   74</span>            }</div>
@@ -527,12 +527,12 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">   77</span>}</div>
 <div class="ttc" id="aMacro_8cpp_html_a0ab6d50fa1ecd2e7d7ed74b9816542ab"><div class="ttname"><a href="Macro_8cpp.html#a0ab6d50fa1ecd2e7d7ed74b9816542ab">decodeKey</a></div><div class="ttdeci">std::pair&lt; int, int &gt; decodeKey(uint64_t key) noexcept</div><div class="ttdoc">Unpack a 64-bit key produced by makeKey back into two signed 32-bit coordinates.</div><div class="ttdef"><b>Definition</b> <a href="Macro_8cpp_source.html#l00018">Macro.cpp:18</a></div></div>
 <div class="ttc" id="aMacro_8cpp_html_aa287b51683944006697faf1bde937fd9"><div class="ttname"><a href="Macro_8cpp.html#aa287b51683944006697faf1bde937fd9">makeKey</a></div><div class="ttdeci">uint64_t makeKey(int x, int y) noexcept</div><div class="ttdoc">Pack two 32-bit signed cell coordinates into a single 64-bit unsigned key.</div><div class="ttdef"><b>Definition</b> <a href="Macro_8cpp_source.html#l00010">Macro.cpp:10</a></div></div>
+<div class="ttc" id="aclassrtype_1_1ecs_1_1CollisionWorld_html_a23469c76ef6bc0b63ba8872192b20ce3"><div class="ttname"><a href="classrtype_1_1ecs_1_1CollisionWorld.html#a23469c76ef6bc0b63ba8872192b20ce3">rtype::ecs::CollisionWorld::collisionEffect</a></div><div class="ttdeci">void collisionEffect(Coordinator &amp;coord, uint32_t e1, uint32_t e2)</div><div class="ttdoc">Default collision effect callback invoked when two entities overlap.</div><div class="ttdef"><b>Definition</b> <a href="CollisionWorld_8cpp_source.html#l00113">CollisionWorld.cpp:113</a></div></div>
 <div class="ttc" id="aclassrtype_1_1ecs_1_1CollisionWorld_html_a35da3bf4db3376e22db3892a63c42cd2"><div class="ttname"><a href="classrtype_1_1ecs_1_1CollisionWorld.html#a35da3bf4db3376e22db3892a63c42cd2">rtype::ecs::CollisionWorld::cellKey</a></div><div class="ttdeci">uint64_t cellKey</div><div class="ttdef"><b>Definition</b> <a href="CollisionWorld_8hpp_source.html#l00119">CollisionWorld.hpp:119</a></div></div>
 <div class="ttc" id="aclassrtype_1_1ecs_1_1CollisionWorld_html_a3e693210eb94e22c195fbf4242725eac"><div class="ttname"><a href="classrtype_1_1ecs_1_1CollisionWorld.html#a3e693210eb94e22c195fbf4242725eac">rtype::ecs::CollisionWorld::_grid</a></div><div class="ttdeci">std::unordered_map&lt; cellKey, std::vector&lt; uint32_t &gt; &gt; _grid</div><div class="ttdef"><b>Definition</b> <a href="CollisionWorld_8hpp_source.html#l00120">CollisionWorld.hpp:120</a></div></div>
-<div class="ttc" id="aclassrtype_1_1ecs_1_1CollisionWorld_html_a62ae2fb2c98052e3dbe8194499402621"><div class="ttname"><a href="classrtype_1_1ecs_1_1CollisionWorld.html#a62ae2fb2c98052e3dbe8194499402621">rtype::ecs::CollisionWorld::collisionEffect</a></div><div class="ttdeci">void collisionEffect(uint32_t e1, uint32_t e2)</div><div class="ttdoc">Default collision effect callback invoked when two entities overlap.</div><div class="ttdef"><b>Definition</b> <a href="CollisionWorld_8cpp_source.html#l00113">CollisionWorld.cpp:113</a></div></div>
-<div class="ttc" id="aclassrtype_1_1ecs_1_1CollisionWorld_html_abb2232374822919bf9fec24c33c0672c"><div class="ttname"><a href="classrtype_1_1ecs_1_1CollisionWorld.html#abb2232374822919bf9fec24c33c0672c">rtype::ecs::CollisionWorld::checkPairCollision</a></div><div class="ttdeci">bool checkPairCollision(Coordinator &amp;coord, uint32_t e1, uint32_t e2)</div><div class="ttdoc">Determine whether two entities collide (instant T) using oriented-rectangle SAT checks.</div><div class="ttdef"><b>Definition</b> <a href="CollisionWorld_8cpp_source.html#l00125">CollisionWorld.cpp:125</a></div></div>
+<div class="ttc" id="aclassrtype_1_1ecs_1_1CollisionWorld_html_abb2232374822919bf9fec24c33c0672c"><div class="ttname"><a href="classrtype_1_1ecs_1_1CollisionWorld.html#abb2232374822919bf9fec24c33c0672c">rtype::ecs::CollisionWorld::checkPairCollision</a></div><div class="ttdeci">bool checkPairCollision(Coordinator &amp;coord, uint32_t e1, uint32_t e2)</div><div class="ttdoc">Determine whether two entities collide (instant T) using oriented-rectangle SAT checks.</div><div class="ttdef"><b>Definition</b> <a href="CollisionWorld_8cpp_source.html#l00127">CollisionWorld.cpp:127</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="CollisionWorld_8hpp_source.html#l00120">_grid</a>, <a class="el" href="CollisionWorld_8cpp_source.html#l00125">checkPairCollision()</a>, <a class="el" href="CollisionWorld_8cpp_source.html#l00113">collisionEffect()</a>, <a class="el" href="Macro_8cpp_source.html#l00018">decodeKey()</a>, and <a class="el" href="Macro_8cpp_source.html#l00010">makeKey()</a>.</p>
+<p class="reference">References <a class="el" href="CollisionWorld_8hpp_source.html#l00120">_grid</a>, <a class="el" href="CollisionWorld_8cpp_source.html#l00127">checkPairCollision()</a>, <a class="el" href="CollisionWorld_8cpp_source.html#l00113">collisionEffect()</a>, <a class="el" href="Macro_8cpp_source.html#l00018">decodeKey()</a>, and <a class="el" href="Macro_8cpp_source.html#l00010">makeKey()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="CollisionSystem_8cpp_source.html#l00021">rtype::ecs::CollisionSystem::update()</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -609,34 +609,34 @@ Private Attributes</h2></td></tr>
 <li>Returns true when no separating axis is found (i.e. rectangles overlap). </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="CollisionWorld_8cpp_source.html#l00125">125</a> of file <a class="el" href="CollisionWorld_8cpp_source.html">CollisionWorld.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  127</span>{</div>
-<div class="line"><span class="lineno">  128</span>    <span class="keywordflow">if</span> (e1 == e2)</div>
-<div class="line"><span class="lineno">  129</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">  130</span> </div>
-<div class="line"><span class="lineno">  131</span>    <a class="code hl_struct" href="Position_8hpp.html#structposition__attr__t">position_attr_t</a> *pos_e1 = coord.getComponent&lt;<a class="code hl_struct" href="Position_8hpp.html#structposition__attr__t">position_attr_t</a>&gt;(e1);</div>
-<div class="line"><span class="lineno">  132</span>    <a class="code hl_struct" href="Position_8hpp.html#structposition__attr__t">position_attr_t</a> *pos_e2 = coord.getComponent&lt;<a class="code hl_struct" href="Position_8hpp.html#structposition__attr__t">position_attr_t</a>&gt;(e2);</div>
-<div class="line"><span class="lineno">  133</span> </div>
-<div class="line"><span class="lineno">  134</span>    <span class="keywordflow">if</span> (!pos_e1 || !pos_e2)</div>
-<div class="line"><span class="lineno">  135</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">  136</span> </div>
-<div class="line"><span class="lineno">  137</span>    <a class="code hl_struct" href="HitBox_8hpp.html#structhitbox__attr__t">hitbox_attr_t</a> *hb_e1 = coord.getComponent&lt;<a class="code hl_struct" href="HitBox_8hpp.html#structhitbox__attr__t">hitbox_attr_t</a>&gt;(e1);</div>
-<div class="line"><span class="lineno">  138</span>    <a class="code hl_struct" href="HitBox_8hpp.html#structhitbox__attr__t">hitbox_attr_t</a> *hb_e2 = coord.getComponent&lt;<a class="code hl_struct" href="HitBox_8hpp.html#structhitbox__attr__t">hitbox_attr_t</a>&gt;(e2);</div>
-<div class="line"><span class="lineno">  139</span> </div>
-<div class="line"><span class="lineno">  140</span>    <span class="keywordflow">if</span> (!hb_e1 || !hb_e2)</div>
-<div class="line"><span class="lineno">  141</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">  142</span> </div>
-<div class="line"><span class="lineno">  143</span>    <a class="code hl_struct" href="Direction_8hpp.html#structdirection__attr__t">direction_attr_t</a> *dir_e1 = coord.getComponent&lt;<a class="code hl_struct" href="Direction_8hpp.html#structdirection__attr__t">direction_attr_t</a>&gt;(e1);</div>
-<div class="line"><span class="lineno">  144</span>    <a class="code hl_struct" href="Direction_8hpp.html#structdirection__attr__t">direction_attr_t</a> *dir_e2 = coord.getComponent&lt;<a class="code hl_struct" href="Direction_8hpp.html#structdirection__attr__t">direction_attr_t</a>&gt;(e2);</div>
-<div class="line"><span class="lineno">  145</span> </div>
-<div class="line"><span class="lineno">  146</span>    std::array&lt;std::pair&lt;float, float&gt;, 4&gt; e1_box;</div>
-<div class="line"><span class="lineno">  147</span>    std::array&lt;std::pair&lt;float, float&gt;, 4&gt; e2_box;</div>
-<div class="line"><span class="lineno">  148</span> </div>
-<div class="line"><span class="lineno">  149</span>    <a class="code hl_function" href="classrtype_1_1ecs_1_1CollisionWorld.html#a73f8f3c1eddaf3c4ba9b03e04b95e8e0">fillBoxCorners</a>(*pos_e1, *hb_e1, dir_e1, e1_box);</div>
-<div class="line"><span class="lineno">  150</span>    <a class="code hl_function" href="classrtype_1_1ecs_1_1CollisionWorld.html#a73f8f3c1eddaf3c4ba9b03e04b95e8e0">fillBoxCorners</a>(*pos_e2, *hb_e2, dir_e2, e2_box);</div>
-<div class="line"><span class="lineno">  151</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="classrtype_1_1ecs_1_1CollisionWorld.html#ab037c8ec43687cb5df49ac81430d3a2f">areAllAxisSeparated</a>(e1_box, e2_box);</div>
-<div class="line"><span class="lineno">  152</span>}</div>
-<div class="ttc" id="aclassrtype_1_1ecs_1_1CollisionWorld_html_ab037c8ec43687cb5df49ac81430d3a2f"><div class="ttname"><a href="classrtype_1_1ecs_1_1CollisionWorld.html#ab037c8ec43687cb5df49ac81430d3a2f">rtype::ecs::CollisionWorld::areAllAxisSeparated</a></div><div class="ttdeci">bool areAllAxisSeparated(const std::array&lt; std::pair&lt; float, float &gt;, 4 &gt; &amp;hb1, const std::array&lt; std::pair&lt; float, float &gt;, 4 &gt; &amp;hb2)</div><div class="ttdoc">SAT helper: Check all candidate axes between two 4-point rectangles.</div><div class="ttdef"><b>Definition</b> <a href="CollisionWorld_8cpp_source.html#l00154">CollisionWorld.cpp:154</a></div></div>
+<p class="definition">Definition at line <a class="el" href="CollisionWorld_8cpp_source.html#l00127">127</a> of file <a class="el" href="CollisionWorld_8cpp_source.html">CollisionWorld.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  129</span>{</div>
+<div class="line"><span class="lineno">  130</span>    <span class="keywordflow">if</span> (e1 == e2)</div>
+<div class="line"><span class="lineno">  131</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  132</span> </div>
+<div class="line"><span class="lineno">  133</span>    <a class="code hl_struct" href="Position_8hpp.html#structposition__attr__t">position_attr_t</a> *pos_e1 = coord.getComponent&lt;<a class="code hl_struct" href="Position_8hpp.html#structposition__attr__t">position_attr_t</a>&gt;(e1);</div>
+<div class="line"><span class="lineno">  134</span>    <a class="code hl_struct" href="Position_8hpp.html#structposition__attr__t">position_attr_t</a> *pos_e2 = coord.getComponent&lt;<a class="code hl_struct" href="Position_8hpp.html#structposition__attr__t">position_attr_t</a>&gt;(e2);</div>
+<div class="line"><span class="lineno">  135</span> </div>
+<div class="line"><span class="lineno">  136</span>    <span class="keywordflow">if</span> (!pos_e1 || !pos_e2)</div>
+<div class="line"><span class="lineno">  137</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  138</span> </div>
+<div class="line"><span class="lineno">  139</span>    <a class="code hl_struct" href="HitBox_8hpp.html#structhitbox__attr__t">hitbox_attr_t</a> *hb_e1 = coord.getComponent&lt;<a class="code hl_struct" href="HitBox_8hpp.html#structhitbox__attr__t">hitbox_attr_t</a>&gt;(e1);</div>
+<div class="line"><span class="lineno">  140</span>    <a class="code hl_struct" href="HitBox_8hpp.html#structhitbox__attr__t">hitbox_attr_t</a> *hb_e2 = coord.getComponent&lt;<a class="code hl_struct" href="HitBox_8hpp.html#structhitbox__attr__t">hitbox_attr_t</a>&gt;(e2);</div>
+<div class="line"><span class="lineno">  141</span> </div>
+<div class="line"><span class="lineno">  142</span>    <span class="keywordflow">if</span> (!hb_e1 || !hb_e2)</div>
+<div class="line"><span class="lineno">  143</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  144</span> </div>
+<div class="line"><span class="lineno">  145</span>    <a class="code hl_struct" href="Direction_8hpp.html#structdirection__attr__t">direction_attr_t</a> *dir_e1 = coord.getComponent&lt;<a class="code hl_struct" href="Direction_8hpp.html#structdirection__attr__t">direction_attr_t</a>&gt;(e1);</div>
+<div class="line"><span class="lineno">  146</span>    <a class="code hl_struct" href="Direction_8hpp.html#structdirection__attr__t">direction_attr_t</a> *dir_e2 = coord.getComponent&lt;<a class="code hl_struct" href="Direction_8hpp.html#structdirection__attr__t">direction_attr_t</a>&gt;(e2);</div>
+<div class="line"><span class="lineno">  147</span> </div>
+<div class="line"><span class="lineno">  148</span>    std::array&lt;std::pair&lt;float, float&gt;, 4&gt; e1_box;</div>
+<div class="line"><span class="lineno">  149</span>    std::array&lt;std::pair&lt;float, float&gt;, 4&gt; e2_box;</div>
+<div class="line"><span class="lineno">  150</span> </div>
+<div class="line"><span class="lineno">  151</span>    <a class="code hl_function" href="classrtype_1_1ecs_1_1CollisionWorld.html#a73f8f3c1eddaf3c4ba9b03e04b95e8e0">fillBoxCorners</a>(*pos_e1, *hb_e1, dir_e1, e1_box);</div>
+<div class="line"><span class="lineno">  152</span>    <a class="code hl_function" href="classrtype_1_1ecs_1_1CollisionWorld.html#a73f8f3c1eddaf3c4ba9b03e04b95e8e0">fillBoxCorners</a>(*pos_e2, *hb_e2, dir_e2, e2_box);</div>
+<div class="line"><span class="lineno">  153</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="classrtype_1_1ecs_1_1CollisionWorld.html#ab037c8ec43687cb5df49ac81430d3a2f">areAllAxisSeparated</a>(e1_box, e2_box);</div>
+<div class="line"><span class="lineno">  154</span>}</div>
+<div class="ttc" id="aclassrtype_1_1ecs_1_1CollisionWorld_html_ab037c8ec43687cb5df49ac81430d3a2f"><div class="ttname"><a href="classrtype_1_1ecs_1_1CollisionWorld.html#ab037c8ec43687cb5df49ac81430d3a2f">rtype::ecs::CollisionWorld::areAllAxisSeparated</a></div><div class="ttdeci">bool areAllAxisSeparated(const std::array&lt; std::pair&lt; float, float &gt;, 4 &gt; &amp;hb1, const std::array&lt; std::pair&lt; float, float &gt;, 4 &gt; &amp;hb2)</div><div class="ttdoc">SAT helper: Check all candidate axes between two 4-point rectangles.</div><div class="ttdef"><b>Definition</b> <a href="CollisionWorld_8cpp_source.html#l00156">CollisionWorld.cpp:156</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="Coordinator_8hpp_source.html#l00219">rtype::ecs::Coordinator::getComponent()</a>.</p>
 
@@ -692,8 +692,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a62ae2fb2c98052e3dbe8194499402621" name="a62ae2fb2c98052e3dbe8194499402621"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a62ae2fb2c98052e3dbe8194499402621">&#9670;&#160;</a></span>collisionEffect()</h2>
+<a id="a23469c76ef6bc0b63ba8872192b20ce3" name="a23469c76ef6bc0b63ba8872192b20ce3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23469c76ef6bc0b63ba8872192b20ce3">&#9670;&#160;</a></span>collisionEffect()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -701,6 +701,12 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="memname">void rtype::ecs::CollisionWorld::collisionEffect </td>
           <td>(</td>
+          <td class="paramtype"><a class="el" href="classrtype_1_1ecs_1_1Coordinator.html">Coordinator</a> &amp;&#160;</td>
+          <td class="paramname"><em>coord</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">uint32_t&#160;</td>
           <td class="paramname"><em>e1</em>, </td>
         </tr>
@@ -730,15 +736,26 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="CollisionWorld_8cpp_source.html#l00113">113</a> of file <a class="el" href="CollisionWorld_8cpp_source.html">CollisionWorld.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  114</span>{</div>
-<div class="line"><span class="lineno">  115</span>}</div>
+<div class="line"><span class="lineno">  115</span>    coord.destroyEntity(e1);</div>
+<div class="line"><span class="lineno">  116</span>    coord.destroyEntity(e2);</div>
+<div class="line"><span class="lineno">  117</span>}</div>
 </div><!-- fragment -->
+<p class="reference">References <a class="el" href="Coordinator_8cpp_source.html#l00034">rtype::ecs::Coordinator::destroyEntity()</a>.</p>
+
 <p class="reference">Referenced by <a class="el" href="CollisionWorld_8cpp_source.html#l00029">checkCollisions()</a>.</p>
 <div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-9-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-9-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classrtype_1_1ecs_1_1CollisionWorld_a62ae2fb2c98052e3dbe8194499402621_icgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classrtype_1_1ecs_1_1CollisionWorld_a23469c76ef6bc0b63ba8872192b20ce3_cgraph.svg" width="511" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-10-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classrtype_1_1ecs_1_1CollisionWorld_a23469c76ef6bc0b63ba8872192b20ce3_icgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
 </div>
@@ -808,25 +825,25 @@ Private Attributes</h2></td></tr>
 </dl>
 <p>Produces a conservative integer AABB that fully contains the oriented rectangle. Useful for mapping the oriented box to grid cells (broad-phase insertion). </p>
 
-<p class="definition">Definition at line <a class="el" href="CollisionWorld_8cpp_source.html#l00219">219</a> of file <a class="el" href="CollisionWorld_8cpp_source.html">CollisionWorld.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  222</span>{</div>
-<div class="line"><span class="lineno">  223</span>    <span class="keywordtype">float</span> min_fx = corners[0].first;</div>
-<div class="line"><span class="lineno">  224</span>    <span class="keywordtype">float</span> max_fx = corners[0].first;</div>
-<div class="line"><span class="lineno">  225</span>    <span class="keywordtype">float</span> min_fy = corners[0].second;</div>
-<div class="line"><span class="lineno">  226</span>    <span class="keywordtype">float</span> max_fy = corners[0].second;</div>
-<div class="line"><span class="lineno">  227</span> </div>
-<div class="line"><span class="lineno">  228</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 1; i &lt; 4; ++i) {</div>
-<div class="line"><span class="lineno">  229</span>        min_fx = std::min(min_fx, corners[i].first);</div>
-<div class="line"><span class="lineno">  230</span>        max_fx = std::max(max_fx, corners[i].first);</div>
-<div class="line"><span class="lineno">  231</span>        min_fy = std::min(min_fy, corners[i].second);</div>
-<div class="line"><span class="lineno">  232</span>        max_fy = std::max(max_fy, corners[i].second);</div>
-<div class="line"><span class="lineno">  233</span>    }</div>
-<div class="line"><span class="lineno">  234</span> </div>
-<div class="line"><span class="lineno">  235</span>    minX = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(std::floor(min_fx));</div>
-<div class="line"><span class="lineno">  236</span>    minY = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(std::floor(min_fy));</div>
-<div class="line"><span class="lineno">  237</span>    maxX = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(std::ceil(max_fx));</div>
-<div class="line"><span class="lineno">  238</span>    maxY = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(std::ceil(max_fy));</div>
-<div class="line"><span class="lineno">  239</span>}</div>
+<p class="definition">Definition at line <a class="el" href="CollisionWorld_8cpp_source.html#l00221">221</a> of file <a class="el" href="CollisionWorld_8cpp_source.html">CollisionWorld.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  224</span>{</div>
+<div class="line"><span class="lineno">  225</span>    <span class="keywordtype">float</span> min_fx = corners[0].first;</div>
+<div class="line"><span class="lineno">  226</span>    <span class="keywordtype">float</span> max_fx = corners[0].first;</div>
+<div class="line"><span class="lineno">  227</span>    <span class="keywordtype">float</span> min_fy = corners[0].second;</div>
+<div class="line"><span class="lineno">  228</span>    <span class="keywordtype">float</span> max_fy = corners[0].second;</div>
+<div class="line"><span class="lineno">  229</span> </div>
+<div class="line"><span class="lineno">  230</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 1; i &lt; 4; ++i) {</div>
+<div class="line"><span class="lineno">  231</span>        min_fx = std::min(min_fx, corners[i].first);</div>
+<div class="line"><span class="lineno">  232</span>        max_fx = std::max(max_fx, corners[i].first);</div>
+<div class="line"><span class="lineno">  233</span>        min_fy = std::min(min_fy, corners[i].second);</div>
+<div class="line"><span class="lineno">  234</span>        max_fy = std::max(max_fy, corners[i].second);</div>
+<div class="line"><span class="lineno">  235</span>    }</div>
+<div class="line"><span class="lineno">  236</span> </div>
+<div class="line"><span class="lineno">  237</span>    minX = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(std::floor(min_fx));</div>
+<div class="line"><span class="lineno">  238</span>    minY = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(std::floor(min_fy));</div>
+<div class="line"><span class="lineno">  239</span>    maxX = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(std::ceil(max_fx));</div>
+<div class="line"><span class="lineno">  240</span>    maxY = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(std::ceil(max_fy));</div>
+<div class="line"><span class="lineno">  241</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -892,30 +909,30 @@ Private Attributes</h2></td></tr>
 <li>Order of corners is stable and used by projection routines. </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="CollisionWorld_8cpp_source.html#l00192">192</a> of file <a class="el" href="CollisionWorld_8cpp_source.html">CollisionWorld.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  195</span>{</div>
-<div class="line"><span class="lineno">  196</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> cx = <span class="keyword">static_cast&lt;</span><span class="keywordtype">float</span><span class="keyword">&gt;</span>(posInt.<a class="code hl_variable" href="Position_8hpp.html#a6b35e09560aef213f2888eda453043b6">x</a>) / 100.0;</div>
-<div class="line"><span class="lineno">  197</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> cy = <span class="keyword">static_cast&lt;</span><span class="keywordtype">float</span><span class="keyword">&gt;</span>(posInt.<a class="code hl_variable" href="Position_8hpp.html#a9a0499f0dc1ab63d5840a7594954d474">y</a>) / 100.0;</div>
-<div class="line"><span class="lineno">  198</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> halfW = (<span class="keyword">static_cast&lt;</span><span class="keywordtype">float</span><span class="keyword">&gt;</span>(hbInt.<a class="code hl_variable" href="HitBox_8hpp.html#a6e2a4b29127d7e3d718f6adea68acd97">horizontal</a>) * 0.5f) / 100.0;</div>
-<div class="line"><span class="lineno">  199</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> halfH = (<span class="keyword">static_cast&lt;</span><span class="keywordtype">float</span><span class="keyword">&gt;</span>(hbInt.<a class="code hl_variable" href="HitBox_8hpp.html#add404577e41f22030c1aea6b05c0f473">vertical</a>) * 0.5f) / 100.0;</div>
-<div class="line"><span class="lineno">  200</span> </div>
-<div class="line"><span class="lineno">  201</span>    <span class="keywordtype">float</span> ux = 1.0f;</div>
-<div class="line"><span class="lineno">  202</span>    <span class="keywordtype">float</span> uy = 0.0f;</div>
-<div class="line"><span class="lineno">  203</span> </div>
-<div class="line"><span class="lineno">  204</span>    <span class="keywordflow">if</span> (dir) {</div>
-<div class="line"><span class="lineno">  205</span>        ux = dir-&gt;<a class="code hl_variable" href="Direction_8hpp.html#a4c889e6ef93a7c37f424ae78b3308447">dx</a>;</div>
-<div class="line"><span class="lineno">  206</span>        uy = dir-&gt;<a class="code hl_variable" href="Direction_8hpp.html#a47b93078b7e8bb8c210ba19e1326f95a">dy</a>;</div>
-<div class="line"><span class="lineno">  207</span>        <a class="code hl_function" href="Direction_8hpp.html#a4f3fd0ff57692fa2ddc325c423bb04d7">normalize</a>(ux, uy);</div>
-<div class="line"><span class="lineno">  208</span>    }</div>
-<div class="line"><span class="lineno">  209</span> </div>
-<div class="line"><span class="lineno">  210</span>    <span class="keywordtype">float</span> vx = -uy;</div>
-<div class="line"><span class="lineno">  211</span>    <span class="keywordtype">float</span> vy = ux;</div>
-<div class="line"><span class="lineno">  212</span> </div>
-<div class="line"><span class="lineno">  213</span>    out[0] = { cx + ux * halfW + vx * halfH, cy + uy * halfW + vy * halfH };</div>
-<div class="line"><span class="lineno">  214</span>    out[1] = { cx + ux * halfW - vx * halfH, cy + uy * halfW - vy * halfH };</div>
-<div class="line"><span class="lineno">  215</span>    out[2] = { cx - ux * halfW + vx * halfH, cy - uy * halfW + vy * halfH };</div>
-<div class="line"><span class="lineno">  216</span>    out[3] = { cx - ux * halfW - vx * halfH, cy - uy * halfW - vy * halfH };</div>
-<div class="line"><span class="lineno">  217</span>}</div>
+<p class="definition">Definition at line <a class="el" href="CollisionWorld_8cpp_source.html#l00194">194</a> of file <a class="el" href="CollisionWorld_8cpp_source.html">CollisionWorld.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  197</span>{</div>
+<div class="line"><span class="lineno">  198</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> cx = <span class="keyword">static_cast&lt;</span><span class="keywordtype">float</span><span class="keyword">&gt;</span>(posInt.<a class="code hl_variable" href="Position_8hpp.html#a6b35e09560aef213f2888eda453043b6">x</a>) / 100.0;</div>
+<div class="line"><span class="lineno">  199</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> cy = <span class="keyword">static_cast&lt;</span><span class="keywordtype">float</span><span class="keyword">&gt;</span>(posInt.<a class="code hl_variable" href="Position_8hpp.html#a9a0499f0dc1ab63d5840a7594954d474">y</a>) / 100.0;</div>
+<div class="line"><span class="lineno">  200</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> halfW = (<span class="keyword">static_cast&lt;</span><span class="keywordtype">float</span><span class="keyword">&gt;</span>(hbInt.<a class="code hl_variable" href="HitBox_8hpp.html#a6e2a4b29127d7e3d718f6adea68acd97">horizontal</a>) * 0.5f) / 100.0;</div>
+<div class="line"><span class="lineno">  201</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> halfH = (<span class="keyword">static_cast&lt;</span><span class="keywordtype">float</span><span class="keyword">&gt;</span>(hbInt.<a class="code hl_variable" href="HitBox_8hpp.html#add404577e41f22030c1aea6b05c0f473">vertical</a>) * 0.5f) / 100.0;</div>
+<div class="line"><span class="lineno">  202</span> </div>
+<div class="line"><span class="lineno">  203</span>    <span class="keywordtype">float</span> ux = 1.0f;</div>
+<div class="line"><span class="lineno">  204</span>    <span class="keywordtype">float</span> uy = 0.0f;</div>
+<div class="line"><span class="lineno">  205</span> </div>
+<div class="line"><span class="lineno">  206</span>    <span class="keywordflow">if</span> (dir) {</div>
+<div class="line"><span class="lineno">  207</span>        ux = dir-&gt;<a class="code hl_variable" href="Direction_8hpp.html#a4c889e6ef93a7c37f424ae78b3308447">dx</a>;</div>
+<div class="line"><span class="lineno">  208</span>        uy = dir-&gt;<a class="code hl_variable" href="Direction_8hpp.html#a47b93078b7e8bb8c210ba19e1326f95a">dy</a>;</div>
+<div class="line"><span class="lineno">  209</span>        <a class="code hl_function" href="Direction_8hpp.html#a4f3fd0ff57692fa2ddc325c423bb04d7">normalize</a>(ux, uy);</div>
+<div class="line"><span class="lineno">  210</span>    }</div>
+<div class="line"><span class="lineno">  211</span> </div>
+<div class="line"><span class="lineno">  212</span>    <span class="keywordtype">float</span> vx = -uy;</div>
+<div class="line"><span class="lineno">  213</span>    <span class="keywordtype">float</span> vy = ux;</div>
+<div class="line"><span class="lineno">  214</span> </div>
+<div class="line"><span class="lineno">  215</span>    out[0] = { cx + ux * halfW + vx * halfH, cy + uy * halfW + vy * halfH };</div>
+<div class="line"><span class="lineno">  216</span>    out[1] = { cx + ux * halfW - vx * halfH, cy + uy * halfW - vy * halfH };</div>
+<div class="line"><span class="lineno">  217</span>    out[2] = { cx - ux * halfW + vx * halfH, cy - uy * halfW + vy * halfH };</div>
+<div class="line"><span class="lineno">  218</span>    out[3] = { cx - ux * halfW - vx * halfH, cy - uy * halfW - vy * halfH };</div>
+<div class="line"><span class="lineno">  219</span>}</div>
 <div class="ttc" id="aDirection_8hpp_html_a47b93078b7e8bb8c210ba19e1326f95a"><div class="ttname"><a href="Direction_8hpp.html#a47b93078b7e8bb8c210ba19e1326f95a">direction_attr_t::dy</a></div><div class="ttdeci">float dy</div><div class="ttdoc">Direction along the Y axis.</div><div class="ttdef"><b>Definition</b> <a href="Direction_8hpp_source.html#l00043">Direction.hpp:43</a></div></div>
 <div class="ttc" id="aDirection_8hpp_html_a4c889e6ef93a7c37f424ae78b3308447"><div class="ttname"><a href="Direction_8hpp.html#a4c889e6ef93a7c37f424ae78b3308447">direction_attr_t::dx</a></div><div class="ttdeci">float dx</div><div class="ttdoc">Direction along the X axis.</div><div class="ttdef"><b>Definition</b> <a href="Direction_8hpp_source.html#l00042">Direction.hpp:42</a></div></div>
 <div class="ttc" id="aHitBox_8hpp_html_a6e2a4b29127d7e3d718f6adea68acd97"><div class="ttname"><a href="HitBox_8hpp.html#a6e2a4b29127d7e3d718f6adea68acd97">hitbox_attr_t::horizontal</a></div><div class="ttdeci">unsigned int horizontal</div><div class="ttdoc">Width of the hitbox.</div><div class="ttdef"><b>Definition</b> <a href="HitBox_8hpp_source.html#l00041">HitBox.hpp:41</a></div></div>
@@ -924,11 +941,11 @@ Private Attributes</h2></td></tr>
 <div class="ttc" id="aPosition_8hpp_html_a9a0499f0dc1ab63d5840a7594954d474"><div class="ttname"><a href="Position_8hpp.html#a9a0499f0dc1ab63d5840a7594954d474">position_attr_t::y</a></div><div class="ttdeci">int y</div><div class="ttdoc">Y coordinate in 2D space.</div><div class="ttdef"><b>Definition</b> <a href="Position_8hpp_source.html#l00040">Position.hpp:40</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="Direction_8hpp_source.html#l00042">direction_attr_t::dx</a>, <a class="el" href="Direction_8hpp_source.html#l00043">direction_attr_t::dy</a>, <a class="el" href="HitBox_8hpp_source.html#l00041">hitbox_attr_t::horizontal</a>, <a class="el" href="Direction_8hpp_source.html#l00046">normalize()</a>, <a class="el" href="HitBox_8hpp_source.html#l00040">hitbox_attr_t::vertical</a>, <a class="el" href="Position_8hpp_source.html#l00039">position_attr_t::x</a>, and <a class="el" href="Position_8hpp_source.html#l00040">position_attr_t::y</a>.</p>
-<div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-10-content" class="dyncontent" style="display:none;">
+<div id="dynsection-11-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="classrtype_1_1ecs_1_1CollisionWorld_a73f8f3c1eddaf3c4ba9b03e04b95e8e0_cgraph.svg" width="332" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
@@ -979,14 +996,14 @@ Private Attributes</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>pair&lt;int,int&gt; representing (cellX, cellY).</dd></dl>
 <p>Uses the PIXELS_PER_CLUSTER constant to compute cell indices by floor(x / cluster_size). Negative coordinates are handled by floor behaviour of std::floor cast to int. </p>
 
-<p class="definition">Definition at line <a class="el" href="CollisionWorld_8cpp_source.html#l00258">258</a> of file <a class="el" href="CollisionWorld_8cpp_source.html">CollisionWorld.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  259</span>{</div>
-<div class="line"><span class="lineno">  260</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> cl = <span class="keyword">static_cast&lt;</span><span class="keywordtype">float</span><span class="keyword">&gt;</span>(<a class="code hl_define" href="Macro_8hpp.html#aed897ed2f070f50267d55fd191fd06e6">PIXELS_PER_CLUSTER</a>);</div>
-<div class="line"><span class="lineno">  261</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> cx = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(std::floor(xf / cl));</div>
-<div class="line"><span class="lineno">  262</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> cy = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(std::floor(yf / cl));</div>
-<div class="line"><span class="lineno">  263</span> </div>
-<div class="line"><span class="lineno">  264</span>    <span class="keywordflow">return</span> std::make_pair(cx, cy);</div>
-<div class="line"><span class="lineno">  265</span>}</div>
+<p class="definition">Definition at line <a class="el" href="CollisionWorld_8cpp_source.html#l00260">260</a> of file <a class="el" href="CollisionWorld_8cpp_source.html">CollisionWorld.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  261</span>{</div>
+<div class="line"><span class="lineno">  262</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> cl = <span class="keyword">static_cast&lt;</span><span class="keywordtype">float</span><span class="keyword">&gt;</span>(<a class="code hl_define" href="Macro_8hpp.html#aed897ed2f070f50267d55fd191fd06e6">PIXELS_PER_CLUSTER</a>);</div>
+<div class="line"><span class="lineno">  263</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> cx = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(std::floor(xf / cl));</div>
+<div class="line"><span class="lineno">  264</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> cy = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(std::floor(yf / cl));</div>
+<div class="line"><span class="lineno">  265</span> </div>
+<div class="line"><span class="lineno">  266</span>    <span class="keywordflow">return</span> std::make_pair(cx, cy);</div>
+<div class="line"><span class="lineno">  267</span>}</div>
 <div class="ttc" id="aMacro_8hpp_html_aed897ed2f070f50267d55fd191fd06e6"><div class="ttname"><a href="Macro_8hpp.html#aed897ed2f070f50267d55fd191fd06e6">PIXELS_PER_CLUSTER</a></div><div class="ttdeci">#define PIXELS_PER_CLUSTER</div><div class="ttdef"><b>Definition</b> <a href="Macro_8hpp_source.html#l00032">Macro.hpp:32</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="Macro_8hpp_source.html#l00032">PIXELS_PER_CLUSTER</a>.</p>
@@ -1044,20 +1061,20 @@ Private Attributes</h2></td></tr>
 </dl>
 <p>Uses makeKey(cx,cy) to pack coordinates into the unordered_map key and appends the id to the vector for that cell (no duplicate suppression). This is a simple append for speed; if you need uniqueness, deduplicate vectors before collision checks. </p>
 
-<p class="definition">Definition at line <a class="el" href="CollisionWorld_8cpp_source.html#l00117">117</a> of file <a class="el" href="CollisionWorld_8cpp_source.html">CollisionWorld.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  118</span>{</div>
-<div class="line"><span class="lineno">  119</span>    <a class="code hl_typedef" href="classrtype_1_1ecs_1_1CollisionWorld.html#a35da3bf4db3376e22db3892a63c42cd2">cellKey</a> key = <a class="code hl_function" href="Macro_8cpp.html#aa287b51683944006697faf1bde937fd9">makeKey</a>(cx, cy);</div>
-<div class="line"><span class="lineno">  120</span>    <span class="keyword">auto</span> &amp;vec = <a class="code hl_variable" href="classrtype_1_1ecs_1_1CollisionWorld.html#a3e693210eb94e22c195fbf4242725eac">_grid</a>[key];</div>
-<div class="line"><span class="lineno">  121</span> </div>
-<div class="line"><span class="lineno">  122</span>    vec.push_back(<span class="keywordtype">id</span>);</div>
-<div class="line"><span class="lineno">  123</span>}</div>
+<p class="definition">Definition at line <a class="el" href="CollisionWorld_8cpp_source.html#l00119">119</a> of file <a class="el" href="CollisionWorld_8cpp_source.html">CollisionWorld.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  120</span>{</div>
+<div class="line"><span class="lineno">  121</span>    <a class="code hl_typedef" href="classrtype_1_1ecs_1_1CollisionWorld.html#a35da3bf4db3376e22db3892a63c42cd2">cellKey</a> key = <a class="code hl_function" href="Macro_8cpp.html#aa287b51683944006697faf1bde937fd9">makeKey</a>(cx, cy);</div>
+<div class="line"><span class="lineno">  122</span>    <span class="keyword">auto</span> &amp;vec = <a class="code hl_variable" href="classrtype_1_1ecs_1_1CollisionWorld.html#a3e693210eb94e22c195fbf4242725eac">_grid</a>[key];</div>
+<div class="line"><span class="lineno">  123</span> </div>
+<div class="line"><span class="lineno">  124</span>    vec.push_back(<span class="keywordtype">id</span>);</div>
+<div class="line"><span class="lineno">  125</span>}</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="Macro_8cpp_source.html#l00010">makeKey()</a>.</p>
-<div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-11-content" class="dyncontent" style="display:none;">
+<div id="dynsection-12-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="classrtype_1_1ecs_1_1CollisionWorld_a011eb492f2141005e5b7723f9015b238_cgraph.svg" width="328" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
@@ -1122,15 +1139,15 @@ Private Attributes</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>true if the projections are separated on this axis (no overlap).</dd></dl>
 <p>Projects both rectangles onto the axis and compares the min/max intervals. Returns true if (maxA &lt; minB) || (maxB &lt; minA). </p>
 
-<p class="definition">Definition at line <a class="el" href="CollisionWorld_8cpp_source.html#l00181">181</a> of file <a class="el" href="CollisionWorld_8cpp_source.html">CollisionWorld.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  184</span>{</div>
-<div class="line"><span class="lineno">  185</span>    <span class="keywordtype">float</span> minA, maxA, minB, maxB;</div>
-<div class="line"><span class="lineno">  186</span> </div>
-<div class="line"><span class="lineno">  187</span>    <a class="code hl_function" href="classrtype_1_1ecs_1_1CollisionWorld.html#a8fe4e03af19e98be54e0d49f5c2b9b49">projectOnAxis</a>(hb1, ax, ay, minA, maxA);</div>
-<div class="line"><span class="lineno">  188</span>    <a class="code hl_function" href="classrtype_1_1ecs_1_1CollisionWorld.html#a8fe4e03af19e98be54e0d49f5c2b9b49">projectOnAxis</a>(hb2, ax, ay, minB, maxB);</div>
-<div class="line"><span class="lineno">  189</span>    <span class="keywordflow">return</span> (maxA &lt; minB) || (maxB &lt; minA);</div>
-<div class="line"><span class="lineno">  190</span>}</div>
-<div class="ttc" id="aclassrtype_1_1ecs_1_1CollisionWorld_html_a8fe4e03af19e98be54e0d49f5c2b9b49"><div class="ttname"><a href="classrtype_1_1ecs_1_1CollisionWorld.html#a8fe4e03af19e98be54e0d49f5c2b9b49">rtype::ecs::CollisionWorld::projectOnAxis</a></div><div class="ttdeci">void projectOnAxis(const std::array&lt; std::pair&lt; float, float &gt;, 4 &gt; &amp;corners, float ax, float ay, float &amp;outMin, float &amp;outMax)</div><div class="ttdoc">Project corner points onto a normalized axis and return the min/max scalar projections.</div><div class="ttdef"><b>Definition</b> <a href="CollisionWorld_8cpp_source.html#l00241">CollisionWorld.cpp:241</a></div></div>
+<p class="definition">Definition at line <a class="el" href="CollisionWorld_8cpp_source.html#l00183">183</a> of file <a class="el" href="CollisionWorld_8cpp_source.html">CollisionWorld.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  186</span>{</div>
+<div class="line"><span class="lineno">  187</span>    <span class="keywordtype">float</span> minA, maxA, minB, maxB;</div>
+<div class="line"><span class="lineno">  188</span> </div>
+<div class="line"><span class="lineno">  189</span>    <a class="code hl_function" href="classrtype_1_1ecs_1_1CollisionWorld.html#a8fe4e03af19e98be54e0d49f5c2b9b49">projectOnAxis</a>(hb1, ax, ay, minA, maxA);</div>
+<div class="line"><span class="lineno">  190</span>    <a class="code hl_function" href="classrtype_1_1ecs_1_1CollisionWorld.html#a8fe4e03af19e98be54e0d49f5c2b9b49">projectOnAxis</a>(hb2, ax, ay, minB, maxB);</div>
+<div class="line"><span class="lineno">  191</span>    <span class="keywordflow">return</span> (maxA &lt; minB) || (maxB &lt; minA);</div>
+<div class="line"><span class="lineno">  192</span>}</div>
+<div class="ttc" id="aclassrtype_1_1ecs_1_1CollisionWorld_html_a8fe4e03af19e98be54e0d49f5c2b9b49"><div class="ttname"><a href="classrtype_1_1ecs_1_1CollisionWorld.html#a8fe4e03af19e98be54e0d49f5c2b9b49">rtype::ecs::CollisionWorld::projectOnAxis</a></div><div class="ttdeci">void projectOnAxis(const std::array&lt; std::pair&lt; float, float &gt;, 4 &gt; &amp;corners, float ax, float ay, float &amp;outMin, float &amp;outMax)</div><div class="ttdoc">Project corner points onto a normalized axis and return the min/max scalar projections.</div><div class="ttdef"><b>Definition</b> <a href="CollisionWorld_8cpp_source.html#l00243">CollisionWorld.cpp:243</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1199,20 +1216,20 @@ Private Attributes</h2></td></tr>
 </dl>
 <p>Scalar projection = x*ax + y*ay. Used by SAT separation checks. </p>
 
-<p class="definition">Definition at line <a class="el" href="CollisionWorld_8cpp_source.html#l00241">241</a> of file <a class="el" href="CollisionWorld_8cpp_source.html">CollisionWorld.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  244</span>{</div>
-<div class="line"><span class="lineno">  245</span>    outMin = corners[0].first * ax + corners[0].second * ay;</div>
-<div class="line"><span class="lineno">  246</span>    outMax = outMin;</div>
-<div class="line"><span class="lineno">  247</span> </div>
-<div class="line"><span class="lineno">  248</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 1; i &lt; 4; ++i) {</div>
-<div class="line"><span class="lineno">  249</span>        <span class="keyword">const</span> <span class="keywordtype">float</span> tmp = corners[i].first * ax + corners[i].second * ay;</div>
-<div class="line"><span class="lineno">  250</span> </div>
-<div class="line"><span class="lineno">  251</span>        <span class="keywordflow">if</span> (tmp &lt; outMin)</div>
-<div class="line"><span class="lineno">  252</span>            outMin = tmp;</div>
-<div class="line"><span class="lineno">  253</span>        <span class="keywordflow">if</span> (tmp &gt; outMax)</div>
-<div class="line"><span class="lineno">  254</span>            outMax = tmp;</div>
-<div class="line"><span class="lineno">  255</span>    }</div>
-<div class="line"><span class="lineno">  256</span>}</div>
+<p class="definition">Definition at line <a class="el" href="CollisionWorld_8cpp_source.html#l00243">243</a> of file <a class="el" href="CollisionWorld_8cpp_source.html">CollisionWorld.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  246</span>{</div>
+<div class="line"><span class="lineno">  247</span>    outMin = corners[0].first * ax + corners[0].second * ay;</div>
+<div class="line"><span class="lineno">  248</span>    outMax = outMin;</div>
+<div class="line"><span class="lineno">  249</span> </div>
+<div class="line"><span class="lineno">  250</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 1; i &lt; 4; ++i) {</div>
+<div class="line"><span class="lineno">  251</span>        <span class="keyword">const</span> <span class="keywordtype">float</span> tmp = corners[i].first * ax + corners[i].second * ay;</div>
+<div class="line"><span class="lineno">  252</span> </div>
+<div class="line"><span class="lineno">  253</span>        <span class="keywordflow">if</span> (tmp &lt; outMin)</div>
+<div class="line"><span class="lineno">  254</span>            outMin = tmp;</div>
+<div class="line"><span class="lineno">  255</span>        <span class="keywordflow">if</span> (tmp &gt; outMax)</div>
+<div class="line"><span class="lineno">  256</span>            outMax = tmp;</div>
+<div class="line"><span class="lineno">  257</span>    }</div>
+<div class="line"><span class="lineno">  258</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>

@@ -178,26 +178,26 @@ Functions</h2></td></tr>
 <p>Flush contiguous buffered packets starting at expected_sequence. </p>
 <p>The function will call enqueue_fn for every flushed packet. Caller must hold _peer_mutex while modifying state. </p>
 
-<p class="definition">Definition at line <a class="el" href="Protocol_8cpp_source.html#l00508">508</a> of file <a class="el" href="Protocol_8cpp_source.html">Protocol.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  510</span>{</div>
-<div class="line"><span class="lineno">  511</span>    <span class="keywordflow">while</span> (<span class="keyword">true</span>) {</div>
-<div class="line"><span class="lineno">  512</span>        <span class="keyword">auto</span> itbuf = state.<a class="code hl_variable" href="namespaceprotocol.html#ab30fc255672f83a9b479daf5063f4541">buffered</a>.find(state.<a class="code hl_variable" href="namespaceprotocol.html#aed2ba8bd6776c390c5a42cee070bc0ac">expected_sequence</a>);</div>
-<div class="line"><span class="lineno">  513</span>        <span class="keywordflow">if</span> (itbuf == state.<a class="code hl_variable" href="namespaceprotocol.html#ab30fc255672f83a9b479daf5063f4541">buffered</a>.end())</div>
-<div class="line"><span class="lineno">  514</span>            <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">  515</span> </div>
-<div class="line"><span class="lineno">  516</span>        enqueue_fn(std::move(itbuf-&gt;second.first));</div>
-<div class="line"><span class="lineno">  517</span>        state.<a class="code hl_variable" href="namespaceprotocol.html#ab30fc255672f83a9b479daf5063f4541">buffered</a>.erase(itbuf);</div>
-<div class="line"><span class="lineno">  518</span>        state.<a class="code hl_variable" href="namespaceprotocol.html#aed2ba8bd6776c390c5a42cee070bc0ac">expected_sequence</a>++;</div>
-<div class="line"><span class="lineno">  519</span>        state.<a class="code hl_variable" href="namespaceprotocol.html#a271f6ca0bd44bb1beb832c896eb13e15">waiting_since</a> = std::chrono::steady_clock::now();</div>
-<div class="line"><span class="lineno">  520</span>    }</div>
-<div class="line"><span class="lineno">  521</span>}</div>
+<p class="definition">Definition at line <a class="el" href="Protocol_8cpp_source.html#l00523">523</a> of file <a class="el" href="Protocol_8cpp_source.html">Protocol.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  525</span>{</div>
+<div class="line"><span class="lineno">  526</span>    <span class="keywordflow">while</span> (<span class="keyword">true</span>) {</div>
+<div class="line"><span class="lineno">  527</span>        <span class="keyword">auto</span> itbuf = state.<a class="code hl_variable" href="namespaceprotocol.html#ab30fc255672f83a9b479daf5063f4541">buffered</a>.find(state.<a class="code hl_variable" href="namespaceprotocol.html#aed2ba8bd6776c390c5a42cee070bc0ac">expected_sequence</a>);</div>
+<div class="line"><span class="lineno">  528</span>        <span class="keywordflow">if</span> (itbuf == state.<a class="code hl_variable" href="namespaceprotocol.html#ab30fc255672f83a9b479daf5063f4541">buffered</a>.end())</div>
+<div class="line"><span class="lineno">  529</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  530</span> </div>
+<div class="line"><span class="lineno">  531</span>        enqueue_fn(std::move(itbuf-&gt;second.first));</div>
+<div class="line"><span class="lineno">  532</span>        state.<a class="code hl_variable" href="namespaceprotocol.html#ab30fc255672f83a9b479daf5063f4541">buffered</a>.erase(itbuf);</div>
+<div class="line"><span class="lineno">  533</span>        state.<a class="code hl_variable" href="namespaceprotocol.html#aed2ba8bd6776c390c5a42cee070bc0ac">expected_sequence</a>++;</div>
+<div class="line"><span class="lineno">  534</span>        state.<a class="code hl_variable" href="namespaceprotocol.html#a271f6ca0bd44bb1beb832c896eb13e15">waiting_since</a> = std::chrono::steady_clock::now();</div>
+<div class="line"><span class="lineno">  535</span>    }</div>
+<div class="line"><span class="lineno">  536</span>}</div>
 <div class="ttc" id="anamespaceprotocol_html_a271f6ca0bd44bb1beb832c896eb13e15"><div class="ttname"><a href="namespaceprotocol.html#a271f6ca0bd44bb1beb832c896eb13e15">protocol::peer_receive_state_t::waiting_since</a></div><div class="ttdeci">steady_timepoint waiting_since</div><div class="ttdoc">when we started waiting</div><div class="ttdef"><b>Definition</b> <a href="ProtocolTypes_8hpp_source.html#l00169">ProtocolTypes.hpp:169</a></div></div>
 <div class="ttc" id="anamespaceprotocol_html_ab30fc255672f83a9b479daf5063f4541"><div class="ttname"><a href="namespaceprotocol.html#ab30fc255672f83a9b479daf5063f4541">protocol::peer_receive_state_t::buffered</a></div><div class="ttdeci">std::map&lt; uint32_t, std::pair&lt; packet_t, steady_timepoint &gt; &gt; buffered</div><div class="ttdoc">out-of-order buffer</div><div class="ttdef"><b>Definition</b> <a href="ProtocolTypes_8hpp_source.html#l00168">ProtocolTypes.hpp:168</a></div></div>
 <div class="ttc" id="anamespaceprotocol_html_aed2ba8bd6776c390c5a42cee070bc0ac"><div class="ttname"><a href="namespaceprotocol.html#aed2ba8bd6776c390c5a42cee070bc0ac">protocol::peer_receive_state_t::expected_sequence</a></div><div class="ttdeci">uint32_t expected_sequence</div><div class="ttdoc">next expected sequence for RELIABLE_ORDERED</div><div class="ttdef"><b>Definition</b> <a href="ProtocolTypes_8hpp_source.html#l00167">ProtocolTypes.hpp:167</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="ProtocolTypes_8hpp_source.html#l00168">protocol::peer_receive_state_t::buffered</a>, <a class="el" href="ProtocolTypes_8hpp_source.html#l00167">protocol::peer_receive_state_t::expected_sequence</a>, and <a class="el" href="ProtocolTypes_8hpp_source.html#l00169">protocol::peer_receive_state_t::waiting_since</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="Protocol_8cpp_source.html#l00536">handle_ordered_delivery()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="Protocol_8cpp_source.html#l00551">handle_ordered_delivery()</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
@@ -271,58 +271,58 @@ Functions</h2></td></tr>
 <li>advances expected_sequence after a long wait (application-driven progress) </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="Protocol_8cpp_source.html#l00536">536</a> of file <a class="el" href="Protocol_8cpp_source.html">Protocol.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  539</span>{</div>
-<div class="line"><span class="lineno">  540</span>    uint32_t seq = packet.<a class="code hl_variable" href="namespaceprotocol.html#ad619a28d2ad425b93f5b98f0ef6c87c5">header</a>.<a class="code hl_variable" href="namespaceprotocol.html#ac5fb8cec44b925bb812259aff71544d8">sequence</a>;</div>
-<div class="line"><span class="lineno">  541</span> </div>
-<div class="line"><span class="lineno">  542</span>    <span class="keywordflow">if</span> (seq == state.<a class="code hl_variable" href="namespaceprotocol.html#aed2ba8bd6776c390c5a42cee070bc0ac">expected_sequence</a>) {</div>
-<div class="line"><span class="lineno">  543</span>        enqueue_fn(std::move(packet));</div>
-<div class="line"><span class="lineno">  544</span>        state.<a class="code hl_variable" href="namespaceprotocol.html#aed2ba8bd6776c390c5a42cee070bc0ac">expected_sequence</a>++;</div>
-<div class="line"><span class="lineno">  545</span>        state.<a class="code hl_variable" href="namespaceprotocol.html#a271f6ca0bd44bb1beb832c896eb13e15">waiting_since</a> = now;</div>
-<div class="line"><span class="lineno">  546</span>        <a class="code hl_function" href="Protocol_8cpp.html#a055f77a563e0c71065726449228d1d99">flush_buffered_contiguous</a>(state, enqueue_fn);</div>
-<div class="line"><span class="lineno">  547</span>        <span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno">  548</span>    }</div>
-<div class="line"><span class="lineno">  549</span> </div>
-<div class="line"><span class="lineno">  550</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="namespaceprotocol_1_1utils.html#aced25561098b88bc01dcf9961d62c57d">protocol::utils::is_seq_newer</a>(seq, state.<a class="code hl_variable" href="namespaceprotocol.html#aed2ba8bd6776c390c5a42cee070bc0ac">expected_sequence</a>)) {</div>
-<div class="line"><span class="lineno">  551</span>        state.<a class="code hl_variable" href="namespaceprotocol.html#ab30fc255672f83a9b479daf5063f4541">buffered</a>.emplace(seq, std::make_pair(std::move(packet), now));</div>
-<div class="line"><span class="lineno">  552</span>        <span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno">  553</span>    }</div>
-<div class="line"><span class="lineno">  554</span> </div>
-<div class="line"><span class="lineno">  555</span>    <span class="keyword">auto</span> waited_ms = std::chrono::duration_cast&lt;std::chrono::milliseconds&gt;(now - state.<a class="code hl_variable" href="namespaceprotocol.html#a271f6ca0bd44bb1beb832c896eb13e15">waiting_since</a>).count();</div>
-<div class="line"><span class="lineno">  556</span>    <span class="keywordflow">if</span> (waited_ms &gt;= <span class="keyword">static_cast&lt;</span>int64_t<span class="keyword">&gt;</span>(<a class="code hl_variable" href="namespaceprotocol.html#a0ab661cbf6acefbae0803f66ab067a1e">protocol::RESEND_MS_INTERVAL</a>) * 10) {</div>
-<div class="line"><span class="lineno">  557</span>        <span class="keywordflow">if</span> (!state.<a class="code hl_variable" href="namespaceprotocol.html#ab30fc255672f83a9b479daf5063f4541">buffered</a>.empty()) {</div>
-<div class="line"><span class="lineno">  558</span>            uint32_t lowest = state.<a class="code hl_variable" href="namespaceprotocol.html#ab30fc255672f83a9b479daf5063f4541">buffered</a>.begin()-&gt;first;</div>
-<div class="line"><span class="lineno">  559</span> </div>
-<div class="line"><span class="lineno">  560</span>            <span class="keywordflow">if</span> (lowest &gt; state.<a class="code hl_variable" href="namespaceprotocol.html#aed2ba8bd6776c390c5a42cee070bc0ac">expected_sequence</a>) {</div>
-<div class="line"><span class="lineno">  561</span>                state.<a class="code hl_variable" href="namespaceprotocol.html#aed2ba8bd6776c390c5a42cee070bc0ac">expected_sequence</a> = lowest;</div>
-<div class="line"><span class="lineno">  562</span>            } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">  563</span>                state.<a class="code hl_variable" href="namespaceprotocol.html#aed2ba8bd6776c390c5a42cee070bc0ac">expected_sequence</a>++;</div>
-<div class="line"><span class="lineno">  564</span>            }</div>
-<div class="line"><span class="lineno">  565</span>            <a class="code hl_function" href="Protocol_8cpp.html#a055f77a563e0c71065726449228d1d99">flush_buffered_contiguous</a>(state, enqueue_fn);</div>
-<div class="line"><span class="lineno">  566</span>        } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">  567</span>            state.<a class="code hl_variable" href="namespaceprotocol.html#aed2ba8bd6776c390c5a42cee070bc0ac">expected_sequence</a>++;</div>
-<div class="line"><span class="lineno">  568</span>        }</div>
-<div class="line"><span class="lineno">  569</span>        state.<a class="code hl_variable" href="namespaceprotocol.html#a271f6ca0bd44bb1beb832c896eb13e15">waiting_since</a> = now;</div>
-<div class="line"><span class="lineno">  570</span>    }</div>
-<div class="line"><span class="lineno">  571</span> </div>
-<div class="line"><span class="lineno">  572</span>    <span class="keyword">auto</span> expire_threshold = now - std::chrono::milliseconds(<span class="keyword">static_cast&lt;</span>int64_t<span class="keyword">&gt;</span>(<a class="code hl_variable" href="namespaceprotocol.html#a0ab661cbf6acefbae0803f66ab067a1e">protocol::RESEND_MS_INTERVAL</a>) * 100);</div>
-<div class="line"><span class="lineno">  573</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> it = state.<a class="code hl_variable" href="namespaceprotocol.html#ab30fc255672f83a9b479daf5063f4541">buffered</a>.begin(); it != state.<a class="code hl_variable" href="namespaceprotocol.html#ab30fc255672f83a9b479daf5063f4541">buffered</a>.end(); ) {</div>
-<div class="line"><span class="lineno">  574</span>        <span class="keywordflow">if</span> (it-&gt;second.second &lt; expire_threshold) {</div>
-<div class="line"><span class="lineno">  575</span>            it = state.<a class="code hl_variable" href="namespaceprotocol.html#ab30fc255672f83a9b479daf5063f4541">buffered</a>.erase(it);</div>
-<div class="line"><span class="lineno">  576</span>        } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">  577</span>            ++it;</div>
-<div class="line"><span class="lineno">  578</span>        }</div>
-<div class="line"><span class="lineno">  579</span>    }</div>
-<div class="line"><span class="lineno">  580</span>}</div>
-<div class="ttc" id="aProtocol_8cpp_html_a055f77a563e0c71065726449228d1d99"><div class="ttname"><a href="Protocol_8cpp.html#a055f77a563e0c71065726449228d1d99">flush_buffered_contiguous</a></div><div class="ttdeci">void flush_buffered_contiguous(protocol::peer_receive_state_t &amp;state, const std::function&lt; void(protocol::packet_t &amp;&amp;)&gt; &amp;enqueue_fn) noexcept</div><div class="ttdoc">Flush contiguous buffered packets starting at expected_sequence.</div><div class="ttdef"><b>Definition</b> <a href="Protocol_8cpp_source.html#l00508">Protocol.cpp:508</a></div></div>
+<p class="definition">Definition at line <a class="el" href="Protocol_8cpp_source.html#l00551">551</a> of file <a class="el" href="Protocol_8cpp_source.html">Protocol.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  554</span>{</div>
+<div class="line"><span class="lineno">  555</span>    uint32_t seq = packet.<a class="code hl_variable" href="namespaceprotocol.html#ad619a28d2ad425b93f5b98f0ef6c87c5">header</a>.<a class="code hl_variable" href="namespaceprotocol.html#ac5fb8cec44b925bb812259aff71544d8">sequence</a>;</div>
+<div class="line"><span class="lineno">  556</span> </div>
+<div class="line"><span class="lineno">  557</span>    <span class="keywordflow">if</span> (seq == state.<a class="code hl_variable" href="namespaceprotocol.html#aed2ba8bd6776c390c5a42cee070bc0ac">expected_sequence</a>) {</div>
+<div class="line"><span class="lineno">  558</span>        enqueue_fn(std::move(packet));</div>
+<div class="line"><span class="lineno">  559</span>        state.<a class="code hl_variable" href="namespaceprotocol.html#aed2ba8bd6776c390c5a42cee070bc0ac">expected_sequence</a>++;</div>
+<div class="line"><span class="lineno">  560</span>        state.<a class="code hl_variable" href="namespaceprotocol.html#a271f6ca0bd44bb1beb832c896eb13e15">waiting_since</a> = now;</div>
+<div class="line"><span class="lineno">  561</span>        <a class="code hl_function" href="Protocol_8cpp.html#a055f77a563e0c71065726449228d1d99">flush_buffered_contiguous</a>(state, enqueue_fn);</div>
+<div class="line"><span class="lineno">  562</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">  563</span>    }</div>
+<div class="line"><span class="lineno">  564</span> </div>
+<div class="line"><span class="lineno">  565</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="namespaceprotocol_1_1utils.html#aced25561098b88bc01dcf9961d62c57d">protocol::utils::is_seq_newer</a>(seq, state.<a class="code hl_variable" href="namespaceprotocol.html#aed2ba8bd6776c390c5a42cee070bc0ac">expected_sequence</a>)) {</div>
+<div class="line"><span class="lineno">  566</span>        state.<a class="code hl_variable" href="namespaceprotocol.html#ab30fc255672f83a9b479daf5063f4541">buffered</a>.emplace(seq, std::make_pair(std::move(packet), now));</div>
+<div class="line"><span class="lineno">  567</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">  568</span>    }</div>
+<div class="line"><span class="lineno">  569</span> </div>
+<div class="line"><span class="lineno">  570</span>    <span class="keyword">auto</span> waited_ms = std::chrono::duration_cast&lt;std::chrono::milliseconds&gt;(now - state.<a class="code hl_variable" href="namespaceprotocol.html#a271f6ca0bd44bb1beb832c896eb13e15">waiting_since</a>).count();</div>
+<div class="line"><span class="lineno">  571</span>    <span class="keywordflow">if</span> (waited_ms &gt;= <span class="keyword">static_cast&lt;</span>int64_t<span class="keyword">&gt;</span>(<a class="code hl_variable" href="namespaceprotocol.html#a0ab661cbf6acefbae0803f66ab067a1e">protocol::RESEND_MS_INTERVAL</a>) * 10) {</div>
+<div class="line"><span class="lineno">  572</span>        <span class="keywordflow">if</span> (!state.<a class="code hl_variable" href="namespaceprotocol.html#ab30fc255672f83a9b479daf5063f4541">buffered</a>.empty()) {</div>
+<div class="line"><span class="lineno">  573</span>            uint32_t lowest = state.<a class="code hl_variable" href="namespaceprotocol.html#ab30fc255672f83a9b479daf5063f4541">buffered</a>.begin()-&gt;first;</div>
+<div class="line"><span class="lineno">  574</span> </div>
+<div class="line"><span class="lineno">  575</span>            <span class="keywordflow">if</span> (lowest &gt; state.<a class="code hl_variable" href="namespaceprotocol.html#aed2ba8bd6776c390c5a42cee070bc0ac">expected_sequence</a>) {</div>
+<div class="line"><span class="lineno">  576</span>                state.<a class="code hl_variable" href="namespaceprotocol.html#aed2ba8bd6776c390c5a42cee070bc0ac">expected_sequence</a> = lowest;</div>
+<div class="line"><span class="lineno">  577</span>            } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  578</span>                state.<a class="code hl_variable" href="namespaceprotocol.html#aed2ba8bd6776c390c5a42cee070bc0ac">expected_sequence</a>++;</div>
+<div class="line"><span class="lineno">  579</span>            }</div>
+<div class="line"><span class="lineno">  580</span>            <a class="code hl_function" href="Protocol_8cpp.html#a055f77a563e0c71065726449228d1d99">flush_buffered_contiguous</a>(state, enqueue_fn);</div>
+<div class="line"><span class="lineno">  581</span>        } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  582</span>            state.<a class="code hl_variable" href="namespaceprotocol.html#aed2ba8bd6776c390c5a42cee070bc0ac">expected_sequence</a>++;</div>
+<div class="line"><span class="lineno">  583</span>        }</div>
+<div class="line"><span class="lineno">  584</span>        state.<a class="code hl_variable" href="namespaceprotocol.html#a271f6ca0bd44bb1beb832c896eb13e15">waiting_since</a> = now;</div>
+<div class="line"><span class="lineno">  585</span>    }</div>
+<div class="line"><span class="lineno">  586</span> </div>
+<div class="line"><span class="lineno">  587</span>    <span class="keyword">auto</span> expire_threshold = now - std::chrono::milliseconds(<span class="keyword">static_cast&lt;</span>int64_t<span class="keyword">&gt;</span>(<a class="code hl_variable" href="namespaceprotocol.html#a0ab661cbf6acefbae0803f66ab067a1e">protocol::RESEND_MS_INTERVAL</a>) * 100);</div>
+<div class="line"><span class="lineno">  588</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> it = state.<a class="code hl_variable" href="namespaceprotocol.html#ab30fc255672f83a9b479daf5063f4541">buffered</a>.begin(); it != state.<a class="code hl_variable" href="namespaceprotocol.html#ab30fc255672f83a9b479daf5063f4541">buffered</a>.end(); ) {</div>
+<div class="line"><span class="lineno">  589</span>        <span class="keywordflow">if</span> (it-&gt;second.second &lt; expire_threshold) {</div>
+<div class="line"><span class="lineno">  590</span>            it = state.<a class="code hl_variable" href="namespaceprotocol.html#ab30fc255672f83a9b479daf5063f4541">buffered</a>.erase(it);</div>
+<div class="line"><span class="lineno">  591</span>        } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  592</span>            ++it;</div>
+<div class="line"><span class="lineno">  593</span>        }</div>
+<div class="line"><span class="lineno">  594</span>    }</div>
+<div class="line"><span class="lineno">  595</span>}</div>
+<div class="ttc" id="aProtocol_8cpp_html_a055f77a563e0c71065726449228d1d99"><div class="ttname"><a href="Protocol_8cpp.html#a055f77a563e0c71065726449228d1d99">flush_buffered_contiguous</a></div><div class="ttdeci">void flush_buffered_contiguous(protocol::peer_receive_state_t &amp;state, const std::function&lt; void(protocol::packet_t &amp;&amp;)&gt; &amp;enqueue_fn) noexcept</div><div class="ttdoc">Flush contiguous buffered packets starting at expected_sequence.</div><div class="ttdef"><b>Definition</b> <a href="Protocol_8cpp_source.html#l00523">Protocol.cpp:523</a></div></div>
 <div class="ttc" id="anamespaceprotocol_1_1utils_html_aced25561098b88bc01dcf9961d62c57d"><div class="ttname"><a href="namespaceprotocol_1_1utils.html#aced25561098b88bc01dcf9961d62c57d">protocol::utils::is_seq_newer</a></div><div class="ttdeci">bool is_seq_newer(uint32_t s1, uint32_t s2) noexcept</div><div class="ttdoc">Helper: compare sequence numbers considering wrap-around.</div><div class="ttdef"><b>Definition</b> <a href="utils_8cpp_source.html#l00037">utils.cpp:37</a></div></div>
 <div class="ttc" id="anamespaceprotocol_html_a0ab661cbf6acefbae0803f66ab067a1e"><div class="ttname"><a href="namespaceprotocol.html#a0ab661cbf6acefbae0803f66ab067a1e">protocol::RESEND_MS_INTERVAL</a></div><div class="ttdeci">static constexpr uint8_t RESEND_MS_INTERVAL</div><div class="ttdoc">packet resend interval (ms)</div><div class="ttdef"><b>Definition</b> <a href="ProtocolTypes_8hpp_source.html#l00151">ProtocolTypes.hpp:151</a></div></div>
 <div class="ttc" id="anamespaceprotocol_html_ac5fb8cec44b925bb812259aff71544d8"><div class="ttname"><a href="namespaceprotocol.html#ac5fb8cec44b925bb812259aff71544d8">protocol::packet_header_t::sequence</a></div><div class="ttdeci">uint32_t sequence</div><div class="ttdoc">sender sequence number</div><div class="ttdef"><b>Definition</b> <a href="ProtocolTypes_8hpp_source.html#l00106">ProtocolTypes.hpp:106</a></div></div>
 <div class="ttc" id="anamespaceprotocol_html_ad619a28d2ad425b93f5b98f0ef6c87c5"><div class="ttname"><a href="namespaceprotocol.html#ad619a28d2ad425b93f5b98f0ef6c87c5">protocol::packet_t::header</a></div><div class="ttdeci">packet_header_t header</div><div class="ttdoc">parsed header (implementation may convert endianness)</div><div class="ttdef"><b>Definition</b> <a href="ProtocolTypes_8hpp_source.html#l00142">ProtocolTypes.hpp:142</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="ProtocolTypes_8hpp_source.html#l00168">protocol::peer_receive_state_t::buffered</a>, <a class="el" href="ProtocolTypes_8hpp_source.html#l00167">protocol::peer_receive_state_t::expected_sequence</a>, <a class="el" href="Protocol_8cpp_source.html#l00508">flush_buffered_contiguous()</a>, <a class="el" href="utils_8cpp_source.html#l00037">protocol::utils::is_seq_newer()</a>, <a class="el" href="ProtocolTypes_8hpp_source.html#l00151">protocol::RESEND_MS_INTERVAL</a>, and <a class="el" href="ProtocolTypes_8hpp_source.html#l00169">protocol::peer_receive_state_t::waiting_since</a>.</p>
+<p class="reference">References <a class="el" href="ProtocolTypes_8hpp_source.html#l00168">protocol::peer_receive_state_t::buffered</a>, <a class="el" href="ProtocolTypes_8hpp_source.html#l00167">protocol::peer_receive_state_t::expected_sequence</a>, <a class="el" href="Protocol_8cpp_source.html#l00523">flush_buffered_contiguous()</a>, <a class="el" href="utils_8cpp_source.html#l00037">protocol::utils::is_seq_newer()</a>, <a class="el" href="ProtocolTypes_8hpp_source.html#l00151">protocol::RESEND_MS_INTERVAL</a>, and <a class="el" href="ProtocolTypes_8hpp_source.html#l00169">protocol::peer_receive_state_t::waiting_since</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="Protocol_8cpp_source.html#l00582">protocol::Protocol::handle_receive()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="Protocol_8cpp_source.html#l00597">protocol::Protocol::handle_receive()</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -471,36 +471,36 @@ Functions</h2></td></tr>
 
 <p>Update the peer ack window (last_received / ack_bits) for piggybacking. </p>
 
-<p class="definition">Definition at line <a class="el" href="Protocol_8cpp_source.html#l00473">473</a> of file <a class="el" href="Protocol_8cpp_source.html">Protocol.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  475</span>{</div>
-<div class="line"><span class="lineno">  476</span>    <span class="keywordflow">if</span> (state.<a class="code hl_variable" href="namespaceprotocol.html#a2c16aee3b536f07499c8f383d46239c3">last_received</a> == 0u) {</div>
-<div class="line"><span class="lineno">  477</span>        state.<a class="code hl_variable" href="namespaceprotocol.html#a2c16aee3b536f07499c8f383d46239c3">last_received</a> = seq;</div>
-<div class="line"><span class="lineno">  478</span>        state.<a class="code hl_variable" href="namespaceprotocol.html#aef6841bbc34c2e4991a0cca7e2effad5">ack_bits</a> = 0u;</div>
-<div class="line"><span class="lineno">  479</span>        <span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno">  480</span>    }</div>
-<div class="line"><span class="lineno">  481</span> </div>
-<div class="line"><span class="lineno">  482</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="namespaceprotocol_1_1utils.html#aced25561098b88bc01dcf9961d62c57d">protocol::utils::is_seq_newer</a>(seq, state.<a class="code hl_variable" href="namespaceprotocol.html#a2c16aee3b536f07499c8f383d46239c3">last_received</a>)) {</div>
-<div class="line"><span class="lineno">  483</span>        uint32_t diff = seq - state.<a class="code hl_variable" href="namespaceprotocol.html#a2c16aee3b536f07499c8f383d46239c3">last_received</a>;</div>
-<div class="line"><span class="lineno">  484</span> </div>
-<div class="line"><span class="lineno">  485</span>        <span class="keywordflow">if</span> (diff &gt;= 32u) {</div>
-<div class="line"><span class="lineno">  486</span>            state.<a class="code hl_variable" href="namespaceprotocol.html#aef6841bbc34c2e4991a0cca7e2effad5">ack_bits</a> = 0u;</div>
-<div class="line"><span class="lineno">  487</span>        } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">  488</span>            <span class="comment">// shift left by diff, set the bit for seq-1</span></div>
-<div class="line"><span class="lineno">  489</span>            state.<a class="code hl_variable" href="namespaceprotocol.html#aef6841bbc34c2e4991a0cca7e2effad5">ack_bits</a> = (state.<a class="code hl_variable" href="namespaceprotocol.html#aef6841bbc34c2e4991a0cca7e2effad5">ack_bits</a> &lt;&lt; diff) | ((diff &gt;= 1) ? (1u &lt;&lt; (diff - 1)) : 0u);</div>
-<div class="line"><span class="lineno">  490</span>        }</div>
-<div class="line"><span class="lineno">  491</span>        state.<a class="code hl_variable" href="namespaceprotocol.html#a2c16aee3b536f07499c8f383d46239c3">last_received</a> = seq;</div>
-<div class="line"><span class="lineno">  492</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">  493</span>        uint32_t dist = state.<a class="code hl_variable" href="namespaceprotocol.html#a2c16aee3b536f07499c8f383d46239c3">last_received</a> - seq;</div>
-<div class="line"><span class="lineno">  494</span> </div>
-<div class="line"><span class="lineno">  495</span>        <span class="keywordflow">if</span> (dist &gt;= 1 &amp;&amp; dist &lt;= 32) {</div>
-<div class="line"><span class="lineno">  496</span>            state.<a class="code hl_variable" href="namespaceprotocol.html#aef6841bbc34c2e4991a0cca7e2effad5">ack_bits</a> |= (1u &lt;&lt; (dist - 1));</div>
-<div class="line"><span class="lineno">  497</span>        }</div>
-<div class="line"><span class="lineno">  498</span>    }</div>
-<div class="line"><span class="lineno">  499</span>}</div>
+<p class="definition">Definition at line <a class="el" href="Protocol_8cpp_source.html#l00488">488</a> of file <a class="el" href="Protocol_8cpp_source.html">Protocol.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  490</span>{</div>
+<div class="line"><span class="lineno">  491</span>    <span class="keywordflow">if</span> (state.<a class="code hl_variable" href="namespaceprotocol.html#a2c16aee3b536f07499c8f383d46239c3">last_received</a> == 0u) {</div>
+<div class="line"><span class="lineno">  492</span>        state.<a class="code hl_variable" href="namespaceprotocol.html#a2c16aee3b536f07499c8f383d46239c3">last_received</a> = seq;</div>
+<div class="line"><span class="lineno">  493</span>        state.<a class="code hl_variable" href="namespaceprotocol.html#aef6841bbc34c2e4991a0cca7e2effad5">ack_bits</a> = 0u;</div>
+<div class="line"><span class="lineno">  494</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">  495</span>    }</div>
+<div class="line"><span class="lineno">  496</span> </div>
+<div class="line"><span class="lineno">  497</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="namespaceprotocol_1_1utils.html#aced25561098b88bc01dcf9961d62c57d">protocol::utils::is_seq_newer</a>(seq, state.<a class="code hl_variable" href="namespaceprotocol.html#a2c16aee3b536f07499c8f383d46239c3">last_received</a>)) {</div>
+<div class="line"><span class="lineno">  498</span>        uint32_t diff = seq - state.<a class="code hl_variable" href="namespaceprotocol.html#a2c16aee3b536f07499c8f383d46239c3">last_received</a>;</div>
+<div class="line"><span class="lineno">  499</span> </div>
+<div class="line"><span class="lineno">  500</span>        <span class="keywordflow">if</span> (diff &gt;= 32u) {</div>
+<div class="line"><span class="lineno">  501</span>            state.<a class="code hl_variable" href="namespaceprotocol.html#aef6841bbc34c2e4991a0cca7e2effad5">ack_bits</a> = 0u;</div>
+<div class="line"><span class="lineno">  502</span>        } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  503</span>            <span class="comment">// shift left by diff, set the bit for seq-1</span></div>
+<div class="line"><span class="lineno">  504</span>            state.<a class="code hl_variable" href="namespaceprotocol.html#aef6841bbc34c2e4991a0cca7e2effad5">ack_bits</a> = (state.<a class="code hl_variable" href="namespaceprotocol.html#aef6841bbc34c2e4991a0cca7e2effad5">ack_bits</a> &lt;&lt; diff) | ((diff &gt;= 1) ? (1u &lt;&lt; (diff - 1)) : 0u);</div>
+<div class="line"><span class="lineno">  505</span>        }</div>
+<div class="line"><span class="lineno">  506</span>        state.<a class="code hl_variable" href="namespaceprotocol.html#a2c16aee3b536f07499c8f383d46239c3">last_received</a> = seq;</div>
+<div class="line"><span class="lineno">  507</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  508</span>        uint32_t dist = state.<a class="code hl_variable" href="namespaceprotocol.html#a2c16aee3b536f07499c8f383d46239c3">last_received</a> - seq;</div>
+<div class="line"><span class="lineno">  509</span> </div>
+<div class="line"><span class="lineno">  510</span>        <span class="keywordflow">if</span> (dist &gt;= 1 &amp;&amp; dist &lt;= 32) {</div>
+<div class="line"><span class="lineno">  511</span>            state.<a class="code hl_variable" href="namespaceprotocol.html#aef6841bbc34c2e4991a0cca7e2effad5">ack_bits</a> |= (1u &lt;&lt; (dist - 1));</div>
+<div class="line"><span class="lineno">  512</span>        }</div>
+<div class="line"><span class="lineno">  513</span>    }</div>
+<div class="line"><span class="lineno">  514</span>}</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="utils_8cpp_source.html#l00037">protocol::utils::is_seq_newer()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="Protocol_8cpp_source.html#l00582">protocol::Protocol::handle_receive()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="Protocol_8cpp_source.html#l00597">protocol::Protocol::handle_receive()</a>.</p>
 <div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-6-summary" class="dynsummary" style="display:block;">

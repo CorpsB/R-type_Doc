@@ -100,7 +100,6 @@ $(document).ready(function(){initNavTree('classrtype_1_1client_1_1SceneManager.h
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pri-types">Private Types</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classrtype_1_1client_1_1SceneManager-members.html">List of all members</a>  </div>
@@ -117,7 +116,7 @@ $(document).ready(function(){initNavTree('classrtype_1_1client_1_1SceneManager.h
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classrtype_1_1client_1_1SceneManager__coll__graph.svg" width="280" height="296"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classrtype_1_1client_1_1SceneManager__coll__graph.svg" width="272" height="296"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
@@ -128,6 +127,8 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:ad40ed882bc75c6df69b62bf836fd7525" id="r_ad40ed882bc75c6df69b62bf836fd7525"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtype_1_1client_1_1SceneManager.html#ad40ed882bc75c6df69b62bf836fd7525">SceneManager</a> ()</td></tr>
+<tr class="separator:ad40ed882bc75c6df69b62bf836fd7525"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a336dad2b26d76e1c33f8379884021943" id="r_a336dad2b26d76e1c33f8379884021943"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtype_1_1client_1_1SceneManager.html#a336dad2b26d76e1c33f8379884021943">push</a> (<a class="el" href="namespacertype_1_1client.html#a49afbe5e5776f0287ed2896d5dfa8c1b">ScenePtr</a> scene)</td></tr>
 <tr class="memdesc:a336dad2b26d76e1c33f8379884021943"><td class="mdescLeft">&#160;</td><td class="mdescRight">Queues a new scene to be pushed on top of the stack.  <br /></td></tr>
 <tr class="separator:a336dad2b26d76e1c33f8379884021943"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -161,12 +162,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a23f960a481df6b1cdbcf623dab9069fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a string representation of the current stack.  <br /></td></tr>
 <tr class="separator:a23f960a481df6b1cdbcf623dab9069fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:afc7394d405bebecce3a60d10e3d4fea2" id="r_afc7394d405bebecce3a60d10e3d4fea2"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classrtype_1_1client_1_1SceneManager.html">SceneManager</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtype_1_1client_1_1SceneManager.html#afc7394d405bebecce3a60d10e3d4fea2">getInstance</a> ()</td></tr>
-<tr class="memdesc:afc7394d405bebecce3a60d10e3d4fea2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the global singleton instance.  <br /></td></tr>
-<tr class="separator:afc7394d405bebecce3a60d10e3d4fea2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-types" name="pri-types"></a>
 Private Types</h2></td></tr>
 <tr class="memitem:aac2608885cc04b2ef126ee7fc1d1a757" id="r_aac2608885cc04b2ef126ee7fc1d1a757"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtype_1_1client_1_1SceneManager.html#aac2608885cc04b2ef126ee7fc1d1a757">OpType</a> { <a class="el" href="classrtype_1_1client_1_1SceneManager.html#aac2608885cc04b2ef126ee7fc1d1a757a6adf97f83acf6453d4a6a4b1070f3754">None</a>
@@ -189,13 +184,12 @@ Private Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Manages and orchestrates a stack of active scenes. </p>
 <p>The <a class="el" href="classrtype_1_1client_1_1SceneManager.html" title="Manages and orchestrates a stack of active scenes.">SceneManager</a> acts as the core control unit for the client-side scene system. Scenes are owned via unique pointers, ensuring safe and deterministic destruction order. Transitions (push, pop, replace) are deferred to prevent mid-frame modifications.</p>
-<p>Example usage: </p><div class="fragment"><div class="line"><span class="keyword">auto</span> &amp;sceneManager = <a class="code hl_function" href="classrtype_1_1client_1_1SceneManager.html#afc7394d405bebecce3a60d10e3d4fea2">rtype::client::SceneManager::getInstance</a>();</div>
+<p>Example usage: </p><div class="fragment"><div class="line"><span class="keyword">auto</span> &amp;sceneManager = rtype::client::SceneManager::getInstance();</div>
 <div class="line">sceneManager.pushNew&lt;<a class="code hl_class" href="classrtype_1_1client_1_1MainMenuScene.html">MainMenuScene</a>&gt;();</div>
 <div class="line">sceneManager.<a class="code hl_function" href="classrtype_1_1client_1_1MainMenuScene.html#a8edc552298769da89f61dadf0eef88e2">update</a>(dt);</div>
 <div class="line">sceneManager.draw();</div>
-<div class="ttc" id="aclassrtype_1_1client_1_1MainMenuScene_html"><div class="ttname"><a href="classrtype_1_1client_1_1MainMenuScene.html">rtype::client::MainMenuScene</a></div><div class="ttdoc">Represents the primary interactive menu displayed at application startup.</div><div class="ttdef"><b>Definition</b> <a href="MainMenuScene_8hpp_source.html#l00068">MainMenuScene.hpp:68</a></div></div>
-<div class="ttc" id="aclassrtype_1_1client_1_1MainMenuScene_html_a8edc552298769da89f61dadf0eef88e2"><div class="ttname"><a href="classrtype_1_1client_1_1MainMenuScene.html#a8edc552298769da89f61dadf0eef88e2">rtype::client::MainMenuScene::update</a></div><div class="ttdeci">void update(SceneManager &amp;manager, float dt) override</div><div class="ttdoc">Updates the menu’s state and handles navigation input.</div><div class="ttdef"><b>Definition</b> <a href="MainMenuScene_8cpp_source.html#l00061">MainMenuScene.cpp:61</a></div></div>
-<div class="ttc" id="aclassrtype_1_1client_1_1SceneManager_html_afc7394d405bebecce3a60d10e3d4fea2"><div class="ttname"><a href="classrtype_1_1client_1_1SceneManager.html#afc7394d405bebecce3a60d10e3d4fea2">rtype::client::SceneManager::getInstance</a></div><div class="ttdeci">static SceneManager &amp; getInstance()</div><div class="ttdoc">Retrieves the global singleton instance.</div><div class="ttdef"><b>Definition</b> <a href="SceneManager_8cpp_source.html#l00035">SceneManager.cpp:35</a></div></div>
+<div class="ttc" id="aclassrtype_1_1client_1_1MainMenuScene_html"><div class="ttname"><a href="classrtype_1_1client_1_1MainMenuScene.html">rtype::client::MainMenuScene</a></div><div class="ttdef"><b>Definition</b> <a href="MainMenuScene_8hpp_source.html#l00028">MainMenuScene.hpp:28</a></div></div>
+<div class="ttc" id="aclassrtype_1_1client_1_1MainMenuScene_html_a8edc552298769da89f61dadf0eef88e2"><div class="ttname"><a href="classrtype_1_1client_1_1MainMenuScene.html#a8edc552298769da89f61dadf0eef88e2">rtype::client::MainMenuScene::update</a></div><div class="ttdeci">void update(SceneManager &amp;manager, float dt) override</div><div class="ttdoc">Main update loop for the scene.</div><div class="ttdef"><b>Definition</b> <a href="MainMenuScene_8cpp_source.html#l00079">MainMenuScene.cpp:79</a></div></div>
 </div><!-- fragment --><dl class="section see"><dt>See also</dt><dd><a class="el" href="classrtype_1_1client_1_1IScene.html" title="Interface that all scenes must implement.">IScene</a>, <a class="el" href="classrtype_1_1client_1_1SceneManager.html#af9626932c39c48b60a7ff18b56018a5b" title="Applies all pending scene transitions.">flushTransitions</a> </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="SceneManager_8hpp_source.html#l00065">65</a> of file <a class="el" href="SceneManager_8hpp_source.html">SceneManager.hpp</a>.</p>
@@ -214,7 +208,7 @@ Private Attributes</h2></td></tr>
 <div class="textblock"><p>Represents a deferred scene transition operation. </p>
 <p>For push/replace, <a class="el" href="classrtype_1_1client_1_1SceneManager.html#adf4493378094ef84d45d840f4f2c95ca">scene</a> holds ownership of the new scene. For pop, <a class="el" href="classrtype_1_1client_1_1SceneManager.html#adf4493378094ef84d45d840f4f2c95ca">scene</a> is null. </p>
 
-<p class="definition">Definition at line <a class="el" href="SceneManager_8hpp_source.html#l00188">188</a> of file <a class="el" href="SceneManager_8hpp_source.html">SceneManager.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SceneManager_8hpp_source.html#l00184">184</a> of file <a class="el" href="SceneManager_8hpp_source.html">SceneManager.hpp</a>.</p>
 </div><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Collaboration diagram for rtype::client::SceneManager::PendingOp:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
@@ -269,12 +263,41 @@ Type of transition. </td></tr>
 <tr><td class="fieldname"><a id="aac2608885cc04b2ef126ee7fc1d1a757a0ebe6df8a3ac338e0512acc741823fdb" name="aac2608885cc04b2ef126ee7fc1d1a757a0ebe6df8a3ac338e0512acc741823fdb"></a>Replace&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="SceneManager_8hpp_source.html#l00180">180</a> of file <a class="el" href="SceneManager_8hpp_source.html">SceneManager.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  180</span>{ <a class="code hl_enumvalue" href="classrtype_1_1client_1_1SceneManager.html#aac2608885cc04b2ef126ee7fc1d1a757a6adf97f83acf6453d4a6a4b1070f3754">None</a>, <a class="code hl_enumvalue" href="classrtype_1_1client_1_1SceneManager.html#aac2608885cc04b2ef126ee7fc1d1a757a9c6a9d9f033001a9b3104984d319563b">Push</a>, <a class="code hl_enumvalue" href="classrtype_1_1client_1_1SceneManager.html#aac2608885cc04b2ef126ee7fc1d1a757a0ae61bd0474e04c9f1195d4baa0213a0">Pop</a>, <a class="code hl_enumvalue" href="classrtype_1_1client_1_1SceneManager.html#aac2608885cc04b2ef126ee7fc1d1a757a0ebe6df8a3ac338e0512acc741823fdb">Replace</a> };</div>
+<p class="definition">Definition at line <a class="el" href="SceneManager_8hpp_source.html#l00176">176</a> of file <a class="el" href="SceneManager_8hpp_source.html">SceneManager.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  176</span>{ <a class="code hl_enumvalue" href="classrtype_1_1client_1_1SceneManager.html#aac2608885cc04b2ef126ee7fc1d1a757a6adf97f83acf6453d4a6a4b1070f3754">None</a>, <a class="code hl_enumvalue" href="classrtype_1_1client_1_1SceneManager.html#aac2608885cc04b2ef126ee7fc1d1a757a9c6a9d9f033001a9b3104984d319563b">Push</a>, <a class="code hl_enumvalue" href="classrtype_1_1client_1_1SceneManager.html#aac2608885cc04b2ef126ee7fc1d1a757a0ae61bd0474e04c9f1195d4baa0213a0">Pop</a>, <a class="code hl_enumvalue" href="classrtype_1_1client_1_1SceneManager.html#aac2608885cc04b2ef126ee7fc1d1a757a0ebe6df8a3ac338e0512acc741823fdb">Replace</a> };</div>
 <div class="ttc" id="aclassrtype_1_1client_1_1SceneManager_html_aac2608885cc04b2ef126ee7fc1d1a757a0ae61bd0474e04c9f1195d4baa0213a0"><div class="ttname"><a href="classrtype_1_1client_1_1SceneManager.html#aac2608885cc04b2ef126ee7fc1d1a757a0ae61bd0474e04c9f1195d4baa0213a0">rtype::client::SceneManager::OpType::Pop</a></div><div class="ttdeci">@ Pop</div></div>
 <div class="ttc" id="aclassrtype_1_1client_1_1SceneManager_html_aac2608885cc04b2ef126ee7fc1d1a757a0ebe6df8a3ac338e0512acc741823fdb"><div class="ttname"><a href="classrtype_1_1client_1_1SceneManager.html#aac2608885cc04b2ef126ee7fc1d1a757a0ebe6df8a3ac338e0512acc741823fdb">rtype::client::SceneManager::OpType::Replace</a></div><div class="ttdeci">@ Replace</div></div>
 <div class="ttc" id="aclassrtype_1_1client_1_1SceneManager_html_aac2608885cc04b2ef126ee7fc1d1a757a6adf97f83acf6453d4a6a4b1070f3754"><div class="ttname"><a href="classrtype_1_1client_1_1SceneManager.html#aac2608885cc04b2ef126ee7fc1d1a757a6adf97f83acf6453d4a6a4b1070f3754">rtype::client::SceneManager::OpType::None</a></div><div class="ttdeci">@ None</div></div>
 <div class="ttc" id="aclassrtype_1_1client_1_1SceneManager_html_aac2608885cc04b2ef126ee7fc1d1a757a9c6a9d9f033001a9b3104984d319563b"><div class="ttname"><a href="classrtype_1_1client_1_1SceneManager.html#aac2608885cc04b2ef126ee7fc1d1a757a9c6a9d9f033001a9b3104984d319563b">rtype::client::SceneManager::OpType::Push</a></div><div class="ttdeci">@ Push</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="ad40ed882bc75c6df69b62bf836fd7525" name="ad40ed882bc75c6df69b62bf836fd7525"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad40ed882bc75c6df69b62bf836fd7525">&#9670;&#160;</a></span>SceneManager()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">rtype::client::SceneManager::SceneManager </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="SceneManager_8hpp_source.html#l00067">67</a> of file <a class="el" href="SceneManager_8hpp_source.html">SceneManager.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   67</span>{};</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -298,22 +321,22 @@ Type of transition. </td></tr>
 <p>Generates a readable list of scene names in the format: <code>"[MainMenu, Gameplay, PauseMenu]"</code>.</p>
 <dl class="section return"><dt>Returns</dt><dd>String representation of the scene stack. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="SceneManager_8cpp_source.html#l00108">108</a> of file <a class="el" href="SceneManager_8cpp_source.html">SceneManager.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  109</span>{</div>
-<div class="line"><span class="lineno">  110</span>    std::string s;</div>
-<div class="line"><span class="lineno">  111</span> </div>
-<div class="line"><span class="lineno">  112</span>    s += <span class="stringliteral">&quot;[&quot;</span>;</div>
-<div class="line"><span class="lineno">  113</span>    <span class="keywordflow">for</span> (std::size_t i = 0; i &lt; <a class="code hl_variable" href="classrtype_1_1client_1_1SceneManager.html#a3abd56ec96e33d7e643d3b6a91b1db33">_stack</a>.size(); i++) {</div>
-<div class="line"><span class="lineno">  114</span>        s += <a class="code hl_variable" href="classrtype_1_1client_1_1SceneManager.html#a3abd56ec96e33d7e643d3b6a91b1db33">_stack</a>[i]-&gt;name();</div>
-<div class="line"><span class="lineno">  115</span>        <span class="keywordflow">if</span> (i + 1 &lt; <a class="code hl_variable" href="classrtype_1_1client_1_1SceneManager.html#a3abd56ec96e33d7e643d3b6a91b1db33">_stack</a>.size())</div>
-<div class="line"><span class="lineno">  116</span>            s += <span class="stringliteral">&quot;, &quot;</span>;</div>
-<div class="line"><span class="lineno">  117</span>    }</div>
-<div class="line"><span class="lineno">  118</span>    s += <span class="stringliteral">&quot;]&quot;</span>;</div>
-<div class="line"><span class="lineno">  119</span>    <span class="keywordflow">return</span> s;</div>
-<div class="line"><span class="lineno">  120</span>}</div>
-<div class="ttc" id="aclassrtype_1_1client_1_1SceneManager_html_a3abd56ec96e33d7e643d3b6a91b1db33"><div class="ttname"><a href="classrtype_1_1client_1_1SceneManager.html#a3abd56ec96e33d7e643d3b6a91b1db33">rtype::client::SceneManager::_stack</a></div><div class="ttdeci">std::vector&lt; ScenePtr &gt; _stack</div><div class="ttdoc">Scene stack (back() is the active scene).</div><div class="ttdef"><b>Definition</b> <a href="SceneManager_8hpp_source.html#l00193">SceneManager.hpp:193</a></div></div>
+<p class="definition">Definition at line <a class="el" href="SceneManager_8cpp_source.html#l00091">91</a> of file <a class="el" href="SceneManager_8cpp_source.html">SceneManager.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   92</span>{</div>
+<div class="line"><span class="lineno">   93</span>    std::string s;</div>
+<div class="line"><span class="lineno">   94</span> </div>
+<div class="line"><span class="lineno">   95</span>    s += <span class="stringliteral">&quot;[&quot;</span>;</div>
+<div class="line"><span class="lineno">   96</span>    <span class="keywordflow">for</span> (std::size_t i = 0; i &lt; <a class="code hl_variable" href="classrtype_1_1client_1_1SceneManager.html#a3abd56ec96e33d7e643d3b6a91b1db33">_stack</a>.size(); i++) {</div>
+<div class="line"><span class="lineno">   97</span>        s += <a class="code hl_variable" href="classrtype_1_1client_1_1SceneManager.html#a3abd56ec96e33d7e643d3b6a91b1db33">_stack</a>[i]-&gt;name();</div>
+<div class="line"><span class="lineno">   98</span>        <span class="keywordflow">if</span> (i + 1 &lt; <a class="code hl_variable" href="classrtype_1_1client_1_1SceneManager.html#a3abd56ec96e33d7e643d3b6a91b1db33">_stack</a>.size())</div>
+<div class="line"><span class="lineno">   99</span>            s += <span class="stringliteral">&quot;, &quot;</span>;</div>
+<div class="line"><span class="lineno">  100</span>    }</div>
+<div class="line"><span class="lineno">  101</span>    s += <span class="stringliteral">&quot;]&quot;</span>;</div>
+<div class="line"><span class="lineno">  102</span>    <span class="keywordflow">return</span> s;</div>
+<div class="line"><span class="lineno">  103</span>}</div>
+<div class="ttc" id="aclassrtype_1_1client_1_1SceneManager_html_a3abd56ec96e33d7e643d3b6a91b1db33"><div class="ttname"><a href="classrtype_1_1client_1_1SceneManager.html#a3abd56ec96e33d7e643d3b6a91b1db33">rtype::client::SceneManager::_stack</a></div><div class="ttdeci">std::vector&lt; ScenePtr &gt; _stack</div><div class="ttdoc">Scene stack (back() is the active scene).</div><div class="ttdef"><b>Definition</b> <a href="SceneManager_8hpp_source.html#l00189">SceneManager.hpp:189</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="SceneManager_8hpp_source.html#l00193">_stack</a>.</p>
+<p class="reference">References <a class="el" href="SceneManager_8hpp_source.html#l00189">_stack</a>.</p>
 
 </div>
 </div>
@@ -335,13 +358,13 @@ Type of transition. </td></tr>
 <p>Draws the active scene. </p>
 <p>Calls <a class="el" href="classrtype_1_1client_1_1IScene.html#a3c07912266440a0948fdd517653128f6">IScene::draw()</a> on the scene at the top of the stack. </p>
 
-<p class="definition">Definition at line <a class="el" href="SceneManager_8cpp_source.html#l00064">64</a> of file <a class="el" href="SceneManager_8cpp_source.html">SceneManager.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   65</span>{</div>
-<div class="line"><span class="lineno">   66</span>    <span class="keywordflow">if</span> (!<a class="code hl_variable" href="classrtype_1_1client_1_1SceneManager.html#a3abd56ec96e33d7e643d3b6a91b1db33">_stack</a>.empty())</div>
-<div class="line"><span class="lineno">   67</span>        <a class="code hl_variable" href="classrtype_1_1client_1_1SceneManager.html#a3abd56ec96e33d7e643d3b6a91b1db33">_stack</a>.back()-&gt;draw();</div>
-<div class="line"><span class="lineno">   68</span>}</div>
+<p class="definition">Definition at line <a class="el" href="SceneManager_8cpp_source.html#l00057">57</a> of file <a class="el" href="SceneManager_8cpp_source.html">SceneManager.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   58</span>{</div>
+<div class="line"><span class="lineno">   59</span>    <span class="keywordflow">if</span> (!<a class="code hl_variable" href="classrtype_1_1client_1_1SceneManager.html#a3abd56ec96e33d7e643d3b6a91b1db33">_stack</a>.empty())</div>
+<div class="line"><span class="lineno">   60</span>        <a class="code hl_variable" href="classrtype_1_1client_1_1SceneManager.html#a3abd56ec96e33d7e643d3b6a91b1db33">_stack</a>.back()-&gt;draw();</div>
+<div class="line"><span class="lineno">   61</span>}</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="SceneManager_8hpp_source.html#l00193">_stack</a>.</p>
+<p class="reference">References <a class="el" href="SceneManager_8hpp_source.html#l00189">_stack</a>.</p>
 
 </div>
 </div>
@@ -363,12 +386,12 @@ Type of transition. </td></tr>
 <p>Checks whether the scene stack is empty. </p>
 <dl class="section return"><dt>Returns</dt><dd>True if no scenes are present; false otherwise. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="SceneManager_8cpp_source.html#l00103">103</a> of file <a class="el" href="SceneManager_8cpp_source.html">SceneManager.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  104</span>{</div>
-<div class="line"><span class="lineno">  105</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classrtype_1_1client_1_1SceneManager.html#a3abd56ec96e33d7e643d3b6a91b1db33">_stack</a>.empty();</div>
-<div class="line"><span class="lineno">  106</span>}</div>
+<p class="definition">Definition at line <a class="el" href="SceneManager_8cpp_source.html#l00086">86</a> of file <a class="el" href="SceneManager_8cpp_source.html">SceneManager.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   87</span>{</div>
+<div class="line"><span class="lineno">   88</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classrtype_1_1client_1_1SceneManager.html#a3abd56ec96e33d7e643d3b6a91b1db33">_stack</a>.empty();</div>
+<div class="line"><span class="lineno">   89</span>}</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="SceneManager_8hpp_source.html#l00193">_stack</a>.</p>
+<p class="reference">References <a class="el" href="SceneManager_8hpp_source.html#l00189">_stack</a>.</p>
 
 </div>
 </div>
@@ -395,93 +418,39 @@ Type of transition. </td></tr>
 </ul>
 <dl class="section note"><dt>Note</dt><dd>All pending operations are cleared afterward. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="SceneManager_8cpp_source.html#l00070">70</a> of file <a class="el" href="SceneManager_8cpp_source.html">SceneManager.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   71</span>{</div>
-<div class="line"><span class="lineno">   72</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;op : <a class="code hl_variable" href="classrtype_1_1client_1_1SceneManager.html#ae73e2b305e061fcf547f713f0ec4a1db">_pending</a>) {</div>
-<div class="line"><span class="lineno">   73</span>        <span class="keywordflow">switch</span> (op.type) {</div>
-<div class="line"><span class="lineno">   74</span>            <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="classrtype_1_1client_1_1SceneManager.html#aac2608885cc04b2ef126ee7fc1d1a757a9c6a9d9f033001a9b3104984d319563b">OpType::Push</a>: {</div>
+<p class="definition">Definition at line <a class="el" href="SceneManager_8cpp_source.html#l00063">63</a> of file <a class="el" href="SceneManager_8cpp_source.html">SceneManager.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   64</span>{</div>
+<div class="line"><span class="lineno">   65</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;op : <a class="code hl_variable" href="classrtype_1_1client_1_1SceneManager.html#ae73e2b305e061fcf547f713f0ec4a1db">_pending</a>) {</div>
+<div class="line"><span class="lineno">   66</span>        <span class="keywordflow">switch</span> (op.type) {</div>
+<div class="line"><span class="lineno">   67</span>            <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="classrtype_1_1client_1_1SceneManager.html#aac2608885cc04b2ef126ee7fc1d1a757a9c6a9d9f033001a9b3104984d319563b">OpType::Push</a>: {</div>
+<div class="line"><span class="lineno">   68</span>                <a class="code hl_variable" href="classrtype_1_1client_1_1SceneManager.html#a3abd56ec96e33d7e643d3b6a91b1db33">_stack</a>.push_back(std::move(op.scene));</div>
+<div class="line"><span class="lineno">   69</span>            } <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">   70</span>            <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="classrtype_1_1client_1_1SceneManager.html#aac2608885cc04b2ef126ee7fc1d1a757a0ae61bd0474e04c9f1195d4baa0213a0">OpType::Pop</a>: {</div>
+<div class="line"><span class="lineno">   71</span>                <span class="keywordflow">if</span> (!<a class="code hl_variable" href="classrtype_1_1client_1_1SceneManager.html#a3abd56ec96e33d7e643d3b6a91b1db33">_stack</a>.empty())</div>
+<div class="line"><span class="lineno">   72</span>                    <a class="code hl_variable" href="classrtype_1_1client_1_1SceneManager.html#a3abd56ec96e33d7e643d3b6a91b1db33">_stack</a>.pop_back();</div>
+<div class="line"><span class="lineno">   73</span>            } <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">   74</span>            <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="classrtype_1_1client_1_1SceneManager.html#aac2608885cc04b2ef126ee7fc1d1a757a0ebe6df8a3ac338e0512acc741823fdb">OpType::Replace</a>: {</div>
 <div class="line"><span class="lineno">   75</span>                <span class="keywordflow">if</span> (!<a class="code hl_variable" href="classrtype_1_1client_1_1SceneManager.html#a3abd56ec96e33d7e643d3b6a91b1db33">_stack</a>.empty())</div>
-<div class="line"><span class="lineno">   76</span>                    <a class="code hl_variable" href="classrtype_1_1client_1_1SceneManager.html#a3abd56ec96e33d7e643d3b6a91b1db33">_stack</a>.back()-&gt;onPause(*<span class="keyword">this</span>);</div>
+<div class="line"><span class="lineno">   76</span>                    <a class="code hl_variable" href="classrtype_1_1client_1_1SceneManager.html#a3abd56ec96e33d7e643d3b6a91b1db33">_stack</a>.pop_back();</div>
 <div class="line"><span class="lineno">   77</span>                <a class="code hl_variable" href="classrtype_1_1client_1_1SceneManager.html#a3abd56ec96e33d7e643d3b6a91b1db33">_stack</a>.push_back(std::move(op.scene));</div>
-<div class="line"><span class="lineno">   78</span>                <a class="code hl_variable" href="classrtype_1_1client_1_1SceneManager.html#a3abd56ec96e33d7e643d3b6a91b1db33">_stack</a>.back()-&gt;onEnter(*<span class="keyword">this</span>);</div>
-<div class="line"><span class="lineno">   79</span>            } <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">   80</span>            <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="classrtype_1_1client_1_1SceneManager.html#aac2608885cc04b2ef126ee7fc1d1a757a0ae61bd0474e04c9f1195d4baa0213a0">OpType::Pop</a>: {</div>
-<div class="line"><span class="lineno">   81</span>                <span class="keywordflow">if</span> (!<a class="code hl_variable" href="classrtype_1_1client_1_1SceneManager.html#a3abd56ec96e33d7e643d3b6a91b1db33">_stack</a>.empty()) {</div>
-<div class="line"><span class="lineno">   82</span>                    <a class="code hl_variable" href="classrtype_1_1client_1_1SceneManager.html#a3abd56ec96e33d7e643d3b6a91b1db33">_stack</a>.back()-&gt;onExit(*<span class="keyword">this</span>);</div>
-<div class="line"><span class="lineno">   83</span>                    <a class="code hl_variable" href="classrtype_1_1client_1_1SceneManager.html#a3abd56ec96e33d7e643d3b6a91b1db33">_stack</a>.pop_back();</div>
-<div class="line"><span class="lineno">   84</span>                    <span class="keywordflow">if</span> (!<a class="code hl_variable" href="classrtype_1_1client_1_1SceneManager.html#a3abd56ec96e33d7e643d3b6a91b1db33">_stack</a>.empty())</div>
-<div class="line"><span class="lineno">   85</span>                        <a class="code hl_variable" href="classrtype_1_1client_1_1SceneManager.html#a3abd56ec96e33d7e643d3b6a91b1db33">_stack</a>.back()-&gt;onResume(*<span class="keyword">this</span>);</div>
-<div class="line"><span class="lineno">   86</span>                }</div>
-<div class="line"><span class="lineno">   87</span>            } <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">   88</span>            <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="classrtype_1_1client_1_1SceneManager.html#aac2608885cc04b2ef126ee7fc1d1a757a0ebe6df8a3ac338e0512acc741823fdb">OpType::Replace</a>: {</div>
-<div class="line"><span class="lineno">   89</span>                <span class="keywordflow">if</span> (!<a class="code hl_variable" href="classrtype_1_1client_1_1SceneManager.html#a3abd56ec96e33d7e643d3b6a91b1db33">_stack</a>.empty()) {</div>
-<div class="line"><span class="lineno">   90</span>                    <a class="code hl_variable" href="classrtype_1_1client_1_1SceneManager.html#a3abd56ec96e33d7e643d3b6a91b1db33">_stack</a>.back()-&gt;onExit(*<span class="keyword">this</span>);</div>
-<div class="line"><span class="lineno">   91</span>                    <a class="code hl_variable" href="classrtype_1_1client_1_1SceneManager.html#a3abd56ec96e33d7e643d3b6a91b1db33">_stack</a>.pop_back();</div>
-<div class="line"><span class="lineno">   92</span>                }</div>
-<div class="line"><span class="lineno">   93</span>                <a class="code hl_variable" href="classrtype_1_1client_1_1SceneManager.html#a3abd56ec96e33d7e643d3b6a91b1db33">_stack</a>.push_back(std::move(op.scene));</div>
-<div class="line"><span class="lineno">   94</span>                <a class="code hl_variable" href="classrtype_1_1client_1_1SceneManager.html#a3abd56ec96e33d7e643d3b6a91b1db33">_stack</a>.back()-&gt;onEnter(*<span class="keyword">this</span>);</div>
-<div class="line"><span class="lineno">   95</span>            } <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">   96</span>            <span class="keywordflow">default</span>:</div>
-<div class="line"><span class="lineno">   97</span>                <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">   98</span>        }</div>
-<div class="line"><span class="lineno">   99</span>    }</div>
-<div class="line"><span class="lineno">  100</span>    <a class="code hl_variable" href="classrtype_1_1client_1_1SceneManager.html#ae73e2b305e061fcf547f713f0ec4a1db">_pending</a>.clear();</div>
-<div class="line"><span class="lineno">  101</span>}</div>
-<div class="ttc" id="aclassrtype_1_1client_1_1SceneManager_html_ae73e2b305e061fcf547f713f0ec4a1db"><div class="ttname"><a href="classrtype_1_1client_1_1SceneManager.html#ae73e2b305e061fcf547f713f0ec4a1db">rtype::client::SceneManager::_pending</a></div><div class="ttdeci">std::vector&lt; PendingOp &gt; _pending</div><div class="ttdoc">Queue of deferred scene operations.</div><div class="ttdef"><b>Definition</b> <a href="SceneManager_8hpp_source.html#l00194">SceneManager.hpp:194</a></div></div>
+<div class="line"><span class="lineno">   78</span>            } <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">   79</span>            <span class="keywordflow">default</span>:</div>
+<div class="line"><span class="lineno">   80</span>                <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">   81</span>        }</div>
+<div class="line"><span class="lineno">   82</span>    }</div>
+<div class="line"><span class="lineno">   83</span>    <a class="code hl_variable" href="classrtype_1_1client_1_1SceneManager.html#ae73e2b305e061fcf547f713f0ec4a1db">_pending</a>.clear();</div>
+<div class="line"><span class="lineno">   84</span>}</div>
+<div class="ttc" id="aclassrtype_1_1client_1_1SceneManager_html_ae73e2b305e061fcf547f713f0ec4a1db"><div class="ttname"><a href="classrtype_1_1client_1_1SceneManager.html#ae73e2b305e061fcf547f713f0ec4a1db">rtype::client::SceneManager::_pending</a></div><div class="ttdeci">std::vector&lt; PendingOp &gt; _pending</div><div class="ttdoc">Queue of deferred scene operations.</div><div class="ttdef"><b>Definition</b> <a href="SceneManager_8hpp_source.html#l00190">SceneManager.hpp:190</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="SceneManager_8hpp_source.html#l00194">_pending</a>, <a class="el" href="SceneManager_8hpp_source.html#l00193">_stack</a>, <a class="el" href="classrtype_1_1client_1_1SceneManager.html#aac2608885cc04b2ef126ee7fc1d1a757a0ae61bd0474e04c9f1195d4baa0213a0">Pop</a>, <a class="el" href="classrtype_1_1client_1_1SceneManager.html#aac2608885cc04b2ef126ee7fc1d1a757a9c6a9d9f033001a9b3104984d319563b">Push</a>, and <a class="el" href="classrtype_1_1client_1_1SceneManager.html#aac2608885cc04b2ef126ee7fc1d1a757a0ebe6df8a3ac338e0512acc741823fdb">Replace</a>.</p>
+<p class="reference">References <a class="el" href="SceneManager_8hpp_source.html#l00190">_pending</a>, <a class="el" href="SceneManager_8hpp_source.html#l00189">_stack</a>, <a class="el" href="classrtype_1_1client_1_1SceneManager.html#aac2608885cc04b2ef126ee7fc1d1a757a0ae61bd0474e04c9f1195d4baa0213a0">Pop</a>, <a class="el" href="classrtype_1_1client_1_1SceneManager.html#aac2608885cc04b2ef126ee7fc1d1a757a9c6a9d9f033001a9b3104984d319563b">Push</a>, and <a class="el" href="classrtype_1_1client_1_1SceneManager.html#aac2608885cc04b2ef126ee7fc1d1a757a0ebe6df8a3ac338e0512acc741823fdb">Replace</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="SceneManager_8cpp_source.html#l00057">update()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="SceneManager_8cpp_source.html#l00050">update()</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classrtype_1_1client_1_1SceneManager_af9626932c39c48b60a7ff18b56018a5b_icgraph.svg" width="520" height="68"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
-</div>
-</div>
-<a id="afc7394d405bebecce3a60d10e3d4fea2" name="afc7394d405bebecce3a60d10e3d4fea2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afc7394d405bebecce3a60d10e3d4fea2">&#9670;&#160;</a></span>getInstance()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classrtype_1_1client_1_1SceneManager.html">SceneManager</a> &amp; rtype::client::SceneManager::getInstance </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Retrieves the global singleton instance. </p>
-<dl class="section return"><dt>Returns</dt><dd>Reference to the <a class="el" href="classrtype_1_1client_1_1SceneManager.html">SceneManager</a> instance. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="SceneManager_8cpp_source.html#l00035">35</a> of file <a class="el" href="SceneManager_8cpp_source.html">SceneManager.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   36</span>{</div>
-<div class="line"><span class="lineno">   37</span>    <span class="keyword">static</span> SceneManager instance;</div>
-<div class="line"><span class="lineno">   38</span> </div>
-<div class="line"><span class="lineno">   39</span>    <span class="keywordflow">return</span> instance;</div>
-<div class="line"><span class="lineno">   40</span>}</div>
-</div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="MainMenuScene_8cpp_source.html#l00038">rtype::client::MainMenuScene::MainMenuScene()</a>, <a class="el" href="OptionsMenuScene_8cpp_source.html#l00037">rtype::client::OptionsMenuScene::OptionsMenuScene()</a>, <a class="el" href="Game_8cpp_source.html#l00058">rtype::client::Game::run()</a>, and <a class="el" href="Game_8hpp_source.html#l00108">rtype::client::Game::startWith()</a>.</p>
-<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classrtype_1_1client_1_1SceneManager_afc7394d405bebecce3a60d10e3d4fea2_icgraph.svg" width="599" height="215"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classrtype_1_1client_1_1SceneManager_af9626932c39c48b60a7ff18b56018a5b_icgraph.svg" width="520" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
@@ -504,12 +473,12 @@ Type of transition. </td></tr>
 <p>Queues a pop operation to remove the current active scene. </p>
 <p>The scene remains active until <a class="el" href="classrtype_1_1client_1_1SceneManager.html#af9626932c39c48b60a7ff18b56018a5b">flushTransitions()</a> is called. </p>
 
-<p class="definition">Definition at line <a class="el" href="SceneManager_8cpp_source.html#l00047">47</a> of file <a class="el" href="SceneManager_8cpp_source.html">SceneManager.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   48</span>{</div>
-<div class="line"><span class="lineno">   49</span>    <a class="code hl_variable" href="classrtype_1_1client_1_1SceneManager.html#ae73e2b305e061fcf547f713f0ec4a1db">_pending</a>.push_back({ <a class="code hl_enumvalue" href="classrtype_1_1client_1_1SceneManager.html#aac2608885cc04b2ef126ee7fc1d1a757a0ae61bd0474e04c9f1195d4baa0213a0">OpType::Pop</a>, <span class="keyword">nullptr</span> });</div>
-<div class="line"><span class="lineno">   50</span>}</div>
+<p class="definition">Definition at line <a class="el" href="SceneManager_8cpp_source.html#l00040">40</a> of file <a class="el" href="SceneManager_8cpp_source.html">SceneManager.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   41</span>{</div>
+<div class="line"><span class="lineno">   42</span>    <a class="code hl_variable" href="classrtype_1_1client_1_1SceneManager.html#ae73e2b305e061fcf547f713f0ec4a1db">_pending</a>.push_back({ <a class="code hl_enumvalue" href="classrtype_1_1client_1_1SceneManager.html#aac2608885cc04b2ef126ee7fc1d1a757a0ae61bd0474e04c9f1195d4baa0213a0">OpType::Pop</a>, <span class="keyword">nullptr</span> });</div>
+<div class="line"><span class="lineno">   43</span>}</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="SceneManager_8hpp_source.html#l00194">_pending</a>, and <a class="el" href="classrtype_1_1client_1_1SceneManager.html#aac2608885cc04b2ef126ee7fc1d1a757a0ae61bd0474e04c9f1195d4baa0213a0">Pop</a>.</p>
+<p class="reference">References <a class="el" href="SceneManager_8hpp_source.html#l00190">_pending</a>, and <a class="el" href="classrtype_1_1client_1_1SceneManager.html#aac2608885cc04b2ef126ee7fc1d1a757a0ae61bd0474e04c9f1195d4baa0213a0">Pop</a>.</p>
 
 </div>
 </div>
@@ -538,19 +507,19 @@ Type of transition. </td></tr>
 </dl>
 <p>The scene is not immediately active; it will become so after <a class="el" href="classrtype_1_1client_1_1SceneManager.html#af9626932c39c48b60a7ff18b56018a5b">flushTransitions()</a> is executed. </p>
 
-<p class="definition">Definition at line <a class="el" href="SceneManager_8cpp_source.html#l00042">42</a> of file <a class="el" href="SceneManager_8cpp_source.html">SceneManager.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   43</span>{</div>
-<div class="line"><span class="lineno">   44</span>    <a class="code hl_variable" href="classrtype_1_1client_1_1SceneManager.html#ae73e2b305e061fcf547f713f0ec4a1db">_pending</a>.push_back({ <a class="code hl_enumvalue" href="classrtype_1_1client_1_1SceneManager.html#aac2608885cc04b2ef126ee7fc1d1a757a9c6a9d9f033001a9b3104984d319563b">OpType::Push</a>, std::move(scene) });</div>
-<div class="line"><span class="lineno">   45</span>}</div>
+<p class="definition">Definition at line <a class="el" href="SceneManager_8cpp_source.html#l00035">35</a> of file <a class="el" href="SceneManager_8cpp_source.html">SceneManager.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   36</span>{</div>
+<div class="line"><span class="lineno">   37</span>    <a class="code hl_variable" href="classrtype_1_1client_1_1SceneManager.html#ae73e2b305e061fcf547f713f0ec4a1db">_pending</a>.push_back({ <a class="code hl_enumvalue" href="classrtype_1_1client_1_1SceneManager.html#aac2608885cc04b2ef126ee7fc1d1a757a9c6a9d9f033001a9b3104984d319563b">OpType::Push</a>, std::move(scene) });</div>
+<div class="line"><span class="lineno">   38</span>}</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="SceneManager_8hpp_source.html#l00194">_pending</a>, and <a class="el" href="classrtype_1_1client_1_1SceneManager.html#aac2608885cc04b2ef126ee7fc1d1a757a9c6a9d9f033001a9b3104984d319563b">Push</a>.</p>
+<p class="reference">References <a class="el" href="SceneManager_8hpp_source.html#l00190">_pending</a>, and <a class="el" href="classrtype_1_1client_1_1SceneManager.html#aac2608885cc04b2ef126ee7fc1d1a757a9c6a9d9f033001a9b3104984d319563b">Push</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="SceneManager_8hpp_source.html#l00140">pushNew()</a>.</p>
-<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="SceneManager_8hpp_source.html#l00136">pushNew()</a>.</p>
+<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="classrtype_1_1client_1_1SceneManager_a336dad2b26d76e1c33f8379884021943_icgraph.svg" width="506" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
@@ -598,18 +567,18 @@ template&lt;typename T , typename... Args&gt; </div>
 </dl>
 <p>Wraps scene creation and queues it for activation via <a class="el" href="classrtype_1_1client_1_1SceneManager.html#a336dad2b26d76e1c33f8379884021943">push()</a>. The scene becomes active only after <a class="el" href="classrtype_1_1client_1_1SceneManager.html#af9626932c39c48b60a7ff18b56018a5b">flushTransitions()</a> runs. </p>
 
-<p class="definition">Definition at line <a class="el" href="SceneManager_8hpp_source.html#l00140">140</a> of file <a class="el" href="SceneManager_8hpp_source.html">SceneManager.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  141</span>        {</div>
-<div class="line"><span class="lineno">  142</span>            <a class="code hl_function" href="classrtype_1_1client_1_1SceneManager.html#a336dad2b26d76e1c33f8379884021943">push</a>(std::make_unique&lt;T&gt;(std::forward&lt;Args&gt;(args)...));</div>
-<div class="line"><span class="lineno">  143</span>        }</div>
-<div class="ttc" id="aclassrtype_1_1client_1_1SceneManager_html_a336dad2b26d76e1c33f8379884021943"><div class="ttname"><a href="classrtype_1_1client_1_1SceneManager.html#a336dad2b26d76e1c33f8379884021943">rtype::client::SceneManager::push</a></div><div class="ttdeci">void push(ScenePtr scene)</div><div class="ttdoc">Queues a new scene to be pushed on top of the stack.</div><div class="ttdef"><b>Definition</b> <a href="SceneManager_8cpp_source.html#l00042">SceneManager.cpp:42</a></div></div>
+<p class="definition">Definition at line <a class="el" href="SceneManager_8hpp_source.html#l00136">136</a> of file <a class="el" href="SceneManager_8hpp_source.html">SceneManager.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  137</span>        {</div>
+<div class="line"><span class="lineno">  138</span>            <a class="code hl_function" href="classrtype_1_1client_1_1SceneManager.html#a336dad2b26d76e1c33f8379884021943">push</a>(std::make_unique&lt;T&gt;(std::forward&lt;Args&gt;(args)...));</div>
+<div class="line"><span class="lineno">  139</span>        }</div>
+<div class="ttc" id="aclassrtype_1_1client_1_1SceneManager_html_a336dad2b26d76e1c33f8379884021943"><div class="ttname"><a href="classrtype_1_1client_1_1SceneManager.html#a336dad2b26d76e1c33f8379884021943">rtype::client::SceneManager::push</a></div><div class="ttdeci">void push(ScenePtr scene)</div><div class="ttdoc">Queues a new scene to be pushed on top of the stack.</div><div class="ttdef"><b>Definition</b> <a href="SceneManager_8cpp_source.html#l00035">SceneManager.cpp:35</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="SceneManager_8cpp_source.html#l00042">push()</a>.</p>
-<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+<p class="reference">References <a class="el" href="SceneManager_8cpp_source.html#l00035">push()</a>.</p>
+<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="classrtype_1_1client_1_1SceneManager_adf874684e7f4bc9c5be5ec81f0bf7087_cgraph.svg" width="506" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
@@ -640,19 +609,19 @@ template&lt;typename T , typename... Args&gt; </div>
 </dl>
 <p>The old scene is destroyed, and the new one becomes active after <a class="el" href="classrtype_1_1client_1_1SceneManager.html#af9626932c39c48b60a7ff18b56018a5b">flushTransitions()</a> is processed. </p>
 
-<p class="definition">Definition at line <a class="el" href="SceneManager_8cpp_source.html#l00052">52</a> of file <a class="el" href="SceneManager_8cpp_source.html">SceneManager.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   53</span>{</div>
-<div class="line"><span class="lineno">   54</span>    <a class="code hl_variable" href="classrtype_1_1client_1_1SceneManager.html#ae73e2b305e061fcf547f713f0ec4a1db">_pending</a>.push_back({ <a class="code hl_enumvalue" href="classrtype_1_1client_1_1SceneManager.html#aac2608885cc04b2ef126ee7fc1d1a757a0ebe6df8a3ac338e0512acc741823fdb">OpType::Replace</a>, std::move(scene) });</div>
-<div class="line"><span class="lineno">   55</span>}</div>
+<p class="definition">Definition at line <a class="el" href="SceneManager_8cpp_source.html#l00045">45</a> of file <a class="el" href="SceneManager_8cpp_source.html">SceneManager.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   46</span>{</div>
+<div class="line"><span class="lineno">   47</span>    <a class="code hl_variable" href="classrtype_1_1client_1_1SceneManager.html#ae73e2b305e061fcf547f713f0ec4a1db">_pending</a>.push_back({ <a class="code hl_enumvalue" href="classrtype_1_1client_1_1SceneManager.html#aac2608885cc04b2ef126ee7fc1d1a757a0ebe6df8a3ac338e0512acc741823fdb">OpType::Replace</a>, std::move(scene) });</div>
+<div class="line"><span class="lineno">   48</span>}</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="SceneManager_8hpp_source.html#l00194">_pending</a>, and <a class="el" href="classrtype_1_1client_1_1SceneManager.html#aac2608885cc04b2ef126ee7fc1d1a757a0ebe6df8a3ac338e0512acc741823fdb">Replace</a>.</p>
+<p class="reference">References <a class="el" href="SceneManager_8hpp_source.html#l00190">_pending</a>, and <a class="el" href="classrtype_1_1client_1_1SceneManager.html#aac2608885cc04b2ef126ee7fc1d1a757a0ebe6df8a3ac338e0512acc741823fdb">Replace</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="SceneManager_8hpp_source.html#l00157">replaceNew()</a>.</p>
-<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="SceneManager_8hpp_source.html#l00153">replaceNew()</a>.</p>
+<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="classrtype_1_1client_1_1SceneManager_aafb77be677790d964fd59b024ea33ad8_icgraph.svg" width="467" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
@@ -700,18 +669,18 @@ template&lt;typename T , typename... Args&gt; </div>
 </dl>
 <p>Wraps scene creation and queues it for replacement via <a class="el" href="classrtype_1_1client_1_1SceneManager.html#aafb77be677790d964fd59b024ea33ad8">replace()</a>. The current active scene will be destroyed upon <a class="el" href="classrtype_1_1client_1_1SceneManager.html#af9626932c39c48b60a7ff18b56018a5b">flushTransitions()</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="SceneManager_8hpp_source.html#l00157">157</a> of file <a class="el" href="SceneManager_8hpp_source.html">SceneManager.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  158</span>        {</div>
-<div class="line"><span class="lineno">  159</span>            <a class="code hl_function" href="classrtype_1_1client_1_1SceneManager.html#aafb77be677790d964fd59b024ea33ad8">replace</a>(std::make_unique&lt;T&gt;(std::forward&lt;Args&gt;(args)...));</div>
-<div class="line"><span class="lineno">  160</span>        }</div>
-<div class="ttc" id="aclassrtype_1_1client_1_1SceneManager_html_aafb77be677790d964fd59b024ea33ad8"><div class="ttname"><a href="classrtype_1_1client_1_1SceneManager.html#aafb77be677790d964fd59b024ea33ad8">rtype::client::SceneManager::replace</a></div><div class="ttdeci">void replace(ScenePtr scene)</div><div class="ttdoc">Queues a replace operation, replacing the current scene with another.</div><div class="ttdef"><b>Definition</b> <a href="SceneManager_8cpp_source.html#l00052">SceneManager.cpp:52</a></div></div>
+<p class="definition">Definition at line <a class="el" href="SceneManager_8hpp_source.html#l00153">153</a> of file <a class="el" href="SceneManager_8hpp_source.html">SceneManager.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  154</span>        {</div>
+<div class="line"><span class="lineno">  155</span>            <a class="code hl_function" href="classrtype_1_1client_1_1SceneManager.html#aafb77be677790d964fd59b024ea33ad8">replace</a>(std::make_unique&lt;T&gt;(std::forward&lt;Args&gt;(args)...));</div>
+<div class="line"><span class="lineno">  156</span>        }</div>
+<div class="ttc" id="aclassrtype_1_1client_1_1SceneManager_html_aafb77be677790d964fd59b024ea33ad8"><div class="ttname"><a href="classrtype_1_1client_1_1SceneManager.html#aafb77be677790d964fd59b024ea33ad8">rtype::client::SceneManager::replace</a></div><div class="ttdeci">void replace(ScenePtr scene)</div><div class="ttdoc">Queues a replace operation, replacing the current scene with another.</div><div class="ttdef"><b>Definition</b> <a href="SceneManager_8cpp_source.html#l00045">SceneManager.cpp:45</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="SceneManager_8cpp_source.html#l00052">replace()</a>.</p>
-<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+<p class="reference">References <a class="el" href="SceneManager_8cpp_source.html#l00045">replace()</a>.</p>
+<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="classrtype_1_1client_1_1SceneManager_a977e0a6531fac51e4b2d0be62c247372_cgraph.svg" width="467" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
@@ -742,30 +711,21 @@ template&lt;typename T , typename... Args&gt; </div>
 </dl>
 <p>Calls <a class="el" href="classrtype_1_1client_1_1IScene.html#a7ca80691105d7c5adb3c8ddae769970b">IScene::update()</a> on the active scene and then processes any pending transitions. </p>
 
-<p class="definition">Definition at line <a class="el" href="SceneManager_8cpp_source.html#l00057">57</a> of file <a class="el" href="SceneManager_8cpp_source.html">SceneManager.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   58</span>{</div>
-<div class="line"><span class="lineno">   59</span>    <span class="keywordflow">if</span> (!<a class="code hl_variable" href="classrtype_1_1client_1_1SceneManager.html#a3abd56ec96e33d7e643d3b6a91b1db33">_stack</a>.empty())</div>
-<div class="line"><span class="lineno">   60</span>        <a class="code hl_variable" href="classrtype_1_1client_1_1SceneManager.html#a3abd56ec96e33d7e643d3b6a91b1db33">_stack</a>.back()-&gt;update(*<span class="keyword">this</span>, dt);</div>
-<div class="line"><span class="lineno">   61</span>    <a class="code hl_function" href="classrtype_1_1client_1_1SceneManager.html#af9626932c39c48b60a7ff18b56018a5b">flushTransitions</a>();</div>
-<div class="line"><span class="lineno">   62</span>}</div>
-<div class="ttc" id="aclassrtype_1_1client_1_1SceneManager_html_af9626932c39c48b60a7ff18b56018a5b"><div class="ttname"><a href="classrtype_1_1client_1_1SceneManager.html#af9626932c39c48b60a7ff18b56018a5b">rtype::client::SceneManager::flushTransitions</a></div><div class="ttdeci">void flushTransitions()</div><div class="ttdoc">Applies all pending scene transitions.</div><div class="ttdef"><b>Definition</b> <a href="SceneManager_8cpp_source.html#l00070">SceneManager.cpp:70</a></div></div>
+<p class="definition">Definition at line <a class="el" href="SceneManager_8cpp_source.html#l00050">50</a> of file <a class="el" href="SceneManager_8cpp_source.html">SceneManager.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   51</span>{</div>
+<div class="line"><span class="lineno">   52</span>    <span class="keywordflow">if</span> (!<a class="code hl_variable" href="classrtype_1_1client_1_1SceneManager.html#a3abd56ec96e33d7e643d3b6a91b1db33">_stack</a>.empty())</div>
+<div class="line"><span class="lineno">   53</span>        <a class="code hl_variable" href="classrtype_1_1client_1_1SceneManager.html#a3abd56ec96e33d7e643d3b6a91b1db33">_stack</a>.back()-&gt;update(*<span class="keyword">this</span>, dt);</div>
+<div class="line"><span class="lineno">   54</span>    <a class="code hl_function" href="classrtype_1_1client_1_1SceneManager.html#af9626932c39c48b60a7ff18b56018a5b">flushTransitions</a>();</div>
+<div class="line"><span class="lineno">   55</span>}</div>
+<div class="ttc" id="aclassrtype_1_1client_1_1SceneManager_html_af9626932c39c48b60a7ff18b56018a5b"><div class="ttname"><a href="classrtype_1_1client_1_1SceneManager.html#af9626932c39c48b60a7ff18b56018a5b">rtype::client::SceneManager::flushTransitions</a></div><div class="ttdeci">void flushTransitions()</div><div class="ttdoc">Applies all pending scene transitions.</div><div class="ttdef"><b>Definition</b> <a href="SceneManager_8cpp_source.html#l00063">SceneManager.cpp:63</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="SceneManager_8hpp_source.html#l00193">_stack</a>, <a class="el" href="SceneManager_8cpp_source.html#l00070">flushTransitions()</a>, and <a class="el" href="SceneManager_8cpp_source.html#l00057">update()</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="SceneManager_8cpp_source.html#l00057">update()</a>.</p>
-<div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
+<p class="reference">References <a class="el" href="SceneManager_8hpp_source.html#l00189">_stack</a>, and <a class="el" href="SceneManager_8cpp_source.html#l00063">flushTransitions()</a>.</p>
+<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-8-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classrtype_1_1client_1_1SceneManager_a32adac5814480c484984eae944ddcfc2_cgraph.svg" width="520" height="68"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-9-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classrtype_1_1client_1_1SceneManager_a32adac5814480c484984eae944ddcfc2_icgraph.svg" width="268" height="60"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classrtype_1_1client_1_1SceneManager_a32adac5814480c484984eae944ddcfc2_cgraph.svg" width="520" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
@@ -793,9 +753,9 @@ template&lt;typename T , typename... Args&gt; </div>
 
 <p>Queue of deferred scene operations. </p>
 
-<p class="definition">Definition at line <a class="el" href="SceneManager_8hpp_source.html#l00194">194</a> of file <a class="el" href="SceneManager_8hpp_source.html">SceneManager.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SceneManager_8hpp_source.html#l00190">190</a> of file <a class="el" href="SceneManager_8hpp_source.html">SceneManager.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="SceneManager_8cpp_source.html#l00070">flushTransitions()</a>, <a class="el" href="SceneManager_8cpp_source.html#l00047">pop()</a>, <a class="el" href="SceneManager_8cpp_source.html#l00042">push()</a>, and <a class="el" href="SceneManager_8cpp_source.html#l00052">replace()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="SceneManager_8cpp_source.html#l00063">flushTransitions()</a>, <a class="el" href="SceneManager_8cpp_source.html#l00040">pop()</a>, <a class="el" href="SceneManager_8cpp_source.html#l00035">push()</a>, and <a class="el" href="SceneManager_8cpp_source.html#l00045">replace()</a>.</p>
 
 </div>
 </div>
@@ -821,9 +781,9 @@ template&lt;typename T , typename... Args&gt; </div>
 
 <p>Scene stack (back() is the active scene). </p>
 
-<p class="definition">Definition at line <a class="el" href="SceneManager_8hpp_source.html#l00193">193</a> of file <a class="el" href="SceneManager_8hpp_source.html">SceneManager.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SceneManager_8hpp_source.html#l00189">189</a> of file <a class="el" href="SceneManager_8hpp_source.html">SceneManager.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="SceneManager_8cpp_source.html#l00108">debugStack()</a>, <a class="el" href="SceneManager_8cpp_source.html#l00064">draw()</a>, <a class="el" href="SceneManager_8cpp_source.html#l00103">empty()</a>, <a class="el" href="SceneManager_8cpp_source.html#l00070">flushTransitions()</a>, and <a class="el" href="SceneManager_8cpp_source.html#l00057">update()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="SceneManager_8cpp_source.html#l00091">debugStack()</a>, <a class="el" href="SceneManager_8cpp_source.html#l00057">draw()</a>, <a class="el" href="SceneManager_8cpp_source.html#l00086">empty()</a>, <a class="el" href="SceneManager_8cpp_source.html#l00063">flushTransitions()</a>, and <a class="el" href="SceneManager_8cpp_source.html#l00050">update()</a>.</p>
 
 </div>
 </div>

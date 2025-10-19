@@ -15,5 +15,6 @@ var searchData=
   ['_7eserver_12',['~server',['../classrtype_1_1server.html#a1215d27093c4b67dd855f14e0532a117',1,'rtype::server']]],
   ['_7eserverclock_13',['~ServerClock',['../classServerClock.html#a82febbb3f1c11a3f48487b151bff62d8',1,'ServerClock']]],
   ['_7espawnersystem_14',['~SpawnerSystem',['../classrtype_1_1ecs_1_1SpawnerSystem.html#aa550d6ffc44d324d9d69dab3acc9728a',1,'rtype::ecs::SpawnerSystem']]],
-  ['_7esystem_15',['~System',['../classrtype_1_1ecs_1_1System.html#a00fae19d7a2b71808876ffbb80d82eb0',1,'rtype::ecs::System']]]
+  ['_7esystem_15',['~System',['../classrtype_1_1ecs_1_1System.html#a00fae19d7a2b71808876ffbb80d82eb0',1,'rtype::ecs::System']]],
+  ['_7euielement_16',['~UIElement',['../classrtype_1_1client_1_1ui_1_1UIElement.html#ae167ee69bdf0affe30edf396227e3d61',1,'rtype::client::ui::UIElement']]]
 ];

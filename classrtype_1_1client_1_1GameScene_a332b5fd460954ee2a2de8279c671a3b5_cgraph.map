@@ -1,25 +1,37 @@
 <map id="rtype::client::GameScene::GameScene" name="rtype::client::GameScene::GameScene">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,201,200,241"/>
-<area shape="rect" id="Node000002" href="$classrtype_1_1client_1_1GameScene.html#a4209205eabbf7520511a8fde247a7923" title=" " alt="" coords="264,123,509,148"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="151,198,247,163,306,148,307,154,249,169,153,203"/>
-<area shape="rect" id="Node000009" href="$classrtype_1_1ecs_1_1Coordinator.html#a1dbf9d999874674f05e2c848ed84d738" title="Initialize internal managers." alt="" coords="287,179,486,204"/>
-<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="200,208,273,200,274,206,200,213"/>
-<area shape="rect" id="Node000010" href="$namespacertype_1_1ecs_1_1factory.html#ac493845a0bd714fbeb9baead17010d04" title="Registers all gameplay&#45;related components into the ECS Coordinator." alt="" coords="288,229,485,269"/>
-<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="200,228,275,235,274,240,200,233"/>
-<area shape="rect" id="Node000012" href="$classrtype_1_1ecs_1_1Coordinator.html#aca7d6eb9299564682430b0362ce50149" title="Register a system instance of type T and return it." alt="" coords="248,293,525,319"/>
-<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="147,238,195,259,249,278,288,288,287,293,247,283,193,264,145,243"/>
-<area shape="rect" id="Node000003" href="$namespaceprotocol_1_1game_1_1GameProtocol.html#a82bb05ba2e71bcf41f991da46853bad7" title="Initialize game protocol and bind a local UDP endpoint." alt="" coords="615,47,835,87"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="450,120,610,88,611,93,451,125"/>
-<area shape="rect" id="Node000007" href="$namespaceprotocol_1_1game_1_1GameProtocol.html#a0d915e98b8e2191ae722639b170e73ea" title="Send a CONNECT_REQ message to a server (client&#45;side convenience)." alt="" coords="615,111,835,151"/>
-<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="510,131,601,130,601,135,510,137"/>
-<area shape="rect" id="Node000008" href="$namespaceprotocol_1_1game_1_1GameProtocol.html#a9e31e3918d2366ee2d8b3eb8b946c5de" title="Start the underlying Protocol IO loop (non&#45;blocking, spawns thread)." alt="" coords="615,175,835,215"/>
-<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="460,145,601,171,600,176,459,151"/>
-<area shape="rect" id="Node000004" href="$classprotocol_1_1Protocol.html#a84c493e745daa3623898f5aa235774ba" title="Clear any previously stored endpoint." alt="" coords="925,5,1158,31"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="835,48,945,30,946,35,835,53"/>
-<area shape="rect" id="Node000005" href="$classprotocol_1_1Protocol.html#a4e019a5e18ff4fd1287beddceb4e1e2c" title="Initialize and bind the local UDP socket." alt="" coords="959,55,1124,80"/>
-<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="835,65,945,65,945,70,835,70"/>
-<area shape="rect" id="Node000006" href="$classprotocol_1_1Protocol.html#a4ab1bbadf74acc6ae80a4cdfdbc30b19" title="Store a &quot;preferred&quot; remote endpoint for convenience operations." alt="" coords="924,104,1159,129"/>
-<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="835,82,946,99,945,104,835,87"/>
-<area shape="rect" id="Node000011" href="$classrtype_1_1ecs_1_1Coordinator.html#ad06624ec5ef2024c2f6919eae1fea1d7" title="Register a component type T with the ComponentManager." alt="" coords="573,240,876,265"/>
-<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="485,247,560,248,560,253,485,252"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,181,200,221"/>
+<area shape="rect" id="Node000002" href="$namespacertype_1_1ecs_1_1factory.html#ad6884eef896d6f5d00c251ac5081a24b" title="Creates an enemy entity with health, movement, and weapon setup." alt="" coords="267,139,507,164"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="200,181,248,173,299,164,300,169,248,178,201,186"/>
+<area shape="rect" id="Node000010" href="$namespacertype_1_1ecs_1_1factory.html#a12892dcefb006b9cf209784a8a40083d" title="Creates a player entity with full stats, movement, and weapon setup." alt="" coords="269,89,505,115"/>
+<area shape="poly" id="edge12_Node000001_Node000010" title=" " alt="" coords="135,178,186,150,247,124,276,115,278,120,249,129,189,154,137,183"/>
+<area shape="rect" id="Node000011" href="$classrtype_1_1ecs_1_1Coordinator.html#a1dbf9d999874674f05e2c848ed84d738" title="Initialize internal managers." alt="" coords="287,188,486,213"/>
+<area shape="poly" id="edge18_Node000001_Node000011" title=" " alt="" coords="200,198,273,198,273,203,200,203"/>
+<area shape="rect" id="Node000012" href="$namespacertype_1_1ecs_1_1factory.html#ac493845a0bd714fbeb9baead17010d04" title="Registers all gameplay&#45;related components into the ECS Coordinator." alt="" coords="288,238,485,278"/>
+<area shape="poly" id="edge19_Node000001_Node000012" title=" " alt="" coords="201,218,275,233,274,238,199,223"/>
+<area shape="rect" id="Node000014" href="$classrtype_1_1ecs_1_1Coordinator.html#aca7d6eb9299564682430b0362ce50149" title="Register a system instance of type T and return it." alt="" coords="248,303,525,328"/>
+<area shape="poly" id="edge21_Node000001_Node000014" title=" " alt="" coords="132,219,184,255,249,288,278,297,277,302,247,293,181,259,129,223"/>
+<area shape="rect" id="Node000003" href="$namespacertype_1_1ecs_1_1factory.html#a7cf1b038cae209ff98ae6c2d74390d41" title="Helper template to add a component and destroy the entity on failure." alt="" coords="924,82,1115,122"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="499,162,527,173,542,186,551,200,560,212,575,222,656,251,691,257,724,259,757,257,792,249,875,222,910,205,942,181,992,131,996,134,946,185,913,209,877,227,794,255,758,262,724,265,690,263,654,256,572,227,556,216,547,202,538,189,524,178,497,167"/>
+<area shape="rect" id="Node000006" href="$classrtype_1_1ecs_1_1Coordinator.html#a20747c778c856fd0d9d0cf267ed90346" title="Create a new entity id." alt="" coords="596,188,853,213"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="475,162,623,183,623,189,474,167"/>
+<area shape="rect" id="Node000007" href="$namespacertype_1_1ecs_1_1factory.html#abbec02b513c2ad4e3a2b9b00a491d755" title="Adds movement&#45;related components (position, direction, speed)." alt="" coords="602,40,847,65"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="493,136,524,124,538,112,547,100,556,87,572,74,588,67,590,72,575,79,560,90,551,103,542,116,527,128,495,141"/>
+<area shape="rect" id="Node000008" href="$namespacertype_1_1ecs_1_1factory.html#aeabb5337b4bf656d02046fb676ce13b1" title="Adds hitbox and sprite components if provided." alt="" coords="624,89,825,115"/>
+<area shape="poly" id="edge8_Node000002_Node000008" title=" " alt="" coords="474,136,623,114,623,120,475,141"/>
+<area shape="rect" id="Node000009" href="$namespacertype_1_1ecs_1_1factory.html#a5479c88a043755974c85001d4336327a" title="Adds weapon&#45;related components (damage, frequency)." alt="" coords="612,139,837,164"/>
+<area shape="poly" id="edge10_Node000002_Node000009" title=" " alt="" coords="507,149,598,149,598,154,507,154"/>
+<area shape="rect" id="Node000004" href="$classrtype_1_1ecs_1_1Coordinator.html#a83821656162c90a27785e03b4a09847b" title="Add a component instance for an entity." alt="" coords="1163,64,1440,89"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="1115,91,1149,88,1149,93,1115,96"/>
+<area shape="rect" id="Node000005" href="$classrtype_1_1ecs_1_1Coordinator.html#a770d7357cc80caea3d70cba15f9655dc" title="Destroy an entity and remove it from all managers." alt="" coords="1169,113,1434,139"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="1115,108,1155,111,1155,116,1115,113"/>
+<area shape="poly" id="edge7_Node000007_Node000003" title=" " alt="" coords="807,63,876,74,911,80,910,85,876,79,807,68"/>
+<area shape="poly" id="edge9_Node000008_Node000003" title=" " alt="" coords="826,99,910,99,910,105,826,105"/>
+<area shape="poly" id="edge11_Node000009_Node000003" title=" " alt="" coords="801,136,876,123,910,118,911,123,876,129,802,141"/>
+<area shape="poly" id="edge13_Node000010_Node000003" title=" " alt="" coords="410,87,481,54,526,37,573,25,658,9,725,3,793,8,877,25,932,46,980,72,977,77,930,50,875,30,792,13,725,8,658,15,574,30,528,42,483,59,412,92"/>
+<area shape="poly" id="edge14_Node000010_Node000006" title=" " alt="" coords="499,112,527,124,542,136,552,149,560,162,575,173,593,181,591,186,572,178,556,166,547,152,538,140,524,128,497,117"/>
+<area shape="poly" id="edge15_Node000010_Node000007" title=" " alt="" coords="474,87,623,65,623,70,475,92"/>
+<area shape="poly" id="edge16_Node000010_Node000008" title=" " alt="" coords="505,99,610,99,610,105,505,105"/>
+<area shape="poly" id="edge17_Node000010_Node000009" title=" " alt="" coords="475,112,623,134,623,139,474,117"/>
+<area shape="rect" id="Node000013" href="$classrtype_1_1ecs_1_1Coordinator.html#ad06624ec5ef2024c2f6919eae1fea1d7" title="Register a component type T with the ComponentManager." alt="" coords="573,289,876,315"/>
+<area shape="poly" id="edge20_Node000012_Node000013" title=" " alt="" coords="486,268,613,285,612,290,485,274"/>
 </map>

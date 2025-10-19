@@ -5,6 +5,8 @@ var dir_25ace0bc121ef3a6b9c34867f0e51a24 =
     [ "AudioSystem.hpp", "AudioSystem_8hpp.html", "AudioSystem_8hpp" ],
     [ "CollisionSystem.cpp", "CollisionSystem_8cpp.html", null ],
     [ "CollisionSystem.hpp", "CollisionSystem_8hpp.html", "CollisionSystem_8hpp" ],
+    [ "DrawSystem.cpp", "DrawSystem_8cpp.html", null ],
+    [ "DrawSystem.hpp", "DrawSystem_8hpp.html", "DrawSystem_8hpp" ],
     [ "MovementSystem.cpp", "MovementSystem_8cpp.html", null ],
     [ "MovementSystem.hpp", "MovementSystem_8hpp.html", "MovementSystem_8hpp" ],
     [ "PlayerSystem.cpp", "PlayerSystem_8cpp.html", null ],

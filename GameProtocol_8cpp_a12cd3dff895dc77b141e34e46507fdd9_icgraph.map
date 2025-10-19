@@ -1,14 +1,12 @@
 <map id="try_deserialize_player_input" name="try_deserialize_player_input">
-<area shape="rect" id="Node000001" title="Attempt to deserialize a PLAYER_INPUT payload." alt="" coords="845,37,1052,62"/>
-<area shape="rect" id="Node000002" href="$GameProtocol_8cpp.html#a3f3b75a96b838a72b594b63f15ce2dc2" title="Convert a core packet event (protocol::packet_t inside core_event_t) into a game&#45;level event." alt="" coords="663,37,797,62"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="831,52,798,52,798,47,831,47"/>
-<area shape="rect" id="Node000003" href="$namespaceprotocol_1_1game_1_1GameProtocol.html#a7d2c97816e355b078f53915f2bde1910" title="Retrieve and convert a core event into a game_event_t." alt="" coords="395,29,615,69"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="649,52,615,52,615,47,649,47"/>
-<area shape="poly" id="edge3_Node000003_Node000003" title=" " alt="" coords="543,18,529,11,505,8,483,10,470,15,465,21,468,28,463,30,460,20,467,10,482,5,505,3,531,6,545,13"/>
-<area shape="rect" id="Node000004" href="$classrtype_1_1server.html#a703fd91ca5d705369acef8f6e505e32d" title="Starts the main execution loop of the server." alt="" coords="160,11,295,37"/>
-<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="381,41,294,33,295,27,381,35"/>
-<area shape="rect" id="Node000006" href="$classrtype_1_1client_1_1GameScene.html#a6942b138a7daf65e0c1f01a0bd4fb322" title="Main update loop for the scene." alt="" coords="108,61,347,86"/>
-<area shape="poly" id="edge6_Node000003_Node000006" title=" " alt="" coords="381,63,347,66,347,60,381,57"/>
-<area shape="rect" id="Node000005" href="$Server_2main_8cpp.html#a0c99d968a34e803d378692bde2e3f18f" title="Program entry point." alt="" coords="5,11,60,37"/>
-<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="146,27,60,27,60,21,146,21"/>
+<area shape="rect" id="Node000001" title="Attempt to deserialize a PLAYER_INPUT payload." alt="" coords="741,37,948,62"/>
+<area shape="rect" id="Node000002" href="$GameProtocol_8cpp.html#a3f3b75a96b838a72b594b63f15ce2dc2" title="Convert a core packet event (protocol::packet_t inside core_event_t) into a game&#45;level event." alt="" coords="559,37,693,62"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="727,52,694,52,694,47,727,47"/>
+<area shape="rect" id="Node000003" href="$namespaceprotocol_1_1game_1_1GameProtocol.html#a7d2c97816e355b078f53915f2bde1910" title="Retrieve and convert a core event into a game_event_t." alt="" coords="291,29,511,69"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="545,52,511,52,511,47,545,47"/>
+<area shape="poly" id="edge3_Node000003_Node000003" title=" " alt="" coords="439,18,425,11,401,8,379,10,366,15,361,21,364,28,359,30,356,20,363,10,378,5,401,3,427,6,441,13"/>
+<area shape="rect" id="Node000004" href="$classrtype_1_1server.html#a703fd91ca5d705369acef8f6e505e32d" title="Starts the main execution loop of the server." alt="" coords="108,37,243,62"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="277,52,243,52,243,47,277,47"/>
+<area shape="rect" id="Node000005" href="$Server_2main_8cpp.html#a0c99d968a34e803d378692bde2e3f18f" title="Program entry point." alt="" coords="5,37,60,62"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="94,52,60,52,60,47,94,47"/>
 </map>

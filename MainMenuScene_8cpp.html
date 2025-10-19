@@ -106,17 +106,19 @@ $(document).ready(function(){initNavTree('MainMenuScene_8cpp.html',''); initResi
 <p>Implementation of the MainMenuScene class managing the main menu interface.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="MainMenuScene_8hpp_source.html">MainMenuScene.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="SceneManager_8hpp_source.html">../SceneManager/SceneManager.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="GameManager_8hpp_source.html">../../GameManager/GameManager.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="SingleOption_8hpp_source.html">../../../UI/Options/SingleOption/SingleOption.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="MultipleOption_8hpp_source.html">../../../UI/Options/MultipleOption/MultipleOption.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="OptionList_8hpp_source.html">../../../UI/Options/OptionList/OptionList.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="GameScene_8hpp_source.html">../GameScene/GameScene.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="OptionsMenuScene_8hpp_source.html">../OptionsMenu/OptionsMenuScene.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="InputManager_8hpp_source.html">../../Inputs/InputManager.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="GameSettings_8hpp_source.html">../../Settings/GameSettings.hpp</a>&quot;</code><br />
 <code>#include &lt;raylib.h&gt;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for MainMenuScene.cpp:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="MainMenuScene_8cpp__incl.svg" width="100%" height="558"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="MainMenuScene_8cpp__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 </div>
 <p><a href="MainMenuScene_8cpp_source.html">Go to the source code of this file.</a></p>
@@ -130,16 +132,8 @@ Namespaces</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Implementation of the MainMenuScene class managing the main menu interface. </p>
-<dl class="section since"><dt>Since</dt><dd>1.0</dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="MainMenuScene_8hpp.html" title="Declaration of the MainMenuScene class, representing the main menu interface.">MainMenuScene.hpp</a>, OptionsMenuScene, SceneManager, GameSettings</dd></dl>
-<p>Implements the logic for the R-Type client’s main menu. It initializes interactive options, handles user input, and manages transitions between scenes using SceneManager. Menu scaling and alignment are updated dynamically through GameSettings.</p>
-<h3><a class="anchor" id="autotoc_md8"></a>
-Responsibilities:</h3>
-<ul>
-<li>Initialize menu layout and logo.</li>
-<li>Update selection state and option callbacks.</li>
-<li>Render menu items and the logo sprite each frame. </li>
-</ul>
+<dl class="section since"><dt>Since</dt><dd>1.1</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="MainMenuScene_8hpp.html" title="Declaration of the MainMenuScene class, representing the main menu interface.">MainMenuScene.hpp</a>, OptionsMenuScene, SceneManager, GameSettings </dd></dl>
 
 <p class="definition">Definition in file <a class="el" href="MainMenuScene_8cpp_source.html">MainMenuScene.cpp</a>.</p>
 </div></div><!-- contents -->

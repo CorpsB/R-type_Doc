@@ -143,53 +143,53 @@ $(document).ready(function(){initNavTree('IOption_8hpp_source.html',''); initRes
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="comment"> */</span></div>
 <div class="foldopen" id="foldopen00036" data-start="{" data-end="};">
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="classrtype_1_1client_1_1ui_1_1IOption.html">   36</a></span><span class="keyword">class </span><a class="code hl_class" href="classrtype_1_1client_1_1ui_1_1IOption.html">IOption</a> {</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="keyword">public</span>:<span class="comment"></span></div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="comment">    /**</span></div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="comment">     * @brief Virtual destructor for proper cleanup in derived classes.</span></div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="comment">     */</span></div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="classrtype_1_1client_1_1ui_1_1IOption.html#ad6cd61a2162cd45f67a45c62ce4fbbb4">   41</a></span>    <span class="keyword">virtual</span> <a class="code hl_function" href="classrtype_1_1client_1_1ui_1_1IOption.html#ad6cd61a2162cd45f67a45c62ce4fbbb4">~IOption</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keyword">public</span>:<span class="comment"></span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="comment">        /**</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="comment">         * @brief Virtual destructor for proper cleanup in derived classes.</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="comment">         */</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="classrtype_1_1client_1_1ui_1_1IOption.html#ad6cd61a2162cd45f67a45c62ce4fbbb4">   41</a></span>        <span class="keyword">virtual</span> <a class="code hl_function" href="classrtype_1_1client_1_1ui_1_1IOption.html#ad6cd61a2162cd45f67a45c62ce4fbbb4">~IOption</a>() = <span class="keywordflow">default</span>;</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="comment"></span> </div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="comment">    /**</span></div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="comment">     * @brief Updates the state of the option.</span></div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="comment">     * @param selected True if the option is currently highlighted.</span></div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="comment">     * @param editing True if the option is currently being modified.</span></div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="comment">     *</span></div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="comment">     * @details</span></div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="comment">     * Called once per frame to update the internal state of the option</span></div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="comment">     * based on user navigation or editing actions.</span></div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="comment">     */</span></div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="classrtype_1_1client_1_1ui_1_1IOption.html#a1da95ca90ab67a4b659474fb1adfd810">   52</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classrtype_1_1client_1_1ui_1_1IOption.html#a1da95ca90ab67a4b659474fb1adfd810">update</a>(<span class="keywordtype">bool</span> selected, <span class="keywordtype">bool</span> editing) = 0;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="comment">        /**</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="comment">         * @brief Updates the state of the option.</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="comment">         * @param selected True if the option is currently highlighted.</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="comment">         * @param editing True if the option is currently being modified.</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="comment">         *</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="comment">         * @details</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="comment">         * Called once per frame to update the internal state of the option</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="comment">         * based on user navigation or editing actions.</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="comment">         */</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="classrtype_1_1client_1_1ui_1_1IOption.html#a50a6324dc5a8b756514789724362c134">   52</a></span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classrtype_1_1client_1_1ui_1_1IOption.html#a50a6324dc5a8b756514789724362c134">update</a>(<span class="keywordtype">bool</span> selected) = 0;</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="comment"></span> </div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="comment">    /**</span></div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="comment">     * @brief Draws the option on the screen.</span></div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="comment">     * @param selected True if the option is currently highlighted.</span></div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="comment">     * @param editing True if the option is currently being modified.</span></div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="comment">     *</span></div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="comment">     * @details</span></div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="comment">     * Responsible for rendering the visual representation of the menu box,</span></div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="comment">     * including selection or editing feedback.</span></div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="comment">     */</span></div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="classrtype_1_1client_1_1ui_1_1IOption.html#a5cc87ec92757af12bbc1be0d8092a00f">   63</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classrtype_1_1client_1_1ui_1_1IOption.html#a5cc87ec92757af12bbc1be0d8092a00f">draw</a>(<span class="keywordtype">bool</span> selected, <span class="keywordtype">bool</span> editing) <span class="keyword">const</span> = 0;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="comment">        /**</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="comment">         * @brief Draws the option on the screen.</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="comment">         * @param selected True if the option is currently highlighted.</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="comment">         * @param editing True if the option is currently being modified.</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="comment">         *</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="comment">         * @details</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="comment">         * Responsible for rendering the visual representation of the menu box,</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="comment">         * including selection or editing feedback.</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="comment">         */</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="classrtype_1_1client_1_1ui_1_1IOption.html#a6ed7898935b2d855c8a8fb2ed8d14ea6">   63</a></span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classrtype_1_1client_1_1ui_1_1IOption.html#a6ed7898935b2d855c8a8fb2ed8d14ea6">draw</a>(<span class="keywordtype">bool</span> selected) <span class="keyword">const</span> = 0;</div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="comment"></span> </div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="comment">    /**</span></div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="comment">     * @brief Sets the on-screen position of the option box.</span></div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="comment">     * @param position The top-left corner position in pixels.</span></div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="comment">     */</span></div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="classrtype_1_1client_1_1ui_1_1IOption.html#a9a55c4e73981dd2d5c62eae269b75f79">   69</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classrtype_1_1client_1_1ui_1_1IOption.html#a9a55c4e73981dd2d5c62eae269b75f79">setPosition</a>(Vector2 position) = 0;</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="comment">        /**</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="comment">         * @brief Sets the on-screen position of the option box.</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="comment">         * @param position The top-left corner position in pixels.</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="comment">         */</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="classrtype_1_1client_1_1ui_1_1IOption.html#a9a55c4e73981dd2d5c62eae269b75f79">   69</a></span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classrtype_1_1client_1_1ui_1_1IOption.html#a9a55c4e73981dd2d5c62eae269b75f79">setPosition</a>(Vector2 position) = 0;</div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="comment"></span> </div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="comment">    /**</span></div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="comment">     * @brief Sets the size of the option box.</span></div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="comment">     * @param size The width and height of the option box in pixels.</span></div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="comment">     */</span></div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="classrtype_1_1client_1_1ui_1_1IOption.html#a7cbf7054469d36919d3733bff689dbc0">   75</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classrtype_1_1client_1_1ui_1_1IOption.html#a7cbf7054469d36919d3733bff689dbc0">setSize</a>(Vector2 size) = 0;</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="comment">        /**</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="comment">         * @brief Sets the size of the option box.</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="comment">         * @param size The width and height of the option box in pixels.</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="comment">         */</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="classrtype_1_1client_1_1ui_1_1IOption.html#a7cbf7054469d36919d3733bff689dbc0">   75</a></span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classrtype_1_1client_1_1ui_1_1IOption.html#a7cbf7054469d36919d3733bff689dbc0">setSize</a>(Vector2 size) = 0;</div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>};</div>
 </div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>} <span class="comment">// namespace rtype::client::ui</span></div>
 </div>
 <div class="ttc" id="aclassrtype_1_1client_1_1ui_1_1IOption_html"><div class="ttname"><a href="classrtype_1_1client_1_1ui_1_1IOption.html">rtype::client::ui::IOption</a></div><div class="ttdoc">Interface for selectable menu options.</div><div class="ttdef"><b>Definition</b> <a href="IOption_8hpp_source.html#l00036">IOption.hpp:36</a></div></div>
-<div class="ttc" id="aclassrtype_1_1client_1_1ui_1_1IOption_html_a1da95ca90ab67a4b659474fb1adfd810"><div class="ttname"><a href="classrtype_1_1client_1_1ui_1_1IOption.html#a1da95ca90ab67a4b659474fb1adfd810">rtype::client::ui::IOption::update</a></div><div class="ttdeci">virtual void update(bool selected, bool editing)=0</div><div class="ttdoc">Updates the state of the option.</div></div>
-<div class="ttc" id="aclassrtype_1_1client_1_1ui_1_1IOption_html_a5cc87ec92757af12bbc1be0d8092a00f"><div class="ttname"><a href="classrtype_1_1client_1_1ui_1_1IOption.html#a5cc87ec92757af12bbc1be0d8092a00f">rtype::client::ui::IOption::draw</a></div><div class="ttdeci">virtual void draw(bool selected, bool editing) const =0</div><div class="ttdoc">Draws the option on the screen.</div></div>
+<div class="ttc" id="aclassrtype_1_1client_1_1ui_1_1IOption_html_a50a6324dc5a8b756514789724362c134"><div class="ttname"><a href="classrtype_1_1client_1_1ui_1_1IOption.html#a50a6324dc5a8b756514789724362c134">rtype::client::ui::IOption::update</a></div><div class="ttdeci">virtual void update(bool selected)=0</div><div class="ttdoc">Updates the state of the option.</div></div>
+<div class="ttc" id="aclassrtype_1_1client_1_1ui_1_1IOption_html_a6ed7898935b2d855c8a8fb2ed8d14ea6"><div class="ttname"><a href="classrtype_1_1client_1_1ui_1_1IOption.html#a6ed7898935b2d855c8a8fb2ed8d14ea6">rtype::client::ui::IOption::draw</a></div><div class="ttdeci">virtual void draw(bool selected) const =0</div><div class="ttdoc">Draws the option on the screen.</div></div>
 <div class="ttc" id="aclassrtype_1_1client_1_1ui_1_1IOption_html_a7cbf7054469d36919d3733bff689dbc0"><div class="ttname"><a href="classrtype_1_1client_1_1ui_1_1IOption.html#a7cbf7054469d36919d3733bff689dbc0">rtype::client::ui::IOption::setSize</a></div><div class="ttdeci">virtual void setSize(Vector2 size)=0</div><div class="ttdoc">Sets the size of the option box.</div></div>
 <div class="ttc" id="aclassrtype_1_1client_1_1ui_1_1IOption_html_a9a55c4e73981dd2d5c62eae269b75f79"><div class="ttname"><a href="classrtype_1_1client_1_1ui_1_1IOption.html#a9a55c4e73981dd2d5c62eae269b75f79">rtype::client::ui::IOption::setPosition</a></div><div class="ttdeci">virtual void setPosition(Vector2 position)=0</div><div class="ttdoc">Sets the on-screen position of the option box.</div></div>
 <div class="ttc" id="aclassrtype_1_1client_1_1ui_1_1IOption_html_ad6cd61a2162cd45f67a45c62ce4fbbb4"><div class="ttname"><a href="classrtype_1_1client_1_1ui_1_1IOption.html#ad6cd61a2162cd45f67a45c62ce4fbbb4">rtype::client::ui::IOption::~IOption</a></div><div class="ttdeci">virtual ~IOption()=default</div><div class="ttdoc">Virtual destructor for proper cleanup in derived classes.</div></div>
@@ -199,7 +199,7 @@ $(document).ready(function(){initNavTree('IOption_8hpp_source.html',''); initRes
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_922c588100a187620fdc1533bc178f73.html">Client</a></li><li class="navelem"><a class="el" href="dir_2a1d840b44edd7220955ce3ad88544ff.html">Game</a></li><li class="navelem"><a class="el" href="dir_cb631e7725b523852027e25556f83de5.html">UI</a></li><li class="navelem"><a class="el" href="dir_5af9e917c0e44afb86845b4986cf80f5.html">Options</a></li><li class="navelem"><a class="el" href="IOption_8hpp.html">IOption.hpp</a></li>
+    <li class="navelem"><a class="el" href="dir_922c588100a187620fdc1533bc178f73.html">Client</a></li><li class="navelem"><a class="el" href="dir_6a91be1212d226e12b0987d969ebe5c3.html">UI</a></li><li class="navelem"><a class="el" href="dir_2de8074c226d5d99510046e097eae414.html">Options</a></li><li class="navelem"><a class="el" href="IOption_8hpp.html">IOption.hpp</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>

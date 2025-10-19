@@ -1,0 +1,13 @@
+<map id="rtype::client::GameManager" name="rtype::client::GameManager">
+<area shape="rect" id="Node000001" title=" " alt="" coords="558,557,845,783"/>
+<area shape="rect" id="Node000002" href="$classrtype_1_1client_1_1InputManager.html" title="Singleton managing user input and key bindings." alt="" coords="5,131,248,369"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="174,369,212,435,235,465,262,493,326,540,398,579,472,609,543,632,541,637,470,614,396,584,324,545,258,497,231,469,207,438,169,371"/>
+<area shape="rect" id="Node000003" href="$classrtype_1_1client_1_1LanguageManager.html" title="Singleton handling internationalization (i18n) and dynamic text translation." alt="" coords="272,165,541,335"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="456,334,503,412,557,493,595,543,591,546,552,496,498,415,451,336"/>
+<area shape="rect" id="Node000004" href="$classrtype_1_1client_1_1ResourceManager.html" title="Singleton responsible for loading, caching, and managing Raylib assets." alt="" coords="566,54,837,446"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="704,447,704,541,699,541,699,447"/>
+<area shape="rect" id="Node000005" href="$classrtype_1_1client_1_1SceneManager.html" title="Manages and orchestrates a stack of active scenes." alt="" coords="860,107,1121,393"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="925,394,885,466,838,535,829,546,825,543,834,532,880,463,921,391"/>
+<area shape="rect" id="Node000006" href="$classrtype_1_1client_1_1GameSettings.html" title="Singleton managing runtime settings and UI scaling for the R&#45;Type client." alt="" coords="1145,5,1447,495"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="1147,487,1135,497,1071,541,1001,578,930,609,861,632,860,627,928,604,999,574,1068,537,1132,493,1143,483"/>
+</map>

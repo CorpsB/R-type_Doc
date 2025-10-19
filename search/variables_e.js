@@ -7,5 +7,6 @@ var searchData=
   ['player_4',['player',['../namespaceprotocol_1_1game.html#af06031f752e8ef3902246ea9f18f5821',1,'protocol::game::payload_player_input_t']]],
   ['playing_5',['playing',['../Audio_8hpp.html#a93cd88bfd0accd1b57e736deae948c0d',1,'audio_attr_t']]],
   ['port_6',['port',['../config_8h.html#a03a218180f882180702d49d127ad7952',1,'parser_args_t']]],
-  ['pos_7',['pos',['../structarcade_1_1types_1_1Entity.html#a38d1d66ee0022a4e9c932147c0959beb',1,'arcade::types::Entity::pos'],['../namespacearcade_1_1types.html#a95aa2bfbef169ab614bd46a1de778e7a',1,'arcade::types::Mouse::pos']]]
+  ['pos_7',['pos',['../structarcade_1_1types_1_1Entity.html#a38d1d66ee0022a4e9c932147c0959beb',1,'arcade::types::Entity::pos'],['../namespacearcade_1_1types.html#a95aa2bfbef169ab614bd46a1de778e7a',1,'arcade::types::Mouse::pos']]],
+  ['position_8',['position',['../namespacertype_1_1client_1_1ui.html#a3d324c48c3dbe7f541b9b2cb2fd9c702',1,'rtype::client::ui::SpriteInstance']]]
 ];

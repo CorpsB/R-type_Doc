@@ -9,6 +9,7 @@ var searchData=
   ['speed_5fattr_5ft_6',['speed_attr_t',['../Speed_8hpp.html#structspeed__attr__t',1,'']]],
   ['sprite_7',['sprite',['../structarcade_1_1types_1_1Sprite.html',1,'arcade::types::Sprite'],['../classrtype_1_1client_1_1ui_1_1Sprite.html',1,'rtype::client::ui::Sprite']]],
   ['sprite_5fattr_5ft_8',['sprite_attr_t',['../Common_2ECS_2Components_2Attributes_2Sprite_8hpp.html#structsprite__attr__t',1,'']]],
-  ['system_9',['System',['../classrtype_1_1ecs_1_1System.html',1,'rtype::ecs']]],
-  ['systemmanager_10',['SystemManager',['../classrtype_1_1ecs_1_1SystemManager.html',1,'rtype::ecs']]]
+  ['spriteinstance_9',['SpriteInstance',['../namespacertype_1_1client_1_1ui.html#structrtype_1_1client_1_1ui_1_1SpriteInstance',1,'rtype::client::ui']]],
+  ['system_10',['System',['../classrtype_1_1ecs_1_1System.html',1,'rtype::ecs']]],
+  ['systemmanager_11',['SystemManager',['../classrtype_1_1ecs_1_1SystemManager.html',1,'rtype::ecs']]]
 ];

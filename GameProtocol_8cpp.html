@@ -195,78 +195,78 @@ Functions</h2></td></tr>
 </ul>
 <dl class="section note"><dt>Note</dt><dd>The function does NOT perform protocol-level validation beyond buffer-size checks done by the try_deserialize_* helpers. The caller should ensure core.payload holds a packet_t. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="GameProtocol_8cpp_source.html#l00323">323</a> of file <a class="el" href="GameProtocol_8cpp_source.html">GameProtocol.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  325</span>{</div>
-<div class="line"><span class="lineno">  326</span>    <span class="keywordflow">if</span> (!std::holds_alternative&lt;protocol::packet_t&gt;(core.<a class="code hl_variable" href="namespaceprotocol.html#accab359991581c7c36ac10ec51b651f9">payload</a>)) {</div>
-<div class="line"><span class="lineno">  327</span>        out_event.<a class="code hl_variable" href="namespaceprotocol_1_1game.html#a383feecaeb4a172a39d5fb71a65ec0d1">type</a> = <a class="code hl_enumvalue" href="namespaceprotocol_1_1game.html#ac979c495edcb78eaa548b5c7be45f118ab459b0b196b23ddac2d1e061943537b4">protocol::game::game_event_type_t::RAW_PACKET</a>;</div>
-<div class="line"><span class="lineno">  328</span>        out_event.<a class="code hl_variable" href="namespaceprotocol_1_1game.html#aaa178d940515c73c2f0b082319929414">payload</a> = <a class="code hl_struct" href="namespaceprotocol.html#structprotocol_1_1packet__t">protocol::packet_t</a>{};</div>
-<div class="line"><span class="lineno">  329</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">  330</span>    }</div>
-<div class="line"><span class="lineno">  331</span> </div>
-<div class="line"><span class="lineno">  332</span>    <a class="code hl_struct" href="namespaceprotocol.html#structprotocol_1_1packet__t">protocol::packet_t</a> packet = std::get&lt;protocol::packet_t&gt;(core.<a class="code hl_variable" href="namespaceprotocol.html#accab359991581c7c36ac10ec51b651f9">payload</a>);</div>
-<div class="line"><span class="lineno">  333</span>    uint16_t message_type = <span class="keyword">static_cast&lt;</span>uint16_t<span class="keyword">&gt;</span>(packet.<a class="code hl_variable" href="namespaceprotocol.html#ad619a28d2ad425b93f5b98f0ef6c87c5">header</a>.<a class="code hl_variable" href="namespaceprotocol.html#ad6e7d7fe7a0f9f1c7eafd4658e37dcda">message_type</a>);</div>
-<div class="line"><span class="lineno">  334</span> </div>
-<div class="line"><span class="lineno">  335</span>    <span class="keywordflow">switch</span> (<span class="keyword">static_cast&lt;</span><a class="code hl_enumeration" href="namespaceprotocol_1_1game.html#ad4d21ce1bb315afe579f5abed923f701">protocol::game::game_message_type_t</a><span class="keyword">&gt;</span>(message_type))</div>
-<div class="line"><span class="lineno">  336</span>    {</div>
-<div class="line"><span class="lineno">  337</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespaceprotocol_1_1game.html#ad4d21ce1bb315afe579f5abed923f701a016e1171067ff064c151e0a5fef52ca2">protocol::game::game_message_type_t::CREATE_ENTITY</a>: {</div>
-<div class="line"><span class="lineno">  338</span>            <a class="code hl_struct" href="namespaceprotocol_1_1game.html#structprotocol_1_1game_1_1payload__create__entity__t">protocol::game::payload_create_entity_t</a> pe;</div>
-<div class="line"><span class="lineno">  339</span> </div>
-<div class="line"><span class="lineno">  340</span>            <span class="keywordflow">if</span> (<a class="code hl_function" href="GameProtocol_8cpp.html#acf6b25d75eab1ab4ca361f6161a5fc7d">try_deserialize_create_entity</a>(packet.<a class="code hl_variable" href="namespaceprotocol.html#a83d23715dda6bc42f3c532dab1b66f0e">payload</a>, pe)) {</div>
-<div class="line"><span class="lineno">  341</span>                out_event.<a class="code hl_variable" href="namespaceprotocol_1_1game.html#a383feecaeb4a172a39d5fb71a65ec0d1">type</a> = <a class="code hl_enumvalue" href="namespaceprotocol_1_1game.html#ac979c495edcb78eaa548b5c7be45f118a016e1171067ff064c151e0a5fef52ca2">protocol::game::game_event_type_t::CREATE_ENTITY</a>;</div>
-<div class="line"><span class="lineno">  342</span>                out_event.<a class="code hl_variable" href="namespaceprotocol_1_1game.html#aaa178d940515c73c2f0b082319929414">payload</a> = pe;</div>
-<div class="line"><span class="lineno">  343</span>            } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">  344</span>                out_event.<a class="code hl_variable" href="namespaceprotocol_1_1game.html#a383feecaeb4a172a39d5fb71a65ec0d1">type</a> = <a class="code hl_enumvalue" href="namespaceprotocol_1_1game.html#ac979c495edcb78eaa548b5c7be45f118ab459b0b196b23ddac2d1e061943537b4">protocol::game::game_event_type_t::RAW_PACKET</a>;</div>
-<div class="line"><span class="lineno">  345</span>                out_event.<a class="code hl_variable" href="namespaceprotocol_1_1game.html#aaa178d940515c73c2f0b082319929414">payload</a> = std::move(packet);</div>
-<div class="line"><span class="lineno">  346</span>            }</div>
-<div class="line"><span class="lineno">  347</span>            <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">  348</span>        }</div>
+<p class="definition">Definition at line <a class="el" href="GameProtocol_8cpp_source.html#l00333">333</a> of file <a class="el" href="GameProtocol_8cpp_source.html">GameProtocol.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  335</span>{</div>
+<div class="line"><span class="lineno">  336</span>    <span class="keywordflow">if</span> (!std::holds_alternative&lt;protocol::packet_t&gt;(core.<a class="code hl_variable" href="namespaceprotocol.html#accab359991581c7c36ac10ec51b651f9">payload</a>)) {</div>
+<div class="line"><span class="lineno">  337</span>        out_event.<a class="code hl_variable" href="namespaceprotocol_1_1game.html#a383feecaeb4a172a39d5fb71a65ec0d1">type</a> = <a class="code hl_enumvalue" href="namespaceprotocol_1_1game.html#ac979c495edcb78eaa548b5c7be45f118ab459b0b196b23ddac2d1e061943537b4">protocol::game::game_event_type_t::RAW_PACKET</a>;</div>
+<div class="line"><span class="lineno">  338</span>        out_event.<a class="code hl_variable" href="namespaceprotocol_1_1game.html#aaa178d940515c73c2f0b082319929414">payload</a> = <a class="code hl_struct" href="namespaceprotocol.html#structprotocol_1_1packet__t">protocol::packet_t</a>{};</div>
+<div class="line"><span class="lineno">  339</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  340</span>    }</div>
+<div class="line"><span class="lineno">  341</span> </div>
+<div class="line"><span class="lineno">  342</span>    <a class="code hl_struct" href="namespaceprotocol.html#structprotocol_1_1packet__t">protocol::packet_t</a> packet = std::get&lt;protocol::packet_t&gt;(core.<a class="code hl_variable" href="namespaceprotocol.html#accab359991581c7c36ac10ec51b651f9">payload</a>);</div>
+<div class="line"><span class="lineno">  343</span>    uint16_t message_type = <span class="keyword">static_cast&lt;</span>uint16_t<span class="keyword">&gt;</span>(packet.<a class="code hl_variable" href="namespaceprotocol.html#ad619a28d2ad425b93f5b98f0ef6c87c5">header</a>.<a class="code hl_variable" href="namespaceprotocol.html#ad6e7d7fe7a0f9f1c7eafd4658e37dcda">message_type</a>);</div>
+<div class="line"><span class="lineno">  344</span> </div>
+<div class="line"><span class="lineno">  345</span>    <span class="keywordflow">switch</span> (<span class="keyword">static_cast&lt;</span><a class="code hl_enumeration" href="namespaceprotocol_1_1game.html#ad4d21ce1bb315afe579f5abed923f701">protocol::game::game_message_type_t</a><span class="keyword">&gt;</span>(message_type))</div>
+<div class="line"><span class="lineno">  346</span>    {</div>
+<div class="line"><span class="lineno">  347</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespaceprotocol_1_1game.html#ad4d21ce1bb315afe579f5abed923f701a016e1171067ff064c151e0a5fef52ca2">protocol::game::game_message_type_t::CREATE_ENTITY</a>: {</div>
+<div class="line"><span class="lineno">  348</span>            <a class="code hl_struct" href="namespaceprotocol_1_1game.html#structprotocol_1_1game_1_1payload__create__entity__t">protocol::game::payload_create_entity_t</a> pe;</div>
 <div class="line"><span class="lineno">  349</span> </div>
-<div class="line"><span class="lineno">  350</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespaceprotocol_1_1game.html#ad4d21ce1bb315afe579f5abed923f701ae66cbaf5e7fa7ca722d61f5326f418a8">protocol::game::game_message_type_t::MOVE_ENTITY</a>: {</div>
-<div class="line"><span class="lineno">  351</span>            <a class="code hl_struct" href="namespaceprotocol_1_1game.html#structprotocol_1_1game_1_1payload__move__entity__t">protocol::game::payload_move_entity_t</a> pm;</div>
-<div class="line"><span class="lineno">  352</span> </div>
-<div class="line"><span class="lineno">  353</span>            <span class="keywordflow">if</span> (<a class="code hl_function" href="GameProtocol_8cpp.html#a24c81f667e616a00fec9caf240a2ecb9">try_deserialize_move_entity</a>(packet.<a class="code hl_variable" href="namespaceprotocol.html#a83d23715dda6bc42f3c532dab1b66f0e">payload</a>, pm)) {</div>
-<div class="line"><span class="lineno">  354</span>                out_event.<a class="code hl_variable" href="namespaceprotocol_1_1game.html#a383feecaeb4a172a39d5fb71a65ec0d1">type</a> = <a class="code hl_enumvalue" href="namespaceprotocol_1_1game.html#ac979c495edcb78eaa548b5c7be45f118ae66cbaf5e7fa7ca722d61f5326f418a8">protocol::game::game_event_type_t::MOVE_ENTITY</a>;</div>
-<div class="line"><span class="lineno">  355</span>                out_event.<a class="code hl_variable" href="namespaceprotocol_1_1game.html#aaa178d940515c73c2f0b082319929414">payload</a> = pm;</div>
-<div class="line"><span class="lineno">  356</span>            } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">  357</span>                out_event.<a class="code hl_variable" href="namespaceprotocol_1_1game.html#a383feecaeb4a172a39d5fb71a65ec0d1">type</a> = <a class="code hl_enumvalue" href="namespaceprotocol_1_1game.html#ac979c495edcb78eaa548b5c7be45f118ab459b0b196b23ddac2d1e061943537b4">protocol::game::game_event_type_t::RAW_PACKET</a>;</div>
-<div class="line"><span class="lineno">  358</span>                out_event.<a class="code hl_variable" href="namespaceprotocol_1_1game.html#aaa178d940515c73c2f0b082319929414">payload</a> = std::move(packet);</div>
-<div class="line"><span class="lineno">  359</span>            }</div>
-<div class="line"><span class="lineno">  360</span>            <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">  361</span>        }</div>
+<div class="line"><span class="lineno">  350</span>            <span class="keywordflow">if</span> (<a class="code hl_function" href="GameProtocol_8cpp.html#acf6b25d75eab1ab4ca361f6161a5fc7d">try_deserialize_create_entity</a>(packet.<a class="code hl_variable" href="namespaceprotocol.html#a83d23715dda6bc42f3c532dab1b66f0e">payload</a>, pe)) {</div>
+<div class="line"><span class="lineno">  351</span>                out_event.<a class="code hl_variable" href="namespaceprotocol_1_1game.html#a383feecaeb4a172a39d5fb71a65ec0d1">type</a> = <a class="code hl_enumvalue" href="namespaceprotocol_1_1game.html#ac979c495edcb78eaa548b5c7be45f118a016e1171067ff064c151e0a5fef52ca2">protocol::game::game_event_type_t::CREATE_ENTITY</a>;</div>
+<div class="line"><span class="lineno">  352</span>                out_event.<a class="code hl_variable" href="namespaceprotocol_1_1game.html#aaa178d940515c73c2f0b082319929414">payload</a> = pe;</div>
+<div class="line"><span class="lineno">  353</span>            } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  354</span>                out_event.<a class="code hl_variable" href="namespaceprotocol_1_1game.html#a383feecaeb4a172a39d5fb71a65ec0d1">type</a> = <a class="code hl_enumvalue" href="namespaceprotocol_1_1game.html#ac979c495edcb78eaa548b5c7be45f118ab459b0b196b23ddac2d1e061943537b4">protocol::game::game_event_type_t::RAW_PACKET</a>;</div>
+<div class="line"><span class="lineno">  355</span>                out_event.<a class="code hl_variable" href="namespaceprotocol_1_1game.html#aaa178d940515c73c2f0b082319929414">payload</a> = std::move(packet);</div>
+<div class="line"><span class="lineno">  356</span>            }</div>
+<div class="line"><span class="lineno">  357</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  358</span>        }</div>
+<div class="line"><span class="lineno">  359</span> </div>
+<div class="line"><span class="lineno">  360</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespaceprotocol_1_1game.html#ad4d21ce1bb315afe579f5abed923f701ae66cbaf5e7fa7ca722d61f5326f418a8">protocol::game::game_message_type_t::MOVE_ENTITY</a>: {</div>
+<div class="line"><span class="lineno">  361</span>            <a class="code hl_struct" href="namespaceprotocol_1_1game.html#structprotocol_1_1game_1_1payload__move__entity__t">protocol::game::payload_move_entity_t</a> pm;</div>
 <div class="line"><span class="lineno">  362</span> </div>
-<div class="line"><span class="lineno">  363</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespaceprotocol_1_1game.html#ad4d21ce1bb315afe579f5abed923f701af399392cc4fe0ec00204f4ae5c55e64c">protocol::game::game_message_type_t::DESTROY_ENTITY</a>: {</div>
-<div class="line"><span class="lineno">  364</span>            <a class="code hl_struct" href="namespaceprotocol_1_1game.html#structprotocol_1_1game_1_1payload__destroy__entity__t">protocol::game::payload_destroy_entity_t</a> pd;</div>
-<div class="line"><span class="lineno">  365</span> </div>
-<div class="line"><span class="lineno">  366</span>            <span class="keywordflow">if</span> (<a class="code hl_function" href="GameProtocol_8cpp.html#a3c6ff5912781e697a7661a2cfe15291f">try_deserialize_destroy_entity</a>(packet.<a class="code hl_variable" href="namespaceprotocol.html#a83d23715dda6bc42f3c532dab1b66f0e">payload</a>, pd)) {</div>
-<div class="line"><span class="lineno">  367</span>                out_event.<a class="code hl_variable" href="namespaceprotocol_1_1game.html#a383feecaeb4a172a39d5fb71a65ec0d1">type</a> = <a class="code hl_enumvalue" href="namespaceprotocol_1_1game.html#ac979c495edcb78eaa548b5c7be45f118af399392cc4fe0ec00204f4ae5c55e64c">protocol::game::game_event_type_t::DESTROY_ENTITY</a>;</div>
-<div class="line"><span class="lineno">  368</span>                out_event.<a class="code hl_variable" href="namespaceprotocol_1_1game.html#aaa178d940515c73c2f0b082319929414">payload</a> = pd;</div>
-<div class="line"><span class="lineno">  369</span>            } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">  370</span>                out_event.<a class="code hl_variable" href="namespaceprotocol_1_1game.html#a383feecaeb4a172a39d5fb71a65ec0d1">type</a> = <a class="code hl_enumvalue" href="namespaceprotocol_1_1game.html#ac979c495edcb78eaa548b5c7be45f118ab459b0b196b23ddac2d1e061943537b4">protocol::game::game_event_type_t::RAW_PACKET</a>;</div>
-<div class="line"><span class="lineno">  371</span>                out_event.<a class="code hl_variable" href="namespaceprotocol_1_1game.html#aaa178d940515c73c2f0b082319929414">payload</a> = std::move(packet);</div>
-<div class="line"><span class="lineno">  372</span>            }</div>
-<div class="line"><span class="lineno">  373</span>            <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">  374</span>        }</div>
+<div class="line"><span class="lineno">  363</span>            <span class="keywordflow">if</span> (<a class="code hl_function" href="GameProtocol_8cpp.html#a24c81f667e616a00fec9caf240a2ecb9">try_deserialize_move_entity</a>(packet.<a class="code hl_variable" href="namespaceprotocol.html#a83d23715dda6bc42f3c532dab1b66f0e">payload</a>, pm)) {</div>
+<div class="line"><span class="lineno">  364</span>                out_event.<a class="code hl_variable" href="namespaceprotocol_1_1game.html#a383feecaeb4a172a39d5fb71a65ec0d1">type</a> = <a class="code hl_enumvalue" href="namespaceprotocol_1_1game.html#ac979c495edcb78eaa548b5c7be45f118ae66cbaf5e7fa7ca722d61f5326f418a8">protocol::game::game_event_type_t::MOVE_ENTITY</a>;</div>
+<div class="line"><span class="lineno">  365</span>                out_event.<a class="code hl_variable" href="namespaceprotocol_1_1game.html#aaa178d940515c73c2f0b082319929414">payload</a> = pm;</div>
+<div class="line"><span class="lineno">  366</span>            } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  367</span>                out_event.<a class="code hl_variable" href="namespaceprotocol_1_1game.html#a383feecaeb4a172a39d5fb71a65ec0d1">type</a> = <a class="code hl_enumvalue" href="namespaceprotocol_1_1game.html#ac979c495edcb78eaa548b5c7be45f118ab459b0b196b23ddac2d1e061943537b4">protocol::game::game_event_type_t::RAW_PACKET</a>;</div>
+<div class="line"><span class="lineno">  368</span>                out_event.<a class="code hl_variable" href="namespaceprotocol_1_1game.html#aaa178d940515c73c2f0b082319929414">payload</a> = std::move(packet);</div>
+<div class="line"><span class="lineno">  369</span>            }</div>
+<div class="line"><span class="lineno">  370</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  371</span>        }</div>
+<div class="line"><span class="lineno">  372</span> </div>
+<div class="line"><span class="lineno">  373</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespaceprotocol_1_1game.html#ad4d21ce1bb315afe579f5abed923f701af399392cc4fe0ec00204f4ae5c55e64c">protocol::game::game_message_type_t::DESTROY_ENTITY</a>: {</div>
+<div class="line"><span class="lineno">  374</span>            <a class="code hl_struct" href="namespaceprotocol_1_1game.html#structprotocol_1_1game_1_1payload__destroy__entity__t">protocol::game::payload_destroy_entity_t</a> pd;</div>
 <div class="line"><span class="lineno">  375</span> </div>
-<div class="line"><span class="lineno">  376</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespaceprotocol_1_1game.html#ad4d21ce1bb315afe579f5abed923f701a180c1b797f83d66065d0313fa7e863d1">protocol::game::game_message_type_t::PLAYER_INPUT</a>: {</div>
-<div class="line"><span class="lineno">  377</span>            <a class="code hl_struct" href="namespaceprotocol_1_1game.html#structprotocol_1_1game_1_1payload__player__input__t">protocol::game::payload_player_input_t</a> pi;</div>
-<div class="line"><span class="lineno">  378</span> </div>
-<div class="line"><span class="lineno">  379</span>            <span class="keywordflow">if</span> (<a class="code hl_function" href="GameProtocol_8cpp.html#a12cd3dff895dc77b141e34e46507fdd9">try_deserialize_player_input</a>(packet.<a class="code hl_variable" href="namespaceprotocol.html#a83d23715dda6bc42f3c532dab1b66f0e">payload</a>, pi)) {</div>
-<div class="line"><span class="lineno">  380</span>                out_event.<a class="code hl_variable" href="namespaceprotocol_1_1game.html#a383feecaeb4a172a39d5fb71a65ec0d1">type</a> = <a class="code hl_enumvalue" href="namespaceprotocol_1_1game.html#ac979c495edcb78eaa548b5c7be45f118a180c1b797f83d66065d0313fa7e863d1">protocol::game::game_event_type_t::PLAYER_INPUT</a>;</div>
-<div class="line"><span class="lineno">  381</span>                out_event.<a class="code hl_variable" href="namespaceprotocol_1_1game.html#aaa178d940515c73c2f0b082319929414">payload</a> = pi;</div>
-<div class="line"><span class="lineno">  382</span>            } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">  383</span>                out_event.<a class="code hl_variable" href="namespaceprotocol_1_1game.html#a383feecaeb4a172a39d5fb71a65ec0d1">type</a> = <a class="code hl_enumvalue" href="namespaceprotocol_1_1game.html#ac979c495edcb78eaa548b5c7be45f118ab459b0b196b23ddac2d1e061943537b4">protocol::game::game_event_type_t::RAW_PACKET</a>;</div>
-<div class="line"><span class="lineno">  384</span>                out_event.<a class="code hl_variable" href="namespaceprotocol_1_1game.html#aaa178d940515c73c2f0b082319929414">payload</a> = std::move(packet);</div>
-<div class="line"><span class="lineno">  385</span>            }</div>
-<div class="line"><span class="lineno">  386</span>            <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">  387</span>        }</div>
+<div class="line"><span class="lineno">  376</span>            <span class="keywordflow">if</span> (<a class="code hl_function" href="GameProtocol_8cpp.html#a3c6ff5912781e697a7661a2cfe15291f">try_deserialize_destroy_entity</a>(packet.<a class="code hl_variable" href="namespaceprotocol.html#a83d23715dda6bc42f3c532dab1b66f0e">payload</a>, pd)) {</div>
+<div class="line"><span class="lineno">  377</span>                out_event.<a class="code hl_variable" href="namespaceprotocol_1_1game.html#a383feecaeb4a172a39d5fb71a65ec0d1">type</a> = <a class="code hl_enumvalue" href="namespaceprotocol_1_1game.html#ac979c495edcb78eaa548b5c7be45f118af399392cc4fe0ec00204f4ae5c55e64c">protocol::game::game_event_type_t::DESTROY_ENTITY</a>;</div>
+<div class="line"><span class="lineno">  378</span>                out_event.<a class="code hl_variable" href="namespaceprotocol_1_1game.html#aaa178d940515c73c2f0b082319929414">payload</a> = pd;</div>
+<div class="line"><span class="lineno">  379</span>            } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  380</span>                out_event.<a class="code hl_variable" href="namespaceprotocol_1_1game.html#a383feecaeb4a172a39d5fb71a65ec0d1">type</a> = <a class="code hl_enumvalue" href="namespaceprotocol_1_1game.html#ac979c495edcb78eaa548b5c7be45f118ab459b0b196b23ddac2d1e061943537b4">protocol::game::game_event_type_t::RAW_PACKET</a>;</div>
+<div class="line"><span class="lineno">  381</span>                out_event.<a class="code hl_variable" href="namespaceprotocol_1_1game.html#aaa178d940515c73c2f0b082319929414">payload</a> = std::move(packet);</div>
+<div class="line"><span class="lineno">  382</span>            }</div>
+<div class="line"><span class="lineno">  383</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  384</span>        }</div>
+<div class="line"><span class="lineno">  385</span> </div>
+<div class="line"><span class="lineno">  386</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespaceprotocol_1_1game.html#ad4d21ce1bb315afe579f5abed923f701a180c1b797f83d66065d0313fa7e863d1">protocol::game::game_message_type_t::PLAYER_INPUT</a>: {</div>
+<div class="line"><span class="lineno">  387</span>            <a class="code hl_struct" href="namespaceprotocol_1_1game.html#structprotocol_1_1game_1_1payload__player__input__t">protocol::game::payload_player_input_t</a> pi;</div>
 <div class="line"><span class="lineno">  388</span> </div>
-<div class="line"><span class="lineno">  389</span>        <span class="keywordflow">default</span>:</div>
-<div class="line"><span class="lineno">  390</span>            out_event.<a class="code hl_variable" href="namespaceprotocol_1_1game.html#a383feecaeb4a172a39d5fb71a65ec0d1">type</a> = <a class="code hl_enumvalue" href="namespaceprotocol_1_1game.html#ac979c495edcb78eaa548b5c7be45f118ab459b0b196b23ddac2d1e061943537b4">protocol::game::game_event_type_t::RAW_PACKET</a>;</div>
-<div class="line"><span class="lineno">  391</span>            out_event.<a class="code hl_variable" href="namespaceprotocol_1_1game.html#aaa178d940515c73c2f0b082319929414">payload</a> = std::move(packet);</div>
-<div class="line"><span class="lineno">  392</span>            <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">  393</span>    }</div>
-<div class="line"><span class="lineno">  394</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">  395</span>}</div>
+<div class="line"><span class="lineno">  389</span>            <span class="keywordflow">if</span> (<a class="code hl_function" href="GameProtocol_8cpp.html#a12cd3dff895dc77b141e34e46507fdd9">try_deserialize_player_input</a>(packet.<a class="code hl_variable" href="namespaceprotocol.html#a83d23715dda6bc42f3c532dab1b66f0e">payload</a>, pi)) {</div>
+<div class="line"><span class="lineno">  390</span>                out_event.<a class="code hl_variable" href="namespaceprotocol_1_1game.html#a383feecaeb4a172a39d5fb71a65ec0d1">type</a> = <a class="code hl_enumvalue" href="namespaceprotocol_1_1game.html#ac979c495edcb78eaa548b5c7be45f118a180c1b797f83d66065d0313fa7e863d1">protocol::game::game_event_type_t::PLAYER_INPUT</a>;</div>
+<div class="line"><span class="lineno">  391</span>                out_event.<a class="code hl_variable" href="namespaceprotocol_1_1game.html#aaa178d940515c73c2f0b082319929414">payload</a> = pi;</div>
+<div class="line"><span class="lineno">  392</span>            } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  393</span>                out_event.<a class="code hl_variable" href="namespaceprotocol_1_1game.html#a383feecaeb4a172a39d5fb71a65ec0d1">type</a> = <a class="code hl_enumvalue" href="namespaceprotocol_1_1game.html#ac979c495edcb78eaa548b5c7be45f118ab459b0b196b23ddac2d1e061943537b4">protocol::game::game_event_type_t::RAW_PACKET</a>;</div>
+<div class="line"><span class="lineno">  394</span>                out_event.<a class="code hl_variable" href="namespaceprotocol_1_1game.html#aaa178d940515c73c2f0b082319929414">payload</a> = std::move(packet);</div>
+<div class="line"><span class="lineno">  395</span>            }</div>
+<div class="line"><span class="lineno">  396</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  397</span>        }</div>
+<div class="line"><span class="lineno">  398</span> </div>
+<div class="line"><span class="lineno">  399</span>        <span class="keywordflow">default</span>:</div>
+<div class="line"><span class="lineno">  400</span>            out_event.<a class="code hl_variable" href="namespaceprotocol_1_1game.html#a383feecaeb4a172a39d5fb71a65ec0d1">type</a> = <a class="code hl_enumvalue" href="namespaceprotocol_1_1game.html#ac979c495edcb78eaa548b5c7be45f118ab459b0b196b23ddac2d1e061943537b4">protocol::game::game_event_type_t::RAW_PACKET</a>;</div>
+<div class="line"><span class="lineno">  401</span>            out_event.<a class="code hl_variable" href="namespaceprotocol_1_1game.html#aaa178d940515c73c2f0b082319929414">payload</a> = std::move(packet);</div>
+<div class="line"><span class="lineno">  402</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  403</span>    }</div>
+<div class="line"><span class="lineno">  404</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  405</span>}</div>
 <div class="ttc" id="aGameProtocol_8cpp_html_a12cd3dff895dc77b141e34e46507fdd9"><div class="ttname"><a href="GameProtocol_8cpp.html#a12cd3dff895dc77b141e34e46507fdd9">try_deserialize_player_input</a></div><div class="ttdeci">bool try_deserialize_player_input(const protocol::byte_buffer_t &amp;buff, protocol::game::payload_player_input_t &amp;out)</div><div class="ttdoc">Attempt to deserialize a PLAYER_INPUT payload.</div><div class="ttdef"><b>Definition</b> <a href="GameProtocol_8cpp_source.html#l00187">GameProtocol.cpp:187</a></div></div>
 <div class="ttc" id="aGameProtocol_8cpp_html_a24c81f667e616a00fec9caf240a2ecb9"><div class="ttname"><a href="GameProtocol_8cpp.html#a24c81f667e616a00fec9caf240a2ecb9">try_deserialize_move_entity</a></div><div class="ttdeci">bool try_deserialize_move_entity(const protocol::byte_buffer_t &amp;buff, protocol::game::payload_move_entity_t &amp;out)</div><div class="ttdoc">Attempt to deserialize a MOVE_ENTITY payload.</div><div class="ttdef"><b>Definition</b> <a href="GameProtocol_8cpp_source.html#l00107">GameProtocol.cpp:107</a></div></div>
 <div class="ttc" id="aGameProtocol_8cpp_html_a3c6ff5912781e697a7661a2cfe15291f"><div class="ttname"><a href="GameProtocol_8cpp.html#a3c6ff5912781e697a7661a2cfe15291f">try_deserialize_destroy_entity</a></div><div class="ttdeci">bool try_deserialize_destroy_entity(const protocol::byte_buffer_t &amp;buff, protocol::game::payload_destroy_entity_t &amp;out)</div><div class="ttdoc">Attempt to deserialize a DESTROY_ENTITY payload.</div><div class="ttdef"><b>Definition</b> <a href="GameProtocol_8cpp_source.html#l00148">GameProtocol.cpp:148</a></div></div>
@@ -295,7 +295,7 @@ Functions</h2></td></tr>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="namespaceprotocol_1_1game.html#ad4d21ce1bb315afe579f5abed923f701a016e1171067ff064c151e0a5fef52ca2">protocol::game::CREATE_ENTITY</a>, <a class="el" href="namespaceprotocol_1_1game.html#ad4d21ce1bb315afe579f5abed923f701af399392cc4fe0ec00204f4ae5c55e64c">protocol::game::DESTROY_ENTITY</a>, <a class="el" href="ProtocolTypes_8hpp_source.html#l00142">protocol::packet_t::header</a>, <a class="el" href="ProtocolTypes_8hpp_source.html#l00104">protocol::packet_header_t::message_type</a>, <a class="el" href="namespaceprotocol_1_1game.html#ad4d21ce1bb315afe579f5abed923f701ae66cbaf5e7fa7ca722d61f5326f418a8">protocol::game::MOVE_ENTITY</a>, <a class="el" href="GameProtocolTypes_8hpp_source.html#l00175">protocol::game::game_event_t::payload</a>, <a class="el" href="ProtocolTypes_8hpp_source.html#l00143">protocol::packet_t::payload</a>, <a class="el" href="ProtocolTypes_8hpp_source.html#l00195">protocol::core_event_t::payload</a>, <a class="el" href="namespaceprotocol_1_1game.html#ad4d21ce1bb315afe579f5abed923f701a180c1b797f83d66065d0313fa7e863d1">protocol::game::PLAYER_INPUT</a>, <a class="el" href="namespaceprotocol_1_1game.html#ac979c495edcb78eaa548b5c7be45f118ab459b0b196b23ddac2d1e061943537b4">protocol::game::RAW_PACKET</a>, <a class="el" href="GameProtocol_8cpp_source.html#l00060">try_deserialize_create_entity()</a>, <a class="el" href="GameProtocol_8cpp_source.html#l00148">try_deserialize_destroy_entity()</a>, <a class="el" href="GameProtocol_8cpp_source.html#l00107">try_deserialize_move_entity()</a>, <a class="el" href="GameProtocol_8cpp_source.html#l00187">try_deserialize_player_input()</a>, and <a class="el" href="GameProtocolTypes_8hpp_source.html#l00174">protocol::game::game_event_t::type</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="GameProtocol_8cpp_source.html#l00397">protocol::game::GameProtocol::get_event()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="GameProtocol_8cpp_source.html#l00407">protocol::game::GameProtocol::get_event()</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
@@ -308,7 +308,7 @@ Functions</h2></td></tr>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="GameProtocol_8cpp_a3f3b75a96b838a72b594b63f15ce2dc2_icgraph.svg" width="100%" height="369"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="GameProtocol_8cpp_a3f3b75a96b838a72b594b63f15ce2dc2_icgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
 </div>
@@ -362,12 +362,21 @@ Functions</h2></td></tr>
 <div class="ttc" id="anamespaceprotocol_1_1utils_html_a8bf45f31e2cb4bc5951e6e7928ab1e0f"><div class="ttname"><a href="namespaceprotocol_1_1utils.html#a8bf45f31e2cb4bc5951e6e7928ab1e0f">protocol::utils::append_u8</a></div><div class="ttdeci">void append_u8(std::vector&lt; uint8_t &gt; &amp;buf, uint8_t v) noexcept</div><div class="ttdoc">Append a single byte to a byte buffer.</div><div class="ttdef"><b>Definition</b> <a href="utils_8cpp_source.html#l00058">utils.cpp:58</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="utils_8cpp_source.html#l00042">protocol::utils::append_u32()</a>, <a class="el" href="utils_8cpp_source.html#l00058">protocol::utils::append_u8()</a>, <a class="el" href="GameProtocolTypes_8hpp_source.html#l00081">protocol::game::payload_create_entity_t::entity_id</a>, <a class="el" href="GameProtocolTypes_8hpp_source.html#l00082">protocol::game::payload_create_entity_t::entity_type</a>, <a class="el" href="GameProtocolTypes_8hpp_source.html#l00083">protocol::game::payload_create_entity_t::x</a>, and <a class="el" href="GameProtocolTypes_8hpp_source.html#l00084">protocol::game::payload_create_entity_t::y</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="GameProtocol_8cpp_source.html#l00247">protocol::game::GameProtocol::send_create_entity()</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="GameProtocol_8cpp_aef673db680473943d3fe60004e4143c3_cgraph.svg" width="100%" height="364"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="GameProtocol_8cpp_aef673db680473943d3fe60004e4143c3_icgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
 </div>
@@ -410,12 +419,21 @@ Functions</h2></td></tr>
 <div class="ttc" id="anamespaceprotocol_1_1game_html_add0a6c5fe555d80f4ae143eef224e965"><div class="ttname"><a href="namespaceprotocol_1_1game.html#add0a6c5fe555d80f4ae143eef224e965">protocol::game::payload_destroy_entity_t::entity_id</a></div><div class="ttdeci">entity_id_t entity_id</div><div class="ttdoc">id of entity to destroy</div><div class="ttdef"><b>Definition</b> <a href="GameProtocolTypes_8hpp_source.html#l00106">GameProtocolTypes.hpp:106</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="utils_8cpp_source.html#l00042">protocol::utils::append_u32()</a>, and <a class="el" href="GameProtocolTypes_8hpp_source.html#l00106">protocol::game::payload_destroy_entity_t::entity_id</a>.</p>
-<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+
+<p class="reference">Referenced by <a class="el" href="GameProtocol_8cpp_source.html#l00265">protocol::game::GameProtocol::send_destroy_entity()</a>.</p>
+<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="GameProtocol_8cpp_a8be9e4728ac725ccd6ed8dcc67c9adc5_cgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="GameProtocol_8cpp_a8be9e4728ac725ccd6ed8dcc67c9adc5_icgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
 </div>
@@ -464,12 +482,21 @@ Functions</h2></td></tr>
 <div class="ttc" id="anamespaceprotocol_1_1game_html_abbb1f311a1b3229c2c68ac012ca708ab"><div class="ttname"><a href="namespaceprotocol_1_1game.html#abbb1f311a1b3229c2c68ac012ca708ab">protocol::game::payload_move_entity_t::y</a></div><div class="ttdeci">position_t y</div><div class="ttdoc">fixed-point Y</div><div class="ttdef"><b>Definition</b> <a href="GameProtocolTypes_8hpp_source.html#l00096">GameProtocolTypes.hpp:96</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="utils_8cpp_source.html#l00042">protocol::utils::append_u32()</a>, <a class="el" href="GameProtocolTypes_8hpp_source.html#l00094">protocol::game::payload_move_entity_t::entity_id</a>, <a class="el" href="GameProtocolTypes_8hpp_source.html#l00095">protocol::game::payload_move_entity_t::x</a>, and <a class="el" href="GameProtocolTypes_8hpp_source.html#l00096">protocol::game::payload_move_entity_t::y</a>.</p>
-<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+
+<p class="reference">Referenced by <a class="el" href="GameProtocol_8cpp_source.html#l00256">protocol::game::GameProtocol::send_move_entity()</a>.</p>
+<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="GameProtocol_8cpp_ad52de98185fb3e4334d4f9ebc452e3ff_cgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-8-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="GameProtocol_8cpp_ad52de98185fb3e4334d4f9ebc452e3ff_icgraph.svg" width="446" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
@@ -519,11 +546,11 @@ Functions</h2></td></tr>
 <div class="ttc" id="anamespaceprotocol_1_1utils_html_a6489629c81d66ecd43b303ecc0695cb6"><div class="ttname"><a href="namespaceprotocol_1_1utils.html#a6489629c81d66ecd43b303ecc0695cb6">protocol::utils::append_u16</a></div><div class="ttdeci">void append_u16(std::vector&lt; uint8_t &gt; &amp;buf, uint16_t v) noexcept</div><div class="ttdoc">Append a 16-bit unsigned integer to a byte buffer in network byte order.</div><div class="ttdef"><b>Definition</b> <a href="utils_8cpp_source.html#l00050">utils.cpp:50</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="utils_8cpp_source.html#l00050">protocol::utils::append_u16()</a>, <a class="el" href="utils_8cpp_source.html#l00042">protocol::utils::append_u32()</a>, <a class="el" href="utils_8cpp_source.html#l00058">protocol::utils::append_u8()</a>, <a class="el" href="GameProtocolTypes_8hpp_source.html#l00118">protocol::game::payload_player_input_t::buttons</a>, <a class="el" href="GameProtocolTypes_8hpp_source.html#l00117">protocol::game::payload_player_input_t::input_tick</a>, and <a class="el" href="GameProtocolTypes_8hpp_source.html#l00116">protocol::game::payload_player_input_t::player</a>.</p>
-<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div id="dynsection-9-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="GameProtocol_8cpp_a838e3fe3c91043bda24a4763100404e8_cgraph.svg" width="100%" height="401"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
@@ -589,20 +616,20 @@ Functions</h2></td></tr>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="GameProtocolTypes_8hpp_source.html#l00081">protocol::game::payload_create_entity_t::entity_id</a>, <a class="el" href="GameProtocolTypes_8hpp_source.html#l00082">protocol::game::payload_create_entity_t::entity_type</a>, <a class="el" href="utils_8cpp_source.html#l00063">protocol::utils::read_u32()</a>, <a class="el" href="utils_8cpp_source.html#l00081">protocol::utils::read_u8()</a>, <a class="el" href="GameProtocolTypes_8hpp_source.html#l00083">protocol::game::payload_create_entity_t::x</a>, and <a class="el" href="GameProtocolTypes_8hpp_source.html#l00084">protocol::game::payload_create_entity_t::y</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="GameProtocol_8cpp_source.html#l00323">retrieve_package()</a>.</p>
-<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="GameProtocol_8cpp_source.html#l00333">retrieve_package()</a>.</p>
+<div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div id="dynsection-10-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="GameProtocol_8cpp_acf6b25d75eab1ab4ca361f6161a5fc7d_cgraph.svg" width="100%" height="364"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
-<div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-8-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="GameProtocol_8cpp_acf6b25d75eab1ab4ca361f6161a5fc7d_icgraph.svg" width="100%" height="369"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div id="dynsection-11-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="GameProtocol_8cpp_acf6b25d75eab1ab4ca361f6161a5fc7d_icgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
 </div>
@@ -654,20 +681,20 @@ Functions</h2></td></tr>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="GameProtocolTypes_8hpp_source.html#l00106">protocol::game::payload_destroy_entity_t::entity_id</a>, and <a class="el" href="utils_8cpp_source.html#l00063">protocol::utils::read_u32()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="GameProtocol_8cpp_source.html#l00323">retrieve_package()</a>.</p>
-<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="GameProtocol_8cpp_source.html#l00333">retrieve_package()</a>.</p>
+<div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-9-content" class="dyncontent" style="display:none;">
+<div id="dynsection-12-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="GameProtocol_8cpp_a3c6ff5912781e697a7661a2cfe15291f_cgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
-<div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-10-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="GameProtocol_8cpp_a3c6ff5912781e697a7661a2cfe15291f_icgraph.svg" width="100%" height="369"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div id="dynsection-13-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="GameProtocol_8cpp_a3c6ff5912781e697a7661a2cfe15291f_icgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
 </div>
@@ -725,20 +752,20 @@ Functions</h2></td></tr>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="GameProtocolTypes_8hpp_source.html#l00094">protocol::game::payload_move_entity_t::entity_id</a>, <a class="el" href="utils_8cpp_source.html#l00063">protocol::utils::read_u32()</a>, <a class="el" href="GameProtocolTypes_8hpp_source.html#l00095">protocol::game::payload_move_entity_t::x</a>, and <a class="el" href="GameProtocolTypes_8hpp_source.html#l00096">protocol::game::payload_move_entity_t::y</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="GameProtocol_8cpp_source.html#l00323">retrieve_package()</a>.</p>
-<div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="GameProtocol_8cpp_source.html#l00333">retrieve_package()</a>.</p>
+<div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-11-content" class="dyncontent" style="display:none;">
+<div id="dynsection-14-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="GameProtocol_8cpp_a24c81f667e616a00fec9caf240a2ecb9_cgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
-<div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-15-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-12-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="GameProtocol_8cpp_a24c81f667e616a00fec9caf240a2ecb9_icgraph.svg" width="100%" height="369"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div id="dynsection-15-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="GameProtocol_8cpp_a24c81f667e616a00fec9caf240a2ecb9_icgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
 </div>
@@ -799,20 +826,20 @@ Functions</h2></td></tr>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="GameProtocolTypes_8hpp_source.html#l00118">protocol::game::payload_player_input_t::buttons</a>, <a class="el" href="GameProtocolTypes_8hpp_source.html#l00117">protocol::game::payload_player_input_t::input_tick</a>, <a class="el" href="GameProtocolTypes_8hpp_source.html#l00116">protocol::game::payload_player_input_t::player</a>, <a class="el" href="utils_8cpp_source.html#l00072">protocol::utils::read_u16()</a>, <a class="el" href="utils_8cpp_source.html#l00063">protocol::utils::read_u32()</a>, and <a class="el" href="utils_8cpp_source.html#l00081">protocol::utils::read_u8()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="GameProtocol_8cpp_source.html#l00323">retrieve_package()</a>.</p>
-<div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="GameProtocol_8cpp_source.html#l00333">retrieve_package()</a>.</p>
+<div id="dynsection-16" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-16-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-16-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-13-content" class="dyncontent" style="display:none;">
+<div id="dynsection-16-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="GameProtocol_8cpp_a12cd3dff895dc77b141e34e46507fdd9_cgraph.svg" width="100%" height="401"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
-<div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-17" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-17-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-17-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-14-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="GameProtocol_8cpp_a12cd3dff895dc77b141e34e46507fdd9_icgraph.svg" width="100%" height="369"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div id="dynsection-17-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="GameProtocol_8cpp_a12cd3dff895dc77b141e34e46507fdd9_icgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
 </div>

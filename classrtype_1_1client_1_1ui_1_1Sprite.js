@@ -1,11 +1,12 @@
 var classrtype_1_1client_1_1ui_1_1Sprite =
 [
-    [ "Sprite", "classrtype_1_1client_1_1ui_1_1Sprite.html#addde9d7a28041ccf64a2d37100c349b8", null ],
-    [ "draw", "classrtype_1_1client_1_1ui_1_1Sprite.html#a9c2ea1c0ae792af0f2a752495e6dca87", null ],
-    [ "update", "classrtype_1_1client_1_1ui_1_1Sprite.html#a8d5c74f7f0d9ef4fedd97552b554cf20", null ],
-    [ "_position", "classrtype_1_1client_1_1ui_1_1Sprite.html#a98e06bb9603f9cfbb4f4b98538b2f615", null ],
-    [ "_realPos", "classrtype_1_1client_1_1ui_1_1Sprite.html#a86bf92f49e84d998bffa68732bbd436f", null ],
-    [ "_realSize", "classrtype_1_1client_1_1ui_1_1Sprite.html#a45110d2465e8727c299462f0f5537756", null ],
-    [ "_size", "classrtype_1_1client_1_1ui_1_1Sprite.html#aaff106255da3cf1e11ac2e5ecdd3c7c6", null ],
+    [ "Sprite", "classrtype_1_1client_1_1ui_1_1Sprite.html#a63b5f1d7eb656d07fb58968a918c329c", null ],
+    [ "addInstance", "classrtype_1_1client_1_1ui_1_1Sprite.html#af2714653c6281bc129049abaaf20b24d", null ],
+    [ "clearInstances", "classrtype_1_1client_1_1ui_1_1Sprite.html#a882c03026cc32d5757dc980bcf0dafe7", null ],
+    [ "draw", "classrtype_1_1client_1_1ui_1_1Sprite.html#a39be2a0c55846e5eac75d642b9aca344", null ],
+    [ "setRect", "classrtype_1_1client_1_1ui_1_1Sprite.html#ad503fab594baddf1045556071fb31d73", null ],
+    [ "update", "classrtype_1_1client_1_1ui_1_1Sprite.html#a5c46afa4cde5882a3b77bc8c1f3e4b61", null ],
+    [ "_instances", "classrtype_1_1client_1_1ui_1_1Sprite.html#ae94e9c2f2a85521f795302cb24085f9d", null ],
+    [ "_textureRect", "classrtype_1_1client_1_1ui_1_1Sprite.html#acc84bc053a496896dbd0c67b61ef142e", null ],
     [ "_textureTag", "classrtype_1_1client_1_1ui_1_1Sprite.html#a28f6803b93879fb8bc30cb00e657e2d4", null ]
 ];

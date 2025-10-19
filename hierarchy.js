@@ -28,6 +28,7 @@ var hierarchy =
     [ "protocol::Protocol", "classprotocol_1_1Protocol.html", null ],
     [ "protocol::transmit_failed_t", "namespaceprotocol.html#structprotocol_1_1transmit__failed__t", null ],
     [ "rtype::client::Game", "classrtype_1_1client_1_1Game.html", null ],
+    [ "rtype::client::GameManager", "classrtype_1_1client_1_1GameManager.html", null ],
     [ "rtype::client::GameSettings", "classrtype_1_1client_1_1GameSettings.html", null ],
     [ "rtype::client::InputManager", "classrtype_1_1client_1_1InputManager.html", null ],
     [ "rtype::client::IScene", "classrtype_1_1client_1_1IScene.html", [
@@ -44,7 +45,12 @@ var hierarchy =
       [ "rtype::client::ui::SingleOption", "classrtype_1_1client_1_1ui_1_1SingleOption.html", null ]
     ] ],
     [ "rtype::client::ui::MultipleOption::Choice", "classrtype_1_1client_1_1ui_1_1MultipleOption.html#structrtype_1_1client_1_1ui_1_1MultipleOption_1_1Choice", null ],
-    [ "rtype::client::ui::Sprite", "classrtype_1_1client_1_1ui_1_1Sprite.html", null ],
+    [ "rtype::client::ui::SpriteInstance", "namespacertype_1_1client_1_1ui.html#structrtype_1_1client_1_1ui_1_1SpriteInstance", null ],
+    [ "rtype::client::ui::UIElement", "classrtype_1_1client_1_1ui_1_1UIElement.html", [
+      [ "rtype::client::ui::OptionList", "classrtype_1_1client_1_1ui_1_1OptionList.html", null ],
+      [ "rtype::client::ui::Sprite", "classrtype_1_1client_1_1ui_1_1Sprite.html", null ],
+      [ "rtype::client::ui::UIList", "classrtype_1_1client_1_1ui_1_1UIList.html", null ]
+    ] ],
     [ "rtype::ecs::CollisionWorld", "classrtype_1_1ecs_1_1CollisionWorld.html", null ],
     [ "rtype::ecs::ComponentManager", "classrtype_1_1ecs_1_1ComponentManager.html", null ],
     [ "rtype::ecs::Coordinator", "classrtype_1_1ecs_1_1Coordinator.html", null ],
@@ -56,6 +62,7 @@ var hierarchy =
     [ "rtype::ecs::System", "classrtype_1_1ecs_1_1System.html", [
       [ "rtype::ecs::AudioSystem", "classrtype_1_1ecs_1_1AudioSystem.html", null ],
       [ "rtype::ecs::CollisionSystem", "classrtype_1_1ecs_1_1CollisionSystem.html", null ],
+      [ "rtype::ecs::DrawSystem", "classrtype_1_1ecs_1_1DrawSystem.html", null ],
       [ "rtype::ecs::MovementSystem", "classrtype_1_1ecs_1_1MovementSystem.html", null ],
       [ "rtype::ecs::PlayerSystem", "classrtype_1_1ecs_1_1PlayerSystem.html", null ],
       [ "rtype::ecs::SpawnerSystem", "classrtype_1_1ecs_1_1SpawnerSystem.html", null ]

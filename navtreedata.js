@@ -25,144 +25,144 @@
 var NAVTREE =
 [
   [ "r-type", "index.html", [
-    [ "Overview", "index.html#autotoc_md20", null ],
-    [ "Technologies Used", "index.html#autotoc_md22", null ],
-    [ "Requirements", "index.html#autotoc_md24", null ],
-    [ "Building the Project", "index.html#autotoc_md26", [
-      [ "Step 1: Install dependencies", "index.html#autotoc_md27", [
-        [ "Linux", "index.html#autotoc_md28", null ],
-        [ "Windows", "index.html#autotoc_md29", null ]
+    [ "Overview", "index.html#autotoc_md17", null ],
+    [ "Technologies Used", "index.html#autotoc_md19", null ],
+    [ "Requirements", "index.html#autotoc_md21", null ],
+    [ "Building the Project", "index.html#autotoc_md23", [
+      [ "Step 1: Install dependencies", "index.html#autotoc_md24", [
+        [ "Linux", "index.html#autotoc_md25", null ],
+        [ "Windows", "index.html#autotoc_md26", null ]
       ] ],
-      [ "Step 2: Build", "index.html#autotoc_md31", [
-        [ "Linux", "index.html#autotoc_md32", null ],
-        [ "Windows", "index.html#autotoc_md33", null ]
+      [ "Step 2: Build", "index.html#autotoc_md28", [
+        [ "Linux", "index.html#autotoc_md29", null ],
+        [ "Windows", "index.html#autotoc_md30", null ]
       ] ],
-      [ "Step 3: Run", "index.html#autotoc_md35", [
-        [ "Linux", "index.html#autotoc_md36", null ],
-        [ "Windows", "index.html#autotoc_md37", null ]
+      [ "Step 3: Run", "index.html#autotoc_md32", [
+        [ "Linux", "index.html#autotoc_md33", null ],
+        [ "Windows", "index.html#autotoc_md34", null ]
       ] ]
     ] ],
-    [ "Server Usage", "index.html#autotoc_md39", null ],
-    [ "Unit Tests", "index.html#autotoc_md41", null ],
-    [ "Project Structure", "index.html#autotoc_md45", null ],
-    [ "License", "index.html#autotoc_md47", null ],
-    [ "Contributors", "index.html#autotoc_md49", null ],
+    [ "Server Usage", "index.html#autotoc_md36", null ],
+    [ "Unit Tests", "index.html#autotoc_md38", null ],
+    [ "Project Structure", "index.html#autotoc_md42", null ],
+    [ "License", "index.html#autotoc_md44", null ],
+    [ "Contributors", "index.html#autotoc_md46", null ],
     [ "00_overview", "md_Doc_200__overview.html", null ],
     [ "Why We Chose Boost.Asio for the R-Type Network Layer", "md_Doc_2Boost_8asio.html", null ],
     [ "Contributing Guide", "md_Doc_2Contributing.html", [
-      [ "1. Git Workflow", "md_Doc_2Contributing.html#autotoc_md71", null ],
-      [ "2. Commit Convention", "md_Doc_2Contributing.html#autotoc_md73", [
-        [ "Format", "md_Doc_2Contributing.html#autotoc_md74", null ],
-        [ "Allowed Emojis", "md_Doc_2Contributing.html#autotoc_md75", null ]
+      [ "1. Git Workflow", "md_Doc_2Contributing.html#autotoc_md68", null ],
+      [ "2. Commit Convention", "md_Doc_2Contributing.html#autotoc_md70", [
+        [ "Format", "md_Doc_2Contributing.html#autotoc_md71", null ],
+        [ "Allowed Emojis", "md_Doc_2Contributing.html#autotoc_md72", null ]
       ] ],
-      [ "3. Pull Requests", "md_Doc_2Contributing.html#autotoc_md77", null ],
-      [ "4. Code Style and Quality", "md_Doc_2Contributing.html#autotoc_md79", null ],
-      [ "5. Documentation", "md_Doc_2Contributing.html#autotoc_md81", null ],
-      [ "6. CI/CD and Releases", "md_Doc_2Contributing.html#autotoc_md83", null ],
-      [ "7. Communication", "md_Doc_2Contributing.html#autotoc_md85", null ],
-      [ "8. License", "md_Doc_2Contributing.html#autotoc_md87", null ],
-      [ "Final Notes", "md_Doc_2Contributing.html#autotoc_md89", null ]
+      [ "3. Pull Requests", "md_Doc_2Contributing.html#autotoc_md74", null ],
+      [ "4. Code Style and Quality", "md_Doc_2Contributing.html#autotoc_md76", null ],
+      [ "5. Documentation", "md_Doc_2Contributing.html#autotoc_md78", null ],
+      [ "6. CI/CD and Releases", "md_Doc_2Contributing.html#autotoc_md80", null ],
+      [ "7. Communication", "md_Doc_2Contributing.html#autotoc_md82", null ],
+      [ "8. License", "md_Doc_2Contributing.html#autotoc_md84", null ],
+      [ "Final Notes", "md_Doc_2Contributing.html#autotoc_md86", null ]
     ] ],
     [ "R-Type — Developer Documentation", "md_Doc_2Developer__doc.html", [
-      [ "1. High-Level Overview", "md_Doc_2Developer__doc.html#autotoc_md92", [
-        [ "Key goals", "md_Doc_2Developer__doc.html#autotoc_md93", null ]
+      [ "1. High-Level Overview", "md_Doc_2Developer__doc.html#autotoc_md89", [
+        [ "Key goals", "md_Doc_2Developer__doc.html#autotoc_md90", null ]
       ] ],
-      [ "2. Repository & Build Layout", "md_Doc_2Developer__doc.html#autotoc_md95", null ],
-      [ "3. ECS Architecture (Common/ECS)", "md_Doc_2Developer__doc.html#autotoc_md97", [
-        [ "3.1 Core Managers", "md_Doc_2Developer__doc.html#autotoc_md98", [
-          [ "Mermaid — Manager Interaction", "md_Doc_2Developer__doc.html#autotoc_md99", null ]
+      [ "2. Repository & Build Layout", "md_Doc_2Developer__doc.html#autotoc_md92", null ],
+      [ "3. ECS Architecture (Common/ECS)", "md_Doc_2Developer__doc.html#autotoc_md94", [
+        [ "3.1 Core Managers", "md_Doc_2Developer__doc.html#autotoc_md95", [
+          [ "Mermaid — Manager Interaction", "md_Doc_2Developer__doc.html#autotoc_md96", null ]
         ] ],
-        [ "3.2 Components (Attributes)", "md_Doc_2Developer__doc.html#autotoc_md100", null ],
-        [ "3.3 Systems", "md_Doc_2Developer__doc.html#autotoc_md101", [
-          [ "Mermaid — Collision Broadphase/Narrowphase", "md_Doc_2Developer__doc.html#autotoc_md102", null ]
+        [ "3.2 Components (Attributes)", "md_Doc_2Developer__doc.html#autotoc_md97", null ],
+        [ "3.3 Systems", "md_Doc_2Developer__doc.html#autotoc_md98", [
+          [ "Mermaid — Collision Broadphase/Narrowphase", "md_Doc_2Developer__doc.html#autotoc_md99", null ]
         ] ],
-        [ "3.4 Extending the ECS", "md_Doc_2Developer__doc.html#autotoc_md103", null ]
+        [ "3.4 Extending the ECS", "md_Doc_2Developer__doc.html#autotoc_md100", null ]
       ] ],
-      [ "4. Networking Architecture (Common/Protocol)", "md_Doc_2Developer__doc.html#autotoc_md105", [
-        [ "4.1 Low-level UDP Core: <tt>Protocol</tt>", "md_Doc_2Developer__doc.html#autotoc_md106", [
-          [ "Mermaid — Send Path", "md_Doc_2Developer__doc.html#autotoc_md107", null ],
-          [ "Mermaid — Receive Path", "md_Doc_2Developer__doc.html#autotoc_md108", null ]
+      [ "4. Networking Architecture (Common/Protocol)", "md_Doc_2Developer__doc.html#autotoc_md102", [
+        [ "4.1 Low-level UDP Core: <tt>Protocol</tt>", "md_Doc_2Developer__doc.html#autotoc_md103", [
+          [ "Mermaid — Send Path", "md_Doc_2Developer__doc.html#autotoc_md104", null ],
+          [ "Mermaid — Receive Path", "md_Doc_2Developer__doc.html#autotoc_md105", null ]
         ] ],
-        [ "4.2 Game-level Facade: <tt>GameProtocol</tt>", "md_Doc_2Developer__doc.html#autotoc_md109", null ]
+        [ "4.2 Game-level Facade: <tt>GameProtocol</tt>", "md_Doc_2Developer__doc.html#autotoc_md106", null ]
       ] ],
-      [ "5. Client Architecture (Client/)", "md_Doc_2Developer__doc.html#autotoc_md111", null ],
-      [ "6. Server Architecture (Server/)", "md_Doc_2Developer__doc.html#autotoc_md113", null ],
-      [ "7. Performance Notes", "md_Doc_2Developer__doc.html#autotoc_md115", [
-        [ "7.1 ECS Storage & Cache Locality", "md_Doc_2Developer__doc.html#autotoc_md116", null ],
-        [ "7.2 Collision World", "md_Doc_2Developer__doc.html#autotoc_md117", null ],
-        [ "7.3 Networking", "md_Doc_2Developer__doc.html#autotoc_md118", null ],
-        [ "7.4 Multithreading & IO", "md_Doc_2Developer__doc.html#autotoc_md119", null ],
-        [ "7.5 Allocation & Copies", "md_Doc_2Developer__doc.html#autotoc_md120", null ]
+      [ "5. Client Architecture (Client/)", "md_Doc_2Developer__doc.html#autotoc_md108", null ],
+      [ "6. Server Architecture (Server/)", "md_Doc_2Developer__doc.html#autotoc_md110", null ],
+      [ "7. Performance Notes", "md_Doc_2Developer__doc.html#autotoc_md112", [
+        [ "7.1 ECS Storage & Cache Locality", "md_Doc_2Developer__doc.html#autotoc_md113", null ],
+        [ "7.2 Collision World", "md_Doc_2Developer__doc.html#autotoc_md114", null ],
+        [ "7.3 Networking", "md_Doc_2Developer__doc.html#autotoc_md115", null ],
+        [ "7.4 Multithreading & IO", "md_Doc_2Developer__doc.html#autotoc_md116", null ],
+        [ "7.5 Allocation & Copies", "md_Doc_2Developer__doc.html#autotoc_md117", null ]
       ] ],
-      [ "8. Windows & Linux Constraints", "md_Doc_2Developer__doc.html#autotoc_md122", null ],
-      [ "9. Adding Features", "md_Doc_2Developer__doc.html#autotoc_md124", [
-        [ "9.1 New Message Type (network)", "md_Doc_2Developer__doc.html#autotoc_md125", null ],
-        [ "9.2 New System (gameplay)", "md_Doc_2Developer__doc.html#autotoc_md126", null ],
-        [ "9.3 New Component", "md_Doc_2Developer__doc.html#autotoc_md127", null ]
+      [ "8. Windows & Linux Constraints", "md_Doc_2Developer__doc.html#autotoc_md119", null ],
+      [ "9. Adding Features", "md_Doc_2Developer__doc.html#autotoc_md121", [
+        [ "9.1 New Message Type (network)", "md_Doc_2Developer__doc.html#autotoc_md122", null ],
+        [ "9.2 New System (gameplay)", "md_Doc_2Developer__doc.html#autotoc_md123", null ],
+        [ "9.3 New Component", "md_Doc_2Developer__doc.html#autotoc_md124", null ]
       ] ],
-      [ "10. Testing", "md_Doc_2Developer__doc.html#autotoc_md129", null ],
-      [ "11. Logging & Error Handling", "md_Doc_2Developer__doc.html#autotoc_md131", null ],
-      [ "12. Configuration & CLI", "md_Doc_2Developer__doc.html#autotoc_md133", null ],
-      [ "13. Diagrams — End-to-End", "md_Doc_2Developer__doc.html#autotoc_md135", [
-        [ "13.1 Client/Server Data Flow", "md_Doc_2Developer__doc.html#autotoc_md136", null ],
-        [ "13.2 ECS Update Loop (Server)", "md_Doc_2Developer__doc.html#autotoc_md137", null ]
+      [ "10. Testing", "md_Doc_2Developer__doc.html#autotoc_md126", null ],
+      [ "11. Logging & Error Handling", "md_Doc_2Developer__doc.html#autotoc_md128", null ],
+      [ "12. Configuration & CLI", "md_Doc_2Developer__doc.html#autotoc_md130", null ],
+      [ "13. Diagrams — End-to-End", "md_Doc_2Developer__doc.html#autotoc_md132", [
+        [ "13.1 Client/Server Data Flow", "md_Doc_2Developer__doc.html#autotoc_md133", null ],
+        [ "13.2 ECS Update Loop (Server)", "md_Doc_2Developer__doc.html#autotoc_md134", null ]
       ] ],
-      [ "14. Roadmap & Extension Ideas", "md_Doc_2Developer__doc.html#autotoc_md139", null ],
-      [ "15. References (Code Pointers)", "md_Doc_2Developer__doc.html#autotoc_md141", null ]
+      [ "14. Roadmap & Extension Ideas", "md_Doc_2Developer__doc.html#autotoc_md136", null ],
+      [ "15. References (Code Pointers)", "md_Doc_2Developer__doc.html#autotoc_md138", null ]
     ] ],
     [ "ECS Architecture Justification", "md_Doc_2ecs.html", [
-      [ "Introduction", "md_Doc_2ecs.html#autotoc_md144", null ],
-      [ "Why ECS?", "md_Doc_2ecs.html#autotoc_md146", [
-        [ "1. Modularity and Separation of Concerns", "md_Doc_2ecs.html#autotoc_md147", null ],
-        [ "2. Performance Benefits", "md_Doc_2ecs.html#autotoc_md149", [
-          [ "Key performance advantages:", "md_Doc_2ecs.html#autotoc_md150", null ]
+      [ "Introduction", "md_Doc_2ecs.html#autotoc_md141", null ],
+      [ "Why ECS?", "md_Doc_2ecs.html#autotoc_md143", [
+        [ "1. Modularity and Separation of Concerns", "md_Doc_2ecs.html#autotoc_md144", null ],
+        [ "2. Performance Benefits", "md_Doc_2ecs.html#autotoc_md146", [
+          [ "Key performance advantages:", "md_Doc_2ecs.html#autotoc_md147", null ]
         ] ],
-        [ "3. Scalability and Maintainability", "md_Doc_2ecs.html#autotoc_md152", null ]
+        [ "3. Scalability and Maintainability", "md_Doc_2ecs.html#autotoc_md149", null ]
       ] ],
-      [ "Integration with Networking (Boost.Asio)", "md_Doc_2ecs.html#autotoc_md154", null ],
-      [ "Integration with Rendering (Raylib)", "md_Doc_2ecs.html#autotoc_md156", null ],
-      [ "Cross-Platform Considerations", "md_Doc_2ecs.html#autotoc_md158", null ],
-      [ "Summary", "md_Doc_2ecs.html#autotoc_md160", null ],
-      [ "Conclusion", "md_Doc_2ecs.html#autotoc_md162", null ]
+      [ "Integration with Networking (Boost.Asio)", "md_Doc_2ecs.html#autotoc_md151", null ],
+      [ "Integration with Rendering (Raylib)", "md_Doc_2ecs.html#autotoc_md153", null ],
+      [ "Cross-Platform Considerations", "md_Doc_2ecs.html#autotoc_md155", null ],
+      [ "Summary", "md_Doc_2ecs.html#autotoc_md157", null ],
+      [ "Conclusion", "md_Doc_2ecs.html#autotoc_md159", null ]
     ] ],
     [ "Network Protocol Specification (UDP)", "md_Doc_2network__protocol.html", [
-      [ "1. Overview", "md_Doc_2network__protocol.html#autotoc_md165", null ],
-      [ "2. Design Goals", "md_Doc_2network__protocol.html#autotoc_md167", null ],
-      [ "3. Transport", "md_Doc_2network__protocol.html#autotoc_md169", null ],
-      [ "4. Packet Header (Wire Format)", "md_Doc_2network__protocol.html#autotoc_md171", [
-        [ "4.1 Fields", "md_Doc_2network__protocol.html#autotoc_md172", null ],
-        [ "4.2 Serialization", "md_Doc_2network__protocol.html#autotoc_md173", null ]
+      [ "1. Overview", "md_Doc_2network__protocol.html#autotoc_md162", null ],
+      [ "2. Design Goals", "md_Doc_2network__protocol.html#autotoc_md164", null ],
+      [ "3. Transport", "md_Doc_2network__protocol.html#autotoc_md166", null ],
+      [ "4. Packet Header (Wire Format)", "md_Doc_2network__protocol.html#autotoc_md168", [
+        [ "4.1 Fields", "md_Doc_2network__protocol.html#autotoc_md169", null ],
+        [ "4.2 Serialization", "md_Doc_2network__protocol.html#autotoc_md170", null ]
       ] ],
-      [ "5. Reliability & Ordering", "md_Doc_2network__protocol.html#autotoc_md175", [
-        [ "5.1 Flags", "md_Doc_2network__protocol.html#autotoc_md176", null ]
+      [ "5. Reliability & Ordering", "md_Doc_2network__protocol.html#autotoc_md172", [
+        [ "5.1 Flags", "md_Doc_2network__protocol.html#autotoc_md173", null ]
       ] ],
-      [ "6. Sequence, ACK, and ACK Bits", "md_Doc_2network__protocol.html#autotoc_md178", [
-        [ "6.1 Sender sequences", "md_Doc_2network__protocol.html#autotoc_md179", null ],
-        [ "6.2 Receiver ACK window", "md_Doc_2network__protocol.html#autotoc_md180", null ]
+      [ "6. Sequence, ACK, and ACK Bits", "md_Doc_2network__protocol.html#autotoc_md175", [
+        [ "6.1 Sender sequences", "md_Doc_2network__protocol.html#autotoc_md176", null ],
+        [ "6.2 Receiver ACK window", "md_Doc_2network__protocol.html#autotoc_md177", null ]
       ] ],
-      [ "7. Retransmission Policy", "md_Doc_2network__protocol.html#autotoc_md182", [
-        [ "7.1 Pending table", "md_Doc_2network__protocol.html#autotoc_md183", null ],
-        [ "7.2 Resend/Fail workflow", "md_Doc_2network__protocol.html#autotoc_md184", null ]
+      [ "7. Retransmission Policy", "md_Doc_2network__protocol.html#autotoc_md179", [
+        [ "7.1 Pending table", "md_Doc_2network__protocol.html#autotoc_md180", null ],
+        [ "7.2 Resend/Fail workflow", "md_Doc_2network__protocol.html#autotoc_md181", null ]
       ] ],
-      [ "8. Ordered Delivery", "md_Doc_2network__protocol.html#autotoc_md186", [
-        [ "8.1 Timeout-based advancement", "md_Doc_2network__protocol.html#autotoc_md187", null ],
-        [ "8.2 Buffer expiry", "md_Doc_2network__protocol.html#autotoc_md188", null ]
+      [ "8. Ordered Delivery", "md_Doc_2network__protocol.html#autotoc_md183", [
+        [ "8.1 Timeout-based advancement", "md_Doc_2network__protocol.html#autotoc_md184", null ],
+        [ "8.2 Buffer expiry", "md_Doc_2network__protocol.html#autotoc_md185", null ]
       ] ],
-      [ "9. Event Model", "md_Doc_2network__protocol.html#autotoc_md190", null ],
-      [ "10. Application Message Types", "md_Doc_2network__protocol.html#autotoc_md192", null ],
-      [ "11. Example Wire Packet", "md_Doc_2network__protocol.html#autotoc_md194", null ],
-      [ "12. Error Handling & Resilience", "md_Doc_2network__protocol.html#autotoc_md196", null ],
-      [ "13. Timing & Tuning", "md_Doc_2network__protocol.html#autotoc_md198", null ],
-      [ "14. Security Considerations", "md_Doc_2network__protocol.html#autotoc_md200", null ],
-      [ "15. Interoperability & Platform Constraints", "md_Doc_2network__protocol.html#autotoc_md202", null ],
-      [ "16. Sequence Diagrams", "md_Doc_2network__protocol.html#autotoc_md204", [
-        [ "16.1 Reliable Unordered send/ack", "md_Doc_2network__protocol.html#autotoc_md205", null ],
-        [ "16.2 Reliable Ordered with gap and advancement", "md_Doc_2network__protocol.html#autotoc_md206", null ]
+      [ "9. Event Model", "md_Doc_2network__protocol.html#autotoc_md187", null ],
+      [ "10. Application Message Types", "md_Doc_2network__protocol.html#autotoc_md189", null ],
+      [ "11. Example Wire Packet", "md_Doc_2network__protocol.html#autotoc_md191", null ],
+      [ "12. Error Handling & Resilience", "md_Doc_2network__protocol.html#autotoc_md193", null ],
+      [ "13. Timing & Tuning", "md_Doc_2network__protocol.html#autotoc_md195", null ],
+      [ "14. Security Considerations", "md_Doc_2network__protocol.html#autotoc_md197", null ],
+      [ "15. Interoperability & Platform Constraints", "md_Doc_2network__protocol.html#autotoc_md199", null ],
+      [ "16. Sequence Diagrams", "md_Doc_2network__protocol.html#autotoc_md201", [
+        [ "16.1 Reliable Unordered send/ack", "md_Doc_2network__protocol.html#autotoc_md202", null ],
+        [ "16.2 Reliable Ordered with gap and advancement", "md_Doc_2network__protocol.html#autotoc_md203", null ]
       ] ],
-      [ "17. Versioning & Extensibility", "md_Doc_2network__protocol.html#autotoc_md208", null ],
-      [ "18. Implementation Pointers", "md_Doc_2network__protocol.html#autotoc_md210", null ],
-      [ "19. Compliance Checklist", "md_Doc_2network__protocol.html#autotoc_md212", null ],
-      [ "20. Glossary", "md_Doc_2network__protocol.html#autotoc_md214", null ]
+      [ "17. Versioning & Extensibility", "md_Doc_2network__protocol.html#autotoc_md205", null ],
+      [ "18. Implementation Pointers", "md_Doc_2network__protocol.html#autotoc_md207", null ],
+      [ "19. Compliance Checklist", "md_Doc_2network__protocol.html#autotoc_md209", null ],
+      [ "20. Glossary", "md_Doc_2network__protocol.html#autotoc_md211", null ]
     ] ],
     [ "Why We Chose Raylib for the Game Rendering and Input System", "md_Doc_2RayLib.html", null ],
     [ "Topics", "topics.html", "topics" ],
@@ -184,7 +184,7 @@ var NAVTREE =
       [ "Class Members", "functions.html", [
         [ "All", "functions.html", "functions_dup" ],
         [ "Functions", "functions_func.html", "functions_func" ],
-        [ "Variables", "functions_vars.html", null ],
+        [ "Variables", "functions_vars.html", "functions_vars" ],
         [ "Typedefs", "functions_type.html", null ],
         [ "Enumerations", "functions_enum.html", null ]
       ] ]
@@ -203,13 +203,13 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "AudioSystem_8cpp.html",
-"PlayerSystem_8hpp.html#aa65405265af95e2ad16de5c1bf6499c8ae3643c2e847f43d390c197fa7d53d9dc",
-"classrtype_1_1client_1_1GameScene.html#a332b5fd460954ee2a2de8279c671a3b5",
-"classrtype_1_1client_1_1ui_1_1MultipleOption.html#a4923735eb03b58d0119fddfd87886931",
-"classrtype_1_1ecs_1_1System.html#a6b999989a121f4e28f18f426a0f48ef0",
-"md_Doc_2network__protocol.html#autotoc_md173",
-"namespaceprotocol.html#structprotocol_1_1packet__header__t",
-"struct_8hpp.html#ab007be3b7905ab104d0f7bc1eaeecd50acaffd4e5e7ed0d5a532516f4211da643"
+"Position_8hpp.html",
+"classrtype_1_1client_1_1Game.html#af846046eac24bc2478ce39510064d47d",
+"classrtype_1_1client_1_1ui_1_1IOption.html#a6ed7898935b2d855c8a8fb2ed8d14ea6",
+"classrtype_1_1ecs_1_1DrawSystem.html#a4c6a2255e6658c3231c1b8e160e69d25",
+"index.html#autotoc_md24",
+"namespacearcade_1_1types.html#ab007be3b7905ab104d0f7bc1eaeecd50af6f525b70b1e8569b5c5c145bbf64cf7",
+"struct_8hpp.html#ab007be3b7905ab104d0f7bc1eaeecd50a0c08010954d3e0e8db4e848b45d5e44c"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

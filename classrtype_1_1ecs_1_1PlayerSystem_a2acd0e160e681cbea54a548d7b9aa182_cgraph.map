@@ -1,0 +1,21 @@
+<map id="rtype::ecs::PlayerSystem::fire" name="rtype::ecs::PlayerSystem::fire">
+<area shape="rect" id="Node000001" title="Manage player firing behavior based on input." alt="" coords="5,89,219,115"/>
+<area shape="rect" id="Node000002" href="$namespacertype_1_1ecs_1_1factory.html#ad29b4b6e7fc4c35cea4aa4ce9d2e4861" title="Creates a projectile entity with movement and damage attributes." alt="" coords="310,53,498,93"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="219,89,296,81,297,86,219,94"/>
+<area shape="rect" id="Node000009" href="$classrtype_1_1ecs_1_1Coordinator.html#a4fe83a7166753e4e67df8321774191c0" title="Get a pointer to a component instance attached to an entity." alt="" coords="267,117,541,143"/>
+<area shape="poly" id="edge10_Node000001_Node000009" title=" " alt="" coords="219,110,258,113,258,119,219,115"/>
+<area shape="rect" id="Node000003" href="$namespacertype_1_1ecs_1_1factory.html#a7cf1b038cae209ff98ae6c2d74390d41" title="Helper template to add a component and destroy the entity on failure." alt="" coords="895,77,1085,117"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="462,50,523,33,589,19,661,9,719,3,776,6,847,20,903,40,950,67,948,72,900,45,846,25,775,11,719,9,662,14,590,25,524,38,463,55"/>
+<area shape="rect" id="Node000006" href="$classrtype_1_1ecs_1_1Coordinator.html#a20747c778c856fd0d9d0cf267ed90346" title="Create a new entity id." alt="" coords="589,35,847,60"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="498,63,575,56,576,62,499,68"/>
+<area shape="rect" id="Node000007" href="$namespacertype_1_1ecs_1_1factory.html#abbec02b513c2ad4e3a2b9b00a491d755" title="Adds movement&#45;related components (position, direction, speed)." alt="" coords="595,84,841,109"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="499,77,582,84,582,89,498,83"/>
+<area shape="rect" id="Node000008" href="$namespacertype_1_1ecs_1_1factory.html#aeabb5337b4bf656d02046fb676ce13b1" title="Adds hitbox and sprite components if provided." alt="" coords="617,133,819,159"/>
+<area shape="poly" id="edge8_Node000002_Node000008" title=" " alt="" coords="492,90,542,104,590,120,628,128,626,133,589,125,541,109,491,95"/>
+<area shape="rect" id="Node000004" href="$classrtype_1_1ecs_1_1Coordinator.html#a83821656162c90a27785e03b4a09847b" title="Add a component instance for an entity." alt="" coords="1133,59,1411,84"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="1085,86,1119,82,1120,88,1086,91"/>
+<area shape="rect" id="Node000005" href="$classrtype_1_1ecs_1_1Coordinator.html#a770d7357cc80caea3d70cba15f9655dc" title="Destroy an entity and remove it from all managers." alt="" coords="1139,108,1405,133"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="1086,102,1126,106,1125,111,1085,108"/>
+<area shape="poly" id="edge7_Node000007_Node000003" title=" " alt="" coords="841,94,881,94,881,99,841,99"/>
+<area shape="poly" id="edge9_Node000008_Node000003" title=" " alt="" coords="788,131,881,114,881,119,789,136"/>
+</map>

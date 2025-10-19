@@ -2,6 +2,7 @@ var namespacertype_1_1client =
 [
     [ "ui", "namespacertype_1_1client_1_1ui.html", "namespacertype_1_1client_1_1ui" ],
     [ "Game", "classrtype_1_1client_1_1Game.html", "classrtype_1_1client_1_1Game" ],
+    [ "GameManager", "classrtype_1_1client_1_1GameManager.html", "classrtype_1_1client_1_1GameManager" ],
     [ "GameScene", "classrtype_1_1client_1_1GameScene.html", "classrtype_1_1client_1_1GameScene" ],
     [ "GameSettings", "classrtype_1_1client_1_1GameSettings.html", "classrtype_1_1client_1_1GameSettings" ],
     [ "InputManager", "classrtype_1_1client_1_1InputManager.html", "classrtype_1_1client_1_1InputManager" ],

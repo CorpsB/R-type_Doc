@@ -1,23 +1,45 @@
 <map id="GameSettings.hpp" name="GameSettings.hpp">
-<area shape="rect" id="Node000001" title="Declaration of the GameSettings singleton managing client runtime and rendering configuration." alt="" coords="625,5,767,31"/>
-<area shape="rect" id="Node000002" href="$Game_8hpp.html" title="Core entry point for the R&#45;Type client runtime." alt="" coords="59,79,149,104"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="611,29,406,50,162,81,149,83,149,78,161,76,405,44,610,24"/>
-<area shape="rect" id="Node000005" href="$GameSettings_8cpp.html" title="Implementation of the GameSettings singleton for runtime scaling and configuration." alt="" coords="173,79,315,104"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="611,35,315,82,315,76,611,30"/>
-<area shape="rect" id="Node000006" href="$LanguageManager_8cpp.html" title="Implementation of the rtype::client::LanguageManager class." alt="" coords="339,79,507,104"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="640,37,468,81,466,76,638,32"/>
-<area shape="rect" id="Node000007" href="$MainMenuScene_8cpp.html" title="Implementation of the MainMenuScene class managing the main menu interface." alt="" coords="531,79,687,104"/>
-<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="673,41,625,81,622,76,670,37"/>
-<area shape="rect" id="Node000008" href="$MultipleOption_8cpp.html" title="Implementation of the MultipleOption class for multi&#45;choice menu interaction in the R&#45;Type client." alt="" coords="711,79,857,104"/>
-<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="722,37,771,76,768,81,719,41"/>
-<area shape="rect" id="Node000009" href="$OptionsMenuScene_8cpp.html" title="Implementation of the OptionsMenuScene class for managing user configuration menus." alt="" coords="881,79,1055,104"/>
-<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="753,32,925,76,923,81,752,37"/>
-<area shape="rect" id="Node000010" href="$SingleOption_8cpp.html" title="Implementation of the SingleOption class used for menu interaction in the R&#45;Type client." alt="" coords="1079,79,1211,104"/>
-<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="782,30,1079,77,1079,82,781,35"/>
-<area shape="rect" id="Node000011" href="$Sprite_8cpp.html" title="Implementation of the Sprite class for 2D UI rendering in the R&#45;Type client." alt="" coords="1235,79,1322,104"/>
-<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="781,24,984,44,1224,76,1236,78,1235,83,1224,81,983,49,781,29"/>
-<area shape="rect" id="Node000003" href="$Game_8cpp.html" title="Core runtime implementation of the R&#45;Type client." alt="" coords="5,152,93,177"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="89,117,60,154,56,150,85,113"/>
-<area shape="rect" id="Node000004" href="$Client_2main_8cpp.html" title="Entry point of the R&#45;Type client application." alt="" coords="117,152,200,177"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="123,113,152,150,148,154,119,117"/>
+<area shape="rect" id="Node000001" title="Declaration of the GameSettings singleton managing client runtime and rendering configuration." alt="" coords="754,5,896,31"/>
+<area shape="rect" id="Node000002" href="$GameManager_8hpp.html" title=" " alt="" coords="668,79,814,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="803,42,756,80,753,76,799,38"/>
+<area shape="rect" id="Node000020" href="$GameSettings_8cpp.html" title="Implementation of the GameSettings singleton for runtime scaling and configuration." alt="" coords="838,79,980,104"/>
+<area shape="poly" id="edge23_Node000001_Node000020" title=" " alt="" coords="851,38,897,76,893,80,847,42"/>
+<area shape="rect" id="Node000003" href="$DrawSystem_8hpp.html" title="Defines the DrawSystem class responsible for rendering all drawable entities in the ECS." alt="" coords="270,152,404,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="663,109,402,155,402,149,662,104"/>
+<area shape="rect" id="Node000006" href="$GameScene_8cpp.html" title=" " alt="" coords="82,372,208,397"/>
+<area shape="poly" id="edge15_Node000002_Node000006" title=" " alt="" coords="655,99,471,117,364,132,259,155,159,179,118,196,70,228,41,250,18,272,12,283,8,295,10,308,16,323,30,339,48,352,88,370,85,374,45,356,27,343,12,325,5,310,3,295,7,281,14,269,38,246,67,223,115,192,157,174,258,149,363,127,471,111,654,94"/>
+<area shape="rect" id="Node000007" href="$MainMenuScene_8cpp.html" title="Implementation of the MainMenuScene class managing the main menu interface." alt="" coords="338,372,494,397"/>
+<area shape="poly" id="edge17_Node000002_Node000007" title=" " alt="" coords="655,106,559,126,519,139,493,154,476,174,466,192,457,231,455,274,443,325,423,373,419,371,438,323,449,273,452,230,461,191,472,171,490,150,517,134,558,121,654,101"/>
+<area shape="rect" id="Node000011" href="$Game_8hpp.html" title="Core entry point for the R&#45;Type client runtime." alt="" coords="504,152,594,177"/>
+<area shape="poly" id="edge11_Node000002_Node000011" title=" " alt="" coords="698,111,581,154,579,149,696,106"/>
+<area shape="rect" id="Node000013" href="$Client_2main_8cpp.html" title="Entry point of the R&#45;Type client application." alt="" coords="616,225,698,251"/>
+<area shape="poly" id="edge22_Node000002_Node000013" title=" " alt="" coords="702,113,678,130,659,153,653,171,652,191,656,225,651,225,647,191,648,170,655,151,674,126,699,108"/>
+<area shape="rect" id="Node000014" href="$GameManager_8cpp.html" title=" " alt="" coords="669,152,813,177"/>
+<area shape="poly" id="edge14_Node000002_Node000014" title=" " alt="" coords="744,118,744,152,738,152,738,118"/>
+<area shape="rect" id="Node000015" href="$LanguageManager_8cpp.html" title="Implementation of the rtype::client::LanguageManager class." alt="" coords="837,152,1005,177"/>
+<area shape="poly" id="edge16_Node000002_Node000015" title=" " alt="" coords="783,106,892,149,890,154,781,111"/>
+<area shape="rect" id="Node000016" href="$MultipleOption_8cpp.html" title="Implementation of the MultipleOption class for multi&#45;choice menu interaction in the R&#45;Type client." alt="" coords="1030,152,1175,177"/>
+<area shape="poly" id="edge18_Node000002_Node000016" title=" " alt="" coords="813,104,1044,149,1043,155,812,109"/>
+<area shape="rect" id="Node000017" href="$OptionsMenuScene_8cpp.html" title="Implementation of the OptionsMenuScene class for managing user configuration menus." alt="" coords="1199,152,1374,177"/>
+<area shape="poly" id="edge19_Node000002_Node000017" title=" " alt="" coords="828,101,1199,150,1199,155,827,107"/>
+<area shape="rect" id="Node000018" href="$SingleOption_8cpp.html" title="Implementation of the SingleOption class used for menu interaction in the R&#45;Type client." alt="" coords="1398,152,1530,177"/>
+<area shape="poly" id="edge20_Node000002_Node000018" title=" " alt="" coords="828,101,986,116,1109,125,1231,134,1387,149,1398,151,1397,156,1386,155,1231,139,1109,130,985,122,827,107"/>
+<area shape="rect" id="Node000019" href="$Sprite_8cpp.html" title="Implementation of the Sprite class for 2D UI rendering in the R&#45;Type client." alt="" coords="1554,152,1640,177"/>
+<area shape="poly" id="edge21_Node000002_Node000019" title=" " alt="" coords="828,101,1030,116,1187,121,1344,128,1543,149,1554,151,1553,156,1542,155,1344,134,1187,126,1029,121,827,107"/>
+<area shape="rect" id="Node000004" href="$DrawSystem_8cpp.html" title="Implements the DrawSystem responsible for sprite rendering." alt="" coords="246,225,378,251"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="331,191,318,226,313,224,326,189"/>
+<area shape="rect" id="Node000005" href="$GameScene_8hpp.html" title=" " alt="" coords="301,299,429,324"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="364,185,379,203,391,224,395,245,391,266,375,299,370,297,386,264,389,245,386,226,375,206,360,188"/>
+<area shape="rect" id="Node000008" href="$PlayerSystem_8hpp.html" title="Header for PlayerSystem — ECS system handling player movement, firing, and score updates." alt="" coords="82,225,222,251"/>
+<area shape="poly" id="edge7_Node000003_Node000008" title=" " alt="" coords="296,185,183,228,181,223,294,180"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="317,331,181,374,180,369,316,326"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="383,334,410,370,405,373,379,337"/>
+<area shape="poly" id="edge8_Node000008_Node000005" title=" " alt="" coords="199,252,331,296,330,301,198,257"/>
+<area shape="rect" id="Node000009" href="$PlayerSystem_8cpp.html" title="Implementation of PlayerSystem — handles movement, firing, and scoring logic." alt="" coords="138,299,277,324"/>
+<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="171,260,201,297,196,300,167,263"/>
+<area shape="rect" id="Node000010" href="$Rtype_8cpp.html" title="Implements the main server logic for the R&#45;Type project." alt="" coords="27,299,114,324"/>
+<area shape="poly" id="edge10_Node000008_Node000010" title=" " alt="" coords="130,262,85,300,82,296,127,258"/>
+<area shape="rect" id="Node000012" href="$Game_8cpp.html" title="Core runtime implementation of the R&#45;Type client." alt="" coords="504,225,592,251"/>
+<area shape="poly" id="edge12_Node000011_Node000012" title=" " alt="" coords="551,191,550,225,545,225,546,191"/>
+<area shape="poly" id="edge13_Node000011_Node000013" title=" " alt="" coords="579,183,641,223,638,227,576,187"/>
 </map>

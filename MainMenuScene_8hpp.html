@@ -107,10 +107,8 @@ $(document).ready(function(){initNavTree('MainMenuScene_8hpp.html',''); initResi
 <p>Declaration of the MainMenuScene class, representing the main menu interface.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="IScene_8hpp_source.html">../IScene.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="IOption_8hpp_source.html">../../UI/Options/IOption.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="SingleOption_8hpp_source.html">../../UI/Options/SingleOption/SingleOption.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="MultipleOption_8hpp_source.html">../../UI/Options/MultipleOption/MultipleOption.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="Client_2Game_2UI_2Sprite_2Sprite_8hpp_source.html">../../UI/Sprite/Sprite.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="UIList_8hpp_source.html">../../../UI/UIList/UIList.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="Client_2UI_2Sprite_2Sprite_8hpp_source.html">../../../UI/Sprite/Sprite.hpp</a>&quot;</code><br />
 <code>#include &lt;string&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
 <code>#include &lt;memory&gt;</code><br />
@@ -119,7 +117,7 @@ $(document).ready(function(){initNavTree('MainMenuScene_8hpp.html',''); initResi
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="MainMenuScene_8hpp__incl.svg" width="100%" height="503"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="MainMenuScene_8hpp__incl.svg" width="100%" height="492"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> This graph shows which files directly or indirectly include this file:</div>
@@ -134,7 +132,6 @@ $(document).ready(function(){initNavTree('MainMenuScene_8hpp.html',''); initResi
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtype_1_1client_1_1MainMenuScene.html">rtype::client::MainMenuScene</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents the primary interactive menu displayed at application startup.  <a href="classrtype_1_1client_1_1MainMenuScene.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
@@ -146,23 +143,8 @@ Namespaces</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Declaration of the MainMenuScene class, representing the main menu interface. </p>
-<dl class="section since"><dt>Since</dt><dd>1.0</dd></dl>
-<dl class="section see"><dt>See also</dt><dd>OptionsMenuScene, ui::SingleOption, SceneManager, GameSettings</dd></dl>
-<p>The MainMenuScene class defines the entry point of the R-Type client’s UI system. It displays the main navigation interface, allowing the user to:</p><ul>
-<li>Start the game.</li>
-<li>Access the Options menu.</li>
-<li>Exit the application.</li>
-</ul>
-<p>All buttons are implemented through ui::SingleOption objects and positioned dynamically according to the global scaling provided by GameSettings. A logo sprite is also displayed above the menu options.</p>
-<h3><a class="anchor" id="autotoc_md9"></a>
-Responsibilities:</h3>
-<ul>
-<li>Initialize menu elements (logo and interactive options).</li>
-<li>Handle user input navigation with arrow keys.</li>
-<li>Execute corresponding actions via callbacks.</li>
-<li>Adapt layout scaling dynamically with window size changes.</li>
-</ul>
-<dl class="section note"><dt>Note</dt><dd>Acts as the first scene loaded upon client startup. </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>1.1</dd></dl>
+<dl class="section see"><dt>See also</dt><dd>OptionsMenuScene, ui::SingleOption, SceneManager, GameSettings </dd></dl>
 
 <p class="definition">Definition in file <a class="el" href="MainMenuScene_8hpp_source.html">MainMenuScene.hpp</a>.</p>
 </div></div><!-- contents -->

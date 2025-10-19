@@ -1,17 +1,9 @@
 <map id="MultipleOption.hpp" name="MultipleOption.hpp">
-<area shape="rect" id="Node000001" title="Declaration of the MultipleOption class representing a selectable menu option with multiple choices." alt="" coords="210,5,357,31"/>
-<area shape="rect" id="Node000002" href="$MainMenuScene_8hpp.html" title="Declaration of the MainMenuScene class, representing the main menu interface." alt="" coords="205,79,362,104"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="286,44,286,79,281,79,281,44"/>
-<area shape="rect" id="Node000006" href="$MultipleOption_8cpp.html" title="Implementation of the MultipleOption class for multi&#45;choice menu interaction in the R&#45;Type client." alt="" coords="387,79,532,104"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="325,33,432,76,430,81,323,38"/>
-<area shape="rect" id="Node000007" href="$OptionsMenuScene_8hpp.html" title="Declaration of the OptionsMenuScene class, handling the game’s settings menu." alt="" coords="5,79,180,104"/>
-<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="241,38,125,81,123,76,239,33"/>
-<area shape="rect" id="Node000003" href="$MainMenuScene_8cpp.html" title="Implementation of the MainMenuScene class managing the main menu interface." alt="" coords="204,152,360,177"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="286,118,285,152,280,152,280,118"/>
-<area shape="rect" id="Node000004" href="$OptionsMenuScene_8cpp.html" title="Implementation of the OptionsMenuScene class for managing user configuration menus." alt="" coords="5,152,180,177"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="241,111,125,154,123,149,239,106"/>
-<area shape="rect" id="Node000005" href="$Client_2main_8cpp.html" title="Entry point of the R&#45;Type client application." alt="" coords="385,152,467,177"/>
-<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="320,108,404,149,401,154,317,112"/>
-<area shape="poly" id="edge7_Node000007_Node000003" title=" " alt="" coords="137,106,252,149,250,154,135,111"/>
-<area shape="poly" id="edge8_Node000007_Node000004" title=" " alt="" coords="95,118,95,152,90,152,90,118"/>
+<area shape="rect" id="Node000001" title="Declaration of the MultipleOption class representing a selectable menu option with multiple choices." alt="" coords="185,5,331,31"/>
+<area shape="rect" id="Node000002" href="$MainMenuScene_8cpp.html" title="Implementation of the MainMenuScene class managing the main menu interface." alt="" coords="5,79,161,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="218,38,113,81,111,76,216,33"/>
+<area shape="rect" id="Node000003" href="$MultipleOption_8cpp.html" title="Implementation of the MultipleOption class for multi&#45;choice menu interaction in the R&#45;Type client." alt="" coords="185,79,331,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="261,44,261,79,255,79,255,44"/>
+<area shape="rect" id="Node000004" href="$OptionsMenuScene_8cpp.html" title="Implementation of the OptionsMenuScene class for managing user configuration menus." alt="" coords="355,79,529,104"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="301,33,413,76,411,81,299,38"/>
 </map>

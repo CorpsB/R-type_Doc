@@ -29,7 +29,7 @@ var GameProtocolTypes_8hpp =
     [ "player_id_t", "GameProtocolTypes_8hpp.html#af73509b55868f0169ae63813c0f7baae", null ],
     [ "position_t", "GameProtocolTypes_8hpp.html#a6736533294d2876d3dc4bc0b248a9c97", null ],
     [ "entity_type_t", "GameProtocolTypes_8hpp.html#a58051a0f9c1c650d605d71a73e9437bd", [
-      [ "NONE", "GameProtocolTypes_8hpp.html#aa65405265af95e2ad16de5c1bf6499c8a0d5f85390e63d94e3159332f8c8746c1", null ],
+      [ "NO_ENTITY", "GameProtocolTypes_8hpp.html#a58051a0f9c1c650d605d71a73e9437bda756c8b6813764a1770874884a506fbec", null ],
       [ "PLAYER", "GameProtocolTypes_8hpp.html#a58051a0f9c1c650d605d71a73e9437bda36feead328784e91b2c8f5cafd543773", null ],
       [ "ENEMY", "GameProtocolTypes_8hpp.html#a58051a0f9c1c650d605d71a73e9437bdaede731433a6fbec7240dc94ebe9ac41a", null ],
       [ "PROJECTILE", "GameProtocolTypes_8hpp.html#a58051a0f9c1c650d605d71a73e9437bda1fb4b4514aa45ab3f36aba6806781b4e", null ]
@@ -57,20 +57,17 @@ var GameProtocolTypes_8hpp =
       [ "PING", "GameProtocolTypes_8hpp.html#ad4d21ce1bb315afe579f5abed923f701ae07ff41a486c27c095a15898dcca34d1", null ]
     ] ],
     [ "player_input_t", "GameProtocolTypes_8hpp.html#aa65405265af95e2ad16de5c1bf6499c8", [
-      [ "NONE", "GameProtocolTypes_8hpp.html#aa65405265af95e2ad16de5c1bf6499c8a0d5f85390e63d94e3159332f8c8746c1", null ],
-      [ "FIRE", "GameProtocolTypes_8hpp.html#aa65405265af95e2ad16de5c1bf6499c8a86e33279dd7d3537f99fac026649ca3c", null ],
-      [ "UP", "GameProtocolTypes_8hpp.html#aa65405265af95e2ad16de5c1bf6499c8a7aff1d6aa4d5d4eb6fe29c164f6b2388", null ],
-      [ "DOWN", "GameProtocolTypes_8hpp.html#aa65405265af95e2ad16de5c1bf6499c8a02c435875240fea34b7aac801b4c2c03", null ],
-      [ "LEFT", "GameProtocolTypes_8hpp.html#aa65405265af95e2ad16de5c1bf6499c8a5786fd962d38ad7c3c995832c6e148f2", null ],
-      [ "RIGHT", "GameProtocolTypes_8hpp.html#aa65405265af95e2ad16de5c1bf6499c8ae3643c2e847f43d390c197fa7d53d9dc", null ],
-      [ "ESC", "GameProtocolTypes_8hpp.html#aa65405265af95e2ad16de5c1bf6499c8a8e3e881c9d05725b1e387e20a4e74e89", null ],
-      [ "NONE", "GameProtocolTypes_8hpp.html#aa65405265af95e2ad16de5c1bf6499c8a0d5f85390e63d94e3159332f8c8746c1", null ],
-      [ "FIRE", "GameProtocolTypes_8hpp.html#aa65405265af95e2ad16de5c1bf6499c8a86e33279dd7d3537f99fac026649ca3c", null ],
-      [ "UP", "GameProtocolTypes_8hpp.html#aa65405265af95e2ad16de5c1bf6499c8a7aff1d6aa4d5d4eb6fe29c164f6b2388", null ],
-      [ "DOWN", "GameProtocolTypes_8hpp.html#aa65405265af95e2ad16de5c1bf6499c8a02c435875240fea34b7aac801b4c2c03", null ],
-      [ "LEFT", "GameProtocolTypes_8hpp.html#aa65405265af95e2ad16de5c1bf6499c8a5786fd962d38ad7c3c995832c6e148f2", null ],
-      [ "RIGHT", "GameProtocolTypes_8hpp.html#aa65405265af95e2ad16de5c1bf6499c8ae3643c2e847f43d390c197fa7d53d9dc", null ],
-      [ "ESC", "GameProtocolTypes_8hpp.html#aa65405265af95e2ad16de5c1bf6499c8a8e3e881c9d05725b1e387e20a4e74e89", null ]
+      [ "NO_INPUT", "GameProtocolTypes_8hpp.html#aa65405265af95e2ad16de5c1bf6499c8a3e7642875935b439557a64eb4392cecd", null ],
+      [ "FIRE", "GameProtocolTypes_8hpp.html#aa65405265af95e2ad16de5c1bf6499c8ab9a98fc8ae0032750322256c6a61bb43", null ],
+      [ "UP", "GameProtocolTypes_8hpp.html#aa65405265af95e2ad16de5c1bf6499c8a2be465b821070491d05cfcbbe59cf4fd", null ],
+      [ "DOWN", "GameProtocolTypes_8hpp.html#aa65405265af95e2ad16de5c1bf6499c8af1919fc79fc549bfb7dd14ed5bcbcee9", null ],
+      [ "LEFT", "GameProtocolTypes_8hpp.html#aa65405265af95e2ad16de5c1bf6499c8a53b74dc2a9d0fc30b42fbfe1c34166da", null ],
+      [ "RIGHT", "GameProtocolTypes_8hpp.html#aa65405265af95e2ad16de5c1bf6499c8a8cc8fe6468baa99edc9894cd822d9a58", null ],
+      [ "UP_RIGHT", "GameProtocolTypes_8hpp.html#aa65405265af95e2ad16de5c1bf6499c8a04d65b758518d34b95d11afb03d68937", null ],
+      [ "UP_LEFT", "GameProtocolTypes_8hpp.html#aa65405265af95e2ad16de5c1bf6499c8ac292917c5c3f04b2d5b233c19a6097ba", null ],
+      [ "DOWN_RIGHT", "GameProtocolTypes_8hpp.html#aa65405265af95e2ad16de5c1bf6499c8a3dd61ff8ec52b6390bb6d1fa570c0259", null ],
+      [ "DOWN_LEFT", "GameProtocolTypes_8hpp.html#aa65405265af95e2ad16de5c1bf6499c8a9e73f1e94074ce42e3d07d58b2a7a0f8", null ],
+      [ "ESC", "GameProtocolTypes_8hpp.html#aa65405265af95e2ad16de5c1bf6499c8abda6ee89d49cf06583a8ae61a0e2fc20", null ]
     ] ],
     [ "DEFAULT_POSITION_SCALE", "GameProtocolTypes_8hpp.html#a8ab44a0bd6915da4264d074ca1a4c87b", null ]
 ];

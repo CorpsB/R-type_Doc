@@ -33,10 +33,15 @@ var annotated_dup =
         [ "ui", "namespacertype_1_1client_1_1ui.html", [
           [ "IOption", "classrtype_1_1client_1_1ui_1_1IOption.html", "classrtype_1_1client_1_1ui_1_1IOption" ],
           [ "MultipleOption", "classrtype_1_1client_1_1ui_1_1MultipleOption.html", "classrtype_1_1client_1_1ui_1_1MultipleOption" ],
+          [ "OptionList", "classrtype_1_1client_1_1ui_1_1OptionList.html", "classrtype_1_1client_1_1ui_1_1OptionList" ],
           [ "SingleOption", "classrtype_1_1client_1_1ui_1_1SingleOption.html", "classrtype_1_1client_1_1ui_1_1SingleOption" ],
-          [ "Sprite", "classrtype_1_1client_1_1ui_1_1Sprite.html", "classrtype_1_1client_1_1ui_1_1Sprite" ]
+          [ "Sprite", "classrtype_1_1client_1_1ui_1_1Sprite.html", "classrtype_1_1client_1_1ui_1_1Sprite" ],
+          [ "SpriteInstance", "namespacertype_1_1client_1_1ui.html#structrtype_1_1client_1_1ui_1_1SpriteInstance", "namespacertype_1_1client_1_1ui_structrtype_1_1client_1_1ui_1_1SpriteInstance_dup" ],
+          [ "UIElement", "classrtype_1_1client_1_1ui_1_1UIElement.html", "classrtype_1_1client_1_1ui_1_1UIElement" ],
+          [ "UIList", "classrtype_1_1client_1_1ui_1_1UIList.html", "classrtype_1_1client_1_1ui_1_1UIList" ]
         ] ],
         [ "Game", "classrtype_1_1client_1_1Game.html", "classrtype_1_1client_1_1Game" ],
+        [ "GameManager", "classrtype_1_1client_1_1GameManager.html", "classrtype_1_1client_1_1GameManager" ],
         [ "GameScene", "classrtype_1_1client_1_1GameScene.html", "classrtype_1_1client_1_1GameScene" ],
         [ "GameSettings", "classrtype_1_1client_1_1GameSettings.html", "classrtype_1_1client_1_1GameSettings" ],
         [ "InputManager", "classrtype_1_1client_1_1InputManager.html", "classrtype_1_1client_1_1InputManager" ],
@@ -54,6 +59,7 @@ var annotated_dup =
         [ "ComponentArray", "classrtype_1_1ecs_1_1ComponentArray.html", "classrtype_1_1ecs_1_1ComponentArray" ],
         [ "ComponentManager", "classrtype_1_1ecs_1_1ComponentManager.html", "classrtype_1_1ecs_1_1ComponentManager" ],
         [ "Coordinator", "classrtype_1_1ecs_1_1Coordinator.html", "classrtype_1_1ecs_1_1Coordinator" ],
+        [ "DrawSystem", "classrtype_1_1ecs_1_1DrawSystem.html", "classrtype_1_1ecs_1_1DrawSystem" ],
         [ "EntityData", "namespacertype_1_1ecs.html#structrtype_1_1ecs_1_1EntityData", "namespacertype_1_1ecs_structrtype_1_1ecs_1_1EntityData_dup" ],
         [ "EntityManager", "classrtype_1_1ecs_1_1EntityManager.html", "classrtype_1_1ecs_1_1EntityManager" ],
         [ "IComponentArray", "classrtype_1_1ecs_1_1IComponentArray.html", "classrtype_1_1ecs_1_1IComponentArray" ],

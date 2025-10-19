@@ -103,11 +103,11 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
 <div class="textblock"><p><a class="anchor" id="md_README"></a></p>
 <p>R-Type is a C++ networked multiplayer game inspired by the original arcade classic. This project focuses on implementing a fully functional client-server architecture using modern C++ standards, Boost.Asio for asynchronous UDP networking, and Raylib for rendering. It is designed to be modular, scalable, and cross-platform, supporting both Linux and Windows environments.</p>
 <hr  />
-<h1><a class="anchor" id="autotoc_md20"></a>
+<h1><a class="anchor" id="autotoc_md17"></a>
 Overview</h1>
 <p>This project implements a complete Entity-Component-System (ECS) architecture and a custom UDP-based protocol to ensure real-time, low-latency gameplay. The server handles game logic, synchronization, and communication between players, while the client provides an interactive, graphical interface using Raylib.</p>
 <hr  />
-<h1><a class="anchor" id="autotoc_md22"></a>
+<h1><a class="anchor" id="autotoc_md19"></a>
 Technologies Used</h1>
 <ul>
 <li><b>Language</b>: C++17</li>
@@ -119,7 +119,7 @@ Technologies Used</h1>
 <li><b>Supported Platforms</b>: Linux and Windows</li>
 </ul>
 <hr  />
-<h1><a class="anchor" id="autotoc_md24"></a>
+<h1><a class="anchor" id="autotoc_md21"></a>
 Requirements</h1>
 <p>Ensure the following tools are installed:</p>
 <ul>
@@ -137,42 +137,42 @@ Requirements</h1>
 </li>
 </ul>
 <hr  />
-<h1><a class="anchor" id="autotoc_md26"></a>
+<h1><a class="anchor" id="autotoc_md23"></a>
 Building the Project</h1>
-<h2><a class="anchor" id="autotoc_md27"></a>
+<h2><a class="anchor" id="autotoc_md24"></a>
 Step 1: Install dependencies</h2>
-<h3><a class="anchor" id="autotoc_md28"></a>
+<h3><a class="anchor" id="autotoc_md25"></a>
 Linux</h3>
 <div class="fragment"><div class="line">conan profile detect</div>
 <div class="line">conan install . --output-folder=build --build=missing -c tools.system.package_manager:mode=install -c tools.system.package_manager:sudo=True</div>
-</div><!-- fragment --><h3><a class="anchor" id="autotoc_md29"></a>
+</div><!-- fragment --><h3><a class="anchor" id="autotoc_md26"></a>
 Windows</h3>
 <div class="fragment"><div class="line">conan profile detect</div>
 <div class="line">conan install . --output-folder=build --build=missing</div>
 </div><!-- fragment --><hr  />
-<h2><a class="anchor" id="autotoc_md31"></a>
+<h2><a class="anchor" id="autotoc_md28"></a>
 Step 2: Build</h2>
-<h3><a class="anchor" id="autotoc_md32"></a>
+<h3><a class="anchor" id="autotoc_md29"></a>
 Linux</h3>
 <div class="fragment"><div class="line">cmake --preset conan-release</div>
 <div class="line">cmake --build --preset conan-release</div>
-</div><!-- fragment --><h3><a class="anchor" id="autotoc_md33"></a>
+</div><!-- fragment --><h3><a class="anchor" id="autotoc_md30"></a>
 Windows</h3>
 <div class="fragment"><div class="line">cmake --preset conan-default</div>
 <div class="line">cmake --build --preset conan-release</div>
 </div><!-- fragment --><hr  />
-<h2><a class="anchor" id="autotoc_md35"></a>
+<h2><a class="anchor" id="autotoc_md32"></a>
 Step 3: Run</h2>
-<h3><a class="anchor" id="autotoc_md36"></a>
+<h3><a class="anchor" id="autotoc_md33"></a>
 Linux</h3>
 <div class="fragment"><div class="line">./build/Release/r-type_server</div>
 <div class="line">./build/Release/r-type_client</div>
-</div><!-- fragment --><h3><a class="anchor" id="autotoc_md37"></a>
+</div><!-- fragment --><h3><a class="anchor" id="autotoc_md34"></a>
 Windows</h3>
 <div class="fragment"><div class="line">./build/Release/r-type_server.exe</div>
 <div class="line">./build/Release/r-type_client.exe</div>
 </div><!-- fragment --><hr  />
-<h1><a class="anchor" id="autotoc_md39"></a>
+<h1><a class="anchor" id="autotoc_md36"></a>
 Server Usage</h1>
 <div class="fragment"><div class="line">Usage: ./r-type_server [options]</div>
 <div class="line"> </div>
@@ -197,19 +197,19 @@ Server Usage</h1>
 <div class="line">Example:</div>
 <div class="line">  ./r-type_server -d -port=8080 -ip=192.168.1.10 -path=server.cfg</div>
 </div><!-- fragment --><hr  />
-<h1><a class="anchor" id="autotoc_md41"></a>
+<h1><a class="anchor" id="autotoc_md38"></a>
 Unit Tests</h1>
 <p>To build and run the test suite, ensure that Criterion is installed.</p>
-<h3><a class="anchor" id="autotoc_md42"></a>
+<h3><a class="anchor" id="autotoc_md39"></a>
 Linux</h3>
 <div class="fragment"><div class="line">cmake --preset conan-release -DBUILD_TESTS=ON</div>
 <div class="line">cmake --build --preset conan-release</div>
-</div><!-- fragment --><h3><a class="anchor" id="autotoc_md43"></a>
+</div><!-- fragment --><h3><a class="anchor" id="autotoc_md40"></a>
 Windows</h3>
 <div class="fragment"><div class="line">cmake --preset conan-default -DBUILD_TESTS=ON</div>
 <div class="line">cmake --build --preset conan-release</div>
 </div><!-- fragment --><hr  />
-<h1><a class="anchor" id="autotoc_md45"></a>
+<h1><a class="anchor" id="autotoc_md42"></a>
 Project Structure</h1>
 <div class="fragment"><div class="line">r-type/</div>
 <div class="line">├── client/           # Client source code (Raylib rendering, input, etc.)</div>
@@ -220,12 +220,12 @@ Project Structure</h1>
 <div class="line">├── CMakeLists.txt    # Build configuration</div>
 <div class="line">└── README.md         # This file</div>
 </div><!-- fragment --><hr  />
-<h1><a class="anchor" id="autotoc_md47"></a>
+<h1><a class="anchor" id="autotoc_md44"></a>
 License</h1>
 <p>This project is developed as part of the Epitech C++ Advanced Programming module (B-CPP-500). <br  />
  It is intended for educational purposes and academic evaluation.</p>
 <hr  />
-<h1><a class="anchor" id="autotoc_md49"></a>
+<h1><a class="anchor" id="autotoc_md46"></a>
 Contributors</h1>
 <p>Noé Carabin <br  />
  Jason Koenig <br  />

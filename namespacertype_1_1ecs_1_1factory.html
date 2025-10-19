@@ -131,18 +131,18 @@ Functions</h2></td></tr>
 <tr class="memitem:a5479c88a043755974c85001d4336327a" id="r_a5479c88a043755974c85001d4336327a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacertype_1_1ecs_1_1factory.html#a5479c88a043755974c85001d4336327a">set_weapon</a> (<a class="el" href="classrtype_1_1ecs_1_1Coordinator.html">Coordinator</a> &amp;coord, uint32_t id, const <a class="el" href="Damage_8hpp.html#structdamage__attr__t">damage_attr_t</a> &amp;dmg, const <a class="el" href="Frequency_8hpp.html#structfrequency__attr__t">frequency_attr_t</a> &amp;freq)</td></tr>
 <tr class="memdesc:a5479c88a043755974c85001d4336327a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds weapon-related components (damage, frequency).  <br /></td></tr>
 <tr class="separator:a5479c88a043755974c85001d4336327a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3c5bd23a9782afd2fc07153216b5b0d2" id="r_a3c5bd23a9782afd2fc07153216b5b0d2"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacertype_1_1ecs_1_1factory.html#a3c5bd23a9782afd2fc07153216b5b0d2">create_player</a> (<a class="el" href="classrtype_1_1ecs_1_1Coordinator.html">Coordinator</a> &amp;coord, const <a class="el" href="namespacertype_1_1ecs_1_1factory.html#adf6cb2c07d619384a6c1f4fe94eb5014">entity_schema</a> &amp;schema, const std::optional&lt; <a class="el" href="Common_2ECS_2Components_2Attributes_2Sprite_8hpp.html#structsprite__attr__t">sprite_attr_t</a> &gt; &amp;spriteTag)</td></tr>
-<tr class="memdesc:a3c5bd23a9782afd2fc07153216b5b0d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a player entity with full stats, movement, and weapon setup.  <br /></td></tr>
-<tr class="separator:a3c5bd23a9782afd2fc07153216b5b0d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aadd8634669966a1015c4208fb07a4924" id="r_aadd8634669966a1015c4208fb07a4924"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacertype_1_1ecs_1_1factory.html#aadd8634669966a1015c4208fb07a4924">create_enemy</a> (<a class="el" href="classrtype_1_1ecs_1_1Coordinator.html">Coordinator</a> &amp;coord, const <a class="el" href="namespacertype_1_1ecs_1_1factory.html#adf6cb2c07d619384a6c1f4fe94eb5014">entity_schema</a> &amp;schema, const std::optional&lt; <a class="el" href="Common_2ECS_2Components_2Attributes_2Sprite_8hpp.html#structsprite__attr__t">sprite_attr_t</a> &gt; &amp;spriteTag)</td></tr>
-<tr class="memdesc:aadd8634669966a1015c4208fb07a4924"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an enemy entity with health, movement, and weapon setup.  <br /></td></tr>
-<tr class="separator:aadd8634669966a1015c4208fb07a4924"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5a8314ddbfde6228ddddaa6989d791ba" id="r_a5a8314ddbfde6228ddddaa6989d791ba"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacertype_1_1ecs_1_1factory.html#a5a8314ddbfde6228ddddaa6989d791ba">create_projectile</a> (<a class="el" href="classrtype_1_1ecs_1_1Coordinator.html">Coordinator</a> &amp;coord, const <a class="el" href="namespacertype_1_1ecs_1_1factory.html#adf6cb2c07d619384a6c1f4fe94eb5014">entity_schema</a> &amp;schema, const std::optional&lt; <a class="el" href="Common_2ECS_2Components_2Attributes_2Sprite_8hpp.html#structsprite__attr__t">sprite_attr_t</a> &gt; &amp;spriteTag)</td></tr>
-<tr class="memdesc:a5a8314ddbfde6228ddddaa6989d791ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a projectile entity with movement and damage attributes.  <br /></td></tr>
-<tr class="separator:a5a8314ddbfde6228ddddaa6989d791ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a20e6c6134ae9cf710eb5eabdb60178de" id="r_a20e6c6134ae9cf710eb5eabdb60178de"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacertype_1_1ecs_1_1factory.html#a20e6c6134ae9cf710eb5eabdb60178de">create_entity</a> (<a class="el" href="classrtype_1_1ecs_1_1Coordinator.html">Coordinator</a> &amp;coord, const <a class="el" href="namespacertype_1_1ecs_1_1factory.html#adf6cb2c07d619384a6c1f4fe94eb5014">entity_schema</a> &amp;schema, const std::optional&lt; <a class="el" href="Common_2ECS_2Components_2Attributes_2Sprite_8hpp.html#structsprite__attr__t">sprite_attr_t</a> &gt; &amp;spriteTag)</td></tr>
-<tr class="memdesc:a20e6c6134ae9cf710eb5eabdb60178de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dispatches entity creation based on its network schema type.  <br /></td></tr>
-<tr class="separator:a20e6c6134ae9cf710eb5eabdb60178de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12892dcefb006b9cf209784a8a40083d" id="r_a12892dcefb006b9cf209784a8a40083d"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacertype_1_1ecs_1_1factory.html#a12892dcefb006b9cf209784a8a40083d">create_player</a> (<a class="el" href="classrtype_1_1ecs_1_1Coordinator.html">Coordinator</a> &amp;coord, const <a class="el" href="namespacertype_1_1ecs_1_1factory.html#adf6cb2c07d619384a6c1f4fe94eb5014">entity_schema</a> &amp;schema)</td></tr>
+<tr class="memdesc:a12892dcefb006b9cf209784a8a40083d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a player entity with full stats, movement, and weapon setup.  <br /></td></tr>
+<tr class="separator:a12892dcefb006b9cf209784a8a40083d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6884eef896d6f5d00c251ac5081a24b" id="r_ad6884eef896d6f5d00c251ac5081a24b"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacertype_1_1ecs_1_1factory.html#ad6884eef896d6f5d00c251ac5081a24b">create_enemy</a> (<a class="el" href="classrtype_1_1ecs_1_1Coordinator.html">Coordinator</a> &amp;coord, const <a class="el" href="namespacertype_1_1ecs_1_1factory.html#adf6cb2c07d619384a6c1f4fe94eb5014">entity_schema</a> &amp;schema)</td></tr>
+<tr class="memdesc:ad6884eef896d6f5d00c251ac5081a24b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an enemy entity with health, movement, and weapon setup.  <br /></td></tr>
+<tr class="separator:ad6884eef896d6f5d00c251ac5081a24b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad29b4b6e7fc4c35cea4aa4ce9d2e4861" id="r_ad29b4b6e7fc4c35cea4aa4ce9d2e4861"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacertype_1_1ecs_1_1factory.html#ad29b4b6e7fc4c35cea4aa4ce9d2e4861">create_projectile</a> (<a class="el" href="classrtype_1_1ecs_1_1Coordinator.html">Coordinator</a> &amp;coord, const <a class="el" href="namespacertype_1_1ecs_1_1factory.html#adf6cb2c07d619384a6c1f4fe94eb5014">entity_schema</a> &amp;schema)</td></tr>
+<tr class="memdesc:ad29b4b6e7fc4c35cea4aa4ce9d2e4861"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a projectile entity with movement and damage attributes.  <br /></td></tr>
+<tr class="separator:ad29b4b6e7fc4c35cea4aa4ce9d2e4861"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a328622bd28286a97d9dc50b21f916150" id="r_a328622bd28286a97d9dc50b21f916150"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacertype_1_1ecs_1_1factory.html#a328622bd28286a97d9dc50b21f916150">create_entity</a> (<a class="el" href="classrtype_1_1ecs_1_1Coordinator.html">Coordinator</a> &amp;coord, const <a class="el" href="namespacertype_1_1ecs_1_1factory.html#adf6cb2c07d619384a6c1f4fe94eb5014">entity_schema</a> &amp;schema)</td></tr>
+<tr class="memdesc:a328622bd28286a97d9dc50b21f916150"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dispatches entity creation based on its network schema type.  <br /></td></tr>
+<tr class="separator:a328622bd28286a97d9dc50b21f916150"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Factory namespace for constructing ECS entities. </p>
@@ -239,7 +239,7 @@ template&lt;typename T &gt; </div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="Coordinator_8hpp_source.html#l00191">rtype::ecs::Coordinator::addComponent()</a>, and <a class="el" href="Coordinator_8cpp_source.html#l00034">rtype::ecs::Coordinator::destroyEntity()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="EntityFactory_8cpp_source.html#l00105">create_enemy()</a>, <a class="el" href="EntityFactory_8cpp_source.html#l00075">create_player()</a>, <a class="el" href="EntityFactory_8cpp_source.html#l00131">create_projectile()</a>, <a class="el" href="EntityFactory_8cpp_source.html#l00055">set_movement()</a>, <a class="el" href="EntityFactory_8cpp_source.html#l00040">set_skin()</a>, and <a class="el" href="EntityFactory_8cpp_source.html#l00066">set_weapon()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="EntityFactory_8cpp_source.html#l00106">create_enemy()</a>, <a class="el" href="EntityFactory_8cpp_source.html#l00075">create_player()</a>, <a class="el" href="EntityFactory_8cpp_source.html#l00133">create_projectile()</a>, <a class="el" href="EntityFactory_8cpp_source.html#l00055">set_movement()</a>, <a class="el" href="EntityFactory_8cpp_source.html#l00040">set_skin()</a>, and <a class="el" href="EntityFactory_8cpp_source.html#l00066">set_weapon()</a>.</p>
 <div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -252,13 +252,13 @@ template&lt;typename T &gt; </div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="namespacertype_1_1ecs_1_1factory_a7cf1b038cae209ff98ae6c2d74390d41_icgraph.svg" width="100%" height="490"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="namespacertype_1_1ecs_1_1factory_a7cf1b038cae209ff98ae6c2d74390d41_icgraph.svg" width="100%" height="482"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
 </div>
 </div>
-<a id="aadd8634669966a1015c4208fb07a4924" name="aadd8634669966a1015c4208fb07a4924"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aadd8634669966a1015c4208fb07a4924">&#9670;&#160;</a></span>create_enemy()</h2>
+<a id="ad6884eef896d6f5d00c251ac5081a24b" name="ad6884eef896d6f5d00c251ac5081a24b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6884eef896d6f5d00c251ac5081a24b">&#9670;&#160;</a></span>create_enemy()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -273,13 +273,7 @@ template&lt;typename T &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="namespacertype_1_1ecs_1_1factory.html#adf6cb2c07d619384a6c1f4fe94eb5014">entity_schema</a> &amp;&#160;</td>
-          <td class="paramname"><em>schema</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::optional&lt; <a class="el" href="Common_2ECS_2Components_2Attributes_2Sprite_8hpp.html#structsprite__attr__t">sprite_attr_t</a> &gt; &amp;&#160;</td>
-          <td class="paramname"><em>spriteTag</em>&#160;</td>
+          <td class="paramname"><em>schema</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -291,30 +285,32 @@ template&lt;typename T &gt; </div>
 
 <p>Creates an enemy entity with health, movement, and weapon setup. </p>
 
-<p class="definition">Definition at line <a class="el" href="EntityFactory_8cpp_source.html#l00105">105</a> of file <a class="el" href="EntityFactory_8cpp_source.html">EntityFactory.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  107</span>{</div>
-<div class="line"><span class="lineno">  108</span>    <span class="keyword">const</span> uint32_t <span class="keywordtype">id</span> = coord.<a class="code hl_function" href="classrtype_1_1ecs_1_1Coordinator.html#a20747c778c856fd0d9d0cf267ed90346">createEntity</a>();</div>
-<div class="line"><span class="lineno">  109</span> </div>
-<div class="line"><span class="lineno">  110</span>    <span class="keywordflow">if</span> (<span class="keywordtype">id</span> == INVALID_ID)</div>
-<div class="line"><span class="lineno">  111</span>        <span class="keywordflow">return</span> INVALID_ID;</div>
-<div class="line"><span class="lineno">  112</span> </div>
-<div class="line"><span class="lineno">  113</span>    <a class="code hl_struct" href="Health_8hpp.html#structhealth__attr__t">health_attr_t</a> health { 12, 12 };</div>
-<div class="line"><span class="lineno">  114</span> </div>
-<div class="line"><span class="lineno">  115</span>    <a class="code hl_struct" href="Position_8hpp.html#structposition__attr__t">position_attr_t</a> pos {schema.<a class="code hl_variable" href="namespaceprotocol_1_1game.html#ac7d6dc67a2607a11ef974b9207328067">x</a>, schema.<a class="code hl_variable" href="namespaceprotocol_1_1game.html#adc23f6c79ede3c4b44387d9b62c27ac7">y</a>};</div>
-<div class="line"><span class="lineno">  116</span>    <a class="code hl_struct" href="Direction_8hpp.html#structdirection__attr__t">direction_attr_t</a> dir { 0.0, 1.0 };</div>
-<div class="line"><span class="lineno">  117</span>    <a class="code hl_struct" href="Speed_8hpp.html#structspeed__attr__t">speed_attr_t</a> spd { 100 };</div>
-<div class="line"><span class="lineno">  118</span> </div>
-<div class="line"><span class="lineno">  119</span>    <a class="code hl_struct" href="Damage_8hpp.html#structdamage__attr__t">damage_attr_t</a> dmg { 1 };</div>
-<div class="line"><span class="lineno">  120</span>    <a class="code hl_struct" href="Frequency_8hpp.html#structfrequency__attr__t">frequency_attr_t</a> freq { 1 };</div>
-<div class="line"><span class="lineno">  121</span>    <a class="code hl_struct" href="HitBox_8hpp.html#structhitbox__attr__t">hitbox_attr_t</a> box { 100, 100 };</div>
-<div class="line"><span class="lineno">  122</span> </div>
-<div class="line"><span class="lineno">  123</span>    <span class="keywordflow">if</span> (!<a class="code hl_function" href="namespacertype_1_1ecs_1_1factory.html#a7cf1b038cae209ff98ae6c2d74390d41">add_or_rollback</a>(coord, <span class="keywordtype">id</span>, health) ||</div>
-<div class="line"><span class="lineno">  124</span>    !<a class="code hl_function" href="namespacertype_1_1ecs_1_1factory.html#abbec02b513c2ad4e3a2b9b00a491d755">set_movement</a>(coord, <span class="keywordtype">id</span>, pos, dir, spd) ||</div>
-<div class="line"><span class="lineno">  125</span>    !<a class="code hl_function" href="namespacertype_1_1ecs_1_1factory.html#a5479c88a043755974c85001d4336327a">set_weapon</a>(coord, <span class="keywordtype">id</span>, dmg, freq) ||</div>
-<div class="line"><span class="lineno">  126</span>    !<a class="code hl_function" href="namespacertype_1_1ecs_1_1factory.html#aeabb5337b4bf656d02046fb676ce13b1">set_skin</a>(coord, <span class="keywordtype">id</span>, box, spriteTag))</div>
-<div class="line"><span class="lineno">  127</span>        <span class="keywordflow">return</span> INVALID_ID;</div>
-<div class="line"><span class="lineno">  128</span>    <span class="keywordflow">return</span> id;</div>
-<div class="line"><span class="lineno">  129</span>}</div>
+<p class="definition">Definition at line <a class="el" href="EntityFactory_8cpp_source.html#l00106">106</a> of file <a class="el" href="EntityFactory_8cpp_source.html">EntityFactory.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  108</span>{</div>
+<div class="line"><span class="lineno">  109</span>    <span class="keyword">const</span> uint32_t <span class="keywordtype">id</span> = coord.<a class="code hl_function" href="classrtype_1_1ecs_1_1Coordinator.html#a20747c778c856fd0d9d0cf267ed90346">createEntity</a>();</div>
+<div class="line"><span class="lineno">  110</span> </div>
+<div class="line"><span class="lineno">  111</span>    <span class="keywordflow">if</span> (<span class="keywordtype">id</span> == INVALID_ID)</div>
+<div class="line"><span class="lineno">  112</span>        <span class="keywordflow">return</span> INVALID_ID;</div>
+<div class="line"><span class="lineno">  113</span> </div>
+<div class="line"><span class="lineno">  114</span>    <a class="code hl_struct" href="Health_8hpp.html#structhealth__attr__t">health_attr_t</a> health { 12, 12 };</div>
+<div class="line"><span class="lineno">  115</span> </div>
+<div class="line"><span class="lineno">  116</span>    <a class="code hl_struct" href="Position_8hpp.html#structposition__attr__t">position_attr_t</a> pos {schema.<a class="code hl_variable" href="namespaceprotocol_1_1game.html#ac7d6dc67a2607a11ef974b9207328067">x</a>, schema.<a class="code hl_variable" href="namespaceprotocol_1_1game.html#adc23f6c79ede3c4b44387d9b62c27ac7">y</a>};</div>
+<div class="line"><span class="lineno">  117</span>    <a class="code hl_struct" href="Direction_8hpp.html#structdirection__attr__t">direction_attr_t</a> dir { -1.0, 0.0 };</div>
+<div class="line"><span class="lineno">  118</span>    <a class="code hl_struct" href="Speed_8hpp.html#structspeed__attr__t">speed_attr_t</a> spd { 1 };</div>
+<div class="line"><span class="lineno">  119</span> </div>
+<div class="line"><span class="lineno">  120</span>    <a class="code hl_struct" href="Damage_8hpp.html#structdamage__attr__t">damage_attr_t</a> dmg { 1 };</div>
+<div class="line"><span class="lineno">  121</span>    <a class="code hl_struct" href="Frequency_8hpp.html#structfrequency__attr__t">frequency_attr_t</a> freq { 1 };</div>
+<div class="line"><span class="lineno">  122</span>    <a class="code hl_struct" href="HitBox_8hpp.html#structhitbox__attr__t">hitbox_attr_t</a> box { 33 * 3, 33 * 3 };</div>
+<div class="line"><span class="lineno">  123</span>    <a class="code hl_struct" href="Common_2ECS_2Components_2Attributes_2Sprite_8hpp.html#structsprite__attr__t">sprite_attr_t</a> sprite { <span class="stringliteral">&quot;ENEMY&quot;</span>, Vector2{33 * 3, 33 * 3}, Rectangle{0, 0, 33, 33} };</div>
+<div class="line"><span class="lineno">  124</span> </div>
+<div class="line"><span class="lineno">  125</span>    <span class="keywordflow">if</span> (!<a class="code hl_function" href="namespacertype_1_1ecs_1_1factory.html#a7cf1b038cae209ff98ae6c2d74390d41">add_or_rollback</a>(coord, <span class="keywordtype">id</span>, health) ||</div>
+<div class="line"><span class="lineno">  126</span>    !<a class="code hl_function" href="namespacertype_1_1ecs_1_1factory.html#abbec02b513c2ad4e3a2b9b00a491d755">set_movement</a>(coord, <span class="keywordtype">id</span>, pos, dir, spd) ||</div>
+<div class="line"><span class="lineno">  127</span>    !<a class="code hl_function" href="namespacertype_1_1ecs_1_1factory.html#a5479c88a043755974c85001d4336327a">set_weapon</a>(coord, <span class="keywordtype">id</span>, dmg, freq) ||</div>
+<div class="line"><span class="lineno">  128</span>    !<a class="code hl_function" href="namespacertype_1_1ecs_1_1factory.html#aeabb5337b4bf656d02046fb676ce13b1">set_skin</a>(coord, <span class="keywordtype">id</span>, box, sprite))</div>
+<div class="line"><span class="lineno">  129</span>        <span class="keywordflow">return</span> INVALID_ID;</div>
+<div class="line"><span class="lineno">  130</span>    <span class="keywordflow">return</span> id;</div>
+<div class="line"><span class="lineno">  131</span>}</div>
+<div class="ttc" id="aCommon_2ECS_2Components_2Attributes_2Sprite_8hpp_html_structsprite__attr__t"><div class="ttname"><a href="Common_2ECS_2Components_2Attributes_2Sprite_8hpp.html#structsprite__attr__t">sprite_attr_t</a></div><div class="ttdoc">Component linking an entity to its visual representation.</div><div class="ttdef"><b>Definition</b> <a href="Common_2ECS_2Components_2Attributes_2Sprite_8hpp_source.html#l00042">Common/ECS/Components/Attributes/Sprite.hpp:42</a></div></div>
 <div class="ttc" id="aDamage_8hpp_html_structdamage__attr__t"><div class="ttname"><a href="Damage_8hpp.html#structdamage__attr__t">damage_attr_t</a></div><div class="ttdoc">Component holding the damage value dealt by an entity.</div><div class="ttdef"><b>Definition</b> <a href="Damage_8hpp_source.html#l00035">Damage.hpp:35</a></div></div>
 <div class="ttc" id="aDirection_8hpp_html_structdirection__attr__t"><div class="ttname"><a href="Direction_8hpp.html#structdirection__attr__t">direction_attr_t</a></div><div class="ttdoc">Component storing a 2D direction vector.</div><div class="ttdef"><b>Definition</b> <a href="Direction_8hpp_source.html#l00041">Direction.hpp:41</a></div></div>
 <div class="ttc" id="aFrequency_8hpp_html_structfrequency__attr__t"><div class="ttname"><a href="Frequency_8hpp.html#structfrequency__attr__t">frequency_attr_t</a></div><div class="ttdoc">Component controlling action frequency using a tick-based delay.</div><div class="ttdef"><b>Definition</b> <a href="Frequency_8hpp_source.html#l00036">Frequency.hpp:36</a></div></div>
@@ -332,26 +328,26 @@ template&lt;typename T &gt; </div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="EntityFactory_8hpp_source.html#l00068">add_or_rollback()</a>, <a class="el" href="Coordinator_8cpp_source.html#l00029">rtype::ecs::Coordinator::createEntity()</a>, <a class="el" href="EntityFactory_8cpp_source.html#l00055">set_movement()</a>, <a class="el" href="EntityFactory_8cpp_source.html#l00040">set_skin()</a>, <a class="el" href="EntityFactory_8cpp_source.html#l00066">set_weapon()</a>, <a class="el" href="GameProtocolTypes_8hpp_source.html#l00083">protocol::game::payload_create_entity_t::x</a>, and <a class="el" href="GameProtocolTypes_8hpp_source.html#l00084">protocol::game::payload_create_entity_t::y</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="EntityFactory_8cpp_source.html#l00153">create_entity()</a>, and <a class="el" href="SpawnerSystem_8cpp_source.html#l00030">rtype::ecs::SpawnerSystem::update()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="GameScene_8cpp_source.html#l00014">rtype::client::GameScene::GameScene()</a>, <a class="el" href="EntityFactory_8cpp_source.html#l00156">create_entity()</a>, and <a class="el" href="SpawnerSystem_8cpp_source.html#l00030">rtype::ecs::SpawnerSystem::update()</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="namespacertype_1_1ecs_1_1factory_aadd8634669966a1015c4208fb07a4924_cgraph.svg" width="100%" height="464"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="namespacertype_1_1ecs_1_1factory_ad6884eef896d6f5d00c251ac5081a24b_cgraph.svg" width="100%" height="464"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="namespacertype_1_1ecs_1_1factory_aadd8634669966a1015c4208fb07a4924_icgraph.svg" width="100%" height="364"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespacertype_1_1ecs_1_1factory_ad6884eef896d6f5d00c251ac5081a24b_icgraph.svg" width="551" height="151"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
 </div>
-<a id="a20e6c6134ae9cf710eb5eabdb60178de" name="a20e6c6134ae9cf710eb5eabdb60178de"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a20e6c6134ae9cf710eb5eabdb60178de">&#9670;&#160;</a></span>create_entity()</h2>
+<a id="a328622bd28286a97d9dc50b21f916150" name="a328622bd28286a97d9dc50b21f916150"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a328622bd28286a97d9dc50b21f916150">&#9670;&#160;</a></span>create_entity()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -366,13 +362,7 @@ template&lt;typename T &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="namespacertype_1_1ecs_1_1factory.html#adf6cb2c07d619384a6c1f4fe94eb5014">entity_schema</a> &amp;&#160;</td>
-          <td class="paramname"><em>schema</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::optional&lt; <a class="el" href="Common_2ECS_2Components_2Attributes_2Sprite_8hpp.html#structsprite__attr__t">sprite_attr_t</a> &gt; &amp;&#160;</td>
-          <td class="paramname"><em>spriteTag</em>&#160;</td>
+          <td class="paramname"><em>schema</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -393,49 +383,40 @@ template&lt;typename T &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The created entity ID or INVALID_ID on failure. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="EntityFactory_8cpp_source.html#l00153">153</a> of file <a class="el" href="EntityFactory_8cpp_source.html">EntityFactory.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  155</span>{</div>
-<div class="line"><span class="lineno">  156</span>    <span class="keywordflow">switch</span> (schema.<a class="code hl_variable" href="namespaceprotocol_1_1game.html#a6fc370cc948021a33d22001855ba7dcf">entity_type</a>) {</div>
-<div class="line"><span class="lineno">  157</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespaceprotocol_1_1game.html#a58051a0f9c1c650d605d71a73e9437bda36feead328784e91b2c8f5cafd543773">protocol::game::entity_type_t::PLAYER</a>:</div>
-<div class="line"><span class="lineno">  158</span>            <span class="keywordflow">return</span> <a class="code hl_function" href="namespacertype_1_1ecs_1_1factory.html#a3c5bd23a9782afd2fc07153216b5b0d2">create_player</a>(coord, schema, spriteTag);</div>
-<div class="line"><span class="lineno">  159</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespaceprotocol_1_1game.html#a58051a0f9c1c650d605d71a73e9437bdaede731433a6fbec7240dc94ebe9ac41a">protocol::game::entity_type_t::ENEMY</a>:</div>
-<div class="line"><span class="lineno">  160</span>            <span class="keywordflow">return</span> <a class="code hl_function" href="namespacertype_1_1ecs_1_1factory.html#aadd8634669966a1015c4208fb07a4924">create_enemy</a>(coord, schema, spriteTag);</div>
-<div class="line"><span class="lineno">  161</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespaceprotocol_1_1game.html#a58051a0f9c1c650d605d71a73e9437bda1fb4b4514aa45ab3f36aba6806781b4e">protocol::game::entity_type_t::PROJECTILE</a>:</div>
-<div class="line"><span class="lineno">  162</span>            <span class="keywordflow">return</span> <a class="code hl_function" href="namespacertype_1_1ecs_1_1factory.html#a5a8314ddbfde6228ddddaa6989d791ba">create_projectile</a>(coord, schema, spriteTag);</div>
-<div class="line"><span class="lineno">  163</span>        <span class="keywordflow">default</span>:</div>
-<div class="line"><span class="lineno">  164</span>            <span class="keywordflow">return</span> INVALID_ID;</div>
-<div class="line"><span class="lineno">  165</span>    }</div>
-<div class="line"><span class="lineno">  166</span>}</div>
+<p class="definition">Definition at line <a class="el" href="EntityFactory_8cpp_source.html#l00156">156</a> of file <a class="el" href="EntityFactory_8cpp_source.html">EntityFactory.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  158</span>{</div>
+<div class="line"><span class="lineno">  159</span>    <span class="keywordflow">switch</span> (schema.<a class="code hl_variable" href="namespaceprotocol_1_1game.html#a6fc370cc948021a33d22001855ba7dcf">entity_type</a>) {</div>
+<div class="line"><span class="lineno">  160</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespaceprotocol_1_1game.html#a58051a0f9c1c650d605d71a73e9437bda36feead328784e91b2c8f5cafd543773">protocol::game::entity_type_t::PLAYER</a>:</div>
+<div class="line"><span class="lineno">  161</span>            <span class="keywordflow">return</span> <a class="code hl_function" href="namespacertype_1_1ecs_1_1factory.html#a12892dcefb006b9cf209784a8a40083d">create_player</a>(coord, schema);</div>
+<div class="line"><span class="lineno">  162</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespaceprotocol_1_1game.html#a58051a0f9c1c650d605d71a73e9437bdaede731433a6fbec7240dc94ebe9ac41a">protocol::game::entity_type_t::ENEMY</a>:</div>
+<div class="line"><span class="lineno">  163</span>            <span class="keywordflow">return</span> <a class="code hl_function" href="namespacertype_1_1ecs_1_1factory.html#ad6884eef896d6f5d00c251ac5081a24b">create_enemy</a>(coord, schema);</div>
+<div class="line"><span class="lineno">  164</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespaceprotocol_1_1game.html#a58051a0f9c1c650d605d71a73e9437bda1fb4b4514aa45ab3f36aba6806781b4e">protocol::game::entity_type_t::PROJECTILE</a>:</div>
+<div class="line"><span class="lineno">  165</span>            <span class="keywordflow">return</span> <a class="code hl_function" href="namespacertype_1_1ecs_1_1factory.html#ad29b4b6e7fc4c35cea4aa4ce9d2e4861">create_projectile</a>(coord, schema);</div>
+<div class="line"><span class="lineno">  166</span>        <span class="keywordflow">default</span>:</div>
+<div class="line"><span class="lineno">  167</span>            <span class="keywordflow">return</span> INVALID_ID;</div>
+<div class="line"><span class="lineno">  168</span>    }</div>
+<div class="line"><span class="lineno">  169</span>}</div>
 <div class="ttc" id="anamespaceprotocol_1_1game_html_a58051a0f9c1c650d605d71a73e9437bda1fb4b4514aa45ab3f36aba6806781b4e"><div class="ttname"><a href="namespaceprotocol_1_1game.html#a58051a0f9c1c650d605d71a73e9437bda1fb4b4514aa45ab3f36aba6806781b4e">protocol::game::PROJECTILE</a></div><div class="ttdeci">@ PROJECTILE</div><div class="ttdef"><b>Definition</b> <a href="GameProtocolTypes_8hpp_source.html#l00183">GameProtocolTypes.hpp:182</a></div></div>
 <div class="ttc" id="anamespaceprotocol_1_1game_html_a58051a0f9c1c650d605d71a73e9437bda36feead328784e91b2c8f5cafd543773"><div class="ttname"><a href="namespaceprotocol_1_1game.html#a58051a0f9c1c650d605d71a73e9437bda36feead328784e91b2c8f5cafd543773">protocol::game::PLAYER</a></div><div class="ttdeci">@ PLAYER</div><div class="ttdef"><b>Definition</b> <a href="GameProtocolTypes_8hpp_source.html#l00180">GameProtocolTypes.hpp:180</a></div></div>
 <div class="ttc" id="anamespaceprotocol_1_1game_html_a58051a0f9c1c650d605d71a73e9437bdaede731433a6fbec7240dc94ebe9ac41a"><div class="ttname"><a href="namespaceprotocol_1_1game.html#a58051a0f9c1c650d605d71a73e9437bdaede731433a6fbec7240dc94ebe9ac41a">protocol::game::ENEMY</a></div><div class="ttdeci">@ ENEMY</div><div class="ttdef"><b>Definition</b> <a href="GameProtocolTypes_8hpp_source.html#l00181">GameProtocolTypes.hpp:181</a></div></div>
 <div class="ttc" id="anamespaceprotocol_1_1game_html_a6fc370cc948021a33d22001855ba7dcf"><div class="ttname"><a href="namespaceprotocol_1_1game.html#a6fc370cc948021a33d22001855ba7dcf">protocol::game::payload_create_entity_t::entity_type</a></div><div class="ttdeci">uint8_t entity_type</div><div class="ttdoc">small type tag</div><div class="ttdef"><b>Definition</b> <a href="GameProtocolTypes_8hpp_source.html#l00082">GameProtocolTypes.hpp:82</a></div></div>
-<div class="ttc" id="anamespacertype_1_1ecs_1_1factory_html_a3c5bd23a9782afd2fc07153216b5b0d2"><div class="ttname"><a href="namespacertype_1_1ecs_1_1factory.html#a3c5bd23a9782afd2fc07153216b5b0d2">rtype::ecs::factory::create_player</a></div><div class="ttdeci">uint32_t create_player(Coordinator &amp;coord, const entity_schema &amp;schema, const std::optional&lt; sprite_attr_t &gt; &amp;spriteTag)</div><div class="ttdoc">Creates a player entity with full stats, movement, and weapon setup.</div><div class="ttdef"><b>Definition</b> <a href="EntityFactory_8cpp_source.html#l00075">EntityFactory.cpp:75</a></div></div>
-<div class="ttc" id="anamespacertype_1_1ecs_1_1factory_html_a5a8314ddbfde6228ddddaa6989d791ba"><div class="ttname"><a href="namespacertype_1_1ecs_1_1factory.html#a5a8314ddbfde6228ddddaa6989d791ba">rtype::ecs::factory::create_projectile</a></div><div class="ttdeci">uint32_t create_projectile(Coordinator &amp;coord, const entity_schema &amp;schema, const std::optional&lt; sprite_attr_t &gt; &amp;spriteTag)</div><div class="ttdoc">Creates a projectile entity with movement and damage attributes.</div><div class="ttdef"><b>Definition</b> <a href="EntityFactory_8cpp_source.html#l00131">EntityFactory.cpp:131</a></div></div>
-<div class="ttc" id="anamespacertype_1_1ecs_1_1factory_html_aadd8634669966a1015c4208fb07a4924"><div class="ttname"><a href="namespacertype_1_1ecs_1_1factory.html#aadd8634669966a1015c4208fb07a4924">rtype::ecs::factory::create_enemy</a></div><div class="ttdeci">uint32_t create_enemy(Coordinator &amp;coord, const entity_schema &amp;schema, const std::optional&lt; sprite_attr_t &gt; &amp;spriteTag)</div><div class="ttdoc">Creates an enemy entity with health, movement, and weapon setup.</div><div class="ttdef"><b>Definition</b> <a href="EntityFactory_8cpp_source.html#l00105">EntityFactory.cpp:105</a></div></div>
+<div class="ttc" id="anamespacertype_1_1ecs_1_1factory_html_a12892dcefb006b9cf209784a8a40083d"><div class="ttname"><a href="namespacertype_1_1ecs_1_1factory.html#a12892dcefb006b9cf209784a8a40083d">rtype::ecs::factory::create_player</a></div><div class="ttdeci">uint32_t create_player(Coordinator &amp;coord, const entity_schema &amp;schema)</div><div class="ttdoc">Creates a player entity with full stats, movement, and weapon setup.</div><div class="ttdef"><b>Definition</b> <a href="EntityFactory_8cpp_source.html#l00075">EntityFactory.cpp:75</a></div></div>
+<div class="ttc" id="anamespacertype_1_1ecs_1_1factory_html_ad29b4b6e7fc4c35cea4aa4ce9d2e4861"><div class="ttname"><a href="namespacertype_1_1ecs_1_1factory.html#ad29b4b6e7fc4c35cea4aa4ce9d2e4861">rtype::ecs::factory::create_projectile</a></div><div class="ttdeci">uint32_t create_projectile(Coordinator &amp;coord, const entity_schema &amp;schema)</div><div class="ttdoc">Creates a projectile entity with movement and damage attributes.</div><div class="ttdef"><b>Definition</b> <a href="EntityFactory_8cpp_source.html#l00133">EntityFactory.cpp:133</a></div></div>
+<div class="ttc" id="anamespacertype_1_1ecs_1_1factory_html_ad6884eef896d6f5d00c251ac5081a24b"><div class="ttname"><a href="namespacertype_1_1ecs_1_1factory.html#ad6884eef896d6f5d00c251ac5081a24b">rtype::ecs::factory::create_enemy</a></div><div class="ttdeci">uint32_t create_enemy(Coordinator &amp;coord, const entity_schema &amp;schema)</div><div class="ttdoc">Creates an enemy entity with health, movement, and weapon setup.</div><div class="ttdef"><b>Definition</b> <a href="EntityFactory_8cpp_source.html#l00106">EntityFactory.cpp:106</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="EntityFactory_8cpp_source.html#l00105">create_enemy()</a>, <a class="el" href="EntityFactory_8cpp_source.html#l00075">create_player()</a>, <a class="el" href="EntityFactory_8cpp_source.html#l00131">create_projectile()</a>, <a class="el" href="GameProtocolTypes_8hpp_source.html#l00181">protocol::game::ENEMY</a>, <a class="el" href="GameProtocolTypes_8hpp_source.html#l00082">protocol::game::payload_create_entity_t::entity_type</a>, <a class="el" href="GameProtocolTypes_8hpp_source.html#l00180">protocol::game::PLAYER</a>, and <a class="el" href="GameProtocolTypes_8hpp_source.html#l00182">protocol::game::PROJECTILE</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="GameScene_8cpp_source.html#l00057">rtype::client::GameScene::update()</a>.</p>
+<p class="reference">References <a class="el" href="EntityFactory_8cpp_source.html#l00106">create_enemy()</a>, <a class="el" href="EntityFactory_8cpp_source.html#l00075">create_player()</a>, <a class="el" href="EntityFactory_8cpp_source.html#l00133">create_projectile()</a>, <a class="el" href="GameProtocolTypes_8hpp_source.html#l00181">protocol::game::ENEMY</a>, <a class="el" href="GameProtocolTypes_8hpp_source.html#l00082">protocol::game::payload_create_entity_t::entity_type</a>, <a class="el" href="GameProtocolTypes_8hpp_source.html#l00180">protocol::game::PLAYER</a>, and <a class="el" href="GameProtocolTypes_8hpp_source.html#l00182">protocol::game::PROJECTILE</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="namespacertype_1_1ecs_1_1factory_a20e6c6134ae9cf710eb5eabdb60178de_cgraph.svg" width="100%" height="533"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
-</div>
-<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="namespacertype_1_1ecs_1_1factory_a20e6c6134ae9cf710eb5eabdb60178de_icgraph.svg" width="531" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="namespacertype_1_1ecs_1_1factory_a328622bd28286a97d9dc50b21f916150_cgraph.svg" width="100%" height="533"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
 </div>
 </div>
-<a id="a3c5bd23a9782afd2fc07153216b5b0d2" name="a3c5bd23a9782afd2fc07153216b5b0d2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3c5bd23a9782afd2fc07153216b5b0d2">&#9670;&#160;</a></span>create_player()</h2>
+<a id="a12892dcefb006b9cf209784a8a40083d" name="a12892dcefb006b9cf209784a8a40083d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12892dcefb006b9cf209784a8a40083d">&#9670;&#160;</a></span>create_player()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -450,13 +431,7 @@ template&lt;typename T &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="namespacertype_1_1ecs_1_1factory.html#adf6cb2c07d619384a6c1f4fe94eb5014">entity_schema</a> &amp;&#160;</td>
-          <td class="paramname"><em>schema</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::optional&lt; <a class="el" href="Common_2ECS_2Components_2Attributes_2Sprite_8hpp.html#structsprite__attr__t">sprite_attr_t</a> &gt; &amp;&#160;</td>
-          <td class="paramname"><em>spriteTag</em>&#160;</td>
+          <td class="paramname"><em>schema</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -481,46 +456,47 @@ template&lt;typename T &gt; </div>
 <div class="line"><span class="lineno">   86</span> </div>
 <div class="line"><span class="lineno">   87</span>    <a class="code hl_struct" href="Position_8hpp.html#structposition__attr__t">position_attr_t</a> pos {schema.<a class="code hl_variable" href="namespaceprotocol_1_1game.html#ac7d6dc67a2607a11ef974b9207328067">x</a>, schema.<a class="code hl_variable" href="namespaceprotocol_1_1game.html#adc23f6c79ede3c4b44387d9b62c27ac7">y</a>};</div>
 <div class="line"><span class="lineno">   88</span>    <a class="code hl_struct" href="Direction_8hpp.html#structdirection__attr__t">direction_attr_t</a> dir { 0.0, 1.0 };</div>
-<div class="line"><span class="lineno">   89</span>    <a class="code hl_struct" href="Speed_8hpp.html#structspeed__attr__t">speed_attr_t</a> spd { 100 };</div>
+<div class="line"><span class="lineno">   89</span>    <a class="code hl_struct" href="Speed_8hpp.html#structspeed__attr__t">speed_attr_t</a> spd { 300 };</div>
 <div class="line"><span class="lineno">   90</span> </div>
 <div class="line"><span class="lineno">   91</span>    <a class="code hl_struct" href="Damage_8hpp.html#structdamage__attr__t">damage_attr_t</a> dmg { 1 };</div>
-<div class="line"><span class="lineno">   92</span>    <a class="code hl_struct" href="Frequency_8hpp.html#structfrequency__attr__t">frequency_attr_t</a> freq { 1 };</div>
-<div class="line"><span class="lineno">   93</span>    <a class="code hl_struct" href="HitBox_8hpp.html#structhitbox__attr__t">hitbox_attr_t</a> box { 100, 100 };</div>
-<div class="line"><span class="lineno">   94</span> </div>
-<div class="line"><span class="lineno">   95</span>    <span class="keywordflow">if</span> (!<a class="code hl_function" href="namespacertype_1_1ecs_1_1factory.html#a7cf1b038cae209ff98ae6c2d74390d41">add_or_rollback</a>(coord, <span class="keywordtype">id</span>, name) ||</div>
-<div class="line"><span class="lineno">   96</span>    !<a class="code hl_function" href="namespacertype_1_1ecs_1_1factory.html#a7cf1b038cae209ff98ae6c2d74390d41">add_or_rollback</a>(coord, <span class="keywordtype">id</span>, score) ||</div>
-<div class="line"><span class="lineno">   97</span>    !<a class="code hl_function" href="namespacertype_1_1ecs_1_1factory.html#a7cf1b038cae209ff98ae6c2d74390d41">add_or_rollback</a>(coord, <span class="keywordtype">id</span>, health) ||</div>
-<div class="line"><span class="lineno">   98</span>    !<a class="code hl_function" href="namespacertype_1_1ecs_1_1factory.html#abbec02b513c2ad4e3a2b9b00a491d755">set_movement</a>(coord, <span class="keywordtype">id</span>, pos, dir, spd) ||</div>
-<div class="line"><span class="lineno">   99</span>    !<a class="code hl_function" href="namespacertype_1_1ecs_1_1factory.html#a5479c88a043755974c85001d4336327a">set_weapon</a>(coord, <span class="keywordtype">id</span>, dmg, freq) ||</div>
-<div class="line"><span class="lineno">  100</span>    !<a class="code hl_function" href="namespacertype_1_1ecs_1_1factory.html#aeabb5337b4bf656d02046fb676ce13b1">set_skin</a>(coord, <span class="keywordtype">id</span>, box, spriteTag))</div>
-<div class="line"><span class="lineno">  101</span>        <span class="keywordflow">return</span> INVALID_ID;</div>
-<div class="line"><span class="lineno">  102</span>    <span class="keywordflow">return</span> id;</div>
-<div class="line"><span class="lineno">  103</span>}</div>
+<div class="line"><span class="lineno">   92</span>    <a class="code hl_struct" href="Frequency_8hpp.html#structfrequency__attr__t">frequency_attr_t</a> freq { 1.0f, 0.0f };</div>
+<div class="line"><span class="lineno">   93</span>    <a class="code hl_struct" href="HitBox_8hpp.html#structhitbox__attr__t">hitbox_attr_t</a> box { 17 * 3, 33 * 3 };</div>
+<div class="line"><span class="lineno">   94</span>    <a class="code hl_struct" href="Common_2ECS_2Components_2Attributes_2Sprite_8hpp.html#structsprite__attr__t">sprite_attr_t</a> sprite { <span class="stringliteral">&quot;PLAYER&quot;</span>, Vector2{33 * 3, 17 * 3}, Rectangle{66, 0, 33, 17} };</div>
+<div class="line"><span class="lineno">   95</span> </div>
+<div class="line"><span class="lineno">   96</span>    <span class="keywordflow">if</span> (!<a class="code hl_function" href="namespacertype_1_1ecs_1_1factory.html#a7cf1b038cae209ff98ae6c2d74390d41">add_or_rollback</a>(coord, <span class="keywordtype">id</span>, name) ||</div>
+<div class="line"><span class="lineno">   97</span>    !<a class="code hl_function" href="namespacertype_1_1ecs_1_1factory.html#a7cf1b038cae209ff98ae6c2d74390d41">add_or_rollback</a>(coord, <span class="keywordtype">id</span>, score) ||</div>
+<div class="line"><span class="lineno">   98</span>    !<a class="code hl_function" href="namespacertype_1_1ecs_1_1factory.html#a7cf1b038cae209ff98ae6c2d74390d41">add_or_rollback</a>(coord, <span class="keywordtype">id</span>, health) ||</div>
+<div class="line"><span class="lineno">   99</span>    !<a class="code hl_function" href="namespacertype_1_1ecs_1_1factory.html#abbec02b513c2ad4e3a2b9b00a491d755">set_movement</a>(coord, <span class="keywordtype">id</span>, pos, dir, spd) ||</div>
+<div class="line"><span class="lineno">  100</span>    !<a class="code hl_function" href="namespacertype_1_1ecs_1_1factory.html#a5479c88a043755974c85001d4336327a">set_weapon</a>(coord, <span class="keywordtype">id</span>, dmg, freq) ||</div>
+<div class="line"><span class="lineno">  101</span>    !<a class="code hl_function" href="namespacertype_1_1ecs_1_1factory.html#aeabb5337b4bf656d02046fb676ce13b1">set_skin</a>(coord, <span class="keywordtype">id</span>, box, sprite))</div>
+<div class="line"><span class="lineno">  102</span>        <span class="keywordflow">return</span> INVALID_ID;</div>
+<div class="line"><span class="lineno">  103</span>    <span class="keywordflow">return</span> id;</div>
+<div class="line"><span class="lineno">  104</span>}</div>
 <div class="ttc" id="aName_8hpp_html_structname__attr__t"><div class="ttname"><a href="Name_8hpp.html#structname__attr__t">name_attr_t</a></div><div class="ttdoc">Component assigning a textual name to an entity.</div><div class="ttdef"><b>Definition</b> <a href="Name_8hpp_source.html#l00037">Name.hpp:37</a></div></div>
 <div class="ttc" id="aScore_8hpp_html_structscore__attr__t"><div class="ttname"><a href="Score_8hpp.html#structscore__attr__t">score_attr_t</a></div><div class="ttdoc">Component storing current and highest score values.</div><div class="ttdef"><b>Definition</b> <a href="Score_8hpp_source.html#l00038">Score.hpp:38</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="EntityFactory_8hpp_source.html#l00068">add_or_rollback()</a>, <a class="el" href="Coordinator_8cpp_source.html#l00029">rtype::ecs::Coordinator::createEntity()</a>, <a class="el" href="EntityFactory_8cpp_source.html#l00055">set_movement()</a>, <a class="el" href="EntityFactory_8cpp_source.html#l00040">set_skin()</a>, <a class="el" href="EntityFactory_8cpp_source.html#l00066">set_weapon()</a>, <a class="el" href="GameProtocolTypes_8hpp_source.html#l00083">protocol::game::payload_create_entity_t::x</a>, and <a class="el" href="GameProtocolTypes_8hpp_source.html#l00084">protocol::game::payload_create_entity_t::y</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="EntityFactory_8cpp_source.html#l00153">create_entity()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="GameScene_8cpp_source.html#l00014">rtype::client::GameScene::GameScene()</a>, and <a class="el" href="EntityFactory_8cpp_source.html#l00156">create_entity()</a>.</p>
+<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="namespacertype_1_1ecs_1_1factory_a12892dcefb006b9cf209784a8a40083d_cgraph.svg" width="100%" height="464"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
 <div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-6-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-6-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="namespacertype_1_1ecs_1_1factory_a3c5bd23a9782afd2fc07153216b5b0d2_cgraph.svg" width="100%" height="464"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
-</div>
-<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-7-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="namespacertype_1_1ecs_1_1factory_a3c5bd23a9782afd2fc07153216b5b0d2_icgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespacertype_1_1ecs_1_1factory_a12892dcefb006b9cf209784a8a40083d_icgraph.svg" width="528" height="102"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
 </div>
-<a id="a5a8314ddbfde6228ddddaa6989d791ba" name="a5a8314ddbfde6228ddddaa6989d791ba"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5a8314ddbfde6228ddddaa6989d791ba">&#9670;&#160;</a></span>create_projectile()</h2>
+<a id="ad29b4b6e7fc4c35cea4aa4ce9d2e4861" name="ad29b4b6e7fc4c35cea4aa4ce9d2e4861"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad29b4b6e7fc4c35cea4aa4ce9d2e4861">&#9670;&#160;</a></span>create_projectile()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -535,13 +511,7 @@ template&lt;typename T &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="namespacertype_1_1ecs_1_1factory.html#adf6cb2c07d619384a6c1f4fe94eb5014">entity_schema</a> &amp;&#160;</td>
-          <td class="paramname"><em>schema</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::optional&lt; <a class="el" href="Common_2ECS_2Components_2Attributes_2Sprite_8hpp.html#structsprite__attr__t">sprite_attr_t</a> &gt; &amp;&#160;</td>
-          <td class="paramname"><em>spriteTag</em>&#160;</td>
+          <td class="paramname"><em>schema</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -553,43 +523,44 @@ template&lt;typename T &gt; </div>
 
 <p>Creates a projectile entity with movement and damage attributes. </p>
 
-<p class="definition">Definition at line <a class="el" href="EntityFactory_8cpp_source.html#l00131">131</a> of file <a class="el" href="EntityFactory_8cpp_source.html">EntityFactory.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  133</span>{</div>
-<div class="line"><span class="lineno">  134</span>    <span class="keyword">const</span> uint32_t <span class="keywordtype">id</span> = coord.<a class="code hl_function" href="classrtype_1_1ecs_1_1Coordinator.html#a20747c778c856fd0d9d0cf267ed90346">createEntity</a>();</div>
-<div class="line"><span class="lineno">  135</span> </div>
-<div class="line"><span class="lineno">  136</span>    <span class="keywordflow">if</span> (<span class="keywordtype">id</span> == INVALID_ID)</div>
-<div class="line"><span class="lineno">  137</span>        <span class="keywordflow">return</span> INVALID_ID;</div>
-<div class="line"><span class="lineno">  138</span> </div>
-<div class="line"><span class="lineno">  139</span>    <a class="code hl_struct" href="Position_8hpp.html#structposition__attr__t">position_attr_t</a> pos {schema.<a class="code hl_variable" href="namespaceprotocol_1_1game.html#ac7d6dc67a2607a11ef974b9207328067">x</a>, schema.<a class="code hl_variable" href="namespaceprotocol_1_1game.html#adc23f6c79ede3c4b44387d9b62c27ac7">y</a>};</div>
-<div class="line"><span class="lineno">  140</span>    <a class="code hl_struct" href="Direction_8hpp.html#structdirection__attr__t">direction_attr_t</a> dir { 0.0, 1.0 };</div>
-<div class="line"><span class="lineno">  141</span>    <a class="code hl_struct" href="Speed_8hpp.html#structspeed__attr__t">speed_attr_t</a> spd { 100 };</div>
-<div class="line"><span class="lineno">  142</span> </div>
-<div class="line"><span class="lineno">  143</span>    <a class="code hl_struct" href="Damage_8hpp.html#structdamage__attr__t">damage_attr_t</a> dmg { 1 };</div>
-<div class="line"><span class="lineno">  144</span>    <a class="code hl_struct" href="HitBox_8hpp.html#structhitbox__attr__t">hitbox_attr_t</a> box { 100, 100 };</div>
-<div class="line"><span class="lineno">  145</span> </div>
-<div class="line"><span class="lineno">  146</span>    <span class="keywordflow">if</span> (!<a class="code hl_function" href="namespacertype_1_1ecs_1_1factory.html#abbec02b513c2ad4e3a2b9b00a491d755">set_movement</a>(coord, <span class="keywordtype">id</span>, pos, dir, spd) ||</div>
-<div class="line"><span class="lineno">  147</span>    !<a class="code hl_function" href="namespacertype_1_1ecs_1_1factory.html#a7cf1b038cae209ff98ae6c2d74390d41">add_or_rollback</a>(coord, <span class="keywordtype">id</span>, dmg) ||</div>
-<div class="line"><span class="lineno">  148</span>    !<a class="code hl_function" href="namespacertype_1_1ecs_1_1factory.html#aeabb5337b4bf656d02046fb676ce13b1">set_skin</a>(coord, <span class="keywordtype">id</span>, box, spriteTag))</div>
-<div class="line"><span class="lineno">  149</span>        <span class="keywordflow">return</span> INVALID_ID;</div>
-<div class="line"><span class="lineno">  150</span>    <span class="keywordflow">return</span> id;</div>
-<div class="line"><span class="lineno">  151</span>}</div>
+<p class="definition">Definition at line <a class="el" href="EntityFactory_8cpp_source.html#l00133">133</a> of file <a class="el" href="EntityFactory_8cpp_source.html">EntityFactory.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  135</span>{</div>
+<div class="line"><span class="lineno">  136</span>    <span class="keyword">const</span> uint32_t <span class="keywordtype">id</span> = coord.<a class="code hl_function" href="classrtype_1_1ecs_1_1Coordinator.html#a20747c778c856fd0d9d0cf267ed90346">createEntity</a>();</div>
+<div class="line"><span class="lineno">  137</span> </div>
+<div class="line"><span class="lineno">  138</span>    <span class="keywordflow">if</span> (<span class="keywordtype">id</span> == INVALID_ID)</div>
+<div class="line"><span class="lineno">  139</span>        <span class="keywordflow">return</span> INVALID_ID;</div>
+<div class="line"><span class="lineno">  140</span> </div>
+<div class="line"><span class="lineno">  141</span>    <a class="code hl_struct" href="Position_8hpp.html#structposition__attr__t">position_attr_t</a> pos {schema.<a class="code hl_variable" href="namespaceprotocol_1_1game.html#ac7d6dc67a2607a11ef974b9207328067">x</a>, schema.<a class="code hl_variable" href="namespaceprotocol_1_1game.html#adc23f6c79ede3c4b44387d9b62c27ac7">y</a>};</div>
+<div class="line"><span class="lineno">  142</span>    <a class="code hl_struct" href="Direction_8hpp.html#structdirection__attr__t">direction_attr_t</a> dir { 1.0, 0.0 };</div>
+<div class="line"><span class="lineno">  143</span>    <a class="code hl_struct" href="Speed_8hpp.html#structspeed__attr__t">speed_attr_t</a> spd { 20 };</div>
+<div class="line"><span class="lineno">  144</span> </div>
+<div class="line"><span class="lineno">  145</span>    <a class="code hl_struct" href="Damage_8hpp.html#structdamage__attr__t">damage_attr_t</a> dmg { 1 };</div>
+<div class="line"><span class="lineno">  146</span>    <a class="code hl_struct" href="HitBox_8hpp.html#structhitbox__attr__t">hitbox_attr_t</a> box { 17 * 3, 17 * 3 };</div>
+<div class="line"><span class="lineno">  147</span>    <a class="code hl_struct" href="Common_2ECS_2Components_2Attributes_2Sprite_8hpp.html#structsprite__attr__t">sprite_attr_t</a> sprite { <span class="stringliteral">&quot;BULLET&quot;</span>, Vector2{17 * 3, 17 * 3}, Rectangle{17 * 3, 0, 17, 17} };</div>
+<div class="line"><span class="lineno">  148</span> </div>
+<div class="line"><span class="lineno">  149</span>    <span class="keywordflow">if</span> (!<a class="code hl_function" href="namespacertype_1_1ecs_1_1factory.html#abbec02b513c2ad4e3a2b9b00a491d755">set_movement</a>(coord, <span class="keywordtype">id</span>, pos, dir, spd) ||</div>
+<div class="line"><span class="lineno">  150</span>    !<a class="code hl_function" href="namespacertype_1_1ecs_1_1factory.html#a7cf1b038cae209ff98ae6c2d74390d41">add_or_rollback</a>(coord, <span class="keywordtype">id</span>, dmg) ||</div>
+<div class="line"><span class="lineno">  151</span>    !<a class="code hl_function" href="namespacertype_1_1ecs_1_1factory.html#aeabb5337b4bf656d02046fb676ce13b1">set_skin</a>(coord, <span class="keywordtype">id</span>, box, sprite))</div>
+<div class="line"><span class="lineno">  152</span>        <span class="keywordflow">return</span> INVALID_ID;</div>
+<div class="line"><span class="lineno">  153</span>    <span class="keywordflow">return</span> id;</div>
+<div class="line"><span class="lineno">  154</span>}</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="EntityFactory_8hpp_source.html#l00068">add_or_rollback()</a>, <a class="el" href="Coordinator_8cpp_source.html#l00029">rtype::ecs::Coordinator::createEntity()</a>, <a class="el" href="EntityFactory_8cpp_source.html#l00055">set_movement()</a>, <a class="el" href="EntityFactory_8cpp_source.html#l00040">set_skin()</a>, <a class="el" href="GameProtocolTypes_8hpp_source.html#l00083">protocol::game::payload_create_entity_t::x</a>, and <a class="el" href="GameProtocolTypes_8hpp_source.html#l00084">protocol::game::payload_create_entity_t::y</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="EntityFactory_8cpp_source.html#l00153">create_entity()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="EntityFactory_8cpp_source.html#l00156">create_entity()</a>, and <a class="el" href="PlayerSystem_8cpp_source.html#l00113">rtype::ecs::PlayerSystem::fire()</a>.</p>
+<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="namespacertype_1_1ecs_1_1factory_ad29b4b6e7fc4c35cea4aa4ce9d2e4861_cgraph.svg" width="100%" height="424"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
 <div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-8-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-8-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="namespacertype_1_1ecs_1_1factory_a5a8314ddbfde6228ddddaa6989d791ba_cgraph.svg" width="100%" height="424"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
-</div>
-<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-9-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="namespacertype_1_1ecs_1_1factory_a5a8314ddbfde6228ddddaa6989d791ba_icgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespacertype_1_1ecs_1_1factory_ad29b4b6e7fc4c35cea4aa4ce9d2e4861_icgraph.svg" width="480" height="86"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
@@ -631,24 +602,23 @@ template&lt;typename T &gt; </div>
 <div class="line"><span class="lineno">   36</span>    coord.<a class="code hl_function" href="classrtype_1_1ecs_1_1Coordinator.html#ad06624ec5ef2024c2f6919eae1fea1d7">registerComponent</a>&lt;<a class="code hl_struct" href="Name_8hpp.html#structname__attr__t">name_attr_t</a>&gt;();</div>
 <div class="line"><span class="lineno">   37</span>    coord.<a class="code hl_function" href="classrtype_1_1ecs_1_1Coordinator.html#ad06624ec5ef2024c2f6919eae1fea1d7">registerComponent</a>&lt;<a class="code hl_struct" href="Score_8hpp.html#structscore__attr__t">score_attr_t</a>&gt;();</div>
 <div class="line"><span class="lineno">   38</span>}</div>
-<div class="ttc" id="aCommon_2ECS_2Components_2Attributes_2Sprite_8hpp_html_structsprite__attr__t"><div class="ttname"><a href="Common_2ECS_2Components_2Attributes_2Sprite_8hpp.html#structsprite__attr__t">sprite_attr_t</a></div><div class="ttdoc">Component linking an entity to its visual representation.</div><div class="ttdef"><b>Definition</b> <a href="Common_2ECS_2Components_2Attributes_2Sprite_8hpp_source.html#l00041">Common/ECS/Components/Attributes/Sprite.hpp:41</a></div></div>
 <div class="ttc" id="aclassrtype_1_1ecs_1_1Coordinator_html_ad06624ec5ef2024c2f6919eae1fea1d7"><div class="ttname"><a href="classrtype_1_1ecs_1_1Coordinator.html#ad06624ec5ef2024c2f6919eae1fea1d7">rtype::ecs::Coordinator::registerComponent</a></div><div class="ttdeci">bool registerComponent()</div><div class="ttdoc">Register a component type T with the ComponentManager.</div><div class="ttdef"><b>Definition</b> <a href="Coordinator_8hpp_source.html#l00185">Coordinator.hpp:185</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="Coordinator_8hpp_source.html#l00185">rtype::ecs::Coordinator::registerComponent()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="GameScene_8cpp_source.html#l00011">rtype::client::GameScene::GameScene()</a>, and <a class="el" href="Rtype_8cpp_source.html#l00043">rtype::server::run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="GameScene_8cpp_source.html#l00014">rtype::client::GameScene::GameScene()</a>, and <a class="el" href="Rtype_8cpp_source.html#l00045">rtype::server::run()</a>.</p>
+<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-9-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespacertype_1_1ecs_1_1factory_ac493845a0bd714fbeb9baead17010d04_cgraph.svg" width="559" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
 <div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-10-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-10-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="namespacertype_1_1ecs_1_1factory_ac493845a0bd714fbeb9baead17010d04_cgraph.svg" width="559" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-<div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-11-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="namespacertype_1_1ecs_1_1factory_ac493845a0bd714fbeb9baead17010d04_icgraph.svg" width="554" height="102"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
@@ -711,20 +681,20 @@ template&lt;typename T &gt; </div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="EntityFactory_8hpp_source.html#l00068">add_or_rollback()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="EntityFactory_8cpp_source.html#l00105">create_enemy()</a>, <a class="el" href="EntityFactory_8cpp_source.html#l00075">create_player()</a>, and <a class="el" href="EntityFactory_8cpp_source.html#l00131">create_projectile()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="EntityFactory_8cpp_source.html#l00106">create_enemy()</a>, <a class="el" href="EntityFactory_8cpp_source.html#l00075">create_player()</a>, and <a class="el" href="EntityFactory_8cpp_source.html#l00133">create_projectile()</a>.</p>
+<div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-11-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="namespacertype_1_1ecs_1_1factory_abbec02b513c2ad4e3a2b9b00a491d755_cgraph.svg" width="100%" height="364"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
 <div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-12-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-12-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="namespacertype_1_1ecs_1_1factory_abbec02b513c2ad4e3a2b9b00a491d755_cgraph.svg" width="100%" height="364"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
-</div>
-<div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-13-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="namespacertype_1_1ecs_1_1factory_abbec02b513c2ad4e3a2b9b00a491d755_icgraph.svg" width="100%" height="413"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="namespacertype_1_1ecs_1_1factory_abbec02b513c2ad4e3a2b9b00a491d755_icgraph.svg" width="100%" height="456"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
 </div>
@@ -784,20 +754,20 @@ template&lt;typename T &gt; </div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="EntityFactory_8hpp_source.html#l00068">add_or_rollback()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="EntityFactory_8cpp_source.html#l00105">create_enemy()</a>, <a class="el" href="EntityFactory_8cpp_source.html#l00075">create_player()</a>, and <a class="el" href="EntityFactory_8cpp_source.html#l00131">create_projectile()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="EntityFactory_8cpp_source.html#l00106">create_enemy()</a>, <a class="el" href="EntityFactory_8cpp_source.html#l00075">create_player()</a>, and <a class="el" href="EntityFactory_8cpp_source.html#l00133">create_projectile()</a>.</p>
+<div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-13-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="namespacertype_1_1ecs_1_1factory_aeabb5337b4bf656d02046fb676ce13b1_cgraph.svg" width="100%" height="364"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
 <div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+  <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-14-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-14-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="namespacertype_1_1ecs_1_1factory_aeabb5337b4bf656d02046fb676ce13b1_cgraph.svg" width="100%" height="364"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
-</div>
-<div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-15-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-15-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="namespacertype_1_1ecs_1_1factory_aeabb5337b4bf656d02046fb676ce13b1_icgraph.svg" width="100%" height="413"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="namespacertype_1_1ecs_1_1factory_aeabb5337b4bf656d02046fb676ce13b1_icgraph.svg" width="100%" height="456"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
 </div>
@@ -852,20 +822,20 @@ template&lt;typename T &gt; </div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="EntityFactory_8hpp_source.html#l00068">add_or_rollback()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="EntityFactory_8cpp_source.html#l00105">create_enemy()</a>, and <a class="el" href="EntityFactory_8cpp_source.html#l00075">create_player()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="EntityFactory_8cpp_source.html#l00106">create_enemy()</a>, and <a class="el" href="EntityFactory_8cpp_source.html#l00075">create_player()</a>.</p>
+<div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-15-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-15-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="namespacertype_1_1ecs_1_1factory_a5479c88a043755974c85001d4336327a_cgraph.svg" width="100%" height="364"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
 <div id="dynsection-16" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-16-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+  <img id="dynsection-16-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-16-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-16-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="namespacertype_1_1ecs_1_1factory_a5479c88a043755974c85001d4336327a_cgraph.svg" width="100%" height="364"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
-</div>
-<div id="dynsection-17" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-17-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-17-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-17-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="namespacertype_1_1ecs_1_1factory_a5479c88a043755974c85001d4336327a_icgraph.svg" width="100%" height="364"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="namespacertype_1_1ecs_1_1factory_a5479c88a043755974c85001d4336327a_icgraph.svg" width="100%" height="413"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
 </div>

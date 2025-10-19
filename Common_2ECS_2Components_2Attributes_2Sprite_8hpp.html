@@ -106,19 +106,20 @@ $(document).ready(function(){initNavTree('Common_2ECS_2Components_2Attributes_2S
 <p>ECS component representing the visual sprite of an entity.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;raylib.h&gt;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for Common/ECS/Components/Attributes/Sprite.hpp:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="Common_2ECS_2Components_2Attributes_2Sprite_8hpp__incl.svg" width="99" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="Common_2ECS_2Components_2Attributes_2Sprite_8hpp__incl.svg" width="187" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> This graph shows which files directly or indirectly include this file:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="Common_2ECS_2Components_2Attributes_2Sprite_8hpp__dep__incl.svg" width="407" height="256"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="Common_2ECS_2Components_2Attributes_2Sprite_8hpp__dep__incl.svg" width="100%" height="547"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 </div>
 <p><a href="Common_2ECS_2Components_2Attributes_2Sprite_8hpp_source.html">Go to the source code of this file.</a></p>
@@ -152,16 +153,28 @@ Classes</h2></td></tr>
 <div class="textblock"><p>Component linking an entity to its visual representation. </p>
 <p>The <code>spriteTag</code> field holds an identifier string referencing a texture or sprite resource. This enables systems to look up the correct graphic to render for the entity on screen. </p>
 
-<p class="definition">Definition at line <a class="el" href="Common_2ECS_2Components_2Attributes_2Sprite_8hpp_source.html#l00041">41</a> of file <a class="el" href="Common_2ECS_2Components_2Attributes_2Sprite_8hpp_source.html">Common/ECS/Components/Attributes/Sprite.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Common_2ECS_2Components_2Attributes_2Sprite_8hpp_source.html#l00042">42</a> of file <a class="el" href="Common_2ECS_2Components_2Attributes_2Sprite_8hpp_source.html">Common/ECS/Components/Attributes/Sprite.hpp</a>.</p>
 </div><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Collaboration diagram for sprite_attr_t:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="structsprite__attr__t__coll__graph.svg" width="168" height="76"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="structsprite__attr__t__coll__graph.svg" width="168" height="116"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <table class="fieldtable">
 <tr><th colspan="3">Class Members</th></tr>
+<tr><td class="fieldtype">
+<a id="af1f359d148933109f0029b8bd542a899" name="af1f359d148933109f0029b8bd542a899"></a>Rectangle</td>
+<td class="fieldname">
+rect</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a0974e7045713026c08d67f6154754172" name="a0974e7045713026c08d67f6154754172"></a>Vector2</td>
+<td class="fieldname">
+size</td>
+<td class="fielddoc">
+</td></tr>
 <tr><td class="fieldtype">
 <a id="ace93e3da6b92191573099b8cc78ab3a6" name="ace93e3da6b92191573099b8cc78ab3a6"></a>string</td>
 <td class="fieldname">

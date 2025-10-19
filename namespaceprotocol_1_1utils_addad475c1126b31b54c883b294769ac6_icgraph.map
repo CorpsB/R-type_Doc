@@ -1,17 +1,28 @@
 <map id="protocol::utils::to_network_u32" name="protocol::utils::to_network_u32">
-<area shape="rect" id="Node000001" title="Convert a host&#45;order 32&#45;bit value to network byte order (big&#45;endian)." alt="" coords="587,153,809,179"/>
-<area shape="rect" id="Node000002" href="$namespaceprotocol_1_1utils.html#a7cedbf1ad118a20c055724fd7cfe0a0d" title="Append a 32&#45;bit unsigned integer to a byte buffer in network byte order." alt="" coords="340,104,539,129"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="617,153,506,132,507,127,618,148"/>
-<area shape="rect" id="Node000007" href="$Protocol_8cpp.html#a0bcd1b15290d25e7e16b5a42c8358ece" title="Serialize a packet_t into a contiguous send buffer with piggybacked ACK info." alt="" coords="361,177,518,203"/>
-<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="573,180,518,185,518,180,573,175"/>
-<area shape="rect" id="Node000003" href="$GameProtocol_8cpp.html#aef673db680473943d3fe60004e4143c3" title="Serialize a CREATE_ENTITY payload into a raw byte buffer." alt="" coords="63,5,234,31"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="405,99,353,71,291,45,233,30,235,25,293,39,355,66,408,95"/>
-<area shape="rect" id="Node000004" href="$GameProtocol_8cpp.html#a8be9e4728ac725ccd6ed8dcc67c9adc5" title="Serialize a DESTROY_ENTITY payload into a raw byte buffer." alt="" coords="59,55,238,80"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="351,104,292,94,225,83,226,77,292,89,352,99"/>
-<area shape="rect" id="Node000005" href="$GameProtocol_8cpp.html#ad52de98185fb3e4334d4f9ebc452e3ff" title="Serialize a MOVE_ENTITY payload into a raw byte buffer." alt="" coords="65,104,232,129"/>
-<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="326,119,232,119,232,114,326,114"/>
-<area shape="rect" id="Node000006" href="$GameProtocol_8cpp.html#a838e3fe3c91043bda24a4763100404e8" title="Serialize a PLAYER_INPUT payload into a raw byte buffer." alt="" coords="66,153,231,179"/>
-<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="351,134,225,156,224,151,350,129"/>
-<area shape="rect" id="Node000008" href="$classprotocol_1_1Protocol.html#a00cb427affd803b5c1944c97cfc95096" title="Post an asynchronous send for a prepared packet_t." alt="" coords="5,203,292,228"/>
-<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="347,201,292,205,292,200,347,195"/>
+<area shape="rect" id="Node000001" title="Convert a host&#45;order 32&#45;bit value to network byte order (big&#45;endian)." alt="" coords="1140,175,1363,201"/>
+<area shape="rect" id="Node000002" href="$namespaceprotocol_1_1utils.html#a7cedbf1ad118a20c055724fd7cfe0a0d" title="Append a 32&#45;bit unsigned integer to a byte buffer in network byte order." alt="" coords="893,126,1092,151"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1170,175,1060,154,1061,149,1171,170"/>
+<area shape="rect" id="Node000012" href="$Protocol_8cpp.html#a0bcd1b15290d25e7e16b5a42c8358ece" title="Serialize a packet_t into a contiguous send buffer with piggybacked ACK info." alt="" coords="914,199,1071,225"/>
+<area shape="poly" id="edge12_Node000001_Node000012" title=" " alt="" coords="1127,202,1072,207,1071,202,1126,197"/>
+<area shape="rect" id="Node000003" href="$GameProtocol_8cpp.html#aef673db680473943d3fe60004e4143c3" title="Serialize a CREATE_ENTITY payload into a raw byte buffer." alt="" coords="617,19,787,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="957,121,905,93,844,67,775,47,777,42,846,61,907,88,960,117"/>
+<area shape="rect" id="Node000007" href="$GameProtocol_8cpp.html#a8be9e4728ac725ccd6ed8dcc67c9adc5" title="Serialize a DESTROY_ENTITY payload into a raw byte buffer." alt="" coords="613,77,791,102"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="905,126,845,116,778,105,779,99,846,111,906,121"/>
+<area shape="rect" id="Node000009" href="$GameProtocol_8cpp.html#ad52de98185fb3e4334d4f9ebc452e3ff" title="Serialize a MOVE_ENTITY payload into a raw byte buffer." alt="" coords="619,126,785,151"/>
+<area shape="poly" id="edge9_Node000002_Node000009" title=" " alt="" coords="879,141,785,141,785,136,879,136"/>
+<area shape="rect" id="Node000011" href="$GameProtocol_8cpp.html#a838e3fe3c91043bda24a4763100404e8" title="Serialize a PLAYER_INPUT payload into a raw byte buffer." alt="" coords="619,175,785,201"/>
+<area shape="poly" id="edge11_Node000002_Node000011" title=" " alt="" coords="904,156,778,178,777,173,903,151"/>
+<area shape="rect" id="Node000004" href="$namespaceprotocol_1_1game_1_1GameProtocol.html#aa38f33e4ebd168cee00f869e7e7aa27e" title="Send a CREATE_ENTITY message to all endpoints (server &#45;&gt; client)." alt="" coords="291,5,511,45"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="603,32,511,30,511,25,603,27"/>
+<area shape="rect" id="Node000005" href="$classrtype_1_1server.html#a703fd91ca5d705369acef8f6e505e32d" title="Starts the main execution loop of the server." alt="" coords="108,45,243,70"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="278,46,243,50,242,45,277,40"/>
+<area shape="rect" id="Node000006" href="$Server_2main_8cpp.html#a0c99d968a34e803d378692bde2e3f18f" title="Program entry point." alt="" coords="5,45,60,70"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="94,60,60,60,60,55,94,55"/>
+<area shape="rect" id="Node000008" href="$namespaceprotocol_1_1game_1_1GameProtocol.html#aa9c9d45e9cf073dcf8c011b22e19de8e" title="Send a DESTROY_ENTITY message to a remote endpoint (server &#45;&gt; client)." alt="" coords="291,69,511,109"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="599,92,511,92,511,87,599,87"/>
+<area shape="poly" id="edge8_Node000008_Node000005" title=" " alt="" coords="277,74,242,69,243,64,278,69"/>
+<area shape="rect" id="Node000010" href="$namespaceprotocol_1_1game_1_1GameProtocol.html#aa8f508b457ddd2060b5412a9a9e581e4" title="Send a MOVE_ENTITY message to all endpoints (server &#45;&gt; client)." alt="" coords="291,133,511,173"/>
+<area shape="poly" id="edge10_Node000009_Node000010" title=" " alt="" coords="605,146,511,151,511,145,605,141"/>
+<area shape="rect" id="Node000013" href="$classprotocol_1_1Protocol.html#a00cb427affd803b5c1944c97cfc95096" title="Post an asynchronous send for a prepared packet_t." alt="" coords="559,225,845,250"/>
+<area shape="poly" id="edge13_Node000012_Node000013" title=" " alt="" coords="900,223,846,227,845,222,900,217"/>
 </map>

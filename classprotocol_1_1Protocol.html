@@ -161,6 +161,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a83d3f70a1b45549ec29cdf31dfb7b165" id="r_a83d3f70a1b45549ec29cdf31dfb7b165"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classprotocol_1_1Protocol.html#a83d3f70a1b45549ec29cdf31dfb7b165">get_packet_loss_rate</a> () const noexcept</td></tr>
 <tr class="memdesc:a83d3f70a1b45549ec29cdf31dfb7b165"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get an approximate packet loss rate between 0.0 and 1.0.  <br /></td></tr>
 <tr class="separator:a83d3f70a1b45549ec29cdf31dfb7b165"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb0a9956e7fdb0d1a8357544ceb0b573" id="r_aeb0a9956e7fdb0d1a8357544ceb0b573"><td class="memItemLeft" align="right" valign="top">std::vector&lt; udp::endpoint &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classprotocol_1_1Protocol.html#aeb0a9956e7fdb0d1a8357544ceb0b573">getStoredEndpoints</a> () const noexcept</td></tr>
+<tr class="separator:aeb0a9956e7fdb0d1a8357544ceb0b573"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4ab1bbadf74acc6ae80a4cdfdbc30b19" id="r_a4ab1bbadf74acc6ae80a4cdfdbc30b19"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classprotocol_1_1Protocol.html#a4ab1bbadf74acc6ae80a4cdfdbc30b19">storeEndpoint</a> (const udp::endpoint &amp;ep)</td></tr>
 <tr class="memdesc:a4ab1bbadf74acc6ae80a4cdfdbc30b19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Store a "preferred" remote endpoint for convenience operations.  <br /></td></tr>
 <tr class="separator:a4ab1bbadf74acc6ae80a4cdfdbc30b19"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -220,8 +222,12 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a3f0befeebdc5538378a0784cdb2cc04f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2decf340528f4c08e56739e05436a19e" id="r_a2decf340528f4c08e56739e05436a19e"><td class="memItemLeft" align="right" valign="top">std::optional&lt; boost::asio::executor_work_guard&lt; boost::asio::io_context::executor_type &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classprotocol_1_1Protocol.html#a2decf340528f4c08e56739e05436a19e">_work_guard</a></td></tr>
 <tr class="separator:a2decf340528f4c08e56739e05436a19e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a83a55606b2d78bf675222f291bca2096" id="r_a83a55606b2d78bf675222f291bca2096"><td class="memItemLeft" align="right" valign="top">std::optional&lt; udp::endpoint &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classprotocol_1_1Protocol.html#a83a55606b2d78bf675222f291bca2096">_stored_endpoint</a></td></tr>
-<tr class="separator:a83a55606b2d78bf675222f291bca2096"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af463162db164265ef9d820cda4ad7bc4" id="r_af463162db164265ef9d820cda4ad7bc4"><td class="memItemLeft" align="right" valign="top">std::unordered_map&lt; std::string, udp::endpoint &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classprotocol_1_1Protocol.html#af463162db164265ef9d820cda4ad7bc4">_stored_endpoints</a></td></tr>
+<tr class="memdesc:af463162db164265ef9d820cda4ad7bc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">mapping string-&gt;endpoint pour multi-client  <br /></td></tr>
+<tr class="separator:af463162db164265ef9d820cda4ad7bc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e657519d4135c4c8e10f224bc28ec2e" id="r_a1e657519d4135c4c8e10f224bc28ec2e"><td class="memItemLeft" align="right" valign="top">std::mutex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classprotocol_1_1Protocol.html#a1e657519d4135c4c8e10f224bc28ec2e">_stored_mutex</a></td></tr>
+<tr class="memdesc:a1e657519d4135c4c8e10f224bc28ec2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">protège _stored_endpoints  <br /></td></tr>
+<tr class="separator:a1e657519d4135c4c8e10f224bc28ec2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a750a7f35177f476578dfbea26ef67d7f" id="r_a750a7f35177f476578dfbea26ef67d7f"><td class="memItemLeft" align="right" valign="top">std::mutex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classprotocol_1_1Protocol.html#a750a7f35177f476578dfbea26ef67d7f">_event_mutex</a></td></tr>
 <tr class="separator:a750a7f35177f476578dfbea26ef67d7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a49dea9de130b043dd8d04d469bf39489" id="r_a49dea9de130b043dd8d04d469bf39489"><td class="memItemLeft" align="right" valign="top">std::condition_variable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classprotocol_1_1Protocol.html#a49dea9de130b043dd8d04d469bf39489">_event_cv</a></td></tr>
@@ -334,19 +340,19 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">   35</span>{</div>
 <div class="line"><span class="lineno">   36</span>    <a class="code hl_variable" href="classprotocol_1_1Protocol.html#aa5f15843028a982095c3232c092a2f0f">_receive_buffer</a>.resize(<a class="code hl_variable" href="namespaceprotocol.html#aaae3d93d905456f5c8aef9422abdebc5">MAX_PACKET_SIZE_BYTES</a>);</div>
 <div class="line"><span class="lineno">   37</span>}</div>
-<div class="ttc" id="aclassprotocol_1_1Protocol_html_a06c27ec67e384e01671d7909b4490009"><div class="ttname"><a href="classprotocol_1_1Protocol.html#a06c27ec67e384e01671d7909b4490009">protocol::Protocol::_socket</a></div><div class="ttdeci">std::unique_ptr&lt; boost::asio::ip::udp::socket &gt; _socket</div><div class="ttdoc">UDP socket.</div><div class="ttdef"><b>Definition</b> <a href="Protocol_8hpp_source.html#l00171">Protocol.hpp:171</a></div></div>
-<div class="ttc" id="aclassprotocol_1_1Protocol_html_a0951c5eb3a9dd2b6d59d803ae355216f"><div class="ttname"><a href="classprotocol_1_1Protocol.html#a0951c5eb3a9dd2b6d59d803ae355216f">protocol::Protocol::_internal_io</a></div><div class="ttdeci">std::unique_ptr&lt; boost::asio::io_context &gt; _internal_io</div><div class="ttdef"><b>Definition</b> <a href="Protocol_8hpp_source.html#l00170">Protocol.hpp:170</a></div></div>
-<div class="ttc" id="aclassprotocol_1_1Protocol_html_a30a53e0e32c07243fa5dca89019e607a"><div class="ttname"><a href="classprotocol_1_1Protocol.html#a30a53e0e32c07243fa5dca89019e607a">protocol::Protocol::_event_queue</a></div><div class="ttdeci">std::deque&lt; core_event_t &gt; _event_queue</div><div class="ttdef"><b>Definition</b> <a href="Protocol_8hpp_source.html#l00180">Protocol.hpp:180</a></div></div>
-<div class="ttc" id="aclassprotocol_1_1Protocol_html_a30ef1e2b3608fb73fdc033d1337c3789"><div class="ttname"><a href="classprotocol_1_1Protocol.html#a30ef1e2b3608fb73fdc033d1337c3789">protocol::Protocol::_next_sequence</a></div><div class="ttdeci">std::atomic_uint32_t _next_sequence</div><div class="ttdef"><b>Definition</b> <a href="Protocol_8hpp_source.html#l00184">Protocol.hpp:184</a></div></div>
-<div class="ttc" id="aclassprotocol_1_1Protocol_html_a3f0befeebdc5538378a0784cdb2cc04f"><div class="ttname"><a href="classprotocol_1_1Protocol.html#a3f0befeebdc5538378a0784cdb2cc04f">protocol::Protocol::_running</a></div><div class="ttdeci">std::atomic&lt; bool &gt; _running</div><div class="ttdef"><b>Definition</b> <a href="Protocol_8hpp_source.html#l00173">Protocol.hpp:173</a></div></div>
-<div class="ttc" id="aclassprotocol_1_1Protocol_html_a42ccd40786890e0461525bf28b6a1ef9"><div class="ttname"><a href="classprotocol_1_1Protocol.html#a42ccd40786890e0461525bf28b6a1ef9">protocol::Protocol::_pending_sends</a></div><div class="ttdeci">std::unordered_map&lt; uint32_t, pending_send_t &gt; _pending_sends</div><div class="ttdef"><b>Definition</b> <a href="Protocol_8hpp_source.html#l00191">Protocol.hpp:191</a></div></div>
-<div class="ttc" id="aclassprotocol_1_1Protocol_html_aa5f15843028a982095c3232c092a2f0f"><div class="ttname"><a href="classprotocol_1_1Protocol.html#aa5f15843028a982095c3232c092a2f0f">protocol::Protocol::_receive_buffer</a></div><div class="ttdeci">std::vector&lt; uint8_t &gt; _receive_buffer</div><div class="ttdef"><b>Definition</b> <a href="Protocol_8hpp_source.html#l00188">Protocol.hpp:188</a></div></div>
-<div class="ttc" id="aclassprotocol_1_1Protocol_html_ac43c1895b33a2c13dd182653a727a146"><div class="ttname"><a href="classprotocol_1_1Protocol.html#ac43c1895b33a2c13dd182653a727a146">protocol::Protocol::_winsock_started</a></div><div class="ttdeci">bool _winsock_started</div><div class="ttdef"><b>Definition</b> <a href="Protocol_8hpp_source.html#l00185">Protocol.hpp:185</a></div></div>
-<div class="ttc" id="aclassprotocol_1_1Protocol_html_add1c3aec4c4e77dd13a6549ee13d3f3e"><div class="ttname"><a href="classprotocol_1_1Protocol.html#add1c3aec4c4e77dd13a6549ee13d3f3e">protocol::Protocol::_peer_states</a></div><div class="ttdeci">std::unordered_map&lt; std::string, peer_receive_state_t &gt; _peer_states</div><div class="ttdef"><b>Definition</b> <a href="Protocol_8hpp_source.html#l00195">Protocol.hpp:195</a></div></div>
-<div class="ttc" id="aclassprotocol_1_1Protocol_html_af4c5320360d1efbd886444b17daace0b"><div class="ttname"><a href="classprotocol_1_1Protocol.html#af4c5320360d1efbd886444b17daace0b">protocol::Protocol::_initialized</a></div><div class="ttdeci">std::atomic_bool _initialized</div><div class="ttdef"><b>Definition</b> <a href="Protocol_8hpp_source.html#l00183">Protocol.hpp:183</a></div></div>
+<div class="ttc" id="aclassprotocol_1_1Protocol_html_a06c27ec67e384e01671d7909b4490009"><div class="ttname"><a href="classprotocol_1_1Protocol.html#a06c27ec67e384e01671d7909b4490009">protocol::Protocol::_socket</a></div><div class="ttdeci">std::unique_ptr&lt; boost::asio::ip::udp::socket &gt; _socket</div><div class="ttdoc">UDP socket.</div><div class="ttdef"><b>Definition</b> <a href="Protocol_8hpp_source.html#l00173">Protocol.hpp:173</a></div></div>
+<div class="ttc" id="aclassprotocol_1_1Protocol_html_a0951c5eb3a9dd2b6d59d803ae355216f"><div class="ttname"><a href="classprotocol_1_1Protocol.html#a0951c5eb3a9dd2b6d59d803ae355216f">protocol::Protocol::_internal_io</a></div><div class="ttdeci">std::unique_ptr&lt; boost::asio::io_context &gt; _internal_io</div><div class="ttdef"><b>Definition</b> <a href="Protocol_8hpp_source.html#l00172">Protocol.hpp:172</a></div></div>
+<div class="ttc" id="aclassprotocol_1_1Protocol_html_a30a53e0e32c07243fa5dca89019e607a"><div class="ttname"><a href="classprotocol_1_1Protocol.html#a30a53e0e32c07243fa5dca89019e607a">protocol::Protocol::_event_queue</a></div><div class="ttdeci">std::deque&lt; core_event_t &gt; _event_queue</div><div class="ttdef"><b>Definition</b> <a href="Protocol_8hpp_source.html#l00184">Protocol.hpp:184</a></div></div>
+<div class="ttc" id="aclassprotocol_1_1Protocol_html_a30ef1e2b3608fb73fdc033d1337c3789"><div class="ttname"><a href="classprotocol_1_1Protocol.html#a30ef1e2b3608fb73fdc033d1337c3789">protocol::Protocol::_next_sequence</a></div><div class="ttdeci">std::atomic_uint32_t _next_sequence</div><div class="ttdef"><b>Definition</b> <a href="Protocol_8hpp_source.html#l00188">Protocol.hpp:188</a></div></div>
+<div class="ttc" id="aclassprotocol_1_1Protocol_html_a3f0befeebdc5538378a0784cdb2cc04f"><div class="ttname"><a href="classprotocol_1_1Protocol.html#a3f0befeebdc5538378a0784cdb2cc04f">protocol::Protocol::_running</a></div><div class="ttdeci">std::atomic&lt; bool &gt; _running</div><div class="ttdef"><b>Definition</b> <a href="Protocol_8hpp_source.html#l00175">Protocol.hpp:175</a></div></div>
+<div class="ttc" id="aclassprotocol_1_1Protocol_html_a42ccd40786890e0461525bf28b6a1ef9"><div class="ttname"><a href="classprotocol_1_1Protocol.html#a42ccd40786890e0461525bf28b6a1ef9">protocol::Protocol::_pending_sends</a></div><div class="ttdeci">std::unordered_map&lt; uint32_t, pending_send_t &gt; _pending_sends</div><div class="ttdef"><b>Definition</b> <a href="Protocol_8hpp_source.html#l00195">Protocol.hpp:195</a></div></div>
+<div class="ttc" id="aclassprotocol_1_1Protocol_html_aa5f15843028a982095c3232c092a2f0f"><div class="ttname"><a href="classprotocol_1_1Protocol.html#aa5f15843028a982095c3232c092a2f0f">protocol::Protocol::_receive_buffer</a></div><div class="ttdeci">std::vector&lt; uint8_t &gt; _receive_buffer</div><div class="ttdef"><b>Definition</b> <a href="Protocol_8hpp_source.html#l00192">Protocol.hpp:192</a></div></div>
+<div class="ttc" id="aclassprotocol_1_1Protocol_html_ac43c1895b33a2c13dd182653a727a146"><div class="ttname"><a href="classprotocol_1_1Protocol.html#ac43c1895b33a2c13dd182653a727a146">protocol::Protocol::_winsock_started</a></div><div class="ttdeci">bool _winsock_started</div><div class="ttdef"><b>Definition</b> <a href="Protocol_8hpp_source.html#l00189">Protocol.hpp:189</a></div></div>
+<div class="ttc" id="aclassprotocol_1_1Protocol_html_add1c3aec4c4e77dd13a6549ee13d3f3e"><div class="ttname"><a href="classprotocol_1_1Protocol.html#add1c3aec4c4e77dd13a6549ee13d3f3e">protocol::Protocol::_peer_states</a></div><div class="ttdeci">std::unordered_map&lt; std::string, peer_receive_state_t &gt; _peer_states</div><div class="ttdef"><b>Definition</b> <a href="Protocol_8hpp_source.html#l00199">Protocol.hpp:199</a></div></div>
+<div class="ttc" id="aclassprotocol_1_1Protocol_html_af4c5320360d1efbd886444b17daace0b"><div class="ttname"><a href="classprotocol_1_1Protocol.html#af4c5320360d1efbd886444b17daace0b">protocol::Protocol::_initialized</a></div><div class="ttdeci">std::atomic_bool _initialized</div><div class="ttdef"><b>Definition</b> <a href="Protocol_8hpp_source.html#l00187">Protocol.hpp:187</a></div></div>
 <div class="ttc" id="anamespaceprotocol_html_aaae3d93d905456f5c8aef9422abdebc5"><div class="ttname"><a href="namespaceprotocol.html#aaae3d93d905456f5c8aef9422abdebc5">protocol::MAX_PACKET_SIZE_BYTES</a></div><div class="ttdeci">static constexpr std::size_t MAX_PACKET_SIZE_BYTES</div><div class="ttdoc">Maximum UDP payload kept under typical MTU to avoid IP fragmentation.</div><div class="ttdef"><b>Definition</b> <a href="ProtocolTypes_8hpp_source.html#l00059">ProtocolTypes.hpp:59</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="Protocol_8hpp_source.html#l00188">_receive_buffer</a>, and <a class="el" href="ProtocolTypes_8hpp_source.html#l00059">protocol::MAX_PACKET_SIZE_BYTES</a>.</p>
+<p class="reference">References <a class="el" href="Protocol_8hpp_source.html#l00192">_receive_buffer</a>, and <a class="el" href="ProtocolTypes_8hpp_source.html#l00059">protocol::MAX_PACKET_SIZE_BYTES</a>.</p>
 
 </div>
 </div>
@@ -400,11 +406,14 @@ Private Attributes</h2></td></tr>
 <p>Clear any previously stored endpoint. </p>
 <p>Resets the internal optional that holds a default remote endpoint. After calling clearEndpoint the protocol has no stored endpoint and callers must provide explicit targets for send operations. </p>
 
-<p class="definition">Definition at line <a class="el" href="Protocol_8cpp_source.html#l00448">448</a> of file <a class="el" href="Protocol_8cpp_source.html">Protocol.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  449</span>{</div>
-<div class="line"><span class="lineno">  450</span>    <a class="code hl_variable" href="classprotocol_1_1Protocol.html#a83a55606b2d78bf675222f291bca2096">_stored_endpoint</a>.reset();</div>
-<div class="line"><span class="lineno">  451</span>}</div>
-<div class="ttc" id="aclassprotocol_1_1Protocol_html_a83a55606b2d78bf675222f291bca2096"><div class="ttname"><a href="classprotocol_1_1Protocol.html#a83a55606b2d78bf675222f291bca2096">protocol::Protocol::_stored_endpoint</a></div><div class="ttdeci">std::optional&lt; udp::endpoint &gt; _stored_endpoint</div><div class="ttdef"><b>Definition</b> <a href="Protocol_8hpp_source.html#l00175">Protocol.hpp:175</a></div></div>
+<p class="definition">Definition at line <a class="el" href="Protocol_8cpp_source.html#l00450">450</a> of file <a class="el" href="Protocol_8cpp_source.html">Protocol.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  451</span>{</div>
+<div class="line"><span class="lineno">  452</span>    std::lock_guard&lt;std::mutex&gt; lk(<a class="code hl_variable" href="classprotocol_1_1Protocol.html#a1e657519d4135c4c8e10f224bc28ec2e">_stored_mutex</a>);</div>
+<div class="line"><span class="lineno">  453</span> </div>
+<div class="line"><span class="lineno">  454</span>    <a class="code hl_variable" href="classprotocol_1_1Protocol.html#af463162db164265ef9d820cda4ad7bc4">_stored_endpoints</a>.clear();</div>
+<div class="line"><span class="lineno">  455</span>}</div>
+<div class="ttc" id="aclassprotocol_1_1Protocol_html_a1e657519d4135c4c8e10f224bc28ec2e"><div class="ttname"><a href="classprotocol_1_1Protocol.html#a1e657519d4135c4c8e10f224bc28ec2e">protocol::Protocol::_stored_mutex</a></div><div class="ttdeci">std::mutex _stored_mutex</div><div class="ttdoc">protège _stored_endpoints</div><div class="ttdef"><b>Definition</b> <a href="Protocol_8hpp_source.html#l00179">Protocol.hpp:179</a></div></div>
+<div class="ttc" id="aclassprotocol_1_1Protocol_html_af463162db164265ef9d820cda4ad7bc4"><div class="ttname"><a href="classprotocol_1_1Protocol.html#af463162db164265ef9d820cda4ad7bc4">protocol::Protocol::_stored_endpoints</a></div><div class="ttdeci">std::unordered_map&lt; std::string, udp::endpoint &gt; _stored_endpoints</div><div class="ttdoc">mapping string-&gt;endpoint pour multi-client</div><div class="ttdef"><b>Definition</b> <a href="Protocol_8hpp_source.html#l00178">Protocol.hpp:178</a></div></div>
 </div><!-- fragment -->
 <p class="reference">Referenced by <a class="el" href="GameProtocol_8cpp_source.html#l00205">protocol::game::GameProtocol::initialize()</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -412,7 +421,7 @@ Private Attributes</h2></td></tr>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classprotocol_1_1Protocol_a84c493e745daa3623898f5aa235774ba_icgraph.svg" width="100%" height="376"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classprotocol_1_1Protocol_a84c493e745daa3623898f5aa235774ba_icgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
 </div>
@@ -480,8 +489,8 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">  344</span>        <a class="code hl_variable" href="classprotocol_1_1Protocol.html#a49dea9de130b043dd8d04d469bf39489">_event_cv</a>.notify_one();</div>
 <div class="line"><span class="lineno">  345</span>    }</div>
 <div class="line"><span class="lineno">  346</span>}</div>
-<div class="ttc" id="aclassprotocol_1_1Protocol_html_a49dea9de130b043dd8d04d469bf39489"><div class="ttname"><a href="classprotocol_1_1Protocol.html#a49dea9de130b043dd8d04d469bf39489">protocol::Protocol::_event_cv</a></div><div class="ttdeci">std::condition_variable _event_cv</div><div class="ttdef"><b>Definition</b> <a href="Protocol_8hpp_source.html#l00179">Protocol.hpp:179</a></div></div>
-<div class="ttc" id="aclassprotocol_1_1Protocol_html_a750a7f35177f476578dfbea26ef67d7f"><div class="ttname"><a href="classprotocol_1_1Protocol.html#a750a7f35177f476578dfbea26ef67d7f">protocol::Protocol::_event_mutex</a></div><div class="ttdeci">std::mutex _event_mutex</div><div class="ttdef"><b>Definition</b> <a href="Protocol_8hpp_source.html#l00178">Protocol.hpp:178</a></div></div>
+<div class="ttc" id="aclassprotocol_1_1Protocol_html_a49dea9de130b043dd8d04d469bf39489"><div class="ttname"><a href="classprotocol_1_1Protocol.html#a49dea9de130b043dd8d04d469bf39489">protocol::Protocol::_event_cv</a></div><div class="ttdeci">std::condition_variable _event_cv</div><div class="ttdef"><b>Definition</b> <a href="Protocol_8hpp_source.html#l00183">Protocol.hpp:183</a></div></div>
+<div class="ttc" id="aclassprotocol_1_1Protocol_html_a750a7f35177f476578dfbea26ef67d7f"><div class="ttname"><a href="classprotocol_1_1Protocol.html#a750a7f35177f476578dfbea26ef67d7f">protocol::Protocol::_event_mutex</a></div><div class="ttdeci">std::mutex _event_mutex</div><div class="ttdef"><b>Definition</b> <a href="Protocol_8hpp_source.html#l00182">Protocol.hpp:182</a></div></div>
 <div class="ttc" id="anamespaceprotocol_html_af260499ef5bec7e4600e7a352cffd70caf8f025aba2f4634fc77839c6af60cd2c"><div class="ttname"><a href="namespaceprotocol.html#af260499ef5bec7e4600e7a352cffd70caf8f025aba2f4634fc77839c6af60cd2c">protocol::event_type_t::TRANSMIT_FAILED</a></div><div class="ttdeci">@ TRANSMIT_FAILED</div><div class="ttdoc">reliable send failed after retries</div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="ProtocolTypes_8hpp_source.html#l00142">protocol::packet_t::header</a>, <a class="el" href="ProtocolTypes_8hpp_source.html#l00104">protocol::packet_header_t::message_type</a>, <a class="el" href="ProtocolTypes_8hpp_source.html#l00131">protocol::transmit_failed_t::message_type</a>, <a class="el" href="ProtocolTypes_8hpp_source.html#l00132">protocol::transmit_failed_t::payload</a>, <a class="el" href="ProtocolTypes_8hpp_source.html#l00143">protocol::packet_t::payload</a>, <a class="el" href="ProtocolTypes_8hpp_source.html#l00195">protocol::core_event_t::payload</a>, <a class="el" href="ProtocolTypes_8hpp_source.html#l00133">protocol::transmit_failed_t::remote</a>, <a class="el" href="ProtocolTypes_8hpp_source.html#l00144">protocol::packet_t::remote</a>, <a class="el" href="ProtocolTypes_8hpp_source.html#l00130">protocol::transmit_failed_t::sequence</a>, <a class="el" href="namespaceprotocol.html#af260499ef5bec7e4600e7a352cffd70caf8f025aba2f4634fc77839c6af60cd2c">protocol::TRANSMIT_FAILED</a>, and <a class="el" href="ProtocolTypes_8hpp_source.html#l00194">protocol::core_event_t::type</a>.</p>
@@ -648,6 +657,51 @@ Private Attributes</h2></td></tr>
 </div><!-- fragment -->
 </div>
 </div>
+<a id="aeb0a9956e7fdb0d1a8357544ceb0b573" name="aeb0a9956e7fdb0d1a8357544ceb0b573"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb0a9956e7fdb0d1a8357544ceb0b573">&#9670;&#160;</a></span>getStoredEndpoints()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; protocol::udp::endpoint &gt; protocol::Protocol::getStoredEndpoints </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Protocol_8cpp_source.html#l00457">457</a> of file <a class="el" href="Protocol_8cpp_source.html">Protocol.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  458</span>{</div>
+<div class="line"><span class="lineno">  459</span>    std::lock_guard&lt;std::mutex&gt; lk(<a class="code hl_variable" href="classprotocol_1_1Protocol.html#a1e657519d4135c4c8e10f224bc28ec2e">_stored_mutex</a>);</div>
+<div class="line"><span class="lineno">  460</span>    std::vector&lt;protocol::udp::endpoint&gt; out;</div>
+<div class="line"><span class="lineno">  461</span> </div>
+<div class="line"><span class="lineno">  462</span>    out.reserve(<a class="code hl_variable" href="classprotocol_1_1Protocol.html#af463162db164265ef9d820cda4ad7bc4">_stored_endpoints</a>.size());</div>
+<div class="line"><span class="lineno">  463</span>    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;kv : <a class="code hl_variable" href="classprotocol_1_1Protocol.html#af463162db164265ef9d820cda4ad7bc4">_stored_endpoints</a>)</div>
+<div class="line"><span class="lineno">  464</span>        out.push_back(kv.second);</div>
+<div class="line"><span class="lineno">  465</span>    <span class="keywordflow">return</span> out;</div>
+<div class="line"><span class="lineno">  466</span>}</div>
+</div><!-- fragment -->
+<p class="reference">Referenced by <a class="el" href="GameProtocol_8cpp_source.html#l00284">protocol::game::GameProtocol::send_raw()</a>.</p>
+<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classprotocol_1_1Protocol_aeb0a9956e7fdb0d1a8357544ceb0b573_icgraph.svg" width="100%" height="434"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
 <a id="a8775506ba36b376f91bd2d46c9bf4c2f" name="a8775506ba36b376f91bd2d46c9bf4c2f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8775506ba36b376f91bd2d46c9bf4c2f">&#9670;&#160;</a></span>handle_receive()</h2>
 
@@ -690,107 +744,107 @@ Private Attributes</h2></td></tr>
 
 <p>Handle completion of an async receive. </p>
 
-<p class="definition">Definition at line <a class="el" href="Protocol_8cpp_source.html#l00582">582</a> of file <a class="el" href="Protocol_8cpp_source.html">Protocol.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  584</span>{</div>
-<div class="line"><span class="lineno">  585</span>    <span class="keywordflow">if</span> (err) {</div>
-<div class="line"><span class="lineno">  586</span>        core_event_t ev;</div>
-<div class="line"><span class="lineno">  587</span>        ev.type = <a class="code hl_enumvalue" href="namespaceprotocol.html#af260499ef5bec7e4600e7a352cffd70ca6afae85c81e24d106bec978e17b89ce7">event_type_t::CONNECTION_LOST</a>;</div>
-<div class="line"><span class="lineno">  588</span>        ev.payload = std::monostate{};</div>
-<div class="line"><span class="lineno">  589</span> </div>
-<div class="line"><span class="lineno">  590</span>        {</div>
-<div class="line"><span class="lineno">  591</span>            std::lock_guard&lt;std::mutex&gt; qlk(<a class="code hl_variable" href="classprotocol_1_1Protocol.html#a750a7f35177f476578dfbea26ef67d7f">_event_mutex</a>);</div>
-<div class="line"><span class="lineno">  592</span> </div>
-<div class="line"><span class="lineno">  593</span>            <a class="code hl_variable" href="classprotocol_1_1Protocol.html#a30a53e0e32c07243fa5dca89019e607a">_event_queue</a>.push_back(std::move(ev));</div>
-<div class="line"><span class="lineno">  594</span>            <a class="code hl_variable" href="classprotocol_1_1Protocol.html#a49dea9de130b043dd8d04d469bf39489">_event_cv</a>.notify_one();</div>
-<div class="line"><span class="lineno">  595</span>        }</div>
-<div class="line"><span class="lineno">  596</span> </div>
-<div class="line"><span class="lineno">  597</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="classprotocol_1_1Protocol.html#a06c27ec67e384e01671d7909b4490009">_socket</a> &amp;&amp; <a class="code hl_variable" href="classprotocol_1_1Protocol.html#a06c27ec67e384e01671d7909b4490009">_socket</a>-&gt;is_open())</div>
-<div class="line"><span class="lineno">  598</span>            <a class="code hl_function" href="classprotocol_1_1Protocol.html#a9894677806dbffb3b4ed3221f664a548">schedule_receive</a>();</div>
-<div class="line"><span class="lineno">  599</span>        <span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno">  600</span>    }</div>
-<div class="line"><span class="lineno">  601</span> </div>
-<div class="line"><span class="lineno">  602</span>    <span class="keywordflow">if</span> (bytes_transferred &lt; <span class="keyword">sizeof</span>(packet_header_t)) {</div>
-<div class="line"><span class="lineno">  603</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="classprotocol_1_1Protocol.html#a06c27ec67e384e01671d7909b4490009">_socket</a> &amp;&amp; <a class="code hl_variable" href="classprotocol_1_1Protocol.html#a06c27ec67e384e01671d7909b4490009">_socket</a>-&gt;is_open())</div>
-<div class="line"><span class="lineno">  604</span>            <a class="code hl_function" href="classprotocol_1_1Protocol.html#a9894677806dbffb3b4ed3221f664a548">schedule_receive</a>();</div>
-<div class="line"><span class="lineno">  605</span>        <span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno">  606</span>    }</div>
+<p class="definition">Definition at line <a class="el" href="Protocol_8cpp_source.html#l00597">597</a> of file <a class="el" href="Protocol_8cpp_source.html">Protocol.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  599</span>{</div>
+<div class="line"><span class="lineno">  600</span>    <span class="keywordflow">if</span> (err) {</div>
+<div class="line"><span class="lineno">  601</span>        core_event_t ev;</div>
+<div class="line"><span class="lineno">  602</span>        ev.type = <a class="code hl_enumvalue" href="namespaceprotocol.html#af260499ef5bec7e4600e7a352cffd70ca6afae85c81e24d106bec978e17b89ce7">event_type_t::CONNECTION_LOST</a>;</div>
+<div class="line"><span class="lineno">  603</span>        ev.payload = std::monostate{};</div>
+<div class="line"><span class="lineno">  604</span> </div>
+<div class="line"><span class="lineno">  605</span>        {</div>
+<div class="line"><span class="lineno">  606</span>            std::lock_guard&lt;std::mutex&gt; qlk(<a class="code hl_variable" href="classprotocol_1_1Protocol.html#a750a7f35177f476578dfbea26ef67d7f">_event_mutex</a>);</div>
 <div class="line"><span class="lineno">  607</span> </div>
-<div class="line"><span class="lineno">  608</span>    packet_header_t packet_header;</div>
-<div class="line"><span class="lineno">  609</span>    std::memcpy(&amp;packet_header, <a class="code hl_variable" href="classprotocol_1_1Protocol.html#aa5f15843028a982095c3232c092a2f0f">_receive_buffer</a>.data(), <span class="keyword">sizeof</span>(packet_header));</div>
-<div class="line"><span class="lineno">  610</span> </div>
-<div class="line"><span class="lineno">  611</span>    packet_t packet;</div>
-<div class="line"><span class="lineno">  612</span>    packet.header.message_type = ntohs(packet_header.message_type);</div>
-<div class="line"><span class="lineno">  613</span>    packet.header.flags = packet_header.flags;</div>
-<div class="line"><span class="lineno">  614</span>    packet.header.sequence = <a class="code hl_function" href="namespaceprotocol_1_1utils.html#a08505e4df49b2ca7b58ca0cf13459cc8">utils::from_network_u32</a>(packet_header.sequence);</div>
-<div class="line"><span class="lineno">  615</span>    packet.header.ack = <a class="code hl_function" href="namespaceprotocol_1_1utils.html#a08505e4df49b2ca7b58ca0cf13459cc8">utils::from_network_u32</a>(packet_header.ack);</div>
-<div class="line"><span class="lineno">  616</span>    packet.header.ack_bits = <a class="code hl_function" href="namespaceprotocol_1_1utils.html#a08505e4df49b2ca7b58ca0cf13459cc8">utils::from_network_u32</a>(packet_header.ack_bits);</div>
-<div class="line"><span class="lineno">  617</span>    packet.header.payload_length = ntohs(packet_header.payload_length);</div>
-<div class="line"><span class="lineno">  618</span> </div>
-<div class="line"><span class="lineno">  619</span>    std::size_t expected_payload = <span class="keyword">static_cast&lt;</span>std::size_t<span class="keyword">&gt;</span>(packet.header.payload_length);</div>
-<div class="line"><span class="lineno">  620</span>    std::size_t available = (bytes_transferred &gt; <span class="keyword">sizeof</span>(packet_header)) ?</div>
-<div class="line"><span class="lineno">  621</span>        (bytes_transferred - <span class="keyword">sizeof</span>(packet_header)) : 0;</div>
-<div class="line"><span class="lineno">  622</span>    std::size_t to_copy = std::min(expected_payload, available);</div>
-<div class="line"><span class="lineno">  623</span> </div>
-<div class="line"><span class="lineno">  624</span>    packet.payload.assign(<a class="code hl_variable" href="classprotocol_1_1Protocol.html#aa5f15843028a982095c3232c092a2f0f">_receive_buffer</a>.begin() + <span class="keyword">sizeof</span>(packet_header),</div>
-<div class="line"><span class="lineno">  625</span>        <a class="code hl_variable" href="classprotocol_1_1Protocol.html#aa5f15843028a982095c3232c092a2f0f">_receive_buffer</a>.begin() + <span class="keyword">sizeof</span>(packet_header) + to_copy);</div>
-<div class="line"><span class="lineno">  626</span>    packet.remote = remote;</div>
-<div class="line"><span class="lineno">  627</span> </div>
-<div class="line"><span class="lineno">  628</span>    <a class="code hl_typedef" href="namespaceprotocol.html#aeab09fcfc801d74e8e1cb9f98c6e0fed">steady_timepoint</a> now = std::chrono::steady_clock::now();</div>
-<div class="line"><span class="lineno">  629</span> </div>
-<div class="line"><span class="lineno">  630</span>    {</div>
-<div class="line"><span class="lineno">  631</span>        uint32_t ack = packet.header.ack;</div>
-<div class="line"><span class="lineno">  632</span> </div>
-<div class="line"><span class="lineno">  633</span>        <span class="keywordflow">if</span> (ack != 0) {</div>
-<div class="line"><span class="lineno">  634</span>            std::lock_guard&lt;std::mutex&gt; lk(<a class="code hl_variable" href="classprotocol_1_1Protocol.html#af842d6446d761f0dbf00cc3fad459981">_pending_mutex</a>);</div>
-<div class="line"><span class="lineno">  635</span> </div>
-<div class="line"><span class="lineno">  636</span>            <span class="comment">// remove ack</span></div>
-<div class="line"><span class="lineno">  637</span>            <span class="keyword">auto</span> it = <a class="code hl_variable" href="classprotocol_1_1Protocol.html#a42ccd40786890e0461525bf28b6a1ef9">_pending_sends</a>.find(ack);</div>
-<div class="line"><span class="lineno">  638</span>            <span class="keywordflow">if</span> (it != <a class="code hl_variable" href="classprotocol_1_1Protocol.html#a42ccd40786890e0461525bf28b6a1ef9">_pending_sends</a>.end())</div>
-<div class="line"><span class="lineno">  639</span>                <a class="code hl_variable" href="classprotocol_1_1Protocol.html#a42ccd40786890e0461525bf28b6a1ef9">_pending_sends</a>.erase(it);</div>
-<div class="line"><span class="lineno">  640</span> </div>
-<div class="line"><span class="lineno">  641</span>            <span class="comment">// remove ack bits</span></div>
-<div class="line"><span class="lineno">  642</span>            <span class="keywordflow">for</span> (uint32_t bit = 0; bit &lt; 32; ++bit) {</div>
-<div class="line"><span class="lineno">  643</span>                <span class="keywordflow">if</span> ((packet.header.ack_bits &amp; (1u &lt;&lt; bit)) &amp;&amp; bit &lt; ack) {</div>
-<div class="line"><span class="lineno">  644</span>                    uint32_t seq = ack - 1u - bit;</div>
-<div class="line"><span class="lineno">  645</span>                    <span class="keyword">auto</span> it2 = <a class="code hl_variable" href="classprotocol_1_1Protocol.html#a42ccd40786890e0461525bf28b6a1ef9">_pending_sends</a>.find(seq);</div>
-<div class="line"><span class="lineno">  646</span> </div>
-<div class="line"><span class="lineno">  647</span>                    <span class="keywordflow">if</span> (it2 != <a class="code hl_variable" href="classprotocol_1_1Protocol.html#a42ccd40786890e0461525bf28b6a1ef9">_pending_sends</a>.end())</div>
-<div class="line"><span class="lineno">  648</span>                        <a class="code hl_variable" href="classprotocol_1_1Protocol.html#a42ccd40786890e0461525bf28b6a1ef9">_pending_sends</a>.erase(it2);</div>
-<div class="line"><span class="lineno">  649</span>                }</div>
-<div class="line"><span class="lineno">  650</span>            }</div>
-<div class="line"><span class="lineno">  651</span>        }</div>
-<div class="line"><span class="lineno">  652</span>    }</div>
-<div class="line"><span class="lineno">  653</span> </div>
-<div class="line"><span class="lineno">  654</span>    std::string key = <a class="code hl_function" href="namespaceprotocol_1_1utils.html#afdcd44435a34419031d17e265fd32f4e">protocol::utils::endpoint_to_string</a>(remote);</div>
-<div class="line"><span class="lineno">  655</span>    std::vector&lt;packet_t&gt; to_deliver;</div>
-<div class="line"><span class="lineno">  656</span>    {</div>
-<div class="line"><span class="lineno">  657</span>        std::lock_guard&lt;std::mutex&gt; plk(<a class="code hl_variable" href="classprotocol_1_1Protocol.html#ada393d1b97dfced321321f18d8bfcceb">_peer_mutex</a>);</div>
-<div class="line"><span class="lineno">  658</span>        <span class="keyword">auto</span> &amp;state = <a class="code hl_variable" href="classprotocol_1_1Protocol.html#add1c3aec4c4e77dd13a6549ee13d3f3e">_peer_states</a>[key];</div>
-<div class="line"><span class="lineno">  659</span>        uint32_t seq = packet.header.sequence;</div>
-<div class="line"><span class="lineno">  660</span> </div>
-<div class="line"><span class="lineno">  661</span>        <a class="code hl_function" href="Protocol_8cpp.html#a030fc36fea04b55ed306cf4cbeeebb11">update_peer_ack_window</a>(state, seq);</div>
-<div class="line"><span class="lineno">  662</span> </div>
-<div class="line"><span class="lineno">  663</span>        <span class="keywordflow">if</span> (packet.header.flags == <a class="code hl_enumvalue" href="namespaceprotocol.html#a1d4d9634cbc99b8530d0d75ce961f0bcac4878517fb38ded510bd28639895348b">flag_t::RELIABLE_ORDERED</a>) {</div>
-<div class="line"><span class="lineno">  664</span>            <span class="keyword">auto</span> enqueue_local = [&amp;to_deliver](packet_t &amp;&amp;p){</div>
-<div class="line"><span class="lineno">  665</span>                to_deliver.push_back(std::move(p));</div>
-<div class="line"><span class="lineno">  666</span>            };</div>
-<div class="line"><span class="lineno">  667</span>            <a class="code hl_function" href="Protocol_8cpp.html#ac315d8e991103f6f885eabe69801eb95">handle_ordered_delivery</a>(state, std::move(packet), now, enqueue_local);</div>
-<div class="line"><span class="lineno">  668</span>        } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">  669</span>            to_deliver.push_back(std::move(packet));</div>
-<div class="line"><span class="lineno">  670</span>        }</div>
-<div class="line"><span class="lineno">  671</span>    }</div>
-<div class="line"><span class="lineno">  672</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;p : to_deliver)</div>
-<div class="line"><span class="lineno">  673</span>        <a class="code hl_function" href="classprotocol_1_1Protocol.html#a9f8e6c97dfb05abcd8351921d6b18445">enqueue_packet_event</a>(<a class="code hl_namespace" href="namespacestd.html">std</a>::move(p));</div>
-<div class="line"><span class="lineno">  674</span> </div>
-<div class="line"><span class="lineno">  675</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="classprotocol_1_1Protocol.html#a06c27ec67e384e01671d7909b4490009">_socket</a> &amp;&amp; <a class="code hl_variable" href="classprotocol_1_1Protocol.html#a06c27ec67e384e01671d7909b4490009">_socket</a>-&gt;is_open())</div>
-<div class="line"><span class="lineno">  676</span>        <a class="code hl_function" href="classprotocol_1_1Protocol.html#a9894677806dbffb3b4ed3221f664a548">schedule_receive</a>();</div>
-<div class="line"><span class="lineno">  677</span>}</div>
-<div class="ttc" id="aProtocol_8cpp_html_a030fc36fea04b55ed306cf4cbeeebb11"><div class="ttname"><a href="Protocol_8cpp.html#a030fc36fea04b55ed306cf4cbeeebb11">update_peer_ack_window</a></div><div class="ttdeci">void update_peer_ack_window(protocol::peer_receive_state_t &amp;state, uint32_t seq) noexcept</div><div class="ttdoc">Update the peer ack window (last_received / ack_bits) for piggybacking.</div><div class="ttdef"><b>Definition</b> <a href="Protocol_8cpp_source.html#l00473">Protocol.cpp:473</a></div></div>
-<div class="ttc" id="aProtocol_8cpp_html_ac315d8e991103f6f885eabe69801eb95"><div class="ttname"><a href="Protocol_8cpp.html#ac315d8e991103f6f885eabe69801eb95">handle_ordered_delivery</a></div><div class="ttdeci">void handle_ordered_delivery(protocol::peer_receive_state_t &amp;state, protocol::packet_t &amp;&amp;packet, protocol::steady_timepoint now, const std::function&lt; void(protocol::packet_t &amp;&amp;)&gt; &amp;enqueue_fn) noexcept</div><div class="ttdoc">Handle ordered-delivery semantics for incoming packet.</div><div class="ttdef"><b>Definition</b> <a href="Protocol_8cpp_source.html#l00536">Protocol.cpp:536</a></div></div>
-<div class="ttc" id="aclassprotocol_1_1Protocol_html_a9894677806dbffb3b4ed3221f664a548"><div class="ttname"><a href="classprotocol_1_1Protocol.html#a9894677806dbffb3b4ed3221f664a548">protocol::Protocol::schedule_receive</a></div><div class="ttdeci">void schedule_receive()</div><div class="ttdoc">Post an async_receive_from into the socket buffer.</div><div class="ttdef"><b>Definition</b> <a href="Protocol_8cpp_source.html#l00453">Protocol.cpp:453</a></div></div>
+<div class="line"><span class="lineno">  608</span>            <a class="code hl_variable" href="classprotocol_1_1Protocol.html#a30a53e0e32c07243fa5dca89019e607a">_event_queue</a>.push_back(std::move(ev));</div>
+<div class="line"><span class="lineno">  609</span>            <a class="code hl_variable" href="classprotocol_1_1Protocol.html#a49dea9de130b043dd8d04d469bf39489">_event_cv</a>.notify_one();</div>
+<div class="line"><span class="lineno">  610</span>        }</div>
+<div class="line"><span class="lineno">  611</span> </div>
+<div class="line"><span class="lineno">  612</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="classprotocol_1_1Protocol.html#a06c27ec67e384e01671d7909b4490009">_socket</a> &amp;&amp; <a class="code hl_variable" href="classprotocol_1_1Protocol.html#a06c27ec67e384e01671d7909b4490009">_socket</a>-&gt;is_open())</div>
+<div class="line"><span class="lineno">  613</span>            <a class="code hl_function" href="classprotocol_1_1Protocol.html#a9894677806dbffb3b4ed3221f664a548">schedule_receive</a>();</div>
+<div class="line"><span class="lineno">  614</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">  615</span>    }</div>
+<div class="line"><span class="lineno">  616</span> </div>
+<div class="line"><span class="lineno">  617</span>    <span class="keywordflow">if</span> (bytes_transferred &lt; <span class="keyword">sizeof</span>(packet_header_t)) {</div>
+<div class="line"><span class="lineno">  618</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="classprotocol_1_1Protocol.html#a06c27ec67e384e01671d7909b4490009">_socket</a> &amp;&amp; <a class="code hl_variable" href="classprotocol_1_1Protocol.html#a06c27ec67e384e01671d7909b4490009">_socket</a>-&gt;is_open())</div>
+<div class="line"><span class="lineno">  619</span>            <a class="code hl_function" href="classprotocol_1_1Protocol.html#a9894677806dbffb3b4ed3221f664a548">schedule_receive</a>();</div>
+<div class="line"><span class="lineno">  620</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">  621</span>    }</div>
+<div class="line"><span class="lineno">  622</span> </div>
+<div class="line"><span class="lineno">  623</span>    packet_header_t packet_header;</div>
+<div class="line"><span class="lineno">  624</span>    std::memcpy(&amp;packet_header, <a class="code hl_variable" href="classprotocol_1_1Protocol.html#aa5f15843028a982095c3232c092a2f0f">_receive_buffer</a>.data(), <span class="keyword">sizeof</span>(packet_header));</div>
+<div class="line"><span class="lineno">  625</span> </div>
+<div class="line"><span class="lineno">  626</span>    packet_t packet;</div>
+<div class="line"><span class="lineno">  627</span>    packet.header.message_type = ntohs(packet_header.message_type);</div>
+<div class="line"><span class="lineno">  628</span>    packet.header.flags = packet_header.flags;</div>
+<div class="line"><span class="lineno">  629</span>    packet.header.sequence = <a class="code hl_function" href="namespaceprotocol_1_1utils.html#a08505e4df49b2ca7b58ca0cf13459cc8">utils::from_network_u32</a>(packet_header.sequence);</div>
+<div class="line"><span class="lineno">  630</span>    packet.header.ack = <a class="code hl_function" href="namespaceprotocol_1_1utils.html#a08505e4df49b2ca7b58ca0cf13459cc8">utils::from_network_u32</a>(packet_header.ack);</div>
+<div class="line"><span class="lineno">  631</span>    packet.header.ack_bits = <a class="code hl_function" href="namespaceprotocol_1_1utils.html#a08505e4df49b2ca7b58ca0cf13459cc8">utils::from_network_u32</a>(packet_header.ack_bits);</div>
+<div class="line"><span class="lineno">  632</span>    packet.header.payload_length = ntohs(packet_header.payload_length);</div>
+<div class="line"><span class="lineno">  633</span> </div>
+<div class="line"><span class="lineno">  634</span>    std::size_t expected_payload = <span class="keyword">static_cast&lt;</span>std::size_t<span class="keyword">&gt;</span>(packet.header.payload_length);</div>
+<div class="line"><span class="lineno">  635</span>    std::size_t available = (bytes_transferred &gt; <span class="keyword">sizeof</span>(packet_header)) ?</div>
+<div class="line"><span class="lineno">  636</span>        (bytes_transferred - <span class="keyword">sizeof</span>(packet_header)) : 0;</div>
+<div class="line"><span class="lineno">  637</span>    std::size_t to_copy = std::min(expected_payload, available);</div>
+<div class="line"><span class="lineno">  638</span> </div>
+<div class="line"><span class="lineno">  639</span>    packet.payload.assign(<a class="code hl_variable" href="classprotocol_1_1Protocol.html#aa5f15843028a982095c3232c092a2f0f">_receive_buffer</a>.begin() + <span class="keyword">sizeof</span>(packet_header),</div>
+<div class="line"><span class="lineno">  640</span>        <a class="code hl_variable" href="classprotocol_1_1Protocol.html#aa5f15843028a982095c3232c092a2f0f">_receive_buffer</a>.begin() + <span class="keyword">sizeof</span>(packet_header) + to_copy);</div>
+<div class="line"><span class="lineno">  641</span>    packet.remote = remote;</div>
+<div class="line"><span class="lineno">  642</span> </div>
+<div class="line"><span class="lineno">  643</span>    <a class="code hl_typedef" href="namespaceprotocol.html#aeab09fcfc801d74e8e1cb9f98c6e0fed">steady_timepoint</a> now = std::chrono::steady_clock::now();</div>
+<div class="line"><span class="lineno">  644</span> </div>
+<div class="line"><span class="lineno">  645</span>    {</div>
+<div class="line"><span class="lineno">  646</span>        uint32_t ack = packet.header.ack;</div>
+<div class="line"><span class="lineno">  647</span> </div>
+<div class="line"><span class="lineno">  648</span>        <span class="keywordflow">if</span> (ack != 0) {</div>
+<div class="line"><span class="lineno">  649</span>            std::lock_guard&lt;std::mutex&gt; lk(<a class="code hl_variable" href="classprotocol_1_1Protocol.html#af842d6446d761f0dbf00cc3fad459981">_pending_mutex</a>);</div>
+<div class="line"><span class="lineno">  650</span> </div>
+<div class="line"><span class="lineno">  651</span>            <span class="comment">// remove ack</span></div>
+<div class="line"><span class="lineno">  652</span>            <span class="keyword">auto</span> it = <a class="code hl_variable" href="classprotocol_1_1Protocol.html#a42ccd40786890e0461525bf28b6a1ef9">_pending_sends</a>.find(ack);</div>
+<div class="line"><span class="lineno">  653</span>            <span class="keywordflow">if</span> (it != <a class="code hl_variable" href="classprotocol_1_1Protocol.html#a42ccd40786890e0461525bf28b6a1ef9">_pending_sends</a>.end())</div>
+<div class="line"><span class="lineno">  654</span>                <a class="code hl_variable" href="classprotocol_1_1Protocol.html#a42ccd40786890e0461525bf28b6a1ef9">_pending_sends</a>.erase(it);</div>
+<div class="line"><span class="lineno">  655</span> </div>
+<div class="line"><span class="lineno">  656</span>            <span class="comment">// remove ack bits</span></div>
+<div class="line"><span class="lineno">  657</span>            <span class="keywordflow">for</span> (uint32_t bit = 0; bit &lt; 32; ++bit) {</div>
+<div class="line"><span class="lineno">  658</span>                <span class="keywordflow">if</span> ((packet.header.ack_bits &amp; (1u &lt;&lt; bit)) &amp;&amp; bit &lt; ack) {</div>
+<div class="line"><span class="lineno">  659</span>                    uint32_t seq = ack - 1u - bit;</div>
+<div class="line"><span class="lineno">  660</span>                    <span class="keyword">auto</span> it2 = <a class="code hl_variable" href="classprotocol_1_1Protocol.html#a42ccd40786890e0461525bf28b6a1ef9">_pending_sends</a>.find(seq);</div>
+<div class="line"><span class="lineno">  661</span> </div>
+<div class="line"><span class="lineno">  662</span>                    <span class="keywordflow">if</span> (it2 != <a class="code hl_variable" href="classprotocol_1_1Protocol.html#a42ccd40786890e0461525bf28b6a1ef9">_pending_sends</a>.end())</div>
+<div class="line"><span class="lineno">  663</span>                        <a class="code hl_variable" href="classprotocol_1_1Protocol.html#a42ccd40786890e0461525bf28b6a1ef9">_pending_sends</a>.erase(it2);</div>
+<div class="line"><span class="lineno">  664</span>                }</div>
+<div class="line"><span class="lineno">  665</span>            }</div>
+<div class="line"><span class="lineno">  666</span>        }</div>
+<div class="line"><span class="lineno">  667</span>    }</div>
+<div class="line"><span class="lineno">  668</span> </div>
+<div class="line"><span class="lineno">  669</span>    std::string key = <a class="code hl_function" href="namespaceprotocol_1_1utils.html#afdcd44435a34419031d17e265fd32f4e">protocol::utils::endpoint_to_string</a>(remote);</div>
+<div class="line"><span class="lineno">  670</span>    std::vector&lt;packet_t&gt; to_deliver;</div>
+<div class="line"><span class="lineno">  671</span>    {</div>
+<div class="line"><span class="lineno">  672</span>        std::lock_guard&lt;std::mutex&gt; plk(<a class="code hl_variable" href="classprotocol_1_1Protocol.html#ada393d1b97dfced321321f18d8bfcceb">_peer_mutex</a>);</div>
+<div class="line"><span class="lineno">  673</span>        <span class="keyword">auto</span> &amp;state = <a class="code hl_variable" href="classprotocol_1_1Protocol.html#add1c3aec4c4e77dd13a6549ee13d3f3e">_peer_states</a>[key];</div>
+<div class="line"><span class="lineno">  674</span>        uint32_t seq = packet.header.sequence;</div>
+<div class="line"><span class="lineno">  675</span> </div>
+<div class="line"><span class="lineno">  676</span>        <a class="code hl_function" href="Protocol_8cpp.html#a030fc36fea04b55ed306cf4cbeeebb11">update_peer_ack_window</a>(state, seq);</div>
+<div class="line"><span class="lineno">  677</span> </div>
+<div class="line"><span class="lineno">  678</span>        <span class="keywordflow">if</span> (packet.header.flags == <a class="code hl_enumvalue" href="namespaceprotocol.html#a1d4d9634cbc99b8530d0d75ce961f0bcac4878517fb38ded510bd28639895348b">flag_t::RELIABLE_ORDERED</a>) {</div>
+<div class="line"><span class="lineno">  679</span>            <span class="keyword">auto</span> enqueue_local = [&amp;to_deliver](packet_t &amp;&amp;p){</div>
+<div class="line"><span class="lineno">  680</span>                to_deliver.push_back(std::move(p));</div>
+<div class="line"><span class="lineno">  681</span>            };</div>
+<div class="line"><span class="lineno">  682</span>            <a class="code hl_function" href="Protocol_8cpp.html#ac315d8e991103f6f885eabe69801eb95">handle_ordered_delivery</a>(state, std::move(packet), now, enqueue_local);</div>
+<div class="line"><span class="lineno">  683</span>        } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  684</span>            to_deliver.push_back(std::move(packet));</div>
+<div class="line"><span class="lineno">  685</span>        }</div>
+<div class="line"><span class="lineno">  686</span>    }</div>
+<div class="line"><span class="lineno">  687</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;p : to_deliver)</div>
+<div class="line"><span class="lineno">  688</span>        <a class="code hl_function" href="classprotocol_1_1Protocol.html#a9f8e6c97dfb05abcd8351921d6b18445">enqueue_packet_event</a>(<a class="code hl_namespace" href="namespacestd.html">std</a>::move(p));</div>
+<div class="line"><span class="lineno">  689</span> </div>
+<div class="line"><span class="lineno">  690</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="classprotocol_1_1Protocol.html#a06c27ec67e384e01671d7909b4490009">_socket</a> &amp;&amp; <a class="code hl_variable" href="classprotocol_1_1Protocol.html#a06c27ec67e384e01671d7909b4490009">_socket</a>-&gt;is_open())</div>
+<div class="line"><span class="lineno">  691</span>        <a class="code hl_function" href="classprotocol_1_1Protocol.html#a9894677806dbffb3b4ed3221f664a548">schedule_receive</a>();</div>
+<div class="line"><span class="lineno">  692</span>}</div>
+<div class="ttc" id="aProtocol_8cpp_html_a030fc36fea04b55ed306cf4cbeeebb11"><div class="ttname"><a href="Protocol_8cpp.html#a030fc36fea04b55ed306cf4cbeeebb11">update_peer_ack_window</a></div><div class="ttdeci">void update_peer_ack_window(protocol::peer_receive_state_t &amp;state, uint32_t seq) noexcept</div><div class="ttdoc">Update the peer ack window (last_received / ack_bits) for piggybacking.</div><div class="ttdef"><b>Definition</b> <a href="Protocol_8cpp_source.html#l00488">Protocol.cpp:488</a></div></div>
+<div class="ttc" id="aProtocol_8cpp_html_ac315d8e991103f6f885eabe69801eb95"><div class="ttname"><a href="Protocol_8cpp.html#ac315d8e991103f6f885eabe69801eb95">handle_ordered_delivery</a></div><div class="ttdeci">void handle_ordered_delivery(protocol::peer_receive_state_t &amp;state, protocol::packet_t &amp;&amp;packet, protocol::steady_timepoint now, const std::function&lt; void(protocol::packet_t &amp;&amp;)&gt; &amp;enqueue_fn) noexcept</div><div class="ttdoc">Handle ordered-delivery semantics for incoming packet.</div><div class="ttdef"><b>Definition</b> <a href="Protocol_8cpp_source.html#l00551">Protocol.cpp:551</a></div></div>
+<div class="ttc" id="aclassprotocol_1_1Protocol_html_a9894677806dbffb3b4ed3221f664a548"><div class="ttname"><a href="classprotocol_1_1Protocol.html#a9894677806dbffb3b4ed3221f664a548">protocol::Protocol::schedule_receive</a></div><div class="ttdeci">void schedule_receive()</div><div class="ttdoc">Post an async_receive_from into the socket buffer.</div><div class="ttdef"><b>Definition</b> <a href="Protocol_8cpp_source.html#l00468">Protocol.cpp:468</a></div></div>
 <div class="ttc" id="aclassprotocol_1_1Protocol_html_a9f8e6c97dfb05abcd8351921d6b18445"><div class="ttname"><a href="classprotocol_1_1Protocol.html#a9f8e6c97dfb05abcd8351921d6b18445">protocol::Protocol::enqueue_packet_event</a></div><div class="ttdeci">void enqueue_packet_event(packet_t &amp;&amp;packet)</div><div class="ttdoc">Enqueue a PACKET_RECEIVED event for delivery to the consumer.</div><div class="ttdef"><b>Definition</b> <a href="Protocol_8cpp_source.html#l00278">Protocol.cpp:278</a></div></div>
-<div class="ttc" id="aclassprotocol_1_1Protocol_html_ada393d1b97dfced321321f18d8bfcceb"><div class="ttname"><a href="classprotocol_1_1Protocol.html#ada393d1b97dfced321321f18d8bfcceb">protocol::Protocol::_peer_mutex</a></div><div class="ttdeci">std::mutex _peer_mutex</div><div class="ttdef"><b>Definition</b> <a href="Protocol_8hpp_source.html#l00196">Protocol.hpp:196</a></div></div>
-<div class="ttc" id="aclassprotocol_1_1Protocol_html_af842d6446d761f0dbf00cc3fad459981"><div class="ttname"><a href="classprotocol_1_1Protocol.html#af842d6446d761f0dbf00cc3fad459981">protocol::Protocol::_pending_mutex</a></div><div class="ttdeci">std::mutex _pending_mutex</div><div class="ttdef"><b>Definition</b> <a href="Protocol_8hpp_source.html#l00192">Protocol.hpp:192</a></div></div>
+<div class="ttc" id="aclassprotocol_1_1Protocol_html_ada393d1b97dfced321321f18d8bfcceb"><div class="ttname"><a href="classprotocol_1_1Protocol.html#ada393d1b97dfced321321f18d8bfcceb">protocol::Protocol::_peer_mutex</a></div><div class="ttdeci">std::mutex _peer_mutex</div><div class="ttdef"><b>Definition</b> <a href="Protocol_8hpp_source.html#l00200">Protocol.hpp:200</a></div></div>
+<div class="ttc" id="aclassprotocol_1_1Protocol_html_af842d6446d761f0dbf00cc3fad459981"><div class="ttname"><a href="classprotocol_1_1Protocol.html#af842d6446d761f0dbf00cc3fad459981">protocol::Protocol::_pending_mutex</a></div><div class="ttdeci">std::mutex _pending_mutex</div><div class="ttdef"><b>Definition</b> <a href="Protocol_8hpp_source.html#l00196">Protocol.hpp:196</a></div></div>
 <div class="ttc" id="anamespaceprotocol_1_1utils_html_a08505e4df49b2ca7b58ca0cf13459cc8"><div class="ttname"><a href="namespaceprotocol_1_1utils.html#a08505e4df49b2ca7b58ca0cf13459cc8">protocol::utils::from_network_u32</a></div><div class="ttdeci">uint32_t from_network_u32(uint32_t net_value) noexcept</div><div class="ttdoc">Convert a network-order 32-bit value (big-endian) to host byte order.</div><div class="ttdef"><b>Definition</b> <a href="utils_8cpp_source.html#l00024">utils.cpp:24</a></div></div>
 <div class="ttc" id="anamespaceprotocol_1_1utils_html_afdcd44435a34419031d17e265fd32f4e"><div class="ttname"><a href="namespaceprotocol_1_1utils.html#afdcd44435a34419031d17e265fd32f4e">protocol::utils::endpoint_to_string</a></div><div class="ttdeci">std::string endpoint_to_string(const boost::asio::ip::udp::endpoint &amp;ep) noexcept</div><div class="ttdoc">Convert endpoint to unique textual key &quot;ip:port&quot;.</div><div class="ttdef"><b>Definition</b> <a href="utils_8cpp_source.html#l00029">utils.cpp:29</a></div></div>
 <div class="ttc" id="anamespaceprotocol_html_a1d4d9634cbc99b8530d0d75ce961f0bcac4878517fb38ded510bd28639895348b"><div class="ttname"><a href="namespaceprotocol.html#a1d4d9634cbc99b8530d0d75ce961f0bcac4878517fb38ded510bd28639895348b">protocol::flag_t::RELIABLE_ORDERED</a></div><div class="ttdeci">@ RELIABLE_ORDERED</div><div class="ttdoc">retransmit; ordered delivery</div></div>
@@ -798,12 +852,12 @@ Private Attributes</h2></td></tr>
 <div class="ttc" id="anamespaceprotocol_html_af260499ef5bec7e4600e7a352cffd70ca6afae85c81e24d106bec978e17b89ce7"><div class="ttname"><a href="namespaceprotocol.html#af260499ef5bec7e4600e7a352cffd70ca6afae85c81e24d106bec978e17b89ce7">protocol::event_type_t::CONNECTION_LOST</a></div><div class="ttdeci">@ CONNECTION_LOST</div><div class="ttdoc">remote timed out / unreachable</div></div>
 <div class="ttc" id="anamespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div><div class="ttdoc">Custom hash function for arcade::types::Position.</div><div class="ttdef"><b>Definition</b> <a href="struct_8hpp_source.html#l00346">struct.hpp:346</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="ProtocolTypes_8hpp_source.html#l00107">protocol::packet_header_t::ack</a>, <a class="el" href="ProtocolTypes_8hpp_source.html#l00108">protocol::packet_header_t::ack_bits</a>, <a class="el" href="namespaceprotocol.html#af260499ef5bec7e4600e7a352cffd70ca6afae85c81e24d106bec978e17b89ce7">protocol::CONNECTION_LOST</a>, <a class="el" href="utils_8cpp_source.html#l00029">protocol::utils::endpoint_to_string()</a>, <a class="el" href="ProtocolTypes_8hpp_source.html#l00105">protocol::packet_header_t::flags</a>, <a class="el" href="utils_8cpp_source.html#l00024">protocol::utils::from_network_u32()</a>, <a class="el" href="Protocol_8cpp_source.html#l00536">handle_ordered_delivery()</a>, <a class="el" href="ProtocolTypes_8hpp_source.html#l00142">protocol::packet_t::header</a>, <a class="el" href="ProtocolTypes_8hpp_source.html#l00104">protocol::packet_header_t::message_type</a>, <a class="el" href="ProtocolTypes_8hpp_source.html#l00143">protocol::packet_t::payload</a>, <a class="el" href="ProtocolTypes_8hpp_source.html#l00195">protocol::core_event_t::payload</a>, <a class="el" href="ProtocolTypes_8hpp_source.html#l00109">protocol::packet_header_t::payload_length</a>, <a class="el" href="namespaceprotocol.html#a1d4d9634cbc99b8530d0d75ce961f0bcac4878517fb38ded510bd28639895348b">protocol::RELIABLE_ORDERED</a>, <a class="el" href="ProtocolTypes_8hpp_source.html#l00144">protocol::packet_t::remote</a>, <a class="el" href="ProtocolTypes_8hpp_source.html#l00106">protocol::packet_header_t::sequence</a>, <a class="el" href="ProtocolTypes_8hpp_source.html#l00194">protocol::core_event_t::type</a>, and <a class="el" href="Protocol_8cpp_source.html#l00473">update_peer_ack_window()</a>.</p>
-<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+<p class="reference">References <a class="el" href="ProtocolTypes_8hpp_source.html#l00107">protocol::packet_header_t::ack</a>, <a class="el" href="ProtocolTypes_8hpp_source.html#l00108">protocol::packet_header_t::ack_bits</a>, <a class="el" href="namespaceprotocol.html#af260499ef5bec7e4600e7a352cffd70ca6afae85c81e24d106bec978e17b89ce7">protocol::CONNECTION_LOST</a>, <a class="el" href="utils_8cpp_source.html#l00029">protocol::utils::endpoint_to_string()</a>, <a class="el" href="ProtocolTypes_8hpp_source.html#l00105">protocol::packet_header_t::flags</a>, <a class="el" href="utils_8cpp_source.html#l00024">protocol::utils::from_network_u32()</a>, <a class="el" href="Protocol_8cpp_source.html#l00551">handle_ordered_delivery()</a>, <a class="el" href="ProtocolTypes_8hpp_source.html#l00142">protocol::packet_t::header</a>, <a class="el" href="ProtocolTypes_8hpp_source.html#l00104">protocol::packet_header_t::message_type</a>, <a class="el" href="ProtocolTypes_8hpp_source.html#l00143">protocol::packet_t::payload</a>, <a class="el" href="ProtocolTypes_8hpp_source.html#l00195">protocol::core_event_t::payload</a>, <a class="el" href="ProtocolTypes_8hpp_source.html#l00109">protocol::packet_header_t::payload_length</a>, <a class="el" href="namespaceprotocol.html#a1d4d9634cbc99b8530d0d75ce961f0bcac4878517fb38ded510bd28639895348b">protocol::RELIABLE_ORDERED</a>, <a class="el" href="ProtocolTypes_8hpp_source.html#l00144">protocol::packet_t::remote</a>, <a class="el" href="ProtocolTypes_8hpp_source.html#l00106">protocol::packet_header_t::sequence</a>, <a class="el" href="ProtocolTypes_8hpp_source.html#l00194">protocol::core_event_t::type</a>, and <a class="el" href="Protocol_8cpp_source.html#l00488">update_peer_ack_window()</a>.</p>
+<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classprotocol_1_1Protocol_a8775506ba36b376f91bd2d46c9bf4c2f_cgraph.svg" width="100%" height="450"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
@@ -908,12 +962,12 @@ Private Attributes</h2></td></tr>
 <p class="reference">References <a class="el" href="ProtocolTypes_8hpp_source.html#l00059">protocol::MAX_PACKET_SIZE_BYTES</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="GameProtocol_8cpp_source.html#l00205">protocol::game::GameProtocol::initialize()</a>.</p>
-<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classprotocol_1_1Protocol_a4e019a5e18ff4fd1287beddceb4e1e2c_icgraph.svg" width="100%" height="376"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classprotocol_1_1Protocol_a4e019a5e18ff4fd1287beddceb4e1e2c_icgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
 </div>
@@ -953,6 +1007,15 @@ Private Attributes</h2></td></tr>
 <div class="ttc" id="aclassprotocol_1_1Protocol_html_a11aa2e64ab4c07f299495a0249f9e347"><div class="ttname"><a href="classprotocol_1_1Protocol.html#a11aa2e64ab4c07f299495a0249f9e347">protocol::Protocol::instance</a></div><div class="ttdeci">static Protocol &amp; instance() noexcept</div><div class="ttdoc">Return the singleton instance (non-owning reference).</div><div class="ttdef"><b>Definition</b> <a href="Protocol_8cpp_source.html#l00044">Protocol.cpp:44</a></div></div>
 <div class="ttc" id="aclassprotocol_1_1Protocol_html_afc1a707fc4e7b76a7d7705edb716f4b7"><div class="ttname"><a href="classprotocol_1_1Protocol.html#afc1a707fc4e7b76a7d7705edb716f4b7">protocol::Protocol::Protocol</a></div><div class="ttdeci">Protocol()</div><div class="ttdef"><b>Definition</b> <a href="Protocol_8cpp_source.html#l00032">Protocol.cpp:32</a></div></div>
 </div><!-- fragment -->
+<p class="reference">Referenced by <a class="el" href="Rtype_8cpp_source.html#l00045">rtype::server::run()</a>.</p>
+<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classprotocol_1_1Protocol_a11aa2e64ab4c07f299495a0249f9e347_icgraph.svg" width="495" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
 </div>
 </div>
 <a id="a47a6a095a0268db018de9a391d1decbc" name="a47a6a095a0268db018de9a391d1decbc"></a>
@@ -1252,23 +1315,23 @@ Private Attributes</h2></td></tr>
 <p>Post an async_receive_from into the socket buffer. </p>
 <p>Must allocate endpoint storage that lives until handler runs. </p>
 
-<p class="definition">Definition at line <a class="el" href="Protocol_8cpp_source.html#l00453">453</a> of file <a class="el" href="Protocol_8cpp_source.html">Protocol.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  454</span>{</div>
-<div class="line"><span class="lineno">  455</span>    <span class="keywordflow">if</span> (!<a class="code hl_variable" href="classprotocol_1_1Protocol.html#a06c27ec67e384e01671d7909b4490009">_socket</a> || !<a class="code hl_variable" href="classprotocol_1_1Protocol.html#a06c27ec67e384e01671d7909b4490009">_socket</a>-&gt;is_open())</div>
-<div class="line"><span class="lineno">  456</span>        <span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno">  457</span> </div>
-<div class="line"><span class="lineno">  458</span>    <span class="keyword">auto</span> remote_ptr = std::make_shared&lt;udp::endpoint&gt;();</div>
-<div class="line"><span class="lineno">  459</span> </div>
-<div class="line"><span class="lineno">  460</span>    <span class="keywordflow">try</span> {</div>
-<div class="line"><span class="lineno">  461</span>        <a class="code hl_variable" href="classprotocol_1_1Protocol.html#a06c27ec67e384e01671d7909b4490009">_socket</a>-&gt;async_receive_from(boost::asio::buffer(<a class="code hl_variable" href="classprotocol_1_1Protocol.html#aa5f15843028a982095c3232c092a2f0f">_receive_buffer</a>), *remote_ptr,</div>
-<div class="line"><span class="lineno">  462</span>            [<span class="keyword">this</span>, remote_ptr](<span class="keyword">const</span> boost::system::error_code &amp;err,</div>
-<div class="line"><span class="lineno">  463</span>            std::size_t bytes_transferred) {</div>
-<div class="line"><span class="lineno">  464</span>                this-&gt;<a class="code hl_function" href="classprotocol_1_1Protocol.html#a8775506ba36b376f91bd2d46c9bf4c2f">handle_receive</a>(err, bytes_transferred, *remote_ptr);</div>
-<div class="line"><span class="lineno">  465</span>            }</div>
-<div class="line"><span class="lineno">  466</span>        );</div>
-<div class="line"><span class="lineno">  467</span>    } <span class="keywordflow">catch</span> (...) {}</div>
-<div class="line"><span class="lineno">  468</span>}</div>
-<div class="ttc" id="aclassprotocol_1_1Protocol_html_a8775506ba36b376f91bd2d46c9bf4c2f"><div class="ttname"><a href="classprotocol_1_1Protocol.html#a8775506ba36b376f91bd2d46c9bf4c2f">protocol::Protocol::handle_receive</a></div><div class="ttdeci">void handle_receive(const boost::system::error_code &amp;err, std::size_t bytes_transferred, const boost::asio::ip::udp::endpoint &amp;remote)</div><div class="ttdoc">Handle completion of an async receive.</div><div class="ttdef"><b>Definition</b> <a href="Protocol_8cpp_source.html#l00582">Protocol.cpp:582</a></div></div>
+<p class="definition">Definition at line <a class="el" href="Protocol_8cpp_source.html#l00468">468</a> of file <a class="el" href="Protocol_8cpp_source.html">Protocol.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  469</span>{</div>
+<div class="line"><span class="lineno">  470</span>    <span class="keywordflow">if</span> (!<a class="code hl_variable" href="classprotocol_1_1Protocol.html#a06c27ec67e384e01671d7909b4490009">_socket</a> || !<a class="code hl_variable" href="classprotocol_1_1Protocol.html#a06c27ec67e384e01671d7909b4490009">_socket</a>-&gt;is_open())</div>
+<div class="line"><span class="lineno">  471</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">  472</span> </div>
+<div class="line"><span class="lineno">  473</span>    <span class="keyword">auto</span> remote_ptr = std::make_shared&lt;udp::endpoint&gt;();</div>
+<div class="line"><span class="lineno">  474</span> </div>
+<div class="line"><span class="lineno">  475</span>    <span class="keywordflow">try</span> {</div>
+<div class="line"><span class="lineno">  476</span>        <a class="code hl_variable" href="classprotocol_1_1Protocol.html#a06c27ec67e384e01671d7909b4490009">_socket</a>-&gt;async_receive_from(boost::asio::buffer(<a class="code hl_variable" href="classprotocol_1_1Protocol.html#aa5f15843028a982095c3232c092a2f0f">_receive_buffer</a>), *remote_ptr,</div>
+<div class="line"><span class="lineno">  477</span>            [<span class="keyword">this</span>, remote_ptr](<span class="keyword">const</span> boost::system::error_code &amp;err,</div>
+<div class="line"><span class="lineno">  478</span>            std::size_t bytes_transferred) {</div>
+<div class="line"><span class="lineno">  479</span>                this-&gt;<a class="code hl_function" href="classprotocol_1_1Protocol.html#a8775506ba36b376f91bd2d46c9bf4c2f">handle_receive</a>(err, bytes_transferred, *remote_ptr);</div>
+<div class="line"><span class="lineno">  480</span>            }</div>
+<div class="line"><span class="lineno">  481</span>        );</div>
+<div class="line"><span class="lineno">  482</span>    } <span class="keywordflow">catch</span> (...) {}</div>
+<div class="line"><span class="lineno">  483</span>}</div>
+<div class="ttc" id="aclassprotocol_1_1Protocol_html_a8775506ba36b376f91bd2d46c9bf4c2f"><div class="ttname"><a href="classprotocol_1_1Protocol.html#a8775506ba36b376f91bd2d46c9bf4c2f">protocol::Protocol::handle_receive</a></div><div class="ttdeci">void handle_receive(const boost::system::error_code &amp;err, std::size_t bytes_transferred, const boost::asio::ip::udp::endpoint &amp;remote)</div><div class="ttdoc">Handle completion of an async receive.</div><div class="ttdef"><b>Definition</b> <a href="Protocol_8cpp_source.html#l00597">Protocol.cpp:597</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1333,11 +1396,11 @@ Private Attributes</h2></td></tr>
 <div class="ttc" id="aProtocol_8cpp_html_a0bcd1b15290d25e7e16b5a42c8358ece"><div class="ttname"><a href="Protocol_8cpp.html#a0bcd1b15290d25e7e16b5a42c8358ece">serialize_packet_ack</a></div><div class="ttdeci">std::shared_ptr&lt; std::vector&lt; uint8_t &gt; &gt; serialize_packet_ack(const protocol::packet_t &amp;packet, const protocol::peer_receive_state_t *peer_state)</div><div class="ttdoc">Serialize a packet_t into a contiguous send buffer with piggybacked ACK info.</div><div class="ttdef"><b>Definition</b> <a href="Protocol_8cpp_source.html#l00225">Protocol.cpp:225</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="utils_8cpp_source.html#l00029">protocol::utils::endpoint_to_string()</a>, and <a class="el" href="Protocol_8cpp_source.html#l00225">serialize_packet_ack()</a>.</p>
-<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classprotocol_1_1Protocol_a00cb427affd803b5c1944c97cfc95096_cgraph.svg" width="100%" height="376"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
@@ -1441,6 +1504,15 @@ Private Attributes</h2></td></tr>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="ProtocolTypes_8hpp_source.html#l00159">protocol::pending_send_t::attempts</a>, <a class="el" href="ProtocolTypes_8hpp_source.html#l00105">protocol::packet_header_t::flags</a>, <a class="el" href="ProtocolTypes_8hpp_source.html#l00142">protocol::packet_t::header</a>, <a class="el" href="ProtocolTypes_8hpp_source.html#l00160">protocol::pending_send_t::last_sent</a>, <a class="el" href="ProtocolTypes_8hpp_source.html#l00104">protocol::packet_header_t::message_type</a>, <a class="el" href="ProtocolTypes_8hpp_source.html#l00158">protocol::pending_send_t::packet</a>, <a class="el" href="ProtocolTypes_8hpp_source.html#l00143">protocol::packet_t::payload</a>, <a class="el" href="ProtocolTypes_8hpp_source.html#l00144">protocol::packet_t::remote</a>, <a class="el" href="ProtocolTypes_8hpp_source.html#l00106">protocol::packet_header_t::sequence</a>, and <a class="el" href="namespaceprotocol.html#a1d4d9634cbc99b8530d0d75ce961f0bca6e257e645974b9086ed66e9465e2d80c">protocol::UNRELIABLE</a>.</p>
 
+<p class="reference">Referenced by <a class="el" href="GameProtocol_8cpp_source.html#l00284">protocol::game::GameProtocol::send_raw()</a>.</p>
+<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classprotocol_1_1Protocol_a90084e5329cd41c79ae866b47e3f7986_icgraph.svg" width="100%" height="434"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
 </div>
 </div>
 <a id="a946d76775b6d4f3826d1e784a18dd9aa" name="a946d76775b6d4f3826d1e784a18dd9aa"></a>
@@ -1512,7 +1584,7 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">  144</span> </div>
 <div class="line"><span class="lineno">  145</span>    <a class="code hl_function" href="classprotocol_1_1Protocol.html#a84c493e745daa3623898f5aa235774ba">clearEndpoint</a>();</div>
 <div class="line"><span class="lineno">  146</span>}</div>
-<div class="ttc" id="aclassprotocol_1_1Protocol_html_a84c493e745daa3623898f5aa235774ba"><div class="ttname"><a href="classprotocol_1_1Protocol.html#a84c493e745daa3623898f5aa235774ba">protocol::Protocol::clearEndpoint</a></div><div class="ttdeci">void clearEndpoint()</div><div class="ttdoc">Clear any previously stored endpoint.</div><div class="ttdef"><b>Definition</b> <a href="Protocol_8cpp_source.html#l00448">Protocol.cpp:448</a></div></div>
+<div class="ttc" id="aclassprotocol_1_1Protocol_html_a84c493e745daa3623898f5aa235774ba"><div class="ttname"><a href="classprotocol_1_1Protocol.html#a84c493e745daa3623898f5aa235774ba">protocol::Protocol::clearEndpoint</a></div><div class="ttdeci">void clearEndpoint()</div><div class="ttdoc">Clear any previously stored endpoint.</div><div class="ttdef"><b>Definition</b> <a href="Protocol_8cpp_source.html#l00450">Protocol.cpp:450</a></div></div>
 <div class="ttc" id="aclassprotocol_1_1Protocol_html_af1d6e866fe788044f9a9cdfd44ebcfb4"><div class="ttname"><a href="classprotocol_1_1Protocol.html#af1d6e866fe788044f9a9cdfd44ebcfb4">protocol::Protocol::stop_io</a></div><div class="ttdeci">void stop_io()</div><div class="ttdoc">Stop the internal io_context and join the IO thread.</div><div class="ttdef"><b>Definition</b> <a href="Protocol_8cpp_source.html#l00165">Protocol.cpp:165</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -1550,8 +1622,8 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">  161</span>        } <span class="keywordflow">catch</span> (...) {} <span class="comment">// fallback</span></div>
 <div class="line"><span class="lineno">  162</span>    });</div>
 <div class="line"><span class="lineno">  163</span>}</div>
-<div class="ttc" id="aclassprotocol_1_1Protocol_html_a2decf340528f4c08e56739e05436a19e"><div class="ttname"><a href="classprotocol_1_1Protocol.html#a2decf340528f4c08e56739e05436a19e">protocol::Protocol::_work_guard</a></div><div class="ttdeci">std::optional&lt; boost::asio::executor_work_guard&lt; boost::asio::io_context::executor_type &gt; &gt; _work_guard</div><div class="ttdef"><b>Definition</b> <a href="Protocol_8hpp_source.html#l00174">Protocol.hpp:174</a></div></div>
-<div class="ttc" id="aclassprotocol_1_1Protocol_html_a2e557c5f8582195e3d69349f331f1364"><div class="ttname"><a href="classprotocol_1_1Protocol.html#a2e557c5f8582195e3d69349f331f1364">protocol::Protocol::_io_thread</a></div><div class="ttdeci">std::thread _io_thread</div><div class="ttdef"><b>Definition</b> <a href="Protocol_8hpp_source.html#l00172">Protocol.hpp:172</a></div></div>
+<div class="ttc" id="aclassprotocol_1_1Protocol_html_a2decf340528f4c08e56739e05436a19e"><div class="ttname"><a href="classprotocol_1_1Protocol.html#a2decf340528f4c08e56739e05436a19e">protocol::Protocol::_work_guard</a></div><div class="ttdeci">std::optional&lt; boost::asio::executor_work_guard&lt; boost::asio::io_context::executor_type &gt; &gt; _work_guard</div><div class="ttdef"><b>Definition</b> <a href="Protocol_8hpp_source.html#l00176">Protocol.hpp:176</a></div></div>
+<div class="ttc" id="aclassprotocol_1_1Protocol_html_a2e557c5f8582195e3d69349f331f1364"><div class="ttname"><a href="classprotocol_1_1Protocol.html#a2e557c5f8582195e3d69349f331f1364">protocol::Protocol::_io_thread</a></div><div class="ttdeci">std::thread _io_thread</div><div class="ttdef"><b>Definition</b> <a href="Protocol_8hpp_source.html#l00174">Protocol.hpp:174</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1621,16 +1693,27 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="Protocol_8cpp_source.html#l00443">443</a> of file <a class="el" href="Protocol_8cpp_source.html">Protocol.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  444</span>{</div>
-<div class="line"><span class="lineno">  445</span>    <a class="code hl_variable" href="classprotocol_1_1Protocol.html#a83a55606b2d78bf675222f291bca2096">_stored_endpoint</a> = ep;</div>
-<div class="line"><span class="lineno">  446</span>}</div>
+<div class="line"><span class="lineno">  445</span>    std::lock_guard&lt;std::mutex&gt; lk(<a class="code hl_variable" href="classprotocol_1_1Protocol.html#a1e657519d4135c4c8e10f224bc28ec2e">_stored_mutex</a>);</div>
+<div class="line"><span class="lineno">  446</span> </div>
+<div class="line"><span class="lineno">  447</span>    <a class="code hl_variable" href="classprotocol_1_1Protocol.html#af463162db164265ef9d820cda4ad7bc4">_stored_endpoints</a>[<a class="code hl_function" href="namespaceprotocol_1_1utils.html#afdcd44435a34419031d17e265fd32f4e">protocol::utils::endpoint_to_string</a>(ep)] = ep;</div>
+<div class="line"><span class="lineno">  448</span>}</div>
 </div><!-- fragment -->
+<p class="reference">References <a class="el" href="utils_8cpp_source.html#l00029">protocol::utils::endpoint_to_string()</a>.</p>
+
 <p class="reference">Referenced by <a class="el" href="GameProtocol_8cpp_source.html#l00205">protocol::game::GameProtocol::initialize()</a>.</p>
-<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classprotocol_1_1Protocol_a4ab1bbadf74acc6ae80a4cdfdbc30b19_icgraph.svg" width="100%" height="376"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div id="dynsection-8-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classprotocol_1_1Protocol_a4ab1bbadf74acc6ae80a4cdfdbc30b19_cgraph.svg" width="470" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-9-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classprotocol_1_1Protocol_a4ab1bbadf74acc6ae80a4cdfdbc30b19_icgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
 </div>
@@ -1702,7 +1785,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Protocol_8hpp_source.html#l00179">179</a> of file <a class="el" href="Protocol_8hpp_source.html">Protocol.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Protocol_8hpp_source.html#l00183">183</a> of file <a class="el" href="Protocol_8hpp_source.html">Protocol.hpp</a>.</p>
 
 </div>
 </div>
@@ -1726,7 +1809,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Protocol_8hpp_source.html#l00178">178</a> of file <a class="el" href="Protocol_8hpp_source.html">Protocol.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Protocol_8hpp_source.html#l00182">182</a> of file <a class="el" href="Protocol_8hpp_source.html">Protocol.hpp</a>.</p>
 
 </div>
 </div>
@@ -1750,7 +1833,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Protocol_8hpp_source.html#l00180">180</a> of file <a class="el" href="Protocol_8hpp_source.html">Protocol.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Protocol_8hpp_source.html#l00184">184</a> of file <a class="el" href="Protocol_8hpp_source.html">Protocol.hpp</a>.</p>
 
 </div>
 </div>
@@ -1774,7 +1857,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Protocol_8hpp_source.html#l00183">183</a> of file <a class="el" href="Protocol_8hpp_source.html">Protocol.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Protocol_8hpp_source.html#l00187">187</a> of file <a class="el" href="Protocol_8hpp_source.html">Protocol.hpp</a>.</p>
 
 </div>
 </div>
@@ -1798,7 +1881,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Protocol_8hpp_source.html#l00170">170</a> of file <a class="el" href="Protocol_8hpp_source.html">Protocol.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Protocol_8hpp_source.html#l00172">172</a> of file <a class="el" href="Protocol_8hpp_source.html">Protocol.hpp</a>.</p>
 
 </div>
 </div>
@@ -1822,7 +1905,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Protocol_8hpp_source.html#l00172">172</a> of file <a class="el" href="Protocol_8hpp_source.html">Protocol.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Protocol_8hpp_source.html#l00174">174</a> of file <a class="el" href="Protocol_8hpp_source.html">Protocol.hpp</a>.</p>
 
 </div>
 </div>
@@ -1846,7 +1929,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Protocol_8hpp_source.html#l00184">184</a> of file <a class="el" href="Protocol_8hpp_source.html">Protocol.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Protocol_8hpp_source.html#l00188">188</a> of file <a class="el" href="Protocol_8hpp_source.html">Protocol.hpp</a>.</p>
 
 </div>
 </div>
@@ -1870,7 +1953,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Protocol_8hpp_source.html#l00196">196</a> of file <a class="el" href="Protocol_8hpp_source.html">Protocol.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Protocol_8hpp_source.html#l00200">200</a> of file <a class="el" href="Protocol_8hpp_source.html">Protocol.hpp</a>.</p>
 
 </div>
 </div>
@@ -1894,7 +1977,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Protocol_8hpp_source.html#l00195">195</a> of file <a class="el" href="Protocol_8hpp_source.html">Protocol.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Protocol_8hpp_source.html#l00199">199</a> of file <a class="el" href="Protocol_8hpp_source.html">Protocol.hpp</a>.</p>
 
 </div>
 </div>
@@ -1918,7 +2001,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Protocol_8hpp_source.html#l00192">192</a> of file <a class="el" href="Protocol_8hpp_source.html">Protocol.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Protocol_8hpp_source.html#l00196">196</a> of file <a class="el" href="Protocol_8hpp_source.html">Protocol.hpp</a>.</p>
 
 </div>
 </div>
@@ -1942,7 +2025,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Protocol_8hpp_source.html#l00191">191</a> of file <a class="el" href="Protocol_8hpp_source.html">Protocol.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Protocol_8hpp_source.html#l00195">195</a> of file <a class="el" href="Protocol_8hpp_source.html">Protocol.hpp</a>.</p>
 
 </div>
 </div>
@@ -1966,7 +2049,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Protocol_8hpp_source.html#l00188">188</a> of file <a class="el" href="Protocol_8hpp_source.html">Protocol.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Protocol_8hpp_source.html#l00192">192</a> of file <a class="el" href="Protocol_8hpp_source.html">Protocol.hpp</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="Protocol_8cpp_source.html#l00032">Protocol()</a>.</p>
 
@@ -1992,7 +2075,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Protocol_8hpp_source.html#l00173">173</a> of file <a class="el" href="Protocol_8hpp_source.html">Protocol.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Protocol_8hpp_source.html#l00175">175</a> of file <a class="el" href="Protocol_8hpp_source.html">Protocol.hpp</a>.</p>
 
 </div>
 </div>
@@ -2018,12 +2101,12 @@ Private Attributes</h2></td></tr>
 
 <p>UDP socket. </p>
 
-<p class="definition">Definition at line <a class="el" href="Protocol_8hpp_source.html#l00171">171</a> of file <a class="el" href="Protocol_8hpp_source.html">Protocol.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Protocol_8hpp_source.html#l00173">173</a> of file <a class="el" href="Protocol_8hpp_source.html">Protocol.hpp</a>.</p>
 
 </div>
 </div>
-<a id="a83a55606b2d78bf675222f291bca2096" name="a83a55606b2d78bf675222f291bca2096"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a83a55606b2d78bf675222f291bca2096">&#9670;&#160;</a></span>_stored_endpoint</h2>
+<a id="af463162db164265ef9d820cda4ad7bc4" name="af463162db164265ef9d820cda4ad7bc4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af463162db164265ef9d820cda4ad7bc4">&#9670;&#160;</a></span>_stored_endpoints</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2032,7 +2115,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::optional&lt;udp::endpoint&gt; protocol::Protocol::_stored_endpoint</td>
+          <td class="memname">std::unordered_map&lt;std::string, udp::endpoint&gt; protocol::Protocol::_stored_endpoints</td>
         </tr>
       </table>
   </td>
@@ -2042,7 +2125,35 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Protocol_8hpp_source.html#l00175">175</a> of file <a class="el" href="Protocol_8hpp_source.html">Protocol.hpp</a>.</p>
+<p>mapping string-&gt;endpoint pour multi-client </p>
+
+<p class="definition">Definition at line <a class="el" href="Protocol_8hpp_source.html#l00178">178</a> of file <a class="el" href="Protocol_8hpp_source.html">Protocol.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a1e657519d4135c4c8e10f224bc28ec2e" name="a1e657519d4135c4c8e10f224bc28ec2e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e657519d4135c4c8e10f224bc28ec2e">&#9670;&#160;</a></span>_stored_mutex</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::mutex protocol::Protocol::_stored_mutex</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">mutable</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>protège _stored_endpoints </p>
+
+<p class="definition">Definition at line <a class="el" href="Protocol_8hpp_source.html#l00179">179</a> of file <a class="el" href="Protocol_8hpp_source.html">Protocol.hpp</a>.</p>
 
 </div>
 </div>
@@ -2066,7 +2177,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Protocol_8hpp_source.html#l00185">185</a> of file <a class="el" href="Protocol_8hpp_source.html">Protocol.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Protocol_8hpp_source.html#l00189">189</a> of file <a class="el" href="Protocol_8hpp_source.html">Protocol.hpp</a>.</p>
 
 </div>
 </div>
@@ -2090,7 +2201,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Protocol_8hpp_source.html#l00174">174</a> of file <a class="el" href="Protocol_8hpp_source.html">Protocol.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Protocol_8hpp_source.html#l00176">176</a> of file <a class="el" href="Protocol_8hpp_source.html">Protocol.hpp</a>.</p>
 
 </div>
 </div>

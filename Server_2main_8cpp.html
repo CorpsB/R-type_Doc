@@ -182,34 +182,34 @@ Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>0 on success; 84 on invalid configuration or runtime error. </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="config_8h.html#a198eafd20829840aae7e1988780c25d1" title="Parse the entire argv array and update args.">parser_flag</a>, <a class="el" href="config_8h.html#a977f3c479a9e7e13468e7e5502fcf888" title="Load key/value pairs from a configuration file into args.">parser_cfg</a>, <a class="el" href="config_8h.html#a4406c78c2726a16ae2f47d22b933ccec" title="Soft normalization of args (range clamping, defaults).">check_config</a>, <a class="el" href="Server_2main_8cpp.html#abab3acffc1548535ff14eea8cd0fd773" title="Print usage and option help to stdout.">print_help</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="Server_2main_8cpp_source.html#l00082">82</a> of file <a class="el" href="Server_2main_8cpp_source.html">Server/main.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   83</span>{</div>
-<div class="line"><span class="lineno">   84</span>    <a class="code hl_struct" href="config_8h.html#structparser__args__t">parser_args_t</a> args;</div>
+<p class="definition">Definition at line <a class="el" href="Server_2main_8cpp_source.html#l00080">80</a> of file <a class="el" href="Server_2main_8cpp_source.html">Server/main.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   81</span>{</div>
+<div class="line"><span class="lineno">   82</span>    <a class="code hl_struct" href="config_8h.html#structparser__args__t">parser_args_t</a> args;</div>
+<div class="line"><span class="lineno">   83</span>    <a class="code hl_function" href="config_8h.html#a198eafd20829840aae7e1988780c25d1">parser_flag</a>(args, ac, av);</div>
+<div class="line"><span class="lineno">   84</span>    <a class="code hl_function" href="config_8h.html#a977f3c479a9e7e13468e7e5502fcf888">parser_cfg</a>(args, ac, av);</div>
 <div class="line"><span class="lineno">   85</span>    <a class="code hl_function" href="config_8h.html#a198eafd20829840aae7e1988780c25d1">parser_flag</a>(args, ac, av);</div>
-<div class="line"><span class="lineno">   86</span>    <a class="code hl_function" href="config_8h.html#a977f3c479a9e7e13468e7e5502fcf888">parser_cfg</a>(args, ac, av);</div>
-<div class="line"><span class="lineno">   87</span>    <a class="code hl_function" href="config_8h.html#a198eafd20829840aae7e1988780c25d1">parser_flag</a>(args, ac, av);</div>
-<div class="line"><span class="lineno">   88</span>    <a class="code hl_function" href="config_8h.html#a4406c78c2726a16ae2f47d22b933ccec">check_config</a>(args, ac, av);</div>
-<div class="line"><span class="lineno">   89</span> </div>
-<div class="line"><span class="lineno">   90</span>    std::string why;</div>
-<div class="line"><span class="lineno">   91</span>    <span class="keywordflow">if</span> (!<a class="code hl_function" href="config_8h.html#a4406c78c2726a16ae2f47d22b933ccec">check_config</a>(args, why)) {</div>
-<div class="line"><span class="lineno">   92</span>        std::cerr &lt;&lt; why &lt;&lt; std::endl &lt;&lt;<span class="stringliteral">&quot;[INFO] - You can use -h to see help message.&quot;</span> &lt;&lt;std::endl;</div>
-<div class="line"><span class="lineno">   93</span>        <span class="keywordflow">return</span> 84;</div>
-<div class="line"><span class="lineno">   94</span>    }</div>
-<div class="line"><span class="lineno">   95</span> </div>
-<div class="line"><span class="lineno">   96</span>    <span class="keywordflow">if</span> (args.<a class="code hl_variable" href="config_8h.html#a2505bbf8e7fb0038f3ed72f77fd24871">need_help</a>) {</div>
-<div class="line"><span class="lineno">   97</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="Server_2main_8cpp.html#abab3acffc1548535ff14eea8cd0fd773">print_help</a>();</div>
-<div class="line"><span class="lineno">   98</span>    }</div>
-<div class="line"><span class="lineno">   99</span>    <span class="keywordflow">try</span> {</div>
-<div class="line"><span class="lineno">  100</span>        <a class="code hl_class" href="classrtype_1_1server.html">rtype::server</a> server(av);</div>
-<div class="line"><span class="lineno">  101</span>    </div>
-<div class="line"><span class="lineno">  102</span>        server.run();</div>
-<div class="line"><span class="lineno">  103</span>        <span class="keywordflow">return</span> 0;</div>
-<div class="line"><span class="lineno">  104</span>    } <span class="keywordflow">catch</span> (<span class="keyword">const</span> <a class="code hl_class" href="classrtype_1_1exception_1_1Error.html">rtype::exception::Error</a> &amp;e) {</div>
-<div class="line"><span class="lineno">  105</span>        std::cerr &lt;&lt; <span class="stringliteral">&quot;[ERROR] - &quot;</span> &lt;&lt; e.<a class="code hl_function" href="classrtype_1_1exception_1_1Error.html#a75cf6799e69103e6bade63acd67d9029">getWhere</a>() &lt;&lt; std::endl &lt;&lt; e.<a class="code hl_function" href="classrtype_1_1exception_1_1Error.html#af1dff7f88c212195ebfbb2c40406eaf1">getWhat</a>() &lt;&lt; std::endl;</div>
-<div class="line"><span class="lineno">  106</span>        <span class="keywordflow">return</span> 84;</div>
-<div class="line"><span class="lineno">  107</span>    }</div>
-<div class="line"><span class="lineno">  108</span>}</div>
-<div class="ttc" id="aServer_2main_8cpp_html_abab3acffc1548535ff14eea8cd0fd773"><div class="ttname"><a href="Server_2main_8cpp.html#abab3acffc1548535ff14eea8cd0fd773">print_help</a></div><div class="ttdeci">int print_help(void)</div><div class="ttdoc">Print usage and option help to stdout.</div><div class="ttdef"><b>Definition</b> <a href="Server_2main_8cpp_source.html#l00039">Server/main.cpp:39</a></div></div>
+<div class="line"><span class="lineno">   86</span>    <a class="code hl_function" href="config_8h.html#a4406c78c2726a16ae2f47d22b933ccec">check_config</a>(args, ac, av);</div>
+<div class="line"><span class="lineno">   87</span> </div>
+<div class="line"><span class="lineno">   88</span>    std::string why;</div>
+<div class="line"><span class="lineno">   89</span>    <span class="keywordflow">if</span> (!<a class="code hl_function" href="config_8h.html#a4406c78c2726a16ae2f47d22b933ccec">check_config</a>(args, why)) {</div>
+<div class="line"><span class="lineno">   90</span>        std::cerr &lt;&lt; why &lt;&lt; std::endl &lt;&lt;<span class="stringliteral">&quot;[INFO] - You can use -h to see help message.&quot;</span> &lt;&lt;std::endl;</div>
+<div class="line"><span class="lineno">   91</span>        <span class="keywordflow">return</span> 84;</div>
+<div class="line"><span class="lineno">   92</span>    }</div>
+<div class="line"><span class="lineno">   93</span> </div>
+<div class="line"><span class="lineno">   94</span>    <span class="keywordflow">if</span> (args.<a class="code hl_variable" href="config_8h.html#a2505bbf8e7fb0038f3ed72f77fd24871">need_help</a>)</div>
+<div class="line"><span class="lineno">   95</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="Server_2main_8cpp.html#abab3acffc1548535ff14eea8cd0fd773">print_help</a>();</div>
+<div class="line"><span class="lineno">   96</span> </div>
+<div class="line"><span class="lineno">   97</span>    <span class="keywordflow">try</span> {</div>
+<div class="line"><span class="lineno">   98</span>        <a class="code hl_class" href="classrtype_1_1server.html">rtype::server</a> server(args);</div>
+<div class="line"><span class="lineno">   99</span> </div>
+<div class="line"><span class="lineno">  100</span>        server.run();</div>
+<div class="line"><span class="lineno">  101</span>        <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">  102</span>    } <span class="keywordflow">catch</span> (<span class="keyword">const</span> <a class="code hl_class" href="classrtype_1_1exception_1_1Error.html">rtype::exception::Error</a> &amp;e) {</div>
+<div class="line"><span class="lineno">  103</span>        std::cerr &lt;&lt; <span class="stringliteral">&quot;[ERROR] - &quot;</span> &lt;&lt; e.<a class="code hl_function" href="classrtype_1_1exception_1_1Error.html#a75cf6799e69103e6bade63acd67d9029">getWhere</a>() &lt;&lt; std::endl &lt;&lt; e.<a class="code hl_function" href="classrtype_1_1exception_1_1Error.html#af1dff7f88c212195ebfbb2c40406eaf1">getWhat</a>() &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  104</span>        <span class="keywordflow">return</span> 84;</div>
+<div class="line"><span class="lineno">  105</span>    }</div>
+<div class="line"><span class="lineno">  106</span>}</div>
+<div class="ttc" id="aServer_2main_8cpp_html_abab3acffc1548535ff14eea8cd0fd773"><div class="ttname"><a href="Server_2main_8cpp.html#abab3acffc1548535ff14eea8cd0fd773">print_help</a></div><div class="ttdeci">int print_help(void)</div><div class="ttdoc">Print usage and option help to stdout.</div><div class="ttdef"><b>Definition</b> <a href="Server_2main_8cpp_source.html#l00038">Server/main.cpp:38</a></div></div>
 <div class="ttc" id="aclassrtype_1_1exception_1_1Error_html"><div class="ttname"><a href="classrtype_1_1exception_1_1Error.html">rtype::exception::Error</a></div><div class="ttdoc">Base exception class for errors occurring in the R-Type engine.</div><div class="ttdef"><b>Definition</b> <a href="Error_8hpp_source.html#l00039">Error.hpp:39</a></div></div>
 <div class="ttc" id="aclassrtype_1_1exception_1_1Error_html_a75cf6799e69103e6bade63acd67d9029"><div class="ttname"><a href="classrtype_1_1exception_1_1Error.html#a75cf6799e69103e6bade63acd67d9029">rtype::exception::Error::getWhere</a></div><div class="ttdeci">std::string getWhere() const noexcept</div><div class="ttdoc">Returns the context or location where the error occurred.</div><div class="ttdef"><b>Definition</b> <a href="Error_8cpp_source.html#l00035">Error.cpp:35</a></div></div>
 <div class="ttc" id="aclassrtype_1_1exception_1_1Error_html_af1dff7f88c212195ebfbb2c40406eaf1"><div class="ttname"><a href="classrtype_1_1exception_1_1Error.html#af1dff7f88c212195ebfbb2c40406eaf1">rtype::exception::Error::getWhat</a></div><div class="ttdeci">std::string getWhat() const noexcept</div><div class="ttdoc">Returns the reason or message associated with the error.</div><div class="ttdef"><b>Definition</b> <a href="Error_8cpp_source.html#l00044">Error.cpp:44</a></div></div>
@@ -220,7 +220,7 @@ Functions</h2></td></tr>
 <div class="ttc" id="aconfig_8h_html_a977f3c479a9e7e13468e7e5502fcf888"><div class="ttname"><a href="config_8h.html#a977f3c479a9e7e13468e7e5502fcf888">parser_cfg</a></div><div class="ttdeci">void parser_cfg(parser_args_t &amp;args, int ac, char **av)</div><div class="ttdoc">Load key/value pairs from a configuration file into args.</div><div class="ttdef"><b>Definition</b> <a href="Parser_8cpp_source.html#l00106">Parser.cpp:106</a></div></div>
 <div class="ttc" id="aconfig_8h_html_structparser__args__t"><div class="ttname"><a href="config_8h.html#structparser__args__t">parser_args_t</a></div><div class="ttdoc">Aggregates all configurable server parameters.</div><div class="ttdef"><b>Definition</b> <a href="config_8h_source.html#l00036">config.h:36</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="Parser_8cpp_source.html#l00162">check_config()</a>, <a class="el" href="Error_8cpp_source.html#l00044">rtype::exception::Error::getWhat()</a>, <a class="el" href="Error_8cpp_source.html#l00035">rtype::exception::Error::getWhere()</a>, <a class="el" href="config_8h_source.html#l00037">parser_args_t::need_help</a>, <a class="el" href="Parser_8cpp_source.html#l00106">parser_cfg()</a>, <a class="el" href="Parser_8cpp_source.html#l00090">parser_flag()</a>, <a class="el" href="Server_2main_8cpp_source.html#l00039">print_help()</a>, and <a class="el" href="Rtype_8cpp_source.html#l00043">rtype::server::run()</a>.</p>
+<p class="reference">References <a class="el" href="Parser_8cpp_source.html#l00162">check_config()</a>, <a class="el" href="Error_8cpp_source.html#l00044">rtype::exception::Error::getWhat()</a>, <a class="el" href="Error_8cpp_source.html#l00035">rtype::exception::Error::getWhere()</a>, <a class="el" href="config_8h_source.html#l00037">parser_args_t::need_help</a>, <a class="el" href="Parser_8cpp_source.html#l00106">parser_cfg()</a>, <a class="el" href="Parser_8cpp_source.html#l00090">parser_flag()</a>, <a class="el" href="Server_2main_8cpp_source.html#l00038">print_help()</a>, and <a class="el" href="Rtype_8cpp_source.html#l00045">rtype::server::run()</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
@@ -250,33 +250,33 @@ Functions</h2></td></tr>
 <p>Print usage and option help to stdout. </p>
 <p>Describes the purpose of the executable, supported flags and their effects, notes about precedence between flags and the configuration file, and a usage example. </p><dl class="section return"><dt>Returns</dt><dd>Always returns 0. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="Server_2main_8cpp_source.html#l00039">39</a> of file <a class="el" href="Server_2main_8cpp_source.html">Server/main.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   40</span>{</div>
-<div class="line"><span class="lineno">   41</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Usage: ./r-type_server [options]&quot;</span> &lt;&lt; std::endl &lt;&lt; std::endl;</div>
-<div class="line"><span class="lineno">   42</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;The r-type_server executable launches our version of the R-TYPE game.&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><span class="lineno">   43</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;The game allows one or more players to face waves of enemy ships&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><span class="lineno">   44</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;that shoot at them. Compatible with both Windows and Linux.&quot;</span> &lt;&lt; std::endl &lt;&lt; std::endl;</div>
-<div class="line"><span class="lineno">   45</span> </div>
-<div class="line"><span class="lineno">   46</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Available options:&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><span class="lineno">   47</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;  -h, --help             Display this help message.&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><span class="lineno">   48</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;  -d                     Enable debug mode.&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><span class="lineno">   49</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;  -dd                    Show extended debug logs.&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><span class="lineno">   50</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;  -ddd                   Show all debug logs.&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><span class="lineno">   51</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;  -port=&lt;number&gt;         Set the server port.&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><span class="lineno">   52</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;  -ip=&lt;address&gt;          Set the server IP address.&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><span class="lineno">   53</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;  -path=&lt;file&gt;           Specify the path to the configuration file.&quot;</span> &lt;&lt; std::endl &lt;&lt; std::endl;</div>
-<div class="line"><span class="lineno">   54</span> </div>
-<div class="line"><span class="lineno">   55</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Behavior notes:&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><span class="lineno">   56</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;  • If no arguments are provided, the server will load the configuration from:&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><span class="lineno">   57</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;      /Serv/Configs/Default.cfg&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><span class="lineno">   58</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;  • Command-line flags always override the values specified in the configuration file.&quot;</span> &lt;&lt; std::endl &lt;&lt; std::endl;</div>
-<div class="line"><span class="lineno">   59</span> </div>
-<div class="line"><span class="lineno">   60</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Example:&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><span class="lineno">   61</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;  ./r-type_server -d -port=8080 -ip=192.168.1.10 -path=server.cfg&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><span class="lineno">   62</span>    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><span class="lineno">   63</span>}</div>
+<p class="definition">Definition at line <a class="el" href="Server_2main_8cpp_source.html#l00038">38</a> of file <a class="el" href="Server_2main_8cpp_source.html">Server/main.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   39</span>{</div>
+<div class="line"><span class="lineno">   40</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Usage: ./r-type_server [options]&quot;</span> &lt;&lt; std::endl &lt;&lt; std::endl</div>
+<div class="line"><span class="lineno">   41</span>        &lt;&lt; <span class="stringliteral">&quot;The r-type_server executable launches our version of the R-TYPE game.&quot;</span> &lt;&lt; std::endl</div>
+<div class="line"><span class="lineno">   42</span>        &lt;&lt; <span class="stringliteral">&quot;The game allows one or more players to face waves of enemy ships&quot;</span> &lt;&lt; std::endl</div>
+<div class="line"><span class="lineno">   43</span>        &lt;&lt; <span class="stringliteral">&quot;that shoot at them. Compatible with both Windows and Linux.&quot;</span> &lt;&lt; std::endl &lt;&lt; std::endl</div>
+<div class="line"><span class="lineno">   44</span> </div>
+<div class="line"><span class="lineno">   45</span>        &lt;&lt; <span class="stringliteral">&quot;Available options:&quot;</span> &lt;&lt; std::endl</div>
+<div class="line"><span class="lineno">   46</span>        &lt;&lt; <span class="stringliteral">&quot;  -h, --help             Display this help message.&quot;</span> &lt;&lt; std::endl</div>
+<div class="line"><span class="lineno">   47</span>        &lt;&lt; <span class="stringliteral">&quot;  -d                     Enable debug mode.&quot;</span> &lt;&lt; std::endl</div>
+<div class="line"><span class="lineno">   48</span>        &lt;&lt; <span class="stringliteral">&quot;  -dd                    Show extended debug logs.&quot;</span> &lt;&lt; std::endl</div>
+<div class="line"><span class="lineno">   49</span>        &lt;&lt; <span class="stringliteral">&quot;  -ddd                   Show all debug logs.&quot;</span> &lt;&lt; std::endl</div>
+<div class="line"><span class="lineno">   50</span>        &lt;&lt; <span class="stringliteral">&quot;  -port=&lt;number&gt;         Set the server port.&quot;</span> &lt;&lt; std::endl</div>
+<div class="line"><span class="lineno">   51</span>        &lt;&lt; <span class="stringliteral">&quot;  -ip=&lt;address&gt;          Set the server IP address.&quot;</span> &lt;&lt; std::endl</div>
+<div class="line"><span class="lineno">   52</span>        &lt;&lt; <span class="stringliteral">&quot;  -path=&lt;file&gt;           Specify the path to the configuration file.&quot;</span> &lt;&lt; std::endl &lt;&lt; std::endl</div>
+<div class="line"><span class="lineno">   53</span> </div>
+<div class="line"><span class="lineno">   54</span>        &lt;&lt; <span class="stringliteral">&quot;Behavior notes:&quot;</span> &lt;&lt; std::endl</div>
+<div class="line"><span class="lineno">   55</span>        &lt;&lt; <span class="stringliteral">&quot;  • If no arguments are provided, the server will load the configuration from:&quot;</span> &lt;&lt; std::endl</div>
+<div class="line"><span class="lineno">   56</span>        &lt;&lt; <span class="stringliteral">&quot;      /Serv/Configs/Default.cfg&quot;</span> &lt;&lt; std::endl</div>
+<div class="line"><span class="lineno">   57</span>        &lt;&lt; <span class="stringliteral">&quot;  • Command-line flags always override the values specified in the configuration file.&quot;</span> &lt;&lt; std::endl &lt;&lt; std::endl</div>
+<div class="line"><span class="lineno">   58</span> </div>
+<div class="line"><span class="lineno">   59</span>        &lt;&lt; <span class="stringliteral">&quot;Example:&quot;</span> &lt;&lt; std::endl</div>
+<div class="line"><span class="lineno">   60</span>        &lt;&lt; <span class="stringliteral">&quot;  ./r-type_server -d -port=8080 -ip=192.168.1.10 -path=server.cfg&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">   61</span>    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">   62</span>}</div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="Server_2main_8cpp_source.html#l00082">main()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="Server_2main_8cpp_source.html#l00080">main()</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">

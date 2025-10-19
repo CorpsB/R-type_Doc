@@ -1,5 +1,9 @@
 <map id="rtype::client::OptionsMenuScene" name="rtype::client::OptionsMenuScene">
-<area shape="rect" id="Node000001" title="Scene representing the in&#45;game options menu." alt="" coords="5,208,288,397"/>
-<area shape="rect" id="Node000002" href="$classrtype_1_1client_1_1IScene.html" title="Interface that all scenes must implement." alt="" coords="20,5,273,160"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="149,174,149,208,144,208,144,174"/>
+<area shape="rect" id="Node000001" title="Scene representing the in&#45;game options menu." alt="" coords="68,397,351,572"/>
+<area shape="rect" id="Node000002" href="$classrtype_1_1client_1_1IScene.html" title="Interface that all scenes must implement." alt="" coords="5,160,259,335"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="167,347,184,396,178,398,162,349"/>
+<area shape="rect" id="Node000003" href="$classrtype_1_1client_1_1ui_1_1UIList.html" title=" " alt="" coords="283,170,512,325"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="338,327,291,386,287,382,334,323"/>
+<area shape="rect" id="Node000004" href="$classrtype_1_1client_1_1ui_1_1UIElement.html" title=" " alt="" coords="287,5,508,111"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="400,125,400,170,395,170,395,125"/>
 </map>

@@ -45,30 +45,12 @@
 </a>
 </g>
 </g>
-<!-- Node7 -->
-<g id="Node000007" class="node">
-<title>Node7</title>
-<g id="a_Node000007"><a xlink:href="Protocol_8cpp.html" target="_top" xlink:title="Implementation of the core UDP protocol (sending/receiving, piggyback acknowledgment,...">
-<polygon fill="white" stroke="#666666" points="310.5,-129 233.5,-129 233.5,-110 310.5,-110 310.5,-129"/>
-<text text-anchor="middle" x="272" y="-117" font-family="Helvetica,sans-Serif" font-size="10.00">Protocol.cpp</text>
-</a>
-</g>
-</g>
-<!-- Node1&#45;&gt;Node7 -->
-<g id="edge7_Node000001_Node000007" class="edge">
-<title>Node1&#45;&gt;Node7</title>
-<g id="a_edge7_Node000001_Node000007"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M272,-154.66C272,-145.93 272,-135.99 272,-129.09"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="268.5,-154.75 272,-164.75 275.5,-154.75 268.5,-154.75"/>
-</a>
-</g>
-</g>
 <!-- Node8 -->
 <g id="Node000008" class="node">
 <title>Node8</title>
-<g id="a_Node000008"><a xlink:href="Rtype_8hpp.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="395,-129 329,-129 329,-110 395,-110 395,-129"/>
-<text text-anchor="middle" x="362" y="-117" font-family="Helvetica,sans-Serif" font-size="10.00">Rtype.hpp</text>
+<g id="a_Node000008"><a xlink:href="Protocol_8cpp.html" target="_top" xlink:title="Implementation of the core UDP protocol (sending/receiving, piggyback acknowledgment,...">
+<polygon fill="white" stroke="#666666" points="310.5,-129 233.5,-129 233.5,-110 310.5,-110 310.5,-129"/>
+<text text-anchor="middle" x="272" y="-117" font-family="Helvetica,sans-Serif" font-size="10.00">Protocol.cpp</text>
 </a>
 </g>
 </g>
@@ -76,6 +58,24 @@
 <g id="edge8_Node000001_Node000008" class="edge">
 <title>Node1&#45;&gt;Node8</title>
 <g id="a_edge8_Node000001_Node000008"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M272,-154.66C272,-145.93 272,-135.99 272,-129.09"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="268.5,-154.75 272,-164.75 275.5,-154.75 268.5,-154.75"/>
+</a>
+</g>
+</g>
+<!-- Node9 -->
+<g id="Node000009" class="node">
+<title>Node9</title>
+<g id="a_Node000009"><a xlink:href="Rtype_8hpp.html" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="#666666" points="395,-129 329,-129 329,-110 395,-110 395,-129"/>
+<text text-anchor="middle" x="362" y="-117" font-family="Helvetica,sans-Serif" font-size="10.00">Rtype.hpp</text>
+</a>
+</g>
+</g>
+<!-- Node1&#45;&gt;Node9 -->
+<g id="edge9_Node000001_Node000009" class="edge">
+<title>Node1&#45;&gt;Node9</title>
+<g id="a_edge9_Node000001_Node000009"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M295.44,-159.7C311.84,-150.04 333.23,-137.44 347.28,-129.17"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="293.3,-156.89 286.46,-164.98 296.85,-162.93 293.3,-156.89"/>
 </a>
@@ -103,8 +103,8 @@
 <g id="Node000004" class="node">
 <title>Node4</title>
 <g id="a_Node000004"><a xlink:href="GameScene_8cpp.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="219.5,-19 124.5,-19 124.5,0 219.5,0 219.5,-19"/>
-<text text-anchor="middle" x="172" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">GameScene.cpp</text>
+<polygon fill="white" stroke="#666666" points="181.5,-19 86.5,-19 86.5,0 181.5,0 181.5,-19"/>
+<text text-anchor="middle" x="134" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">GameScene.cpp</text>
 </a>
 </g>
 </g>
@@ -112,8 +112,8 @@
 <g id="edge3_Node000002_Node000004" class="edge">
 <title>Node2&#45;&gt;Node4</title>
 <g id="a_edge3_Node000002_Node000004"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M156.04,-99.97C152.76,-87.25 149.93,-70.02 153,-55 155.69,-41.83 162.44,-27.74 167.12,-19.02"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="152.75,-101.19 158.9,-109.82 159.47,-99.24 152.75,-101.19"/>
+<path fill="none" stroke="#63b8ff" d="M157.15,-99.8C151.03,-76.2 140.76,-36.58 136.24,-19.16"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="153.81,-100.86 159.71,-109.66 160.59,-99.1 153.81,-100.86"/>
 </a>
 </g>
 </g>
@@ -135,19 +135,19 @@
 </a>
 </g>
 </g>
-<!-- Node6 -->
-<g id="Node000006" class="node">
-<title>Node6</title>
-<g id="a_Node000006"><a xlink:href="Rtype_8cpp.html" target="_top" xlink:title="Implements the main server logic for the R&#45;Type project.">
+<!-- Node7 -->
+<g id="Node000007" class="node">
+<title>Node7</title>
+<g id="a_Node000007"><a xlink:href="Rtype_8cpp.html" target="_top" xlink:title="Implements the main server logic for the R&#45;Type project.">
 <polygon fill="white" stroke="#666666" points="341.5,-74 276.5,-74 276.5,-55 341.5,-55 341.5,-74"/>
 <text text-anchor="middle" x="309" y="-62" font-family="Helvetica,sans-Serif" font-size="10.00">Rtype.cpp</text>
 </a>
 </g>
 </g>
-<!-- Node2&#45;&gt;Node6 -->
-<g id="edge6_Node000002_Node000006" class="edge">
-<title>Node2&#45;&gt;Node6</title>
-<g id="a_edge6_Node000002_Node000006"><a xlink:title=" ">
+<!-- Node2&#45;&gt;Node7 -->
+<g id="edge7_Node000002_Node000007" class="edge">
+<title>Node2&#45;&gt;Node7</title>
+<g id="a_edge7_Node000002_Node000007"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M195.14,-106.55C222.44,-96.71 260.5,-82.98 284.95,-74.17"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="193.84,-103.3 185.62,-109.98 196.21,-109.89 193.84,-103.3"/>
 </a>
@@ -157,33 +157,51 @@
 <g id="edge5_Node000005_Node000004" class="edge">
 <title>Node5&#45;&gt;Node4</title>
 <g id="a_edge5_Node000005_Node000004"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M197.73,-46.39C191.19,-37.27 183.43,-26.45 178.16,-19.09"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="195.05,-48.66 203.73,-54.75 200.74,-44.58 195.05,-48.66"/>
+<path fill="none" stroke="#63b8ff" d="M189.42,-49.15C175.69,-39.57 158.07,-27.29 146.43,-19.17"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="187.58,-52.14 197.79,-54.98 191.59,-46.39 187.58,-52.14"/>
 </a>
 </g>
 </g>
-<!-- Node8&#45;&gt;Node6 -->
-<g id="edge9_Node000008_Node000006" class="edge">
-<title>Node8&#45;&gt;Node6</title>
-<g id="a_edge9_Node000008_Node000006"><a xlink:title=" ">
+<!-- Node6 -->
+<g id="Node000006" class="node">
+<title>Node6</title>
+<g id="a_Node000006"><a xlink:href="MainMenuScene_8cpp.html" target="_top" xlink:title="Implementation of the MainMenuScene class managing the main menu interface.">
+<polygon fill="white" stroke="#666666" points="316.5,-19 199.5,-19 199.5,0 316.5,0 316.5,-19"/>
+<text text-anchor="middle" x="258" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">MainMenuScene.cpp</text>
+</a>
+</g>
+</g>
+<!-- Node5&#45;&gt;Node6 -->
+<g id="edge6_Node000005_Node000006" class="edge">
+<title>Node5&#45;&gt;Node6</title>
+<g id="a_edge6_Node000005_Node000006"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M224.73,-47.24C233.14,-37.95 243.35,-26.68 250.22,-19.09"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="222.04,-44.99 217.93,-54.75 227.23,-49.69 222.04,-44.99"/>
+</a>
+</g>
+</g>
+<!-- Node9&#45;&gt;Node7 -->
+<g id="edge10_Node000009_Node000007" class="edge">
+<title>Node9&#45;&gt;Node7</title>
+<g id="a_edge10_Node000009_Node000007"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M346.02,-102.52C336.68,-93.18 325.25,-81.75 317.59,-74.09"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="343.7,-105.15 353.25,-109.75 348.65,-100.2 343.7,-105.15"/>
 </a>
 </g>
 </g>
-<!-- Node9 -->
-<g id="Node000009" class="node">
-<title>Node9</title>
-<g id="a_Node000009"><a xlink:href="Server_2main_8cpp.html" target="_top" xlink:title="Entry point for the R&#45;Type server executable.">
+<!-- Node10 -->
+<g id="Node000010" class="node">
+<title>Node10</title>
+<g id="a_Node000010"><a xlink:href="Server_2main_8cpp.html" target="_top" xlink:title="Entry point for the R&#45;Type server executable.">
 <polygon fill="white" stroke="#666666" points="422,-74 360,-74 360,-55 422,-55 422,-74"/>
 <text text-anchor="middle" x="391" y="-62" font-family="Helvetica,sans-Serif" font-size="10.00">main.cpp</text>
 </a>
 </g>
 </g>
-<!-- Node8&#45;&gt;Node9 -->
-<g id="edge10_Node000008_Node000009" class="edge">
-<title>Node8&#45;&gt;Node9</title>
-<g id="a_edge10_Node000008_Node000009"><a xlink:title=" ">
+<!-- Node9&#45;&gt;Node10 -->
+<g id="edge11_Node000009_Node000010" class="edge">
+<title>Node9&#45;&gt;Node10</title>
+<g id="a_edge11_Node000009_Node000010"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M371.68,-100.82C376.6,-91.82 382.36,-81.29 386.3,-74.09"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="368.52,-99.3 366.79,-109.75 374.66,-102.66 368.52,-99.3"/>
 </a>

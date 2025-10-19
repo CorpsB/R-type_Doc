@@ -8,7 +8,7 @@ var classrtype_1_1ecs_1_1CollisionWorld =
     [ "checkCollisions", "classrtype_1_1ecs_1_1CollisionWorld.html#acba7533c8d42d6abb6c82fd03ee7b614", null ],
     [ "checkPairCollision", "classrtype_1_1ecs_1_1CollisionWorld.html#abb2232374822919bf9fec24c33c0672c", null ],
     [ "clearGrid", "classrtype_1_1ecs_1_1CollisionWorld.html#a861a23df9017145e3937ec34c3812789", null ],
-    [ "collisionEffect", "classrtype_1_1ecs_1_1CollisionWorld.html#a62ae2fb2c98052e3dbe8194499402621", null ],
+    [ "collisionEffect", "classrtype_1_1ecs_1_1CollisionWorld.html#a23469c76ef6bc0b63ba8872192b20ce3", null ],
     [ "cornersToAABB", "classrtype_1_1ecs_1_1CollisionWorld.html#af3eb6d7c6cfa6dbcb1ed11e4c1279241", null ],
     [ "fillBoxCorners", "classrtype_1_1ecs_1_1CollisionWorld.html#a73f8f3c1eddaf3c4ba9b03e04b95e8e0", null ],
     [ "getCellsCount", "classrtype_1_1ecs_1_1CollisionWorld.html#a6e1bc93414e78c8a3b05569d7d758837", null ],

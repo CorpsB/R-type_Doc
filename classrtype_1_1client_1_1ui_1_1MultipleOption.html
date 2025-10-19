@@ -136,12 +136,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aacb623e05d8e2cffaae9b8c391efb3c9" id="r_aacb623e05d8e2cffaae9b8c391efb3c9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtype_1_1client_1_1ui_1_1MultipleOption.html#aacb623e05d8e2cffaae9b8c391efb3c9">MultipleOption</a> (Vector2 position, Vector2 size, const std::string &amp;textKey)</td></tr>
 <tr class="memdesc:aacb623e05d8e2cffaae9b8c391efb3c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a new <a class="el" href="classrtype_1_1client_1_1ui_1_1MultipleOption.html" title="Represents a menu option that contains multiple selectable sub-choices.">MultipleOption</a> object.  <br /></td></tr>
 <tr class="separator:aacb623e05d8e2cffaae9b8c391efb3c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa6fa4e2dc733595bb5fd6a883506d669" id="r_aa6fa4e2dc733595bb5fd6a883506d669"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtype_1_1client_1_1ui_1_1MultipleOption.html#aa6fa4e2dc733595bb5fd6a883506d669">update</a> (bool selected, bool) override</td></tr>
-<tr class="memdesc:aa6fa4e2dc733595bb5fd6a883506d669"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the option’s state.  <br /></td></tr>
-<tr class="separator:aa6fa4e2dc733595bb5fd6a883506d669"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a595af7539ece9eb861ff6d38ecf61159" id="r_a595af7539ece9eb861ff6d38ecf61159"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtype_1_1client_1_1ui_1_1MultipleOption.html#a595af7539ece9eb861ff6d38ecf61159">draw</a> (bool selected, bool) const override</td></tr>
-<tr class="memdesc:a595af7539ece9eb861ff6d38ecf61159"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws the option and its current choice on the screen.  <br /></td></tr>
-<tr class="separator:a595af7539ece9eb861ff6d38ecf61159"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fc70e451424d37e22d72ff9f248c6dc" id="r_a9fc70e451424d37e22d72ff9f248c6dc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtype_1_1client_1_1ui_1_1MultipleOption.html#a9fc70e451424d37e22d72ff9f248c6dc">update</a> (bool selected) override</td></tr>
+<tr class="memdesc:a9fc70e451424d37e22d72ff9f248c6dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the option’s state.  <br /></td></tr>
+<tr class="separator:a9fc70e451424d37e22d72ff9f248c6dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1504c75a92f75b963cb5ee49ad95c86" id="r_aa1504c75a92f75b963cb5ee49ad95c86"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtype_1_1client_1_1ui_1_1MultipleOption.html#aa1504c75a92f75b963cb5ee49ad95c86">draw</a> (bool selected) const override</td></tr>
+<tr class="memdesc:aa1504c75a92f75b963cb5ee49ad95c86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws the option and its current choice on the screen.  <br /></td></tr>
+<tr class="separator:aa1504c75a92f75b963cb5ee49ad95c86"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adef8991a566e27bb35916bb8f11bd93b" id="r_adef8991a566e27bb35916bb8f11bd93b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtype_1_1client_1_1ui_1_1MultipleOption.html#adef8991a566e27bb35916bb8f11bd93b">setPosition</a> (Vector2 position) override</td></tr>
 <tr class="memdesc:adef8991a566e27bb35916bb8f11bd93b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the position of the option box.  <br /></td></tr>
 <tr class="separator:adef8991a566e27bb35916bb8f11bd93b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -323,18 +323,18 @@ Translation key for the choice text. </td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="MultipleOption_8cpp_source.html#l00094">94</a> of file <a class="el" href="MultipleOption_8cpp_source.html">MultipleOption.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   95</span>{</div>
-<div class="line"><span class="lineno">   96</span>    <a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1MultipleOption.html#a02014c27add31c93e042749c4abd9618">_choices</a>.push_back(Choice{textKey, callBack});</div>
-<div class="line"><span class="lineno">   97</span>}</div>
+<p class="definition">Definition at line <a class="el" href="MultipleOption_8cpp_source.html#l00091">91</a> of file <a class="el" href="MultipleOption_8cpp_source.html">MultipleOption.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   92</span>{</div>
+<div class="line"><span class="lineno">   93</span>    <a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1MultipleOption.html#a02014c27add31c93e042749c4abd9618">_choices</a>.push_back(Choice{textKey, callBack});</div>
+<div class="line"><span class="lineno">   94</span>}</div>
 <div class="ttc" id="aclassrtype_1_1client_1_1ui_1_1MultipleOption_html_a02014c27add31c93e042749c4abd9618"><div class="ttname"><a href="classrtype_1_1client_1_1ui_1_1MultipleOption.html#a02014c27add31c93e042749c4abd9618">rtype::client::ui::MultipleOption::_choices</a></div><div class="ttdeci">std::vector&lt; Choice &gt; _choices</div><div class="ttdoc">List of available choices for this option.</div><div class="ttdef"><b>Definition</b> <a href="MultipleOption_8hpp_source.html#l00115">MultipleOption.hpp:115</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="MultipleOption_8hpp_source.html#l00115">_choices</a>.</p>
 
 </div>
 </div>
-<a id="a595af7539ece9eb861ff6d38ecf61159" name="a595af7539ece9eb861ff6d38ecf61159"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a595af7539ece9eb861ff6d38ecf61159">&#9670;&#160;</a></span>draw()</h2>
+<a id="aa1504c75a92f75b963cb5ee49ad95c86" name="aa1504c75a92f75b963cb5ee49ad95c86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1504c75a92f75b963cb5ee49ad95c86">&#9670;&#160;</a></span>draw()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -346,18 +346,8 @@ Translation key for the choice text. </td></tr>
           <td class="memname">void rtype::client::ui::MultipleOption::draw </td>
           <td>(</td>
           <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>selected</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
+          <td class="paramname"><em>selected</em></td><td>)</td>
+          <td> const</td>
         </tr>
       </table>
   </td>
@@ -377,13 +367,14 @@ Translation key for the choice text. </td></tr>
 </dl>
 <p>Renders the option’s main label and, if available, the currently selected choice. The selected option changes its colors to provide visual feedback. </p>
 
-<p>Implements <a class="el" href="classrtype_1_1client_1_1ui_1_1IOption.html#a5cc87ec92757af12bbc1be0d8092a00f">rtype::client::ui::IOption</a>.</p>
+<p>Implements <a class="el" href="classrtype_1_1client_1_1ui_1_1IOption.html#a6ed7898935b2d855c8a8fb2ed8d14ea6">rtype::client::ui::IOption</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="MultipleOption_8cpp_source.html#l00051">51</a> of file <a class="el" href="MultipleOption_8cpp_source.html">MultipleOption.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   52</span>{</div>
-<div class="line"><span class="lineno">   53</span>    <span class="keyword">auto</span> &amp;settings = <a class="code hl_function" href="classrtype_1_1client_1_1GameSettings.html#ad91efaa41fd095e80dd5dc8bb964c105">GameSettings::getInstance</a>();</div>
-<div class="line"><span class="lineno">   54</span>    <span class="keyword">auto</span> &amp;langManager = <a class="code hl_function" href="classrtype_1_1client_1_1LanguageManager.html#a2a0213d4ccd62e45bb5c084f2c6ecb99">LanguageManager::getInstance</a>();</div>
-<div class="line"><span class="lineno">   55</span>    <span class="keyword">auto</span> &amp;resourceManager = <a class="code hl_function" href="classrtype_1_1client_1_1ResourceManager.html#a8d08202bc017c474994b9d8c85ce1e8b">ResourceManager::getInstance</a>();</div>
+<p class="definition">Definition at line <a class="el" href="MultipleOption_8cpp_source.html#l00050">50</a> of file <a class="el" href="MultipleOption_8cpp_source.html">MultipleOption.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   51</span>{</div>
+<div class="line"><span class="lineno">   52</span>    <span class="keyword">auto</span> &amp;manager = <a class="code hl_function" href="classrtype_1_1client_1_1GameManager.html#a8dc95efaca723c2e3b7ec09ea43828bc">GameManager::instance</a>();</div>
+<div class="line"><span class="lineno">   53</span>    <span class="keyword">auto</span> &amp;settings = manager.gameSettings();</div>
+<div class="line"><span class="lineno">   54</span>    <span class="keyword">auto</span> &amp;langManager = manager.langManager();</div>
+<div class="line"><span class="lineno">   55</span>    <span class="keyword">auto</span> &amp;resourceManager = manager.resourceManager();</div>
 <div class="line"><span class="lineno">   56</span> </div>
 <div class="line"><span class="lineno">   57</span>    Color textCol = RAYWHITE;</div>
 <div class="line"><span class="lineno">   58</span>    Color boxCol = BLACK;</div>
@@ -399,42 +390,37 @@ Translation key for the choice text. </td></tr>
 <div class="line"><span class="lineno">   68</span> </div>
 <div class="line"><span class="lineno">   69</span>    <span class="keyword">const</span> std::string text = langManager.getTranslation(<a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1MultipleOption.html#ad0d1154c96a6aca54524a0396b774dbd">_textKey</a>);</div>
 <div class="line"><span class="lineno">   70</span> </div>
-<div class="line"><span class="lineno">   71</span><span class="preprocessor">    #ifdef DEBUG</span></div>
-<div class="line"><span class="lineno">   72</span>        DrawRectangleLinesEx(</div>
-<div class="line"><span class="lineno">   73</span>            Rectangle{<a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1MultipleOption.html#a03a0edd4ada0f126e9e278b727c7a521">_realPos</a>.x, <a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1MultipleOption.html#a03a0edd4ada0f126e9e278b727c7a521">_realPos</a>.y, <a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1MultipleOption.html#a4923735eb03b58d0119fddfd87886931">_realSize</a>.x, <a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1MultipleOption.html#a4923735eb03b58d0119fddfd87886931">_realSize</a>.y},</div>
-<div class="line"><span class="lineno">   74</span>            2.0f,</div>
-<div class="line"><span class="lineno">   75</span>            RED</div>
-<div class="line"><span class="lineno">   76</span>        );</div>
-<div class="line"><span class="lineno">   77</span><span class="preprocessor">    #endif</span></div>
-<div class="line"><span class="lineno">   78</span> </div>
-<div class="line"><span class="lineno">   79</span>    Vector2 textSize = MeasureTextEx(font, text.c_str(), fontSize, 1);</div>
-<div class="line"><span class="lineno">   80</span>    Vector2 textPos = {<a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1MultipleOption.html#a03a0edd4ada0f126e9e278b727c7a521">_realPos</a>.x, <a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1MultipleOption.html#a03a0edd4ada0f126e9e278b727c7a521">_realPos</a>.y + (<a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1MultipleOption.html#a4923735eb03b58d0119fddfd87886931">_realSize</a>.y / 2.0f) - (textSize.y / 2.0f)};</div>
+<div class="line"><span class="lineno">   71</span>    Vector2 textSize = MeasureTextEx(font, text.c_str(), fontSize, 1);</div>
+<div class="line"><span class="lineno">   72</span>    Vector2 textPos = {<a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1MultipleOption.html#a03a0edd4ada0f126e9e278b727c7a521">_realPos</a>.x, <a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1MultipleOption.html#a03a0edd4ada0f126e9e278b727c7a521">_realPos</a>.y + (<a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1MultipleOption.html#a4923735eb03b58d0119fddfd87886931">_realSize</a>.y / 2.0f) - (textSize.y / 2.0f)};</div>
+<div class="line"><span class="lineno">   73</span> </div>
+<div class="line"><span class="lineno">   74</span>    DrawRectangle(<a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1MultipleOption.html#a03a0edd4ada0f126e9e278b727c7a521">_realPos</a>.x, <a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1MultipleOption.html#a03a0edd4ada0f126e9e278b727c7a521">_realPos</a>.y, <a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1MultipleOption.html#a4923735eb03b58d0119fddfd87886931">_realSize</a>.x, <a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1MultipleOption.html#a4923735eb03b58d0119fddfd87886931">_realSize</a>.y, boxCol);</div>
+<div class="line"><span class="lineno">   75</span> </div>
+<div class="line"><span class="lineno">   76</span><span class="preprocessor">    #ifdef DEBUG</span></div>
+<div class="line"><span class="lineno">   77</span>        DrawRectangleLinesEx(Rectangle{<a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1MultipleOption.html#a03a0edd4ada0f126e9e278b727c7a521">_realPos</a>.x, <a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1MultipleOption.html#a03a0edd4ada0f126e9e278b727c7a521">_realPos</a>.y, <a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1MultipleOption.html#a4923735eb03b58d0119fddfd87886931">_realSize</a>.x, <a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1MultipleOption.html#a4923735eb03b58d0119fddfd87886931">_realSize</a>.y}, 2.0f, RED);</div>
+<div class="line"><span class="lineno">   78</span><span class="preprocessor">    #endif</span></div>
+<div class="line"><span class="lineno">   79</span> </div>
+<div class="line"><span class="lineno">   80</span>    DrawTextEx(font, text.c_str(), textPos, fontSize, 1, textCol);</div>
 <div class="line"><span class="lineno">   81</span> </div>
-<div class="line"><span class="lineno">   82</span>    DrawRectangle(<a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1MultipleOption.html#a03a0edd4ada0f126e9e278b727c7a521">_realPos</a>.x, <a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1MultipleOption.html#a03a0edd4ada0f126e9e278b727c7a521">_realPos</a>.y, <a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1MultipleOption.html#a4923735eb03b58d0119fddfd87886931">_realSize</a>.x, <a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1MultipleOption.html#a4923735eb03b58d0119fddfd87886931">_realSize</a>.y, boxCol);</div>
-<div class="line"><span class="lineno">   83</span>    DrawTextEx(font, text.c_str(), textPos, fontSize, 1, textCol);</div>
-<div class="line"><span class="lineno">   84</span> </div>
-<div class="line"><span class="lineno">   85</span>    <span class="keywordflow">if</span> (!<a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1MultipleOption.html#a02014c27add31c93e042749c4abd9618">_choices</a>.empty()) {</div>
-<div class="line"><span class="lineno">   86</span>        <span class="keyword">const</span> std::string choiceText = <span class="stringliteral">&quot;&lt; &quot;</span> + langManager.getTranslation(<a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1MultipleOption.html#a02014c27add31c93e042749c4abd9618">_choices</a>[<a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1MultipleOption.html#ab339b0ff7ec817d37019f733545a884e">_choiceId</a>].textKey) + <span class="stringliteral">&quot; &gt;&quot;</span>;</div>
-<div class="line"><span class="lineno">   87</span>        Vector2 choiceSize = MeasureTextEx(font, choiceText.c_str(), fontSize, 1);</div>
-<div class="line"><span class="lineno">   88</span>        Vector2 choicePos = {<a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1MultipleOption.html#a03a0edd4ada0f126e9e278b727c7a521">_realPos</a>.x + <a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1MultipleOption.html#a4923735eb03b58d0119fddfd87886931">_realSize</a>.x - choiceSize.x, <a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1MultipleOption.html#a03a0edd4ada0f126e9e278b727c7a521">_realPos</a>.y + (<a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1MultipleOption.html#a4923735eb03b58d0119fddfd87886931">_realSize</a>.y / 2.0f) - (choiceSize.y / 2.0f)};</div>
-<div class="line"><span class="lineno">   89</span> </div>
-<div class="line"><span class="lineno">   90</span>        DrawTextEx(font, choiceText.c_str(), choicePos, fontSize, 1, textCol);</div>
-<div class="line"><span class="lineno">   91</span>    }</div>
-<div class="line"><span class="lineno">   92</span>}</div>
-<div class="ttc" id="aclassrtype_1_1client_1_1GameSettings_html_ad91efaa41fd095e80dd5dc8bb964c105"><div class="ttname"><a href="classrtype_1_1client_1_1GameSettings.html#ad91efaa41fd095e80dd5dc8bb964c105">rtype::client::GameSettings::getInstance</a></div><div class="ttdeci">static GameSettings &amp; getInstance()</div><div class="ttdoc">Retrieves the global singleton instance.</div><div class="ttdef"><b>Definition</b> <a href="GameSettings_8cpp_source.html#l00034">GameSettings.cpp:34</a></div></div>
-<div class="ttc" id="aclassrtype_1_1client_1_1LanguageManager_html_a2a0213d4ccd62e45bb5c084f2c6ecb99"><div class="ttname"><a href="classrtype_1_1client_1_1LanguageManager.html#a2a0213d4ccd62e45bb5c084f2c6ecb99">rtype::client::LanguageManager::getInstance</a></div><div class="ttdeci">static LanguageManager &amp; getInstance()</div><div class="ttdoc">Returns the singleton instance of LanguageManager.</div><div class="ttdef"><b>Definition</b> <a href="LanguageManager_8cpp_source.html#l00035">LanguageManager.cpp:35</a></div></div>
-<div class="ttc" id="aclassrtype_1_1client_1_1ResourceManager_html_a8d08202bc017c474994b9d8c85ce1e8b"><div class="ttname"><a href="classrtype_1_1client_1_1ResourceManager.html#a8d08202bc017c474994b9d8c85ce1e8b">rtype::client::ResourceManager::getInstance</a></div><div class="ttdeci">static ResourceManager &amp; getInstance()</div><div class="ttdoc">Retrieves the global ResourceManager instance.</div><div class="ttdef"><b>Definition</b> <a href="ResourceManager_8cpp_source.html#l00035">ResourceManager.cpp:35</a></div></div>
+<div class="line"><span class="lineno">   82</span>    <span class="keywordflow">if</span> (!<a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1MultipleOption.html#a02014c27add31c93e042749c4abd9618">_choices</a>.empty()) {</div>
+<div class="line"><span class="lineno">   83</span>        <span class="keyword">const</span> std::string choiceText = <span class="stringliteral">&quot;&lt; &quot;</span> + langManager.getTranslation(<a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1MultipleOption.html#a02014c27add31c93e042749c4abd9618">_choices</a>[<a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1MultipleOption.html#ab339b0ff7ec817d37019f733545a884e">_choiceId</a>].textKey) + <span class="stringliteral">&quot; &gt;&quot;</span>;</div>
+<div class="line"><span class="lineno">   84</span>        Vector2 choiceSize = MeasureTextEx(font, choiceText.c_str(), fontSize, 1);</div>
+<div class="line"><span class="lineno">   85</span>        Vector2 choicePos = {<a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1MultipleOption.html#a03a0edd4ada0f126e9e278b727c7a521">_realPos</a>.x + <a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1MultipleOption.html#a4923735eb03b58d0119fddfd87886931">_realSize</a>.x - choiceSize.x, <a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1MultipleOption.html#a03a0edd4ada0f126e9e278b727c7a521">_realPos</a>.y + (<a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1MultipleOption.html#a4923735eb03b58d0119fddfd87886931">_realSize</a>.y / 2.0f) - (choiceSize.y / 2.0f)};</div>
+<div class="line"><span class="lineno">   86</span> </div>
+<div class="line"><span class="lineno">   87</span>        DrawTextEx(font, choiceText.c_str(), choicePos, fontSize, 1, textCol);</div>
+<div class="line"><span class="lineno">   88</span>    }</div>
+<div class="line"><span class="lineno">   89</span>}</div>
+<div class="ttc" id="aclassrtype_1_1client_1_1GameManager_html_a8dc95efaca723c2e3b7ec09ea43828bc"><div class="ttname"><a href="classrtype_1_1client_1_1GameManager.html#a8dc95efaca723c2e3b7ec09ea43828bc">rtype::client::GameManager::instance</a></div><div class="ttdeci">static GameManager &amp; instance()</div><div class="ttdef"><b>Definition</b> <a href="GameManager_8cpp_source.html#l00012">GameManager.cpp:12</a></div></div>
 <div class="ttc" id="aclassrtype_1_1client_1_1ui_1_1MultipleOption_html_a03a0edd4ada0f126e9e278b727c7a521"><div class="ttname"><a href="classrtype_1_1client_1_1ui_1_1MultipleOption.html#a03a0edd4ada0f126e9e278b727c7a521">rtype::client::ui::MultipleOption::_realPos</a></div><div class="ttdeci">Vector2 _realPos</div><div class="ttdoc">Scaled position after applying global settings.</div><div class="ttdef"><b>Definition</b> <a href="MultipleOption_8hpp_source.html#l00110">MultipleOption.hpp:110</a></div></div>
 <div class="ttc" id="aclassrtype_1_1client_1_1ui_1_1MultipleOption_html_a4923735eb03b58d0119fddfd87886931"><div class="ttname"><a href="classrtype_1_1client_1_1ui_1_1MultipleOption.html#a4923735eb03b58d0119fddfd87886931">rtype::client::ui::MultipleOption::_realSize</a></div><div class="ttdeci">Vector2 _realSize</div><div class="ttdoc">Scaled size after applying global settings.</div><div class="ttdef"><b>Definition</b> <a href="MultipleOption_8hpp_source.html#l00111">MultipleOption.hpp:111</a></div></div>
 <div class="ttc" id="aclassrtype_1_1client_1_1ui_1_1MultipleOption_html_ab339b0ff7ec817d37019f733545a884e"><div class="ttname"><a href="classrtype_1_1client_1_1ui_1_1MultipleOption.html#ab339b0ff7ec817d37019f733545a884e">rtype::client::ui::MultipleOption::_choiceId</a></div><div class="ttdeci">int _choiceId</div><div class="ttdoc">Index of the currently selected choice.</div><div class="ttdef"><b>Definition</b> <a href="MultipleOption_8hpp_source.html#l00116">MultipleOption.hpp:116</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="MultipleOption_8hpp_source.html#l00116">_choiceId</a>, <a class="el" href="MultipleOption_8hpp_source.html#l00115">_choices</a>, <a class="el" href="MultipleOption_8hpp_source.html#l00110">_realPos</a>, <a class="el" href="MultipleOption_8hpp_source.html#l00111">_realSize</a>, <a class="el" href="MultipleOption_8hpp_source.html#l00113">_textKey</a>, <a class="el" href="LanguageManager_8cpp_source.html#l00035">rtype::client::LanguageManager::getInstance()</a>, <a class="el" href="ResourceManager_8cpp_source.html#l00035">rtype::client::ResourceManager::getInstance()</a>, and <a class="el" href="GameSettings_8cpp_source.html#l00034">rtype::client::GameSettings::getInstance()</a>.</p>
+<p class="reference">References <a class="el" href="MultipleOption_8hpp_source.html#l00116">_choiceId</a>, <a class="el" href="MultipleOption_8hpp_source.html#l00115">_choices</a>, <a class="el" href="MultipleOption_8hpp_source.html#l00110">_realPos</a>, <a class="el" href="MultipleOption_8hpp_source.html#l00111">_realSize</a>, <a class="el" href="MultipleOption_8hpp_source.html#l00113">_textKey</a>, and <a class="el" href="GameManager_8cpp_source.html#l00012">rtype::client::GameManager::instance()</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classrtype_1_1client_1_1ui_1_1MultipleOption_a595af7539ece9eb861ff6d38ecf61159_cgraph.svg" width="551" height="179"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classrtype_1_1client_1_1ui_1_1MultipleOption_aa1504c75a92f75b963cb5ee49ad95c86_cgraph.svg" width="527" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
@@ -521,8 +507,8 @@ Translation key for the choice text. </td></tr>
 
 </div>
 </div>
-<a id="aa6fa4e2dc733595bb5fd6a883506d669" name="aa6fa4e2dc733595bb5fd6a883506d669"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa6fa4e2dc733595bb5fd6a883506d669">&#9670;&#160;</a></span>update()</h2>
+<a id="a9fc70e451424d37e22d72ff9f248c6dc" name="a9fc70e451424d37e22d72ff9f248c6dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9fc70e451424d37e22d72ff9f248c6dc">&#9670;&#160;</a></span>update()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -534,18 +520,8 @@ Translation key for the choice text. </td></tr>
           <td class="memname">void rtype::client::ui::MultipleOption::update </td>
           <td>(</td>
           <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>selected</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>selected</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -565,37 +541,38 @@ Translation key for the choice text. </td></tr>
 </dl>
 <p>Updates the scaled position and size according to the global settings. If the option is selected, allows cycling between choices using the left and right arrow keys. Executes the callback associated with the current choice when it becomes active. </p>
 
-<p>Implements <a class="el" href="classrtype_1_1client_1_1ui_1_1IOption.html#a1da95ca90ab67a4b659474fb1adfd810">rtype::client::ui::IOption</a>.</p>
+<p>Implements <a class="el" href="classrtype_1_1client_1_1ui_1_1IOption.html#a50a6324dc5a8b756514789724362c134">rtype::client::ui::IOption</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="MultipleOption_8cpp_source.html#l00029">29</a> of file <a class="el" href="MultipleOption_8cpp_source.html">MultipleOption.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   30</span>{</div>
-<div class="line"><span class="lineno">   31</span>    <span class="keyword">auto</span> &amp;settings = <a class="code hl_function" href="classrtype_1_1client_1_1GameSettings.html#ad91efaa41fd095e80dd5dc8bb964c105">GameSettings::getInstance</a>();</div>
-<div class="line"><span class="lineno">   32</span> </div>
-<div class="line"><span class="lineno">   33</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> scale = settings.getScale();</div>
-<div class="line"><span class="lineno">   34</span> </div>
-<div class="line"><span class="lineno">   35</span>    <a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1MultipleOption.html#a4923735eb03b58d0119fddfd87886931">_realSize</a> = {<a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1MultipleOption.html#a3bb6a9e7aac41295ab5471c852db96e9">_size</a>.x * scale, <a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1MultipleOption.html#a3bb6a9e7aac41295ab5471c852db96e9">_size</a>.y * scale};</div>
-<div class="line"><span class="lineno">   36</span>    <a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1MultipleOption.html#a03a0edd4ada0f126e9e278b727c7a521">_realPos</a> = {(<a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1MultipleOption.html#a0b1c69dbe6c057588f11e984f5a8aee9">_position</a>.x - <a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1MultipleOption.html#a3bb6a9e7aac41295ab5471c852db96e9">_size</a>.x / 2.0f) * scale, (<a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1MultipleOption.html#a0b1c69dbe6c057588f11e984f5a8aee9">_position</a>.y - <a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1MultipleOption.html#a3bb6a9e7aac41295ab5471c852db96e9">_size</a>.y / 2.0f) * scale};</div>
-<div class="line"><span class="lineno">   37</span>    <span class="keywordflow">if</span> (!selected)</div>
-<div class="line"><span class="lineno">   38</span>        <span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno">   39</span>    <span class="keywordflow">if</span> (IsKeyPressed(KEY_LEFT)) {</div>
-<div class="line"><span class="lineno">   40</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1MultipleOption.html#ab339b0ff7ec817d37019f733545a884e">_choiceId</a> &lt;= 0) <a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1MultipleOption.html#a02014c27add31c93e042749c4abd9618">_choices</a>.size() == 0 ? <a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1MultipleOption.html#ab339b0ff7ec817d37019f733545a884e">_choiceId</a> = 0 : <a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1MultipleOption.html#ab339b0ff7ec817d37019f733545a884e">_choiceId</a> = <a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1MultipleOption.html#a02014c27add31c93e042749c4abd9618">_choices</a>.size() - 1;</div>
-<div class="line"><span class="lineno">   41</span>        <span class="keywordflow">else</span> <a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1MultipleOption.html#ab339b0ff7ec817d37019f733545a884e">_choiceId</a> -= 1;</div>
-<div class="line"><span class="lineno">   42</span>        <span class="keywordflow">if</span> (!<a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1MultipleOption.html#a02014c27add31c93e042749c4abd9618">_choices</a>.empty() &amp;&amp; <a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1MultipleOption.html#a02014c27add31c93e042749c4abd9618">_choices</a>[<a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1MultipleOption.html#ab339b0ff7ec817d37019f733545a884e">_choiceId</a>].callBack) <a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1MultipleOption.html#a02014c27add31c93e042749c4abd9618">_choices</a>[<a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1MultipleOption.html#ab339b0ff7ec817d37019f733545a884e">_choiceId</a>].callBack();</div>
-<div class="line"><span class="lineno">   43</span>    }</div>
-<div class="line"><span class="lineno">   44</span>    <span class="keywordflow">if</span> (IsKeyPressed(KEY_RIGHT)) {</div>
-<div class="line"><span class="lineno">   45</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1MultipleOption.html#ab339b0ff7ec817d37019f733545a884e">_choiceId</a> &gt;= <a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1MultipleOption.html#a02014c27add31c93e042749c4abd9618">_choices</a>.size() - 1) <a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1MultipleOption.html#ab339b0ff7ec817d37019f733545a884e">_choiceId</a> = 0;</div>
-<div class="line"><span class="lineno">   46</span>        <span class="keywordflow">else</span> <a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1MultipleOption.html#ab339b0ff7ec817d37019f733545a884e">_choiceId</a> += 1;</div>
-<div class="line"><span class="lineno">   47</span>        <span class="keywordflow">if</span> (!<a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1MultipleOption.html#a02014c27add31c93e042749c4abd9618">_choices</a>.empty() &amp;&amp; <a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1MultipleOption.html#a02014c27add31c93e042749c4abd9618">_choices</a>[<a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1MultipleOption.html#ab339b0ff7ec817d37019f733545a884e">_choiceId</a>].callBack) <a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1MultipleOption.html#a02014c27add31c93e042749c4abd9618">_choices</a>[<a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1MultipleOption.html#ab339b0ff7ec817d37019f733545a884e">_choiceId</a>].callBack();</div>
-<div class="line"><span class="lineno">   48</span>    }</div>
-<div class="line"><span class="lineno">   49</span>}</div>
+<p class="definition">Definition at line <a class="el" href="MultipleOption_8cpp_source.html#l00027">27</a> of file <a class="el" href="MultipleOption_8cpp_source.html">MultipleOption.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   28</span>{</div>
+<div class="line"><span class="lineno">   29</span>    <span class="keyword">auto</span> &amp;manager = <a class="code hl_function" href="classrtype_1_1client_1_1GameManager.html#a8dc95efaca723c2e3b7ec09ea43828bc">GameManager::instance</a>();</div>
+<div class="line"><span class="lineno">   30</span>    <span class="keyword">auto</span> &amp;settings = manager.gameSettings();</div>
+<div class="line"><span class="lineno">   31</span> </div>
+<div class="line"><span class="lineno">   32</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> scale = settings.getScale();</div>
+<div class="line"><span class="lineno">   33</span> </div>
+<div class="line"><span class="lineno">   34</span>    <a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1MultipleOption.html#a4923735eb03b58d0119fddfd87886931">_realSize</a> = {<a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1MultipleOption.html#a3bb6a9e7aac41295ab5471c852db96e9">_size</a>.x * scale, <a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1MultipleOption.html#a3bb6a9e7aac41295ab5471c852db96e9">_size</a>.y * scale};</div>
+<div class="line"><span class="lineno">   35</span>    <a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1MultipleOption.html#a03a0edd4ada0f126e9e278b727c7a521">_realPos</a> = {(<a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1MultipleOption.html#a0b1c69dbe6c057588f11e984f5a8aee9">_position</a>.x - <a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1MultipleOption.html#a3bb6a9e7aac41295ab5471c852db96e9">_size</a>.x / 2.0f) * scale, (<a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1MultipleOption.html#a0b1c69dbe6c057588f11e984f5a8aee9">_position</a>.y - <a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1MultipleOption.html#a3bb6a9e7aac41295ab5471c852db96e9">_size</a>.y / 2.0f) * scale};</div>
+<div class="line"><span class="lineno">   36</span>    <span class="keywordflow">if</span> (!selected)</div>
+<div class="line"><span class="lineno">   37</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">   38</span>    <span class="keywordflow">if</span> (IsKeyPressed(KEY_LEFT)) {</div>
+<div class="line"><span class="lineno">   39</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1MultipleOption.html#ab339b0ff7ec817d37019f733545a884e">_choiceId</a> &lt;= 0) <a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1MultipleOption.html#a02014c27add31c93e042749c4abd9618">_choices</a>.size() == 0 ? <a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1MultipleOption.html#ab339b0ff7ec817d37019f733545a884e">_choiceId</a> = 0 : <a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1MultipleOption.html#ab339b0ff7ec817d37019f733545a884e">_choiceId</a> = <a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1MultipleOption.html#a02014c27add31c93e042749c4abd9618">_choices</a>.size() - 1;</div>
+<div class="line"><span class="lineno">   40</span>        <span class="keywordflow">else</span> <a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1MultipleOption.html#ab339b0ff7ec817d37019f733545a884e">_choiceId</a> -= 1;</div>
+<div class="line"><span class="lineno">   41</span>        <span class="keywordflow">if</span> (!<a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1MultipleOption.html#a02014c27add31c93e042749c4abd9618">_choices</a>.empty() &amp;&amp; <a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1MultipleOption.html#a02014c27add31c93e042749c4abd9618">_choices</a>[<a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1MultipleOption.html#ab339b0ff7ec817d37019f733545a884e">_choiceId</a>].callBack) <a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1MultipleOption.html#a02014c27add31c93e042749c4abd9618">_choices</a>[<a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1MultipleOption.html#ab339b0ff7ec817d37019f733545a884e">_choiceId</a>].callBack();</div>
+<div class="line"><span class="lineno">   42</span>    }</div>
+<div class="line"><span class="lineno">   43</span>    <span class="keywordflow">if</span> (IsKeyPressed(KEY_RIGHT)) {</div>
+<div class="line"><span class="lineno">   44</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1MultipleOption.html#ab339b0ff7ec817d37019f733545a884e">_choiceId</a> &gt;= <a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1MultipleOption.html#a02014c27add31c93e042749c4abd9618">_choices</a>.size() - 1) <a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1MultipleOption.html#ab339b0ff7ec817d37019f733545a884e">_choiceId</a> = 0;</div>
+<div class="line"><span class="lineno">   45</span>        <span class="keywordflow">else</span> <a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1MultipleOption.html#ab339b0ff7ec817d37019f733545a884e">_choiceId</a> += 1;</div>
+<div class="line"><span class="lineno">   46</span>        <span class="keywordflow">if</span> (!<a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1MultipleOption.html#a02014c27add31c93e042749c4abd9618">_choices</a>.empty() &amp;&amp; <a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1MultipleOption.html#a02014c27add31c93e042749c4abd9618">_choices</a>[<a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1MultipleOption.html#ab339b0ff7ec817d37019f733545a884e">_choiceId</a>].callBack) <a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1MultipleOption.html#a02014c27add31c93e042749c4abd9618">_choices</a>[<a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1MultipleOption.html#ab339b0ff7ec817d37019f733545a884e">_choiceId</a>].callBack();</div>
+<div class="line"><span class="lineno">   47</span>    }</div>
+<div class="line"><span class="lineno">   48</span>}</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="MultipleOption_8hpp_source.html#l00116">_choiceId</a>, <a class="el" href="MultipleOption_8hpp_source.html#l00115">_choices</a>, <a class="el" href="MultipleOption_8hpp_source.html#l00107">_position</a>, <a class="el" href="MultipleOption_8hpp_source.html#l00110">_realPos</a>, <a class="el" href="MultipleOption_8hpp_source.html#l00111">_realSize</a>, <a class="el" href="MultipleOption_8hpp_source.html#l00108">_size</a>, and <a class="el" href="GameSettings_8cpp_source.html#l00034">rtype::client::GameSettings::getInstance()</a>.</p>
+<p class="reference">References <a class="el" href="MultipleOption_8hpp_source.html#l00116">_choiceId</a>, <a class="el" href="MultipleOption_8hpp_source.html#l00115">_choices</a>, <a class="el" href="MultipleOption_8hpp_source.html#l00107">_position</a>, <a class="el" href="MultipleOption_8hpp_source.html#l00110">_realPos</a>, <a class="el" href="MultipleOption_8hpp_source.html#l00111">_realSize</a>, <a class="el" href="MultipleOption_8hpp_source.html#l00108">_size</a>, and <a class="el" href="GameManager_8cpp_source.html#l00012">rtype::client::GameManager::instance()</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classrtype_1_1client_1_1ui_1_1MultipleOption_aa6fa4e2dc733595bb5fd6a883506d669_cgraph.svg" width="536" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classrtype_1_1client_1_1ui_1_1MultipleOption_a9fc70e451424d37e22d72ff9f248c6dc_cgraph.svg" width="540" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
@@ -625,7 +602,7 @@ Translation key for the choice text. </td></tr>
 
 <p class="definition">Definition at line <a class="el" href="MultipleOption_8hpp_source.html#l00116">116</a> of file <a class="el" href="MultipleOption_8hpp_source.html">MultipleOption.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="MultipleOption_8cpp_source.html#l00051">draw()</a>, and <a class="el" href="MultipleOption_8cpp_source.html#l00029">update()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="MultipleOption_8cpp_source.html#l00050">draw()</a>, and <a class="el" href="MultipleOption_8cpp_source.html#l00027">update()</a>.</p>
 
 </div>
 </div>
@@ -653,7 +630,7 @@ Translation key for the choice text. </td></tr>
 
 <p class="definition">Definition at line <a class="el" href="MultipleOption_8hpp_source.html#l00115">115</a> of file <a class="el" href="MultipleOption_8hpp_source.html">MultipleOption.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="MultipleOption_8cpp_source.html#l00094">addChoice()</a>, <a class="el" href="MultipleOption_8cpp_source.html#l00051">draw()</a>, and <a class="el" href="MultipleOption_8cpp_source.html#l00029">update()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="MultipleOption_8cpp_source.html#l00091">addChoice()</a>, <a class="el" href="MultipleOption_8cpp_source.html#l00050">draw()</a>, and <a class="el" href="MultipleOption_8cpp_source.html#l00027">update()</a>.</p>
 
 </div>
 </div>
@@ -681,7 +658,7 @@ Translation key for the choice text. </td></tr>
 
 <p class="definition">Definition at line <a class="el" href="MultipleOption_8hpp_source.html#l00107">107</a> of file <a class="el" href="MultipleOption_8hpp_source.html">MultipleOption.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="MultipleOption_8hpp_source.html#l00092">setPosition()</a>, and <a class="el" href="MultipleOption_8cpp_source.html#l00029">update()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="MultipleOption_8hpp_source.html#l00092">setPosition()</a>, and <a class="el" href="MultipleOption_8cpp_source.html#l00027">update()</a>.</p>
 
 </div>
 </div>
@@ -709,7 +686,7 @@ Translation key for the choice text. </td></tr>
 
 <p class="definition">Definition at line <a class="el" href="MultipleOption_8hpp_source.html#l00110">110</a> of file <a class="el" href="MultipleOption_8hpp_source.html">MultipleOption.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="MultipleOption_8cpp_source.html#l00051">draw()</a>, and <a class="el" href="MultipleOption_8cpp_source.html#l00029">update()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="MultipleOption_8cpp_source.html#l00050">draw()</a>, and <a class="el" href="MultipleOption_8cpp_source.html#l00027">update()</a>.</p>
 
 </div>
 </div>
@@ -737,7 +714,7 @@ Translation key for the choice text. </td></tr>
 
 <p class="definition">Definition at line <a class="el" href="MultipleOption_8hpp_source.html#l00111">111</a> of file <a class="el" href="MultipleOption_8hpp_source.html">MultipleOption.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="MultipleOption_8cpp_source.html#l00051">draw()</a>, and <a class="el" href="MultipleOption_8cpp_source.html#l00029">update()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="MultipleOption_8cpp_source.html#l00050">draw()</a>, and <a class="el" href="MultipleOption_8cpp_source.html#l00027">update()</a>.</p>
 
 </div>
 </div>
@@ -765,7 +742,7 @@ Translation key for the choice text. </td></tr>
 
 <p class="definition">Definition at line <a class="el" href="MultipleOption_8hpp_source.html#l00108">108</a> of file <a class="el" href="MultipleOption_8hpp_source.html">MultipleOption.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="MultipleOption_8hpp_source.html#l00098">setSize()</a>, and <a class="el" href="MultipleOption_8cpp_source.html#l00029">update()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="MultipleOption_8hpp_source.html#l00098">setSize()</a>, and <a class="el" href="MultipleOption_8cpp_source.html#l00027">update()</a>.</p>
 
 </div>
 </div>
@@ -793,7 +770,7 @@ Translation key for the choice text. </td></tr>
 
 <p class="definition">Definition at line <a class="el" href="MultipleOption_8hpp_source.html#l00113">113</a> of file <a class="el" href="MultipleOption_8hpp_source.html">MultipleOption.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="MultipleOption_8cpp_source.html#l00051">draw()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="MultipleOption_8cpp_source.html#l00050">draw()</a>.</p>
 
 </div>
 </div>

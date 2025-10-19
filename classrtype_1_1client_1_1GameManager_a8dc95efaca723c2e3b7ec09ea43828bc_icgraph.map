@@ -1,0 +1,39 @@
+<map id="rtype::client::GameManager::instance" name="rtype::client::GameManager::instance">
+<area shape="rect" id="Node000001" title=" " alt="" coords="443,441,647,481"/>
+<area shape="rect" id="Node000002" href="$classrtype_1_1client_1_1Game.html#addbb7528de4d98f64b5e7d393d13faae" title="Constructs the Game instance and initializes core systems." alt="" coords="154,5,349,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="539,427,531,347,522,297,509,243,490,189,465,136,433,87,393,45,372,32,348,24,350,19,374,27,396,41,437,84,469,133,495,187,514,242,527,296,536,347,545,426"/>
+<area shape="rect" id="Node000003" href="$classrtype_1_1client_1_1MainMenuScene.html#a293adfde89e2f96f5aae7a9189caf1cb" title=" " alt="" coords="144,55,359,95"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="537,427,524,360,498,273,480,228,456,184,427,144,393,109,358,90,360,85,396,105,431,141,461,181,484,226,503,271,529,358,542,426"/>
+<area shape="rect" id="Node000004" href="$classrtype_1_1client_1_1OptionsMenuScene.html#a564280b0f7b6bfb513a538c1185b2932" title="Constructs and initializes the Options menu scene." alt="" coords="135,119,368,159"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="533,428,517,372,489,302,471,267,448,232,423,201,393,173,367,158,370,154,396,169,427,197,453,229,475,264,494,300,522,370,539,426"/>
+<area shape="rect" id="Node000005" href="$classrtype_1_1client_1_1ui_1_1Sprite.html#a39be2a0c55846e5eac75d642b9aca344" title="Draws the sprite on the screen." alt="" coords="148,184,355,209"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="530,429,512,381,483,325,443,269,420,244,393,223,354,206,356,201,396,218,423,240,448,265,487,322,516,379,535,427"/>
+<area shape="rect" id="Node000006" href="$classrtype_1_1client_1_1ui_1_1MultipleOption.html#aa1504c75a92f75b963cb5ee49ad95c86" title="Draws the option and its current choice on the screen." alt="" coords="119,233,383,259"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="525,429,504,392,474,349,437,307,393,272,369,261,372,256,396,268,441,303,479,345,509,389,530,427"/>
+<area shape="rect" id="Node000007" href="$classrtype_1_1client_1_1ui_1_1SingleOption.html#a73ae3b27b65b537492515cd4f1ec2c44" title="Draws the option on the screen." alt="" coords="126,283,377,308"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="518,432,465,375,431,346,393,323,361,311,363,306,396,318,434,342,469,371,522,428"/>
+<area shape="rect" id="Node000008" href="$classrtype_1_1client_1_1LanguageManager.html#a80815bdb6fbd220a344949ede27bd120" title="Returns a localized translation string for the given key." alt="" coords="137,333,365,373"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="492,437,394,394,335,375,336,370,396,389,494,432"/>
+<area shape="rect" id="Node000009" href="$Client_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Main entry point of the R&#45;Type client." alt="" coords="5,448,60,473"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="429,442,394,438,251,426,188,428,109,438,61,452,59,447,107,433,188,422,251,421,395,433,429,437"/>
+<area shape="rect" id="Node000010" href="$classrtype_1_1client_1_1Game.html#a9c349ade2780c0a770c0b9d4485918e2" title="Executes the main game loop." alt="" coords="163,448,339,473"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="429,463,340,463,340,458,429,458"/>
+<area shape="rect" id="Node000011" href="$classrtype_1_1client_1_1Game.html#a14743f984bad6a06c8683af893247231" title="Starts the game with a specific scene as the entry point." alt="" coords="144,497,359,523"/>
+<area shape="poly" id="edge11_Node000001_Node000011" title=" " alt="" coords="430,483,328,500,327,495,429,477"/>
+<area shape="rect" id="Node000012" href="$classrtype_1_1client_1_1ui_1_1Sprite.html#a5c46afa4cde5882a3b77bc8c1f3e4b61" title="Updates the sprite’s real position and size according to the game’s scaling settings." alt="" coords="142,547,361,572"/>
+<area shape="poly" id="edge13_Node000001_Node000012" title=" " alt="" coords="499,490,450,514,395,537,346,549,345,544,394,531,448,510,497,485"/>
+<area shape="rect" id="Node000013" href="$classrtype_1_1client_1_1ui_1_1MultipleOption.html#a9fc70e451424d37e22d72ff9f248c6dc" title="Updates the option’s state." alt="" coords="113,596,390,621"/>
+<area shape="poly" id="edge14_Node000001_Node000013" title=" " alt="" coords="518,493,465,541,431,566,396,586,360,598,358,593,394,581,429,561,461,537,514,489"/>
+<area shape="rect" id="Node000014" href="$classrtype_1_1client_1_1ui_1_1SingleOption.html#a4793274e028e4789f50111427cd86aa7" title="Updates the option’s state." alt="" coords="119,645,383,671"/>
+<area shape="poly" id="edge15_Node000001_Node000014" title=" " alt="" coords="527,494,505,528,475,567,438,604,396,635,367,648,365,643,393,630,435,600,471,563,501,525,523,492"/>
+<area shape="rect" id="Node000015" href="$classrtype_1_1ecs_1_1DrawSystem.html#a4c6a2255e6658c3231c1b8e160e69d25" title="Renders all entities with sprite and position attributes." alt="" coords="136,695,367,720"/>
+<area shape="poly" id="edge16_Node000001_Node000015" title=" " alt="" coords="533,495,514,539,484,591,445,642,422,665,396,684,368,698,366,693,393,680,418,661,441,638,480,588,509,536,529,493"/>
+<area shape="rect" id="Node000016" href="$classrtype_1_1client_1_1GameScene.html#a6942b138a7daf65e0c1f01a0bd4fb322" title="Main update loop for the scene." alt="" coords="132,744,371,769"/>
+<area shape="poly" id="edge17_Node000001_Node000016" title=" " alt="" coords="538,495,520,548,492,614,451,679,426,708,396,734,372,747,370,742,393,729,422,705,447,676,487,611,515,546,533,493"/>
+<area shape="rect" id="Node000017" href="$classrtype_1_1client_1_1MainMenuScene.html#a8edc552298769da89f61dadf0eef88e2" title="Main update loop for the scene." alt="" coords="117,793,385,819"/>
+<area shape="poly" id="edge18_Node000001_Node000017" title=" " alt="" coords="541,495,527,557,500,636,481,677,458,716,430,752,396,783,375,796,372,791,393,779,426,748,453,713,476,674,495,634,521,556,536,493"/>
+<area shape="rect" id="Node000018" href="$classrtype_1_1client_1_1OptionsMenuScene.html#a46c4fef56eeb56f6a0919744c84cb0d0" title="Updates the scene state and handles user input." alt="" coords="108,843,395,868"/>
+<area shape="poly" id="edge19_Node000001_Node000018" title=" " alt="" coords="543,495,532,566,507,658,488,706,464,753,433,795,396,832,376,845,373,840,393,828,429,792,459,750,483,704,502,656,527,565,538,494"/>
+<area shape="poly" id="edge10_Node000010_Node000009" title=" " alt="" coords="149,463,60,463,60,458,149,458"/>
+<area shape="poly" id="edge12_Node000011_Node000009" title=" " alt="" coords="154,497,107,487,59,473,61,468,109,482,155,492"/>
+</map>
