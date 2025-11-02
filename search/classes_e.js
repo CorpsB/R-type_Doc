@@ -1,15 +1,16 @@
 var searchData=
 [
-  ['scenemanager_0',['SceneManager',['../classrtype_1_1client_1_1SceneManager.html',1,'rtype::client']]],
-  ['score_5fattr_5ft_1',['score_attr_t',['../Score_8hpp.html#structscore__attr__t',1,'']]],
-  ['server_2',['server',['../classrtype_1_1server.html',1,'rtype']]],
-  ['serverclock_3',['ServerClock',['../classServerClock.html',1,'']]],
-  ['singleoption_4',['SingleOption',['../classrtype_1_1client_1_1ui_1_1SingleOption.html',1,'rtype::client::ui']]],
-  ['spawnersystem_5',['SpawnerSystem',['../classrtype_1_1ecs_1_1SpawnerSystem.html',1,'rtype::ecs']]],
-  ['speed_5fattr_5ft_6',['speed_attr_t',['../Speed_8hpp.html#structspeed__attr__t',1,'']]],
-  ['sprite_7',['sprite',['../structarcade_1_1types_1_1Sprite.html',1,'arcade::types::Sprite'],['../classrtype_1_1client_1_1ui_1_1Sprite.html',1,'rtype::client::ui::Sprite']]],
-  ['sprite_5fattr_5ft_8',['sprite_attr_t',['../Common_2ECS_2Components_2Attributes_2Sprite_8hpp.html#structsprite__attr__t',1,'']]],
-  ['spriteinstance_9',['SpriteInstance',['../namespacertype_1_1client_1_1ui.html#structrtype_1_1client_1_1ui_1_1SpriteInstance',1,'rtype::client::ui']]],
-  ['system_10',['System',['../classrtype_1_1ecs_1_1System.html',1,'rtype::ecs']]],
-  ['systemmanager_11',['SystemManager',['../classrtype_1_1ecs_1_1SystemManager.html',1,'rtype::ecs']]]
+  ['packetenvelope_0',['PacketEnvelope',['../namespaceasge_1_1network.html#structasge_1_1network_1_1PacketEnvelope',1,'asge::network']]],
+  ['parsedxy_1',['ParsedXY',['../namespaceasge_1_1script_1_1ActionHandler.html#structasge_1_1script_1_1ActionHandler_1_1ParsedXY',1,'asge::script::ActionHandler']]],
+  ['pending_2',['Pending',['../classasge_1_1network_1_1NetworkManager.html#structasge_1_1network_1_1NetworkManager_1_1Pending',1,'asge::network::NetworkManager']]],
+  ['pendingop_3',['PendingOp',['../classasge_1_1scene_1_1SceneManager.html#structasge_1_1scene_1_1SceneManager_1_1PendingOp',1,'asge::scene::SceneManager']]],
+  ['playersystem_4',['PlayerSystem',['../classasge_1_1world_1_1systems_1_1PlayerSystem.html',1,'asge::world::systems']]],
+  ['playoptions_5',['PlayOptions',['../namespaceasge_1_1audio.html#structasge_1_1audio_1_1PlayOptions',1,'asge::audio']]],
+  ['pluginhandle_6',['PluginHandle',['../classasge_1_1plugin_1_1PluginHandle.html',1,'asge::plugin']]],
+  ['pluginloader_7',['PluginLoader',['../classasge_1_1plugin_1_1PluginLoader.html',1,'asge::plugin']]],
+  ['pluginmanager_8',['PluginManager',['../classasge_1_1plugin_1_1PluginManager.html',1,'asge::plugin']]],
+  ['pointerstate_9',['PointerState',['../namespaceasge_1_1input.html#structasge_1_1input_1_1PointerState',1,'asge::input']]],
+  ['position_5fattr_5ft_10',['position_attr_t',['../namespaceasge_1_1components.html#structasge_1_1components_1_1position__attr__t',1,'asge::components']]],
+  ['positiontrigger_11',['PositionTrigger',['../namespaceasge_1_1script.html#structasge_1_1script_1_1PositionTrigger',1,'asge::script']]],
+  ['progressbar_12',['ProgressBar',['../classrtype_1_1client_1_1ui_1_1ProgressBar.html',1,'rtype::client::ui']]]
 ];

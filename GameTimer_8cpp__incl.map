@@ -1,0 +1,36 @@
+<map id="GameTimer.cpp" name="GameTimer.cpp">
+<area shape="rect" id="Node000001" title="Implementation of GameTimer: game&#45;facing timer with time&#45;scale and pause support." alt="" coords="549,5,674,31"/>
+<area shape="rect" id="Node000002" href="$GameTimer_8hpp.html" title="High&#45;level game timer composing a SystemTimer and exposing game controls." alt="" coords="389,79,516,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="587,33,492,75,490,71,585,28"/>
+<area shape="rect" id="Node000012" href="$Error_8hpp.html" title="Exception type used by the engine for categorized errors." alt="" coords="779,79,918,104"/>
+<area shape="poly" id="edge15_Node000001_Node000012" title=" " alt="" coords="650,28,798,72,796,77,649,33"/>
+<area shape="rect" id="Node000003" href="$ITimer_8hpp.html" title="Abstract timer interface used by ASGE subsystems and tests." alt="" coords="5,225,108,251"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="394,107,312,126,223,154,150,187,89,220,86,216,148,183,221,150,311,121,393,101"/>
+<area shape="rect" id="Node000004" href="$SystemTimer_8hpp.html" title="High&#45;resolution system timer implementation using std::chrono." alt="" coords="255,152,493,177"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="442,106,399,145,395,141,438,102"/>
+<area shape="rect" id="Node000005" href="$IDebug_8hpp.html" title="Interface defining the debugging system for the ASGE engine." alt="" coords="132,225,296,251"/>
+<area shape="poly" id="edge12_Node000002_Node000005" title=" " alt="" coords="390,98,353,103,314,114,276,130,244,154,234,167,227,181,219,212,213,211,222,180,229,164,240,150,274,126,312,109,352,98,389,93"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="499,225,563,251"/>
+<area shape="poly" id="edge14_Node000002_Node000010" title=" " alt="" coords="467,102,488,124,507,151,520,181,529,211,524,212,515,183,502,153,483,127,464,106"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="587,225,654,251"/>
+<area shape="poly" id="edge13_Node000002_Node000011" title=" " alt="" coords="470,102,532,150,601,213,597,217,528,154,467,106"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="324,180,122,225,120,220,322,175"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="349,180,254,222,252,217,347,175"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="321,225,387,251"/>
+<area shape="poly" id="edge8_Node000004_Node000008" title=" " alt="" coords="373,178,363,213,358,211,368,177"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="411,225,475,251"/>
+<area shape="poly" id="edge9_Node000004_Node000009" title=" " alt="" coords="387,176,425,214,421,217,384,180"/>
+<area shape="poly" id="edge10_Node000004_Node000010" title=" " alt="" coords="400,175,494,217,492,222,398,180"/>
+<area shape="poly" id="edge11_Node000004_Node000011" title=" " alt="" coords="414,175,575,221,573,226,413,180"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="513,299,571,324"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="267,248,500,298,499,303,266,253"/>
+<area shape="rect" id="Node000007" href="$DebugTypes_8hpp.html" title="Defines the different severity levels used for debugging and logging." alt="" coords="89,299,339,324"/>
+<area shape="poly" id="edge7_Node000005_Node000007" title=" " alt="" coords="217,251,217,285,211,285,211,251"/>
+<area shape="poly" id="edge19_Node000012_Node000006" title=" " alt="" coords="806,107,761,125,739,138,719,154,701,178,694,202,686,227,668,253,628,281,586,300,584,295,625,276,664,249,681,224,689,200,696,176,715,150,736,134,759,120,804,102"/>
+<area shape="rect" id="Node000013" href="$ErrorTypes_8hpp.html" title="Enumerations describing error categories and severities." alt="" coords="729,152,969,177"/>
+<area shape="poly" id="edge16_Node000012_Node000013" title=" " alt="" coords="851,104,851,138,846,138,846,104"/>
+<area shape="rect" id="Node000014" title=" " alt="" coords="993,152,1080,177"/>
+<area shape="poly" id="edge17_Node000012_Node000014" title=" " alt="" coords="880,102,994,144,992,149,878,107"/>
+<area shape="rect" id="Node000015" title=" " alt="" coords="1105,152,1179,177"/>
+<area shape="poly" id="edge18_Node000012_Node000015" title=" " alt="" coords="896,101,1092,148,1090,154,895,107"/>
+</map>

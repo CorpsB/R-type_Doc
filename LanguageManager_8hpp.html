@@ -104,14 +104,10 @@ $(document).ready(function(){initNavTree('LanguageManager_8hpp.html',''); initRe
   <div class="headertitle"><div class="title">LanguageManager.hpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-
-<p>Declaration of the <a class="el" href="classrtype_1_1client_1_1LanguageManager.html">rtype::client::LanguageManager</a> singleton class.  
-<a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;<a class="el" href="Error_8hpp_source.html">../../../Common/Utils/Error.hpp</a>&quot;</code><br />
+<div class="textblock"><code>#include &lt;unordered_map&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
 <code>#include &lt;iostream&gt;</code><br />
 <code>#include &lt;fstream&gt;</code><br />
-<code>#include &lt;string&gt;</code><br />
-<code>#include &lt;unordered_map&gt;</code><br />
 <code>#include &lt;regex&gt;</code><br />
 <code>#include &lt;nlohmann/json.hpp&gt;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -119,22 +115,21 @@ $(document).ready(function(){initNavTree('LanguageManager_8hpp.html',''); initRe
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="LanguageManager_8hpp__incl.svg" width="100%" height="437"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="LanguageManager_8hpp__incl.svg" width="100%" height="382"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> This graph shows which files directly or indirectly include this file:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="LanguageManager_8hpp__dep__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="LanguageManager_8hpp__dep__incl.svg" width="100%" height="492"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 </div>
 <p><a href="LanguageManager_8hpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtype_1_1client_1_1LanguageManager.html">rtype::client::LanguageManager</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Singleton handling internationalization (i18n) and dynamic text translation.  <a href="classrtype_1_1client_1_1LanguageManager.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtype_1_1client_1_1lang_1_1LanguageManager.html">rtype::client::lang::LanguageManager</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
@@ -143,39 +138,20 @@ Namespaces</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespacertype_1_1client" id="r_namespacertype_1_1client"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacertype_1_1client.html">rtype::client</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespacertype_1_1client_1_1lang" id="r_namespacertype_1_1client_1_1lang"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacertype_1_1client_1_1lang.html">rtype::client::lang</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a0f6492ae5382ac71dc49fd5a680fbcb6" id="r_a0f6492ae5382ac71dc49fd5a680fbcb6"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacertype_1_1client.html#a0f6492ae5382ac71dc49fd5a680fbcb6">rtype::client::LangMap</a> = std::unordered_map&lt; std::string, std::string &gt;</td></tr>
-<tr class="memdesc:a0f6492ae5382ac71dc49fd5a680fbcb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alias for a map associating language tags to their translated strings.  <br /></td></tr>
-<tr class="separator:a0f6492ae5382ac71dc49fd5a680fbcb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace223e6f27c476daa27eaece53e99866" id="r_ace223e6f27c476daa27eaece53e99866"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacertype_1_1client_1_1lang.html#ace223e6f27c476daa27eaece53e99866">rtype::client::lang::LanguageMap</a> = std::unordered_map&lt; std::string, std::string &gt;</td></tr>
+<tr class="separator:ace223e6f27c476daa27eaece53e99866"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Declaration of the <a class="el" href="classrtype_1_1client_1_1LanguageManager.html">rtype::client::LanguageManager</a> singleton class. </p>
-<dl class="section since"><dt>Since</dt><dd>1.0</dd></dl>
-<dl class="section see"><dt>See also</dt><dd>GameSettings, <a class="el" href="classrtype_1_1exception_1_1Error.html" title="Base exception class for errors occurring in the R-Type engine.">rtype::exception::Error</a></dd></dl>
-<p>The <b>LanguageManager</b> provides runtime localization support for the R-Type client. It loads and manages language files stored as JSON, enabling dynamic text translation based on the current language setting defined in GameSettings.</p>
-<p>Each translation file defines a set of string identifiers mapped to language tags. The manager stores these translations in memory and provides access through getTranslation().</p>
-<h3><a class="anchor" id="autotoc_md2"></a>
-Example JSON format:</h3>
-<div class="fragment"><div class="line">{</div>
-<div class="line">    &quot;001_START&quot;: { &quot;EN&quot;: &quot;Start&quot;, &quot;FR&quot;: &quot;Jouer&quot; },</div>
-<div class="line">    &quot;002_OPTIONS&quot;: { &quot;EN&quot;: &quot;Options&quot;, &quot;FR&quot;: &quot;Options&quot; }</div>
-<div class="line">}</div>
-</div><!-- fragment --><h3><a class="anchor" id="autotoc_md3"></a>
-Example usage:</h3>
-<div class="fragment"><div class="line"><span class="keyword">auto</span> &amp;lang = LanguageManager::getInstance();</div>
-<div class="line">lang.loadFile(<span class="stringliteral">&quot;Assets/lang/lang.json&quot;</span>);</div>
-<div class="line">std::string text = lang.getTranslation(<span class="stringliteral">&quot;001_START&quot;</span>);</div>
-</div><!-- fragment --><dl class="section note"><dt>Note</dt><dd>Only one instance of this class exists in memory (Meyers Singleton). </dd></dl>
-
-<p class="definition">Definition in file <a class="el" href="LanguageManager_8hpp_source.html">LanguageManager.hpp</a>.</p>
-</div></div><!-- contents -->
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_922c588100a187620fdc1533bc178f73.html">Client</a></li><li class="navelem"><a class="el" href="dir_2a1d840b44edd7220955ce3ad88544ff.html">Game</a></li><li class="navelem"><a class="el" href="dir_1f8f7e682cda041765130e5e69b032b6.html">Languages</a></li><li class="navelem"><a class="el" href="LanguageManager_8hpp.html">LanguageManager.hpp</a></li>
+    <li class="navelem"><a class="el" href="dir_e1c4a44793bd3f7330c27f6f9cf1b151.html">rtype</a></li><li class="navelem"><a class="el" href="dir_a47400920f0eca4dfc693f7081db3584.html">client</a></li><li class="navelem"><a class="el" href="dir_36f6ea2989f0070252db9e8e9a4f0cc6.html">lang</a></li><li class="navelem"><a class="el" href="LanguageManager_8hpp.html">LanguageManager.hpp</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>

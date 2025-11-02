@@ -1,14 +1,26 @@
 <map id="EntityManager.hpp" name="EntityManager.hpp">
-<area shape="rect" id="Node000001" title="Entity creation and lifecycle manager for the ECS." alt="" coords="99,5,243,31"/>
-<area shape="rect" id="Node000002" href="$Macro_8hpp.html" title="Global configuration macros for the ECS (component/entity limits)." alt="" coords="76,79,167,104"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="165,33,139,69,135,66,160,29"/>
+<area shape="rect" id="Node000001" title="Manages lifecycle and signatures of ECS entities." alt="" coords="203,5,347,31"/>
+<area shape="rect" id="Node000002" href="$Macro_8hpp.html" title="Global configuration macros and spatial hashing helpers." alt="" coords="75,79,178,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="252,33,164,75,162,70,250,28"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="5,152,72,177"/>
-<area shape="poly" id="edge5_Node000001_Node000003" title=" " alt="" coords="137,33,99,52,81,65,66,80,51,109,44,139,39,137,46,107,62,77,78,61,97,47,135,28"/>
-<area shape="rect" id="Node000005" title=" " alt="" coords="191,79,249,104"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="181,29,206,66,202,69,177,33"/>
-<area shape="rect" id="Node000006" title=" " alt="" coords="274,79,337,104"/>
-<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="194,28,272,70,270,74,191,33"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="110,106,64,145,61,141,106,102"/>
+<area shape="poly" id="edge5_Node000001_Node000003" title=" " alt="" coords="203,25,167,31,130,41,95,57,65,81,55,93,48,108,42,139,37,138,43,106,50,91,61,77,92,53,128,36,166,26,202,19"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="203,79,261,104"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="270,32,248,68,244,66,265,30"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="286,79,349,104"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="284,30,306,66,301,68,279,32"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="373,79,459,104"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="299,28,382,70,380,75,296,33"/>
+<area shape="rect" id="Node000008" href="$Error_8hpp.html" title="Exception type used by the engine for categorized errors." alt="" coords="483,79,621,104"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="320,28,494,73,493,78,319,33"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="114,106,65,145,62,141,111,102"/>
 <area shape="rect" id="Node000004" title=" " alt="" coords="97,152,157,177"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="125,104,127,138,122,139,120,105"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="129,104,129,138,124,138,124,104"/>
+<area shape="rect" id="Node000009" href="$ErrorTypes_8hpp.html" title="Enumerations describing error categories and severities." alt="" coords="212,152,452,177"/>
+<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="517,107,381,150,380,145,516,101"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="477,152,563,177"/>
+<area shape="poly" id="edge10_Node000008_Node000010" title=" " alt="" coords="549,105,533,141,528,139,544,103"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="588,152,663,177"/>
+<area shape="poly" id="edge11_Node000008_Node000011" title=" " alt="" coords="566,102,605,140,602,144,562,106"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="687,152,745,177"/>
+<area shape="poly" id="edge12_Node000008_Node000012" title=" " alt="" coords="579,102,678,144,676,149,577,106"/>
 </map>

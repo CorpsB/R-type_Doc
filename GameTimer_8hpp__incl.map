@@ -1,0 +1,25 @@
+<map id="GameTimer.hpp" name="GameTimer.hpp">
+<area shape="rect" id="Node000001" title="High&#45;level game timer composing a SystemTimer and exposing game controls." alt="" coords="309,5,436,31"/>
+<area shape="rect" id="Node000002" href="$ITimer_8hpp.html" title="Abstract timer interface used by ASGE subsystems and tests." alt="" coords="5,152,108,177"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="341,33,222,81,90,148,88,143,220,76,339,28"/>
+<area shape="rect" id="Node000003" href="$SystemTimer_8hpp.html" title="High&#45;resolution system timer implementation using std::chrono." alt="" coords="253,79,492,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="375,31,375,65,370,65,370,31"/>
+<area shape="rect" id="Node000004" href="$IDebug_8hpp.html" title="Interface defining the debugging system for the ASGE engine." alt="" coords="132,152,296,177"/>
+<area shape="poly" id="edge11_Node000001_Node000004" title=" " alt="" coords="324,33,281,51,260,64,243,80,227,108,219,138,214,137,222,106,239,77,257,60,278,47,322,28"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="499,152,563,177"/>
+<area shape="poly" id="edge13_Node000001_Node000009" title=" " alt="" coords="422,28,465,47,487,60,505,77,523,106,531,137,526,138,518,108,501,80,484,64,463,51,420,33"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="587,152,654,177"/>
+<area shape="poly" id="edge12_Node000001_Node000010" title=" " alt="" coords="417,28,473,48,531,76,572,108,604,140,600,144,569,112,529,81,471,52,415,33"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="322,107,122,152,121,146,321,101"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="348,106,253,149,251,144,346,102"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="321,152,387,177"/>
+<area shape="poly" id="edge7_Node000003_Node000007" title=" " alt="" coords="372,105,363,140,358,138,367,104"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="411,152,475,177"/>
+<area shape="poly" id="edge8_Node000003_Node000008" title=" " alt="" coords="386,102,424,140,420,144,382,106"/>
+<area shape="poly" id="edge9_Node000003_Node000009" title=" " alt="" coords="399,102,494,144,492,149,397,106"/>
+<area shape="poly" id="edge10_Node000003_Node000010" title=" " alt="" coords="413,101,575,148,574,153,412,107"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="95,225,154,251"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="201,179,152,219,148,214,198,175"/>
+<area shape="rect" id="Node000006" href="$DebugTypes_8hpp.html" title="Defines the different severity levels used for debugging and logging." alt="" coords="178,225,429,251"/>
+<area shape="poly" id="edge6_Node000004_Node000006" title=" " alt="" coords="230,175,280,214,276,219,227,179"/>
+</map>

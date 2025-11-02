@@ -104,7 +104,7 @@ $(document).ready(function(){initNavTree('Macro_8hpp.html',''); initResizable();
 </div><!--header-->
 <div class="contents">
 
-<p>Global configuration macros for the ECS (component/entity limits).  
+<p>Global configuration macros and spatial hashing helpers.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;cstdint&gt;</code><br />
 <code>#include &lt;utility&gt;</code><br />
@@ -134,30 +134,42 @@ Macros</h2></td></tr>
 <tr class="memdesc:a0b7e155f796ed5e7b49b0f44867135ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum number of concurrently allocated entities.  <br /></td></tr>
 <tr class="separator:a0b7e155f796ed5e7b49b0f44867135ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af26aae7ec6a3fc2c06abb87fbf1544fb" id="r_af26aae7ec6a3fc2c06abb87fbf1544fb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Macro_8hpp.html#af26aae7ec6a3fc2c06abb87fbf1544fb">VIRTUAL_SCREEN_HEIGHT</a>&#160;&#160;&#160;1080</td></tr>
+<tr class="memdesc:af26aae7ec6a3fc2c06abb87fbf1544fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual rendering height for scalable UI.  <br /></td></tr>
 <tr class="separator:af26aae7ec6a3fc2c06abb87fbf1544fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a96d2cd952a467a5b554ce9617c298b10" id="r_a96d2cd952a467a5b554ce9617c298b10"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Macro_8hpp.html#a96d2cd952a467a5b554ce9617c298b10">VIRTUAL_SCREEN_WIDTH</a>&#160;&#160;&#160;1920</td></tr>
+<tr class="memdesc:a96d2cd952a467a5b554ce9617c298b10"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual rendering width for scalable UI.  <br /></td></tr>
 <tr class="separator:a96d2cd952a467a5b554ce9617c298b10"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aed897ed2f070f50267d55fd191fd06e6" id="r_aed897ed2f070f50267d55fd191fd06e6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Macro_8hpp.html#aed897ed2f070f50267d55fd191fd06e6">PIXELS_PER_CLUSTER</a>&#160;&#160;&#160;64</td></tr>
+<tr class="memdesc:aed897ed2f070f50267d55fd191fd06e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of pixels grouped into one spatial cluster.  <br /></td></tr>
 <tr class="separator:aed897ed2f070f50267d55fd191fd06e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:aa287b51683944006697faf1bde937fd9" id="r_aa287b51683944006697faf1bde937fd9"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Macro_8hpp.html#aa287b51683944006697faf1bde937fd9">makeKey</a> (int x, int y) noexcept</td></tr>
-<tr class="memdesc:aa287b51683944006697faf1bde937fd9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pack two 32-bit signed cell coordinates into a single 64-bit unsigned key.  <br /></td></tr>
+<tr class="memdesc:aa287b51683944006697faf1bde937fd9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Packs two signed cell coordinates into a 64-bit unsigned integer key.  <br /></td></tr>
 <tr class="separator:aa287b51683944006697faf1bde937fd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ab6d50fa1ecd2e7d7ed74b9816542ab" id="r_a0ab6d50fa1ecd2e7d7ed74b9816542ab"><td class="memItemLeft" align="right" valign="top">std::pair&lt; int, int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Macro_8hpp.html#a0ab6d50fa1ecd2e7d7ed74b9816542ab">decodeKey</a> (uint64_t key) noexcept</td></tr>
-<tr class="memdesc:a0ab6d50fa1ecd2e7d7ed74b9816542ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unpack a 64-bit key produced by makeKey back into two signed 32-bit coordinates.  <br /></td></tr>
+<tr class="memdesc:a0ab6d50fa1ecd2e7d7ed74b9816542ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decodes a packed 64-bit spatial key into (x, y) coordinates.  <br /></td></tr>
 <tr class="separator:a0ab6d50fa1ecd2e7d7ed74b9816542ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Global configuration macros for the ECS (component/entity limits). </p>
-<dl class="section since"><dt>Since</dt><dd>0.1</dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="ComponentManager_8hpp.html" title="Manager for registering and accessing component arrays in the ECS.">ComponentManager.hpp</a>, <a class="el" href="EntityManager_8hpp.html" title="Entity creation and lifecycle manager for the ECS.">EntityManager.hpp</a></dd></dl>
-<p>This header defines compile-time limits used by the ECS implementation:</p><ul>
-<li>MAX_COMPONENTS: maximum number of distinct component types supported.</li>
-<li>MAX_ENTITIES: maximum number of simultaneously allocatable entities.</li>
+<div class="textblock"><p>Global configuration macros and spatial hashing helpers. </p>
+<dl class="section version"><dt>Version</dt><dd>1.0 </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2025-03-26</dd></dl>
+<p>This header defines compile-time ECS limits and gameplay constants, as well as utility helpers for converting 2D cell coordinates into compact hashable keys.</p>
+<p>Macros included:</p><ul>
+<li><code>MAX_COMPONENTS</code>: Maximum number of unique component types supported by ECS.</li>
+<li><code>MAX_ENTITIES</code>: Maximum concurrently existing entities in the world.</li>
+<li>Virtual resolution configuration useful for scaling UI / world independent of screen resolution.</li>
 </ul>
-<dl class="section warning"><dt>Warning</dt><dd>Changing these values impacts memory usage and correctness of internal fixed-size containers. Rebuild the project after modifying them. </dd></dl>
+<p>Utility functions included:</p><ul>
+<li><code><a class="el" href="Macro_8hpp.html#aa287b51683944006697faf1bde937fd9" title="Packs two signed cell coordinates into a 64-bit unsigned integer key.">makeKey()</a></code>: Packs two 32-bit signed coordinates into one 64-bit key.</li>
+<li><code><a class="el" href="Macro_8hpp.html#a0ab6d50fa1ecd2e7d7ed74b9816542ab" title="Decodes a packed 64-bit spatial key into (x, y) coordinates.">decodeKey()</a></code>: Reverses a key into its original coordinates.</li>
+</ul>
+<dl class="section warning"><dt>Warning</dt><dd>Changing ECS limits requires full rebuild of the engine and may impact memory layout.</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="ComponentManager_8hpp.html" title="Central management container for ECS component arrays.">ComponentManager.hpp</a> </dd>
+<dd>
+<a class="el" href="EntityManager_8hpp.html" title="Manages lifecycle and signatures of ECS entities.">EntityManager.hpp</a> </dd></dl>
 
 <p class="definition">Definition in file <a class="el" href="Macro_8hpp_source.html">Macro.hpp</a>.</p>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
@@ -175,7 +187,7 @@ Functions</h2></td></tr>
 
 <p>Maximum number of distinct component types supported. </p>
 
-<p class="definition">Definition at line <a class="el" href="Macro_8hpp_source.html#l00027">27</a> of file <a class="el" href="Macro_8hpp_source.html">Macro.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Macro_8hpp_source.html#l00038">38</a> of file <a class="el" href="Macro_8hpp_source.html">Macro.hpp</a>.</p>
 
 </div>
 </div>
@@ -193,7 +205,7 @@ Functions</h2></td></tr>
 
 <p>Maximum number of concurrently allocated entities. </p>
 
-<p class="definition">Definition at line <a class="el" href="Macro_8hpp_source.html#l00028">28</a> of file <a class="el" href="Macro_8hpp_source.html">Macro.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Macro_8hpp_source.html#l00039">39</a> of file <a class="el" href="Macro_8hpp_source.html">Macro.hpp</a>.</p>
 
 </div>
 </div>
@@ -209,7 +221,9 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Macro_8hpp_source.html#l00032">32</a> of file <a class="el" href="Macro_8hpp_source.html">Macro.hpp</a>.</p>
+<p>Number of pixels grouped into one spatial cluster. </p>
+
+<p class="definition">Definition at line <a class="el" href="Macro_8hpp_source.html#l00043">43</a> of file <a class="el" href="Macro_8hpp_source.html">Macro.hpp</a>.</p>
 
 </div>
 </div>
@@ -225,7 +239,9 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Macro_8hpp_source.html#l00030">30</a> of file <a class="el" href="Macro_8hpp_source.html">Macro.hpp</a>.</p>
+<p>Virtual rendering height for scalable UI. </p>
+
+<p class="definition">Definition at line <a class="el" href="Macro_8hpp_source.html#l00041">41</a> of file <a class="el" href="Macro_8hpp_source.html">Macro.hpp</a>.</p>
 
 </div>
 </div>
@@ -241,7 +257,9 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Macro_8hpp_source.html#l00031">31</a> of file <a class="el" href="Macro_8hpp_source.html">Macro.hpp</a>.</p>
+<p>Virtual rendering width for scalable UI. </p>
+
+<p class="definition">Definition at line <a class="el" href="Macro_8hpp_source.html#l00042">42</a> of file <a class="el" href="Macro_8hpp_source.html">Macro.hpp</a>.</p>
 
 </div>
 </div>
@@ -270,25 +288,35 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Unpack a 64-bit key produced by makeKey back into two signed 32-bit coordinates. </p>
+<p>Decodes a packed 64-bit spatial key into (x, y) coordinates. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">key</td><td>64-bit cell key previously returned by makeKey. </td></tr>
+    <tr><td class="paramname">key</td><td>A 64-bit integer returned previously by <a class="el" href="Macro_8hpp.html#aa287b51683944006697faf1bde937fd9" title="Packs two signed cell coordinates into a 64-bit unsigned integer key.">makeKey()</a>. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>std::pair&lt;int,int&gt; containing (x,y) coordinates.</dd></dl>
-<p>The function extracts the high 32 bits as the x coordinate and the low 32 bits as the y coordinate, casts back to signed int and returns the pair. The function is noexcept. </p>
+<dl class="section return"><dt>Returns</dt><dd>std::pair&lt;int,int&gt; Reconstructed coordinate pair.</dd></dl>
+<p>Extracts x from high bits and y from low bits. Safe and noexcept.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="Macro_8hpp.html#aa287b51683944006697faf1bde937fd9" title="Packs two signed cell coordinates into a 64-bit unsigned integer key.">makeKey()</a></dd></dl>
+<p>Decodes a packed 64-bit spatial key into (x, y) coordinates.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>The packed 64-bit value. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A pair of signed integers (x, y) extracted from the key.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>The higher 32 bits contain X, and the lower 32 bits contain Y. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="Macro_8cpp_source.html#l00018">18</a> of file <a class="el" href="Macro_8cpp_source.html">Macro.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   19</span>{</div>
-<div class="line"><span class="lineno">   20</span>    int32_t x = <span class="keyword">static_cast&lt;</span>int32_t<span class="keyword">&gt;</span>(key &gt;&gt; 32);</div>
-<div class="line"><span class="lineno">   21</span>    int32_t y = <span class="keyword">static_cast&lt;</span>int32_t<span class="keyword">&gt;</span>(key &amp; 0xffffffffu);</div>
-<div class="line"><span class="lineno">   22</span> </div>
-<div class="line"><span class="lineno">   23</span>    <span class="keywordflow">return</span> std::make_pair(x, y);</div>
-<div class="line"><span class="lineno">   24</span>}</div>
+<p class="definition">Definition at line <a class="el" href="Macro_8cpp_source.html#l00057">57</a> of file <a class="el" href="Macro_8cpp_source.html">Macro.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   58</span>{</div>
+<div class="line"><span class="lineno">   59</span>    int32_t x = <span class="keyword">static_cast&lt;</span>int32_t<span class="keyword">&gt;</span>(key &gt;&gt; 32);</div>
+<div class="line"><span class="lineno">   60</span>    int32_t y = <span class="keyword">static_cast&lt;</span>int32_t<span class="keyword">&gt;</span>(key &amp; 0xffffffffu);</div>
+<div class="line"><span class="lineno">   61</span> </div>
+<div class="line"><span class="lineno">   62</span>    <span class="keywordflow">return</span> std::make_pair(x, y);</div>
+<div class="line"><span class="lineno">   63</span>}</div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="CollisionWorld_8cpp_source.html#l00029">rtype::ecs::CollisionWorld::checkCollisions()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="CollisionWorld_8cpp_source.html#l00027">asge::world::systems::CollisionWorld::checkCollisions()</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -333,26 +361,36 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Pack two 32-bit signed cell coordinates into a single 64-bit unsigned key. </p>
+<p>Packs two signed cell coordinates into a 64-bit unsigned integer key. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">x</td><td>Cell x coordinate (int). </td></tr>
-    <tr><td class="paramname">y</td><td>Cell y coordinate (int). </td></tr>
+    <tr><td class="paramname">x</td><td>X coordinate (signed int). </td></tr>
+    <tr><td class="paramname">y</td><td>Y coordinate (signed int). </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>uint64_t Packed key where high 32 bits are the (uint32_t) x and low 32 bits are (uint32_t) y.</dd></dl>
-<p>The function casts coordinates to uint32_t and packs them as (uint64_t(x) &lt;&lt; 32) | uint32_t(y). This representation preserves uniqueness for all 32-bit coordinate pairs and is convenient for use as an unordered_map key. The function is noexcept. </p>
+<dl class="section return"><dt>Returns</dt><dd>uint64_t A packed key — high 32 bits store x, low 32 bits store y.</dd></dl>
+<p>Keys generated by this function are well-suited for hash-based spatial lookup. The function is noexcept since bit-operations cannot fail.</p>
+<p>Packs two signed cell coordinates into a 64-bit unsigned integer key.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>The X coordinate. </td></tr>
+    <tr><td class="paramname">y</td><td>The Y coordinate. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A 64-bit unsigned integer encoding both coordinates.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>The function casts both coordinates to unsigned 32-bit integers before combining them with bit shifting and OR operations. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="Macro_8cpp_source.html#l00010">10</a> of file <a class="el" href="Macro_8cpp_source.html">Macro.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   11</span>{</div>
-<div class="line"><span class="lineno">   12</span>    uint64_t ux = <span class="keyword">static_cast&lt;</span>uint32_t<span class="keyword">&gt;</span>(x);</div>
-<div class="line"><span class="lineno">   13</span>    uint64_t uy = <span class="keyword">static_cast&lt;</span>uint32_t<span class="keyword">&gt;</span>(y);</div>
-<div class="line"><span class="lineno">   14</span> </div>
-<div class="line"><span class="lineno">   15</span>    <span class="keywordflow">return</span> (ux &lt;&lt; 32) | uy;</div>
-<div class="line"><span class="lineno">   16</span>}</div>
+<p class="definition">Definition at line <a class="el" href="Macro_8cpp_source.html#l00039">39</a> of file <a class="el" href="Macro_8cpp_source.html">Macro.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   40</span>{</div>
+<div class="line"><span class="lineno">   41</span>    uint64_t ux = <span class="keyword">static_cast&lt;</span>uint32_t<span class="keyword">&gt;</span>(x);</div>
+<div class="line"><span class="lineno">   42</span>    uint64_t uy = <span class="keyword">static_cast&lt;</span>uint32_t<span class="keyword">&gt;</span>(y);</div>
+<div class="line"><span class="lineno">   43</span> </div>
+<div class="line"><span class="lineno">   44</span>    <span class="keywordflow">return</span> (ux &lt;&lt; 32) | uy;</div>
+<div class="line"><span class="lineno">   45</span>}</div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="CollisionWorld_8cpp_source.html#l00029">rtype::ecs::CollisionWorld::checkCollisions()</a>, and <a class="el" href="CollisionWorld_8cpp_source.html#l00119">rtype::ecs::CollisionWorld::insertEntityToCell()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="CollisionWorld_8cpp_source.html#l00027">asge::world::systems::CollisionWorld::checkCollisions()</a>, and <a class="el" href="CollisionWorld_8cpp_source.html#l00214">asge::world::systems::CollisionWorld::insertEntityToCell()</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -368,7 +406,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_4ab6b4cc6a7edbff49100e9123df213f.html">Common</a></li><li class="navelem"><a class="el" href="dir_42f24aa63ec14c5bf2eb77ea89af9ccb.html">ECS</a></li><li class="navelem"><a class="el" href="Macro_8hpp.html">Macro.hpp</a></li>
+    <li class="navelem"><a class="el" href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li><li class="navelem"><a class="el" href="dir_1b9403644f1f2359659496c948d71b7e.html">asge</a></li><li class="navelem"><a class="el" href="dir_23b0c4c81238164c4b752561086c543c.html">src</a></li><li class="navelem"><a class="el" href="dir_2e6acacfe42ed85a3d5b28ea6e2cb62a.html">world</a></li><li class="navelem"><a class="el" href="Macro_8hpp.html">Macro.hpp</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>

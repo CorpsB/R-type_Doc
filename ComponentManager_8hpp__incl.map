@@ -1,22 +1,32 @@
 <map id="ComponentManager.hpp" name="ComponentManager.hpp">
-<area shape="rect" id="Node000001" title="Manager for registering and accessing component arrays in the ECS." alt="" coords="284,5,465,31"/>
-<area shape="rect" id="Node000002" href="$ComponentArray_8hpp.html" title="Component storage implementation for the ECS." alt="" coords="33,79,277,104"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="340,33,204,77,202,72,339,28"/>
-<area shape="rect" id="Node000007" title=" " alt="" coords="301,79,357,104"/>
-<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="369,32,346,69,342,66,365,30"/>
-<area shape="rect" id="Node000008" title=" " alt="" coords="381,79,459,104"/>
-<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="384,30,408,66,403,69,380,32"/>
-<area shape="rect" id="Node000009" href="$Macro_8hpp.html" title="Global configuration macros for the ECS (component/entity limits)." alt="" coords="483,79,573,104"/>
-<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="400,28,492,70,490,75,398,33"/>
-<area shape="rect" id="Node000003" href="$IComponentArray_8hpp.html" title="Abstract base interface for component container types." alt="" coords="5,152,168,177"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="145,106,109,144,105,140,142,102"/>
-<area shape="rect" id="Node000005" title=" " alt="" coords="193,152,255,177"/>
-<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="168,102,205,140,201,144,164,106"/>
-<area shape="rect" id="Node000006" title=" " alt="" coords="280,152,339,177"/>
-<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="181,102,273,144,271,149,178,106"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="205,225,272,251"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="112,175,203,217,201,222,110,180"/>
-<area shape="poly" id="edge9_Node000009_Node000004" title=" " alt="" coords="506,107,275,222,273,217,504,102"/>
-<area shape="rect" id="Node000010" title=" " alt="" coords="498,152,558,177"/>
-<area shape="poly" id="edge10_Node000009_Node000010" title=" " alt="" coords="531,104,531,138,525,138,525,104"/>
+<area shape="rect" id="Node000001" title="Central management container for ECS component arrays." alt="" coords="409,5,591,31"/>
+<area shape="rect" id="Node000002" href="$ComponentArray_8hpp.html" title="Component storage implementation for the ECS." alt="" coords="283,79,539,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="487,33,438,72,434,68,484,29"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="563,79,619,104"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="516,29,567,68,563,72,513,33"/>
+<area shape="rect" id="Node000013" title=" " alt="" coords="643,79,720,104"/>
+<area shape="poly" id="edge12_Node000001_Node000013" title=" " alt="" coords="530,28,640,71,638,76,528,33"/>
+<area shape="rect" id="Node000014" href="$Macro_8hpp.html" title="Global configuration macros and spatial hashing helpers." alt="" coords="49,79,151,104"/>
+<area shape="poly" id="edge13_Node000001_Node000014" title=" " alt="" coords="436,33,165,81,164,76,435,28"/>
+<area shape="rect" id="Node000003" href="$IComponentArray_8hpp.html" title="Abstract base interface for component container types." alt="" coords="155,152,317,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="384,106,278,149,276,144,382,102"/>
+<area shape="rect" id="Node000005" href="$Error_8hpp.html" title="Exception type used by the engine for categorized errors." alt="" coords="341,152,480,177"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="413,104,413,138,408,138,408,104"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="505,152,567,177"/>
+<area shape="poly" id="edge9_Node000002_Node000010" title=" " alt="" coords="432,102,505,143,502,147,429,106"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="592,152,651,177"/>
+<area shape="poly" id="edge10_Node000002_Node000011" title=" " alt="" coords="445,101,580,147,578,152,444,107"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="5,225,72,251"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="205,180,85,223,83,218,203,175"/>
+<area shape="rect" id="Node000006" href="$ErrorTypes_8hpp.html" title="Enumerations describing error categories and severities." alt="" coords="99,225,339,251"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="381,180,264,223,262,218,379,175"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="363,225,450,251"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="413,178,411,212,405,212,407,178"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="475,225,549,251"/>
+<area shape="poly" id="edge7_Node000005_Node000008" title=" " alt="" coords="428,175,486,215,483,219,425,180"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="573,225,632,251"/>
+<area shape="poly" id="edge8_Node000005_Node000009" title=" " alt="" coords="442,175,561,219,559,224,441,180"/>
+<area shape="poly" id="edge14_Node000014_Node000004" title=" " alt="" coords="92,106,75,127,60,153,50,183,44,212,39,211,45,182,55,151,71,124,88,102"/>
+<area shape="rect" id="Node000015" title=" " alt="" coords="70,152,130,177"/>
+<area shape="poly" id="edge15_Node000014_Node000015" title=" " alt="" coords="103,104,103,138,97,138,97,104"/>
 </map>

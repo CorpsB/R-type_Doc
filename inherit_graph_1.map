@@ -1,3 +1,7 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="Node000000" href="$namespacearcade_1_1types.html#unionarcade_1_1types_1_1color__u" title="Represents a color as either a 32&#45;bit integer or an array of 4 components (RGBA)." alt="" coords="5,5,171,31"/>
+<area shape="rect" id="Node000000" href="$classasge_1_1audio_1_1IAudio.html" title="Abstract interface for the engine’s audio system." alt="" coords="5,31,152,56"/>
+<area shape="rect" id="Node000001" href="$classasge_1_1audio_1_1AudioManager.html" title="High&#45;level audio control system for the ASGE engine." alt="" coords="200,5,399,31"/>
+<area shape="poly" id="edge2_Node000000_Node000001" title=" " alt="" coords="166,31,199,27,200,32,166,36"/>
+<area shape="rect" id="Node000002" href="$classasge_1_1audio_1_1NullAudio.html" title="Headless&#45;safe implementation of IAudio doing nothing." alt="" coords="215,55,383,80"/>
+<area shape="poly" id="edge3_Node000000_Node000002" title=" " alt="" coords="166,50,215,56,215,61,166,55"/>
 </map>

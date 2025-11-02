@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['langmap_0',['LangMap',['../namespacertype_1_1client.html#a0f6492ae5382ac71dc49fd5a680fbcb6',1,'rtype::client']]]
+  ['registry_0',['Registry',['../classasge_1_1event_1_1EventManager.html#a728db14a39c8c89e2481140971bae0ca',1,'asge::event::EventManager']]]
 ];

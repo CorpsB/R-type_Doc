@@ -1,0 +1,19 @@
+<map id="asge::net::GameProtocol::decodeEntityDestroy" name="asge::net::GameProtocol::decodeEntityDestroy">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,175,280,215"/>
+<area shape="rect" id="Node000002" href="$structasge_1_1Services.html#af7c99d591b82892004d16a419dda4738" title=" " alt="" coords="369,5,533,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="160,173,228,107,275,70,327,40,355,29,357,34,329,44,278,74,232,111,163,177"/>
+<area shape="rect" id="Node000003" href="$classasge_1_1world_1_1World.html#a86d2ee12bb188ad035722def77b88faa" title="Removes an entity from ECS and all associated systems." alt="" coords="333,55,570,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="172,173,241,130,283,108,327,89,352,81,354,86,329,94,285,113,243,135,175,177"/>
+<area shape="rect" id="Node000004" href="$classasge_1_1world_1_1World.html#a92acda9e7fe15d94d77627abd2f02482" title="Retrieves a pointer to a component owned by an entity." alt="" coords="328,104,575,129"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="205,173,327,138,366,129,367,135,329,143,207,178"/>
+<area shape="rect" id="Node000005" href="$classasge_1_1debug_1_1IDebug.html#ab16de8ad522314d2aea6eb483b4a5ae0" title="Logs a message with a given severity level." alt="" coords="360,153,543,179"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="280,180,346,173,347,179,281,185"/>
+<area shape="rect" id="Node000006" href="$classasge_1_1script_1_1IScript.html#ad51849e3dac4affce931d5e9d40ddc77" title="Notify the script system that an entity was destroyed." alt="" coords="337,203,566,243"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="281,205,323,209,323,214,280,210"/>
+<area shape="rect" id="Node000007" href="$classasge_1_1net_1_1GameProtocol.html#a440ee513aff4b77932772a4d1cb70d6d" title=" " alt="" coords="329,268,574,293"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="201,213,329,253,369,262,368,268,327,258,199,218"/>
+<area shape="rect" id="Node000008" href="$structasge_1_1Services.html#a3952fa5d313b3e8fc3dc2f8a9b6e3858" title=" " alt="" coords="368,317,535,343"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="173,213,242,258,284,282,329,302,357,311,355,316,327,307,282,287,239,263,170,218"/>
+<area shape="rect" id="Node000009" href="$structasge_1_1Services.html#aea3119ef7b85846ba606b113cda3ae74" title=" " alt="" coords="371,367,531,392"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="163,214,231,282,278,320,329,352,359,363,357,368,327,356,275,325,227,286,159,217"/>
+</map>

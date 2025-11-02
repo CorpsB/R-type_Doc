@@ -1,9 +1,9 @@
 var EntityManager_8hpp =
 [
-    [ "rtype::ecs::EntityData", "namespacertype_1_1ecs.html#structrtype_1_1ecs_1_1EntityData", [
-      [ "active", "namespacertype_1_1ecs.html#a7948ec57ce866d676111c8dd0aebc0ed", null ],
-      [ "generation", "namespacertype_1_1ecs.html#a68bec92838f987958d2d42ff3f1dcb29", null ],
-      [ "signature", "namespacertype_1_1ecs.html#a30039fa3396fccb74129e4abcc08ce53", null ]
+    [ "asge::world::EntityData", "namespaceasge_1_1world.html#structasge_1_1world_1_1EntityData", [
+      [ "active", "namespaceasge_1_1world.html#a69d1ef09ecdd41e78d64c6213f66128d", null ],
+      [ "generation", "namespaceasge_1_1world.html#a846139050fc20427dfaaa101b8e49823", null ],
+      [ "signature", "namespaceasge_1_1world.html#afd7d9f31969b104686d501fb6673e08f", null ]
     ] ],
-    [ "rtype::ecs::EntityManager", "classrtype_1_1ecs_1_1EntityManager.html", "classrtype_1_1ecs_1_1EntityManager" ]
+    [ "asge::world::EntityManager", "classasge_1_1world_1_1EntityManager.html", "classasge_1_1world_1_1EntityManager" ]
 ];

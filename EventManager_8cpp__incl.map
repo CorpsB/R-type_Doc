@@ -1,0 +1,40 @@
+<map id="EventManager.cpp" name="EventManager.cpp">
+<area shape="rect" id="Node000001" title="Implementation of EventManager methods (subscribe/publish/unsubscribe/flush)." alt="" coords="411,5,554,31"/>
+<area shape="rect" id="Node000002" href="$Error_8hpp.html" title="Exception type used by the engine for categorized errors." alt="" coords="318,79,445,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="468,33,411,73,408,68,465,28"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="432,152,507,177"/>
+<area shape="poly" id="edge20_Node000001_Node000005" title=" " alt="" coords="484,31,474,139,469,138,479,31"/>
+<area shape="rect" id="Node000007" href="$EventManager_8hpp.html" title="Concrete event manager implementing IEvent using a deferred queue." alt="" coords="845,79,987,104"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="553,28,833,74,833,79,552,33"/>
+<area shape="rect" id="Node000003" href="$ErrorTypes_8hpp.html" title="Enumerations describing error categories and severities." alt="" coords="5,152,245,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="341,107,180,151,179,146,339,101"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="270,152,357,177"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="372,106,336,144,332,140,368,102"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="397,102,446,141,443,145,394,106"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="667,225,725,251"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="386,104,397,140,407,159,422,175,450,194,476,206,501,212,527,214,583,215,653,223,653,228,583,220,527,220,501,217,474,211,447,199,418,179,403,162,392,142,381,105"/>
+<area shape="rect" id="Node000008" href="$IEvent_8hpp.html" title="Abstract event bus interface used by the engine." alt="" coords="1209,152,1300,177"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="971,101,1196,148,1195,154,970,107"/>
+<area shape="rect" id="Node000012" href="$IDebug_8hpp.html" title="Interface defining the debugging system for the ASGE engine." alt="" coords="531,152,683,177"/>
+<area shape="poly" id="edge12_Node000007_Node000012" title=" " alt="" coords="867,107,670,152,669,146,866,101"/>
+<area shape="rect" id="Node000014" title=" " alt="" coords="1031,152,1097,177"/>
+<area shape="poly" id="edge15_Node000007_Node000014" title=" " alt="" coords="941,102,1029,144,1026,148,939,106"/>
+<area shape="rect" id="Node000015" title=" " alt="" coords="1122,152,1185,177"/>
+<area shape="poly" id="edge16_Node000007_Node000015" title=" " alt="" coords="955,101,1109,147,1108,153,953,107"/>
+<area shape="rect" id="Node000016" title=" " alt="" coords="707,152,771,177"/>
+<area shape="poly" id="edge17_Node000007_Node000016" title=" " alt="" coords="888,106,781,149,779,144,887,102"/>
+<area shape="rect" id="Node000017" title=" " alt="" coords="795,152,919,177"/>
+<area shape="poly" id="edge18_Node000007_Node000017" title=" " alt="" coords="908,106,877,143,873,140,904,103"/>
+<area shape="rect" id="Node000018" title=" " alt="" coords="943,152,1006,177"/>
+<area shape="poly" id="edge19_Node000007_Node000018" title=" " alt="" coords="928,103,959,140,955,143,924,106"/>
+<area shape="poly" id="edge10_Node000008_Node000006" title=" " alt="" coords="1209,178,1198,180,938,215,739,235,739,230,937,209,1197,175,1209,173"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="1309,225,1376,251"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="1270,175,1319,214,1316,219,1267,179"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="1114,225,1201,251"/>
+<area shape="poly" id="edge9_Node000008_Node000010" title=" " alt="" coords="1241,180,1186,219,1183,215,1237,175"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="1225,225,1285,251"/>
+<area shape="poly" id="edge11_Node000008_Node000011" title=" " alt="" coords="1257,178,1257,212,1252,212,1252,178"/>
+<area shape="poly" id="edge13_Node000012_Node000006" title=" " alt="" coords="623,175,672,214,669,219,619,179"/>
+<area shape="rect" id="Node000013" href="$DebugTypes_8hpp.html" title="Defines the different severity levels used for debugging and logging." alt="" coords="392,225,643,251"/>
+<area shape="poly" id="edge14_Node000012_Node000013" title=" " alt="" coords="594,179,544,219,541,214,591,175"/>
+</map>

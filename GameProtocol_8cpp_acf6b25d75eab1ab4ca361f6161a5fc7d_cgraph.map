@@ -1,9 +1,0 @@
-<map id="try_deserialize_create_entity" name="try_deserialize_create_entity">
-<area shape="rect" id="Node000001" title="Attempt to deserialize a CREATE_ENTITY payload from a byte buffer." alt="" coords="5,31,216,56"/>
-<area shape="rect" id="Node000002" href="$namespaceprotocol_1_1utils.html#a6a93c5ea4728db8e307019cead08b1c2" title="Read a 32&#45;bit unsigned integer from a byte buffer at the given offset." alt="" coords="264,5,443,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="216,30,250,26,250,31,217,35"/>
-<area shape="rect" id="Node000004" href="$namespaceprotocol_1_1utils.html#a16ec1b3d7f9492d02bb4fe144e5199a9" title="Read an 8&#45;bit unsigned integer from a byte buffer at the given offset." alt="" coords="268,55,439,80"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="216,51,255,55,254,60,216,56"/>
-<area shape="rect" id="Node000003" href="$namespaceprotocol_1_1utils.html#a08505e4df49b2ca7b58ca0cf13459cc8" title="Convert a network&#45;order 32&#45;bit value (big&#45;endian) to host byte order." alt="" coords="491,5,732,31"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="443,15,477,15,477,21,443,21"/>
-</map>

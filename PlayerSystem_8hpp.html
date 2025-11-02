@@ -104,61 +104,43 @@ $(document).ready(function(){initNavTree('PlayerSystem_8hpp.html',''); initResiz
 </div><!--header-->
 <div class="contents">
 
-<p>Header for PlayerSystem — ECS system handling player movement, firing, and score updates.  
+<p>Declares the player-specific system handling control and actions.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;<a class="el" href="System_8hpp_source.html">System.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="MovementSystem_8hpp_source.html">MovementSystem.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="CollisionSystem_8hpp_source.html">CollisionSystem.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="DrawSystem_8hpp_source.html">DrawSystem.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="Position_8hpp_source.html">../Components/Attributes/Position.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="Speed_8hpp_source.html">../Components/Attributes/Speed.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="Direction_8hpp_source.html">../Components/Attributes/Direction.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="Score_8hpp_source.html">../Components/Attributes/Score.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="Frequency_8hpp_source.html">../Components/Attributes/Frequency.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="GameProtocolTypes_8hpp_source.html">../../Protocol/GameProtocolTypes.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="EntityFactory_8hpp_source.html">../../Factory/EntityFactory.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="Coordinator_8hpp_source.html">../Coordinator.hpp</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="System_8hpp_source.html">../System.hpp</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for PlayerSystem.hpp:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="PlayerSystem_8hpp__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="PlayerSystem_8hpp__incl.svg" width="376" height="183"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> This graph shows which files directly or indirectly include this file:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="PlayerSystem_8hpp__dep__incl.svg" width="495" height="183"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="PlayerSystem_8hpp__dep__incl.svg" width="360" height="256"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 <p><a href="PlayerSystem_8hpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtype_1_1ecs_1_1PlayerSystem.html">rtype::ecs::PlayerSystem</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classrtype_1_1ecs_1_1System.html" title="Abstract base type representing an executable system.">System</a> that handles player input logic within the ECS.  <a href="classrtype_1_1ecs_1_1PlayerSystem.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasge_1_1world_1_1systems_1_1PlayerSystem.html">asge::world::systems::PlayerSystem</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles player movement, bounds, and firing.  <a href="classasge_1_1world_1_1systems_1_1PlayerSystem.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:namespacertype" id="r_namespacertype"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacertype.html">rtype</a></td></tr>
+<tr class="memitem:namespaceasge" id="r_namespaceasge"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceasge.html">asge</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespacertype_1_1ecs" id="r_namespacertype_1_1ecs"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacertype_1_1ecs.html">rtype::ecs</a></td></tr>
+<tr class="memitem:namespaceasge_1_1world" id="r_namespaceasge_1_1world"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceasge_1_1world.html">asge::world</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespaceasge_1_1world_1_1systems" id="r_namespaceasge_1_1world_1_1systems"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceasge_1_1world_1_1systems.html">asge::world::systems</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Header for PlayerSystem — ECS system handling player movement, firing, and score updates. </p>
-<dl class="section author"><dt>Author</dt><dd>Jason KOENIG </dd></dl>
-<dl class="section date"><dt>Date</dt><dd>29/06/2025</dd></dl>
-<p>Declares PlayerSystem, a concrete ECS system responsible for applying player-related logic. It interprets player input, moves entities accordingly, triggers firing behavior, and adjusts player scores.</p>
-<p>Responsibilities:</p><ul>
-<li>Move player entities according to input direction and speed.</li>
-<li>Manage firing state through <a class="el" href="Frequency_8hpp.html#structfrequency__attr__t" title="Component controlling action frequency using a tick-based delay.">frequency_attr_t</a> components.</li>
-<li>Update score attributes safely within valid ranges.</li>
-</ul>
-<p>The system processes all entities tracked in _filtered_entities (assigned by SystemManager) and interacts with the Coordinator to access required components. </p>
+<div class="textblock"><p>Declares the player-specific system handling control and actions. </p>
 
 <p class="definition">Definition in file <a class="el" href="PlayerSystem_8hpp_source.html">PlayerSystem.hpp</a>.</p>
 </div></div><!-- contents -->
@@ -166,7 +148,7 @@ Namespaces</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_4ab6b4cc6a7edbff49100e9123df213f.html">Common</a></li><li class="navelem"><a class="el" href="dir_42f24aa63ec14c5bf2eb77ea89af9ccb.html">ECS</a></li><li class="navelem"><a class="el" href="dir_25ace0bc121ef3a6b9c34867f0e51a24.html">Systems</a></li><li class="navelem"><a class="el" href="PlayerSystem_8hpp.html">PlayerSystem.hpp</a></li>
+    <li class="navelem"><a class="el" href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li><li class="navelem"><a class="el" href="dir_1b9403644f1f2359659496c948d71b7e.html">asge</a></li><li class="navelem"><a class="el" href="dir_23b0c4c81238164c4b752561086c543c.html">src</a></li><li class="navelem"><a class="el" href="dir_2e6acacfe42ed85a3d5b28ea6e2cb62a.html">world</a></li><li class="navelem"><a class="el" href="dir_cdb791e71c797d144e9eb5e67180a16f.html">Systems</a></li><li class="navelem"><a class="el" href="dir_5cb5ed716732e486614773a3bde8aa20.html">PlayerSystem</a></li><li class="navelem"><a class="el" href="PlayerSystem_8hpp.html">PlayerSystem.hpp</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>

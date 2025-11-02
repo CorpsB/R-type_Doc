@@ -1,9 +1,8 @@
 var SceneManager_8hpp =
 [
-    [ "rtype::client::SceneManager", "classrtype_1_1client_1_1SceneManager.html", "classrtype_1_1client_1_1SceneManager" ],
-    [ "rtype::client::SceneManager::PendingOp", "classrtype_1_1client_1_1SceneManager.html#structrtype_1_1client_1_1SceneManager_1_1PendingOp", [
-      [ "scene", "classrtype_1_1client_1_1SceneManager.html#adf4493378094ef84d45d840f4f2c95ca", null ],
-      [ "type", "classrtype_1_1client_1_1SceneManager.html#a97a4705660c09f99dc1e68b4af230a33", null ]
-    ] ],
-    [ "ScenePtr", "SceneManager_8hpp.html#a49afbe5e5776f0287ed2896d5dfa8c1b", null ]
+    [ "asge::scene::SceneManager", "classasge_1_1scene_1_1SceneManager.html", "classasge_1_1scene_1_1SceneManager" ],
+    [ "asge::scene::SceneManager::PendingOp", "classasge_1_1scene_1_1SceneManager.html#structasge_1_1scene_1_1SceneManager_1_1PendingOp", [
+      [ "scene", "classasge_1_1scene_1_1SceneManager.html#adfe20d2adaf8f76ae855ab27d53fd6d0", null ],
+      [ "type", "classasge_1_1scene_1_1SceneManager.html#aaa5f339850789b4ba8e2f87d8bf730d5", null ]
+    ] ]
 ];

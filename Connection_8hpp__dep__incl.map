@@ -1,0 +1,20 @@
+<map id="Connection.hpp" name="Connection.hpp">
+<area shape="rect" id="Node000001" title="Per&#45;peer connection state (endpoint, sequencing, RTT, congestion window)." alt="" coords="88,5,211,31"/>
+<area shape="rect" id="Node000002" href="$Connection_8cpp.html" title="Implements Connection logic with input validation and error handling." alt="" coords="5,79,128,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="127,42,82,80,78,76,124,38"/>
+<area shape="rect" id="Node000003" href="$NetworkManager_8hpp.html" title="Central reliable networking service (protocol, sessions, retransmit)." alt="" coords="153,79,314,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="175,38,221,76,218,80,172,42"/>
+<area shape="rect" id="Node000004" href="$EngineCore_8cpp.html" title="Implements the engine bootstrap and runtime loop." alt="" coords="72,225,195,251"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="204,114,181,132,162,153,145,191,137,225,132,224,140,190,158,151,178,128,200,110"/>
+<area shape="rect" id="Node000005" href="$EngineCore_8hpp.html" title="Declares the main engine orchestration class." alt="" coords="171,152,295,177"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="236,118,236,152,231,152,231,118"/>
+<area shape="rect" id="Node000009" href="$NetworkManager_8cpp.html" title="Implementation of the reliable networking manager (stop&#45;and&#45;wait)." alt="" coords="320,152,480,177"/>
+<area shape="poly" id="edge9_Node000003_Node000009" title=" " alt="" coords="274,107,374,149,372,154,272,112"/>
+<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="208,187,151,227,148,223,205,183"/>
+<area shape="rect" id="Node000006" href="$asge_8hpp.html" title=" " alt="" coords="219,225,301,251"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="245,189,258,224,253,226,240,191"/>
+<area shape="rect" id="Node000007" href="$client_2main_8cpp.html" title=" " alt="" coords="165,299,248,324"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="245,263,217,300,213,297,241,260"/>
+<area shape="rect" id="Node000008" href="$server_2main_8cpp.html" title=" " alt="" coords="272,299,355,324"/>
+<area shape="poly" id="edge8_Node000006_Node000008" title=" " alt="" coords="279,260,307,297,303,300,275,263"/>
+</map>

@@ -116,64 +116,75 @@ $(document).ready(function(){initNavTree('Macro_8hpp_source.html',''); initResiz
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment"></span> </div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment">/**</span></div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment"> * @file Macro.hpp</span></div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment"> * @brief Global configuration macros for the ECS (component/entity limits).</span></div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment"> * @since 0.1</span></div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment"> * @ingroup ecs</span></div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment"> * @see ComponentManager.hpp, EntityManager.hpp</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment"> * @brief Global configuration macros and spatial hashing helpers.</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment"> * @version 1.0</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment"> * @date 2025-03-26</span></div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment"> *</span></div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment"> * @details</span></div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment"> * This header defines compile-time limits used by the ECS implementation:</span></div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment"> * - MAX_COMPONENTS: maximum number of distinct component types supported.</span></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment"> * - MAX_ENTITIES: maximum number of simultaneously allocatable entities.</span></div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment"> *</span></div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment"> * @warning</span></div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment"> * Changing these values impacts memory usage and correctness of internal</span></div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment"> * fixed-size containers. Rebuild the project after modifying them.</span></div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="Macro_8hpp.html#a6d8c910a1fdb6d4762a05f7250e64322">   27</a></span><span class="preprocessor">#define MAX_COMPONENTS 32 </span><span class="comment">///&lt; Maximum number of distinct component types supported.</span></div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="Macro_8hpp.html#a0b7e155f796ed5e7b49b0f44867135ee">   28</a></span><span class="preprocessor">#define MAX_ENTITIES 3000 </span><span class="comment">///&lt; Maximum number of concurrently allocated entities.</span></div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="Macro_8hpp.html#af26aae7ec6a3fc2c06abb87fbf1544fb">   30</a></span><span class="preprocessor">#define VIRTUAL_SCREEN_HEIGHT 1080</span></div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="Macro_8hpp.html#a96d2cd952a467a5b554ce9617c298b10">   31</a></span><span class="preprocessor">#define VIRTUAL_SCREEN_WIDTH 1920</span></div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="Macro_8hpp.html#aed897ed2f070f50267d55fd191fd06e6">   32</a></span><span class="preprocessor">#define PIXELS_PER_CLUSTER 64</span></div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="preprocessor">#include &lt;cstdint&gt;</span></div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">#include &lt;utility&gt;</span></div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="comment"></span> </div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="comment">/**</span></div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="comment"> * @brief Pack two 32-bit signed cell coordinates into a single 64-bit unsigned key.</span></div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="comment"> *</span></div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="comment"> * @param x Cell x coordinate (int).</span></div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="comment"> * @param y Cell y coordinate (int).</span></div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="comment"> * @return uint64_t Packed key where high 32 bits are the (uint32_t) x and low 32 bits are (uint32_t) y.</span></div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="comment"> *</span></div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="comment"> * @details</span></div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="comment"> * The function casts coordinates to uint32_t and packs them as (uint64_t(x) &lt;&lt; 32) | uint32_t(y).</span></div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="comment"> * This representation preserves uniqueness for all 32-bit coordinate pairs and is convenient for</span></div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="comment"> * use as an unordered_map key. The function is noexcept.</span></div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>uint64_t <a class="code hl_function" href="Macro_8hpp.html#aa287b51683944006697faf1bde937fd9">makeKey</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y) <span class="keyword">noexcept</span>;</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="comment"></span> </div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="comment">/**</span></div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="comment"> * @brief Unpack a 64-bit key produced by makeKey back into two signed 32-bit coordinates.</span></div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="comment"> *</span></div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="comment"> * @param key 64-bit cell key previously returned by makeKey.</span></div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="comment"> * @return std::pair&lt;int,int&gt; containing (x,y) coordinates.</span></div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="comment"> *</span></div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="comment"> * @details</span></div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="comment"> * The function extracts the high 32 bits as the x coordinate and the low 32 bits as the y</span></div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="comment"> * coordinate, casts back to signed int and returns the pair. The function is noexcept.</span></div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>std::pair&lt;int, int&gt; <a class="code hl_function" href="Macro_8hpp.html#a0ab6d50fa1ecd2e7d7ed74b9816542ab">decodeKey</a>(uint64_t key) <span class="keyword">noexcept</span>;</div>
-<div class="ttc" id="aMacro_8hpp_html_a0ab6d50fa1ecd2e7d7ed74b9816542ab"><div class="ttname"><a href="Macro_8hpp.html#a0ab6d50fa1ecd2e7d7ed74b9816542ab">decodeKey</a></div><div class="ttdeci">std::pair&lt; int, int &gt; decodeKey(uint64_t key) noexcept</div><div class="ttdoc">Unpack a 64-bit key produced by makeKey back into two signed 32-bit coordinates.</div><div class="ttdef"><b>Definition</b> <a href="Macro_8cpp_source.html#l00018">Macro.cpp:18</a></div></div>
-<div class="ttc" id="aMacro_8hpp_html_aa287b51683944006697faf1bde937fd9"><div class="ttname"><a href="Macro_8hpp.html#aa287b51683944006697faf1bde937fd9">makeKey</a></div><div class="ttdeci">uint64_t makeKey(int x, int y) noexcept</div><div class="ttdoc">Pack two 32-bit signed cell coordinates into a single 64-bit unsigned key.</div><div class="ttdef"><b>Definition</b> <a href="Macro_8cpp_source.html#l00010">Macro.cpp:10</a></div></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment"> * This header defines compile-time ECS limits and gameplay constants, as well as</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment"> * utility helpers for converting 2D cell coordinates into compact hashable keys.</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment"> * Macros included:</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment"> * - `MAX_COMPONENTS`: Maximum number of unique component types supported by ECS.</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment"> * - `MAX_ENTITIES`: Maximum concurrently existing entities in the world.</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment"> * - Virtual resolution configuration useful for scaling UI / world</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment"> *   independent of screen resolution.</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment"> * Utility functions included:</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="comment"> * - `makeKey()`: Packs two 32-bit signed coordinates into one 64-bit key.</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="comment"> * - `decodeKey()`: Reverses a key into its original coordinates.</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment"> * @warning</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment"> * Changing ECS limits requires full rebuild of the engine and may impact memory layout.</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="comment"> * @see ComponentManager.hpp</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="comment"> * @see EntityManager.hpp</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="Macro_8hpp.html#a6d8c910a1fdb6d4762a05f7250e64322">   38</a></span><span class="preprocessor">#define MAX_COMPONENTS 32 </span><span class="comment">///&lt; Maximum number of distinct component types supported.</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="Macro_8hpp.html#a0b7e155f796ed5e7b49b0f44867135ee">   39</a></span><span class="preprocessor">#define MAX_ENTITIES 3000 </span><span class="comment">///&lt; Maximum number of concurrently allocated entities.</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="Macro_8hpp.html#af26aae7ec6a3fc2c06abb87fbf1544fb">   41</a></span><span class="preprocessor">#define VIRTUAL_SCREEN_HEIGHT 1080 </span><span class="comment">///&lt; Virtual rendering height for scalable UI.</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="Macro_8hpp.html#a96d2cd952a467a5b554ce9617c298b10">   42</a></span><span class="preprocessor">#define VIRTUAL_SCREEN_WIDTH 1920 </span><span class="comment">///&lt; Virtual rendering width for scalable UI.</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="Macro_8hpp.html#aed897ed2f070f50267d55fd191fd06e6">   43</a></span><span class="preprocessor">#define PIXELS_PER_CLUSTER 64 </span><span class="comment">///&lt; Number of pixels grouped into one spatial cluster.</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="preprocessor">#include &lt;cstdint&gt;</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="preprocessor">#include &lt;utility&gt;</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="comment"></span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="comment">/**</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="comment"> * @brief Packs two signed cell coordinates into a 64-bit unsigned integer key.</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="comment"> * @param x X coordinate (signed int).</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="comment"> * @param y Y coordinate (signed int).</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="comment"> * @return uint64_t A packed key — high 32 bits store x, low 32 bits store y.</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="comment"> * @details</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="comment"> * Keys generated by this function are well-suited for hash-based spatial lookup.</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="comment"> * The function is noexcept since bit-operations cannot fail.</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>uint64_t <a class="code hl_function" href="Macro_8hpp.html#aa287b51683944006697faf1bde937fd9">makeKey</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y) <span class="keyword">noexcept</span>;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="comment"></span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="comment">/**</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="comment"> * @brief Decodes a packed 64-bit spatial key into (x, y) coordinates.</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="comment"> * @param key A 64-bit integer returned previously by makeKey().</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="comment"> * @return std::pair&lt;int,int&gt; Reconstructed coordinate pair.</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="comment"> * @details</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="comment"> * Extracts x from high bits and y from low bits. Safe and noexcept.</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="comment"> * @see makeKey()</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>std::pair&lt;int, int&gt; <a class="code hl_function" href="Macro_8hpp.html#a0ab6d50fa1ecd2e7d7ed74b9816542ab">decodeKey</a>(uint64_t key) <span class="keyword">noexcept</span>;</div>
+<div class="ttc" id="aMacro_8hpp_html_a0ab6d50fa1ecd2e7d7ed74b9816542ab"><div class="ttname"><a href="Macro_8hpp.html#a0ab6d50fa1ecd2e7d7ed74b9816542ab">decodeKey</a></div><div class="ttdeci">std::pair&lt; int, int &gt; decodeKey(uint64_t key) noexcept</div><div class="ttdoc">Decodes a packed 64-bit spatial key into (x, y) coordinates.</div><div class="ttdef"><b>Definition</b> <a href="Macro_8cpp_source.html#l00057">Macro.cpp:57</a></div></div>
+<div class="ttc" id="aMacro_8hpp_html_aa287b51683944006697faf1bde937fd9"><div class="ttname"><a href="Macro_8hpp.html#aa287b51683944006697faf1bde937fd9">makeKey</a></div><div class="ttdeci">uint64_t makeKey(int x, int y) noexcept</div><div class="ttdoc">Packs two signed cell coordinates into a 64-bit unsigned integer key.</div><div class="ttdef"><b>Definition</b> <a href="Macro_8cpp_source.html#l00039">Macro.cpp:39</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_4ab6b4cc6a7edbff49100e9123df213f.html">Common</a></li><li class="navelem"><a class="el" href="dir_42f24aa63ec14c5bf2eb77ea89af9ccb.html">ECS</a></li><li class="navelem"><a class="el" href="Macro_8hpp.html">Macro.hpp</a></li>
+    <li class="navelem"><a class="el" href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li><li class="navelem"><a class="el" href="dir_1b9403644f1f2359659496c948d71b7e.html">asge</a></li><li class="navelem"><a class="el" href="dir_23b0c4c81238164c4b752561086c543c.html">src</a></li><li class="navelem"><a class="el" href="dir_2e6acacfe42ed85a3d5b28ea6e2cb62a.html">world</a></li><li class="navelem"><a class="el" href="Macro_8hpp.html">Macro.hpp</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>

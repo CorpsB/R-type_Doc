@@ -1,0 +1,27 @@
+var classasge_1_1renderer_1_1RenderManager =
+[
+    [ "RenderManager", "classasge_1_1renderer_1_1RenderManager.html#a72dbf24a995807c9a277e0579addfb89", null ],
+    [ "~RenderManager", "classasge_1_1renderer_1_1RenderManager.html#a14dc40355cb1b3cd6cb8335cabc424aa", null ],
+    [ "beginFrame", "classasge_1_1renderer_1_1RenderManager.html#ae9330346641e30b09bd114f88ff1bfce", null ],
+    [ "clear", "classasge_1_1renderer_1_1RenderManager.html#af07c0040a722afb1b8a84e74688c5eb0", null ],
+    [ "drawCircle", "classasge_1_1renderer_1_1RenderManager.html#aa962578889130d2bf65428818bd938f3", null ],
+    [ "drawRectangle", "classasge_1_1renderer_1_1RenderManager.html#a1ade13e16f29f3dfde8d346155833b7e", null ],
+    [ "drawSprite", "classasge_1_1renderer_1_1RenderManager.html#a3b375d1a3549152d302b658c6cd201b5", null ],
+    [ "drawText", "classasge_1_1renderer_1_1RenderManager.html#ac13e6a6640184c9f59762f08fc70b0b2", null ],
+    [ "ensureDriverInitialized", "classasge_1_1renderer_1_1RenderManager.html#a62c34a5a6df414d1fe3ad60a8a4180fd", null ],
+    [ "init", "classasge_1_1renderer_1_1RenderManager.html#ab1e1ddb8edcee14395b64d6b74d28bb1", null ],
+    [ "isFullscreen", "classasge_1_1renderer_1_1RenderManager.html#a37aa606ae433378172b22e38725953ef", null ],
+    [ "loadFontFromFile", "classasge_1_1renderer_1_1RenderManager.html#a1b00d19f660ea0fe91e1731f4d9a0559", null ],
+    [ "loadTextureFromFile", "classasge_1_1renderer_1_1RenderManager.html#a7626be03bf7d639a3587dd8b2db2cda9", null ],
+    [ "measureText", "classasge_1_1renderer_1_1RenderManager.html#a193e367ab189955fa7ec998471e0ce27", null ],
+    [ "resize", "classasge_1_1renderer_1_1RenderManager.html#ab577d725a242af19151c39cfbbbecb4e", null ],
+    [ "resolution", "classasge_1_1renderer_1_1RenderManager.html#a37823931c61c171cd637261306730b29", null ],
+    [ "setResolution", "classasge_1_1renderer_1_1RenderManager.html#ab25ed4dbfbd9ec34234d2a504bf434b2", null ],
+    [ "shouldClose", "classasge_1_1renderer_1_1RenderManager.html#a3c506059fe4be5edf1720e378e90739e", null ],
+    [ "shutdown", "classasge_1_1renderer_1_1RenderManager.html#a9f50cfa85f33882a70cd8be368ee8ef8", null ],
+    [ "submitFrame", "classasge_1_1renderer_1_1RenderManager.html#aa6a331e95373ff438941ce442ec522b2", null ],
+    [ "toggleFullscreen", "classasge_1_1renderer_1_1RenderManager.html#a17028741bcac2c92066b03dfeae931b1", null ],
+    [ "_driver", "classasge_1_1renderer_1_1RenderManager.html#a4481d64fb2335bca86156b338c77512a", null ],
+    [ "_initialized", "classasge_1_1renderer_1_1RenderManager.html#a85a2e8a8d20210606d34c277dcdc38b4", null ],
+    [ "_S", "classasge_1_1renderer_1_1RenderManager.html#afa209a756d8efd087678c7fbb741b94e", null ]
+];

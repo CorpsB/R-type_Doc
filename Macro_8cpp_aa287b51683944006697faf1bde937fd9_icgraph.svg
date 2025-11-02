@@ -46,7 +46,7 @@
   </g>
 </defs>
 <script type="application/ecmascript">
-var viewWidth = 685;
+var viewWidth = 583;
 var viewHeight = 86;
 var sectionId = 'dynsection-2';
 </script>
@@ -57,19 +57,19 @@ var sectionId = 'dynsection-2';
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title="Pack two 32&#45;bit signed cell coordinates into a single 64&#45;bit unsigned key.">
-<polygon fill="#999999" stroke="#666666" points="677,-48.5 615,-48.5 615,-29.5 677,-29.5 677,-48.5"/>
-<text text-anchor="middle" x="646" y="-36.5" font-family="Helvetica,sans-Serif" font-size="10.00">makeKey</text>
+<g id="a_Node000001"><a xlink:title="Packs two 32&#45;bit signed integers into a single 64&#45;bit key.">
+<polygon fill="#999999" stroke="#666666" points="575,-48.5 513,-48.5 513,-29.5 575,-29.5 575,-48.5"/>
+<text text-anchor="middle" x="544" y="-36.5" font-family="Helvetica,sans-Serif" font-size="10.00">makeKey</text>
 </a>
 </g>
 </g>
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="classrtype_1_1ecs_1_1CollisionWorld.html#acba7533c8d42d6abb6c82fd03ee7b614" target="_top" xlink:title="Run narrow&#45;phase collision checks across the grid and call collisionEffect on hits.">
-<polygon fill="white" stroke="#666666" points="579,-78 439,-78 439,-48 579,-48 579,-78"/>
-<text text-anchor="start" x="447" y="-66" font-family="Helvetica,sans-Serif" font-size="10.00">rtype::ecs::CollisionWorld</text>
-<text text-anchor="middle" x="509" y="-55" font-family="Helvetica,sans-Serif" font-size="10.00">::checkCollisions</text>
+<g id="a_Node000002"><a xlink:href="classasge_1_1world_1_1systems_1_1CollisionWorld.html#a0ce7df174a3ec469447bbaa40258b964" target="_top" xlink:title="Detects collisions and triggers collision effects.">
+<polygon fill="white" stroke="#666666" points="477,-78 281,-78 281,-48 477,-48 477,-78"/>
+<text text-anchor="start" x="289" y="-66" font-family="Helvetica,sans-Serif" font-size="10.00">asge::world::systems::CollisionWorld</text>
+<text text-anchor="middle" x="379" y="-55" font-family="Helvetica,sans-Serif" font-size="10.00">::checkCollisions</text>
 </a>
 </g>
 </g>
@@ -77,36 +77,36 @@ var sectionId = 'dynsection-2';
 <g id="edge1_Node000001_Node000002" class="edge">
 <title>Node1&#45;&gt;Node2</title>
 <g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M604.79,-46.15C596.66,-47.59 587.89,-49.15 579.09,-50.72"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="605.47,-49.58 614.7,-44.39 604.25,-42.69 605.47,-49.58"/>
+<path fill="none" stroke="#63b8ff" d="M502.73,-44.93C494.79,-46.1 486.14,-47.37 477.23,-48.68"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="503.34,-48.38 512.72,-43.46 502.32,-41.45 503.34,-48.38"/>
 </a>
 </g>
 </g>
-<!-- Node6 -->
-<g id="Node000006" class="node">
-<title>Node6</title>
-<g id="a_Node000006"><a xlink:href="classrtype_1_1ecs_1_1CollisionWorld.html#a011eb492f2141005e5b7723f9015b238" target="_top" xlink:title="Insert an entity id into the cell at coordinates (cx, cy).">
-<polygon fill="white" stroke="#666666" points="579,-30 439,-30 439,0 579,0 579,-30"/>
-<text text-anchor="start" x="447" y="-18" font-family="Helvetica,sans-Serif" font-size="10.00">rtype::ecs::CollisionWorld</text>
-<text text-anchor="middle" x="509" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">::insertEntityToCell</text>
+<!-- Node4 -->
+<g id="Node000004" class="node">
+<title>Node4</title>
+<g id="a_Node000004"><a xlink:href="classasge_1_1world_1_1systems_1_1CollisionWorld.html#a59f18b81b975c3b84aff7e8138dce47d" target="_top" xlink:title="Inserts an entity into a spatial grid cell.">
+<polygon fill="white" stroke="#666666" points="477,-30 281,-30 281,0 477,0 477,-30"/>
+<text text-anchor="start" x="289" y="-18" font-family="Helvetica,sans-Serif" font-size="10.00">asge::world::systems::CollisionWorld</text>
+<text text-anchor="middle" x="379" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">::insertEntityToCell</text>
 </a>
 </g>
 </g>
-<!-- Node1&#45;&gt;Node6 -->
-<g id="edge5_Node000001_Node000006" class="edge">
-<title>Node1&#45;&gt;Node6</title>
-<g id="a_edge5_Node000001_Node000006"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M604.79,-31.85C596.66,-30.41 587.89,-28.85 579.09,-27.28"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="604.25,-35.31 614.7,-33.61 605.47,-28.42 604.25,-35.31"/>
+<!-- Node1&#45;&gt;Node4 -->
+<g id="edge3_Node000001_Node000004" class="edge">
+<title>Node1&#45;&gt;Node4</title>
+<g id="a_edge3_Node000001_Node000004"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M502.73,-33.07C494.79,-31.9 486.14,-30.63 477.23,-29.32"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="502.32,-36.55 512.72,-34.54 503.34,-29.62 502.32,-36.55"/>
 </a>
 </g>
 </g>
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="classrtype_1_1ecs_1_1CollisionSystem.html#afca69e9015066f94f6fe7cab90899e44" target="_top" xlink:title="Run one collision pass: rebuild spatial grid and test collisions.">
-<polygon fill="white" stroke="#666666" points="403,-72.5 214,-72.5 214,-53.5 403,-53.5 403,-72.5"/>
-<text text-anchor="middle" x="308.5" y="-60.5" font-family="Helvetica,sans-Serif" font-size="10.00">rtype::ecs::CollisionSystem::update</text>
+<g id="a_Node000003"><a xlink:href="classasge_1_1world_1_1systems_1_1CollisionSystem.html#a5dfdfa3306f0e6817e0e276967095318" target="_top" xlink:title="Evaluates collisions for all tracked entities.">
+<polygon fill="white" stroke="#666666" points="245,-72.5 0,-72.5 0,-53.5 245,-53.5 245,-72.5"/>
+<text text-anchor="middle" x="122.5" y="-60.5" font-family="Helvetica,sans-Serif" font-size="10.00">asge::world::systems::CollisionSystem::update</text>
 </a>
 </g>
 </g>
@@ -114,44 +114,8 @@ var sectionId = 'dynsection-2';
 <g id="edge2_Node000002_Node000003" class="edge">
 <title>Node2&#45;&gt;Node3</title>
 <g id="a_edge2_Node000002_Node000003"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M428.73,-63C420.33,-63 411.73,-63 403.19,-63"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="428.85,-66.5 438.85,-63 428.85,-59.5 428.85,-66.5"/>
-</a>
-</g>
-</g>
-<!-- Node4 -->
-<g id="Node000004" class="node">
-<title>Node4</title>
-<g id="a_Node000004"><a xlink:href="classrtype_1_1server.html#a703fd91ca5d705369acef8f6e505e32d" target="_top" xlink:title="Starts the main execution loop of the server.">
-<polygon fill="white" stroke="#666666" points="178,-72.5 77,-72.5 77,-53.5 178,-53.5 178,-72.5"/>
-<text text-anchor="middle" x="127.5" y="-60.5" font-family="Helvetica,sans-Serif" font-size="10.00">rtype::server::run</text>
-</a>
-</g>
-</g>
-<!-- Node3&#45;&gt;Node4 -->
-<g id="edge3_Node000003_Node000004" class="edge">
-<title>Node3&#45;&gt;Node4</title>
-<g id="a_edge3_Node000003_Node000004"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M203.72,-63C194.84,-63 186.15,-63 178.02,-63"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="203.81,-66.5 213.81,-63 203.81,-59.5 203.81,-66.5"/>
-</a>
-</g>
-</g>
-<!-- Node5 -->
-<g id="Node000005" class="node">
-<title>Node5</title>
-<g id="a_Node000005"><a xlink:href="Server_2main_8cpp.html#a0c99d968a34e803d378692bde2e3f18f" target="_top" xlink:title="Program entry point.">
-<polygon fill="white" stroke="#666666" points="41,-72.5 0,-72.5 0,-53.5 41,-53.5 41,-72.5"/>
-<text text-anchor="middle" x="20.5" y="-60.5" font-family="Helvetica,sans-Serif" font-size="10.00">main</text>
-</a>
-</g>
-</g>
-<!-- Node4&#45;&gt;Node5 -->
-<g id="edge4_Node000004_Node000005" class="edge">
-<title>Node4&#45;&gt;Node5</title>
-<g id="a_edge4_Node000004_Node000005"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M66.72,-63C57.53,-63 48.64,-63 41.2,-63"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="66.77,-66.5 76.77,-63 66.77,-59.5 66.77,-66.5"/>
+<path fill="none" stroke="#63b8ff" d="M270.52,-63C262.12,-63 253.6,-63 245.11,-63"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="270.7,-66.5 280.7,-63 270.7,-59.5 270.7,-66.5"/>
 </a>
 </g>
 </g>

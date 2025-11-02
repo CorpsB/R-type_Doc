@@ -102,47 +102,30 @@ $(document).ready(function(){initNavTree('SceneManager_8cpp.html',''); initResiz
   <div class="headertitle"><div class="title">SceneManager.cpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-
-<p>Core implementation of the <a class="el" href="classrtype_1_1client_1_1SceneManager.html">rtype::client::SceneManager</a> class.  
-<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="SceneManager_8hpp_source.html">SceneManager.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="IScene_8hpp_source.html">../IScene.hpp</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for SceneManager.cpp:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="SceneManager_8cpp__incl.svg" width="468" height="256"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="SceneManager_8cpp__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 </div>
 <p><a href="SceneManager_8cpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:namespacertype" id="r_namespacertype"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacertype.html">rtype</a></td></tr>
+<tr class="memitem:namespaceasge" id="r_namespaceasge"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceasge.html">asge</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespacertype_1_1client" id="r_namespacertype_1_1client"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacertype_1_1client.html">rtype::client</a></td></tr>
+<tr class="memitem:namespaceasge_1_1scene" id="r_namespaceasge_1_1scene"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceasge_1_1scene.html">asge::scene</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Core implementation of the <a class="el" href="classrtype_1_1client_1_1SceneManager.html">rtype::client::SceneManager</a> class. </p>
-<dl class="section since"><dt>Since</dt><dd>1.0</dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="SceneManager_8hpp.html" title="Declaration of the rtype::client::SceneManager class.">SceneManager.hpp</a>, IScene</dd></dl>
-<p>This file implements the scene management system responsible for handling scene transitions (push, pop, replace) through a deferred stack-based model.</p>
-<p>Responsibilities:</p><ul>
-<li>Maintain a stack of active scenes.</li>
-<li>Safely handle scene transitions between updates and draws.</li>
-<li>Ensure lifecycle callbacks (IScene::onEnter, IScene::onExit, etc.) are properly executed during transitions.</li>
-</ul>
-<p>Deferred operations prevent invalid state changes during active frame updates. Transitions are committed through flushTransitions() at controlled points in the frame loop. </p>
-
-<p class="definition">Definition in file <a class="el" href="SceneManager_8cpp_source.html">SceneManager.cpp</a>.</p>
-</div></div><!-- contents -->
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_922c588100a187620fdc1533bc178f73.html">Client</a></li><li class="navelem"><a class="el" href="dir_2a1d840b44edd7220955ce3ad88544ff.html">Game</a></li><li class="navelem"><a class="el" href="dir_6d3a1248d4d1a57f06cbbf884accac1e.html">Scenes</a></li><li class="navelem"><a class="el" href="dir_227d0287e3da2effa18e292445aeb0cc.html">SceneManager</a></li><li class="navelem"><a class="el" href="SceneManager_8cpp.html">SceneManager.cpp</a></li>
+    <li class="navelem"><a class="el" href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li><li class="navelem"><a class="el" href="dir_1b9403644f1f2359659496c948d71b7e.html">asge</a></li><li class="navelem"><a class="el" href="dir_23b0c4c81238164c4b752561086c543c.html">src</a></li><li class="navelem"><a class="el" href="dir_9659621fb3b5604b0d2912e187ac7934.html">scene</a></li><li class="navelem"><a class="el" href="SceneManager_8cpp.html">SceneManager.cpp</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>

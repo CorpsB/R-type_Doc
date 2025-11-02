@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['flag_5ft_0',['flag_t',['../namespaceprotocol.html#a1d4d9634cbc99b8530d0d75ce961f0bc',1,'protocol']]]
+  ['msgtype_0',['MsgType',['../classasge_1_1net_1_1GameProtocol.html#ad2fade22a9aae5bfbd771781f652a19a',1,'asge::net::GameProtocol']]]
 ];

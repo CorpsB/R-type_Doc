@@ -1,10 +1,20 @@
 var searchData=
 [
-  ['r_0',['R',['../namespacearcade_1_1types.html#a01aa0b3d6389ced72c656c363d742af6a70c6ea874a8847e2436053d254ade244',1,'arcade::types']]],
-  ['raw_5fpacket_1',['RAW_PACKET',['../namespaceprotocol_1_1game.html#ac979c495edcb78eaa548b5c7be45f118ab459b0b196b23ddac2d1e061943537b4',1,'protocol::game']]],
-  ['rectangle_2',['RECTANGLE',['../namespacearcade_1_1types.html#a2c3e28c91563a74b2591aecbcb9c1bcea7cc4001dd827513ae9ff0a77eb9ad271',1,'arcade::types']]],
-  ['reliable_5fordered_3',['RELIABLE_ORDERED',['../namespaceprotocol.html#a1d4d9634cbc99b8530d0d75ce961f0bcac4878517fb38ded510bd28639895348b',1,'protocol']]],
-  ['reliable_5funordered_4',['RELIABLE_UNORDERED',['../namespaceprotocol.html#a1d4d9634cbc99b8530d0d75ce961f0bcadca71020b5250fb240f15e926d203a80',1,'protocol']]],
-  ['replace_5',['Replace',['../classrtype_1_1client_1_1SceneManager.html#aac2608885cc04b2ef126ee7fc1d1a757a0ebe6df8a3ac338e0512acc741823fdb',1,'rtype::client::SceneManager']]],
-  ['right_6',['right',['../namespaceprotocol_1_1game.html#aa65405265af95e2ad16de5c1bf6499c8a8cc8fe6468baa99edc9894cd822d9a58',1,'protocol::game::RIGHT'],['../namespacearcade_1_1types.html#a486c77632eb0d8d22b5e643dc4d55300ac49507007424458fdea998128dbb7aa2',1,'arcade::types::RIGHT']]]
+  ['n_0',['N',['../namespaceasge_1_1input.html#a5265976dcf7eba98927ad1471333b1cda8d9c307cb7f3c4a32822a51922d1ceaa',1,'asge::input']]],
+  ['name_1',['NAME',['../classasge_1_1net_1_1GameProtocol.html#ab99c85bb79600c8f70f8fccff06e091daca523b4dd029f2de364b58e114316a87',1,'asge::net::GameProtocol']]],
+  ['network_2',['Network',['../namespaceasge_1_1error.html#a4739bda1c6e0e813f85089b937ee528daeec89088ee408b80387155272b113256',1,'asge::error']]],
+  ['no_5fpad_3',['NO_PAD',['../namespaceasge_1_1components.html#a806fc9d3301cce6bb6507b8a1dac33aca673bde324df512ee6ecbfd0a6e4a5e02',1,'asge::components']]],
+  ['none_4',['none',['../classasge_1_1scene_1_1SceneManager.html#a6de430ad97d835bba550736fb6c9dc1da6adf97f83acf6453d4a6a4b1070f3754',1,'asge::scene::SceneManager::None'],['../namespaceasge_1_1scene.html#a4cce66eb7a237a85bf1157ca6125d162a6adf97f83acf6453d4a6a4b1070f3754',1,'asge::scene::None']]],
+  ['null_5',['Null',['../namespaceasge.html#a6f577018be938557ecb99976e77a1a08abbb93ef26e3c101ff11cdd21cab08a94',1,'asge']]],
+  ['num_5f0_6',['NUM_0',['../namespaceasge_1_1input.html#a5265976dcf7eba98927ad1471333b1cda0337623d4049d913b2cc509174a59ba1',1,'asge::input']]],
+  ['num_5f1_7',['NUM_1',['../namespaceasge_1_1input.html#a5265976dcf7eba98927ad1471333b1cda1eeacfec5e7988f11671c829698fc8b4',1,'asge::input']]],
+  ['num_5f2_8',['NUM_2',['../namespaceasge_1_1input.html#a5265976dcf7eba98927ad1471333b1cdaaa0af80237c5fd531521116e14de59c6',1,'asge::input']]],
+  ['num_5f3_9',['NUM_3',['../namespaceasge_1_1input.html#a5265976dcf7eba98927ad1471333b1cdaa4e4e51ea57e692332c72d32428b3851',1,'asge::input']]],
+  ['num_5f4_10',['NUM_4',['../namespaceasge_1_1input.html#a5265976dcf7eba98927ad1471333b1cda990299ddc3e16ad13c9fe49337cdb53c',1,'asge::input']]],
+  ['num_5f5_11',['NUM_5',['../namespaceasge_1_1input.html#a5265976dcf7eba98927ad1471333b1cda02addb75153754910d8344f8bfa06501',1,'asge::input']]],
+  ['num_5f6_12',['NUM_6',['../namespaceasge_1_1input.html#a5265976dcf7eba98927ad1471333b1cda3b0a1f52347b7d7dc426c49536e3edba',1,'asge::input']]],
+  ['num_5f7_13',['NUM_7',['../namespaceasge_1_1input.html#a5265976dcf7eba98927ad1471333b1cdaf45fde1eaac63c5a55cf87e584f5e6bb',1,'asge::input']]],
+  ['num_5f8_14',['NUM_8',['../namespaceasge_1_1input.html#a5265976dcf7eba98927ad1471333b1cdade5947451686ebff12b3b3feb15043f4',1,'asge::input']]],
+  ['num_5f9_15',['NUM_9',['../namespaceasge_1_1input.html#a5265976dcf7eba98927ad1471333b1cdaad6039189d8fe566b7dfe30ea70f8b4d',1,'asge::input']]],
+  ['num_5flock_16',['NUM_LOCK',['../namespaceasge_1_1input.html#a5265976dcf7eba98927ad1471333b1cdacb0d0bf9279e78f982deba761110e434',1,'asge::input']]]
 ];

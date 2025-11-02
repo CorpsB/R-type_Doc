@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['layer_0',['Why We Chose Boost.Asio for the R-Type Network Layer',['../md_Doc_2Boost_8asio.html',1,'']]]
+  [' comparative_20study_0',['Technical &amp; Comparative Study',['../md_doc_2tec.html',1,'']]]
 ];

@@ -1,0 +1,10 @@
+<map id="asge::job::JobManager::~JobManager" name="asge::job::JobManager::~JobManager">
+<area shape="rect" id="Node000001" title="Stops workers during destruction." alt="" coords="5,5,268,31"/>
+<area shape="rect" id="Node000002" href="$classasge_1_1job_1_1JobManager.html#a3fa51352efb85feeec57332787efcf19" title="Routes messages through the optional debug interface." alt="" coords="601,5,796,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="268,15,587,15,587,21,268,21"/>
+<area shape="rect" id="Node000004" href="$classasge_1_1job_1_1JobManager.html#a9f2cf9be3eaf2aacf7b2b57329416fc9" title="Stops workers and clears internal state." alt="" coords="316,31,553,56"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="269,27,302,29,302,35,268,32"/>
+<area shape="rect" id="Node000003" href="$classasge_1_1debug_1_1IDebug.html#ab16de8ad522314d2aea6eb483b4a5ae0" title="Logs a message with a given severity level." alt="" coords="844,5,1027,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="796,15,830,15,830,21,796,21"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="553,29,587,26,588,31,554,35"/>
+</map>

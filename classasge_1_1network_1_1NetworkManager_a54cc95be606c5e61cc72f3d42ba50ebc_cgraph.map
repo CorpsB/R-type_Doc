@@ -1,0 +1,16 @@
+<map id="asge::network::NetworkManager::poll" name="asge::network::NetworkManager::poll">
+<area shape="rect" id="Node000001" title="Drain the transport and dispatch inbound packets." alt="" coords="5,77,272,102"/>
+<area shape="rect" id="Node000002" href="$classasge_1_1network_1_1NetworkManager.html#a6a18387db648f31db54e2bc67a292aad" title="Get an existing connection id or create a new one for (addr,port)." alt="" coords="320,5,555,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="198,74,329,46,331,51,199,79"/>
+<area shape="rect" id="Node000003" href="$classasge_1_1network_1_1NetworkManager.html#a60bdcec8886944afe010d38e4ae73eb6" title="Process a raw inbound datagram for a specific connection." alt="" coords="320,69,555,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="272,87,306,87,306,92,272,92"/>
+<area shape="rect" id="Node000007" href="$classasge_1_1network_1_1NetworkManager.html#aaef053da6a389f14494168fbb42496a0" title="Retransmit expired reliable packets and backoff their RTO." alt="" coords="320,133,555,173"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="199,99,331,128,329,133,198,105"/>
+<area shape="rect" id="Node000004" href="$classasge_1_1network_1_1NetworkManager.html#a5fe9ad297b070e0ac76c5c41dc386ed6" title=" " alt="" coords="603,12,837,52"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="536,67,607,52,608,57,537,72"/>
+<area shape="rect" id="Node000005" href="$classasge_1_1network_1_1NetworkManager.html#a5d69936464181ef9ccac73404717ef5a" title="Serialize a NetHeader to a 12&#45;byte buffer." alt="" coords="885,41,1120,81"/>
+<area shape="poly" id="edge6_Node000003_Node000005" title=" " alt="" coords="555,81,871,65,872,70,555,86"/>
+<area shape="rect" id="Node000006" href="$classasge_1_1network_1_1NetworkManager.html#aaf1963b384d4e3df333dc82c4983df22" title="Parse a NetHeader from raw bytes." alt="" coords="603,127,837,167"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="537,107,608,121,607,126,536,112"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="838,42,872,45,871,50,837,47"/>
+</map>

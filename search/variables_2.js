@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['basescreen_0',['baseScreen',['../classrtype_1_1client_1_1GameSettings.html#a920af7a0b57719e0eb33498f1be67ef4',1,'rtype::client::GameSettings']]],
-  ['buffered_1',['buffered',['../namespaceprotocol.html#ab30fc255672f83a9b479daf5063f4541',1,'protocol::peer_receive_state_t']]],
-  ['buttons_2',['buttons',['../namespaceprotocol_1_1game.html#ac3c97dff5a37252491f9366934801396',1,'protocol::game::payload_player_input_t']]]
+  ['b_0',['b',['../namespaceasge_1_1renderer.html#a12d0b16982f307c78fade7a1b01e01dc',1,'asge::renderer::RGBAColor']]],
+  ['behavior_1',['behavior',['../namespaceasge_1_1script.html#a9c68defe19a3724a49b7b873d15b6433',1,'asge::script::ScriptHandle']]]
 ];

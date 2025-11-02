@@ -1,11 +1,8 @@
 var searchData=
 [
-  ['langmanager_0',['langManager',['../classrtype_1_1client_1_1GameManager.html#a616826f9eaba9c882d8c5cff3ebcf9f6',1,'rtype::client::GameManager']]],
-  ['languagemanager_1',['LanguageManager',['../classrtype_1_1client_1_1LanguageManager.html#a8cbd77dd513cca5180832527133fcaa3',1,'rtype::client::LanguageManager']]],
-  ['loaddisplay_2',['loadDisplay',['../classarcade_1_1core_1_1Core.html#a8102dbc92888e505dba76abfd58f59be',1,'arcade::core::Core']]],
-  ['loadfile_3',['loadFile',['../classrtype_1_1client_1_1LanguageManager.html#af73eaebd78644013f1c95aba8beb0bc8',1,'rtype::client::LanguageManager']]],
-  ['loadfont_4',['loadFont',['../classrtype_1_1client_1_1ResourceManager.html#ae31c46a70e467941217c001b9b921677',1,'rtype::client::ResourceManager']]],
-  ['loadgame_5',['loadGame',['../classarcade_1_1core_1_1Core.html#aa9b7552255395473857ff287ec60c85a',1,'arcade::core::Core']]],
-  ['loadsound_6',['loadSound',['../classrtype_1_1client_1_1ResourceManager.html#a1a65a1629308ab69afcb781184cbf422',1,'rtype::client::ResourceManager']]],
-  ['loadtexture_7',['loadTexture',['../classrtype_1_1client_1_1ResourceManager.html#a1dcf67862b272d44a3c2b7bb52d8f039',1,'rtype::client::ResourceManager']]]
+  ['jobhandle_0',['JobHandle',['../classasge_1_1job_1_1JobHandle.html#a86a06cad2e420e6b484e92c9d29a0b93',1,'asge::job::JobHandle']]],
+  ['jobmanager_1',['JobManager',['../classasge_1_1job_1_1JobManager.html#ab1b4a3d1aa6554e3042d1b746c6b1d66',1,'asge::job::JobManager']]],
+  ['jobs_2',['jobs',['../structasge_1_1Services.html#a8b3e9f2624921f77301b9cff9542d9f8',1,'asge::Services::jobs()'],['../structasge_1_1Services.html#ac24b1ad986b15e7da190f3fede85f1a2',1,'asge::Services::jobs() const']]],
+  ['jobworker_3',['JobWorker',['../classasge_1_1job_1_1JobWorker.html#ab083955c14e4c4795e8303f6b33759a7',1,'asge::job::JobWorker']]],
+  ['jsonruntime_4',['JSONRuntime',['../classasge_1_1script_1_1JSONRuntime.html#af24a71cc382112b91f17db8e7937ffb0',1,'asge::script::JSONRuntime']]]
 ];

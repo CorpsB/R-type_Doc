@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['entity_5fid_5ft_0',['entity_id_t',['../namespaceprotocol_1_1game.html#a5748e8d4556e150c096d944b892ebef8',1,'protocol::game']]],
-  ['entity_5fschema_1',['entity_schema',['../namespacertype_1_1ecs_1_1factory.html#adf6cb2c07d619384a6c1f4fe94eb5014',1,'rtype::ecs::factory']]]
+  ['handler_0',['handler',['../classasge_1_1event_1_1IEvent.html#ae00ccf5d5616218f25a142ae151cb2e0',1,'asge::event::IEvent::Handler'],['../classasge_1_1network_1_1NetworkManager.html#a3ba848904374e643f35ee9bddd4dc053',1,'asge::network::NetworkManager::Handler']]],
+  ['handlermap_1',['HandlerMap',['../classasge_1_1event_1_1EventManager.html#a05b500bd143dced03c59a35d4723a849',1,'asge::event::EventManager']]],
+  ['hostfn_2',['HostFn',['../classasge_1_1script_1_1IScript.html#a7542d677cd1a21876380badbe8fe31b1',1,'asge::script::IScript']]]
 ];

@@ -1,0 +1,11 @@
+<map id="asge::world::System" name="asge::world::System">
+<area shape="rect" id="Node000001" title="Abstract base type representing an executable system." alt="" coords="488,5,717,160"/>
+<area shape="rect" id="Node000002" href="$classasge_1_1world_1_1RenderSystem.html" title="Renders entities tracked by the ECS." alt="" coords="5,235,285,405"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="476,130,388,167,299,210,255,238,252,233,296,206,385,162,474,125"/>
+<area shape="rect" id="Node000003" href="$classasge_1_1world_1_1systems_1_1CollisionSystem.html" title="Performs collision detection among registered entities." alt="" coords="309,243,589,397"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="548,173,501,244,497,241,543,170"/>
+<area shape="rect" id="Node000004" href="$classasge_1_1world_1_1systems_1_1MovementSystem.html" title="System updating entity positions based on speed components." alt="" coords="614,243,898,397"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="662,170,708,241,704,244,658,173"/>
+<area shape="rect" id="Node000005" href="$classasge_1_1world_1_1systems_1_1PlayerSystem.html" title="Handles player movement, bounds, and firing." alt="" coords="923,208,1203,432"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="731,125,822,161,912,206,924,212,921,217,909,210,819,166,729,130"/>
+</map>

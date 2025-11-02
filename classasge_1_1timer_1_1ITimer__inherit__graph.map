@@ -1,0 +1,7 @@
+<map id="asge::timer::ITimer" name="asge::timer::ITimer">
+<area shape="rect" id="Node000001" title="Minimal abstract timer interface." alt="" coords="182,5,403,200"/>
+<area shape="rect" id="Node000002" href="$classasge_1_1timer_1_1GameTimer.html" title="Game&#45;facing timer: fixed&#45;step, time&#45;scale, pause control." alt="" coords="5,248,289,743"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="254,214,242,249,237,247,249,212"/>
+<area shape="rect" id="Node000003" href="$classasge_1_1timer_1_1SystemTimer.html" title="Concrete ITimer implementation using std::chrono." alt="" coords="313,328,565,663"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="336,212,379,327,374,329,331,214"/>
+</map>

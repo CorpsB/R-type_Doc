@@ -1,29 +1,4 @@
 var searchData=
 [
-  ['wait_5fevent_0',['wait_event',['../namespaceprotocol_1_1game_1_1GameProtocol.html#aca3a7b71f716d0f7a2946611a79e8927',1,'protocol::game::GameProtocol::wait_event()'],['../classprotocol_1_1Protocol.html#ab870cc334ea655a418cf2e6d1de3abe7',1,'protocol::Protocol::wait_event()']]],
-  ['waiting_5fsince_1',['waiting_since',['../namespaceprotocol.html#a271f6ca0bd44bb1beb832c896eb13e15',1,'protocol::peer_receive_state_t']]],
-  ['waitnexttick_2',['waitNextTick',['../classServerClock.html#a5ed4fe48f95b86e3f87fd471e48d9221',1,'ServerClock']]],
-  ['wall_3',['WALL',['../namespacearcade_1_1types.html#aed95e01a4884449c564b5fd8d15dae87afa291bd3efa2b6fd67025d4780232f60',1,'arcade::types']]],
-  ['we_20chose_20boost_20asio_20for_20the_20r_20type_20network_20layer_4',['Why We Chose Boost.Asio for the R-Type Network Layer',['../md_Doc_2Boost_8asio.html',1,'']]],
-  ['we_20chose_20raylib_20for_20the_20game_20rendering_20and_20input_20system_5',['Why We Chose Raylib for the Game Rendering and Input System',['../md_Doc_2RayLib.html',1,'']]],
-  ['why_20boost_20asio_6',['2. Why Boost.Asio?',['../md_Doc_2Boost_8asio.html#autotoc_md50',1,'']]],
-  ['why_20ecs_7',['Why ECS?',['../md_Doc_2ecs.html#autotoc_md143',1,'']]],
-  ['why_20raylib_8',['2. Why raylib?',['../md_Doc_2RayLib.html#autotoc_md214',1,'']]],
-  ['why_20we_20chose_20boost_20asio_20for_20the_20r_20type_20network_20layer_9',['Why We Chose Boost.Asio for the R-Type Network Layer',['../md_Doc_2Boost_8asio.html',1,'']]],
-  ['why_20we_20chose_20raylib_20for_20the_20game_20rendering_20and_20input_20system_10',['Why We Chose Raylib for the Game Rendering and Input System',['../md_Doc_2RayLib.html',1,'']]],
-  ['window_11',['6.2 Receiver ACK window',['../md_Doc_2network__protocol.html#autotoc_md177',1,'']]],
-  ['windows_12',['windows',['../index.html#autotoc_md34',1,'Windows'],['../index.html#autotoc_md40',1,'Windows'],['../index.html#autotoc_md30',1,'Windows'],['../index.html#autotoc_md26',1,'Windows']]],
-  ['windows_20linux_20constraints_13',['8. Windows &amp; Linux Constraints',['../md_Doc_2Developer__doc.html#autotoc_md119',1,'']]],
-  ['wire_20format_14',['4. Packet Header (Wire Format)',['../md_Doc_2network__protocol.html#autotoc_md168',1,'']]],
-  ['wire_20packet_15',['11. Example Wire Packet',['../md_Doc_2network__protocol.html#autotoc_md191',1,'']]],
-  ['with_20c_20and_20ecs_20architecture_16',['2.3 Easy Integration with C++ and ECS Architecture',['../md_Doc_2RayLib.html#autotoc_md219',1,'']]],
-  ['with_20gap_20and_20advancement_17',['16.2 Reliable Ordered with gap and advancement',['../md_Doc_2network__protocol.html#autotoc_md203',1,'']]],
-  ['with_20networking_20boost_20asio_18',['Integration with Networking (Boost.Asio)',['../md_Doc_2ecs.html#autotoc_md151',1,'']]],
-  ['with_20other_20libraries_19',['2.6 Comparison with Other Libraries',['../md_Doc_2RayLib.html#autotoc_md225',1,'']]],
-  ['with_20other_20solutions_20',['2.6 Comparison with Other Solutions',['../md_Doc_2Boost_8asio.html#autotoc_md61',1,'']]],
-  ['with_20rendering_20raylib_21',['Integration with Rendering (Raylib)',['../md_Doc_2ecs.html#autotoc_md153',1,'']]],
-  ['with_20threads_20and_20timers_22',['2.4 Integration with Threads and Timers',['../md_Doc_2Boost_8asio.html#autotoc_md57',1,'']]],
-  ['workflow_23',['workflow',['../md_Doc_2Contributing.html#autotoc_md68',1,'1. Git Workflow'],['../md_Doc_2network__protocol.html#autotoc_md181',1,'7.2 Resend/Fail workflow']]],
-  ['workflow_3a_24',['Workflow:',['../classrtype_1_1client_1_1LanguageManager.html#autotoc_md4',1,'']]],
-  ['world_25',['7.2 Collision World',['../md_Doc_2Developer__doc.html#autotoc_md114',1,'']]]
+  ['y_0',['y',['../namespaceasge_1_1components.html#aa9633d622fbac8f92533737b44d26675',1,'asge::components::position_attr_t::y'],['../namespaceasge_1_1input.html#abbdc6278bc9f2d7990bef2cd22491113',1,'asge::input::PointerState::y'],['../namespaceasge_1_1renderer.html#a50eeede407cb72470b14fcae63fe2865',1,'asge::renderer::Vec2f::y'],['../namespaceasge_1_1renderer.html#a02eedd106b06b38303597de6b181af65',1,'asge::renderer::Rect::y'],['../namespaceasge_1_1scene_1_1ui.html#aa1664538cdcf24d0e9679985b2c20c80',1,'asge::scene::ui::UIPosition::y'],['../namespaceasge_1_1script_1_1ActionHandler.html#a5f34dc08c4f5c0e8c8b59f18f65e966b',1,'asge::script::ActionHandler::ParsedXY::y'],['../namespaceasge_1_1input.html#a5265976dcf7eba98927ad1471333b1cda57cec4137b614c87cb4e24a3d003a3e0',1,'asge::input::Y']]]
 ];

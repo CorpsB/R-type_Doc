@@ -1,11 +1,13 @@
 <map id="Error.cpp" name="Error.cpp">
-<area shape="rect" id="Node000001" title="Implementation of the custom R&#45;Type exception class." alt="" coords="115,5,193,31"/>
-<area shape="rect" id="Node000002" href="$Error_8hpp.html" title="Custom exception class for R&#45;Type&#45;specific runtime errors." alt="" coords="114,79,194,104"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="157,31,157,65,151,65,151,31"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="5,152,92,177"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="139,106,78,147,76,142,136,102"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="117,152,191,177"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="157,104,157,138,151,138,151,104"/>
-<area shape="rect" id="Node000005" title=" " alt="" coords="215,152,274,177"/>
-<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="170,102,221,141,217,145,167,106"/>
+<area shape="rect" id="Node000001" title="Implementation of the asge::error::Error exception class." alt="" coords="326,5,405,31"/>
+<area shape="rect" id="Node000002" href="$Error_8hpp.html" title="Exception type used by the engine for categorized errors." alt="" coords="325,79,405,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="368,31,368,65,363,65,363,31"/>
+<area shape="rect" id="Node000003" href="$ErrorTypes_8hpp.html" title="Enumerations describing error categories and severities." alt="" coords="5,152,245,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="328,107,178,151,177,145,326,101"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="270,152,357,177"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="359,106,332,142,328,139,355,103"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="381,152,456,177"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="376,103,404,140,400,143,372,106"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="480,152,539,177"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="390,102,475,143,472,148,387,106"/>
 </map>

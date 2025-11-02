@@ -1,23 +1,36 @@
 <map id="SystemManager.cpp" name="SystemManager.cpp">
-<area shape="rect" id="Node000001" title="Implementation file for non&#45;template SystemManager methods." alt="" coords="240,5,395,31"/>
-<area shape="rect" id="Node000002" href="$SystemManager_8hpp.html" title="Manager for registering systems and maintaining execution signatures." alt="" coords="240,79,395,104"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="320,31,320,65,315,65,315,31"/>
-<area shape="rect" id="Node000003" href="$Macro_8hpp.html" title="Global configuration macros for the ECS (component/entity limits)." alt="" coords="5,152,96,177"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="275,107,108,151,107,146,274,101"/>
-<area shape="rect" id="Node000006" href="$System_8hpp.html" title="Base class for systems in the ECS." alt="" coords="121,152,279,177"/>
-<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="300,106,232,147,230,142,297,102"/>
-<area shape="rect" id="Node000008" title=" " alt="" coords="253,225,377,251"/>
-<area shape="poly" id="edge11_Node000002_Node000008" title=" " alt="" coords="320,105,318,212,312,212,314,104"/>
-<area shape="rect" id="Node000009" title=" " alt="" coords="355,152,413,177"/>
-<area shape="poly" id="edge9_Node000002_Node000009" title=" " alt="" coords="330,103,366,140,362,144,326,106"/>
-<area shape="rect" id="Node000010" title=" " alt="" coords="437,152,515,177"/>
-<area shape="poly" id="edge10_Node000002_Node000010" title=" " alt="" coords="344,102,439,144,437,149,342,106"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="91,225,157,251"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="65,176,104,214,100,218,61,180"/>
-<area shape="rect" id="Node000005" title=" " alt="" coords="6,225,66,251"/>
-<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="51,178,44,212,39,211,46,177"/>
-<area shape="poly" id="edge7_Node000006_Node000004" title=" " alt="" coords="190,179,148,218,145,214,186,175"/>
-<area shape="rect" id="Node000007" title=" " alt="" coords="181,225,224,251"/>
-<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="203,178,204,212,199,212,198,178"/>
-<area shape="poly" id="edge8_Node000006_Node000008" title=" " alt="" coords="220,175,286,216,283,220,217,180"/>
+<area shape="rect" id="Node000001" title="Implementation of non&#45;template SystemManager behavior." alt="" coords="655,5,810,31"/>
+<area shape="rect" id="Node000002" href="$SystemManager_8hpp.html" title="Handles ECS system registration, dependencies, and signature filtering." alt="" coords="219,79,374,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="663,33,381,79,380,74,662,28"/>
+<area shape="rect" id="Node000011" href="$Error_8hpp.html" title="Exception type used by the engine for categorized errors." alt="" coords="663,79,802,104"/>
+<area shape="poly" id="edge13_Node000001_Node000011" title=" " alt="" coords="735,31,735,65,730,65,730,31"/>
+<area shape="rect" id="Node000016" title=" " alt="" coords="826,79,906,104"/>
+<area shape="poly" id="edge18_Node000001_Node000016" title=" " alt="" coords="755,28,833,70,831,74,753,33"/>
+<area shape="rect" id="Node000003" href="$Macro_8hpp.html" title="Global configuration macros and spatial hashing helpers." alt="" coords="5,152,108,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="259,107,110,151,108,145,257,101"/>
+<area shape="rect" id="Node000006" href="$System_8hpp.html" title="Base class for systems in the ECS." alt="" coords="285,152,455,177"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="311,102,350,140,346,144,307,106"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="439,225,498,251"/>
+<area shape="poly" id="edge10_Node000002_Node000008" title=" " alt="" coords="375,97,427,115,450,130,470,150,477,165,480,181,478,212,473,212,475,182,472,167,465,154,447,134,425,120,374,102"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="201,225,325,251"/>
+<area shape="poly" id="edge12_Node000002_Node000009" title=" " alt="" coords="244,106,204,124,187,137,174,153,170,163,170,171,180,189,199,204,222,217,219,222,196,209,175,192,165,173,165,162,169,151,184,133,202,120,241,102"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="183,152,261,177"/>
+<area shape="poly" id="edge11_Node000002_Node000010" title=" " alt="" coords="287,106,246,144,242,141,283,102"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="110,225,177,251"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="72,175,120,214,117,219,69,179"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="25,225,85,251"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="59,178,58,212,53,212,54,178"/>
+<area shape="poly" id="edge8_Node000006_Node000004" title=" " alt="" coords="334,180,191,225,189,220,333,175"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="350,225,393,251"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="373,178,374,212,368,212,368,178"/>
+<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="387,175,443,215,440,219,384,180"/>
+<area shape="poly" id="edge9_Node000006_Node000009" title=" " alt="" coords="354,180,294,220,291,215,351,175"/>
+<area shape="rect" id="Node000012" href="$ErrorTypes_8hpp.html" title="Enumerations describing error categories and severities." alt="" coords="613,152,853,177"/>
+<area shape="poly" id="edge14_Node000011_Node000012" title=" " alt="" coords="735,104,735,138,730,138,730,104"/>
+<area shape="rect" id="Node000013" title=" " alt="" coords="877,152,964,177"/>
+<area shape="poly" id="edge15_Node000011_Node000013" title=" " alt="" coords="764,102,878,144,876,149,762,107"/>
+<area shape="rect" id="Node000014" title=" " alt="" coords="989,152,1063,177"/>
+<area shape="poly" id="edge16_Node000011_Node000014" title=" " alt="" coords="780,101,976,148,974,154,779,107"/>
+<area shape="rect" id="Node000015" title=" " alt="" coords="530,152,589,177"/>
+<area shape="poly" id="edge17_Node000011_Node000015" title=" " alt="" coords="706,106,601,149,599,144,704,102"/>
 </map>

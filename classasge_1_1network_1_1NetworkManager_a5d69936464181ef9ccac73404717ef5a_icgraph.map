@@ -1,0 +1,17 @@
+<map id="asge::network::NetworkManager::writeHeader" name="asge::network::NetworkManager::writeHeader">
+<area shape="rect" id="Node000001" title="Serialize a NetHeader to a 12&#45;byte buffer." alt="" coords="892,63,1127,103"/>
+<area shape="rect" id="Node000002" href="$classasge_1_1network_1_1NetworkManager.html#a5fe9ad297b070e0ac76c5c41dc386ed6" title=" " alt="" coords="609,63,844,103"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="878,85,844,85,844,80,878,80"/>
+<area shape="rect" id="Node000003" href="$classasge_1_1network_1_1NetworkManager.html#a60bdcec8886944afe010d38e4ae73eb6" title="Process a raw inbound datagram for a specific connection." alt="" coords="327,5,561,45"/>
+<area shape="poly" id="edge6_Node000001_Node000003" title=" " alt="" coords="903,63,844,53,697,39,562,31,562,26,697,34,844,48,903,57"/>
+<area shape="rect" id="Node000007" href="$classasge_1_1network_1_1NetworkManager.html#a53cc5c62d4b4c4fa472384e88e00f8d2" title="Send a best&#45;effort packet to the default/known peer(s)." alt="" coords="609,127,844,167"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="908,108,816,129,815,124,906,103"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="613,62,543,48,544,43,614,57"/>
+<area shape="rect" id="Node000005" href="$classasge_1_1network_1_1NetworkManager.html#ab2167e47d86344577e3b97c6d24ccd4f" title="Send a reliable packet to a specific connection." alt="" coords="327,69,561,109"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="595,88,562,89,562,84,595,83"/>
+<area shape="rect" id="Node000004" href="$classasge_1_1network_1_1NetworkManager.html#a54cc95be606c5e61cc72f3d42ba50ebc" title="Drain the transport and dispatch inbound packets." alt="" coords="9,13,275,38"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="313,28,275,28,275,23,313,23"/>
+<area shape="rect" id="Node000006" href="$classasge_1_1network_1_1NetworkManager.html#aab8d5403d0bdb61f4856173bcdfaba46" title="Send a payload on a logical channel." alt="" coords="5,105,279,130"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="313,104,279,107,279,102,313,99"/>
+<area shape="poly" id="edge8_Node000007_Node000006" title=" " alt="" coords="596,143,279,127,279,122,596,137"/>
+</map>

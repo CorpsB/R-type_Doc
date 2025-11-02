@@ -1,0 +1,15 @@
+<map id="ScriptRuntime.hpp" name="ScriptRuntime.hpp">
+<area shape="rect" id="Node000001" title="Abstract runtime interface for parsing and manipulating script artifacts." alt="" coords="87,5,229,31"/>
+<area shape="rect" id="Node000002" href="$JSONRuntime_8hpp.html" title="JSON&#45;based ScriptRuntime implementation declarations." alt="" coords="172,79,309,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="183,38,229,76,225,80,180,42"/>
+<area shape="rect" id="Node000006" href="$ScriptManager_8hpp.html" title="Concrete implementation of the IScript interface." alt="" coords="5,79,148,104"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="136,42,92,80,88,76,133,38"/>
+<area shape="rect" id="Node000003" href="$EngineCore_8cpp.html" title="Implements the engine bootstrap and runtime loop." alt="" coords="173,152,295,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="241,118,238,152,232,152,236,118"/>
+<area shape="rect" id="Node000004" href="$JSONRuntime_8cpp.html" title="JSON runtime implementation (parsing &amp; merging) for script templates and assets." alt="" coords="319,152,455,177"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="277,107,364,149,362,154,275,112"/>
+<area shape="rect" id="Node000005" href="$ScriptManager_8cpp.html" title="Implementation of ScriptManager methods (discovery/parsing/holding assets &amp; templates)." alt="" coords="5,152,148,177"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="203,112,105,154,102,149,201,107"/>
+<area shape="poly" id="edge6_Node000006_Node000003" title=" " alt="" coords="116,107,209,149,207,154,113,112"/>
+<area shape="poly" id="edge7_Node000006_Node000005" title=" " alt="" coords="79,118,79,152,74,152,74,118"/>
+</map>

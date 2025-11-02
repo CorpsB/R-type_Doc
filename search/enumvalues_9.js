@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['menu_0',['MENU',['../namespacearcade_1_1types.html#a5d7650a7b10a29959d577b550f1c8800a9eb4299d1e04ed68adf324ba20cb6a70',1,'arcade::types']]],
-  ['move_5fentity_1',['move_entity',['../namespaceprotocol_1_1game.html#ad4d21ce1bb315afe579f5abed923f701ae66cbaf5e7fa7ca722d61f5326f418a8',1,'protocol::game::MOVE_ENTITY'],['../namespaceprotocol_1_1game.html#ac979c495edcb78eaa548b5c7be45f118ae66cbaf5e7fa7ca722d61f5326f418a8',1,'protocol::game::MOVE_ENTITY']]]
+  ['j_0',['J',['../namespaceasge_1_1input.html#a5265976dcf7eba98927ad1471333b1cdaff44570aca8241914870afbc310cdb85',1,'asge::input']]],
+  ['job_1',['Job',['../namespaceasge_1_1error.html#a4739bda1c6e0e813f85089b937ee528dacf51066f49e517f274b8173cc265c60b',1,'asge::error']]]
 ];

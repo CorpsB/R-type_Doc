@@ -99,27 +99,17 @@ $(document).ready(function(){initNavTree('EntityFactory_8hpp.html',''); initResi
 <div class="header">
   <div class="summary">
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">EntityFactory.hpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>Declares the entity creation and component registration helpers.  
+<p>Helpers for instantiating entities from script templates.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;<a class="el" href="GameProtocolTypes_8hpp_source.html">../Protocol/GameProtocolTypes.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="Coordinator_8hpp_source.html">../ECS/Coordinator.hpp</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="ASGE_8hpp_source.html">../../../includes/ASGE.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="ScriptTypes_8hpp_source.html">../../../includes/types/ScriptTypes.hpp</a>&quot;</code><br />
 <code>#include &lt;optional&gt;</code><br />
-<code>#include &quot;<a class="el" href="Position_8hpp_source.html">../ECS/Components/Attributes/Position.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="HitBox_8hpp_source.html">../ECS/Components/Attributes/HitBox.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="Direction_8hpp_source.html">../ECS/Components/Attributes/Direction.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="Speed_8hpp_source.html">../ECS/Components/Attributes/Speed.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="Common_2ECS_2Components_2Attributes_2Sprite_8hpp_source.html">../ECS/Components/Attributes/Sprite.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="Health_8hpp_source.html">../ECS/Components/Attributes/Health.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="Damage_8hpp_source.html">../ECS/Components/Attributes/Damage.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="Frequency_8hpp_source.html">../ECS/Components/Attributes/Frequency.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="Name_8hpp_source.html">../ECS/Components/Attributes/Name.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="Score_8hpp_source.html">../ECS/Components/Attributes/Score.hpp</a>&quot;</code><br />
+<code>#include &lt;cstdint&gt;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for EntityFactory.hpp:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -132,62 +122,28 @@ $(document).ready(function(){initNavTree('EntityFactory_8hpp.html',''); initResi
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="EntityFactory_8hpp__dep__incl.svg" width="615" height="256"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="EntityFactory_8hpp__dep__incl.svg" width="100%" height="437"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 </div>
 <p><a href="EntityFactory_8hpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:namespacertype_1_1ecs_1_1factory" id="r_namespacertype_1_1ecs_1_1factory"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacertype_1_1ecs_1_1factory.html">rtype::ecs::factory</a></td></tr>
-<tr class="memdesc:namespacertype_1_1ecs_1_1factory"><td class="mdescLeft">&#160;</td><td class="mdescRight">Factory namespace for constructing ECS entities. <br /></td></tr>
+<tr class="memitem:namespaceasge" id="r_namespaceasge"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceasge.html">asge</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespacertype" id="r_namespacertype"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacertype.html">rtype</a></td></tr>
+<tr class="memitem:namespaceasge_1_1script" id="r_namespaceasge_1_1script"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceasge_1_1script.html">asge::script</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespacertype_1_1ecs" id="r_namespacertype_1_1ecs"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacertype_1_1ecs.html">rtype::ecs</a></td></tr>
+<tr class="memitem:namespaceasge_1_1script_1_1EntityFactory" id="r_namespaceasge_1_1script_1_1EntityFactory"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceasge_1_1script_1_1EntityFactory.html">asge::script::EntityFactory</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:adf6cb2c07d619384a6c1f4fe94eb5014" id="r_adf6cb2c07d619384a6c1f4fe94eb5014"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacertype_1_1ecs_1_1factory.html#adf6cb2c07d619384a6c1f4fe94eb5014">rtype::ecs::factory::entity_schema</a> = <a class="el" href="namespaceprotocol_1_1game.html#structprotocol_1_1game_1_1payload__create__entity__t">protocol::game::payload_create_entity_t</a></td></tr>
-<tr class="memdesc:adf6cb2c07d619384a6c1f4fe94eb5014"><td class="mdescLeft">&#160;</td><td class="mdescRight">protocol creation entity payload alias  <br /></td></tr>
-<tr class="separator:adf6cb2c07d619384a6c1f4fe94eb5014"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ac493845a0bd714fbeb9baead17010d04" id="r_ac493845a0bd714fbeb9baead17010d04"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacertype_1_1ecs_1_1factory.html#ac493845a0bd714fbeb9baead17010d04">rtype::ecs::factory::register_game_components</a> (<a class="el" href="classrtype_1_1ecs_1_1Coordinator.html">Coordinator</a> &amp;coord)</td></tr>
-<tr class="memdesc:ac493845a0bd714fbeb9baead17010d04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers all gameplay-related components into the ECS <a class="el" href="classrtype_1_1ecs_1_1Coordinator.html" title="Central coordinator that orchestrates entities, components and systems.">Coordinator</a>.  <br /></td></tr>
-<tr class="separator:ac493845a0bd714fbeb9baead17010d04"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7cf1b038cae209ff98ae6c2d74390d41" id="r_a7cf1b038cae209ff98ae6c2d74390d41"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a7cf1b038cae209ff98ae6c2d74390d41"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacertype_1_1ecs_1_1factory.html#a7cf1b038cae209ff98ae6c2d74390d41">rtype::ecs::factory::add_or_rollback</a> (<a class="el" href="classrtype_1_1ecs_1_1Coordinator.html">Coordinator</a> &amp;coord, uint32_t id, const T &amp;component)</td></tr>
-<tr class="memdesc:a7cf1b038cae209ff98ae6c2d74390d41"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper template to add a component and destroy the entity on failure.  <br /></td></tr>
-<tr class="separator:a7cf1b038cae209ff98ae6c2d74390d41"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeabb5337b4bf656d02046fb676ce13b1" id="r_aeabb5337b4bf656d02046fb676ce13b1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacertype_1_1ecs_1_1factory.html#aeabb5337b4bf656d02046fb676ce13b1">rtype::ecs::factory::set_skin</a> (<a class="el" href="classrtype_1_1ecs_1_1Coordinator.html">Coordinator</a> &amp;coord, uint32_t id, const std::optional&lt; <a class="el" href="HitBox_8hpp.html#structhitbox__attr__t">hitbox_attr_t</a> &gt; &amp;box, const std::optional&lt; <a class="el" href="Common_2ECS_2Components_2Attributes_2Sprite_8hpp.html#structsprite__attr__t">sprite_attr_t</a> &gt; &amp;sprite)</td></tr>
-<tr class="memdesc:aeabb5337b4bf656d02046fb676ce13b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds hitbox and sprite components if provided.  <br /></td></tr>
-<tr class="separator:aeabb5337b4bf656d02046fb676ce13b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abbec02b513c2ad4e3a2b9b00a491d755" id="r_abbec02b513c2ad4e3a2b9b00a491d755"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacertype_1_1ecs_1_1factory.html#abbec02b513c2ad4e3a2b9b00a491d755">rtype::ecs::factory::set_movement</a> (<a class="el" href="classrtype_1_1ecs_1_1Coordinator.html">Coordinator</a> &amp;coord, uint32_t id, const <a class="el" href="Position_8hpp.html#structposition__attr__t">position_attr_t</a> &amp;pos, const <a class="el" href="Direction_8hpp.html#structdirection__attr__t">direction_attr_t</a> &amp;dir, const <a class="el" href="Speed_8hpp.html#structspeed__attr__t">speed_attr_t</a> &amp;spd)</td></tr>
-<tr class="memdesc:abbec02b513c2ad4e3a2b9b00a491d755"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds movement-related components (position, direction, speed).  <br /></td></tr>
-<tr class="separator:abbec02b513c2ad4e3a2b9b00a491d755"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5479c88a043755974c85001d4336327a" id="r_a5479c88a043755974c85001d4336327a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacertype_1_1ecs_1_1factory.html#a5479c88a043755974c85001d4336327a">rtype::ecs::factory::set_weapon</a> (<a class="el" href="classrtype_1_1ecs_1_1Coordinator.html">Coordinator</a> &amp;coord, uint32_t id, const <a class="el" href="Damage_8hpp.html#structdamage__attr__t">damage_attr_t</a> &amp;dmg, const <a class="el" href="Frequency_8hpp.html#structfrequency__attr__t">frequency_attr_t</a> &amp;freq)</td></tr>
-<tr class="memdesc:a5479c88a043755974c85001d4336327a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds weapon-related components (damage, frequency).  <br /></td></tr>
-<tr class="separator:a5479c88a043755974c85001d4336327a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a12892dcefb006b9cf209784a8a40083d" id="r_a12892dcefb006b9cf209784a8a40083d"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacertype_1_1ecs_1_1factory.html#a12892dcefb006b9cf209784a8a40083d">rtype::ecs::factory::create_player</a> (<a class="el" href="classrtype_1_1ecs_1_1Coordinator.html">Coordinator</a> &amp;coord, const <a class="el" href="namespacertype_1_1ecs_1_1factory.html#adf6cb2c07d619384a6c1f4fe94eb5014">entity_schema</a> &amp;schema)</td></tr>
-<tr class="memdesc:a12892dcefb006b9cf209784a8a40083d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a player entity with full stats, movement, and weapon setup.  <br /></td></tr>
-<tr class="separator:a12892dcefb006b9cf209784a8a40083d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad6884eef896d6f5d00c251ac5081a24b" id="r_ad6884eef896d6f5d00c251ac5081a24b"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacertype_1_1ecs_1_1factory.html#ad6884eef896d6f5d00c251ac5081a24b">rtype::ecs::factory::create_enemy</a> (<a class="el" href="classrtype_1_1ecs_1_1Coordinator.html">Coordinator</a> &amp;coord, const <a class="el" href="namespacertype_1_1ecs_1_1factory.html#adf6cb2c07d619384a6c1f4fe94eb5014">entity_schema</a> &amp;schema)</td></tr>
-<tr class="memdesc:ad6884eef896d6f5d00c251ac5081a24b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an enemy entity with health, movement, and weapon setup.  <br /></td></tr>
-<tr class="separator:ad6884eef896d6f5d00c251ac5081a24b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad29b4b6e7fc4c35cea4aa4ce9d2e4861" id="r_ad29b4b6e7fc4c35cea4aa4ce9d2e4861"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacertype_1_1ecs_1_1factory.html#ad29b4b6e7fc4c35cea4aa4ce9d2e4861">rtype::ecs::factory::create_projectile</a> (<a class="el" href="classrtype_1_1ecs_1_1Coordinator.html">Coordinator</a> &amp;coord, const <a class="el" href="namespacertype_1_1ecs_1_1factory.html#adf6cb2c07d619384a6c1f4fe94eb5014">entity_schema</a> &amp;schema)</td></tr>
-<tr class="memdesc:ad29b4b6e7fc4c35cea4aa4ce9d2e4861"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a projectile entity with movement and damage attributes.  <br /></td></tr>
-<tr class="separator:ad29b4b6e7fc4c35cea4aa4ce9d2e4861"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a328622bd28286a97d9dc50b21f916150" id="r_a328622bd28286a97d9dc50b21f916150"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacertype_1_1ecs_1_1factory.html#a328622bd28286a97d9dc50b21f916150">rtype::ecs::factory::create_entity</a> (<a class="el" href="classrtype_1_1ecs_1_1Coordinator.html">Coordinator</a> &amp;coord, const <a class="el" href="namespacertype_1_1ecs_1_1factory.html#adf6cb2c07d619384a6c1f4fe94eb5014">entity_schema</a> &amp;schema)</td></tr>
-<tr class="memdesc:a328622bd28286a97d9dc50b21f916150"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dispatches entity creation based on its network schema type.  <br /></td></tr>
-<tr class="separator:a328622bd28286a97d9dc50b21f916150"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a849abca2c7f7e288c0f4c6b934dfb18e" id="r_a849abca2c7f7e288c0f4c6b934dfb18e"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceasge_1_1script_1_1EntityFactory.html#a849abca2c7f7e288c0f4c6b934dfb18e">asge::script::EntityFactory::createFromTemplate</a> (<a class="el" href="structasge_1_1Services.html">Services</a> &amp;services, const <a class="el" href="namespaceasge_1_1script.html#structasge_1_1script_1_1ScriptHandle">ScriptHandle</a> &amp;templateHandle, const std::optional&lt; double &gt; &amp;positionX=std::nullopt, const std::optional&lt; double &gt; &amp;positionY=std::nullopt, const std::optional&lt; uint32_t &gt; &amp;entity_id=std::nullopt)</td></tr>
+<tr class="memdesc:a849abca2c7f7e288c0f4c6b934dfb18e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an entity from a parsed script handle.  <br /></td></tr>
+<tr class="separator:a849abca2c7f7e288c0f4c6b934dfb18e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Declares the entity creation and component registration helpers. </p>
-<p>The EntityFactory module centralizes creation of all in-game entities (players, enemies, projectiles, etc.) using a shared ECS <code>Coordinator</code>. It exposes high-level functions that assemble the right set of components for each type of entity, while enforcing rollback on partial creation failure.</p>
-<dl class="section see"><dt>See also</dt><dd>Coordinator, Components </dd></dl>
+<div class="textblock"><p>Helpers for instantiating entities from script templates. </p>
 
 <p class="definition">Definition in file <a class="el" href="EntityFactory_8hpp_source.html">EntityFactory.hpp</a>.</p>
 </div></div><!-- contents -->
@@ -195,7 +151,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_4ab6b4cc6a7edbff49100e9123df213f.html">Common</a></li><li class="navelem"><a class="el" href="dir_506c71c2dd1bbaa053b9cf84987223e5.html">Factory</a></li><li class="navelem"><a class="el" href="EntityFactory_8hpp.html">EntityFactory.hpp</a></li>
+    <li class="navelem"><a class="el" href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li><li class="navelem"><a class="el" href="dir_1b9403644f1f2359659496c948d71b7e.html">asge</a></li><li class="navelem"><a class="el" href="dir_23b0c4c81238164c4b752561086c543c.html">src</a></li><li class="navelem"><a class="el" href="dir_ac81f8fef783f04d9887e979e3f146ee.html">script</a></li><li class="navelem"><a class="el" href="dir_a0a6c06e9b498f33163f779af063088f.html">action</a></li><li class="navelem"><a class="el" href="EntityFactory_8hpp.html">EntityFactory.hpp</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>

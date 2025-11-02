@@ -1,11 +1,7 @@
 <map id="decodeKey" name="decodeKey">
-<area shape="rect" id="Node000001" title="Unpack a 64&#45;bit key produced by makeKey back into two signed 32&#45;bit coordinates." alt="" coords="825,13,919,38"/>
-<area shape="rect" id="Node000002" href="$classrtype_1_1ecs_1_1CollisionWorld.html#acba7533c8d42d6abb6c82fd03ee7b614" title="Run narrow&#45;phase collision checks across the grid and call collisionEffect on hits." alt="" coords="591,5,777,45"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="812,28,777,28,777,23,812,23"/>
-<area shape="rect" id="Node000003" href="$classrtype_1_1ecs_1_1CollisionSystem.html#afca69e9015066f94f6fe7cab90899e44" title="Run one collision pass: rebuild spatial grid and test collisions." alt="" coords="291,13,543,38"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="577,28,543,28,543,23,577,23"/>
-<area shape="rect" id="Node000004" href="$classrtype_1_1server.html#a703fd91ca5d705369acef8f6e505e32d" title="Starts the main execution loop of the server." alt="" coords="108,13,243,38"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="277,28,243,28,243,23,277,23"/>
-<area shape="rect" id="Node000005" href="$Server_2main_8cpp.html#a0c99d968a34e803d378692bde2e3f18f" title="Program entry point." alt="" coords="5,13,60,38"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="94,28,60,28,60,23,94,23"/>
+<area shape="rect" id="Node000001" title="Decodes a 64&#45;bit key back into its original (x, y) coordinates." alt="" coords="689,13,783,38"/>
+<area shape="rect" id="Node000002" href="$classasge_1_1world_1_1systems_1_1CollisionWorld.html#a0ce7df174a3ec469447bbaa40258b964" title="Detects collisions and triggers collision effects." alt="" coords="380,5,641,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="676,28,642,28,642,23,676,23"/>
+<area shape="rect" id="Node000003" href="$classasge_1_1world_1_1systems_1_1CollisionSystem.html#a5dfdfa3306f0e6817e0e276967095318" title="Evaluates collisions for all tracked entities." alt="" coords="5,13,332,38"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="366,28,332,28,332,23,366,23"/>
 </map>

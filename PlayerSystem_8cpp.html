@@ -97,17 +97,20 @@ $(document).ready(function(){initNavTree('PlayerSystem_8cpp.html',''); initResiz
 </div>
 
 <div class="header">
-  <div class="summary">
-<a href="#namespaces">Namespaces</a>  </div>
   <div class="headertitle"><div class="title">PlayerSystem.cpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>Implementation of PlayerSystem — handles movement, firing, and scoring logic.  
+<p>Implements player-specific logic such as movement and firing.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;<a class="el" href="PlayerSystem_8hpp_source.html">PlayerSystem.hpp</a>&quot;</code><br />
-<code>#include &lt;iostream&gt;</code><br />
-<code>#include &lt;cmath&gt;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="SystemSignature_8hpp_source.html">../SystemSignature.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="PlayerSystem_8hpp_source.html">PlayerSystem.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="Components_8hpp_source.html">../../../../includes/Components.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="ASGE_8hpp_source.html">../../../../includes/ASGE.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="EngineProtocol_8hpp_source.html">../../../network/EngineProtocol.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="ScriptTypes_8hpp_source.html">../../../../includes/types/ScriptTypes.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="ActionHandler_8hpp_source.html">../../../script/action/ActionHandler.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="EntityFactory_8hpp_source.html">../../../script/action/EntityFactory.hpp</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for PlayerSystem.cpp:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -117,23 +120,8 @@ $(document).ready(function(){initNavTree('PlayerSystem_8cpp.html',''); initResiz
 </div>
 </div>
 <p><a href="PlayerSystem_8cpp_source.html">Go to the source code of this file.</a></p>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
-Namespaces</h2></td></tr>
-<tr class="memitem:namespacertype" id="r_namespacertype"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacertype.html">rtype</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespacertype_1_1ecs" id="r_namespacertype_1_1ecs"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacertype_1_1ecs.html">rtype::ecs</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Implementation of PlayerSystem — handles movement, firing, and scoring logic. </p>
-<p>Implements player input handling for entities within the ECS. The system manipulates entity position, direction, speed, score, and frequency attributes according to received input.</p>
-<p>Responsibilities:</p><ul>
-<li>Interpret player_input_t and apply directional movement.</li>
-<li>Update score with clamped arithmetic.</li>
-<li>Trigger or stop firing behavior.</li>
-</ul>
-<dl class="section note"><dt>Note</dt><dd>Each update call processes all entities in _filtered_entities. </dd></dl>
+<div class="textblock"><p>Implements player-specific logic such as movement and firing. </p>
 
 <p class="definition">Definition in file <a class="el" href="PlayerSystem_8cpp_source.html">PlayerSystem.cpp</a>.</p>
 </div></div><!-- contents -->
@@ -141,7 +129,7 @@ Namespaces</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_4ab6b4cc6a7edbff49100e9123df213f.html">Common</a></li><li class="navelem"><a class="el" href="dir_42f24aa63ec14c5bf2eb77ea89af9ccb.html">ECS</a></li><li class="navelem"><a class="el" href="dir_25ace0bc121ef3a6b9c34867f0e51a24.html">Systems</a></li><li class="navelem"><a class="el" href="PlayerSystem_8cpp.html">PlayerSystem.cpp</a></li>
+    <li class="navelem"><a class="el" href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li><li class="navelem"><a class="el" href="dir_1b9403644f1f2359659496c948d71b7e.html">asge</a></li><li class="navelem"><a class="el" href="dir_23b0c4c81238164c4b752561086c543c.html">src</a></li><li class="navelem"><a class="el" href="dir_2e6acacfe42ed85a3d5b28ea6e2cb62a.html">world</a></li><li class="navelem"><a class="el" href="dir_cdb791e71c797d144e9eb5e67180a16f.html">Systems</a></li><li class="navelem"><a class="el" href="dir_5cb5ed716732e486614773a3bde8aa20.html">PlayerSystem</a></li><li class="navelem"><a class="el" href="PlayerSystem_8cpp.html">PlayerSystem.cpp</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>

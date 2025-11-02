@@ -104,18 +104,18 @@ $(document).ready(function(){initNavTree('ComponentManager_8hpp.html',''); initR
 </div><!--header-->
 <div class="contents">
 
-<p>Manager for registering and accessing component arrays in the ECS.  
+<p>Central management container for ECS component arrays.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;<a class="el" href="ComponentArray_8hpp_source.html">Components/ComponentArray.hpp</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="ComponentArray_8hpp_source.html">../Components/ComponentArray.hpp</a>&quot;</code><br />
 <code>#include &lt;array&gt;</code><br />
 <code>#include &lt;memory&gt;</code><br />
-<code>#include &quot;<a class="el" href="Macro_8hpp_source.html">Macro.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="Macro_8hpp_source.html">../Macro.hpp</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for ComponentManager.hpp:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="ComponentManager_8hpp__incl.svg" width="579" height="256"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="ComponentManager_8hpp__incl.svg" width="100%" height="492"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> This graph shows which files directly or indirectly include this file:</div>
@@ -129,27 +129,31 @@ $(document).ready(function(){initNavTree('ComponentManager_8hpp.html',''); initR
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtype_1_1ecs_1_1ComponentManager.html">rtype::ecs::ComponentManager</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Central manager for component type registration and access.  <a href="classrtype_1_1ecs_1_1ComponentManager.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasge_1_1world_1_1ComponentManager.html">asge::world::ComponentManager</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Manages component type registration and per-entity component storage.  <a href="classasge_1_1world_1_1ComponentManager.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:namespacertype" id="r_namespacertype"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacertype.html">rtype</a></td></tr>
+<tr class="memitem:namespaceasge" id="r_namespaceasge"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceasge.html">asge</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespacertype_1_1ecs" id="r_namespacertype_1_1ecs"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacertype_1_1ecs.html">rtype::ecs</a></td></tr>
+<tr class="memitem:namespaceasge_1_1world" id="r_namespaceasge_1_1world"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceasge_1_1world.html">asge::world</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Manager for registering and accessing component arrays in the ECS. </p>
-<dl class="section since"><dt>Since</dt><dd>0.1</dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="ComponentArray_8hpp.html" title="Component storage implementation for the ECS.">ComponentArray.hpp</a>, <a class="el" href="IComponentArray_8hpp.html" title="Abstract base interface for component container types.">IComponentArray.hpp</a></dd></dl>
-<p>ComponentManager is responsible for:</p><ul>
-<li>assigning type IDs for component types (per-template static counter),</li>
-<li>registering ComponentArray instances per component type,</li>
-<li>delegating add/remove/get operations to the appropriate ComponentArray.</li>
+<div class="textblock"><p>Central management container for ECS component arrays. </p>
+<dl class="section version"><dt>Version</dt><dd>1.0 </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2025-03-26</dd></dl>
+<p>ComponentManager stores and handles access to ComponentArray instances. It assigns each component type a unique ID and provides:</p><ul>
+<li>Dynamic component registration</li>
+<li>Type-safe insertion / removal</li>
+<li>Retrieval of a component pointer for a specific entity</li>
+<li>Cleanup when entities are destroyed</li>
 </ul>
-<dl class="section warning"><dt>Warning</dt><dd>The header contains template definitions implemented inline. </dd></dl>
+<p>This forms the storage backend for the ECS architecture.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classasge_1_1world_1_1ComponentArray.html" title="Dense component storage for a given component type.">asge::world::ComponentArray</a> </dd>
+<dd>
+<a class="el" href="classasge_1_1world_1_1IComponentArray.html" title="Abstract interface for component arrays.">asge::world::IComponentArray</a> </dd></dl>
 
 <p class="definition">Definition in file <a class="el" href="ComponentManager_8hpp_source.html">ComponentManager.hpp</a>.</p>
 </div></div><!-- contents -->
@@ -157,7 +161,7 @@ Namespaces</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_4ab6b4cc6a7edbff49100e9123df213f.html">Common</a></li><li class="navelem"><a class="el" href="dir_42f24aa63ec14c5bf2eb77ea89af9ccb.html">ECS</a></li><li class="navelem"><a class="el" href="ComponentManager_8hpp.html">ComponentManager.hpp</a></li>
+    <li class="navelem"><a class="el" href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li><li class="navelem"><a class="el" href="dir_1b9403644f1f2359659496c948d71b7e.html">asge</a></li><li class="navelem"><a class="el" href="dir_23b0c4c81238164c4b752561086c543c.html">src</a></li><li class="navelem"><a class="el" href="dir_2e6acacfe42ed85a3d5b28ea6e2cb62a.html">world</a></li><li class="navelem"><a class="el" href="dir_1ac7cd1c3404eeb09f7fd90eecb3503c.html">ComponentManager</a></li><li class="navelem"><a class="el" href="ComponentManager_8hpp.html">ComponentManager.hpp</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>

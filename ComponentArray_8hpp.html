@@ -108,6 +108,7 @@ $(document).ready(function(){initNavTree('ComponentArray_8hpp.html',''); initRes
 <p>Component storage implementation for the ECS.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="IComponentArray_8hpp_source.html">IComponentArray.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="Error_8hpp_source.html">../../error/Error.hpp</a>&quot;</code><br />
 <code>#include &lt;vector&gt;</code><br />
 <code>#include &lt;limits&gt;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -115,7 +116,7 @@ $(document).ready(function(){initNavTree('ComponentArray_8hpp.html',''); initRes
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="ComponentArray_8hpp__incl.svg" width="344" height="183"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="ComponentArray_8hpp__incl.svg" width="650" height="183"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> This graph shows which files directly or indirectly include this file:</div>
@@ -129,27 +130,27 @@ $(document).ready(function(){initNavTree('ComponentArray_8hpp.html',''); initRes
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtype_1_1ecs_1_1ComponentArray.html">rtype::ecs::ComponentArray&lt; T &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dense component container mapping entity IDs to components.  <a href="classrtype_1_1ecs_1_1ComponentArray.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasge_1_1world_1_1ComponentArray.html">asge::world::ComponentArray&lt; T &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dense component storage for a given component type.  <a href="classasge_1_1world_1_1ComponentArray.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:namespacertype" id="r_namespacertype"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacertype.html">rtype</a></td></tr>
+<tr class="memitem:namespaceasge" id="r_namespaceasge"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceasge.html">asge</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespacertype_1_1ecs" id="r_namespacertype_1_1ecs"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacertype_1_1ecs.html">rtype::ecs</a></td></tr>
+<tr class="memitem:namespaceasge_1_1world" id="r_namespaceasge_1_1world"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceasge_1_1world.html">asge::world</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:ad13c6297cdab9d3f8547dbe389857200" id="r_ad13c6297cdab9d3f8547dbe389857200"><td class="memItemLeft" align="right" valign="top">static constexpr uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacertype_1_1ecs.html#ad13c6297cdab9d3f8547dbe389857200">rtype::ecs::INVALID_ID</a> = std::numeric_limits&lt;uint32_t&gt;::max()</td></tr>
-<tr class="memdesc:ad13c6297cdab9d3f8547dbe389857200"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sentinel value used to denote an invalid or missing mapping.  <br /></td></tr>
-<tr class="separator:ad13c6297cdab9d3f8547dbe389857200"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0364b76e70c15674871e77829b636c7c" id="r_a0364b76e70c15674871e77829b636c7c"><td class="memItemLeft" align="right" valign="top">static constexpr uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceasge_1_1world.html#a0364b76e70c15674871e77829b636c7c">asge::world::INVALID_ID</a> = std::numeric_limits&lt;uint32_t&gt;::max()</td></tr>
+<tr class="memdesc:a0364b76e70c15674871e77829b636c7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Invalid entity index sentinel value.  <br /></td></tr>
+<tr class="separator:a0364b76e70c15674871e77829b636c7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Component storage implementation for the ECS. </p>
 <dl class="section since"><dt>Since</dt><dd>0.1</dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="IComponentArray_8hpp.html" title="Abstract base interface for component container types.">IComponentArray.hpp</a>, <a class="el" href="ComponentManager_8hpp.html" title="Manager for registering and accessing component arrays in the ECS.">ComponentManager.hpp</a></dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="IComponentArray_8hpp.html" title="Abstract base interface for component container types.">IComponentArray.hpp</a>, <a class="el" href="ComponentManager_8hpp.html" title="Central management container for ECS component arrays.">ComponentManager.hpp</a></dd></dl>
 <p>ComponentArray is a contiguous storage for components of type T mapped to entity IDs. It provides insertion, removal, lookup and lifecycle integration for component instances. The implementation uses dense storage with index indirection tables for O(1) insert/remove. </p>
 
 <p class="definition">Definition in file <a class="el" href="ComponentArray_8hpp_source.html">ComponentArray.hpp</a>.</p>
@@ -158,7 +159,7 @@ Variables</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_4ab6b4cc6a7edbff49100e9123df213f.html">Common</a></li><li class="navelem"><a class="el" href="dir_42f24aa63ec14c5bf2eb77ea89af9ccb.html">ECS</a></li><li class="navelem"><a class="el" href="dir_b9a6101fa66c1a3643c11b9ac234d0d2.html">Components</a></li><li class="navelem"><a class="el" href="ComponentArray_8hpp.html">ComponentArray.hpp</a></li>
+    <li class="navelem"><a class="el" href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li><li class="navelem"><a class="el" href="dir_1b9403644f1f2359659496c948d71b7e.html">asge</a></li><li class="navelem"><a class="el" href="dir_23b0c4c81238164c4b752561086c543c.html">src</a></li><li class="navelem"><a class="el" href="dir_2e6acacfe42ed85a3d5b28ea6e2cb62a.html">world</a></li><li class="navelem"><a class="el" href="dir_c5c9d039a1b1022f753fa6fba32726f5.html">Components</a></li><li class="navelem"><a class="el" href="ComponentArray_8hpp.html">ComponentArray.hpp</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>

@@ -107,6 +107,7 @@ $(document).ready(function(){initNavTree('System_8hpp.html',''); initResizable()
 <p>Base class for systems in the ECS.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;set&gt;</code><br />
+<code>#include &lt;bitset&gt;</code><br />
 <code>#include &lt;cstdint&gt;</code><br />
 <code>#include &lt;unordered_map&gt;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -114,7 +115,7 @@ $(document).ready(function(){initNavTree('System_8hpp.html',''); initResizable()
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="System_8hpp__incl.svg" width="294" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="System_8hpp__incl.svg" width="376" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> This graph shows which files directly or indirectly include this file:</div>
@@ -128,23 +129,23 @@ $(document).ready(function(){initNavTree('System_8hpp.html',''); initResizable()
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtype_1_1ecs_1_1System.html">rtype::ecs::System</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstract base type representing an executable system.  <a href="classrtype_1_1ecs_1_1System.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasge_1_1world_1_1System.html">asge::world::System</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstract base type representing an executable system.  <a href="classasge_1_1world_1_1System.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:namespacertype" id="r_namespacertype"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacertype.html">rtype</a></td></tr>
+<tr class="memitem:namespaceasge" id="r_namespaceasge"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceasge.html">asge</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespacertype_1_1ecs" id="r_namespacertype_1_1ecs"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacertype_1_1ecs.html">rtype::ecs</a></td></tr>
+<tr class="memitem:namespaceasge_1_1world" id="r_namespaceasge_1_1world"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceasge_1_1world.html">asge::world</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Base class for systems in the ECS. </p>
 <dl class="section since"><dt>Since</dt><dd>0.1</dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="SystemManager_8hpp.html" title="Manager for registering systems and maintaining execution signatures.">SystemManager.hpp</a></dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="SystemManager_8hpp.html" title="Handles ECS system registration, dependencies, and signature filtering.">SystemManager.hpp</a></dd></dl>
 <p>System is the polymorphic base for user-defined systems. Each system maintains a set of entity ids that match its execution signature and an enabled flag that controls whether the system should be executed.</p>
-<dl class="section note"><dt>Note</dt><dd>Systems are usually registered via SystemManager and their _filtered_entities set is managed by the SystemManager when entity signatures change. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Systems are usually registered via SystemManager and their _filtered_entities set is updated automatically when entity signatures change. </dd></dl>
 
 <p class="definition">Definition in file <a class="el" href="System_8hpp_source.html">System.hpp</a>.</p>
 </div></div><!-- contents -->
@@ -152,7 +153,7 @@ Namespaces</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_4ab6b4cc6a7edbff49100e9123df213f.html">Common</a></li><li class="navelem"><a class="el" href="dir_42f24aa63ec14c5bf2eb77ea89af9ccb.html">ECS</a></li><li class="navelem"><a class="el" href="dir_25ace0bc121ef3a6b9c34867f0e51a24.html">Systems</a></li><li class="navelem"><a class="el" href="System_8hpp.html">System.hpp</a></li>
+    <li class="navelem"><a class="el" href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li><li class="navelem"><a class="el" href="dir_1b9403644f1f2359659496c948d71b7e.html">asge</a></li><li class="navelem"><a class="el" href="dir_23b0c4c81238164c4b752561086c543c.html">src</a></li><li class="navelem"><a class="el" href="dir_2e6acacfe42ed85a3d5b28ea6e2cb62a.html">world</a></li><li class="navelem"><a class="el" href="dir_cdb791e71c797d144e9eb5e67180a16f.html">Systems</a></li><li class="navelem"><a class="el" href="System_8hpp.html">System.hpp</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>

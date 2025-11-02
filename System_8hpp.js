@@ -1,4 +1,4 @@
 var System_8hpp =
 [
-    [ "rtype::ecs::System", "classrtype_1_1ecs_1_1System.html", "classrtype_1_1ecs_1_1System" ]
+    [ "asge::world::System", "classasge_1_1world_1_1System.html", "classasge_1_1world_1_1System" ]
 ];

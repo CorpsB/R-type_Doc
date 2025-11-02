@@ -109,39 +109,78 @@ $(document).ready(function(){initNavTree('Macro_8cpp_source.html',''); initResiz
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">** EPITECH PROJECT, 2025</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">** R-Type</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">** File description:</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment">** Macro</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment">** Macro (implementation)</span></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">*/</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &quot;<a class="code" href="Macro_8hpp.html">Macro.hpp</a>&quot;</span></div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
-<div class="foldopen" id="foldopen00010" data-start="{" data-end="}">
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="Macro_8cpp.html#aa287b51683944006697faf1bde937fd9">   10</a></span>uint64_t <a class="code hl_function" href="Macro_8cpp.html#aa287b51683944006697faf1bde937fd9">makeKey</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y) <span class="keyword">noexcept</span></div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>{</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    uint64_t ux = <span class="keyword">static_cast&lt;</span>uint32_t<span class="keyword">&gt;</span>(x);</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    uint64_t uy = <span class="keyword">static_cast&lt;</span>uint32_t<span class="keyword">&gt;</span>(y);</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <span class="keywordflow">return</span> (ux &lt;&lt; 32) | uy;</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>}</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment"></span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment">/**</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment"> * @file Macro.cpp</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment"> * @brief Implementation of spatial hashing helper utilities for 2D coordinates.</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment"> * @version 1.0</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment"> * @date 2025-03-26</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment"> * @details</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment"> * Provides bitwise packing and unpacking functions for converting</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment"> * 2D integer coordinates into a 64-bit spatial lookup key and back.</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment"> * This mechanism is typically used in spatial partitioning systems,</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment"> * such as grids or hash maps, where integer coordinates must be</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment"> * represented compactly as a single key for fast lookup.</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment"> * @see Macro.hpp</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#include &quot;<a class="code" href="Macro_8hpp.html">Macro.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment">// ─────────────────────────────── makeKey ───────────────────────────────</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="comment"></span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="comment">/**</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="comment"> * @brief Packs two 32-bit signed integers into a single 64-bit key.</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment"> * @param x The X coordinate.</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="comment"> * @param y The Y coordinate.</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="comment"> * @return A 64-bit unsigned integer encoding both coordinates.</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="comment"> * @note The function casts both coordinates to unsigned 32-bit integers</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="comment"> *       before combining them with bit shifting and OR operations.</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="comment"> */</span></div>
+<div class="foldopen" id="foldopen00039" data-start="{" data-end="}">
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="Macro_8cpp.html#aa287b51683944006697faf1bde937fd9">   39</a></span>uint64_t <a class="code hl_function" href="Macro_8cpp.html#aa287b51683944006697faf1bde937fd9">makeKey</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y) <span class="keyword">noexcept</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>{</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    uint64_t ux = <span class="keyword">static_cast&lt;</span>uint32_t<span class="keyword">&gt;</span>(x);</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    uint64_t uy = <span class="keyword">static_cast&lt;</span>uint32_t<span class="keyword">&gt;</span>(y);</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="keywordflow">return</span> (ux &lt;&lt; 32) | uy;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>}</div>
 </div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
-<div class="foldopen" id="foldopen00018" data-start="{" data-end="}">
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="Macro_8cpp.html#a0ab6d50fa1ecd2e7d7ed74b9816542ab">   18</a></span>std::pair&lt;int, int&gt; <a class="code hl_function" href="Macro_8cpp.html#a0ab6d50fa1ecd2e7d7ed74b9816542ab">decodeKey</a>(uint64_t key) <span class="keyword">noexcept</span></div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>{</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    int32_t x = <span class="keyword">static_cast&lt;</span>int32_t<span class="keyword">&gt;</span>(key &gt;&gt; 32);</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    int32_t y = <span class="keyword">static_cast&lt;</span>int32_t<span class="keyword">&gt;</span>(key &amp; 0xffffffffu);</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="keywordflow">return</span> std::make_pair(x, y);</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>}</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="comment">// ─────────────────────────────── decodeKey ───────────────────────────────</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="comment"></span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="comment">/**</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="comment"> * @brief Decodes a 64-bit key back into its original (x, y) coordinates.</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="comment"> * @param key The packed 64-bit value.</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="comment"> * @return A pair of signed integers (x, y) extracted from the key.</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="comment"> * @note The higher 32 bits contain X, and the lower 32 bits contain Y.</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="comment"> */</span></div>
+<div class="foldopen" id="foldopen00057" data-start="{" data-end="}">
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="Macro_8cpp.html#a0ab6d50fa1ecd2e7d7ed74b9816542ab">   57</a></span>std::pair&lt;int, int&gt; <a class="code hl_function" href="Macro_8cpp.html#a0ab6d50fa1ecd2e7d7ed74b9816542ab">decodeKey</a>(uint64_t key) <span class="keyword">noexcept</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>{</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    int32_t x = <span class="keyword">static_cast&lt;</span>int32_t<span class="keyword">&gt;</span>(key &gt;&gt; 32);</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    int32_t y = <span class="keyword">static_cast&lt;</span>int32_t<span class="keyword">&gt;</span>(key &amp; 0xffffffffu);</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="keywordflow">return</span> std::make_pair(x, y);</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>}</div>
 </div>
-<div class="ttc" id="aMacro_8cpp_html_a0ab6d50fa1ecd2e7d7ed74b9816542ab"><div class="ttname"><a href="Macro_8cpp.html#a0ab6d50fa1ecd2e7d7ed74b9816542ab">decodeKey</a></div><div class="ttdeci">std::pair&lt; int, int &gt; decodeKey(uint64_t key) noexcept</div><div class="ttdoc">Unpack a 64-bit key produced by makeKey back into two signed 32-bit coordinates.</div><div class="ttdef"><b>Definition</b> <a href="Macro_8cpp_source.html#l00018">Macro.cpp:18</a></div></div>
-<div class="ttc" id="aMacro_8cpp_html_aa287b51683944006697faf1bde937fd9"><div class="ttname"><a href="Macro_8cpp.html#aa287b51683944006697faf1bde937fd9">makeKey</a></div><div class="ttdeci">uint64_t makeKey(int x, int y) noexcept</div><div class="ttdoc">Pack two 32-bit signed cell coordinates into a single 64-bit unsigned key.</div><div class="ttdef"><b>Definition</b> <a href="Macro_8cpp_source.html#l00010">Macro.cpp:10</a></div></div>
-<div class="ttc" id="aMacro_8hpp_html"><div class="ttname"><a href="Macro_8hpp.html">Macro.hpp</a></div><div class="ttdoc">Global configuration macros for the ECS (component/entity limits).</div></div>
+<div class="ttc" id="aMacro_8cpp_html_a0ab6d50fa1ecd2e7d7ed74b9816542ab"><div class="ttname"><a href="Macro_8cpp.html#a0ab6d50fa1ecd2e7d7ed74b9816542ab">decodeKey</a></div><div class="ttdeci">std::pair&lt; int, int &gt; decodeKey(uint64_t key) noexcept</div><div class="ttdoc">Decodes a 64-bit key back into its original (x, y) coordinates.</div><div class="ttdef"><b>Definition</b> <a href="Macro_8cpp_source.html#l00057">Macro.cpp:57</a></div></div>
+<div class="ttc" id="aMacro_8cpp_html_aa287b51683944006697faf1bde937fd9"><div class="ttname"><a href="Macro_8cpp.html#aa287b51683944006697faf1bde937fd9">makeKey</a></div><div class="ttdeci">uint64_t makeKey(int x, int y) noexcept</div><div class="ttdoc">Packs two 32-bit signed integers into a single 64-bit key.</div><div class="ttdef"><b>Definition</b> <a href="Macro_8cpp_source.html#l00039">Macro.cpp:39</a></div></div>
+<div class="ttc" id="aMacro_8hpp_html"><div class="ttname"><a href="Macro_8hpp.html">Macro.hpp</a></div><div class="ttdoc">Global configuration macros and spatial hashing helpers.</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_4ab6b4cc6a7edbff49100e9123df213f.html">Common</a></li><li class="navelem"><a class="el" href="dir_42f24aa63ec14c5bf2eb77ea89af9ccb.html">ECS</a></li><li class="navelem"><a class="el" href="Macro_8cpp.html">Macro.cpp</a></li>
+    <li class="navelem"><a class="el" href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li><li class="navelem"><a class="el" href="dir_1b9403644f1f2359659496c948d71b7e.html">asge</a></li><li class="navelem"><a class="el" href="dir_23b0c4c81238164c4b752561086c543c.html">src</a></li><li class="navelem"><a class="el" href="dir_2e6acacfe42ed85a3d5b28ea6e2cb62a.html">world</a></li><li class="navelem"><a class="el" href="Macro_8cpp.html">Macro.cpp</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>

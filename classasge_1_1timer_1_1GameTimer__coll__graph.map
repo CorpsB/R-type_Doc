@@ -1,0 +1,11 @@
+<map id="asge::timer::GameTimer" name="asge::timer::GameTimer">
+<area shape="rect" id="Node000001" title="Game&#45;facing timer: fixed&#45;step, time&#45;scale, pause control." alt="" coords="115,640,399,1095"/>
+<area shape="rect" id="Node000002" href="$classasge_1_1timer_1_1ITimer.html" title="Minimal abstract timer interface." alt="" coords="5,5,227,200"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="106,214,101,294,100,386,106,482,121,577,140,639,135,640,116,578,101,483,95,386,95,294,100,213"/>
+<area shape="rect" id="Node000003" href="$classasge_1_1timer_1_1SystemTimer.html" title="Concrete ITimer implementation using std::chrono." alt="" coords="131,263,383,577"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="167,211,190,261,185,263,162,213"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="260,577,260,624,255,624,255,577"/>
+<area shape="rect" id="Node000004" href="$classasge_1_1debug_1_1IDebug.html" title="Interface for all debug&#45;related functionalities." alt="" coords="297,33,522,173"/>
+<area shape="poly" id="edge5_Node000001_Node000004" title=" " alt="" coords="419,173,425,255,425,357,418,468,399,578,384,626,379,624,393,577,413,468,420,357,419,256,414,173"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="367,174,338,225,327,249,322,247,334,223,362,171"/>
+</map>

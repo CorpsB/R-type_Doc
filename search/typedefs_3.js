@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['game_5fevent_5fpayload_5ft_0',['game_event_payload_t',['../namespaceprotocol_1_1game.html#ab3d361beba1a1c00e2b47d4b0f8d35b3',1,'protocol::game']]]
+  ['json_0',['json',['../namespacertype_1_1client_1_1lang.html#a3a218a8b56d5f49ac055b8827f43c586',1,'rtype::client::lang']]]
 ];

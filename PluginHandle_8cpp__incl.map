@@ -1,0 +1,50 @@
+<map id="PluginHandle.cpp" name="PluginHandle.cpp">
+<area shape="rect" id="Node000001" title="Implementation of the PluginHandle class." alt="" coords="587,5,722,31"/>
+<area shape="rect" id="Node000002" href="$PluginHandle_8hpp.html" title="Lightweight handle representing a loaded plugin instance." alt="" coords="586,79,722,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="657,31,657,65,652,65,652,31"/>
+<area shape="rect" id="Node000003" href="$IPlugin_8hpp.html" title="Public interface that defines the plugin contract." alt="" coords="123,152,218,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="586,105,232,157,231,152,586,100"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="490,299,549,324"/>
+<area shape="poly" id="edge28_Node000002_Node000004" title=" " alt="" coords="586,98,333,116,203,133,151,143,111,155,78,167,52,180,31,198,13,227,8,239,12,249,35,260,80,271,211,288,359,299,477,306,476,311,358,304,211,293,79,276,33,265,8,252,3,239,8,224,27,194,49,175,75,163,109,149,149,138,203,127,333,111,586,93"/>
+<area shape="rect" id="Node000005" href="$Error_8hpp.html" title="Exception type used by the engine for categorized errors." alt="" coords="379,152,506,177"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="621,107,490,150,489,145,619,101"/>
+<area shape="rect" id="Node000009" href="$DebugManager_8hpp.html" title="Concrete implementation of the IDebug interface managing log recording." alt="" coords="766,152,970,177"/>
+<area shape="poly" id="edge9_Node000002_Node000009" title=" " alt="" coords="689,101,821,145,819,150,688,107"/>
+<area shape="rect" id="Node000017" title=" " alt="" coords="1330,299,1408,324"/>
+<area shape="poly" id="edge27_Node000002_Node000017" title=" " alt="" coords="723,92,881,101,1077,123,1173,140,1258,162,1327,189,1353,206,1372,224,1380,238,1383,254,1380,286,1375,285,1378,255,1375,240,1368,227,1350,210,1324,194,1257,167,1172,145,1076,128,881,106,722,97"/>
+<area shape="rect" id="Node000019" title=" " alt="" coords="1458,152,1518,177"/>
+<area shape="poly" id="edge29_Node000002_Node000019" title=" " alt="" coords="723,92,1033,107,1235,124,1439,149,1445,150,1444,156,1438,155,1235,129,1033,112,722,97"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="124,178,81,189,41,206,28,215,20,226,19,236,26,249,48,260,91,270,219,287,362,299,477,305,477,311,362,304,218,293,90,276,46,265,22,253,13,238,15,224,24,211,39,201,79,184,122,172"/>
+<area shape="poly" id="edge8_Node000005_Node000004" title=" " alt="" coords="458,176,480,197,499,224,512,255,519,284,514,285,507,256,495,227,476,200,455,180"/>
+<area shape="rect" id="Node000006" href="$ErrorTypes_8hpp.html" title="Enumerations describing error categories and severities." alt="" coords="134,225,374,251"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="413,180,299,223,297,218,411,175"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="399,225,486,251"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="445,178,445,212,440,212,440,178"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="36,225,110,251"/>
+<area shape="poly" id="edge7_Node000005_Node000008" title=" " alt="" coords="379,180,125,228,124,222,378,174"/>
+<area shape="poly" id="edge26_Node000009_Node000004" title=" " alt="" coords="766,177,682,195,640,209,601,228,564,257,537,289,533,286,561,253,598,223,638,204,681,189,765,172"/>
+<area shape="rect" id="Node000010" href="$IDebug_8hpp.html" title="Interface defining the debugging system for the ASGE engine." alt="" coords="612,225,708,251"/>
+<area shape="poly" id="edge10_Node000009_Node000010" title=" " alt="" coords="835,180,707,223,706,218,833,175"/>
+<area shape="rect" id="Node000011" href="$DebugTypes_8hpp.html" title="Defines the different severity levels used for debugging and logging." alt="" coords="573,299,824,324"/>
+<area shape="poly" id="edge22_Node000009_Node000011" title=" " alt="" coords="846,180,810,200,772,227,741,258,716,289,712,286,737,255,769,223,807,196,843,175"/>
+<area shape="rect" id="Node000012" href="$IStorage_8hpp.html" title="Interface defining storage operations for files and directories." alt="" coords="783,225,952,251"/>
+<area shape="poly" id="edge13_Node000009_Node000012" title=" " alt="" coords="870,178,870,212,865,212,865,178"/>
+<area shape="rect" id="Node000013" title=" " alt="" coords="1051,299,1114,324"/>
+<area shape="poly" id="edge25_Node000009_Node000013" title=" " alt="" coords="958,175,1009,193,1033,206,1055,224,1074,253,1082,284,1077,286,1069,255,1051,227,1030,211,1007,197,956,180"/>
+<area shape="rect" id="Node000016" href="$LogRecorder_8hpp.html" title="Handles log buffering and file writing for the debug system." alt="" coords="1116,225,1331,251"/>
+<area shape="poly" id="edge18_Node000009_Node000016" title=" " alt="" coords="925,175,1153,220,1152,225,924,180"/>
+<area shape="poly" id="edge24_Node000009_Node000017" title=" " alt="" coords="970,163,1073,167,1183,177,1280,194,1318,207,1345,223,1357,237,1364,252,1371,284,1366,285,1359,254,1352,240,1342,227,1316,212,1279,199,1182,182,1072,172,970,169"/>
+<area shape="rect" id="Node000018" title=" " alt="" coords="977,225,1041,251"/>
+<area shape="poly" id="edge23_Node000009_Node000018" title=" " alt="" coords="892,175,975,217,973,221,889,180"/>
+<area shape="poly" id="edge11_Node000010_Node000004" title=" " alt="" coords="638,253,556,295,553,290,636,248"/>
+<area shape="poly" id="edge12_Node000010_Node000011" title=" " alt="" coords="668,250,688,285,683,288,664,252"/>
+<area shape="poly" id="edge14_Node000012_Node000004" title=" " alt="" coords="801,253,694,273,563,301,562,296,693,268,800,248"/>
+<area shape="poly" id="edge15_Node000012_Node000013" title=" " alt="" coords="903,248,1039,293,1037,298,901,253"/>
+<area shape="rect" id="Node000014" title=" " alt="" coords="848,299,935,324"/>
+<area shape="poly" id="edge16_Node000012_Node000014" title=" " alt="" coords="874,250,886,285,881,286,869,252"/>
+<area shape="rect" id="Node000015" title=" " alt="" coords="960,299,1026,324"/>
+<area shape="poly" id="edge17_Node000012_Node000015" title=" " alt="" coords="889,248,962,289,959,294,887,253"/>
+<area shape="poly" id="edge19_Node000016_Node000004" title=" " alt="" coords="1116,249,828,272,680,286,563,302,562,296,679,281,828,266,1116,244"/>
+<area shape="poly" id="edge20_Node000016_Node000013" title=" " alt="" coords="1202,253,1119,295,1116,290,1200,248"/>
+<area shape="poly" id="edge21_Node000016_Node000017" title=" " alt="" coords="1248,248,1334,290,1332,295,1246,253"/>
+</map>

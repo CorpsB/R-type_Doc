@@ -99,21 +99,21 @@ $(document).ready(function(){initNavTree('IScene_8hpp.html',''); initResizable()
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a>  </div>
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#typedef-members">Typedefs</a>  </div>
   <div class="headertitle"><div class="title">IScene.hpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-
-<p>Declaration of the <a class="el" href="classrtype_1_1client_1_1IScene.html">rtype::client::IScene</a> interface.  
-<a href="#details">More...</a></p>
-<div class="textblock"><code>#include &lt;iostream&gt;</code><br />
-<code>#include &lt;string&gt;</code><br />
+<div class="textblock"><code>#include &lt;string&gt;</code><br />
+<code>#include &lt;memory&gt;</code><br />
+<code>#include &quot;<a class="el" href="SceneStage_8hpp_source.html">./SceneStage/SceneStage.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="SceneTypes_8hpp_source.html">../../includes/types/SceneTypes.hpp</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for IScene.hpp:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="IScene_8hpp__incl.svg" width="174" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="IScene_8hpp__incl.svg" width="100%" height="492"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> This graph shows which files directly or indirectly include this file:</div>
@@ -127,37 +127,27 @@ $(document).ready(function(){initNavTree('IScene_8hpp.html',''); initResizable()
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtype_1_1client_1_1IScene.html">rtype::client::IScene</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interface that all scenes must implement.  <a href="classrtype_1_1client_1_1IScene.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasge_1_1scene_1_1IScene.html">asge::scene::IScene</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:namespacertype" id="r_namespacertype"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacertype.html">rtype</a></td></tr>
+<tr class="memitem:namespaceasge" id="r_namespaceasge"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceasge.html">asge</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespacertype_1_1client" id="r_namespacertype_1_1client"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacertype_1_1client.html">rtype::client</a></td></tr>
+<tr class="memitem:namespaceasge_1_1scene" id="r_namespaceasge_1_1scene"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceasge_1_1scene.html">asge::scene</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:acf580ea2d5b4178738a21e5551ba8c22" id="r_acf580ea2d5b4178738a21e5551ba8c22"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceasge_1_1scene.html#acf580ea2d5b4178738a21e5551ba8c22">asge::scene::ScenePtr</a> = std::unique_ptr&lt; <a class="el" href="classasge_1_1scene_1_1SceneStage.html">SceneStage</a> &gt;</td></tr>
+<tr class="separator:acf580ea2d5b4178738a21e5551ba8c22"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Declaration of the <a class="el" href="classrtype_1_1client_1_1IScene.html">rtype::client::IScene</a> interface. </p>
-<dl class="section since"><dt>Since</dt><dd>1.0</dd></dl>
-<dl class="section see"><dt>See also</dt><dd>SceneManager</dd></dl>
-<p>This file defines the <a class="el" href="classrtype_1_1client_1_1IScene.html">rtype::client::IScene</a> interface, which serves as the base contract for all game scenes in the R-Type client. Each scene implements its own lifecycle behavior (enter, exit, pause, resume) and provides its own update and rendering logic.</p>
-<p>Responsibilities:</p><ul>
-<li>Define a common interface for all scenes.</li>
-<li>Provide consistent lifecycle management through SceneManager.</li>
-<li>Enforce separation between update and draw logic.</li>
-</ul>
-<p>Scenes are managed exclusively through the SceneManager using smart pointers to ensure proper ownership and cleanup.</p>
-<dl class="section note"><dt>Note</dt><dd>All derived scenes must implement update, draw, and name. </dd></dl>
-
-<p class="definition">Definition in file <a class="el" href="IScene_8hpp_source.html">IScene.hpp</a>.</p>
-</div></div><!-- contents -->
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_922c588100a187620fdc1533bc178f73.html">Client</a></li><li class="navelem"><a class="el" href="dir_2a1d840b44edd7220955ce3ad88544ff.html">Game</a></li><li class="navelem"><a class="el" href="dir_6d3a1248d4d1a57f06cbbf884accac1e.html">Scenes</a></li><li class="navelem"><a class="el" href="IScene_8hpp.html">IScene.hpp</a></li>
+    <li class="navelem"><a class="el" href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li><li class="navelem"><a class="el" href="dir_1b9403644f1f2359659496c948d71b7e.html">asge</a></li><li class="navelem"><a class="el" href="dir_23b0c4c81238164c4b752561086c543c.html">src</a></li><li class="navelem"><a class="el" href="dir_9659621fb3b5604b0d2912e187ac7934.html">scene</a></li><li class="navelem"><a class="el" href="IScene_8hpp.html">IScene.hpp</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>

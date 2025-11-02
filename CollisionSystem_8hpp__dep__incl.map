@@ -1,19 +1,15 @@
 <map id="CollisionSystem.hpp" name="CollisionSystem.hpp">
-<area shape="rect" id="Node000001" title="Header for CollisionSystem — orchestrates broad&#45;phase and narrow&#45;phase checks." alt="" coords="177,5,331,31"/>
-<area shape="rect" id="Node000002" href="$CollisionSystem_8cpp.html" title="Implementation of CollisionSystem update pass (build + check)." alt="" coords="9,79,163,104"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="216,38,115,81,112,76,213,34"/>
-<area shape="rect" id="Node000003" href="$GameScene_8hpp.html" title=" " alt="" coords="87,152,215,177"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="240,44,162,153,157,150,236,41"/>
-<area shape="rect" id="Node000006" href="$PlayerSystem_8hpp.html" title="Header for PlayerSystem — ECS system handling player movement, firing, and score updates." alt="" coords="239,79,379,104"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="273,40,302,77,298,80,269,43"/>
-<area shape="rect" id="Node000008" href="$Rtype_8cpp.html" title="Implements the main server logic for the R&#45;Type project." alt="" coords="403,152,489,177"/>
-<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="311,33,353,51,393,77,410,95,425,115,444,151,439,153,420,118,406,98,390,81,351,55,309,38"/>
-<area shape="rect" id="Node000004" href="$GameScene_8cpp.html" title=" " alt="" coords="5,225,132,251"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="129,188,84,227,80,223,126,184"/>
-<area shape="rect" id="Node000005" href="$MainMenuScene_8cpp.html" title="Implementation of the MainMenuScene class managing the main menu interface." alt="" coords="156,225,312,251"/>
-<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="177,184,222,223,219,227,173,188"/>
-<area shape="poly" id="edge6_Node000006_Node000003" title=" " alt="" coords="272,112,178,154,176,149,270,107"/>
-<area shape="rect" id="Node000007" href="$PlayerSystem_8cpp.html" title="Implementation of PlayerSystem — handles movement, firing, and scoring logic." alt="" coords="239,152,378,177"/>
-<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="311,118,311,152,306,152,306,118"/>
-<area shape="poly" id="edge8_Node000006_Node000008" title=" " alt="" coords="344,108,425,149,422,154,341,113"/>
+<area shape="rect" id="Node000001" title="Declares the collision detection system." alt="" coords="87,5,241,31"/>
+<area shape="rect" id="Node000002" href="$CollisionSystem_8cpp.html" title="Implements collision detection and response orchestration." alt="" coords="5,79,160,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="142,42,98,80,94,76,139,38"/>
+<area shape="rect" id="Node000003" href="$EngineCore_8hpp.html" title="Declares the main engine orchestration class." alt="" coords="185,79,309,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="189,38,235,76,231,80,186,42"/>
+<area shape="rect" id="Node000004" href="$EngineCore_8cpp.html" title="Implements the engine bootstrap and runtime loop." alt="" coords="121,152,244,177"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="229,116,195,154,191,150,225,113"/>
+<area shape="rect" id="Node000005" href="$asge_8hpp.html" title=" " alt="" coords="269,152,350,177"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="268,113,301,150,297,154,264,116"/>
+<area shape="rect" id="Node000006" href="$client_2main_8cpp.html" title=" " alt="" coords="215,225,297,251"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="295,190,267,227,263,224,290,187"/>
+<area shape="rect" id="Node000007" href="$server_2main_8cpp.html" title=" " alt="" coords="321,225,404,251"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="328,187,356,224,352,227,324,190"/>
 </map>

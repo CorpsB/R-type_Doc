@@ -1,4 +1,4 @@
 var SystemManager_8hpp =
 [
-    [ "rtype::ecs::SystemManager", "classrtype_1_1ecs_1_1SystemManager.html", "classrtype_1_1ecs_1_1SystemManager" ]
+    [ "asge::world::SystemManager", "classasge_1_1world_1_1SystemManager.html", "classasge_1_1world_1_1SystemManager" ]
 ];

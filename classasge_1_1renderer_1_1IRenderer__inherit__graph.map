@@ -1,0 +1,7 @@
+<map id="asge::renderer::IRenderer" name="asge::renderer::IRenderer">
+<area shape="rect" id="Node000001" title="Minimal public rendering interface for the engine/game." alt="" coords="176,5,493,827"/>
+<area shape="rect" id="Node000002" href="$classasge_1_1renderer_1_1NullRenderer.html" title="Rendu no&#45;op pour serveur/headless/tests." alt="" coords="5,1070,323,1610"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="259,841,216,1070,211,1069,254,840"/>
+<area shape="rect" id="Node000003" href="$classasge_1_1renderer_1_1RenderManager.html" title="Concrete implementation of IRenderer using a Raylib&#45;based RenderDriver." alt="" coords="347,875,664,1805"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="416,840,422,874,417,875,410,841"/>
+</map>

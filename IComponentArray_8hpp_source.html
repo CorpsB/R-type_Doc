@@ -131,44 +131,43 @@ $(document).ready(function(){initNavTree('IComponentArray_8hpp_source.html','');
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#include &lt;cstdint&gt;</span></div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacertype_1_1ecs.html">rtype::ecs</a> {</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceasge_1_1world.html">asge::world</a> {</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="comment"></span> </div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="comment">/**</span></div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="comment"> * @class IComponentArray</span></div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment"> * @brief Abstract interface for component arrays.</span></div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment"> *</span></div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="comment"> * @details</span></div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="comment"> * Implementing classes must provide entityDestroyed to clean up per-entity data when</span></div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="comment"> * an entity is removed from the ECS.</span></div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="comment"> */</span></div>
-<div class="foldopen" id="foldopen00037" data-start="{" data-end="};">
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="classrtype_1_1ecs_1_1IComponentArray.html">   37</a></span><span class="keyword">class </span><a class="code hl_class" href="classrtype_1_1ecs_1_1IComponentArray.html">IComponentArray</a> {</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="keyword">public</span>:<span class="comment"></span></div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="comment">        /**</span></div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="comment">         * @brief Virtual destructor for safe polymorphic deletion.</span></div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="comment">         */</span></div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="classrtype_1_1ecs_1_1IComponentArray.html#a0c049729005889a9c2f5413f3cb02f76">   42</a></span>        <span class="keyword">virtual</span> <a class="code hl_function" href="classrtype_1_1ecs_1_1IComponentArray.html#a0c049729005889a9c2f5413f3cb02f76">~IComponentArray</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="comment"></span> </div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="comment">        /**</span></div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="comment">         * @brief Lifecycle hook invoked when an entity is destroyed.</span></div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="comment">         *</span></div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="comment">         * @param id Entity identifier that was destroyed.</span></div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="comment">         */</span></div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="classrtype_1_1ecs_1_1IComponentArray.html#abc0eea40d54569e7858425541ab2ccc3">   49</a></span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classrtype_1_1ecs_1_1IComponentArray.html#abc0eea40d54569e7858425541ab2ccc3">entityDestroyed</a>(uint32_t <span class="keywordtype">id</span>) = 0;</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>};</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="comment"> * Implementing classes must provide entityDestroyed() to release per-entity resources.</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="comment"> */</span></div>
+<div class="foldopen" id="foldopen00036" data-start="{" data-end="};">
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="classasge_1_1world_1_1IComponentArray.html">   36</a></span><span class="keyword">class </span><a class="code hl_class" href="classasge_1_1world_1_1IComponentArray.html">IComponentArray</a> {</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keyword">public</span>:<span class="comment"></span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="comment">        /**</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="comment">         * @brief Virtual destructor for safe cleanup.</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="comment">         */</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="classasge_1_1world_1_1IComponentArray.html#a66e23183405ac480a839240dd6084ba0">   41</a></span>        <span class="keyword">virtual</span> <a class="code hl_function" href="classasge_1_1world_1_1IComponentArray.html#a66e23183405ac480a839240dd6084ba0">~IComponentArray</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="comment"></span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="comment">        /**</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="comment">         * @brief Notifies the storage that an entity has been removed.</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="comment">         *</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="comment">         * @param id Entity identifier that was destroyed.</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="comment">         */</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="classasge_1_1world_1_1IComponentArray.html#a56992606329d353ce7abea5db54076dd">   48</a></span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classasge_1_1world_1_1IComponentArray.html#a56992606329d353ce7abea5db54076dd">entityDestroyed</a>(uint32_t <span class="keywordtype">id</span>) = 0;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>};</div>
 </div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>} <span class="comment">// namespace rtype::ecs</span></div>
-<div class="ttc" id="aclassrtype_1_1ecs_1_1IComponentArray_html"><div class="ttname"><a href="classrtype_1_1ecs_1_1IComponentArray.html">rtype::ecs::IComponentArray</a></div><div class="ttdoc">Abstract interface for component arrays.</div><div class="ttdef"><b>Definition</b> <a href="IComponentArray_8hpp_source.html#l00037">IComponentArray.hpp:37</a></div></div>
-<div class="ttc" id="aclassrtype_1_1ecs_1_1IComponentArray_html_a0c049729005889a9c2f5413f3cb02f76"><div class="ttname"><a href="classrtype_1_1ecs_1_1IComponentArray.html#a0c049729005889a9c2f5413f3cb02f76">rtype::ecs::IComponentArray::~IComponentArray</a></div><div class="ttdeci">virtual ~IComponentArray()=default</div><div class="ttdoc">Virtual destructor for safe polymorphic deletion.</div></div>
-<div class="ttc" id="aclassrtype_1_1ecs_1_1IComponentArray_html_abc0eea40d54569e7858425541ab2ccc3"><div class="ttname"><a href="classrtype_1_1ecs_1_1IComponentArray.html#abc0eea40d54569e7858425541ab2ccc3">rtype::ecs::IComponentArray::entityDestroyed</a></div><div class="ttdeci">virtual void entityDestroyed(uint32_t id)=0</div><div class="ttdoc">Lifecycle hook invoked when an entity is destroyed.</div></div>
-<div class="ttc" id="anamespacertype_1_1ecs_html"><div class="ttname"><a href="namespacertype_1_1ecs.html">rtype::ecs</a></div><div class="ttdef"><b>Definition</b> <a href="ComponentManager_8hpp_source.html#l00032">ComponentManager.hpp:32</a></div></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>} <span class="comment">// namespace asge::world</span></div>
+<div class="ttc" id="aclassasge_1_1world_1_1IComponentArray_html"><div class="ttname"><a href="classasge_1_1world_1_1IComponentArray.html">asge::world::IComponentArray</a></div><div class="ttdoc">Abstract interface for component arrays.</div><div class="ttdef"><b>Definition</b> <a href="IComponentArray_8hpp_source.html#l00036">IComponentArray.hpp:36</a></div></div>
+<div class="ttc" id="aclassasge_1_1world_1_1IComponentArray_html_a56992606329d353ce7abea5db54076dd"><div class="ttname"><a href="classasge_1_1world_1_1IComponentArray.html#a56992606329d353ce7abea5db54076dd">asge::world::IComponentArray::entityDestroyed</a></div><div class="ttdeci">virtual void entityDestroyed(uint32_t id)=0</div><div class="ttdoc">Notifies the storage that an entity has been removed.</div></div>
+<div class="ttc" id="aclassasge_1_1world_1_1IComponentArray_html_a66e23183405ac480a839240dd6084ba0"><div class="ttname"><a href="classasge_1_1world_1_1IComponentArray.html#a66e23183405ac480a839240dd6084ba0">asge::world::IComponentArray::~IComponentArray</a></div><div class="ttdeci">virtual ~IComponentArray()=default</div><div class="ttdoc">Virtual destructor for safe cleanup.</div></div>
+<div class="ttc" id="anamespaceasge_1_1world_html"><div class="ttname"><a href="namespaceasge_1_1world.html">asge::world</a></div><div class="ttdef"><b>Definition</b> <a href="ComponentManager_8cpp_source.html#l00024">ComponentManager.cpp:24</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_4ab6b4cc6a7edbff49100e9123df213f.html">Common</a></li><li class="navelem"><a class="el" href="dir_42f24aa63ec14c5bf2eb77ea89af9ccb.html">ECS</a></li><li class="navelem"><a class="el" href="dir_b9a6101fa66c1a3643c11b9ac234d0d2.html">Components</a></li><li class="navelem"><a class="el" href="IComponentArray_8hpp.html">IComponentArray.hpp</a></li>
+    <li class="navelem"><a class="el" href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li><li class="navelem"><a class="el" href="dir_1b9403644f1f2359659496c948d71b7e.html">asge</a></li><li class="navelem"><a class="el" href="dir_23b0c4c81238164c4b752561086c543c.html">src</a></li><li class="navelem"><a class="el" href="dir_2e6acacfe42ed85a3d5b28ea6e2cb62a.html">world</a></li><li class="navelem"><a class="el" href="dir_c5c9d039a1b1022f753fa6fba32726f5.html">Components</a></li><li class="navelem"><a class="el" href="IComponentArray_8hpp.html">IComponentArray.hpp</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>

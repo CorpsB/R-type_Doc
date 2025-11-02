@@ -128,49 +128,57 @@ $(document).ready(function(){initNavTree('System_8hpp_source.html',''); initResi
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment"> *</span></div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment"> * @note</span></div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment"> * Systems are usually registered via SystemManager and their _filtered_entities</span></div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment"> * set is managed by the SystemManager when entity signatures change.</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment"> * set is updated automatically when entity signatures change.</span></div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment"> */</span></div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#include &lt;set&gt;</span></div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#include &lt;cstdint&gt;</span></div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="preprocessor">#include &lt;unordered_map&gt;</span></div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacertype_1_1ecs.html">rtype::ecs</a> {</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment"></span> </div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="comment">/**</span></div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="comment"> * @class System</span></div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="comment"> * @brief Abstract base type representing an executable system.</span></div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="comment"> *</span></div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="comment"> * @details</span></div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="comment"> * Systems encapsulate logic that operates on entities possessing a specific</span></div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="comment"> * combination of components (the execution signature). Systems are not templated:</span></div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="comment"> * concrete systems derive from System and expose their processing routines.</span></div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="comment"> */</span></div>
-<div class="foldopen" id="foldopen00042" data-start="{" data-end="};">
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="classrtype_1_1ecs_1_1System.html">   42</a></span><span class="keyword">class </span><a class="code hl_class" href="classrtype_1_1ecs_1_1System.html">System</a> {</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="keyword">public</span>:<span class="comment"></span></div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="comment">        /**</span></div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="comment">         * @brief Virtual destructor for correct polymorphic cleanup.</span></div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="comment">         */</span></div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="classrtype_1_1ecs_1_1System.html#a00fae19d7a2b71808876ffbb80d82eb0">   47</a></span>        <span class="keyword">virtual</span> <a class="code hl_function" href="classrtype_1_1ecs_1_1System.html#a00fae19d7a2b71808876ffbb80d82eb0">~System</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="classrtype_1_1ecs_1_1System.html#a62bc6596d16b2f07f9df3ab7fa4a7676">   49</a></span>        std::set&lt;uint32_t&gt; <a class="code hl_variable" href="classrtype_1_1ecs_1_1System.html#a62bc6596d16b2f07f9df3ab7fa4a7676">_filtered_entities</a>; <span class="comment">///&lt; Set of entity ids matching the system&#39;s signature</span></div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="classrtype_1_1ecs_1_1System.html#a6b999989a121f4e28f18f426a0f48ef0">   50</a></span>        <span class="keywordtype">bool</span> <a class="code hl_variable" href="classrtype_1_1ecs_1_1System.html#a6b999989a121f4e28f18f426a0f48ef0">_enabled</a> = <span class="keyword">true</span>;                  <span class="comment">///&lt; Whether the system is enabled and should run</span></div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>};</div>
-</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#include &lt;bitset&gt;</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="preprocessor">#include &lt;cstdint&gt;</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor">#include &lt;unordered_map&gt;</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceasge_1_1world.html">asge::world</a> {</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="keyword">class </span>ComponentManager;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="comment"></span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="comment">/**</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="comment"> * @class System</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="comment"> * @brief Abstract base type representing an executable system.</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="comment"> * @details</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="comment"> * Concrete systems derive from System and implement their own logic.</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="comment"> * The list of entities they track (_filtered_entities) is maintained by</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="comment"> * SystemManager based on entity component signatures.</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="comment"> */</span></div>
+<div class="foldopen" id="foldopen00045" data-start="{" data-end="};">
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="classasge_1_1world_1_1System.html">   45</a></span><span class="keyword">class </span><a class="code hl_class" href="classasge_1_1world_1_1System.html">System</a> {</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keyword">public</span>:<span class="comment"></span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="comment">        /**</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="comment">         * @brief Ensures correct cleanup of derived system instances.</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="comment">         */</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="classasge_1_1world_1_1System.html#ac901190a071f987e23236e7fdf3828b7">   50</a></span>        <span class="keyword">virtual</span> <a class="code hl_function" href="classasge_1_1world_1_1System.html#ac901190a071f987e23236e7fdf3828b7">~System</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="classasge_1_1world_1_1System.html#a50292e547144f6f7bbb5d900ca349120">   51</a></span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classasge_1_1world_1_1System.html#a50292e547144f6f7bbb5d900ca349120">setSignature</a>(<a class="code hl_class" href="classasge_1_1world_1_1ComponentManager.html">ComponentManager</a> &amp;m) = 0;</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>} <span class="comment">// namespace rtype::ecs</span></div>
-<div class="ttc" id="aclassrtype_1_1ecs_1_1System_html"><div class="ttname"><a href="classrtype_1_1ecs_1_1System.html">rtype::ecs::System</a></div><div class="ttdoc">Abstract base type representing an executable system.</div><div class="ttdef"><b>Definition</b> <a href="System_8hpp_source.html#l00042">System.hpp:42</a></div></div>
-<div class="ttc" id="aclassrtype_1_1ecs_1_1System_html_a00fae19d7a2b71808876ffbb80d82eb0"><div class="ttname"><a href="classrtype_1_1ecs_1_1System.html#a00fae19d7a2b71808876ffbb80d82eb0">rtype::ecs::System::~System</a></div><div class="ttdeci">virtual ~System()=default</div><div class="ttdoc">Virtual destructor for correct polymorphic cleanup.</div></div>
-<div class="ttc" id="aclassrtype_1_1ecs_1_1System_html_a62bc6596d16b2f07f9df3ab7fa4a7676"><div class="ttname"><a href="classrtype_1_1ecs_1_1System.html#a62bc6596d16b2f07f9df3ab7fa4a7676">rtype::ecs::System::_filtered_entities</a></div><div class="ttdeci">std::set&lt; uint32_t &gt; _filtered_entities</div><div class="ttdoc">Set of entity ids matching the system's signature.</div><div class="ttdef"><b>Definition</b> <a href="System_8hpp_source.html#l00049">System.hpp:49</a></div></div>
-<div class="ttc" id="aclassrtype_1_1ecs_1_1System_html_a6b999989a121f4e28f18f426a0f48ef0"><div class="ttname"><a href="classrtype_1_1ecs_1_1System.html#a6b999989a121f4e28f18f426a0f48ef0">rtype::ecs::System::_enabled</a></div><div class="ttdeci">bool _enabled</div><div class="ttdoc">Whether the system is enabled and should run.</div><div class="ttdef"><b>Definition</b> <a href="System_8hpp_source.html#l00050">System.hpp:50</a></div></div>
-<div class="ttc" id="anamespacertype_1_1ecs_html"><div class="ttname"><a href="namespacertype_1_1ecs.html">rtype::ecs</a></div><div class="ttdef"><b>Definition</b> <a href="ComponentManager_8hpp_source.html#l00032">ComponentManager.hpp:32</a></div></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="classasge_1_1world_1_1System.html#ac82d7f677c133d3878b7f59753115617">   53</a></span>        std::bitset&lt;32UL&gt; <a class="code hl_variable" href="classasge_1_1world_1_1System.html#ac82d7f677c133d3878b7f59753115617">_signature</a>; <span class="comment">///&lt; System&#39;s signature.</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="classasge_1_1world_1_1System.html#a64405e28010c901b3602a0e4b0904165">   54</a></span>        std::set&lt;uint32_t&gt; <a class="code hl_variable" href="classasge_1_1world_1_1System.html#a64405e28010c901b3602a0e4b0904165">_filtered_entities</a>; <span class="comment">///&lt; Entities matching the system&#39;s signature.</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="classasge_1_1world_1_1System.html#a751e7b1635f03604e93f910989e84d2c">   55</a></span>        <span class="keywordtype">bool</span> <a class="code hl_variable" href="classasge_1_1world_1_1System.html#a751e7b1635f03604e93f910989e84d2c">_enabled</a> = <span class="keyword">true</span>; <span class="comment">///&lt; When false, system will not execute in SystemManager updates.</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>};</div>
+</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>}</div>
+<div class="ttc" id="aclassasge_1_1world_1_1ComponentManager_html"><div class="ttname"><a href="classasge_1_1world_1_1ComponentManager.html">asge::world::ComponentManager</a></div><div class="ttdoc">Manages component type registration and per-entity component storage.</div><div class="ttdef"><b>Definition</b> <a href="ComponentManager_8hpp_source.html#l00045">ComponentManager.hpp:45</a></div></div>
+<div class="ttc" id="aclassasge_1_1world_1_1System_html"><div class="ttname"><a href="classasge_1_1world_1_1System.html">asge::world::System</a></div><div class="ttdoc">Abstract base type representing an executable system.</div><div class="ttdef"><b>Definition</b> <a href="System_8hpp_source.html#l00045">System.hpp:45</a></div></div>
+<div class="ttc" id="aclassasge_1_1world_1_1System_html_a50292e547144f6f7bbb5d900ca349120"><div class="ttname"><a href="classasge_1_1world_1_1System.html#a50292e547144f6f7bbb5d900ca349120">asge::world::System::setSignature</a></div><div class="ttdeci">virtual void setSignature(ComponentManager &amp;m)=0</div></div>
+<div class="ttc" id="aclassasge_1_1world_1_1System_html_a64405e28010c901b3602a0e4b0904165"><div class="ttname"><a href="classasge_1_1world_1_1System.html#a64405e28010c901b3602a0e4b0904165">asge::world::System::_filtered_entities</a></div><div class="ttdeci">std::set&lt; uint32_t &gt; _filtered_entities</div><div class="ttdoc">Entities matching the system's signature.</div><div class="ttdef"><b>Definition</b> <a href="System_8hpp_source.html#l00054">System.hpp:54</a></div></div>
+<div class="ttc" id="aclassasge_1_1world_1_1System_html_a751e7b1635f03604e93f910989e84d2c"><div class="ttname"><a href="classasge_1_1world_1_1System.html#a751e7b1635f03604e93f910989e84d2c">asge::world::System::_enabled</a></div><div class="ttdeci">bool _enabled</div><div class="ttdoc">When false, system will not execute in SystemManager updates.</div><div class="ttdef"><b>Definition</b> <a href="System_8hpp_source.html#l00055">System.hpp:55</a></div></div>
+<div class="ttc" id="aclassasge_1_1world_1_1System_html_ac82d7f677c133d3878b7f59753115617"><div class="ttname"><a href="classasge_1_1world_1_1System.html#ac82d7f677c133d3878b7f59753115617">asge::world::System::_signature</a></div><div class="ttdeci">std::bitset&lt; 32UL &gt; _signature</div><div class="ttdoc">System's signature.</div><div class="ttdef"><b>Definition</b> <a href="System_8hpp_source.html#l00053">System.hpp:53</a></div></div>
+<div class="ttc" id="aclassasge_1_1world_1_1System_html_ac901190a071f987e23236e7fdf3828b7"><div class="ttname"><a href="classasge_1_1world_1_1System.html#ac901190a071f987e23236e7fdf3828b7">asge::world::System::~System</a></div><div class="ttdeci">virtual ~System()=default</div><div class="ttdoc">Ensures correct cleanup of derived system instances.</div></div>
+<div class="ttc" id="anamespaceasge_1_1world_html"><div class="ttname"><a href="namespaceasge_1_1world.html">asge::world</a></div><div class="ttdef"><b>Definition</b> <a href="ComponentManager_8cpp_source.html#l00024">ComponentManager.cpp:24</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_4ab6b4cc6a7edbff49100e9123df213f.html">Common</a></li><li class="navelem"><a class="el" href="dir_42f24aa63ec14c5bf2eb77ea89af9ccb.html">ECS</a></li><li class="navelem"><a class="el" href="dir_25ace0bc121ef3a6b9c34867f0e51a24.html">Systems</a></li><li class="navelem"><a class="el" href="System_8hpp.html">System.hpp</a></li>
+    <li class="navelem"><a class="el" href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li><li class="navelem"><a class="el" href="dir_1b9403644f1f2359659496c948d71b7e.html">asge</a></li><li class="navelem"><a class="el" href="dir_23b0c4c81238164c4b752561086c543c.html">src</a></li><li class="navelem"><a class="el" href="dir_2e6acacfe42ed85a3d5b28ea6e2cb62a.html">world</a></li><li class="navelem"><a class="el" href="dir_cdb791e71c797d144e9eb5e67180a16f.html">Systems</a></li><li class="navelem"><a class="el" href="System_8hpp.html">System.hpp</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>

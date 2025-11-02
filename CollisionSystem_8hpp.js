@@ -1,4 +1,4 @@
 var CollisionSystem_8hpp =
 [
-    [ "rtype::ecs::CollisionSystem", "classrtype_1_1ecs_1_1CollisionSystem.html", "classrtype_1_1ecs_1_1CollisionSystem" ]
+    [ "asge::world::systems::CollisionSystem", "classasge_1_1world_1_1systems_1_1CollisionSystem.html", "classasge_1_1world_1_1systems_1_1CollisionSystem" ]
 ];

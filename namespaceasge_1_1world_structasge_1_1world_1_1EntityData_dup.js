@@ -1,0 +1,6 @@
+var namespaceasge_1_1world_structasge_1_1world_1_1EntityData_dup =
+[
+    [ "active", "namespaceasge_1_1world.html#a69d1ef09ecdd41e78d64c6213f66128d", null ],
+    [ "generation", "namespaceasge_1_1world.html#a846139050fc20427dfaaa101b8e49823", null ],
+    [ "signature", "namespaceasge_1_1world.html#afd7d9f31969b104686d501fb6673e08f", null ]
+];

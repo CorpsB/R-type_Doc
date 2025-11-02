@@ -103,37 +103,33 @@ $(document).ready(function(){initNavTree('InputManager_8cpp.html',''); initResiz
 </div><!--header-->
 <div class="contents">
 
-<p>Implementation of the <a class="el" href="classrtype_1_1client_1_1InputManager.html">rtype::client::InputManager</a> class.  
+<p>Implements the engine's input aggregation and binding logic.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="InputManager_8hpp_source.html">InputManager.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="Components_8hpp_source.html">../../includes/Components.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="ASGE_8hpp_source.html">../../includes/ASGE.hpp</a>&quot;</code><br />
+<code>#include &lt;shared_mutex&gt;</code><br />
+<code>#include &lt;utility&gt;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for InputManager.cpp:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="InputManager_8cpp__incl.svg" width="314" height="183"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="InputManager_8cpp__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 </div>
 <p><a href="InputManager_8cpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:namespacertype" id="r_namespacertype"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacertype.html">rtype</a></td></tr>
+<tr class="memitem:namespaceasge" id="r_namespaceasge"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceasge.html">asge</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespacertype_1_1client" id="r_namespacertype_1_1client"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacertype_1_1client.html">rtype::client</a></td></tr>
+<tr class="memitem:namespaceasge_1_1input" id="r_namespaceasge_1_1input"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceasge_1_1input.html">asge::input</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Implementation of the <a class="el" href="classrtype_1_1client_1_1InputManager.html">rtype::client::InputManager</a> class. </p>
-<dl class="section since"><dt>Since</dt><dd>1.0</dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="InputManager_8hpp.html" title="Declaration of the rtype::client::InputManager class.">InputManager.hpp</a></dd></dl>
-<p>This file implements the behavior of the InputManager, which provides a high-level abstraction for input handling via Raylib.</p>
-<p>The class associates human-readable action names (e.g., <code>"jump"</code>, <code>"shoot"</code>) with keyboard keys and offers per-frame queries for input events.</p>
-<p>Internally:</p><ul>
-<li>The <code>_bindings</code> map stores action → key associations.</li>
-<li>Each query delegates to Raylib functions: IsKeyPressed, IsKeyDown, and IsKeyReleased.</li>
-</ul>
-<p>This abstraction allows clean and flexible input remapping at runtime. </p>
+<div class="textblock"><p>Implements the engine's input aggregation and binding logic. </p>
+<p>Contains the runtime mechanics for polling devices, composing snapshots, and resolving action bindings. Public behaviour is documented in the header; this file houses the execution steps and error handling. </p>
 
 <p class="definition">Definition in file <a class="el" href="InputManager_8cpp_source.html">InputManager.cpp</a>.</p>
 </div></div><!-- contents -->
@@ -141,7 +137,7 @@ Namespaces</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_922c588100a187620fdc1533bc178f73.html">Client</a></li><li class="navelem"><a class="el" href="dir_2a1d840b44edd7220955ce3ad88544ff.html">Game</a></li><li class="navelem"><a class="el" href="dir_c8a97559b948dc453fcdced510f2103b.html">Inputs</a></li><li class="navelem"><a class="el" href="InputManager_8cpp.html">InputManager.cpp</a></li>
+    <li class="navelem"><a class="el" href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li><li class="navelem"><a class="el" href="dir_1b9403644f1f2359659496c948d71b7e.html">asge</a></li><li class="navelem"><a class="el" href="dir_23b0c4c81238164c4b752561086c543c.html">src</a></li><li class="navelem"><a class="el" href="dir_8ce5e089c5527e11410b845cf813ca48.html">input</a></li><li class="navelem"><a class="el" href="InputManager_8cpp.html">InputManager.cpp</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>

@@ -98,118 +98,118 @@ $(document).ready(function(){initNavTree('GameProtocol_8hpp.html',''); initResiz
 
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#typedef-members">Typedefs</a>  </div>
   <div class="headertitle"><div class="title">GameProtocol.hpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-
-<p>High-level game protocol facade (header only).  
-<a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;<a class="el" href="Protocol_8hpp_source.html">Protocol.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="GameProtocolTypes_8hpp_source.html">GameProtocolTypes.hpp</a>&quot;</code><br />
-<code>#include &lt;system_error&gt;</code><br />
-<code>#include &lt;optional&gt;</code><br />
+<div class="textblock"><code>#include &lt;cstdint&gt;</code><br />
+<code>#include &lt;cstddef&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
+<code>#include &lt;bitset&gt;</code><br />
 <code>#include &lt;string&gt;</code><br />
-<code>#include &lt;cstdint&gt;</code><br />
+<code>#include &lt;functional&gt;</code><br />
+<code>#include &quot;<a class="el" href="Macro_8hpp_source.html">../world/Macro.hpp</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for GameProtocol.hpp:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="GameProtocol_8hpp__incl.svg" width="100%" height="492"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="GameProtocol_8hpp__incl.svg" width="635" height="183"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> This graph shows which files directly or indirectly include this file:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="GameProtocol_8hpp__dep__incl.svg" width="467" height="183"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="GameProtocol_8hpp__dep__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 </div>
 <p><a href="GameProtocol_8hpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasge_1_1net_1_1GameProtocol.html">asge::net::GameProtocol</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structasge_1_1net_1_1GameProtocol_1_1Header" id="r_structasge_1_1net_1_1GameProtocol_1_1Header"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasge_1_1net_1_1GameProtocol.html#structasge_1_1net_1_1GameProtocol_1_1Header">asge::net::GameProtocol::Header</a></td></tr>
+<tr class="separator:structasge_1_1net_1_1GameProtocol_1_1Header"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:namespaceprotocol" id="r_namespaceprotocol"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceprotocol.html">protocol</a></td></tr>
-<tr class="memdesc:namespaceprotocol"><td class="mdescLeft">&#160;</td><td class="mdescRight">Core transport primitives and low-level protocol types. <br /></td></tr>
+<tr class="memitem:namespaceasge" id="r_namespaceasge"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceasge.html">asge</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespaceprotocol_1_1game" id="r_namespaceprotocol_1_1game"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceprotocol_1_1game.html">protocol::game</a></td></tr>
-<tr class="memdesc:namespaceprotocol_1_1game"><td class="mdescLeft">&#160;</td><td class="mdescRight">Game-level message IDs and payload definitions built on top of the core protocol. <br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespaceGameProtocol" id="r_namespaceGameProtocol"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceGameProtocol.html">GameProtocol</a></td></tr>
-<tr class="memdesc:namespaceGameProtocol"><td class="mdescLeft">&#160;</td><td class="mdescRight">Facade exposing game-level send/poll APIs. <br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespaceprotocol_1_1game_1_1GameProtocol" id="r_namespaceprotocol_1_1game_1_1GameProtocol"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceprotocol_1_1game_1_1GameProtocol.html">protocol::game::GameProtocol</a></td></tr>
+<tr class="memitem:namespaceasge_1_1net" id="r_namespaceasge_1_1net"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceasge_1_1net.html">asge::net</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:a82bb05ba2e71bcf41f991da46853bad7" id="r_a82bb05ba2e71bcf41f991da46853bad7"><td class="memItemLeft" align="right" valign="top">std::error_code&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceprotocol_1_1game_1_1GameProtocol.html#a82bb05ba2e71bcf41f991da46853bad7">protocol::game::GameProtocol::initialize</a> (const std::string &amp;local_address, uint16_t local_port, const std::optional&lt; std::string &gt; &amp;server_address=std::nullopt, const std::optional&lt; uint16_t &gt; &amp;server_port=std::nullopt) noexcept</td></tr>
-<tr class="memdesc:a82bb05ba2e71bcf41f991da46853bad7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize game protocol and bind a local UDP endpoint.  <br /></td></tr>
-<tr class="separator:a82bb05ba2e71bcf41f991da46853bad7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acfadc92851b8cb4ff9571aa797e07584" id="r_acfadc92851b8cb4ff9571aa797e07584"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceprotocol_1_1game_1_1GameProtocol.html#acfadc92851b8cb4ff9571aa797e07584">protocol::game::GameProtocol::shutdown</a> () noexcept</td></tr>
-<tr class="memdesc:acfadc92851b8cb4ff9571aa797e07584"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shutdown the game protocol and the underlying core.  <br /></td></tr>
-<tr class="separator:acfadc92851b8cb4ff9571aa797e07584"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9e31e3918d2366ee2d8b3eb8b946c5de" id="r_a9e31e3918d2366ee2d8b3eb8b946c5de"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceprotocol_1_1game_1_1GameProtocol.html#a9e31e3918d2366ee2d8b3eb8b946c5de">protocol::game::GameProtocol::start_io</a> ()</td></tr>
-<tr class="memdesc:a9e31e3918d2366ee2d8b3eb8b946c5de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start the underlying <a class="el" href="classprotocol_1_1Protocol.html" title="Singleton core class responsible for low-level UDP messaging.">Protocol</a> IO loop (non-blocking, spawns thread).  <br /></td></tr>
-<tr class="separator:a9e31e3918d2366ee2d8b3eb8b946c5de"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ae30c729a1c4790454dfde7dc3ef426" id="r_a6ae30c729a1c4790454dfde7dc3ef426"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceprotocol_1_1game_1_1GameProtocol.html#a6ae30c729a1c4790454dfde7dc3ef426">protocol::game::GameProtocol::stop_io</a> ()</td></tr>
-<tr class="memdesc:a6ae30c729a1c4790454dfde7dc3ef426"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop the underlying <a class="el" href="classprotocol_1_1Protocol.html" title="Singleton core class responsible for low-level UDP messaging.">Protocol</a> IO loop and join the IO thread.  <br /></td></tr>
-<tr class="separator:a6ae30c729a1c4790454dfde7dc3ef426"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa38f33e4ebd168cee00f869e7e7aa27e" id="r_aa38f33e4ebd168cee00f869e7e7aa27e"><td class="memItemLeft" align="right" valign="top">std::error_code&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceprotocol_1_1game_1_1GameProtocol.html#aa38f33e4ebd168cee00f869e7e7aa27e">protocol::game::GameProtocol::send_create_entity</a> (const <a class="el" href="namespaceprotocol_1_1game.html#structprotocol_1_1game_1_1payload__create__entity__t">payload_create_entity_t</a> &amp;entity, <a class="el" href="namespaceprotocol.html#a1d4d9634cbc99b8530d0d75ce961f0bc">protocol::flag_t</a> reliability=<a class="el" href="namespaceprotocol.html#a1d4d9634cbc99b8530d0d75ce961f0bcadca71020b5250fb240f15e926d203a80">protocol::flag_t::RELIABLE_UNORDERED</a>) noexcept</td></tr>
-<tr class="memdesc:aa38f33e4ebd168cee00f869e7e7aa27e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a CREATE_ENTITY message to all endpoints (server -&gt; client).  <br /></td></tr>
-<tr class="separator:aa38f33e4ebd168cee00f869e7e7aa27e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa8f508b457ddd2060b5412a9a9e581e4" id="r_aa8f508b457ddd2060b5412a9a9e581e4"><td class="memItemLeft" align="right" valign="top">std::error_code&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceprotocol_1_1game_1_1GameProtocol.html#aa8f508b457ddd2060b5412a9a9e581e4">protocol::game::GameProtocol::send_move_entity</a> (const <a class="el" href="namespaceprotocol_1_1game.html#structprotocol_1_1game_1_1payload__move__entity__t">payload_move_entity_t</a> &amp;mv, <a class="el" href="namespaceprotocol.html#a1d4d9634cbc99b8530d0d75ce961f0bc">protocol::flag_t</a> reliability=<a class="el" href="namespaceprotocol.html#a1d4d9634cbc99b8530d0d75ce961f0bca6e257e645974b9086ed66e9465e2d80c">protocol::flag_t::UNRELIABLE</a>) noexcept</td></tr>
-<tr class="memdesc:aa8f508b457ddd2060b5412a9a9e581e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a MOVE_ENTITY message to all endpoints (server -&gt; client).  <br /></td></tr>
-<tr class="separator:aa8f508b457ddd2060b5412a9a9e581e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa9c9d45e9cf073dcf8c011b22e19de8e" id="r_aa9c9d45e9cf073dcf8c011b22e19de8e"><td class="memItemLeft" align="right" valign="top">std::error_code&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceprotocol_1_1game_1_1GameProtocol.html#aa9c9d45e9cf073dcf8c011b22e19de8e">protocol::game::GameProtocol::send_destroy_entity</a> (const <a class="el" href="namespaceprotocol_1_1game.html#structprotocol_1_1game_1_1payload__destroy__entity__t">payload_destroy_entity_t</a> &amp;del, <a class="el" href="namespaceprotocol.html#a1d4d9634cbc99b8530d0d75ce961f0bc">protocol::flag_t</a> reliability=<a class="el" href="namespaceprotocol.html#a1d4d9634cbc99b8530d0d75ce961f0bcadca71020b5250fb240f15e926d203a80">protocol::flag_t::RELIABLE_UNORDERED</a>) noexcept</td></tr>
-<tr class="memdesc:aa9c9d45e9cf073dcf8c011b22e19de8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a DESTROY_ENTITY message to a remote endpoint (server -&gt; client).  <br /></td></tr>
-<tr class="separator:aa9c9d45e9cf073dcf8c011b22e19de8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a568213b32c7300ea2ca80770aeb9cbb8" id="r_a568213b32c7300ea2ca80770aeb9cbb8"><td class="memItemLeft" align="right" valign="top">std::error_code&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceprotocol_1_1game_1_1GameProtocol.html#a568213b32c7300ea2ca80770aeb9cbb8">protocol::game::GameProtocol::send_player_input</a> (const protocol::udp::endpoint &amp;server, const <a class="el" href="namespaceprotocol_1_1game.html#structprotocol_1_1game_1_1payload__player__input__t">payload_player_input_t</a> &amp;input, <a class="el" href="namespaceprotocol.html#a1d4d9634cbc99b8530d0d75ce961f0bc">protocol::flag_t</a> reliability=<a class="el" href="namespaceprotocol.html#a1d4d9634cbc99b8530d0d75ce961f0bca6e257e645974b9086ed66e9465e2d80c">protocol::flag_t::UNRELIABLE</a>) noexcept</td></tr>
-<tr class="memdesc:a568213b32c7300ea2ca80770aeb9cbb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a PLAYER_INPUT message to the server (client -&gt; server).  <br /></td></tr>
-<tr class="separator:a568213b32c7300ea2ca80770aeb9cbb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5c42ad6e21117fe90f45248305193678" id="r_a5c42ad6e21117fe90f45248305193678"><td class="memItemLeft" align="right" valign="top">std::error_code&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceprotocol_1_1game_1_1GameProtocol.html#a5c42ad6e21117fe90f45248305193678">protocol::game::GameProtocol::send_raw</a> (uint16_t message_type, const <a class="el" href="namespaceprotocol.html#a36cf479faef07d87627d9391e2a5b172">protocol::byte_buffer_t</a> &amp;payload, <a class="el" href="namespaceprotocol.html#a1d4d9634cbc99b8530d0d75ce961f0bc">protocol::flag_t</a> reliability=<a class="el" href="namespaceprotocol.html#a1d4d9634cbc99b8530d0d75ce961f0bcadca71020b5250fb240f15e926d203a80">protocol::flag_t::RELIABLE_UNORDERED</a>, const std::optional&lt; udp::endpoint &gt; &amp;remote=std::nullopt) noexcept</td></tr>
-<tr class="memdesc:a5c42ad6e21117fe90f45248305193678"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a raw application-level message with explicit options.  <br /></td></tr>
-<tr class="separator:a5c42ad6e21117fe90f45248305193678"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a130c676aa88671a77987fa551982edf2" id="r_a130c676aa88671a77987fa551982edf2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceprotocol_1_1game_1_1GameProtocol.html#a130c676aa88671a77987fa551982edf2">protocol::game::GameProtocol::is_event</a> () noexcept</td></tr>
-<tr class="memdesc:a130c676aa88671a77987fa551982edf2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Non-blocking probe: returns true if the underlying <a class="el" href="classprotocol_1_1Protocol.html" title="Singleton core class responsible for low-level UDP messaging.">Protocol</a> has an event available.  <br /></td></tr>
-<tr class="separator:a130c676aa88671a77987fa551982edf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aca3a7b71f716d0f7a2946611a79e8927" id="r_aca3a7b71f716d0f7a2946611a79e8927"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceprotocol_1_1game_1_1GameProtocol.html#aca3a7b71f716d0f7a2946611a79e8927">protocol::game::GameProtocol::wait_event</a> (<a class="el" href="namespaceprotocol.html#a24eb210fbfd12862d023154ee78599bc">protocol::milliseconds</a> timeout) noexcept</td></tr>
-<tr class="memdesc:aca3a7b71f716d0f7a2946611a79e8927"><td class="mdescLeft">&#160;</td><td class="mdescRight">Blocking probe: wait up to timeout for an event at the protocol layer.  <br /></td></tr>
-<tr class="separator:aca3a7b71f716d0f7a2946611a79e8927"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7d2c97816e355b078f53915f2bde1910" id="r_a7d2c97816e355b078f53915f2bde1910"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceprotocol_1_1game_1_1GameProtocol.html#a7d2c97816e355b078f53915f2bde1910">protocol::game::GameProtocol::get_event</a> (<a class="el" href="namespaceprotocol_1_1game.html#structprotocol_1_1game_1_1game__event__t">game_event_t</a> &amp;out_event) noexcept</td></tr>
-<tr class="memdesc:a7d2c97816e355b078f53915f2bde1910"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve and convert a core event into a <a class="el" href="namespaceprotocol_1_1game.html#structprotocol_1_1game_1_1game__event__t" title="Top-level game event exposed by GameProtocol.">game_event_t</a>.  <br /></td></tr>
-<tr class="separator:a7d2c97816e355b078f53915f2bde1910"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0d915e98b8e2191ae722639b170e73ea" id="r_a0d915e98b8e2191ae722639b170e73ea"><td class="memItemLeft" align="right" valign="top">std::error_code&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceprotocol_1_1game_1_1GameProtocol.html#a0d915e98b8e2191ae722639b170e73ea">protocol::game::GameProtocol::request_connect</a> (const protocol::udp::endpoint &amp;server, const std::optional&lt; std::string &gt; &amp;optional_client_name=std::nullopt) noexcept</td></tr>
-<tr class="memdesc:a0d915e98b8e2191ae722639b170e73ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a CONNECT_REQ message to a server (client-side convenience).  <br /></td></tr>
-<tr class="separator:a0d915e98b8e2191ae722639b170e73ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6166096a5bdde85f3a776d18a6557ead" id="r_a6166096a5bdde85f3a776d18a6557ead"><td class="memItemLeft" align="right" valign="top">std::error_code&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceprotocol_1_1game_1_1GameProtocol.html#a6166096a5bdde85f3a776d18a6557ead">protocol::game::GameProtocol::request_disconnect</a> (const protocol::udp::endpoint &amp;server) noexcept</td></tr>
-<tr class="memdesc:a6166096a5bdde85f3a776d18a6557ead"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a DISCONNECT_REQ message to a server (client-side convenience).  <br /></td></tr>
-<tr class="separator:a6166096a5bdde85f3a776d18a6557ead"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a65d178b72ee4697a3b58b9a2c8804f04" id="r_a65d178b72ee4697a3b58b9a2c8804f04"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceprotocol_1_1game_1_1GameProtocol.html#a65d178b72ee4697a3b58b9a2c8804f04">protocol::game::GameProtocol::process_pending</a> (<a class="el" href="namespaceprotocol.html#aeab09fcfc801d74e8e1cb9f98c6e0fed">protocol::steady_timepoint</a> now) noexcept</td></tr>
-<tr class="memdesc:a65d178b72ee4697a3b58b9a2c8804f04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Process pending reliable sends (wrapper around <a class="el" href="classprotocol_1_1Protocol.html#a1f5c7e92400fdd8ceb1dcfd4d970402b" title="Process pending sends and perform retransmissions if necessary.">Protocol::process_pending</a>).  <br /></td></tr>
-<tr class="separator:a65d178b72ee4697a3b58b9a2c8804f04"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af62e8bf8a8b950387d61a40765f3e1ab" id="r_af62e8bf8a8b950387d61a40765f3e1ab"><td class="memItemLeft" align="right" valign="top">std::optional&lt; uint32_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceprotocol_1_1game_1_1GameProtocol.html#af62e8bf8a8b950387d61a40765f3e1ab">protocol::game::GameProtocol::get_rtt_ms</a> () noexcept</td></tr>
-<tr class="memdesc:af62e8bf8a8b950387d61a40765f3e1ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the most recent RTT estimate (ms) from the core.  <br /></td></tr>
-<tr class="separator:af62e8bf8a8b950387d61a40765f3e1ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6b86005f5f4bd786540b71c1c02c4285" id="r_a6b86005f5f4bd786540b71c1c02c4285"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceprotocol_1_1game_1_1GameProtocol.html#a6b86005f5f4bd786540b71c1c02c4285">protocol::game::GameProtocol::get_packet_loss_rate</a> () noexcept</td></tr>
-<tr class="memdesc:a6b86005f5f4bd786540b71c1c02c4285"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get current packet loss estimate [0.0 .  <br /></td></tr>
-<tr class="separator:a6b86005f5f4bd786540b71c1c02c4285"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:a9ca743b761dd2c06095aab93a9203bc9" id="r_a9ca743b761dd2c06095aab93a9203bc9"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceasge_1_1net.html#a9ca743b761dd2c06095aab93a9203bc9">asge::net::Packet</a> = std::vector&lt; std::uint8_t &gt;</td></tr>
+<tr class="separator:a9ca743b761dd2c06095aab93a9203bc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>High-level game protocol facade (header only). </p>
-<dl class="section since"><dt>Since</dt><dd>0.1 :: </dd></dl>
-<dl class="section see"><dt>See also</dt><dd>Core/Protocol.hpp, <a class="el" href="GameProtocolTypes_8hpp.html" title="Game-level protocol type definitions (payloads, game enums).">GameProtocolTypes.hpp</a></dd></dl>
-<p><a class="el" href="namespaceGameProtocol.html" title="Facade exposing game-level send/poll APIs.">GameProtocol</a> is a small singleton facade built on the low-level <a class="el" href="classprotocol_1_1Protocol.html" title="Singleton core class responsible for low-level UDP messaging.">protocol::Protocol</a>. It offers convenience functions to send the game-level messages declared in <a class="el" href="GameProtocolTypes_8hpp.html" title="Game-level protocol type definitions (payloads, game enums).">GameProtocolTypes.hpp</a> and a polling API (is_event / wait_event) returning game-level events. The implementation (cpp) is responsible for packing payload structures into raw bytes and for translating core events into game_event_t instances. </p>
+<hr/><h2 class="groupheader">Class Documentation</h2>
+<a name="structasge_1_1net_1_1GameProtocol_1_1Header" id="structasge_1_1net_1_1GameProtocol_1_1Header"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structasge_1_1net_1_1GameProtocol_1_1Header">&#9670;&#160;</a></span>asge::net::GameProtocol::Header</h2>
 
-<p class="definition">Definition in file <a class="el" href="GameProtocol_8hpp_source.html">GameProtocol.hpp</a>.</p>
-</div></div><!-- contents -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct asge::net::GameProtocol::Header</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock">
+<p class="definition">Definition at line <a class="el" href="GameProtocol_8hpp_source.html#l00032">32</a> of file <a class="el" href="GameProtocol_8hpp_source.html">GameProtocol.hpp</a>.</p>
+</div><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Collaboration diagram for asge::net::GameProtocol::Header:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="structasge_1_1net_1_1GameProtocol_1_1Header__coll__graph.svg" width="240" height="156"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<table class="fieldtable">
+<tr><th colspan="3">Class Members</th></tr>
+<tr><td class="fieldtype">
+<a id="a4523582a487e920e7fd33e761544e2e1" name="a4523582a487e920e7fd33e761544e2e1"></a>uint8_t</td>
+<td class="fieldname">
+channel = 0</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a9cd8c05532cf6f84e6e99318a0bc581b" name="a9cd8c05532cf6f84e6e99318a0bc581b"></a>uint8_t</td>
+<td class="fieldname">
+flags = 0</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="abd73f7c0beae2e6a2425191e9b40dcdf" name="abd73f7c0beae2e6a2425191e9b40dcdf"></a>uint8_t</td>
+<td class="fieldname">
+msg_type = 0</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a5491a51af3983a3c6255b179c8da73a2" name="a5491a51af3983a3c6255b179c8da73a2"></a>uint32_t</td>
+<td class="fieldname">
+seq = 0</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a3c7c74160ea18a2ffa0c11a00c49d560" name="a3c7c74160ea18a2ffa0c11a00c49d560"></a>uint8_t</td>
+<td class="fieldname">
+version = 1</td>
+<td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_4ab6b4cc6a7edbff49100e9123df213f.html">Common</a></li><li class="navelem"><a class="el" href="dir_0c46bea6f7828b69cb89944491bbedbe.html">Protocol</a></li><li class="navelem"><a class="el" href="GameProtocol_8hpp.html">GameProtocol.hpp</a></li>
+    <li class="navelem"><a class="el" href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li><li class="navelem"><a class="el" href="dir_1b9403644f1f2359659496c948d71b7e.html">asge</a></li><li class="navelem"><a class="el" href="dir_23b0c4c81238164c4b752561086c543c.html">src</a></li><li class="navelem"><a class="el" href="dir_11b0971a8ae6c356dc689b63b0b68e48.html">network</a></li><li class="navelem"><a class="el" href="GameProtocol_8hpp.html">GameProtocol.hpp</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>

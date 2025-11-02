@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['optype_0',['OpType',['../classrtype_1_1client_1_1SceneManager.html#aac2608885cc04b2ef126ee7fc1d1a757',1,'rtype::client::SceneManager']]]
+  ['sceneflag_0',['SceneFlag',['../namespaceasge_1_1scene.html#a4cce66eb7a237a85bf1157ca6125d162',1,'asge::scene']]],
+  ['scenestate_1',['SceneState',['../namespaceasge_1_1scene.html#a394511a85816ba014b7cee9fa839df62',1,'asge::scene']]]
 ];

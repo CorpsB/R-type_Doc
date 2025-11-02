@@ -1,6 +1,21 @@
 var searchData=
 [
-  ['no_5fentity_0',['NO_ENTITY',['../namespaceprotocol_1_1game.html#a58051a0f9c1c650d605d71a73e9437bda756c8b6813764a1770874884a506fbec',1,'protocol::game']]],
-  ['no_5finput_1',['NO_INPUT',['../namespaceprotocol_1_1game.html#aa65405265af95e2ad16de5c1bf6499c8a3e7642875935b439557a64eb4392cecd',1,'protocol::game']]],
-  ['none_2',['none',['../classrtype_1_1client_1_1SceneManager.html#aac2608885cc04b2ef126ee7fc1d1a757a6adf97f83acf6453d4a6a4b1070f3754',1,'rtype::client::SceneManager::None'],['../namespacearcade_1_1types.html#a2c3e28c91563a74b2591aecbcb9c1bceac7d7ca1ce66d0fda28ea41e233b78084',1,'arcade::types::NONE'],['../namespaceprotocol_1_1game.html#ac979c495edcb78eaa548b5c7be45f118ab50339a10e1de285ac99d4c3990b8693',1,'protocol::game::NONE'],['../namespaceprotocol.html#af260499ef5bec7e4600e7a352cffd70cab50339a10e1de285ac99d4c3990b8693',1,'protocol::NONE']]]
+  ['k_0',['K',['../namespaceasge_1_1input.html#a5265976dcf7eba98927ad1471333b1cdaa5f3c6a11b03839d46af9fb43c97c188',1,'asge::input']]],
+  ['key_5fcount_1',['KEY_COUNT',['../namespaceasge_1_1input.html#a5265976dcf7eba98927ad1471333b1cdab1e6bc2f8d330abe1a6be2a1779f3e32',1,'asge::input']]],
+  ['kp_5f0_2',['KP_0',['../namespaceasge_1_1input.html#a5265976dcf7eba98927ad1471333b1cdaffb2ce8868d49c78376bf7e76c88fd52',1,'asge::input']]],
+  ['kp_5f1_3',['KP_1',['../namespaceasge_1_1input.html#a5265976dcf7eba98927ad1471333b1cdafdcbdc22f7e22388bf5905c290bcfe4b',1,'asge::input']]],
+  ['kp_5f2_4',['KP_2',['../namespaceasge_1_1input.html#a5265976dcf7eba98927ad1471333b1cda2d0bfa737eccfce7842cd2230eed6712',1,'asge::input']]],
+  ['kp_5f3_5',['KP_3',['../namespaceasge_1_1input.html#a5265976dcf7eba98927ad1471333b1cda766b4a88cba7645629bac70fd01d8275',1,'asge::input']]],
+  ['kp_5f4_6',['KP_4',['../namespaceasge_1_1input.html#a5265976dcf7eba98927ad1471333b1cda9c56f942b051ba23447e108e16a8b23b',1,'asge::input']]],
+  ['kp_5f5_7',['KP_5',['../namespaceasge_1_1input.html#a5265976dcf7eba98927ad1471333b1cdadc271d081ca9fcbefdc42998313398d8',1,'asge::input']]],
+  ['kp_5f6_8',['KP_6',['../namespaceasge_1_1input.html#a5265976dcf7eba98927ad1471333b1cda2091809ab6bdbc0a1975bf61d6099748',1,'asge::input']]],
+  ['kp_5f7_9',['KP_7',['../namespaceasge_1_1input.html#a5265976dcf7eba98927ad1471333b1cda71f42e8faf0fb7cb14174c8481461c00',1,'asge::input']]],
+  ['kp_5f8_10',['KP_8',['../namespaceasge_1_1input.html#a5265976dcf7eba98927ad1471333b1cda62e75b78c155e8549c5c5edb434a7757',1,'asge::input']]],
+  ['kp_5f9_11',['KP_9',['../namespaceasge_1_1input.html#a5265976dcf7eba98927ad1471333b1cda3d548437292c0cd1662fc30d420f2c27',1,'asge::input']]],
+  ['kp_5fadd_12',['KP_ADD',['../namespaceasge_1_1input.html#a5265976dcf7eba98927ad1471333b1cda30808a0391df7790292aa5c13f6195e4',1,'asge::input']]],
+  ['kp_5fdecimal_13',['KP_DECIMAL',['../namespaceasge_1_1input.html#a5265976dcf7eba98927ad1471333b1cda1a9c94725005bc4759507db8acc8da33',1,'asge::input']]],
+  ['kp_5fdivide_14',['KP_DIVIDE',['../namespaceasge_1_1input.html#a5265976dcf7eba98927ad1471333b1cda7c333963ed187368820c5343b355e5bc',1,'asge::input']]],
+  ['kp_5fenter_15',['KP_ENTER',['../namespaceasge_1_1input.html#a5265976dcf7eba98927ad1471333b1cdadea24610606fb34c587a8fe8ed8f8389',1,'asge::input']]],
+  ['kp_5fmultiply_16',['KP_MULTIPLY',['../namespaceasge_1_1input.html#a5265976dcf7eba98927ad1471333b1cda2140df7839a3713724b35168defcc975',1,'asge::input']]],
+  ['kp_5fsubtract_17',['KP_SUBTRACT',['../namespaceasge_1_1input.html#a5265976dcf7eba98927ad1471333b1cda17de1e647789892e1fb512bf04db4866',1,'asge::input']]]
 ];

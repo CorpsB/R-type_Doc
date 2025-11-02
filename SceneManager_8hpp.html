@@ -99,109 +99,78 @@ $(document).ready(function(){initNavTree('SceneManager_8hpp.html',''); initResiz
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a> &#124;
-<a href="#typedef-members">Typedefs</a>  </div>
+<a href="#namespaces">Namespaces</a>  </div>
   <div class="headertitle"><div class="title">SceneManager.hpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-
-<p>Declaration of the <a class="el" href="classrtype_1_1client_1_1SceneManager.html">rtype::client::SceneManager</a> class.  
-<a href="#details">More...</a></p>
-<div class="textblock"><code>#include &lt;memory&gt;</code><br />
-<code>#include &lt;vector&gt;</code><br />
-<code>#include &lt;functional&gt;</code><br />
-<code>#include &lt;string&gt;</code><br />
-<code>#include &quot;<a class="el" href="IScene_8hpp_source.html">../IScene.hpp</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="IScene_8hpp_source.html">IScene.hpp</a>&quot;</code><br />
+<code>#include &lt;iostream&gt;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for SceneManager.hpp:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="SceneManager_8hpp__incl.svg" width="468" height="183"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="SceneManager_8hpp__incl.svg" width="100%" height="547"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> This graph shows which files directly or indirectly include this file:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="SceneManager_8hpp__dep__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="SceneManager_8hpp__dep__incl.svg" width="100%" height="437"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 </div>
 <p><a href="SceneManager_8hpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtype_1_1client_1_1SceneManager.html">rtype::client::SceneManager</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Manages and orchestrates a stack of active scenes.  <a href="classrtype_1_1client_1_1SceneManager.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasge_1_1scene_1_1SceneManager.html">asge::scene::SceneManager</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:structrtype_1_1client_1_1SceneManager_1_1PendingOp" id="r_structrtype_1_1client_1_1SceneManager_1_1PendingOp"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtype_1_1client_1_1SceneManager.html#structrtype_1_1client_1_1SceneManager_1_1PendingOp">rtype::client::SceneManager::PendingOp</a></td></tr>
-<tr class="memdesc:structrtype_1_1client_1_1SceneManager_1_1PendingOp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a deferred scene transition operation.  <a href="classrtype_1_1client_1_1SceneManager.html#structrtype_1_1client_1_1SceneManager_1_1PendingOp">More...</a><br /></td></tr>
-<tr class="separator:structrtype_1_1client_1_1SceneManager_1_1PendingOp"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structasge_1_1scene_1_1SceneManager_1_1PendingOp" id="r_structasge_1_1scene_1_1SceneManager_1_1PendingOp"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasge_1_1scene_1_1SceneManager.html#structasge_1_1scene_1_1SceneManager_1_1PendingOp">asge::scene::SceneManager::PendingOp</a></td></tr>
+<tr class="separator:structasge_1_1scene_1_1SceneManager_1_1PendingOp"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:namespacertype" id="r_namespacertype"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacertype.html">rtype</a></td></tr>
+<tr class="memitem:namespaceasge" id="r_namespaceasge"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceasge.html">asge</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespacertype_1_1client" id="r_namespacertype_1_1client"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacertype_1_1client.html">rtype::client</a></td></tr>
+<tr class="memitem:namespaceasge_1_1scene" id="r_namespaceasge_1_1scene"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceasge_1_1scene.html">asge::scene</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:a49afbe5e5776f0287ed2896d5dfa8c1b" id="r_a49afbe5e5776f0287ed2896d5dfa8c1b"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacertype_1_1client.html#a49afbe5e5776f0287ed2896d5dfa8c1b">rtype::client::ScenePtr</a> = std::unique_ptr&lt; <a class="el" href="classrtype_1_1client_1_1IScene.html">IScene</a> &gt;</td></tr>
-<tr class="separator:a49afbe5e5776f0287ed2896d5dfa8c1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Declaration of the <a class="el" href="classrtype_1_1client_1_1SceneManager.html">rtype::client::SceneManager</a> class. </p>
-<dl class="section since"><dt>Since</dt><dd>1.0</dd></dl>
-<dl class="section see"><dt>See also</dt><dd>IScene</dd></dl>
-<p>This file defines the <a class="el" href="classrtype_1_1client_1_1SceneManager.html">rtype::client::SceneManager</a>, which owns and manages the lifecycle of all game scenes. The manager maintains a stack-based structure where the scene at the back of the stack is always the active one.</p>
-<p>Responsibilities:</p><ul>
-<li>Handle scene transitions (push, pop, replace) safely via deferred operations.</li>
-<li>Maintain a stack of unique scenes, each implementing the IScene interface.</li>
-<li>Provide lifecycle synchronization between scenes (enter, exit, pause, resume).</li>
-</ul>
-<p>All modifications to the stack are deferred and processed in batch through flushTransitions() to ensure stability during updates.</p>
-<dl class="section note"><dt>Note</dt><dd>This class follows the singleton pattern. </dd></dl>
-<dl class="section warning"><dt>Warning</dt><dd>Scene transitions should only occur between update cycles. </dd></dl>
-
-<p class="definition">Definition in file <a class="el" href="SceneManager_8hpp_source.html">SceneManager.hpp</a>.</p>
-</div><hr/><h2 class="groupheader">Class Documentation</h2>
-<a name="structrtype_1_1client_1_1SceneManager_1_1PendingOp" id="structrtype_1_1client_1_1SceneManager_1_1PendingOp"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#structrtype_1_1client_1_1SceneManager_1_1PendingOp">&#9670;&#160;</a></span>rtype::client::SceneManager::PendingOp</h2>
+<hr/><h2 class="groupheader">Class Documentation</h2>
+<a name="structasge_1_1scene_1_1SceneManager_1_1PendingOp" id="structasge_1_1scene_1_1SceneManager_1_1PendingOp"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structasge_1_1scene_1_1SceneManager_1_1PendingOp">&#9670;&#160;</a></span>asge::scene::SceneManager::PendingOp</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">struct rtype::client::SceneManager::PendingOp</td>
+          <td class="memname">struct asge::scene::SceneManager::PendingOp</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="textblock"><p>Represents a deferred scene transition operation. </p>
-<p>For push/replace, <a class="el" href="classrtype_1_1client_1_1SceneManager.html#adf4493378094ef84d45d840f4f2c95ca">scene</a> holds ownership of the new scene. For pop, <a class="el" href="classrtype_1_1client_1_1SceneManager.html#adf4493378094ef84d45d840f4f2c95ca">scene</a> is null. </p>
-
-<p class="definition">Definition at line <a class="el" href="SceneManager_8hpp_source.html#l00184">184</a> of file <a class="el" href="SceneManager_8hpp_source.html">SceneManager.hpp</a>.</p>
+<div class="textblock">
+<p class="definition">Definition at line <a class="el" href="SceneManager_8hpp_source.html#l00035">35</a> of file <a class="el" href="SceneManager_8hpp_source.html">SceneManager.hpp</a>.</p>
 </div><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Collaboration diagram for rtype::client::SceneManager::PendingOp:</div>
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Collaboration diagram for asge::scene::SceneManager::PendingOp:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="structrtype_1_1client_1_1SceneManager_1_1PendingOp__coll__graph.svg" width="207" height="111"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="structasge_1_1scene_1_1SceneManager_1_1PendingOp__coll__graph.svg" width="206" height="111"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <table class="fieldtable">
 <tr><th colspan="3">Class Members</th></tr>
 <tr><td class="fieldtype">
-<a id="adf4493378094ef84d45d840f4f2c95ca" name="adf4493378094ef84d45d840f4f2c95ca"></a><a class="el" href="namespacertype_1_1client.html#a49afbe5e5776f0287ed2896d5dfa8c1b">ScenePtr</a></td>
+<a id="adfe20d2adaf8f76ae855ab27d53fd6d0" name="adfe20d2adaf8f76ae855ab27d53fd6d0"></a><a class="el" href="namespaceasge_1_1scene.html#acf580ea2d5b4178738a21e5551ba8c22">ScenePtr</a></td>
 <td class="fieldname">
 scene { nullptr }</td>
 <td class="fielddoc">
-Optional scene for push/replace. </td></tr>
+</td></tr>
 <tr><td class="fieldtype">
-<a id="a97a4705660c09f99dc1e68b4af230a33" name="a97a4705660c09f99dc1e68b4af230a33"></a><a class="el" href="classrtype_1_1client_1_1SceneManager.html#aac2608885cc04b2ef126ee7fc1d1a757">OpType</a></td>
+<a id="aaa5f339850789b4ba8e2f87d8bf730d5" name="aaa5f339850789b4ba8e2f87d8bf730d5"></a><a class="el" href="classasge_1_1scene_1_1SceneManager.html#a6de430ad97d835bba550736fb6c9dc1d">OpType</a></td>
 <td class="fieldname">
-type { <a class="el" href="classrtype_1_1client_1_1SceneManager.html#aac2608885cc04b2ef126ee7fc1d1a757a6adf97f83acf6453d4a6a4b1070f3754">OpType::None</a> }</td>
+type { <a class="el" href="classasge_1_1scene_1_1SceneManager.html#a6de430ad97d835bba550736fb6c9dc1da6adf97f83acf6453d4a6a4b1070f3754">OpType::None</a> }</td>
 <td class="fielddoc">
-Type of transition. </td></tr>
+</td></tr>
 </table>
 
 </div>
@@ -211,7 +180,7 @@ Type of transition. </td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_922c588100a187620fdc1533bc178f73.html">Client</a></li><li class="navelem"><a class="el" href="dir_2a1d840b44edd7220955ce3ad88544ff.html">Game</a></li><li class="navelem"><a class="el" href="dir_6d3a1248d4d1a57f06cbbf884accac1e.html">Scenes</a></li><li class="navelem"><a class="el" href="dir_227d0287e3da2effa18e292445aeb0cc.html">SceneManager</a></li><li class="navelem"><a class="el" href="SceneManager_8hpp.html">SceneManager.hpp</a></li>
+    <li class="navelem"><a class="el" href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li><li class="navelem"><a class="el" href="dir_1b9403644f1f2359659496c948d71b7e.html">asge</a></li><li class="navelem"><a class="el" href="dir_23b0c4c81238164c4b752561086c543c.html">src</a></li><li class="navelem"><a class="el" href="dir_9659621fb3b5604b0d2912e187ac7934.html">scene</a></li><li class="navelem"><a class="el" href="SceneManager_8hpp.html">SceneManager.hpp</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>

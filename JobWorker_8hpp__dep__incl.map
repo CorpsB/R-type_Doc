@@ -1,0 +1,11 @@
+<map id="JobWorker.hpp" name="JobWorker.hpp">
+<area shape="rect" id="Node000001" title="Worker thread that executes queued jobs." alt="" coords="155,5,269,31"/>
+<area shape="rect" id="Node000002" href="$JobManager_8hpp.html" title="Multithreaded job scheduler." alt="" coords="77,79,203,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="192,43,154,80,150,77,188,39"/>
+<area shape="rect" id="Node000005" href="$JobWorker_8cpp.html" title="Implements the worker thread logic for the job system." alt="" coords="227,79,341,104"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="236,39,274,77,270,80,232,43"/>
+<area shape="rect" id="Node000003" href="$EngineCore_8cpp.html" title="Implements the engine bootstrap and runtime loop." alt="" coords="5,152,128,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="120,116,80,154,77,150,116,112"/>
+<area shape="rect" id="Node000004" href="$JobManager_8cpp.html" title="Implements the job scheduler responsible for dispatching work." alt="" coords="152,152,277,177"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="164,111,204,150,201,154,160,115"/>
+</map>

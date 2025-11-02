@@ -1,0 +1,33 @@
+<map id="RenderManager.hpp" name="RenderManager.hpp">
+<area shape="rect" id="Node000001" title="High&#45;level renderer service implementing the IRenderer interface using Raylib." alt="" coords="276,5,428,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,79,83,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="303,33,97,81,96,75,302,28"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="107,79,173,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="319,33,187,77,186,72,317,28"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="400,225,467,251"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="340,33,313,60,285,97,275,117,269,137,270,157,278,176,300,198,328,214,358,224,387,230,386,236,356,229,326,219,297,202,274,179,265,158,264,137,270,115,281,94,309,56,337,29"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="847,225,905,251"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="428,23,551,38,692,63,759,80,818,100,865,123,896,150,902,166,902,183,892,214,887,212,897,182,897,167,891,154,862,128,816,105,758,85,691,68,550,44,428,29"/>
+<area shape="rect" id="Node000006" href="$IRenderer_8hpp.html" title="Minimal high&#45;level renderer interface (simple draw helpers)." alt="" coords="389,79,501,104"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="369,29,421,68,418,72,365,33"/>
+<area shape="rect" id="Node000007" href="$RendererTypes_8hpp.html" title="Declares fundamental POD types used by the renderer subsystem." alt="" coords="299,152,567,177"/>
+<area shape="poly" id="edge20_Node000001_Node000007" title=" " alt="" coords="356,30,364,64,380,103,394,123,411,141,407,144,390,126,375,105,359,66,351,32"/>
+<area shape="rect" id="Node000011" href="$RenderDriver_8hpp.html" title="Minimal Raylib&#45;backed driver exposing only high&#45;level draw ops." alt="" coords="538,79,673,104"/>
+<area shape="poly" id="edge15_Node000001_Node000011" title=" " alt="" coords="393,28,552,72,550,77,392,33"/>
+<area shape="poly" id="edge6_Node000006_Node000004" title=" " alt="" coords="390,101,363,107,335,118,310,133,290,153,285,167,286,179,295,189,308,199,346,215,387,226,386,231,344,220,306,204,291,193,282,181,279,166,286,151,307,129,333,113,361,102,389,95"/>
+<area shape="poly" id="edge7_Node000006_Node000005" title=" " alt="" coords="502,98,700,128,826,150,842,163,854,179,870,211,866,214,850,182,838,167,824,154,699,133,501,103"/>
+<area shape="poly" id="edge8_Node000006_Node000007" title=" " alt="" coords="446,105,440,139,435,138,441,104"/>
+<area shape="rect" id="Node000008" href="$IStorage_8hpp.html" title="Interface defining storage operations for files and directories." alt="" coords="643,152,813,177"/>
+<area shape="poly" id="edge10_Node000006_Node000008" title=" " alt="" coords="491,101,670,146,669,151,490,107"/>
+<area shape="poly" id="edge9_Node000007_Node000004" title=" " alt="" coords="436,178,436,212,431,212,431,178"/>
+<area shape="poly" id="edge14_Node000008_Node000004" title=" " alt="" coords="681,180,481,228,479,223,680,175"/>
+<area shape="poly" id="edge11_Node000008_Node000005" title=" " alt="" coords="753,175,841,217,838,222,751,180"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="623,225,686,251"/>
+<area shape="poly" id="edge12_Node000008_Node000009" title=" " alt="" coords="718,180,678,218,675,214,714,176"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="710,225,797,251"/>
+<area shape="poly" id="edge13_Node000008_Node000010" title=" " alt="" coords="735,177,747,212,742,213,730,179"/>
+<area shape="poly" id="edge16_Node000011_Node000004" title=" " alt="" coords="608,104,602,140,594,161,582,179,560,198,534,213,481,231,480,226,532,208,557,194,578,176,589,158,597,139,602,104"/>
+<area shape="poly" id="edge17_Node000011_Node000005" title=" " alt="" coords="673,96,788,115,839,130,858,139,871,150,880,165,884,181,884,212,879,212,879,181,875,167,867,154,855,144,837,135,787,120,672,101"/>
+<area shape="poly" id="edge18_Node000011_Node000007" title=" " alt="" coords="579,106,475,149,473,144,577,102"/>
+<area shape="poly" id="edge19_Node000011_Node000008" title=" " alt="" coords="626,102,698,143,695,147,624,106"/>
+</map>

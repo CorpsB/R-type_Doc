@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['justification_0',['ECS Architecture Justification',['../md_Doc_2ecs.html',1,'']]]
+  ['technical _20 comparative_20study_0',['Technical &amp; Comparative Study',['../md_doc_2tec.html',1,'']]]
 ];

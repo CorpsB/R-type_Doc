@@ -1,0 +1,58 @@
+<map id="asge::net::GameProtocol::writeHeader" name="asge::net::GameProtocol::writeHeader">
+<area shape="rect" id="Node000001" title=" " alt="" coords="1759,287,2029,313"/>
+<area shape="rect" id="Node000002" href="$classasge_1_1net_1_1GameProtocol.html#aa82271347c64ebbec92cf7c3968c87a9" title=" " alt="" coords="1400,83,1655,123"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1872,278,1844,245,1806,207,1760,168,1710,137,1654,118,1656,113,1712,132,1763,164,1810,203,1848,242,1876,275"/>
+<area shape="rect" id="Node000003" href="$classasge_1_1net_1_1GameProtocol.html#aa85bed1a93c3e147ae0c84cf9109cefe" title=" " alt="" coords="1344,147,1711,173"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="1865,281,1797,232,1755,208,1710,188,1665,175,1667,170,1712,183,1757,203,1800,228,1868,276"/>
+<area shape="rect" id="Node000004" href="$classasge_1_1net_1_1GameProtocol.html#a5959bfae733c11f4c9624e3239e28d67" title=" " alt="" coords="1368,262,1687,287"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="1744,292,1687,288,1687,283,1745,287"/>
+<area shape="rect" id="Node000017" href="$classasge_1_1net_1_1GameProtocol.html#ab76f8360999fabdb1e8b30b3c2a79ad7" title=" " alt="" coords="1368,311,1687,337"/>
+<area shape="poly" id="edge16_Node000001_Node000017" title=" " alt="" coords="1745,312,1687,316,1687,311,1744,307"/>
+<area shape="rect" id="Node000021" href="$classasge_1_1net_1_1GameProtocol.html#ab22e44c61639d7f98c5f1f9ff396aef4" title=" " alt="" coords="1390,197,1665,237"/>
+<area shape="poly" id="edge24_Node000001_Node000021" title=" " alt="" coords="1838,286,1710,252,1652,240,1653,235,1711,247,1839,281"/>
+<area shape="rect" id="Node000023" href="$classasge_1_1net_1_1GameProtocol.html#a36b3eee0fed3041b89aa9b98ee39757a" title="Encode a client&#39;s input state into a packet." alt="" coords="1389,361,1666,386"/>
+<area shape="poly" id="edge27_Node000001_Node000023" title=" " alt="" coords="1838,319,1711,351,1636,363,1635,358,1710,345,1837,314"/>
+<area shape="rect" id="Node000025" href="$classasge_1_1net_1_1GameProtocol.html#a356b7d557733908f4ac0cd56ae84b10f" title=" " alt="" coords="1378,410,1677,435"/>
+<area shape="poly" id="edge29_Node000001_Node000025" title=" " alt="" coords="1865,323,1797,363,1755,384,1711,401,1667,413,1666,407,1710,396,1753,379,1794,359,1862,318"/>
+<area shape="rect" id="Node000026" href="$classasge_1_1net_1_1GameProtocol.html#a0cf705309df07bab1c157a332fd5c0b5" title=" " alt="" coords="1379,459,1676,485"/>
+<area shape="poly" id="edge30_Node000001_Node000026" title=" " alt="" coords="1874,325,1807,389,1761,423,1712,450,1677,462,1675,457,1710,446,1759,419,1803,385,1870,321"/>
+<area shape="rect" id="Node000005" href="$namespaceasge_1_1network_1_1EngineProtocol.html#a73adf06ac92d8fdd5d64795ec9f74a6f" title=" " alt="" coords="1077,240,1296,280"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="1354,270,1296,267,1296,262,1354,265"/>
+<area shape="rect" id="Node000006" href="$classasge_1_1world_1_1systems_1_1PlayerSystem.html#ab02da798fa09456a2775f9d767f573e5" title="Updates the direction vector based on input." alt="" coords="730,69,989,109"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="1158,231,1102,175,1067,147,1028,124,988,108,990,104,1030,119,1070,143,1106,171,1162,228"/>
+<area shape="rect" id="Node000007" href="$classasge_1_1world_1_1systems_1_1CollisionWorld.html#a7c896cc156887f9009e2423c87c9142e" title="Applies collision side effects for the entity pair." alt="" coords="729,5,990,45"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="1152,232,1114,191,1075,144,1062,119,1055,97,1046,78,1028,59,989,40,992,35,1031,55,1050,75,1059,95,1066,117,1080,141,1118,188,1156,228"/>
+<area shape="rect" id="Node000010" href="$classasge_1_1world_1_1systems_1_1PlayerSystem.html#add448aba3f5a39fb57856db79c4e2be9" title="Manages firing behaviour, spawning projectiles when needed." alt="" coords="716,247,1003,273"/>
+<area shape="poly" id="edge9_Node000005_Node000010" title=" " alt="" coords="1064,263,1003,263,1003,257,1064,257"/>
+<area shape="rect" id="Node000011" href="$classasge_1_1world_1_1systems_1_1PlayerSystem.html#a267382b40e6f1685024f0c6e4b25ca0a" title="Keeps the player within the virtual screen bounds." alt="" coords="730,133,989,173"/>
+<area shape="poly" id="edge10_Node000005_Node000011" title=" " alt="" coords="1137,236,1085,210,1028,188,985,176,987,171,1030,183,1088,206,1139,231"/>
+<area shape="rect" id="Node000012" href="$classasge_1_1EngineCore.html#a62dcf0a61da12adf7e32010e936af492" title="Run the main loop until shutdown is requested." alt="" coords="762,297,957,322"/>
+<area shape="poly" id="edge11_Node000005_Node000012" title=" " alt="" coords="1064,281,1030,287,946,299,945,294,1029,281,1063,276"/>
+<area shape="rect" id="Node000014" href="$classasge_1_1script_1_1LevelSpawner.html#a88faf0b422c02212eeb263e2ac3672ea" title="Synchronously spawns all remaining entries regardless of progress." alt="" coords="761,347,957,387"/>
+<area shape="poly" id="edge13_Node000005_Node000014" title=" " alt="" coords="1138,289,1087,314,1030,336,958,354,957,349,1029,331,1085,309,1136,284"/>
+<area shape="rect" id="Node000015" href="$classasge_1_1world_1_1systems_1_1MovementSystem.html#aebcb04ee0b51c16c6c5731df9a7b9065" title="Applies movement to all tracked entities." alt="" coords="689,198,1029,223"/>
+<area shape="poly" id="edge14_Node000005_Node000015" title=" " alt="" coords="1064,243,1029,237,952,226,953,221,1030,232,1064,237"/>
+<area shape="rect" id="Node000016" href="$classasge_1_1script_1_1LevelSpawner.html#a533a2d3a403f6c0f012c31bc4ec0cd23" title="Progressively spawns entries whose distance has been reached." alt="" coords="735,411,984,437"/>
+<area shape="poly" id="edge15_Node000005_Node000016" title=" " alt="" coords="1127,289,1102,304,1079,322,1065,342,1058,362,1049,382,1031,401,1009,413,985,421,983,416,1007,408,1028,397,1045,379,1053,361,1060,340,1075,318,1099,299,1124,284"/>
+<area shape="rect" id="Node000008" href="$classasge_1_1world_1_1systems_1_1CollisionWorld.html#a0ce7df174a3ec469447bbaa40258b964" title="Detects collisions and triggers collision effects." alt="" coords="380,5,641,45"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="715,28,641,28,641,23,715,23"/>
+<area shape="rect" id="Node000009" href="$classasge_1_1world_1_1systems_1_1CollisionSystem.html#a5dfdfa3306f0e6817e0e276967095318" title="Evaluates collisions for all tracked entities." alt="" coords="5,13,332,38"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="366,28,332,28,332,23,366,23"/>
+<area shape="rect" id="Node000013" href="$client_2main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="483,297,538,322"/>
+<area shape="poly" id="edge12_Node000012_Node000013" title=" " alt="" coords="748,312,538,312,538,307,748,307"/>
+<area shape="rect" id="Node000018" href="$namespaceasge_1_1network_1_1EngineProtocol.html#a82866969b04ac179cc98621ee9dc33be" title=" " alt="" coords="1077,332,1296,372"/>
+<area shape="poly" id="edge17_Node000017_Node000018" title=" " alt="" coords="1360,340,1296,346,1296,340,1359,335"/>
+<area shape="poly" id="edge18_Node000018_Node000010" title=" " alt="" coords="1134,328,1084,306,1029,287,978,275,980,270,1030,281,1086,301,1136,324"/>
+<area shape="poly" id="edge20_Node000018_Node000012" title=" " alt="" coords="1063,339,956,325,957,319,1064,333"/>
+<area shape="poly" id="edge22_Node000018_Node000014" title=" " alt="" coords="1064,360,958,365,957,360,1064,355"/>
+<area shape="poly" id="edge23_Node000018_Node000016" title=" " alt="" coords="1105,379,1078,387,1030,401,962,414,961,409,1029,396,1077,381,1103,373"/>
+<area shape="rect" id="Node000019" href="$namespaceasge_1_1script_1_1ActionHandler.html#a67e0f9f3210802ec140c6f80c851716b" title="Handle world service actions (create/teleport)." alt="" coords="761,461,958,501"/>
+<area shape="poly" id="edge19_Node000018_Node000019" title=" " alt="" coords="1088,381,1079,386,1064,402,1056,418,1048,436,1031,452,996,468,959,478,957,473,994,463,1028,447,1043,432,1051,416,1059,399,1076,382,1085,376"/>
+<area shape="rect" id="Node000020" href="$namespaceasge_1_1network_1_1EngineProtocol.html#a6104887041a66d95a0860567afcd1ae4" title=" " alt="" coords="750,525,969,565"/>
+<area shape="poly" id="edge21_Node000018_Node000020" title=" " alt="" coords="1084,382,1079,386,1067,401,1060,417,1057,450,1053,483,1045,500,1031,515,1002,533,970,544,968,539,1000,529,1028,511,1041,497,1048,482,1051,449,1055,416,1062,399,1075,382,1080,378"/>
+<area shape="rect" id="Node000022" href="$namespaceasge_1_1network_1_1EngineProtocol.html#ac1918e99d170882ee8d38b61decd099d" title=" " alt="" coords="1077,91,1296,131"/>
+<area shape="poly" id="edge25_Node000021_Node000022" title=" " alt="" coords="1380,197,1343,187,1279,161,1223,133,1225,129,1281,156,1345,181,1381,192"/>
+<area shape="poly" id="edge26_Node000022_Node000007" title=" " alt="" coords="1119,89,1029,60,978,48,979,43,1030,55,1121,84"/>
+<area shape="rect" id="Node000024" href="$classasge_1_1input_1_1InputManager.html#a7d672871d1847f1cde32af085111ec40" title="Updates player&#45;specific bindings or configuration hooks." alt="" coords="1091,396,1283,436"/>
+<area shape="poly" id="edge28_Node000023_Node000024" title=" " alt="" coords="1412,390,1283,407,1283,401,1412,385"/>
+</map>

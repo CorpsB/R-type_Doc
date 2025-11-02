@@ -1,7 +1,0 @@
-<map id="protocol::pending_send_t" name="protocol::pending_send_t">
-<area shape="rect" id="Node000001" title="Minimal container for outgoing reliable packet awaiting ACK." alt="" coords="5,381,217,501"/>
-<area shape="rect" id="Node000002" href="$namespaceprotocol.html#structprotocol_1_1packet__t" title="Payload delivered when a packet is received." alt="" coords="26,233,197,319"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="114,319,114,365,109,365,109,319"/>
-<area shape="rect" id="Node000003" href="$namespaceprotocol.html#structprotocol_1_1packet__header__t" title="Fixed&#45;size packet header at the beginning of each UDP datagram." alt="" coords="19,5,204,171"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="114,171,114,217,109,217,109,171"/>
-</map>

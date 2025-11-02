@@ -1,4 +1,4 @@
 var InputManager_8hpp =
 [
-    [ "rtype::client::InputManager", "classrtype_1_1client_1_1InputManager.html", "classrtype_1_1client_1_1InputManager" ]
+    [ "asge::input::InputManager", "classasge_1_1input_1_1InputManager.html", "classasge_1_1input_1_1InputManager" ]
 ];

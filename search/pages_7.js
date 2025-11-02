@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['game_20rendering_20and_20input_20system_0',['Why We Chose Raylib for the Game Rendering and Input System',['../md_Doc_2RayLib.html',1,'']]],
-  ['guide_1',['Contributing Guide',['../md_Doc_2Contributing.html',1,'']]]
+  ['r‑type_20project_20–_20multiplayer_20shooter_20and_20game_20engine_0',['R‑Type Project – Multiplayer Shooter and Game Engine',['../index.html',1,'']]]
 ];

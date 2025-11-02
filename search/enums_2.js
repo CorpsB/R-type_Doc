@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['direction_0',['Direction',['../namespacearcade_1_1types.html#a486c77632eb0d8d22b5e643dc4d55300',1,'arcade::types']]]
+  ['keycode_0',['KeyCode',['../namespaceasge_1_1input.html#a5265976dcf7eba98927ad1471333b1cd',1,'asge::input']]]
 ];

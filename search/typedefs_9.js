@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['sceneptr_0',['ScenePtr',['../namespacertype_1_1client.html#a49afbe5e5776f0287ed2896d5dfa8c1b',1,'rtype::client']]],
-  ['steady_5ftimepoint_1',['steady_timepoint',['../namespaceprotocol.html#aeab09fcfc801d74e8e1cb9f98c6e0fed',1,'protocol']]]
+  ['udp_0',['udp',['../classasge_1_1network_1_1UDPChannel.html#a4474c4d6b161415abe5ca74ec61190cb',1,'asge::network::UDPChannel::udp'],['../namespaceasge_1_1network.html#affafa4a1077acced083d768786b4a180',1,'asge::network::udp']]]
 ];

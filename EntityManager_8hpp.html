@@ -104,18 +104,20 @@ $(document).ready(function(){initNavTree('EntityManager_8hpp.html',''); initResi
 </div><!--header-->
 <div class="contents">
 
-<p>Entity creation and lifecycle manager for the ECS.  
+<p>Manages lifecycle and signatures of ECS entities.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;<a class="el" href="Macro_8hpp_source.html">Macro.hpp</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="Macro_8hpp_source.html">../Macro.hpp</a>&quot;</code><br />
 <code>#include &lt;bitset&gt;</code><br />
 <code>#include &lt;cstdint&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
+<code>#include &lt;algorithm&gt;</code><br />
+<code>#include &quot;<a class="el" href="Error_8hpp_source.html">../../error/Error.hpp</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for EntityManager.hpp:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="EntityManager_8hpp__incl.svg" width="343" height="183"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="EntityManager_8hpp__incl.svg" width="100%" height="437"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> This graph shows which files directly or indirectly include this file:</div>
@@ -129,71 +131,82 @@ $(document).ready(function(){initNavTree('EntityManager_8hpp.html',''); initResi
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:structrtype_1_1ecs_1_1EntityData" id="r_structrtype_1_1ecs_1_1EntityData"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacertype_1_1ecs.html#structrtype_1_1ecs_1_1EntityData">rtype::ecs::EntityData</a></td></tr>
-<tr class="memdesc:structrtype_1_1ecs_1_1EntityData"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metadata stored per entity.  <a href="namespacertype_1_1ecs.html#structrtype_1_1ecs_1_1EntityData">More...</a><br /></td></tr>
-<tr class="separator:structrtype_1_1ecs_1_1EntityData"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtype_1_1ecs_1_1EntityManager.html">rtype::ecs::EntityManager</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Manages entity allocation, destruction and signatures.  <a href="classrtype_1_1ecs_1_1EntityManager.html#details">More...</a><br /></td></tr>
+<tr class="memitem:structasge_1_1world_1_1EntityData" id="r_structasge_1_1world_1_1EntityData"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceasge_1_1world.html#structasge_1_1world_1_1EntityData">asge::world::EntityData</a></td></tr>
+<tr class="memdesc:structasge_1_1world_1_1EntityData"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores metadata associated with an ECS entity.  <a href="namespaceasge_1_1world.html#structasge_1_1world_1_1EntityData">More...</a><br /></td></tr>
+<tr class="separator:structasge_1_1world_1_1EntityData"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasge_1_1world_1_1EntityManager.html">asge::world::EntityManager</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles allocation, recycling, and signature access for entities.  <a href="classasge_1_1world_1_1EntityManager.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:namespacertype" id="r_namespacertype"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacertype.html">rtype</a></td></tr>
+<tr class="memitem:namespaceasge" id="r_namespaceasge"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceasge.html">asge</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespacertype_1_1ecs" id="r_namespacertype_1_1ecs"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacertype_1_1ecs.html">rtype::ecs</a></td></tr>
+<tr class="memitem:namespaceasge_1_1world" id="r_namespaceasge_1_1world"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceasge_1_1world.html">asge::world</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Entity creation and lifecycle manager for the ECS. </p>
-<dl class="section since"><dt>Since</dt><dd>0.1</dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="ComponentManager_8hpp.html" title="Manager for registering and accessing component arrays in the ECS.">ComponentManager.hpp</a>, <a class="el" href="ComponentArray_8hpp.html" title="Component storage implementation for the ECS.">ComponentArray.hpp</a></dd></dl>
-<p>EntityManager is responsible for allocating and recycling entity identifiers, tracking per-entity generation counters, activity flags and component signatures. It provides simple creation/destruction semantics and exposes signature accessors used by the system manager to match entities against system requirements.</p>
-<dl class="section note"><dt>Note</dt><dd>The implementation uses a free-list of entity ids and pre-allocates storage for MAX_ENTITIES (see <a class="el" href="Macro_8hpp.html" title="Global configuration macros for the ECS (component/entity limits).">Macro.hpp</a>). </dd></dl>
+<div class="textblock"><p>Manages lifecycle and signatures of ECS entities. </p>
+<dl class="section version"><dt>Version</dt><dd>1.0 </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2025-03-26</dd></dl>
+<p>EntityManager controls:</p><ul>
+<li>Entity allocation/recycling (with ID generation)</li>
+<li>Tracking if entities are active</li>
+<li>Entity component signatures stored as <code>bitset&lt;MAX_COMPONENTS&gt;</code></li>
+</ul>
+<p>It uses a free list of IDs for efficient reuse and memory locality.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classasge_1_1world_1_1World.html" title="Central ECS access point handling entity/component/system logic.">asge::world::World</a> </dd>
+<dd>
+<a class="el" href="classasge_1_1world_1_1ComponentManager.html" title="Manages component type registration and per-entity component storage.">asge::world::ComponentManager</a> </dd></dl>
 
 <p class="definition">Definition in file <a class="el" href="EntityManager_8hpp_source.html">EntityManager.hpp</a>.</p>
 </div><hr/><h2 class="groupheader">Class Documentation</h2>
-<a name="structrtype_1_1ecs_1_1EntityData" id="structrtype_1_1ecs_1_1EntityData"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#structrtype_1_1ecs_1_1EntityData">&#9670;&#160;</a></span>rtype::ecs::EntityData</h2>
+<a name="structasge_1_1world_1_1EntityData" id="structasge_1_1world_1_1EntityData"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structasge_1_1world_1_1EntityData">&#9670;&#160;</a></span>asge::world::EntityData</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">struct rtype::ecs::EntityData</td>
+          <td class="memname">struct asge::world::EntityData</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="textblock"><p>Metadata stored per entity. </p>
-<p><a class="el" href="namespacertype_1_1ecs.html#structrtype_1_1ecs_1_1EntityData" title="Metadata stored per entity.">EntityData</a> holds the generation counter (used to detect stale ids), the signature bitset describing attached components and an active flag indicating whether the entity is currently alive. </p>
+<div class="textblock"><p>Stores metadata associated with an ECS entity. </p>
+<ul>
+<li><code>generation</code> increments every time an entity ID is reused</li>
+<li><code>signature</code> determines compatibility with systems</li>
+<li><code>active</code> indicates whether the entity is currently in use </li>
+</ul>
 
-<p class="definition">Definition at line <a class="el" href="EntityManager_8hpp_source.html#l00044">44</a> of file <a class="el" href="EntityManager_8hpp_source.html">EntityManager.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EntityManager_8hpp_source.html#l00046">46</a> of file <a class="el" href="EntityManager_8hpp_source.html">EntityManager.hpp</a>.</p>
 </div><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Collaboration diagram for rtype::ecs::EntityData:</div>
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Collaboration diagram for asge::world::EntityData:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="structrtype_1_1ecs_1_1EntityData__coll__graph.svg" width="250" height="131"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="structasge_1_1world_1_1EntityData__coll__graph.svg" width="250" height="131"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <table class="fieldtable">
 <tr><th colspan="3">Class Members</th></tr>
 <tr><td class="fieldtype">
-<a id="a7948ec57ce866d676111c8dd0aebc0ed" name="a7948ec57ce866d676111c8dd0aebc0ed"></a>bool</td>
+<a id="a69d1ef09ecdd41e78d64c6213f66128d" name="a69d1ef09ecdd41e78d64c6213f66128d"></a>bool</td>
 <td class="fieldname">
 active = false</td>
 <td class="fielddoc">
-whether the entity is active </td></tr>
+Indicates if the entity is currently alive. </td></tr>
 <tr><td class="fieldtype">
-<a id="a68bec92838f987958d2d42ff3f1dcb29" name="a68bec92838f987958d2d42ff3f1dcb29"></a>uint32_t</td>
+<a id="a846139050fc20427dfaaa101b8e49823" name="a846139050fc20427dfaaa101b8e49823"></a>uint32_t</td>
 <td class="fieldname">
 generation = 0</td>
 <td class="fielddoc">
-generation counter for recycled ids </td></tr>
+Number of times this entity ID has been reused. </td></tr>
 <tr><td class="fieldtype">
-<a id="a30039fa3396fccb74129e4abcc08ce53" name="a30039fa3396fccb74129e4abcc08ce53"></a>bitset&lt; <a class="el" href="Macro_8hpp.html#a6d8c910a1fdb6d4762a05f7250e64322">MAX_COMPONENTS</a> &gt;</td>
+<a id="afd7d9f31969b104686d501fb6673e08f" name="afd7d9f31969b104686d501fb6673e08f"></a>bitset&lt; <a class="el" href="Macro_8hpp.html#a6d8c910a1fdb6d4762a05f7250e64322">MAX_COMPONENTS</a> &gt;</td>
 <td class="fieldname">
 signature</td>
 <td class="fielddoc">
-component signature bitset </td></tr>
+Component inclusion mask. </td></tr>
 </table>
 
 </div>
@@ -203,7 +216,7 @@ component signature bitset </td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_4ab6b4cc6a7edbff49100e9123df213f.html">Common</a></li><li class="navelem"><a class="el" href="dir_42f24aa63ec14c5bf2eb77ea89af9ccb.html">ECS</a></li><li class="navelem"><a class="el" href="EntityManager_8hpp.html">EntityManager.hpp</a></li>
+    <li class="navelem"><a class="el" href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li><li class="navelem"><a class="el" href="dir_1b9403644f1f2359659496c948d71b7e.html">asge</a></li><li class="navelem"><a class="el" href="dir_23b0c4c81238164c4b752561086c543c.html">src</a></li><li class="navelem"><a class="el" href="dir_2e6acacfe42ed85a3d5b28ea6e2cb62a.html">world</a></li><li class="navelem"><a class="el" href="dir_a021536fdd619e7a6fd8194118aef3e0.html">EntityManager</a></li><li class="navelem"><a class="el" href="EntityManager_8hpp.html">EntityManager.hpp</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>

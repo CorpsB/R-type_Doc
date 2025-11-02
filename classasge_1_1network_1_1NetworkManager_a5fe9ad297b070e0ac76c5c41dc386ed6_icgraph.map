@@ -1,0 +1,11 @@
+<map id="asge::network::NetworkManager::armAndSend" name="asge::network::NetworkManager::armAndSend">
+<area shape="rect" id="Node000001" title=" " alt="" coords="609,37,844,77"/>
+<area shape="rect" id="Node000002" href="$classasge_1_1network_1_1NetworkManager.html#a60bdcec8886944afe010d38e4ae73eb6" title="Process a raw inbound datagram for a specific connection." alt="" coords="327,5,561,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="595,45,561,41,562,36,596,40"/>
+<area shape="rect" id="Node000004" href="$classasge_1_1network_1_1NetworkManager.html#ab2167e47d86344577e3b97c6d24ccd4f" title="Send a reliable packet to a specific connection." alt="" coords="327,69,561,109"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="596,75,562,79,561,73,595,69"/>
+<area shape="rect" id="Node000003" href="$classasge_1_1network_1_1NetworkManager.html#a54cc95be606c5e61cc72f3d42ba50ebc" title="Drain the transport and dispatch inbound packets." alt="" coords="9,13,275,38"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="313,28,275,28,275,23,313,23"/>
+<area shape="rect" id="Node000005" href="$classasge_1_1network_1_1NetworkManager.html#aab8d5403d0bdb61f4856173bcdfaba46" title="Send a payload on a logical channel." alt="" coords="5,77,279,102"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="313,92,279,92,279,87,313,87"/>
+</map>

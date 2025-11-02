@@ -1,0 +1,84 @@
+<map id="asge::script::LevelSpawner::spawnAll" name="asge::script::LevelSpawner::spawnAll">
+<area shape="rect" id="Node000001" title="Synchronously spawns all remaining entries regardless of progress." alt="" coords="5,342,201,382"/>
+<area shape="rect" id="Node000002" href="$namespaceasge_1_1script_1_1EntityFactory.html#a849abca2c7f7e288c0f4c6b934dfb18e" title="Create an entity from a parsed script handle." alt="" coords="580,895,771,935"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="127,380,645,883,641,887,123,383"/>
+<area shape="rect" id="Node000018" href="$namespaceasge_1_1network_1_1EngineProtocol.html#a73adf06ac92d8fdd5d64795ec9f74a6f" title=" " alt="" coords="249,239,468,279"/>
+<area shape="poly" id="edge17_Node000001_Node000018" title=" " alt="" coords="153,339,294,282,296,287,155,344"/>
+<area shape="rect" id="Node000033" href="$namespaceasge_1_1network_1_1EngineProtocol.html#a82866969b04ac179cc98621ee9dc33be" title=" " alt="" coords="249,342,468,382"/>
+<area shape="poly" id="edge40_Node000001_Node000033" title=" " alt="" coords="202,359,236,359,236,364,202,364"/>
+<area shape="rect" id="Node000003" href="$classasge_1_1script_1_1EntityFactory_1_1EntityBuilder.html#aca48706aff2d5a0677b7a9e300fc644b" title="Builds or completes the entity and attaches configured components." alt="" coords="951,991,1141,1031"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="736,932,883,976,938,989,937,994,882,981,734,937"/>
+<area shape="rect" id="Node000004" href="$structasge_1_1Services.html#af7c99d591b82892004d16a419dda4738" title=" " alt="" coords="964,457,1128,482"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="677,894,694,817,710,764,731,707,757,647,791,590,832,537,881,493,914,476,950,467,951,472,916,480,884,497,836,541,795,593,762,650,735,709,715,766,700,818,683,895"/>
+<area shape="rect" id="Node000005" href="$classasge_1_1debug_1_1IDebug.html#ab16de8ad522314d2aea6eb483b4a5ae0" title="Logs a message with a given severity level." alt="" coords="955,506,1137,532"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="683,893,709,836,752,756,809,670,844,630,881,593,933,558,988,534,990,539,936,562,884,597,847,633,814,674,756,759,714,838,687,896"/>
+<area shape="rect" id="Node000006" href="$classasge_1_1script_1_1IScript.html#ae6af52dc023cf849b373a94a74f6a5ae" title="Inform the script system that a new entity was created." alt="" coords="931,1055,1161,1095"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="704,933,782,987,831,1016,884,1040,919,1052,917,1057,882,1045,829,1021,779,992,701,937"/>
+<area shape="rect" id="Node000007" href="$structasge_1_1Services.html#a3952fa5d313b3e8fc3dc2f8a9b6e3858" title=" " alt="" coords="963,1376,1129,1401"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="682,935,697,1016,712,1072,732,1133,758,1196,792,1257,834,1313,884,1361,915,1377,949,1386,948,1391,913,1382,881,1365,830,1317,788,1260,753,1198,727,1135,706,1073,692,1017,677,936"/>
+<area shape="rect" id="Node000008" href="$classasge_1_1script_1_1EntityFactory_1_1EntityBuilder.html#a063afacaef2e44ad5166bc23b16eb1bf" title="Adds optional damage component data." alt="" coords="943,607,1149,647"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="684,893,712,844,755,779,812,712,845,682,881,657,929,637,931,642,884,661,848,686,816,716,759,782,716,847,689,896"/>
+<area shape="rect" id="Node000009" href="$classasge_1_1script_1_1EntityFactory_1_1EntityBuilder.html#a4990e5542c1d1dc7858a67446b425cea" title="Adds optional direction component data." alt="" coords="941,671,1151,711"/>
+<area shape="poly" id="edge8_Node000002_Node000009" title=" " alt="" coords="690,893,721,855,765,808,820,760,881,720,927,703,929,708,884,725,823,765,769,812,725,859,694,896"/>
+<area shape="rect" id="Node000010" href="$classasge_1_1script_1_1EntityFactory_1_1EntityBuilder.html#ad36886030d756b02a63adb5b63d9e220" title="Adds optional frequency component data." alt="" coords="937,735,1155,775"/>
+<area shape="poly" id="edge9_Node000002_Node000010" title=" " alt="" coords="701,892,779,838,829,809,882,784,923,771,925,776,884,789,831,814,782,843,704,897"/>
+<area shape="rect" id="Node000011" href="$classasge_1_1script_1_1EntityFactory_1_1EntityBuilder.html#a91edc040c8c6a90d3bcffa7a74edd0f1" title="Adds optional health component data." alt="" coords="949,799,1143,839"/>
+<area shape="poly" id="edge10_Node000002_Node000011" title=" " alt="" coords="734,892,882,848,935,836,936,841,883,853,736,897"/>
+<area shape="rect" id="Node000012" href="$classasge_1_1script_1_1EntityFactory_1_1EntityBuilder.html#a7de40dbe280c5449ce214ae5bb414611" title="Adds optional hitbox component data." alt="" coords="949,863,1143,903"/>
+<area shape="poly" id="edge11_Node000002_Node000012" title=" " alt="" coords="771,904,935,890,936,895,771,909"/>
+<area shape="rect" id="Node000013" href="$classasge_1_1script_1_1EntityFactory_1_1EntityBuilder.html#a1f04ab8063d836cd52efb2b23e3ac8ee" title="Adds optional name component data." alt="" coords="951,927,1141,967"/>
+<area shape="poly" id="edge12_Node000002_Node000013" title=" " alt="" coords="771,920,937,935,937,940,771,926"/>
+<area shape="rect" id="Node000014" href="$classasge_1_1script_1_1EntityFactory_1_1EntityBuilder.html#a661156d666452490b66280112ec770f2" title="Adds optional position component data." alt="" coords="945,1119,1147,1159"/>
+<area shape="poly" id="edge13_Node000002_Node000014" title=" " alt="" coords="694,933,725,971,769,1018,823,1065,884,1104,932,1122,930,1127,881,1109,820,1069,765,1022,721,974,690,937"/>
+<area shape="rect" id="Node000015" href="$classasge_1_1script_1_1EntityFactory_1_1EntityBuilder.html#a82903f49f7dd833978502e166a15e5a1" title="Adds optional speed component data." alt="" coords="951,1183,1141,1223"/>
+<area shape="poly" id="edge14_Node000002_Node000015" title=" " alt="" coords="689,934,716,983,759,1047,816,1114,848,1143,884,1169,910,1181,938,1190,937,1195,908,1186,881,1173,845,1148,812,1117,755,1051,712,986,684,936"/>
+<area shape="rect" id="Node000016" href="$classasge_1_1script_1_1EntityFactory_1_1EntityBuilder.html#a00c49afe6bb0838ff79647208447a2b7" title="Adds optional sprite component data." alt="" coords="951,1247,1141,1287"/>
+<area shape="poly" id="edge15_Node000002_Node000016" title=" " alt="" coords="686,934,709,994,750,1076,777,1119,808,1162,844,1200,884,1233,910,1246,938,1256,936,1261,908,1251,881,1237,840,1204,804,1165,772,1122,745,1079,704,996,681,936"/>
+<area shape="rect" id="Node000017" href="$classasge_1_1script_1_1EntityFactory_1_1EntityBuilder.html#a419fe45489043b095c0364133465e00b" title="Sets the logical template identifier stored on the entity." alt="" coords="935,1311,1157,1351"/>
+<area shape="poly" id="edge16_Node000002_Node000017" title=" " alt="" coords="684,934,703,1005,741,1104,768,1157,801,1209,839,1256,884,1297,923,1316,920,1321,881,1301,835,1260,796,1212,763,1160,736,1106,698,1007,679,936"/>
+<area shape="rect" id="Node000019" href="$classasge_1_1net_1_1GameProtocol.html#a5959bfae733c11f4c9624e3239e28d67" title=" " alt="" coords="516,104,835,129"/>
+<area shape="poly" id="edge18_Node000018_Node000019" title=" " alt="" coords="403,236,632,132,634,137,405,241"/>
+<area shape="rect" id="Node000029" href="$structasge_1_1Services.html#a39c85be8eef19d04f1c430b7ccf89d0c" title=" " alt="" coords="587,224,764,249"/>
+<area shape="poly" id="edge34_Node000018_Node000029" title=" " alt="" coords="468,248,573,241,573,246,468,254"/>
+<area shape="rect" id="Node000030" href="$namespaceasge_1_1network_1_1EngineProtocol.html#a68d3134de9cd24d344f4c73df5a742be" title=" " alt="" coords="566,342,785,382"/>
+<area shape="poly" id="edge35_Node000018_Node000030" title=" " alt="" coords="420,276,517,308,599,335,597,340,515,313,419,281"/>
+<area shape="rect" id="Node000020" href="$classasge_1_1net_1_1GameProtocol.html#aacff2ac9baf8e1410c4abd2cc4a1b4e5" title=" " alt="" coords="883,205,1209,230"/>
+<area shape="poly" id="edge19_Node000019_Node000020" title=" " alt="" coords="724,126,986,199,985,204,722,132"/>
+<area shape="rect" id="Node000025" href="$classasge_1_1net_1_1GameProtocol.html#abbf747c9afd5f9fa6979a4c37adcde34" title=" " alt="" coords="1567,154,1837,180"/>
+<area shape="poly" id="edge33_Node000019_Node000025" title=" " alt="" coords="712,101,846,61,940,39,1047,20,1163,7,1283,4,1403,13,1462,24,1520,39,1568,60,1612,87,1680,143,1677,147,1609,92,1565,64,1518,44,1461,29,1402,18,1283,9,1163,12,1048,25,941,44,847,66,713,106"/>
+<area shape="rect" id="Node000026" href="$classasge_1_1net_1_1GameProtocol.html#a1cbf91d0162c449d69af1c422ce0c602" title=" " alt="" coords="1263,54,1513,80"/>
+<area shape="poly" id="edge32_Node000019_Node000026" title=" " alt="" coords="774,101,882,90,1075,77,1250,69,1250,74,1075,82,883,95,774,106"/>
+<area shape="rect" id="Node000028" href="$classasge_1_1net_1_1GameProtocol.html#a352b95ddf69b3fba2106b3a791326406" title=" " alt="" coords="911,104,1181,129"/>
+<area shape="poly" id="edge29_Node000019_Node000028" title=" " alt="" coords="835,114,896,114,896,119,835,119"/>
+<area shape="rect" id="Node000021" href="$classasge_1_1world_1_1World.html#a92acda9e7fe15d94d77627abd2f02482" title="Retrieves a pointer to a component owned by an entity." alt="" coords="1265,356,1511,381"/>
+<area shape="poly" id="edge20_Node000020_Node000021" title=" " alt="" coords="1077,228,1346,347,1344,352,1075,233"/>
+<area shape="rect" id="Node000022" href="$structasge_1_1Services.html#aea3119ef7b85846ba606b113cda3ae74" title=" " alt="" coords="1308,456,1468,481"/>
+<area shape="poly" id="edge21_Node000020_Node000022" title=" " alt="" coords="1094,228,1154,253,1184,271,1211,293,1229,319,1236,343,1243,367,1259,392,1299,424,1342,448,1340,452,1296,429,1255,395,1238,369,1231,344,1224,321,1207,297,1181,275,1151,257,1092,233"/>
+<area shape="rect" id="Node000023" href="$classasge_1_1net_1_1GameProtocol.html#a4b68b7d3e5018134512bcb390bf83c94" title=" " alt="" coords="1572,230,1832,256"/>
+<area shape="poly" id="edge22_Node000020_Node000023" title=" " alt="" coords="1210,221,1558,235,1558,240,1210,226"/>
+<area shape="rect" id="Node000024" href="$classasge_1_1net_1_1GameProtocol.html#af859068f1546609a5580a83ccd1d45f5" title=" " alt="" coords="1257,256,1519,281"/>
+<area shape="poly" id="edge23_Node000020_Node000024" title=" " alt="" coords="1133,228,1288,251,1287,256,1132,233"/>
+<area shape="poly" id="edge28_Node000020_Node000025" title=" " alt="" coords="1209,202,1552,176,1553,181,1210,208"/>
+<area shape="poly" id="edge26_Node000020_Node000026" title=" " alt="" coords="1172,202,1208,183,1218,173,1225,162,1231,138,1237,114,1244,101,1256,90,1266,83,1269,88,1259,94,1248,105,1242,116,1236,140,1230,164,1223,176,1211,188,1174,207"/>
+<area shape="rect" id="Node000027" href="$classasge_1_1net_1_1GameProtocol.html#ab07d94d47cc59dbd9ced31e957522937" title=" " alt="" coords="1267,104,1509,129"/>
+<area shape="poly" id="edge27_Node000020_Node000027" title=" " alt="" coords="1149,202,1208,183,1222,175,1232,165,1241,155,1256,146,1299,130,1300,135,1259,151,1245,160,1235,169,1225,179,1210,188,1151,207"/>
+<area shape="poly" id="edge24_Node000024_Node000023" title=" " alt="" coords="1519,255,1558,252,1558,257,1519,260"/>
+<area shape="poly" id="edge25_Node000024_Node000025" title=" " alt="" coords="1428,253,1648,181,1649,186,1430,258"/>
+<area shape="poly" id="edge30_Node000028_Node000026" title=" " alt="" coords="1134,101,1285,79,1286,84,1135,106"/>
+<area shape="poly" id="edge31_Node000028_Node000027" title=" " alt="" coords="1181,114,1253,114,1253,119,1181,119"/>
+<area shape="poly" id="edge36_Node000030_Node000004" title=" " alt="" coords="746,379,989,451,988,456,744,384"/>
+<area shape="poly" id="edge37_Node000030_Node000005" title=" " alt="" coords="702,380,779,437,830,468,884,492,942,508,940,513,882,497,827,472,776,441,699,384"/>
+<area shape="rect" id="Node000031" href="$structasge_1_1Services.html#aad40078261f2750ea0e3ee30b6fe6956" title=" " alt="" coords="957,306,1135,332"/>
+<area shape="poly" id="edge38_Node000030_Node000031" title=" " alt="" coords="785,346,943,328,944,333,785,352"/>
+<area shape="rect" id="Node000032" href="$classasge_1_1network_1_1INetwork.html#ac94ef6cdbb35ab91e68501175cf1f125" title="Send a data buffer to the remote peer." alt="" coords="936,356,1156,381"/>
+<area shape="poly" id="edge39_Node000030_Node000032" title=" " alt="" coords="785,361,922,363,922,369,785,366"/>
+<area shape="poly" id="edge45_Node000033_Node000021" title=" " alt="" coords="443,379,516,391,711,407,862,411,1014,404,1209,391,1301,380,1301,386,1210,396,1015,410,862,416,710,412,516,396,442,384"/>
+<area shape="poly" id="edge48_Node000033_Node000022" title=" " alt="" coords="403,379,489,418,606,464,742,509,813,527,883,542,974,556,1046,562,1118,557,1209,542,1248,531,1287,516,1352,485,1354,490,1289,521,1250,536,1210,547,1119,563,1046,567,974,561,882,547,812,533,741,514,604,469,487,422,401,384"/>
+<area shape="poly" id="edge46_Node000033_Node000029" title=" " alt="" coords="389,339,515,259,573,243,574,249,517,264,392,344"/>
+<area shape="poly" id="edge47_Node000033_Node000030" title=" " alt="" coords="468,359,552,359,552,364,468,364"/>
+<area shape="rect" id="Node000034" href="$classasge_1_1net_1_1GameProtocol.html#ab76f8360999fabdb1e8b30b3c2a79ad7" title=" " alt="" coords="516,273,835,298"/>
+<area shape="poly" id="edge41_Node000033_Node000034" title=" " alt="" coords="442,339,608,299,609,304,444,344"/>
+<area shape="poly" id="edge43_Node000034_Node000024" title=" " alt="" coords="835,279,1243,269,1244,274,835,284"/>
+<area shape="poly" id="edge44_Node000034_Node000026" title=" " alt="" coords="811,270,833,259,849,244,856,227,864,208,881,191,926,169,968,160,1007,158,1044,161,1082,165,1121,165,1162,157,1208,139,1223,128,1231,116,1240,102,1256,90,1274,82,1276,86,1259,94,1244,106,1236,119,1226,132,1211,144,1164,163,1121,170,1081,170,1044,166,1006,163,968,165,928,174,884,196,869,211,861,229,853,247,836,264,813,275"/>
+<area shape="poly" id="edge42_Node000034_Node000028" title=" " alt="" coords="815,271,833,259,845,247,852,234,856,205,861,175,868,160,881,146,903,132,905,137,884,150,872,163,866,177,862,206,857,235,850,250,836,264,818,275"/>
+</map>

@@ -1,9 +1,40 @@
 <map id="InputManager.hpp" name="InputManager.hpp">
-<area shape="rect" id="Node000001" title="Declaration of the rtype::client::InputManager class." alt="" coords="93,5,231,31"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="5,79,76,104"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="144,33,73,74,71,69,141,28"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="100,79,224,104"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="165,31,165,65,159,65,159,31"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="249,79,307,104"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="182,28,249,69,246,74,179,33"/>
+<area shape="rect" id="Node000001" title="Concrete InputManager implementing the IInput service." alt="" coords="511,5,649,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,79,72,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="511,28,321,49,91,81,86,82,85,77,90,76,320,44,510,23"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="235,225,301,251"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="511,26,432,32,345,43,267,59,237,69,215,81,190,102,174,124,170,148,178,176,198,200,225,217,222,221,195,204,174,179,164,149,170,122,186,98,212,76,234,64,265,54,344,38,431,27,510,21"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="739,79,802,104"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="612,28,728,71,726,76,610,33"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="827,79,904,104"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="626,28,814,75,813,80,625,33"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="928,79,992,104"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="650,27,770,48,915,76,914,81,769,53,649,33"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="1016,79,1131,104"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="650,26,1003,76,1002,81,649,31"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="325,225,384,251"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="510,23,454,28,390,38,324,55,261,81,235,95,216,109,201,127,188,153,184,165,187,176,203,185,234,197,313,222,311,227,233,202,200,190,183,179,179,165,183,151,197,124,212,105,232,91,259,76,322,50,389,33,453,23,510,18"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="198,152,295,177"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="511,28,382,48,324,63,286,81,274,93,265,108,254,139,249,137,260,106,270,90,282,77,322,57,381,42,510,23"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="547,225,671,251"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="589,30,602,56,617,92,627,134,628,178,620,213,615,212,623,177,622,135,612,94,598,58,584,32"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="695,225,758,251"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="594,29,635,77,683,150,717,212,712,214,678,152,631,80,590,33"/>
+<area shape="rect" id="Node000012" href="$IInput_8hpp.html" title="Public interface for the input service (polling, snapshots, queries)." alt="" coords="297,79,383,104"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="542,33,393,77,391,72,541,28"/>
+<area shape="rect" id="Node000013" href="$InputTypes_8hpp.html" title="Input&#45;related PODs (snapshots, per&#45;device state, pointer info)." alt="" coords="371,152,613,177"/>
+<area shape="poly" id="edge23_Node000001_Node000013" title=" " alt="" coords="581,32,574,66,557,105,540,127,521,145,517,141,536,124,552,103,568,64,576,30"/>
+<area shape="rect" id="Node000015" href="$InputDevice_8hpp.html" title="Abstract device&#45;level input class (keyboard/gamepad/touch)." alt="" coords="415,79,543,104"/>
+<area shape="poly" id="edge20_Node000001_Node000015" title=" " alt="" coords="565,33,508,73,505,68,562,28"/>
+<area shape="poly" id="edge12_Node000012_Node000003" title=" " alt="" coords="339,105,309,179,286,216,282,213,304,176,334,103"/>
+<area shape="poly" id="edge13_Node000012_Node000009" title=" " alt="" coords="327,106,274,146,271,141,323,102"/>
+<area shape="poly" id="edge14_Node000012_Node000013" title=" " alt="" coords="366,102,456,144,454,149,363,106"/>
+<area shape="poly" id="edge15_Node000013_Node000003" title=" " alt="" coords="457,180,315,225,313,220,455,175"/>
+<area shape="poly" id="edge19_Node000013_Node000008" title=" " alt="" coords="471,180,390,221,388,217,469,175"/>
+<area shape="poly" id="edge17_Node000013_Node000010" title=" " alt="" coords="512,175,580,216,577,220,509,180"/>
+<area shape="poly" id="edge18_Node000013_Node000011" title=" " alt="" coords="530,175,683,221,681,226,529,180"/>
+<area shape="rect" id="Node000014" title=" " alt="" coords="408,225,523,251"/>
+<area shape="poly" id="edge16_Node000013_Node000014" title=" " alt="" coords="490,179,477,214,472,212,485,177"/>
+<area shape="poly" id="edge21_Node000015_Node000009" title=" " alt="" coords="442,107,298,151,296,145,441,101"/>
+<area shape="poly" id="edge22_Node000015_Node000013" title=" " alt="" coords="483,104,490,138,485,139,478,105"/>
 </map>

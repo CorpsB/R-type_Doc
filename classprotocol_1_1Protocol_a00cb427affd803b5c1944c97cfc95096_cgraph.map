@@ -1,9 +1,0 @@
-<map id="protocol::Protocol::send_buffered_packet" name="protocol::Protocol::send_buffered_packet">
-<area shape="rect" id="Node000001" title="Post an asynchronous send for a prepared packet_t." alt="" coords="5,42,292,67"/>
-<area shape="rect" id="Node000002" href="$namespaceprotocol_1_1utils.html#afdcd44435a34419031d17e265fd32f4e" title="Convert endpoint to unique textual key &quot;ip:port&quot;." alt="" coords="340,5,516,45"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="269,39,326,33,326,39,270,45"/>
-<area shape="rect" id="Node000003" href="$Protocol_8cpp.html#a0bcd1b15290d25e7e16b5a42c8358ece" title="Serialize a packet_t into a contiguous send buffer with piggybacked ACK info." alt="" coords="349,70,507,95"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="276,65,336,71,335,76,275,70"/>
-<area shape="rect" id="Node000004" href="$namespaceprotocol_1_1utils.html#addad475c1126b31b54c883b294769ac6" title="Convert a host&#45;order 32&#45;bit value to network byte order (big&#45;endian)." alt="" coords="564,70,787,95"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="507,80,550,80,550,85,507,85"/>
-</map>

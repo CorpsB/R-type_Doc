@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['input_5fmask_5ft_0',['input_mask_t',['../namespaceprotocol_1_1game.html#a2964aab9b93472e0a76484074716a203',1,'protocol::game']]]
+  ['languagemap_0',['LanguageMap',['../namespacertype_1_1client_1_1lang.html#ace223e6f27c476daa27eaece53e99866',1,'rtype::client::lang']]]
 ];

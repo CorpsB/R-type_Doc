@@ -1,0 +1,30 @@
+<map id="LocalDevice.cpp" name="LocalDevice.cpp">
+<area shape="rect" id="Node000001" title="Implementation of LocalDevice for local filesystem management." alt="" coords="435,5,563,31"/>
+<area shape="rect" id="Node000002" href="$LocalDevice_8hpp.html" title="Concrete implementation of StorageDevice for local file system operations." alt="" coords="305,79,435,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="480,33,405,74,402,69,477,28"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="459,79,539,104"/>
+<area shape="poly" id="edge14_Node000001_Node000012" title=" " alt="" coords="502,31,502,65,497,65,497,31"/>
+<area shape="rect" id="Node000013" title=" " alt="" coords="563,79,622,104"/>
+<area shape="poly" id="edge15_Node000001_Node000013" title=" " alt="" coords="516,29,568,68,565,72,513,33"/>
+<area shape="rect" id="Node000003" href="$StorageDevice_8hpp.html" title="Abstract interface for physical or virtual storage backends." alt="" coords="115,152,273,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="343,106,237,149,235,144,341,102"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="295,225,354,251"/>
+<area shape="poly" id="edge10_Node000002_Node000004" title=" " alt="" coords="364,106,350,127,338,153,331,183,328,212,323,211,326,182,333,151,345,124,359,103"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="5,225,68,251"/>
+<area shape="poly" id="edge11_Node000002_Node000005" title=" " alt="" coords="305,98,259,103,207,113,154,130,105,154,74,183,51,215,47,212,69,179,102,150,152,125,205,108,258,98,305,92"/>
+<area shape="rect" id="Node000008" href="$IDebug_8hpp.html" title="Interface defining the debugging system for the ASGE engine." alt="" coords="348,152,512,177"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="382,103,414,140,409,143,378,106"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="537,152,627,177"/>
+<area shape="poly" id="edge12_Node000002_Node000010" title=" " alt="" coords="405,101,536,145,534,150,403,107"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="652,152,725,177"/>
+<area shape="poly" id="edge13_Node000002_Node000011" title=" " alt="" coords="423,101,639,149,638,154,422,107"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="216,175,293,216,290,221,214,180"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="170,180,76,222,74,217,168,175"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="184,225,271,251"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="202,177,219,212,214,214,197,179"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="93,225,159,251"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="185,180,149,217,145,213,181,176"/>
+<area shape="poly" id="edge8_Node000008_Node000004" title=" " alt="" coords="415,180,354,220,352,215,412,175"/>
+<area shape="rect" id="Node000009" href="$DebugTypes_8hpp.html" title="Defines the different severity levels used for debugging and logging." alt="" coords="378,225,629,251"/>
+<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="444,176,483,214,480,218,440,180"/>
+</map>

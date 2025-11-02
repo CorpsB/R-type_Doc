@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['developer_20documentation_0',['R-Type — Developer Documentation',['../md_Doc_2Developer__doc.html',1,'']]],
-  ['documentation_1',['R-Type — Developer Documentation',['../md_Doc_2Developer__doc.html',1,'']]]
+  ['multiplayer_20shooter_20and_20game_20engine_0',['R‑Type Project – Multiplayer Shooter and Game Engine',['../index.html',1,'']]]
 ];

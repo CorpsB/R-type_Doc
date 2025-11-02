@@ -1,0 +1,36 @@
+<map id="SystemSignature.hpp" name="SystemSignature.hpp">
+<area shape="rect" id="Node000001" title="Utility helper for composing ECS system signatures." alt="" coords="529,5,690,31"/>
+<area shape="rect" id="Node000002" href="$ComponentManager_8hpp.html" title="Central management container for ECS component arrays." alt="" coords="335,79,665,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="593,33,531,73,528,69,590,28"/>
+<area shape="rect" id="Node000017" title=" " alt="" coords="689,79,748,104"/>
+<area shape="poly" id="edge17_Node000001_Node000017" title=" " alt="" coords="628,28,691,69,688,73,625,33"/>
+<area shape="rect" id="Node000003" href="$ComponentArray_8hpp.html" title="Component storage implementation for the ECS." alt="" coords="283,152,539,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="487,106,438,145,434,141,484,102"/>
+<area shape="rect" id="Node000013" title=" " alt="" coords="563,152,619,177"/>
+<area shape="poly" id="edge12_Node000002_Node000013" title=" " alt="" coords="516,102,567,141,563,145,513,106"/>
+<area shape="rect" id="Node000014" title=" " alt="" coords="643,152,720,177"/>
+<area shape="poly" id="edge13_Node000002_Node000014" title=" " alt="" coords="530,102,640,144,638,149,528,107"/>
+<area shape="rect" id="Node000015" href="$Macro_8hpp.html" title="Global configuration macros and spatial hashing helpers." alt="" coords="49,152,151,177"/>
+<area shape="poly" id="edge14_Node000002_Node000015" title=" " alt="" coords="436,107,165,155,164,149,435,101"/>
+<area shape="rect" id="Node000004" href="$IComponentArray_8hpp.html" title="Abstract base interface for component container types." alt="" coords="155,225,317,251"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="384,180,278,222,276,218,382,175"/>
+<area shape="rect" id="Node000006" href="$Error_8hpp.html" title="Exception type used by the engine for categorized errors." alt="" coords="341,225,480,251"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="413,178,413,212,408,212,408,178"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="505,225,567,251"/>
+<area shape="poly" id="edge10_Node000003_Node000011" title=" " alt="" coords="432,175,505,216,502,221,429,180"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="592,225,651,251"/>
+<area shape="poly" id="edge11_Node000003_Node000012" title=" " alt="" coords="445,175,580,220,578,225,444,180"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="5,299,72,324"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="205,253,85,296,83,291,203,248"/>
+<area shape="rect" id="Node000007" href="$ErrorTypes_8hpp.html" title="Enumerations describing error categories and severities." alt="" coords="99,299,339,324"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="381,253,264,296,262,291,379,248"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="363,299,450,324"/>
+<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="413,251,411,285,405,285,407,251"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="475,299,549,324"/>
+<area shape="poly" id="edge8_Node000006_Node000009" title=" " alt="" coords="428,248,486,288,483,293,425,253"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="573,299,632,324"/>
+<area shape="poly" id="edge9_Node000006_Node000010" title=" " alt="" coords="442,248,561,292,559,297,441,253"/>
+<area shape="poly" id="edge15_Node000015_Node000005" title=" " alt="" coords="92,179,75,200,60,226,50,257,44,286,39,285,45,255,55,224,71,197,88,176"/>
+<area shape="rect" id="Node000016" title=" " alt="" coords="70,225,130,251"/>
+<area shape="poly" id="edge16_Node000015_Node000016" title=" " alt="" coords="103,178,103,212,97,212,97,178"/>
+</map>

@@ -1,4 +1,4 @@
 var ComponentManager_8hpp =
 [
-    [ "rtype::ecs::ComponentManager", "classrtype_1_1ecs_1_1ComponentManager.html", "classrtype_1_1ecs_1_1ComponentManager" ]
+    [ "asge::world::ComponentManager", "classasge_1_1world_1_1ComponentManager.html", "classasge_1_1world_1_1ComponentManager" ]
 ];

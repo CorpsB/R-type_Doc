@@ -1,7 +1,7 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="Node000000" href="$classrtype_1_1client_1_1ui_1_1IOption.html" title="Interface for selectable menu options." alt="" coords="5,31,180,56"/>
-<area shape="rect" id="Node000001" href="$classrtype_1_1client_1_1ui_1_1MultipleOption.html" title="Represents a menu option that contains multiple selectable sub&#45;choices." alt="" coords="228,5,452,31"/>
-<area shape="poly" id="edge4_Node000000_Node000001" title=" " alt="" coords="194,30,228,27,228,32,194,36"/>
-<area shape="rect" id="Node000002" href="$classrtype_1_1client_1_1ui_1_1SingleOption.html" title="Represents a single selectable menu option." alt="" coords="235,55,445,80"/>
-<area shape="poly" id="edge5_Node000000_Node000002" title=" " alt="" coords="194,50,235,54,234,60,193,56"/>
+<area shape="rect" id="Node000000" href="$classasge_1_1network_1_1INetwork.html" title="Base interface for all networking implementations." alt="" coords="5,31,187,56"/>
+<area shape="rect" id="Node000001" href="$classasge_1_1network_1_1NetworkManager.html" title="High&#45;level network service with reliability, sessions, and dispatch." alt="" coords="235,5,469,31"/>
+<area shape="poly" id="edge10_Node000000_Node000001" title=" " alt="" coords="200,30,234,27,235,32,201,36"/>
+<area shape="rect" id="Node000002" href="$classasge_1_1network_1_1NullNetwork.html" title="Dummy network backend performing no I/O operations." alt="" coords="251,55,453,80"/>
+<area shape="poly" id="edge11_Node000000_Node000002" title=" " alt="" coords="201,50,251,55,250,60,200,56"/>
 </map>

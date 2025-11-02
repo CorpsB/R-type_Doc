@@ -102,6 +102,9 @@ $(document).ready(function(){initNavTree('Macro_8cpp.html',''); initResizable();
   <div class="headertitle"><div class="title">Macro.cpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Implementation of spatial hashing helper utilities for 2D coordinates.  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="Macro_8hpp_source.html">Macro.hpp</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for Macro.cpp:</div>
@@ -116,13 +119,22 @@ $(document).ready(function(){initNavTree('Macro_8cpp.html',''); initResizable();
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:aa287b51683944006697faf1bde937fd9" id="r_aa287b51683944006697faf1bde937fd9"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Macro_8cpp.html#aa287b51683944006697faf1bde937fd9">makeKey</a> (int x, int y) noexcept</td></tr>
-<tr class="memdesc:aa287b51683944006697faf1bde937fd9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pack two 32-bit signed cell coordinates into a single 64-bit unsigned key.  <br /></td></tr>
+<tr class="memdesc:aa287b51683944006697faf1bde937fd9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Packs two 32-bit signed integers into a single 64-bit key.  <br /></td></tr>
 <tr class="separator:aa287b51683944006697faf1bde937fd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ab6d50fa1ecd2e7d7ed74b9816542ab" id="r_a0ab6d50fa1ecd2e7d7ed74b9816542ab"><td class="memItemLeft" align="right" valign="top">std::pair&lt; int, int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Macro_8cpp.html#a0ab6d50fa1ecd2e7d7ed74b9816542ab">decodeKey</a> (uint64_t key) noexcept</td></tr>
-<tr class="memdesc:a0ab6d50fa1ecd2e7d7ed74b9816542ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unpack a 64-bit key produced by makeKey back into two signed 32-bit coordinates.  <br /></td></tr>
+<tr class="memdesc:a0ab6d50fa1ecd2e7d7ed74b9816542ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decodes a 64-bit key back into its original (x, y) coordinates.  <br /></td></tr>
 <tr class="separator:a0ab6d50fa1ecd2e7d7ed74b9816542ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Implementation of spatial hashing helper utilities for 2D coordinates. </p>
+<dl class="section version"><dt>Version</dt><dd>1.0 </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2025-03-26</dd></dl>
+<p>Provides bitwise packing and unpacking functions for converting 2D integer coordinates into a 64-bit spatial lookup key and back.</p>
+<p>This mechanism is typically used in spatial partitioning systems, such as grids or hash maps, where integer coordinates must be represented compactly as a single key for fast lookup.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="Macro_8hpp.html" title="Global configuration macros and spatial hashing helpers.">Macro.hpp</a> </dd></dl>
+
+<p class="definition">Definition in file <a class="el" href="Macro_8cpp_source.html">Macro.cpp</a>.</p>
+</div><h2 class="groupheader">Function Documentation</h2>
 <a id="a0ab6d50fa1ecd2e7d7ed74b9816542ab" name="a0ab6d50fa1ecd2e7d7ed74b9816542ab"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0ab6d50fa1ecd2e7d7ed74b9816542ab">&#9670;&#160;</a></span>decodeKey()</h2>
 
@@ -147,25 +159,26 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Unpack a 64-bit key produced by makeKey back into two signed 32-bit coordinates. </p>
+<p>Decodes a 64-bit key back into its original (x, y) coordinates. </p>
+<p>Decodes a packed 64-bit spatial key into (x, y) coordinates.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">key</td><td>64-bit cell key previously returned by makeKey. </td></tr>
+    <tr><td class="paramname">key</td><td>The packed 64-bit value. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>std::pair&lt;int,int&gt; containing (x,y) coordinates.</dd></dl>
-<p>The function extracts the high 32 bits as the x coordinate and the low 32 bits as the y coordinate, casts back to signed int and returns the pair. The function is noexcept. </p>
+<dl class="section return"><dt>Returns</dt><dd>A pair of signed integers (x, y) extracted from the key.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>The higher 32 bits contain X, and the lower 32 bits contain Y. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="Macro_8cpp_source.html#l00018">18</a> of file <a class="el" href="Macro_8cpp_source.html">Macro.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   19</span>{</div>
-<div class="line"><span class="lineno">   20</span>    int32_t x = <span class="keyword">static_cast&lt;</span>int32_t<span class="keyword">&gt;</span>(key &gt;&gt; 32);</div>
-<div class="line"><span class="lineno">   21</span>    int32_t y = <span class="keyword">static_cast&lt;</span>int32_t<span class="keyword">&gt;</span>(key &amp; 0xffffffffu);</div>
-<div class="line"><span class="lineno">   22</span> </div>
-<div class="line"><span class="lineno">   23</span>    <span class="keywordflow">return</span> std::make_pair(x, y);</div>
-<div class="line"><span class="lineno">   24</span>}</div>
+<p class="definition">Definition at line <a class="el" href="Macro_8cpp_source.html#l00057">57</a> of file <a class="el" href="Macro_8cpp_source.html">Macro.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   58</span>{</div>
+<div class="line"><span class="lineno">   59</span>    int32_t x = <span class="keyword">static_cast&lt;</span>int32_t<span class="keyword">&gt;</span>(key &gt;&gt; 32);</div>
+<div class="line"><span class="lineno">   60</span>    int32_t y = <span class="keyword">static_cast&lt;</span>int32_t<span class="keyword">&gt;</span>(key &amp; 0xffffffffu);</div>
+<div class="line"><span class="lineno">   61</span> </div>
+<div class="line"><span class="lineno">   62</span>    <span class="keywordflow">return</span> std::make_pair(x, y);</div>
+<div class="line"><span class="lineno">   63</span>}</div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="CollisionWorld_8cpp_source.html#l00029">rtype::ecs::CollisionWorld::checkCollisions()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="CollisionWorld_8cpp_source.html#l00027">asge::world::systems::CollisionWorld::checkCollisions()</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
@@ -210,26 +223,27 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Pack two 32-bit signed cell coordinates into a single 64-bit unsigned key. </p>
+<p>Packs two 32-bit signed integers into a single 64-bit key. </p>
+<p>Packs two signed cell coordinates into a 64-bit unsigned integer key.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">x</td><td>Cell x coordinate (int). </td></tr>
-    <tr><td class="paramname">y</td><td>Cell y coordinate (int). </td></tr>
+    <tr><td class="paramname">x</td><td>The X coordinate. </td></tr>
+    <tr><td class="paramname">y</td><td>The Y coordinate. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>uint64_t Packed key where high 32 bits are the (uint32_t) x and low 32 bits are (uint32_t) y.</dd></dl>
-<p>The function casts coordinates to uint32_t and packs them as (uint64_t(x) &lt;&lt; 32) | uint32_t(y). This representation preserves uniqueness for all 32-bit coordinate pairs and is convenient for use as an unordered_map key. The function is noexcept. </p>
+<dl class="section return"><dt>Returns</dt><dd>A 64-bit unsigned integer encoding both coordinates.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>The function casts both coordinates to unsigned 32-bit integers before combining them with bit shifting and OR operations. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="Macro_8cpp_source.html#l00010">10</a> of file <a class="el" href="Macro_8cpp_source.html">Macro.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   11</span>{</div>
-<div class="line"><span class="lineno">   12</span>    uint64_t ux = <span class="keyword">static_cast&lt;</span>uint32_t<span class="keyword">&gt;</span>(x);</div>
-<div class="line"><span class="lineno">   13</span>    uint64_t uy = <span class="keyword">static_cast&lt;</span>uint32_t<span class="keyword">&gt;</span>(y);</div>
-<div class="line"><span class="lineno">   14</span> </div>
-<div class="line"><span class="lineno">   15</span>    <span class="keywordflow">return</span> (ux &lt;&lt; 32) | uy;</div>
-<div class="line"><span class="lineno">   16</span>}</div>
+<p class="definition">Definition at line <a class="el" href="Macro_8cpp_source.html#l00039">39</a> of file <a class="el" href="Macro_8cpp_source.html">Macro.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   40</span>{</div>
+<div class="line"><span class="lineno">   41</span>    uint64_t ux = <span class="keyword">static_cast&lt;</span>uint32_t<span class="keyword">&gt;</span>(x);</div>
+<div class="line"><span class="lineno">   42</span>    uint64_t uy = <span class="keyword">static_cast&lt;</span>uint32_t<span class="keyword">&gt;</span>(y);</div>
+<div class="line"><span class="lineno">   43</span> </div>
+<div class="line"><span class="lineno">   44</span>    <span class="keywordflow">return</span> (ux &lt;&lt; 32) | uy;</div>
+<div class="line"><span class="lineno">   45</span>}</div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="CollisionWorld_8cpp_source.html#l00029">rtype::ecs::CollisionWorld::checkCollisions()</a>, and <a class="el" href="CollisionWorld_8cpp_source.html#l00119">rtype::ecs::CollisionWorld::insertEntityToCell()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="CollisionWorld_8cpp_source.html#l00027">asge::world::systems::CollisionWorld::checkCollisions()</a>, and <a class="el" href="CollisionWorld_8cpp_source.html#l00214">asge::world::systems::CollisionWorld::insertEntityToCell()</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -245,7 +259,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_4ab6b4cc6a7edbff49100e9123df213f.html">Common</a></li><li class="navelem"><a class="el" href="dir_42f24aa63ec14c5bf2eb77ea89af9ccb.html">ECS</a></li><li class="navelem"><a class="el" href="Macro_8cpp.html">Macro.cpp</a></li>
+    <li class="navelem"><a class="el" href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li><li class="navelem"><a class="el" href="dir_1b9403644f1f2359659496c948d71b7e.html">asge</a></li><li class="navelem"><a class="el" href="dir_23b0c4c81238164c4b752561086c543c.html">src</a></li><li class="navelem"><a class="el" href="dir_2e6acacfe42ed85a3d5b28ea6e2cb62a.html">world</a></li><li class="navelem"><a class="el" href="Macro_8cpp.html">Macro.cpp</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>

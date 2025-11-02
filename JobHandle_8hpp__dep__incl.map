@@ -1,0 +1,15 @@
+<map id="JobHandle.hpp" name="JobHandle.hpp">
+<area shape="rect" id="Node000001" title="Synchronisation handle for queued jobs." alt="" coords="85,5,201,31"/>
+<area shape="rect" id="Node000002" href="$JobHandle_8cpp.html" title="Implements the job handle execution and synchronisation utilities." alt="" coords="16,79,131,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="124,43,86,80,83,77,120,39"/>
+<area shape="rect" id="Node000003" href="$JobWorker_8hpp.html" title="Worker thread that executes queued jobs." alt="" coords="155,79,269,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="165,39,203,77,199,80,162,43"/>
+<area shape="rect" id="Node000004" href="$JobManager_8hpp.html" title="Multithreaded job scheduler." alt="" coords="77,152,203,177"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="192,116,154,154,150,150,188,112"/>
+<area shape="rect" id="Node000007" href="$JobWorker_8cpp.html" title="Implements the worker thread logic for the job system." alt="" coords="227,152,341,177"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="236,112,274,150,270,154,232,116"/>
+<area shape="rect" id="Node000005" href="$EngineCore_8cpp.html" title="Implements the engine bootstrap and runtime loop." alt="" coords="5,225,128,251"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="120,189,80,227,77,223,116,185"/>
+<area shape="rect" id="Node000006" href="$JobManager_8cpp.html" title="Implements the job scheduler responsible for dispatching work." alt="" coords="152,225,277,251"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="164,185,204,223,201,227,160,189"/>
+</map>
