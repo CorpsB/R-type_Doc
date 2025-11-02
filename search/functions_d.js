@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['name_0',['name',['../classasge_1_1input_1_1RaylibKeyboardDevice.html#aefd16784146dc0d602669b153a9c9b43',1,'asge::input::RaylibKeyboardDevice::name()'],['../classasge_1_1input_1_1InputDevice.html#aa8367b9a762accad2b4bb7f80a358e33',1,'asge::input::InputDevice::name()']]],
+  ['name_0',['name',['../classasge_1_1input_1_1InputDevice.html#aa8367b9a762accad2b4bb7f80a358e33',1,'asge::input::InputDevice::name()'],['../classasge_1_1input_1_1RaylibKeyboardDevice.html#aefd16784146dc0d602669b153a9c9b43',1,'asge::input::RaylibKeyboardDevice::name()'],['../classasge_1_1input_1_1AInputDevice.html#aed5b881d5e480eabf2625cb7e110cc8b',1,'asge::input::AInputDevice::name()']]],
   ['network_1',['network',['../structasge_1_1Services.html#aad40078261f2750ea0e3ee30b6fe6956',1,'asge::Services::network()'],['../structasge_1_1Services.html#a8d5f62f0fad999aa4271d1329a058154',1,'asge::Services::network() const']]],
   ['networkmanager_2',['NetworkManager',['../classasge_1_1network_1_1NetworkManager.html#a7a328e67f276054858a0f4b6610c17c3',1,'asge::network::NetworkManager']]],
   ['nextsendseq_3',['nextSendSeq',['../classasge_1_1network_1_1Connection.html#a55573ae588c43deb6ca4624c65c314a6',1,'asge::network::Connection']]],

@@ -1,30 +1,32 @@
 <map id="RaylibDriver.hpp" name="RaylibDriver.hpp">
 <area shape="rect" id="Node000001" title="Raylib implementation of the RenderDriver interface." alt="" coords="611,5,742,31"/>
-<area shape="rect" id="Node000002" href="$RenderDriver_8hpp.html" title="Minimal Raylib&#45;backed driver exposing only high&#45;level draw ops." alt="" coords="330,79,476,104"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="633,33,461,78,460,73,632,28"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="522,225,580,251"/>
-<area shape="poly" id="edge11_Node000001_Node000004" title=" " alt="" coords="658,33,630,53,604,80,585,113,572,149,557,212,552,211,567,147,581,111,600,77,626,49,655,29"/>
-<area shape="rect" id="Node000009" title=" " alt="" coords="614,79,738,104"/>
-<area shape="poly" id="edge12_Node000001_Node000009" title=" " alt="" coords="679,31,679,65,674,65,674,31"/>
-<area shape="rect" id="Node000010" title=" " alt="" coords="762,79,833,104"/>
-<area shape="poly" id="edge13_Node000001_Node000010" title=" " alt="" coords="697,28,768,69,765,74,695,33"/>
-<area shape="rect" id="Node000011" href="$IDebug_8hpp.html" title="Interface defining the debugging system for the ASGE engine." alt="" coords="857,79,1021,104"/>
-<area shape="poly" id="edge14_Node000001_Node000011" title=" " alt="" coords="719,28,884,72,883,78,718,33"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="127,225,194,251"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="329,96,243,99,149,108,66,126,36,139,16,154,9,166,10,177,18,188,32,197,71,214,114,225,113,230,69,219,29,202,15,192,5,179,4,165,12,150,33,134,65,121,148,103,243,94,329,90"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="429,102,465,122,501,150,525,181,542,211,538,214,521,184,497,154,462,126,427,106"/>
-<area shape="rect" id="Node000005" href="$RendererTypes_8hpp.html" title="Declares fundamental POD types used by the renderer subsystem." alt="" coords="26,152,294,177"/>
-<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="365,107,213,151,212,146,363,101"/>
-<area shape="rect" id="Node000006" href="$IStorage_8hpp.html" title="Interface defining storage operations for files and directories." alt="" coords="318,152,488,177"/>
-<area shape="poly" id="edge6_Node000002_Node000006" title=" " alt="" coords="406,104,406,138,400,138,400,104"/>
-<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="163,178,163,212,158,212,158,178"/>
-<area shape="poly" id="edge10_Node000006_Node000003" title=" " alt="" coords="365,180,208,226,206,220,363,175"/>
-<area shape="poly" id="edge7_Node000006_Node000004" title=" " alt="" coords="428,175,516,217,513,222,426,180"/>
-<area shape="rect" id="Node000007" title=" " alt="" coords="285,225,348,251"/>
-<area shape="poly" id="edge8_Node000006_Node000007" title=" " alt="" coords="391,179,343,219,339,214,387,175"/>
-<area shape="rect" id="Node000008" title=" " alt="" coords="372,225,458,251"/>
-<area shape="poly" id="edge9_Node000006_Node000008" title=" " alt="" coords="408,177,413,211,408,212,402,178"/>
-<area shape="poly" id="edge15_Node000011_Node000004" title=" " alt="" coords="909,107,594,223,592,218,907,102"/>
-<area shape="rect" id="Node000012" href="$DebugTypes_8hpp.html" title="Defines the different severity levels used for debugging and logging." alt="" coords="814,152,1064,177"/>
-<area shape="poly" id="edge16_Node000011_Node000012" title=" " alt="" coords="942,104,942,138,936,138,936,104"/>
+<area shape="rect" id="Node000002" href="$ARenderDriver_8hpp.html" title=" " alt="" coords="354,79,510,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="638,33,486,77,484,72,636,28"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="522,299,580,324"/>
+<area shape="poly" id="edge12_Node000001_Node000005" title=" " alt="" coords="657,33,629,53,604,80,579,133,564,190,556,243,554,285,549,285,551,243,559,189,574,132,599,77,625,49,653,29"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="614,79,738,104"/>
+<area shape="poly" id="edge13_Node000001_Node000010" title=" " alt="" coords="679,31,679,65,674,65,674,31"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="762,79,833,104"/>
+<area shape="poly" id="edge14_Node000001_Node000011" title=" " alt="" coords="697,28,768,69,765,74,695,33"/>
+<area shape="rect" id="Node000012" href="$IDebug_8hpp.html" title="Interface defining the debugging system for the ASGE engine." alt="" coords="857,79,1021,104"/>
+<area shape="poly" id="edge15_Node000001_Node000012" title=" " alt="" coords="719,28,884,72,883,78,718,33"/>
+<area shape="rect" id="Node000003" href="$RenderDriver_8hpp.html" title="Minimal Raylib&#45;backed driver exposing only high&#45;level draw ops." alt="" coords="336,152,470,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="430,105,415,140,411,138,425,103"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="127,299,194,324"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="336,169,249,172,153,181,68,199,36,212,16,227,9,240,10,251,18,261,32,271,71,287,114,299,113,304,69,292,29,275,15,265,5,253,4,239,12,224,34,207,66,194,152,176,249,167,336,163"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="429,175,465,195,501,223,525,254,542,285,538,287,521,257,497,227,462,200,427,180"/>
+<area shape="rect" id="Node000006" href="$RendererTypes_8hpp.html" title="Declares fundamental POD types used by the renderer subsystem." alt="" coords="26,225,294,251"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="365,180,213,224,212,219,363,175"/>
+<area shape="rect" id="Node000007" href="$IStorage_8hpp.html" title="Interface defining storage operations for files and directories." alt="" coords="318,225,488,251"/>
+<area shape="poly" id="edge7_Node000003_Node000007" title=" " alt="" coords="406,178,406,212,400,212,400,178"/>
+<area shape="poly" id="edge6_Node000006_Node000004" title=" " alt="" coords="163,251,163,285,158,285,158,251"/>
+<area shape="poly" id="edge11_Node000007_Node000004" title=" " alt="" coords="365,253,208,299,206,294,363,248"/>
+<area shape="poly" id="edge8_Node000007_Node000005" title=" " alt="" coords="428,248,516,290,513,295,426,253"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="285,299,348,324"/>
+<area shape="poly" id="edge9_Node000007_Node000008" title=" " alt="" coords="391,253,343,292,339,288,387,249"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="372,299,458,324"/>
+<area shape="poly" id="edge10_Node000007_Node000009" title=" " alt="" coords="408,251,413,285,408,286,402,251"/>
+<area shape="poly" id="edge16_Node000012_Node000005" title=" " alt="" coords="910,107,803,154,677,228,580,293,578,288,674,224,800,150,908,102"/>
+<area shape="rect" id="Node000013" href="$DebugTypes_8hpp.html" title="Defines the different severity levels used for debugging and logging." alt="" coords="814,152,1064,177"/>
+<area shape="poly" id="edge17_Node000012_Node000013" title=" " alt="" coords="942,104,942,138,936,138,936,104"/>
 </map>

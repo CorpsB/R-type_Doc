@@ -1,7 +1,7 @@
 var searchData=
 [
   ['n_0',['N',['../namespaceasge_1_1input.html#a5265976dcf7eba98927ad1471333b1cda8d9c307cb7f3c4a32822a51922d1ceaa',1,'asge::input']]],
-  ['name_1',['name',['../classasge_1_1net_1_1GameProtocol.html#ab99c85bb79600c8f70f8fccff06e091daca523b4dd029f2de364b58e114316a87',1,'asge::net::GameProtocol::NAME'],['../classasge_1_1input_1_1RaylibKeyboardDevice.html#aefd16784146dc0d602669b153a9c9b43',1,'asge::input::RaylibKeyboardDevice::name()'],['../classasge_1_1input_1_1InputDevice.html#aa8367b9a762accad2b4bb7f80a358e33',1,'asge::input::InputDevice::name()'],['../namespaceasge_1_1components.html#af6bb39cf26753ba7eadedd68cd860f43',1,'asge::components::name_attr_t::name']]],
+  ['name_1',['name',['../classasge_1_1input_1_1RaylibKeyboardDevice.html#aefd16784146dc0d602669b153a9c9b43',1,'asge::input::RaylibKeyboardDevice::name()'],['../classasge_1_1input_1_1InputDevice.html#aa8367b9a762accad2b4bb7f80a358e33',1,'asge::input::InputDevice::name()'],['../classasge_1_1input_1_1AInputDevice.html#aed5b881d5e480eabf2625cb7e110cc8b',1,'asge::input::AInputDevice::name()'],['../namespaceasge_1_1components.html#af6bb39cf26753ba7eadedd68cd860f43',1,'asge::components::name_attr_t::name'],['../classasge_1_1net_1_1GameProtocol.html#ab99c85bb79600c8f70f8fccff06e091daca523b4dd029f2de364b58e114316a87',1,'asge::net::GameProtocol::NAME']]],
   ['name_2ehpp_2',['name.hpp',['../name_8hpp.html',1,'']]],
   ['name_5fattr_5ft_3',['name_attr_t',['../namespaceasge_1_1components.html#structasge_1_1components_1_1name__attr__t',1,'asge::components']]],
   ['native_5fhandle_4',['native_handle',['../namespaceasge_1_1audio.html#a82b315b3be1134122c031128d7f377aa',1,'asge::audio::SongEntry']]],
@@ -15,7 +15,7 @@ var searchData=
   ['network_2emd_12',['network.md',['../network_8md.html',1,'']]],
   ['networkchannel_13',['NetworkChannel',['../classasge_1_1network_1_1NetworkChannel.html',1,'asge::network']]],
   ['networkchannel_2ehpp_14',['NetworkChannel.hpp',['../NetworkChannel_8hpp.html',1,'']]],
-  ['networkmanager_15',['networkmanager',['../classasge_1_1network_1_1NetworkManager.html#a7a328e67f276054858a0f4b6610c17c3',1,'asge::network::NetworkManager::NetworkManager()'],['../classasge_1_1network_1_1NetworkManager.html',1,'asge::network::NetworkManager']]],
+  ['networkmanager_15',['networkmanager',['../classasge_1_1network_1_1NetworkManager.html',1,'asge::network::NetworkManager'],['../classasge_1_1network_1_1NetworkManager.html#a7a328e67f276054858a0f4b6610c17c3',1,'asge::network::NetworkManager::NetworkManager()']]],
   ['networkmanager_2ecpp_16',['NetworkManager.cpp',['../NetworkManager_8cpp.html',1,'']]],
   ['networkmanager_2ehpp_17',['NetworkManager.hpp',['../NetworkManager_8hpp.html',1,'']]],
   ['networktransport_18',['networkTransport',['../namespaceasge.html#ad113438695a65773c8e812e86d18eac9',1,'asge::EngineConfig']]],
@@ -36,7 +36,7 @@ var searchData=
   ['null_33',['Null',['../namespaceasge.html#a6f577018be938557ecb99976e77a1a08abbb93ef26e3c101ff11cdd21cab08a94',1,'asge']]],
   ['nullaudio_34',['nullaudio',['../classasge_1_1audio_1_1NullAudio.html#aaae49608471222405942e32b1247352b',1,'asge::audio::NullAudio::NullAudio()'],['../classasge_1_1audio_1_1NullAudio.html',1,'asge::audio::NullAudio']]],
   ['nullaudio_2ehpp_35',['NullAudio.hpp',['../NullAudio_8hpp.html',1,'']]],
-  ['nullinput_36',['nullinput',['../classasge_1_1input_1_1NullInput.html#a9fc65a77b173cc5d1e4ce3cc77933a95',1,'asge::input::NullInput::NullInput()'],['../classasge_1_1input_1_1NullInput.html',1,'asge::input::NullInput']]],
+  ['nullinput_36',['nullinput',['../classasge_1_1input_1_1NullInput.html',1,'asge::input::NullInput'],['../classasge_1_1input_1_1NullInput.html#a9fc65a77b173cc5d1e4ce3cc77933a95',1,'asge::input::NullInput::NullInput()']]],
   ['nullinput_2ehpp_37',['NullInput.hpp',['../NullInput_8hpp.html',1,'']]],
   ['nullnetwork_38',['nullnetwork',['../classasge_1_1network_1_1NullNetwork.html',1,'asge::network::NullNetwork'],['../classasge_1_1network_1_1NullNetwork.html#a9954eb6b70d019f50f88ca1266deea6c',1,'asge::network::NullNetwork::NullNetwork()']]],
   ['nullnetwork_2ecpp_39',['NullNetwork.cpp',['../NullNetwork_8cpp.html',1,'']]],

@@ -150,6 +150,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a2be7a5046759d530bfc34a890be3b923" id="r_a2be7a5046759d530bfc34a890be3b923"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasge_1_1storage_1_1LocalDevice.html#a2be7a5046759d530bfc34a890be3b923">stat</a> (const std::string &amp;path) const override</td></tr>
 <tr class="memdesc:a2be7a5046759d530bfc34a890be3b923"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if a file or directory exists.  <br /></td></tr>
 <tr class="separator:a2be7a5046759d530bfc34a890be3b923"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classasge_1_1storage_1_1AStorageDevice"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classasge_1_1storage_1_1AStorageDevice')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classasge_1_1storage_1_1AStorageDevice.html">asge::storage::AStorageDevice</a></td></tr>
+<tr class="memitem:a73f148f36115ea409f0028ccb468ec6b inherit pub_methods_classasge_1_1storage_1_1AStorageDevice" id="r_a73f148f36115ea409f0028ccb468ec6b"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasge_1_1storage_1_1AStorageDevice.html#a73f148f36115ea409f0028ccb468ec6b">~AStorageDevice</a> ()=default</td></tr>
+<tr class="separator:a73f148f36115ea409f0028ccb468ec6b inherit pub_methods_classasge_1_1storage_1_1AStorageDevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classasge_1_1storage_1_1StorageDevice"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classasge_1_1storage_1_1StorageDevice')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classasge_1_1storage_1_1StorageDevice.html">asge::storage::StorageDevice</a></td></tr>
 <tr class="memitem:a7f843576a67adb4cdf65d828cf07a9e6 inherit pub_methods_classasge_1_1storage_1_1StorageDevice" id="r_a7f843576a67adb4cdf65d828cf07a9e6"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasge_1_1storage_1_1StorageDevice.html#a7f843576a67adb4cdf65d828cf07a9e6">~StorageDevice</a> ()=default</td></tr>
 <tr class="memdesc:a7f843576a67adb4cdf65d828cf07a9e6 inherit pub_methods_classasge_1_1storage_1_1StorageDevice"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual destructor for safe polymorphic cleanup.  <br /></td></tr>
@@ -270,7 +273,7 @@ Private Attributes</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>A vector containing the full paths of files within the directory.</dd></dl>
 <p>Logs a warning if the directory does not exist, or an error if listing fails. </p>
 
-<p>Implements <a class="el" href="classasge_1_1storage_1_1StorageDevice.html#a2003481b871aa583f12bb3426fe3f7c4">asge::storage::StorageDevice</a>.</p>
+<p>Reimplemented from <a class="el" href="classasge_1_1storage_1_1AStorageDevice.html#a4f6253df8fc75b9f4eda9828246ff61b">asge::storage::AStorageDevice</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="LocalDevice_8cpp_source.html#l00119">119</a> of file <a class="el" href="LocalDevice_8cpp_source.html">LocalDevice.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  120</span>{</div>
@@ -339,7 +342,7 @@ Private Attributes</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>true if the path exists, false otherwise.</dd></dl>
 <p>Logs a warning if the path does not exist. </p>
 
-<p>Implements <a class="el" href="classasge_1_1storage_1_1StorageDevice.html#a412921783c991f373c1f8c755a085044">asge::storage::StorageDevice</a>.</p>
+<p>Reimplemented from <a class="el" href="classasge_1_1storage_1_1AStorageDevice.html#a0fd141626af17d2efe08f607bbc202c7">asge::storage::AStorageDevice</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="LocalDevice_8cpp_source.html#l00031">31</a> of file <a class="el" href="LocalDevice_8cpp_source.html">LocalDevice.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   32</span>{</div>
@@ -399,7 +402,7 @@ Private Attributes</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>A vector containing the file's binary contents.</dd></dl>
 <p>Logs an error if the file cannot be opened or read. </p>
 
-<p>Implements <a class="el" href="classasge_1_1storage_1_1StorageDevice.html#a65bc03a5cec3698dc064e9ea309e3f2e">asge::storage::StorageDevice</a>.</p>
+<p>Reimplemented from <a class="el" href="classasge_1_1storage_1_1AStorageDevice.html#ae47d09b73c4e61572dadcce4ae03f6d0">asge::storage::AStorageDevice</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="LocalDevice_8cpp_source.html#l00044">44</a> of file <a class="el" href="LocalDevice_8cpp_source.html">LocalDevice.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   45</span>{</div>
@@ -489,7 +492,7 @@ Private Attributes</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>true if the file was successfully deleted, false otherwise.</dd></dl>
 <p>Logs an error if the removal fails or throws an exception. </p>
 
-<p>Implements <a class="el" href="classasge_1_1storage_1_1StorageDevice.html#aeb0e69f39c59b43c2db4c4bae61e2e0d">asge::storage::StorageDevice</a>.</p>
+<p>Reimplemented from <a class="el" href="classasge_1_1storage_1_1AStorageDevice.html#aed93b54076cf5d9e7b428c4595795aa7">asge::storage::AStorageDevice</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="LocalDevice_8cpp_source.html#l00145">145</a> of file <a class="el" href="LocalDevice_8cpp_source.html">LocalDevice.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  146</span>{</div>
@@ -542,7 +545,7 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if the file or directory exists, false otherwise. </dd></dl>
 
-<p>Implements <a class="el" href="classasge_1_1storage_1_1StorageDevice.html#aa5f381831ece7f02baac2fa75f132c6b">asge::storage::StorageDevice</a>.</p>
+<p>Reimplemented from <a class="el" href="classasge_1_1storage_1_1AStorageDevice.html#af9e4848f931ab6cbddd2e539e145cbac">asge::storage::AStorageDevice</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="LocalDevice_8cpp_source.html#l00159">159</a> of file <a class="el" href="LocalDevice_8cpp_source.html">LocalDevice.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  160</span>{</div>
@@ -596,7 +599,7 @@ Private Attributes</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>true if the file was successfully written, false otherwise.</dd></dl>
 <p>Logs an error if the file cannot be opened or written. </p>
 
-<p>Implements <a class="el" href="classasge_1_1storage_1_1StorageDevice.html#a62bbdf33cddd5b272b1df41b9f986341">asge::storage::StorageDevice</a>.</p>
+<p>Reimplemented from <a class="el" href="classasge_1_1storage_1_1AStorageDevice.html#a7f8b92834fdb3047410989b9b9018c12">asge::storage::AStorageDevice</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="LocalDevice_8cpp_source.html#l00094">94</a> of file <a class="el" href="LocalDevice_8cpp_source.html">LocalDevice.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   95</span>{</div>

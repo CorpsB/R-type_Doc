@@ -235,7 +235,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if the condition evaluates to success. </dd></dl>
 
-<p>Implemented in <a class="el" href="classasge_1_1script_1_1JSONRuntime.html#a3dd4c3f11f9fb24a5b852c5dec953adf">asge::script::JSONRuntime</a>.</p>
+<p>Implemented in <a class="el" href="classasge_1_1script_1_1AScriptRuntime.html#a0cdced589c5607e7b9e7e5e82f5f0ae7">asge::script::AScriptRuntime</a>, and <a class="el" href="classasge_1_1script_1_1JSONRuntime.html#a3dd4c3f11f9fb24a5b852c5dec953adf">asge::script::JSONRuntime</a>.</p>
 
 </div>
 </div>
@@ -265,7 +265,7 @@ Public Member Functions</h2></td></tr>
 <p>Return the runtime language identifier. </p>
 <dl class="section return"><dt>Returns</dt><dd>A string identifying the runtime language (e.g. "json", "lua"). </dd></dl>
 
-<p>Implemented in <a class="el" href="classasge_1_1script_1_1JSONRuntime.html#aabc0d86d25c1092d4e6f0b3461e38a44">asge::script::JSONRuntime</a>.</p>
+<p>Implemented in <a class="el" href="classasge_1_1script_1_1AScriptRuntime.html#a43c6438f028d0744f8178af3d5411014">asge::script::AScriptRuntime</a>, and <a class="el" href="classasge_1_1script_1_1JSONRuntime.html#aabc0d86d25c1092d4e6f0b3461e38a44">asge::script::JSONRuntime</a>.</p>
 
 </div>
 </div>
@@ -314,7 +314,7 @@ Public Member Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>A merged <a class="el" href="namespaceasge_1_1script.html#structasge_1_1script_1_1ScriptHandle" title="ScriptHandle: describes a loaded script/template.">ScriptHandle</a> representing the resolved template.</dd></dl>
 <p>Implementations should combine components and behavior deterministically. On failure implementations should throw an appropriate exception or error type signalling a recoverable parsing/merge error. </p>
 
-<p>Implemented in <a class="el" href="classasge_1_1script_1_1JSONRuntime.html#a8fa6a7b63b248511e71c37ee98533d2f">asge::script::JSONRuntime</a>.</p>
+<p>Implemented in <a class="el" href="classasge_1_1script_1_1AScriptRuntime.html#a117135b2ae361ea33d2e0a05beadc81a">asge::script::AScriptRuntime</a>, and <a class="el" href="classasge_1_1script_1_1JSONRuntime.html#a8fa6a7b63b248511e71c37ee98533d2f">asge::script::JSONRuntime</a>.</p>
 
 </div>
 </div>
@@ -355,7 +355,7 @@ Public Member Functions</h2></td></tr>
 <p>Parse an audio asset JSON (single audio per file). </p>
 <dl class="section return"><dt>Returns</dt><dd>Optional <a class="el" href="namespaceasge_1_1script.html#structasge_1_1script_1_1AudioAsset" title="Audio asset description (one JSON file defines a single audio resource).">AudioAsset</a> on success. </dd></dl>
 
-<p>Implemented in <a class="el" href="classasge_1_1script_1_1JSONRuntime.html#ab999f03f26e056246a9e9554e71d5a81">asge::script::JSONRuntime</a>.</p>
+<p>Implemented in <a class="el" href="classasge_1_1script_1_1AScriptRuntime.html#a1ffbd3140bbba7cda2e5ce8301151d82">asge::script::AScriptRuntime</a>, and <a class="el" href="classasge_1_1script_1_1JSONRuntime.html#ab999f03f26e056246a9e9554e71d5a81">asge::script::JSONRuntime</a>.</p>
 
 </div>
 </div>
@@ -396,7 +396,7 @@ Public Member Functions</h2></td></tr>
 <p>Parse a map JSON file. </p>
 <dl class="section return"><dt>Returns</dt><dd>Optional <a class="el" href="namespaceasge_1_1script.html#structasge_1_1script_1_1MapAsset" title="Map asset (level) description.">MapAsset</a> on success. </dd></dl>
 
-<p>Implemented in <a class="el" href="classasge_1_1script_1_1JSONRuntime.html#a5757a3e0d7adcbb91def86b5ca417337">asge::script::JSONRuntime</a>.</p>
+<p>Implemented in <a class="el" href="classasge_1_1script_1_1AScriptRuntime.html#a388f875a6b6944473cab6e8023d6f8b8">asge::script::AScriptRuntime</a>, and <a class="el" href="classasge_1_1script_1_1JSONRuntime.html#a5757a3e0d7adcbb91def86b5ca417337">asge::script::JSONRuntime</a>.</p>
 
 </div>
 </div>
@@ -435,7 +435,7 @@ Public Member Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>Optional ScriptValue containing the parsed value, or std::nullopt if parsing failed.</dd></dl>
 <p>Used to convert event payloads or API arguments into a runtime-understood representation before invoking host functions. </p>
 
-<p>Implemented in <a class="el" href="classasge_1_1script_1_1JSONRuntime.html#a08f65376af9c06b2077109b8c84af01f">asge::script::JSONRuntime</a>.</p>
+<p>Implemented in <a class="el" href="classasge_1_1script_1_1AScriptRuntime.html#a825c34c0c944fe43a58744111dd3f0ed">asge::script::AScriptRuntime</a>, and <a class="el" href="classasge_1_1script_1_1JSONRuntime.html#a08f65376af9c06b2077109b8c84af01f">asge::script::JSONRuntime</a>.</p>
 
 </div>
 </div>
@@ -476,7 +476,7 @@ Public Member Functions</h2></td></tr>
 <p>Parse a sprite asset JSON (single sprite per file). </p>
 <dl class="section return"><dt>Returns</dt><dd>Optional <a class="el" href="namespaceasge_1_1script.html#structasge_1_1script_1_1SpriteAsset" title="Sprite asset description (one JSON file defines a single sprite).">SpriteAsset</a> on success. </dd></dl>
 
-<p>Implemented in <a class="el" href="classasge_1_1script_1_1JSONRuntime.html#a4abed3244e936ac01c7dad5a1ddbc06d">asge::script::JSONRuntime</a>.</p>
+<p>Implemented in <a class="el" href="classasge_1_1script_1_1AScriptRuntime.html#ad67318843d4ed0cb9ccf5596ec1acb82">asge::script::AScriptRuntime</a>, and <a class="el" href="classasge_1_1script_1_1JSONRuntime.html#a4abed3244e936ac01c7dad5a1ddbc06d">asge::script::JSONRuntime</a>.</p>
 
 </div>
 </div>
@@ -525,7 +525,7 @@ Public Member Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>Optional <a class="el" href="namespaceasge_1_1script.html#structasge_1_1script_1_1ScriptHandle" title="ScriptHandle: describes a loaded script/template.">ScriptHandle</a> containing parsed metadata and behavior on success, std::nullopt on parse/validation failure.</dd></dl>
 <p>Implementations should return std::nullopt if parsing fails. The returned <a class="el" href="namespaceasge_1_1script.html#structasge_1_1script_1_1ScriptHandle" title="ScriptHandle: describes a loaded script/template.">ScriptHandle</a> is expected to be self-contained (id, components, behavior). </p>
 
-<p>Implemented in <a class="el" href="classasge_1_1script_1_1JSONRuntime.html#af00cdf30f56b8b5ffd54bbb92e1cd611">asge::script::JSONRuntime</a>.</p>
+<p>Implemented in <a class="el" href="classasge_1_1script_1_1AScriptRuntime.html#aa4d7b99e65f83d9f234934302df5128a">asge::script::AScriptRuntime</a>, and <a class="el" href="classasge_1_1script_1_1JSONRuntime.html#af00cdf30f56b8b5ffd54bbb92e1cd611">asge::script::JSONRuntime</a>.</p>
 
 </div>
 </div>

@@ -9,6 +9,7 @@ var namespaceasge_1_1network =
       [ "setDefaultRateLimitHz", "namespaceasge_1_1network_1_1EngineProtocol.html#a57222e94407813f55f92d734038cd111", null ],
       [ "setRateLimitHz", "namespaceasge_1_1network_1_1EngineProtocol.html#ae4747a7543b444729c0949f7ff4c322e", null ]
     ] ],
+    [ "ANetworkChannel", "classasge_1_1network_1_1ANetworkChannel.html", "classasge_1_1network_1_1ANetworkChannel" ],
     [ "Connection", "classasge_1_1network_1_1Connection.html", "classasge_1_1network_1_1Connection" ],
     [ "INetwork", "classasge_1_1network_1_1INetwork.html", "classasge_1_1network_1_1INetwork" ],
     [ "LoopbackChannel", "classasge_1_1network_1_1LoopbackChannel.html", "classasge_1_1network_1_1LoopbackChannel" ],

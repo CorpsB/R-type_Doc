@@ -1,5 +1,6 @@
 var namespaceasge_1_1input =
 [
+    [ "AInputDevice", "classasge_1_1input_1_1AInputDevice.html", "classasge_1_1input_1_1AInputDevice" ],
     [ "DeviceState", "structasge_1_1input_1_1DeviceState.html", "structasge_1_1input_1_1DeviceState" ],
     [ "IInput", "classasge_1_1input_1_1IInput.html", "classasge_1_1input_1_1IInput" ],
     [ "InputDevice", "classasge_1_1input_1_1InputDevice.html", "classasge_1_1input_1_1InputDevice" ],

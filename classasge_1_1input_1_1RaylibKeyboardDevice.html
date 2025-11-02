@@ -156,6 +156,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a610f8aed08d41a349f470837bce111bf" id="r_a610f8aed08d41a349f470837bce111bf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasge_1_1input_1_1RaylibKeyboardDevice.html#a610f8aed08d41a349f470837bce111bf">enabled</a> () const noexcept override</td></tr>
 <tr class="memdesc:a610f8aed08d41a349f470837bce111bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether the device is enabled.  <br /></td></tr>
 <tr class="separator:a610f8aed08d41a349f470837bce111bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classasge_1_1input_1_1AInputDevice"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classasge_1_1input_1_1AInputDevice')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classasge_1_1input_1_1AInputDevice.html">asge::input::AInputDevice</a></td></tr>
+<tr class="memitem:aa74a5bba120cf6ce1b79090dd8bf078c inherit pub_methods_classasge_1_1input_1_1AInputDevice" id="r_aa74a5bba120cf6ce1b79090dd8bf078c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasge_1_1input_1_1AInputDevice.html#aa74a5bba120cf6ce1b79090dd8bf078c">~AInputDevice</a> () override=default</td></tr>
+<tr class="separator:aa74a5bba120cf6ce1b79090dd8bf078c inherit pub_methods_classasge_1_1input_1_1AInputDevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classasge_1_1input_1_1InputDevice"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classasge_1_1input_1_1InputDevice')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classasge_1_1input_1_1InputDevice.html">asge::input::InputDevice</a></td></tr>
 <tr class="memitem:af825005bac9c0cadb8df63948be63620 inherit pub_methods_classasge_1_1input_1_1InputDevice" id="r_af825005bac9c0cadb8df63948be63620"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasge_1_1input_1_1InputDevice.html#af825005bac9c0cadb8df63948be63620">~InputDevice</a> ()=default</td></tr>
 <tr class="separator:af825005bac9c0cadb8df63948be63620 inherit pub_methods_classasge_1_1input_1_1InputDevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -390,7 +393,7 @@ Private Attributes</h2></td></tr>
 <p>Reports whether input capture is currently enabled.</p>
 <dl class="section return"><dt>Returns</dt><dd>true if enabled, false otherwise. </dd></dl>
 
-<p>Implements <a class="el" href="classasge_1_1input_1_1InputDevice.html#ac8a3e5fa8aa3af04eb104939574b8459">asge::input::InputDevice</a>.</p>
+<p>Reimplemented from <a class="el" href="classasge_1_1input_1_1AInputDevice.html#a5a7f18614904ec05d575241774845407">asge::input::AInputDevice</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="RaylibKeyboardDevice_8cpp_source.html#l00171">171</a> of file <a class="el" href="RaylibKeyboardDevice_8cpp_source.html">RaylibKeyboardDevice.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  172</span>{</div>
@@ -429,7 +432,7 @@ Private Attributes</h2></td></tr>
 <p>Returns the logical device name.</p>
 <dl class="section return"><dt>Returns</dt><dd>Device name (e.g. "Keyboard"). </dd></dl>
 
-<p>Implements <a class="el" href="classasge_1_1input_1_1InputDevice.html#aa8367b9a762accad2b4bb7f80a358e33">asge::input::InputDevice</a>.</p>
+<p>Reimplemented from <a class="el" href="classasge_1_1input_1_1AInputDevice.html#aed5b881d5e480eabf2625cb7e110cc8b">asge::input::AInputDevice</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="RaylibKeyboardDevice_8cpp_source.html#l00135">135</a> of file <a class="el" href="RaylibKeyboardDevice_8cpp_source.html">RaylibKeyboardDevice.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  136</span>{</div>
@@ -534,7 +537,7 @@ Private Attributes</h2></td></tr>
 <li>Surfaces any unexpected backend failure through the debug service before rethrowing. </li>
 </ul>
 
-<p>Implements <a class="el" href="classasge_1_1input_1_1InputDevice.html#a83845cdf08bf12fe8a1af157f78886c6">asge::input::InputDevice</a>.</p>
+<p>Reimplemented from <a class="el" href="classasge_1_1input_1_1AInputDevice.html#abeaefe439ae8703ce7821e391626c35b">asge::input::AInputDevice</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="RaylibKeyboardDevice_8cpp_source.html#l00087">87</a> of file <a class="el" href="RaylibKeyboardDevice_8cpp_source.html">RaylibKeyboardDevice.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   88</span>{</div>
@@ -624,7 +627,7 @@ Private Attributes</h2></td></tr>
 </dl>
 <p>When disabled, <a class="el" href="classasge_1_1input_1_1RaylibKeyboardDevice.html#a366d51dd6f2652f594b1156206610d4e">poll()</a> yields an empty snapshot. </p>
 
-<p>Implements <a class="el" href="classasge_1_1input_1_1InputDevice.html#a3b6ea592931f8cc4c4cccc051e8851ec">asge::input::InputDevice</a>.</p>
+<p>Reimplemented from <a class="el" href="classasge_1_1input_1_1AInputDevice.html#aeaeee1ea3f210287677f189362d27730">asge::input::AInputDevice</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="RaylibKeyboardDevice_8cpp_source.html#l00143">143</a> of file <a class="el" href="RaylibKeyboardDevice_8cpp_source.html">RaylibKeyboardDevice.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  144</span>{</div>
@@ -687,7 +690,7 @@ Private Attributes</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>The last <a class="el" href="structasge_1_1input_1_1DeviceState.html">DeviceState</a> updated by <a class="el" href="classasge_1_1input_1_1RaylibKeyboardDevice.html#a366d51dd6f2652f594b1156206610d4e">poll()</a>.</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>No polling is performed here; the state is a snapshot. </dd></dl>
 
-<p>Implements <a class="el" href="classasge_1_1input_1_1InputDevice.html#aa202dd6c83127f4bc5731e52a36d19a1">asge::input::InputDevice</a>.</p>
+<p>Reimplemented from <a class="el" href="classasge_1_1input_1_1AInputDevice.html#a9cbf12758d12d3de6b37a27e5721467c">asge::input::AInputDevice</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="RaylibKeyboardDevice_8cpp_source.html#l00127">127</a> of file <a class="el" href="RaylibKeyboardDevice_8cpp_source.html">RaylibKeyboardDevice.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  128</span>{</div>

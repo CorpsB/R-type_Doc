@@ -1,5 +1,6 @@
 var namespaceasge_1_1audio =
 [
+    [ "AAudioDriver", "classasge_1_1audio_1_1AAudioDriver.html", "classasge_1_1audio_1_1AAudioDriver" ],
     [ "AudioDriver", "classasge_1_1audio_1_1AudioDriver.html", "classasge_1_1audio_1_1AudioDriver" ],
     [ "AudioManager", "classasge_1_1audio_1_1AudioManager.html", "classasge_1_1audio_1_1AudioManager" ],
     [ "IAudio", "classasge_1_1audio_1_1IAudio.html", "classasge_1_1audio_1_1IAudio" ],

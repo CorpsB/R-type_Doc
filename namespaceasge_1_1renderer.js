@@ -1,5 +1,6 @@
 var namespaceasge_1_1renderer =
 [
+    [ "ARenderDriver", "classasge_1_1renderer_1_1ARenderDriver.html", "classasge_1_1renderer_1_1ARenderDriver" ],
     [ "FontHandle", "structasge_1_1renderer_1_1FontHandle.html", "structasge_1_1renderer_1_1FontHandle" ],
     [ "IRenderer", "classasge_1_1renderer_1_1IRenderer.html", "classasge_1_1renderer_1_1IRenderer" ],
     [ "NullRenderer", "classasge_1_1renderer_1_1NullRenderer.html", "classasge_1_1renderer_1_1NullRenderer" ],

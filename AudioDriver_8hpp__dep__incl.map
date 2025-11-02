@@ -1,15 +1,17 @@
 <map id="AudioDriver.hpp" name="AudioDriver.hpp">
 <area shape="rect" id="Node000001" title="Abstract interface for audio backend implementations." alt="" coords="93,5,220,31"/>
-<area shape="rect" id="Node000002" href="$AudioManager_8hpp.html" title="High&#45;level manager for engine audio playback and caching." alt="" coords="5,79,148,104"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="136,42,92,80,88,76,132,38"/>
-<area shape="rect" id="Node000005" href="$audio_2RaylibDriver_2RaylibDriver_8hpp.html" title="Raylib&#45;based implementation of the AudioDriver interface." alt="" coords="173,79,303,104"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="182,38,226,76,223,80,178,42"/>
-<area shape="rect" id="Node000003" href="$AudioManager_8cpp.html" title="Implementation of the AudioManager." alt="" coords="163,152,305,177"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="116,107,209,149,207,154,113,112"/>
-<area shape="rect" id="Node000004" href="$EngineCore_8cpp.html" title="Implements the engine bootstrap and runtime loop." alt="" coords="15,152,138,177"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="79,118,79,152,74,152,74,118"/>
-<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="239,118,237,152,232,152,234,118"/>
-<area shape="poly" id="edge6_Node000005_Node000004" title=" " alt="" coords="201,112,104,154,102,149,199,107"/>
-<area shape="rect" id="Node000006" href="$audio_2RaylibDriver_2RaylibDriver_8cpp.html" title="Raylib&#45;backed audio driver implementation details." alt="" coords="329,152,459,177"/>
-<area shape="poly" id="edge7_Node000005_Node000006" title=" " alt="" coords="277,107,370,149,367,154,274,112"/>
+<area shape="rect" id="Node000002" href="$AAudioDriver_8hpp.html" title=" " alt="" coords="156,79,291,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="179,39,214,77,211,80,175,43"/>
+<area shape="rect" id="Node000007" href="$AudioManager_8hpp.html" title="High&#45;level manager for engine audio playback and caching." alt="" coords="5,152,148,177"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="146,44,85,153,81,150,141,42"/>
+<area shape="rect" id="Node000003" href="$audio_2RaylibDriver_2RaylibDriver_8hpp.html" title="Raylib&#45;based implementation of the AudioDriver interface." alt="" coords="173,152,303,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="231,117,238,151,233,152,226,118"/>
+<area shape="rect" id="Node000004" href="$AudioManager_8cpp.html" title="Implementation of the AudioManager." alt="" coords="163,225,305,251"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="239,191,237,225,232,225,234,191"/>
+<area shape="rect" id="Node000005" href="$EngineCore_8cpp.html" title="Implements the engine bootstrap and runtime loop." alt="" coords="15,225,138,251"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="201,185,104,228,102,223,199,180"/>
+<area shape="rect" id="Node000006" href="$audio_2RaylibDriver_2RaylibDriver_8cpp.html" title="Raylib&#45;backed audio driver implementation details." alt="" coords="329,225,459,251"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="277,181,370,223,367,228,274,185"/>
+<area shape="poly" id="edge7_Node000007_Node000004" title=" " alt="" coords="116,181,209,223,207,228,113,185"/>
+<area shape="poly" id="edge8_Node000007_Node000005" title=" " alt="" coords="79,191,79,225,74,225,74,191"/>
 </map>

@@ -2,6 +2,7 @@ var namespaceasge_1_1script =
 [
     [ "ActionHandler", "namespaceasge_1_1script_1_1ActionHandler.html", "namespaceasge_1_1script_1_1ActionHandler" ],
     [ "EntityFactory", "namespaceasge_1_1script_1_1EntityFactory.html", "namespaceasge_1_1script_1_1EntityFactory" ],
+    [ "AScriptRuntime", "classasge_1_1script_1_1AScriptRuntime.html", "classasge_1_1script_1_1AScriptRuntime" ],
     [ "AudioAsset", "namespaceasge_1_1script.html#structasge_1_1script_1_1AudioAsset", "namespaceasge_1_1script_structasge_1_1script_1_1AudioAsset_dup" ],
     [ "BehaviorBlock", "namespaceasge_1_1script.html#structasge_1_1script_1_1BehaviorBlock", "namespaceasge_1_1script_structasge_1_1script_1_1BehaviorBlock_dup" ],
     [ "IScript", "classasge_1_1script_1_1IScript.html", "classasge_1_1script_1_1IScript" ],

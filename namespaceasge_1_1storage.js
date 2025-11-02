@@ -1,5 +1,6 @@
 var namespaceasge_1_1storage =
 [
+    [ "AStorageDevice", "classasge_1_1storage_1_1AStorageDevice.html", "classasge_1_1storage_1_1AStorageDevice" ],
     [ "IStorage", "classasge_1_1storage_1_1IStorage.html", "classasge_1_1storage_1_1IStorage" ],
     [ "LocalDevice", "classasge_1_1storage_1_1LocalDevice.html", "classasge_1_1storage_1_1LocalDevice" ],
     [ "StorageDevice", "classasge_1_1storage_1_1StorageDevice.html", "classasge_1_1storage_1_1StorageDevice" ],

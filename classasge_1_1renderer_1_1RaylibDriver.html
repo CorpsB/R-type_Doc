@@ -188,6 +188,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a55d9827204fcf74556056f504cf095ec" id="r_a55d9827204fcf74556056f504cf095ec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasge_1_1renderer_1_1RaylibDriver.html#a55d9827204fcf74556056f504cf095ec">loadFontFromFile</a> (const std::string &amp;path, <a class="el" href="classasge_1_1storage_1_1IStorage.html">storage::IStorage</a> &amp;storage) override</td></tr>
 <tr class="memdesc:a55d9827204fcf74556056f504cf095ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Charge une police depuis le système de stockage.  <br /></td></tr>
 <tr class="separator:a55d9827204fcf74556056f504cf095ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classasge_1_1renderer_1_1ARenderDriver"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classasge_1_1renderer_1_1ARenderDriver')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classasge_1_1renderer_1_1ARenderDriver.html">asge::renderer::ARenderDriver</a></td></tr>
+<tr class="memitem:ac913cdb7208c3fec66e0c0adbff59232 inherit pub_methods_classasge_1_1renderer_1_1ARenderDriver" id="r_ac913cdb7208c3fec66e0c0adbff59232"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasge_1_1renderer_1_1ARenderDriver.html#ac913cdb7208c3fec66e0c0adbff59232">~ARenderDriver</a> () override=default</td></tr>
+<tr class="separator:ac913cdb7208c3fec66e0c0adbff59232 inherit pub_methods_classasge_1_1renderer_1_1ARenderDriver"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classasge_1_1renderer_1_1RenderDriver"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classasge_1_1renderer_1_1RenderDriver')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classasge_1_1renderer_1_1RenderDriver.html">asge::renderer::RenderDriver</a></td></tr>
 <tr class="memitem:a672ceeb5929064cc4bba0388c16079de inherit pub_methods_classasge_1_1renderer_1_1RenderDriver" id="r_a672ceeb5929064cc4bba0388c16079de"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasge_1_1renderer_1_1RenderDriver.html#a672ceeb5929064cc4bba0388c16079de">~RenderDriver</a> ()=default</td></tr>
 <tr class="memdesc:a672ceeb5929064cc4bba0388c16079de inherit pub_methods_classasge_1_1renderer_1_1RenderDriver"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructeur virtuel par défaut.  <br /></td></tr>
@@ -373,7 +376,7 @@ Private Attributes</h2></td></tr>
 <dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="classasge_1_1renderer_1_1RaylibDriver.html#a81216f78a98651a9b974f8039c97c14d">init()</a> doit avoir été appelé avec succès. </dd></dl>
 <dl class="section post"><dt>Postcondition</dt><dd>Les commandes de dessin peuvent être exécutées jusqu’à <a class="el" href="classasge_1_1renderer_1_1RaylibDriver.html#ada36c70f3a5b1cc877a0ce1ff399e880">present()</a>. </dd></dl>
 
-<p>Implements <a class="el" href="classasge_1_1renderer_1_1RenderDriver.html#a63e35b021825ae6e1485a701b7fb8d4a">asge::renderer::RenderDriver</a>.</p>
+<p>Reimplemented from <a class="el" href="classasge_1_1renderer_1_1ARenderDriver.html#aedbee7529b86caf7ceb87b9b0dc22859">asge::renderer::ARenderDriver</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="renderer_2RaylibDriver_2RaylibDriver_8cpp_source.html#l00176">176</a> of file <a class="el" href="renderer_2RaylibDriver_2RaylibDriver_8cpp_source.html">renderer/RaylibDriver/RaylibDriver.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  177</span>{</div>
@@ -443,7 +446,7 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="classasge_1_1renderer_1_1RaylibDriver.html#a2f1275c53a19643759dba16258177f53">beginFrame()</a> a été appelé pour la frame courante. </dd></dl>
 
-<p>Implements <a class="el" href="classasge_1_1renderer_1_1RenderDriver.html#a6582a652f13e282f28fe61a3f4a7b9cb">asge::renderer::RenderDriver</a>.</p>
+<p>Reimplemented from <a class="el" href="classasge_1_1renderer_1_1ARenderDriver.html#aa34ac18f0ff56f4cf098ce9f83cbad65">asge::renderer::ARenderDriver</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="renderer_2RaylibDriver_2RaylibDriver_8cpp_source.html#l00182">182</a> of file <a class="el" href="renderer_2RaylibDriver_2RaylibDriver_8cpp_source.html">renderer/RaylibDriver/RaylibDriver.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  183</span>{</div>
@@ -521,7 +524,7 @@ Private Attributes</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>Un <a class="el" href="structasge_1_1renderer_1_1TextureHandle.html">TextureHandle</a> valide si succès, invalide sinon.</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>L’implémentation crée un <code>Texture2D</code> Raylib et stocke son identifiant dans <code>_texture_cache</code>. </dd></dl>
 
-<p>Implements <a class="el" href="classasge_1_1renderer_1_1RenderDriver.html#af01d1f32dad3cbd29251da99ccd46672">asge::renderer::RenderDriver</a>.</p>
+<p>Reimplemented from <a class="el" href="classasge_1_1renderer_1_1ARenderDriver.html#a074b5541908365f511d8b13ca2d77c15">asge::renderer::ARenderDriver</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="renderer_2RaylibDriver_2RaylibDriver_8cpp_source.html#l00230">230</a> of file <a class="el" href="renderer_2RaylibDriver_2RaylibDriver_8cpp_source.html">renderer/RaylibDriver/RaylibDriver.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  232</span>{</div>
@@ -653,7 +656,7 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section post"><dt>Postcondition</dt><dd>La ressource GPU correspondante est supprimée du cache interne. </dd></dl>
 
-<p>Implements <a class="el" href="classasge_1_1renderer_1_1RenderDriver.html#a0ed62258f4dcd6eda326d8622b5581a2">asge::renderer::RenderDriver</a>.</p>
+<p>Reimplemented from <a class="el" href="classasge_1_1renderer_1_1ARenderDriver.html#a8d818c931c7fc680f80e9a98d8e331a8">asge::renderer::ARenderDriver</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="renderer_2RaylibDriver_2RaylibDriver_8cpp_source.html#l00315">315</a> of file <a class="el" href="renderer_2RaylibDriver_2RaylibDriver_8cpp_source.html">renderer/RaylibDriver/RaylibDriver.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  316</span>{</div>
@@ -771,7 +774,7 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Implements <a class="el" href="classasge_1_1renderer_1_1RenderDriver.html#abb605079020a2d319ca48da67e14b04c">asge::renderer::RenderDriver</a>.</p>
+<p>Reimplemented from <a class="el" href="classasge_1_1renderer_1_1ARenderDriver.html#a1f8aaabf7036e8c5ff1f755af8688275">asge::renderer::ARenderDriver</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="renderer_2RaylibDriver_2RaylibDriver_8cpp_source.html#l00354">354</a> of file <a class="el" href="renderer_2RaylibDriver_2RaylibDriver_8cpp_source.html">renderer/RaylibDriver/RaylibDriver.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  356</span>{</div>
@@ -875,7 +878,7 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Implements <a class="el" href="classasge_1_1renderer_1_1RenderDriver.html#a0fd94adf707957580eb82d9b17438c95">asge::renderer::RenderDriver</a>.</p>
+<p>Reimplemented from <a class="el" href="classasge_1_1renderer_1_1ARenderDriver.html#a2ade783e70e9f7811ddadcd1cb45456c">asge::renderer::ARenderDriver</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="renderer_2RaylibDriver_2RaylibDriver_8cpp_source.html#l00443">443</a> of file <a class="el" href="renderer_2RaylibDriver_2RaylibDriver_8cpp_source.html">renderer/RaylibDriver/RaylibDriver.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  445</span>{</div>
@@ -982,7 +985,7 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Implements <a class="el" href="classasge_1_1renderer_1_1RenderDriver.html#ac83232466bc5103d80b52d338ace47a3">asge::renderer::RenderDriver</a>.</p>
+<p>Reimplemented from <a class="el" href="classasge_1_1renderer_1_1ARenderDriver.html#a5ffb8ea072a2d29f095ff9f27c775230">asge::renderer::ARenderDriver</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="renderer_2RaylibDriver_2RaylibDriver_8cpp_source.html#l00390">390</a> of file <a class="el" href="renderer_2RaylibDriver_2RaylibDriver_8cpp_source.html">renderer/RaylibDriver/RaylibDriver.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  392</span>{</div>
@@ -1104,7 +1107,7 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Implements <a class="el" href="classasge_1_1renderer_1_1RenderDriver.html#a456f29ab9d72fd2c7feadaea35c89b3a">asge::renderer::RenderDriver</a>.</p>
+<p>Reimplemented from <a class="el" href="classasge_1_1renderer_1_1ARenderDriver.html#a351898e75d39c9e0332ee75d2ab6a0ee">asge::renderer::ARenderDriver</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="renderer_2RaylibDriver_2RaylibDriver_8cpp_source.html#l00436">436</a> of file <a class="el" href="renderer_2RaylibDriver_2RaylibDriver_8cpp_source.html">renderer/RaylibDriver/RaylibDriver.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  438</span>{</div>
@@ -1146,7 +1149,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implements <a class="el" href="classasge_1_1renderer_1_1RenderDriver.html#a205ffbc327187ad29dcece9242de4157">asge::renderer::RenderDriver</a>.</p>
+<p>Reimplemented from <a class="el" href="classasge_1_1renderer_1_1ARenderDriver.html#ab3a5fd57f5be15156542b2df14449dbe">asge::renderer::ARenderDriver</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="renderer_2RaylibDriver_2RaylibDriver_8cpp_source.html#l00097">97</a> of file <a class="el" href="renderer_2RaylibDriver_2RaylibDriver_8cpp_source.html">renderer/RaylibDriver/RaylibDriver.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   98</span>{</div>
@@ -1218,7 +1221,7 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Implements <a class="el" href="classasge_1_1renderer_1_1RenderDriver.html#ae19e12e101d21de3162dc4d740d04029">asge::renderer::RenderDriver</a>.</p>
+<p>Reimplemented from <a class="el" href="classasge_1_1renderer_1_1ARenderDriver.html#a047165c005ad9baf4450031f0b83f6ff">asge::renderer::ARenderDriver</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="renderer_2RaylibDriver_2RaylibDriver_8cpp_source.html#l00127">127</a> of file <a class="el" href="renderer_2RaylibDriver_2RaylibDriver_8cpp_source.html">renderer/RaylibDriver/RaylibDriver.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  128</span>{</div>
@@ -1299,7 +1302,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implements <a class="el" href="classasge_1_1renderer_1_1RenderDriver.html#af2b626a6582da2bd6757546f128e396e">asge::renderer::RenderDriver</a>.</p>
+<p>Reimplemented from <a class="el" href="classasge_1_1renderer_1_1ARenderDriver.html#a83e8560713168d1f0f9fdf7a4e669457">asge::renderer::ARenderDriver</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="renderer_2RaylibDriver_2RaylibDriver_8cpp_source.html#l00113">113</a> of file <a class="el" href="renderer_2RaylibDriver_2RaylibDriver_8cpp_source.html">renderer/RaylibDriver/RaylibDriver.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  114</span>{</div>
@@ -1351,7 +1354,7 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Implements <a class="el" href="classasge_1_1renderer_1_1RenderDriver.html#ace101534e8150cb0f644b05ceeef36f0">asge::renderer::RenderDriver</a>.</p>
+<p>Reimplemented from <a class="el" href="classasge_1_1renderer_1_1ARenderDriver.html#a9f6232e47eff74e6d999852464f6d087">asge::renderer::ARenderDriver</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="renderer_2RaylibDriver_2RaylibDriver_8cpp_source.html#l00602">602</a> of file <a class="el" href="renderer_2RaylibDriver_2RaylibDriver_8cpp_source.html">renderer/RaylibDriver/RaylibDriver.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  603</span>{</div>
@@ -1417,7 +1420,7 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Un <a class="el" href="structasge_1_1renderer_1_1TextureHandle.html">TextureHandle</a> valide si succès. </dd></dl>
 
-<p>Implements <a class="el" href="classasge_1_1renderer_1_1RenderDriver.html#a9877d5f170cdafaddc0e3bd06c354b52">asge::renderer::RenderDriver</a>.</p>
+<p>Reimplemented from <a class="el" href="classasge_1_1renderer_1_1ARenderDriver.html#a81799caf452061d573fe422dd35131c3">asge::renderer::ARenderDriver</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="renderer_2RaylibDriver_2RaylibDriver_8cpp_source.html#l00532">532</a> of file <a class="el" href="renderer_2RaylibDriver_2RaylibDriver_8cpp_source.html">renderer/RaylibDriver/RaylibDriver.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  534</span>{</div>
@@ -1546,7 +1549,7 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Dimensions en pixels sous forme de <a class="el" href="namespaceasge_1_1renderer.html">Vec2f</a>. </dd></dl>
 
-<p>Implements <a class="el" href="classasge_1_1renderer_1_1RenderDriver.html#adeb25bea537c491b2e93ef7517cf7c15">asge::renderer::RenderDriver</a>.</p>
+<p>Reimplemented from <a class="el" href="classasge_1_1renderer_1_1ARenderDriver.html#a0b4b6910d8713db7b7f4ac5cd5729850">asge::renderer::ARenderDriver</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="renderer_2RaylibDriver_2RaylibDriver_8cpp_source.html#l00479">479</a> of file <a class="el" href="renderer_2RaylibDriver_2RaylibDriver_8cpp_source.html">renderer/RaylibDriver/RaylibDriver.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  481</span>{</div>
@@ -1583,7 +1586,7 @@ Private Attributes</h2></td></tr>
 <dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="classasge_1_1renderer_1_1RaylibDriver.html#a2f1275c53a19643759dba16258177f53">beginFrame()</a> doit avoir été appelé. </dd></dl>
 <dl class="section post"><dt>Postcondition</dt><dd>Les commandes de dessin sont soumises à l’écran. </dd></dl>
 
-<p>Implements <a class="el" href="classasge_1_1renderer_1_1RenderDriver.html#a34031869a29931175ab5e823ff2ce59f">asge::renderer::RenderDriver</a>.</p>
+<p>Reimplemented from <a class="el" href="classasge_1_1renderer_1_1ARenderDriver.html#aa9362a3a8795cd1c3ce7d1c36dd990ad">asge::renderer::ARenderDriver</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="renderer_2RaylibDriver_2RaylibDriver_8cpp_source.html#l00187">187</a> of file <a class="el" href="renderer_2RaylibDriver_2RaylibDriver_8cpp_source.html">renderer/RaylibDriver/RaylibDriver.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  188</span>{</div>
@@ -1694,7 +1697,7 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section note"><dt>Note</dt><dd>Cette méthode recalcule la projection virtuelle via <a class="el" href="classasge_1_1renderer_1_1RaylibDriver.html#a7c82f1f2a1db6fa76a00ac7a284620d2">recomputeVirtualScreen()</a>. </dd></dl>
 
-<p>Implements <a class="el" href="classasge_1_1renderer_1_1RenderDriver.html#a022beb0d789fdf176dc012d78beda50d">asge::renderer::RenderDriver</a>.</p>
+<p>Reimplemented from <a class="el" href="classasge_1_1renderer_1_1ARenderDriver.html#a3e173870795f9bfed6e3339524d6bd96">asge::renderer::ARenderDriver</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="renderer_2RaylibDriver_2RaylibDriver_8cpp_source.html#l00203">203</a> of file <a class="el" href="renderer_2RaylibDriver_2RaylibDriver_8cpp_source.html">renderer/RaylibDriver/RaylibDriver.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  204</span>{</div>
@@ -1744,7 +1747,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implements <a class="el" href="classasge_1_1renderer_1_1RenderDriver.html#a5adae6a381f427a4c043033d628ad464">asge::renderer::RenderDriver</a>.</p>
+<p>Reimplemented from <a class="el" href="classasge_1_1renderer_1_1ARenderDriver.html#a5f6bd41c602c0a06cff41e424499060a">asge::renderer::ARenderDriver</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="renderer_2RaylibDriver_2RaylibDriver_8cpp_source.html#l00108">108</a> of file <a class="el" href="renderer_2RaylibDriver_2RaylibDriver_8cpp_source.html">renderer/RaylibDriver/RaylibDriver.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  109</span>{</div>
@@ -1777,7 +1780,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implements <a class="el" href="classasge_1_1renderer_1_1RenderDriver.html#a6e05e4396977681b0726ad0dc8ebf271">asge::renderer::RenderDriver</a>.</p>
+<p>Reimplemented from <a class="el" href="classasge_1_1renderer_1_1ARenderDriver.html#ae4f2b95ccfab72e26c9171480950f9d0">asge::renderer::ARenderDriver</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="renderer_2RaylibDriver_2RaylibDriver_8cpp_source.html#l00092">92</a> of file <a class="el" href="renderer_2RaylibDriver_2RaylibDriver_8cpp_source.html">renderer/RaylibDriver/RaylibDriver.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   93</span>{</div>
@@ -1812,7 +1815,7 @@ Private Attributes</h2></td></tr>
 <p>Ferme proprement Raylib et libère toutes les ressources. </p>
 <dl class="section post"><dt>Postcondition</dt><dd>Le contexte Raylib et toutes les textures associées sont détruits. </dd></dl>
 
-<p>Implements <a class="el" href="classasge_1_1renderer_1_1RenderDriver.html#a3bab54f546575674c3f5ccd7d9e09128">asge::renderer::RenderDriver</a>.</p>
+<p>Reimplemented from <a class="el" href="classasge_1_1renderer_1_1ARenderDriver.html#a5654b99f8be7ddca3231a5e8330c98e4">asge::renderer::ARenderDriver</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="renderer_2RaylibDriver_2RaylibDriver_8cpp_source.html#l00213">213</a> of file <a class="el" href="renderer_2RaylibDriver_2RaylibDriver_8cpp_source.html">renderer/RaylibDriver/RaylibDriver.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  214</span>{</div>
@@ -1856,7 +1859,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implements <a class="el" href="classasge_1_1renderer_1_1RenderDriver.html#a7ebfbe2ee3783feb74198561aa99e89c">asge::renderer::RenderDriver</a>.</p>
+<p>Reimplemented from <a class="el" href="classasge_1_1renderer_1_1ARenderDriver.html#a207795adc39bce23d812c362911cf640">asge::renderer::ARenderDriver</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="renderer_2RaylibDriver_2RaylibDriver_8cpp_source.html#l00118">118</a> of file <a class="el" href="renderer_2RaylibDriver_2RaylibDriver_8cpp_source.html">renderer/RaylibDriver/RaylibDriver.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  119</span>{</div>

@@ -1,7 +1,9 @@
 var hierarchy =
 [
     [ "asge::audio::AudioDriver", "classasge_1_1audio_1_1AudioDriver.html", [
-      [ "asge::audio::RaylibDriver", "classasge_1_1audio_1_1RaylibDriver.html", null ]
+      [ "asge::audio::AAudioDriver", "classasge_1_1audio_1_1AAudioDriver.html", [
+        [ "asge::audio::RaylibDriver", "classasge_1_1audio_1_1RaylibDriver.html", null ]
+      ] ]
     ] ],
     [ "asge::audio::IAudio", "classasge_1_1audio_1_1IAudio.html", [
       [ "asge::audio::AudioManager", "classasge_1_1audio_1_1AudioManager.html", null ],
@@ -40,7 +42,9 @@ var hierarchy =
       [ "asge::input::NullInput", "classasge_1_1input_1_1NullInput.html", null ]
     ] ],
     [ "asge::input::InputDevice", "classasge_1_1input_1_1InputDevice.html", [
-      [ "asge::input::RaylibKeyboardDevice", "classasge_1_1input_1_1RaylibKeyboardDevice.html", null ]
+      [ "asge::input::AInputDevice", "classasge_1_1input_1_1AInputDevice.html", [
+        [ "asge::input::RaylibKeyboardDevice", "classasge_1_1input_1_1RaylibKeyboardDevice.html", null ]
+      ] ]
     ] ],
     [ "asge::input::InputSnapshot", "namespaceasge_1_1input.html#structasge_1_1input_1_1InputSnapshot", null ],
     [ "asge::input::PointerState", "namespaceasge_1_1input.html#structasge_1_1input_1_1PointerState", null ],
@@ -58,8 +62,10 @@ var hierarchy =
     ] ],
     [ "asge::network::NetHeader", "namespaceasge_1_1network.html#structasge_1_1network_1_1NetHeader", null ],
     [ "asge::network::NetworkChannel", "classasge_1_1network_1_1NetworkChannel.html", [
-      [ "asge::network::LoopbackChannel", "classasge_1_1network_1_1LoopbackChannel.html", null ],
-      [ "asge::network::UDPChannel", "classasge_1_1network_1_1UDPChannel.html", null ]
+      [ "asge::network::ANetworkChannel", "classasge_1_1network_1_1ANetworkChannel.html", [
+        [ "asge::network::UDPChannel", "classasge_1_1network_1_1UDPChannel.html", null ]
+      ] ],
+      [ "asge::network::LoopbackChannel", "classasge_1_1network_1_1LoopbackChannel.html", null ]
     ] ],
     [ "asge::network::NetworkManager::ConnTx", "classasge_1_1network_1_1NetworkManager.html#structasge_1_1network_1_1NetworkManager_1_1ConnTx", null ],
     [ "asge::network::NetworkManager::InFlight", "classasge_1_1network_1_1NetworkManager.html#structasge_1_1network_1_1NetworkManager_1_1InFlight", null ],
@@ -78,7 +84,9 @@ var hierarchy =
     ] ],
     [ "asge::renderer::Rect", "namespaceasge_1_1renderer.html#structasge_1_1renderer_1_1Rect", null ],
     [ "asge::renderer::RenderDriver", "classasge_1_1renderer_1_1RenderDriver.html", [
-      [ "asge::renderer::RaylibDriver", "classasge_1_1renderer_1_1RaylibDriver.html", null ]
+      [ "asge::renderer::ARenderDriver", "classasge_1_1renderer_1_1ARenderDriver.html", [
+        [ "asge::renderer::RaylibDriver", "classasge_1_1renderer_1_1RaylibDriver.html", null ]
+      ] ]
     ] ],
     [ "asge::renderer::RGBAColor", "namespaceasge_1_1renderer.html#structasge_1_1renderer_1_1RGBAColor", null ],
     [ "asge::renderer::TextureHandle", "structasge_1_1renderer_1_1TextureHandle.html", null ],
@@ -119,7 +127,9 @@ var hierarchy =
     [ "asge::script::QueuedAction", "namespaceasge_1_1script.html#structasge_1_1script_1_1QueuedAction", null ],
     [ "asge::script::ScriptHandle", "namespaceasge_1_1script.html#structasge_1_1script_1_1ScriptHandle", null ],
     [ "asge::script::ScriptRuntime", "classasge_1_1script_1_1ScriptRuntime.html", [
-      [ "asge::script::JSONRuntime", "classasge_1_1script_1_1JSONRuntime.html", null ]
+      [ "asge::script::AScriptRuntime", "classasge_1_1script_1_1AScriptRuntime.html", [
+        [ "asge::script::JSONRuntime", "classasge_1_1script_1_1JSONRuntime.html", null ]
+      ] ]
     ] ],
     [ "asge::script::SpriteAsset", "namespaceasge_1_1script.html#structasge_1_1script_1_1SpriteAsset", null ],
     [ "asge::Services", "structasge_1_1Services.html", null ],
@@ -127,7 +137,9 @@ var hierarchy =
       [ "asge::storage::StorageManager", "classasge_1_1storage_1_1StorageManager.html", null ]
     ] ],
     [ "asge::storage::StorageDevice", "classasge_1_1storage_1_1StorageDevice.html", [
-      [ "asge::storage::LocalDevice", "classasge_1_1storage_1_1LocalDevice.html", null ]
+      [ "asge::storage::AStorageDevice", "classasge_1_1storage_1_1AStorageDevice.html", [
+        [ "asge::storage::LocalDevice", "classasge_1_1storage_1_1LocalDevice.html", null ]
+      ] ]
     ] ],
     [ "asge::timer::ITimer", "classasge_1_1timer_1_1ITimer.html", [
       [ "asge::timer::GameTimer", "classasge_1_1timer_1_1GameTimer.html", null ],
