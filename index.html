@@ -115,6 +115,13 @@ Dependencies</h1>
 <li><b>Git</b> – to clone the repository and manage branches.</li>
 </ul>
 <p>Third‑party libraries (Boost.Asio, raylib, nlohmann/json, etc.) are declared in the Conan recipe and will be downloaded automatically when running the build scripts.</p>
+<blockquote class="doxtable">
+<p>&zwj;💡 <b>Note:</b> Before building, ensure Python and Conan are installed and accessible from your PATH. <br  />
+ It is recommended to create and activate a Python virtual environment before installing Conan to keep your dependencies isolated:</p>
+<div class="fragment"><div class="line">python3 -m venv venv</div>
+<div class="line">source venv/bin/activate  # On Windows use: venv\Scripts\activate</div>
+<div class="line">python3 -m pip install --upgrade conan</div>
+</div><!-- fragment --> </blockquote>
 <h1><a class="anchor" id="autotoc_md49"></a>
 Building the project</h1>
 <p>The repository provides helper scripts to automate the entire build process. These scripts run Conan to install dependencies, generate CMake presets and compile the targets.</p>
@@ -164,6 +171,7 @@ Documentation</h1>
 <li><a class="el" href="md_doc_2dev__doc.html">**Developer Documentation (`doc/dev_doc.md`)**</a> – explains the engine architecture, subsystems and ECS; provides build and extension tutorials; and outlines contribution guidelines.</li>
 <li><a class="el" href="md_doc_2network.html">**Network Protocol (`doc/network.md`)**</a> – describes the binary UDP protocol used between clients and server, including packet structures, message types and reliability channels.</li>
 <li><a class="el" href="md_doc_2tec.html">**Technical &amp; Comparative Study (`doc/tec.md`)**</a> – justifies the choice of technologies (C++, UDP, Boost.Asio, raylib) and compares them to alternatives; discusses algorithms, data structures, storage and security considerations.</li>
+<li><a href="https://corpsb.github.io/R-type_Doc/"><b>Online Doxygen Documentation</b></a> – full API reference generated from the source code.</li>
 </ul>
 <p>Refer to these documents to better understand the engine internals, network implementation and design decisions.</p>
 <h1><a class="anchor" id="autotoc_md54"></a>
