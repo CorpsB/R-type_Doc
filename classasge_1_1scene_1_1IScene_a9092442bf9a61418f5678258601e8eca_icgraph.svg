@@ -57,7 +57,7 @@ var sectionId = 'dynsection-4';
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title=" ">
+<g id="a_Node000001"><a xlink:title="Replace the top scene with a new one.">
 <polygon fill="#999999" stroke="#666666" points="823,-56 668,-56 668,-37 823,-37 823,-56"/>
 <text text-anchor="middle" x="745.5" y="-44" font-family="Helvetica,sans-Serif" font-size="10.00">asge::scene::IScene::replace</text>
 </a>
@@ -66,7 +66,7 @@ var sectionId = 'dynsection-4';
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="classasge_1_1scene_1_1IScene.html#a848c0b507b6646bb6fa96e20a766c345" target="_top" xlink:title=" ">
+<g id="a_Node000002"><a xlink:href="classasge_1_1scene_1_1IScene.html#a848c0b507b6646bb6fa96e20a766c345" target="_top" xlink:title="Replace the top scene by constructing a new one in&#45;place.">
 <polygon fill="white" stroke="#666666" points="632,-56 456,-56 456,-37 632,-37 632,-56"/>
 <text text-anchor="middle" x="544" y="-44" font-family="Helvetica,sans-Serif" font-size="10.00">asge::scene::IScene::replaceNew</text>
 </a>

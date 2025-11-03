@@ -106,12 +106,16 @@ $(document).ready(function(){initNavTree('namespaceasge_1_1scene_1_1ui.html','')
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasge_1_1scene_1_1ui_1_1UIElement.html">UIElement</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstract base class (interface) for all UI elements.  <a href="classasge_1_1scene_1_1ui_1_1UIElement.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasge_1_1scene_1_1ui_1_1UIList.html">UIList</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A UI element that acts as a container for other UI elements.  <a href="classasge_1_1scene_1_1ui_1_1UIList.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:structasge_1_1scene_1_1ui_1_1UIPosition" id="r_structasge_1_1scene_1_1ui_1_1UIPosition"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceasge_1_1scene_1_1ui.html#structasge_1_1scene_1_1ui_1_1UIPosition">UIPosition</a></td></tr>
+<tr class="memdesc:structasge_1_1scene_1_1ui_1_1UIPosition"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a 2D position (x, y) for a UI element.  <a href="namespaceasge_1_1scene_1_1ui.html#structasge_1_1scene_1_1ui_1_1UIPosition">More...</a><br /></td></tr>
 <tr class="separator:structasge_1_1scene_1_1ui_1_1UIPosition"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:structasge_1_1scene_1_1ui_1_1UISize" id="r_structasge_1_1scene_1_1ui_1_1UISize"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceasge_1_1scene_1_1ui.html#structasge_1_1scene_1_1ui_1_1UISize">UISize</a></td></tr>
+<tr class="memdesc:structasge_1_1scene_1_1ui_1_1UISize"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents the dimensions (width, height) of a UI element.  <a href="namespaceasge_1_1scene_1_1ui.html#structasge_1_1scene_1_1ui_1_1UISize">More...</a><br /></td></tr>
 <tr class="separator:structasge_1_1scene_1_1ui_1_1UISize"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/><h2 class="groupheader">Class Documentation</h2>
@@ -126,8 +130,9 @@ Classes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="UIElement_8hpp_source.html#l00014">14</a> of file <a class="el" href="UIElement_8hpp_source.html">UIElement.hpp</a>.</p>
+<div class="textblock"><p>Represents a 2D position (x, y) for a UI element. </p>
+
+<p class="definition">Definition at line <a class="el" href="UIElement_8hpp_source.html#l00025">25</a> of file <a class="el" href="UIElement_8hpp_source.html">UIElement.hpp</a>.</p>
 </div><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Collaboration diagram for asge::scene::ui::UIPosition:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -142,13 +147,13 @@ Classes</h2></td></tr>
 <td class="fieldname">
 x</td>
 <td class="fielddoc">
-</td></tr>
+The horizontal coordinate. </td></tr>
 <tr><td class="fieldtype">
 <a id="aa1664538cdcf24d0e9679985b2c20c80" name="aa1664538cdcf24d0e9679985b2c20c80"></a>float</td>
 <td class="fieldname">
 y</td>
 <td class="fielddoc">
-</td></tr>
+The vertical coordinate. </td></tr>
 </table>
 
 </div>
@@ -164,8 +169,9 @@ y</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="UIElement_8hpp_source.html#l00019">19</a> of file <a class="el" href="UIElement_8hpp_source.html">UIElement.hpp</a>.</p>
+<div class="textblock"><p>Represents the dimensions (width, height) of a UI element. </p>
+
+<p class="definition">Definition at line <a class="el" href="UIElement_8hpp_source.html#l00034">34</a> of file <a class="el" href="UIElement_8hpp_source.html">UIElement.hpp</a>.</p>
 </div><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Collaboration diagram for asge::scene::ui::UISize:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
@@ -180,13 +186,13 @@ y</td>
 <td class="fieldname">
 height</td>
 <td class="fielddoc">
-</td></tr>
+The height of the element. </td></tr>
 <tr><td class="fieldtype">
 <a id="a7fb503e2349ce5a8ba36ca590470e989" name="a7fb503e2349ce5a8ba36ca590470e989"></a>float</td>
 <td class="fieldname">
 width</td>
 <td class="fielddoc">
-</td></tr>
+The width of the element. </td></tr>
 </table>
 
 </div>

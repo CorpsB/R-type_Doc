@@ -104,6 +104,9 @@ $(document).ready(function(){initNavTree('classasge_1_1scene_1_1ui_1_1UIElement.
 </div><!--header-->
 <div class="contents">
 
+<p>Abstract base class (interface) for all UI elements.  
+ <a href="classasge_1_1scene_1_1ui_1_1UIElement.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="UIElement_8hpp_source.html">UIElement.hpp</a>&gt;</code></p>
 <div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for asge::scene::ui::UIElement:</div>
@@ -123,15 +126,20 @@ $(document).ready(function(){initNavTree('classasge_1_1scene_1_1ui_1_1UIElement.
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a6668b2792630227c8cf28754d5280d50" id="r_a6668b2792630227c8cf28754d5280d50"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasge_1_1scene_1_1ui_1_1UIElement.html#a6668b2792630227c8cf28754d5280d50">~UIElement</a> ()=default</td></tr>
+<tr class="memdesc:a6668b2792630227c8cf28754d5280d50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default virtual destructor.  <br /></td></tr>
 <tr class="separator:a6668b2792630227c8cf28754d5280d50"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acd9fcf0974ee7c11eb28a11e68a01610" id="r_acd9fcf0974ee7c11eb28a11e68a01610"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasge_1_1scene_1_1ui_1_1UIElement.html#acd9fcf0974ee7c11eb28a11e68a01610">update</a> (<a class="el" href="structasge_1_1Services.html">Services</a> &amp;services, double dt)=0</td></tr>
+<tr class="memdesc:acd9fcf0974ee7c11eb28a11e68a01610"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the UI element's logic.  <br /></td></tr>
 <tr class="separator:acd9fcf0974ee7c11eb28a11e68a01610"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa5190dcf4161ca8a1a19fc9463e2aeb6" id="r_aa5190dcf4161ca8a1a19fc9463e2aeb6"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasge_1_1scene_1_1ui_1_1UIElement.html#aa5190dcf4161ca8a1a19fc9463e2aeb6">draw</a> (<a class="el" href="structasge_1_1Services.html">Services</a> &amp;services) const =0</td></tr>
+<tr class="memdesc:aa5190dcf4161ca8a1a19fc9463e2aeb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws the UI element to the screen.  <br /></td></tr>
 <tr class="separator:aa5190dcf4161ca8a1a19fc9463e2aeb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="UIElement_8hpp_source.html#l00024">24</a> of file <a class="el" href="UIElement_8hpp_source.html">UIElement.hpp</a>.</p>
+<div class="textblock"><p>Abstract base class (interface) for all UI elements. </p>
+<p>Any class that can be part of the UI (like buttons, text, lists) must inherit from <a class="el" href="classasge_1_1scene_1_1ui_1_1UIElement.html" title="Abstract base class (interface) for all UI elements.">UIElement</a> and implement its pure virtual functions. </p>
+
+<p class="definition">Definition at line <a class="el" href="UIElement_8hpp_source.html#l00045">45</a> of file <a class="el" href="UIElement_8hpp_source.html">UIElement.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a6668b2792630227c8cf28754d5280d50" name="a6668b2792630227c8cf28754d5280d50"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6668b2792630227c8cf28754d5280d50">&#9670;&#160;</a></span>~UIElement()</h2>
@@ -155,6 +163,9 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Default virtual destructor. </p>
+<p>Ensures derived classes are properly destroyed. </p>
 
 </div>
 </div>
@@ -182,6 +193,14 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Draws the UI element to the screen. </p>
+<p>Pure virtual function to be implemented by derived classes. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">services</td><td>Reference to core engine services (e.g., renderer). </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p>Implemented in <a class="el" href="classrtype_1_1client_1_1ui_1_1OptionList.html#a032c89627ed7044eab9ecc999e4dfa03">rtype::client::ui::OptionList</a>, <a class="el" href="classrtype_1_1client_1_1ui_1_1ProgressBar.html#ae059dd7178d6273daa7531fc847150bb">rtype::client::ui::ProgressBar</a>, <a class="el" href="classrtype_1_1client_1_1ui_1_1Text.html#ac64f2f7f0518d04f7b8048315269dfb9">rtype::client::ui::Text</a>, and <a class="el" href="classasge_1_1scene_1_1ui_1_1UIList.html#aef05a095132d3dbbfcee6e87ac542b84">asge::scene::ui::UIList</a>.</p>
 
@@ -220,6 +239,15 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Updates the UI element's logic. </p>
+<p>Pure virtual function to be implemented by derived classes. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">services</td><td>Reference to core engine services. </td></tr>
+    <tr><td class="paramname">dt</td><td>Delta time since the last frame. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p>Implemented in <a class="el" href="classrtype_1_1client_1_1ui_1_1OptionList.html#adf004a1b4137d59a3f0efdf3b46fee5e">rtype::client::ui::OptionList</a>, <a class="el" href="classrtype_1_1client_1_1ui_1_1ProgressBar.html#a81e9767bff4d3d097304d1ce424155cc">rtype::client::ui::ProgressBar</a>, <a class="el" href="classrtype_1_1client_1_1ui_1_1Text.html#ad345cda5f601569ca5591776ef4055eb">rtype::client::ui::Text</a>, and <a class="el" href="classasge_1_1scene_1_1ui_1_1UIList.html#a17b6d29fdc41938bebd9f9514369581c">asge::scene::ui::UIList</a>.</p>
 

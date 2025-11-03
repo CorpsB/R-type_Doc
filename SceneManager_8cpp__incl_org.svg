@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title=" ">
+<g id="a_Node000001"><a xlink:title="Implementation of the SceneManager class.">
 <polygon fill="#999999" stroke="#666666" points="177,-294 69,-294 69,-275 177,-275 177,-294"/>
 <text text-anchor="middle" x="123" y="-282" font-family="Helvetica,sans-Serif" font-size="10.00">SceneManager.cpp</text>
 </a>
@@ -20,7 +20,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="SceneManager_8hpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000002"><a xlink:href="SceneManager_8hpp.html" target="_top" xlink:title="Manages the stack of game scenes (IScene).">
 <polygon fill="white" stroke="#666666" points="177.5,-239 68.5,-239 68.5,-220 177.5,-220 177.5,-239"/>
 <text text-anchor="middle" x="123" y="-227" font-family="Helvetica,sans-Serif" font-size="10.00">SceneManager.hpp</text>
 </a>
@@ -38,7 +38,7 @@
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="IScene_8hpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000003"><a xlink:href="IScene_8hpp.html" target="_top" xlink:title="Interface for managing a stack of scenes.">
 <polygon fill="white" stroke="#666666" points="117,-184 47,-184 47,-165 117,-165 117,-184"/>
 <text text-anchor="middle" x="82" y="-172" font-family="Helvetica,sans-Serif" font-size="10.00">IScene.hpp</text>
 </a>
@@ -173,7 +173,7 @@
 <!-- Node12 -->
 <g id="Node000012" class="node">
 <title>Node12</title>
-<g id="a_Node000012"><a xlink:href="UIList_8hpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000012"><a xlink:href="UIList_8hpp.html" target="_top" xlink:title="Defines the UIList class, a container for other UI elements.">
 <polygon fill="white" stroke="#666666" points="247.5,-74 132.5,-74 132.5,-55 247.5,-55 247.5,-74"/>
 <text text-anchor="middle" x="190" y="-62" font-family="Helvetica,sans-Serif" font-size="10.00">../ui/UIlist/UIList.hpp</text>
 </a>
@@ -308,7 +308,7 @@
 <!-- Node13 -->
 <g id="Node000013" class="node">
 <title>Node13</title>
-<g id="a_Node000013"><a xlink:href="UIElement_8hpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000013"><a xlink:href="UIElement_8hpp.html" target="_top" xlink:title="Defines the base interface for all UI elements.">
 <polygon fill="white" stroke="#666666" points="236,-19 138,-19 138,0 236,0 236,-19"/>
 <text text-anchor="middle" x="187" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">../UIElement.hpp</text>
 </a>

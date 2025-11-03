@@ -100,7 +100,7 @@
 <area shape="poly" id="edge105_Node000033_Node000052" title=" " alt="" coords="2801,114,2715,135,2669,150,2625,169,2539,220,2459,279,2392,335,2345,379,2341,375,2388,331,2455,274,2536,215,2623,164,2667,145,2714,130,2800,109"/>
 <area shape="rect" id="Node000053" href="$IInput_8hpp.html" title="Public interface for the input service (polling, snapshots, queries)." alt="" coords="2771,313,2930,339"/>
 <area shape="poly" id="edge110_Node000033_Node000053" title=" " alt="" coords="2872,112,2856,300,2850,299,2867,111"/>
-<area shape="rect" id="Node000057" href="$IScene_8hpp.html" title=" " alt="" coords="4903,240,5073,265"/>
+<area shape="rect" id="Node000057" href="$IScene_8hpp.html" title="Interface for managing a stack of scenes." alt="" coords="4903,240,5073,265"/>
 <area shape="poly" id="edge119_Node000033_Node000057" title=" " alt="" coords="2966,99,3538,117,3925,136,4318,164,4640,199,4900,235,4899,241,4639,205,4317,169,3924,141,3538,122,2966,104"/>
 <area shape="rect" id="Node000062" href="$PluginManager_8hpp.html" title="Central orchestrator for loading, tracking, and unloading plugins." alt="" coords="3813,167,4038,192"/>
 <area shape="poly" id="edge138_Node000033_Node000062" title=" " alt="" coords="2966,104,3799,166,3798,171,2966,110"/>
@@ -192,7 +192,7 @@
 <area shape="poly" id="edge123_Node000058_Node000016" title=" " alt="" coords="5391,331,5093,336,4702,346,4317,363,4158,375,4037,389,3991,401,3946,415,3815,437,3684,453,3484,471,3483,466,3684,448,3814,431,3945,409,3990,396,4036,384,4157,370,4317,358,4702,341,5093,331,5391,326"/>
 <area shape="poly" id="edge124_Node000058_Node000020" title=" " alt="" coords="5606,331,5802,349,5892,364,5956,384,5977,397,5995,414,6024,447,6020,450,5992,417,5974,402,5954,389,5891,369,5801,354,5606,336"/>
 <area shape="poly" id="edge125_Node000058_Node000059" title=" " alt="" coords="5417,341,5085,387,5084,382,5416,336"/>
-<area shape="rect" id="Node000060" href="$UIList_8hpp.html" title=" " alt="" coords="5643,387,5797,412"/>
+<area shape="rect" id="Node000060" href="$UIList_8hpp.html" title="Defines the UIList class, a container for other UI elements." alt="" coords="5643,387,5797,412"/>
 <area shape="poly" id="edge131_Node000058_Node000060" title=" " alt="" coords="5535,336,5672,380,5671,385,5534,341"/>
 <area shape="poly" id="edge126_Node000059_Node000006" title=" " alt="" coords="4858,414,4847,415,1662,473,1662,468,4847,409,4858,409"/>
 <area shape="poly" id="edge128_Node000059_Node000007" title=" " alt="" coords="5032,409,5200,454,5199,459,5030,415"/>
@@ -203,7 +203,7 @@
 <area shape="poly" id="edge132_Node000060_Node000016" title=" " alt="" coords="5643,410,5580,415,5072,437,4676,446,4281,451,3772,463,3483,472,3483,467,3772,457,4281,446,4676,440,5072,432,5580,409,5643,405"/>
 <area shape="poly" id="edge134_Node000060_Node000017" title=" " alt="" coords="5643,410,5580,415,5160,435,4833,444,4506,450,4086,463,3860,472,3860,467,4085,457,4506,445,4833,438,5160,429,5580,409,5643,405"/>
 <area shape="poly" id="edge135_Node000060_Node000020" title=" " alt="" coords="5772,409,5986,457,5985,462,5771,415"/>
-<area shape="rect" id="Node000061" href="$UIElement_8hpp.html" title=" " alt="" coords="5655,460,5785,485"/>
+<area shape="rect" id="Node000061" href="$UIElement_8hpp.html" title="Defines the base interface for all UI elements." alt="" coords="5655,460,5785,485"/>
 <area shape="poly" id="edge136_Node000060_Node000061" title=" " alt="" coords="5723,412,5723,446,5717,446,5717,412"/>
 <area shape="poly" id="edge167_Node000062_Node000007" title=" " alt="" coords="4038,181,4466,196,4744,211,5033,231,5308,258,5546,292,5643,312,5721,334,5778,358,5798,371,5812,385,5817,400,5811,414,5787,427,5742,437,5613,454,5463,465,5332,471,5332,466,5463,460,5613,449,5741,432,5785,422,5807,410,5812,400,5807,388,5795,375,5776,363,5720,339,5641,317,5545,297,5308,263,5032,237,4744,216,4466,202,4038,186"/>
 <area shape="poly" id="edge168_Node000062_Node000016" title=" " alt="" coords="3813,188,3683,194,3546,206,3432,221,3394,231,3374,242,3360,266,3354,292,3357,320,3365,349,3393,404,3424,447,3419,450,3389,407,3360,351,3352,321,3349,292,3355,264,3370,238,3392,226,3431,216,3545,200,3683,189,3812,182"/>

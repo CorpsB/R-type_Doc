@@ -105,6 +105,9 @@ $(document).ready(function(){initNavTree('classasge_1_1scene_1_1AStage.html','')
 </div><!--header-->
 <div class="contents">
 
+<p>An abstract base class for a scene stage, providing default UI handling.  
+ <a href="classasge_1_1scene_1_1AStage.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="AStage_8hpp_source.html">AStage.hpp</a>&gt;</code></p>
 <div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for asge::scene::AStage:</div>
@@ -124,12 +127,13 @@ $(document).ready(function(){initNavTree('classasge_1_1scene_1_1AStage.html','')
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ab59678517405c2debdebe9d6cfbba35b" id="r_ab59678517405c2debdebe9d6cfbba35b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasge_1_1scene_1_1AStage.html#ab59678517405c2debdebe9d6cfbba35b">AStage</a> ()=default</td></tr>
+<tr class="memdesc:ab59678517405c2debdebe9d6cfbba35b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor for <a class="el" href="classasge_1_1scene_1_1AStage.html" title="An abstract base class for a scene stage, providing default UI handling.">AStage</a>.  <br /></td></tr>
 <tr class="separator:ab59678517405c2debdebe9d6cfbba35b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6f037411b387c6324a3699b964ba79cc" id="r_a6f037411b387c6324a3699b964ba79cc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasge_1_1scene_1_1AStage.html#a6f037411b387c6324a3699b964ba79cc">onEnter</a> ()</td></tr>
 <tr class="memdesc:a6f037411b387c6324a3699b964ba79cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the scene becomes the active one (entered top of stack).  <br /></td></tr>
 <tr class="separator:a6f037411b387c6324a3699b964ba79cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab1b5db450fb523bc7ab499bfa8e62a52" id="r_ab1b5db450fb523bc7ab499bfa8e62a52"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasge_1_1scene_1_1AStage.html#ab1b5db450fb523bc7ab499bfa8e62a52">onExit</a> ()</td></tr>
-<tr class="memdesc:ab1b5db450fb523bc7ab499bfa8e62a52"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the scene is leaving the active stack (about to be destroyed or paused).  <br /></td></tr>
+<tr class="memdesc:ab1b5db450fb523bc7ab499bfa8e62a52"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the scene is leaving the active stack.  <br /></td></tr>
 <tr class="separator:ab1b5db450fb523bc7ab499bfa8e62a52"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abfa72b7c3a97491a18403d031aab8d6c" id="r_abfa72b7c3a97491a18403d031aab8d6c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasge_1_1scene_1_1AStage.html#abfa72b7c3a97491a18403d031aab8d6c">pause</a> ()</td></tr>
 <tr class="memdesc:abfa72b7c3a97491a18403d031aab8d6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the scene is paused (another scene pushed on top).  <br /></td></tr>
@@ -138,13 +142,13 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a8e4ca230181ae041388fff4d66d532ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the scene resumes after being paused.  <br /></td></tr>
 <tr class="separator:a8e4ca230181ae041388fff4d66d532ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad117bf289ec4b502d7a3a4e2b5e77e34" id="r_ad117bf289ec4b502d7a3a4e2b5e77e34"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasge_1_1scene_1_1AStage.html#ad117bf289ec4b502d7a3a4e2b5e77e34">update</a> (<a class="el" href="structasge_1_1Services.html">Services</a> &amp;services, double dt) override</td></tr>
-<tr class="memdesc:ad117bf289ec4b502d7a3a4e2b5e77e34"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the scene logic.  <br /></td></tr>
+<tr class="memdesc:ad117bf289ec4b502d7a3a4e2b5e77e34"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the scene's logic and UI.  <br /></td></tr>
 <tr class="separator:ad117bf289ec4b502d7a3a4e2b5e77e34"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7fb5cb5d26d1899221ec1784e8acdac2" id="r_a7fb5cb5d26d1899221ec1784e8acdac2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasge_1_1scene_1_1AStage.html#a7fb5cb5d26d1899221ec1784e8acdac2">draw</a> (<a class="el" href="structasge_1_1Services.html">Services</a> &amp;services) const override</td></tr>
-<tr class="memdesc:a7fb5cb5d26d1899221ec1784e8acdac2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Render the scene contents to the screen.  <br /></td></tr>
+<tr class="memdesc:a7fb5cb5d26d1899221ec1784e8acdac2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws the scene's UI.  <br /></td></tr>
 <tr class="separator:a7fb5cb5d26d1899221ec1784e8acdac2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2293e56befd2a4766ff1588197d4c4dd" id="r_a2293e56befd2a4766ff1588197d4c4dd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasge_1_1scene_1_1AStage.html#a2293e56befd2a4766ff1588197d4c4dd">handleEvent</a> (const std::string &amp;type, const std::string &amp;payload)</td></tr>
-<tr class="memdesc:a2293e56befd2a4766ff1588197d4c4dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle an input or system event.  <br /></td></tr>
+<tr class="memdesc:a2293e56befd2a4766ff1588197d4c4dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles a custom event.  <br /></td></tr>
 <tr class="separator:a2293e56befd2a4766ff1588197d4c4dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classasge_1_1scene_1_1SceneStage"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classasge_1_1scene_1_1SceneStage')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classasge_1_1scene_1_1SceneStage.html">asge::scene::SceneStage</a></td></tr>
 <tr class="memitem:aba8a47bd0cd35e9a32dfd8060aa365b6 inherit pub_methods_classasge_1_1scene_1_1SceneStage" id="r_aba8a47bd0cd35e9a32dfd8060aa365b6"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasge_1_1scene_1_1SceneStage.html#aba8a47bd0cd35e9a32dfd8060aa365b6">~SceneStage</a> ()=default</td></tr>
@@ -165,11 +169,14 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:a972e362ea1b39228d0df10613debcd66" id="r_a972e362ea1b39228d0df10613debcd66"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classasge_1_1scene_1_1ui_1_1UIList.html">ui::UIList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasge_1_1scene_1_1AStage.html#a972e362ea1b39228d0df10613debcd66">_ui</a></td></tr>
+<tr class="memdesc:a972e362ea1b39228d0df10613debcd66"><td class="mdescLeft">&#160;</td><td class="mdescRight">The UI element container for this stage.  <br /></td></tr>
 <tr class="separator:a972e362ea1b39228d0df10613debcd66"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="AStage_8hpp_source.html#l00017">17</a> of file <a class="el" href="AStage_8hpp_source.html">AStage.hpp</a>.</p>
+<div class="textblock"><p>An abstract base class for a scene stage, providing default UI handling. </p>
+<p>This class inherits from <a class="el" href="classasge_1_1scene_1_1SceneStage.html" title="Abstract interface implemented by user-defined scenes.">SceneStage</a> and is intended to be the base for most concrete game scenes (like MainMenu, GamePlay). It provides empty implementations for lifecycle methods (onEnter, onExit, pause, resume) and automatically hooks up an internal UIList to the update and draw calls. </p>
+
+<p class="definition">Definition at line <a class="el" href="AStage_8hpp_source.html#l00037">37</a> of file <a class="el" href="AStage_8hpp_source.html">AStage.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ab59678517405c2debdebe9d6cfbba35b" name="ab59678517405c2debdebe9d6cfbba35b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab59678517405c2debdebe9d6cfbba35b">&#9670;&#160;</a></span>AStage()</h2>
@@ -194,6 +201,8 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Default constructor for <a class="el" href="classasge_1_1scene_1_1AStage.html" title="An abstract base class for a scene stage, providing default UI handling.">AStage</a>. </p>
+
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -210,7 +219,7 @@ Protected Attributes</h2></td></tr>
           <td class="memname">void asge::scene::AStage::draw </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structasge_1_1Services.html">Services</a> &amp;&#160;</td>
-          <td class="paramname"><em>Services</em></td><td>)</td>
+          <td class="paramname"><em>services</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
@@ -221,18 +230,24 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Render the scene contents to the screen. </p>
+<p>Draws the scene's UI. </p>
+<p>This implementation overrides the base method to specifically call <a class="el" href="classasge_1_1scene_1_1AStage.html#a7fb5cb5d26d1899221ec1784e8acdac2" title="Draws the scene&#39;s UI.">draw()</a> on the internal UIList. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">services</td><td>Reference to core engine services (e.g., renderer). </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p>Implements <a class="el" href="classasge_1_1scene_1_1SceneStage.html#a731c74d244ce9572ac738c77e8da6301">asge::scene::SceneStage</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="AStage_8cpp_source.html#l00019">19</a> of file <a class="el" href="AStage_8cpp_source.html">AStage.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   20</span>{</div>
-<div class="line"><span class="lineno">   21</span>    <a class="code hl_variable" href="classasge_1_1scene_1_1AStage.html#a972e362ea1b39228d0df10613debcd66">_ui</a>.<a class="code hl_function" href="classasge_1_1scene_1_1ui_1_1UIList.html#aef05a095132d3dbbfcee6e87ac542b84">draw</a>(services);</div>
-<div class="line"><span class="lineno">   22</span>}</div>
-<div class="ttc" id="aclassasge_1_1scene_1_1AStage_html_a972e362ea1b39228d0df10613debcd66"><div class="ttname"><a href="classasge_1_1scene_1_1AStage.html#a972e362ea1b39228d0df10613debcd66">asge::scene::AStage::_ui</a></div><div class="ttdeci">ui::UIList _ui</div><div class="ttdef"><b>Definition</b> <a href="AStage_8hpp_source.html#l00039">AStage.hpp:39</a></div></div>
-<div class="ttc" id="aclassasge_1_1scene_1_1ui_1_1UIList_html_aef05a095132d3dbbfcee6e87ac542b84"><div class="ttname"><a href="classasge_1_1scene_1_1ui_1_1UIList.html#aef05a095132d3dbbfcee6e87ac542b84">asge::scene::ui::UIList::draw</a></div><div class="ttdeci">void draw(Services &amp;services) const override</div><div class="ttdef"><b>Definition</b> <a href="UIList_8cpp_source.html#l00021">UIList.cpp:21</a></div></div>
+<p class="definition">Definition at line <a class="el" href="AStage_8cpp_source.html#l00027">27</a> of file <a class="el" href="AStage_8cpp_source.html">AStage.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   28</span>{</div>
+<div class="line"><span class="lineno">   29</span>    <a class="code hl_variable" href="classasge_1_1scene_1_1AStage.html#a972e362ea1b39228d0df10613debcd66">_ui</a>.<a class="code hl_function" href="classasge_1_1scene_1_1ui_1_1UIList.html#aef05a095132d3dbbfcee6e87ac542b84">draw</a>(services);</div>
+<div class="line"><span class="lineno">   30</span>}</div>
+<div class="ttc" id="aclassasge_1_1scene_1_1AStage_html_a972e362ea1b39228d0df10613debcd66"><div class="ttname"><a href="classasge_1_1scene_1_1AStage.html#a972e362ea1b39228d0df10613debcd66">asge::scene::AStage::_ui</a></div><div class="ttdeci">ui::UIList _ui</div><div class="ttdoc">The UI element container for this stage.</div><div class="ttdef"><b>Definition</b> <a href="AStage_8hpp_source.html#l00098">AStage.hpp:98</a></div></div>
+<div class="ttc" id="aclassasge_1_1scene_1_1ui_1_1UIList_html_aef05a095132d3dbbfcee6e87ac542b84"><div class="ttname"><a href="classasge_1_1scene_1_1ui_1_1UIList.html#aef05a095132d3dbbfcee6e87ac542b84">asge::scene::ui::UIList::draw</a></div><div class="ttdeci">void draw(Services &amp;services) const override</div><div class="ttdoc">Draws all UI elements contained in this list.</div><div class="ttdef"><b>Definition</b> <a href="UIList_8cpp_source.html#l00029">UIList.cpp:29</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="AStage_8hpp_source.html#l00039">_ui</a>, and <a class="el" href="UIList_8cpp_source.html#l00021">asge::scene::ui::UIList::draw()</a>.</p>
+<p class="reference">References <a class="el" href="AStage_8hpp_source.html#l00098">_ui</a>, and <a class="el" href="UIList_8cpp_source.html#l00029">asge::scene::ui::UIList::draw()</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -277,20 +292,20 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Handle an input or system event. </p>
-<dl class="params"><dt>Parameters</dt><dd>
+<p>Handles a custom event. </p>
+<p>Provides a hook for scenes to react to custom string-based events. Default implementation does nothing. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">type</td><td>Event type identifier (e.g., "Input/KeyDown", "UI/Click"). </td></tr>
-    <tr><td class="paramname">payload</td><td>Optional serialized event payload. </td></tr>
+    <tr><td class="paramname">type</td><td>The category or type of the event. </td></tr>
+    <tr><td class="paramname">payload</td><td>The data associated with the event. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the event is consumed and should not propagate further. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the event was handled, false otherwise. </dd></dl>
 
 <p>Implements <a class="el" href="classasge_1_1scene_1_1SceneStage.html#a70ebe7a0fd85db70a9cd059033ac3f6c">asge::scene::SceneStage</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="AStage_8hpp_source.html#l00036">36</a> of file <a class="el" href="AStage_8hpp_source.html">AStage.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   36</span>{ <span class="keywordflow">return</span> <span class="keyword">false</span>; };</div>
+<p class="definition">Definition at line <a class="el" href="AStage_8hpp_source.html#l00095">95</a> of file <a class="el" href="AStage_8hpp_source.html">AStage.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   95</span>{ <span class="keywordflow">return</span> <span class="keyword">false</span>; };</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -318,11 +333,12 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Called when the scene becomes the active one (entered top of stack). </p>
+<p>This is an empty lifecycle hook to be overridden by derived scenes. </p>
 
 <p>Implements <a class="el" href="classasge_1_1scene_1_1SceneStage.html#a3d739732d3acf082928cff30f4b17eea">asge::scene::SceneStage</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="AStage_8hpp_source.html#l00022">22</a> of file <a class="el" href="AStage_8hpp_source.html">AStage.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   22</span>{};</div>
+<p class="definition">Definition at line <a class="el" href="AStage_8hpp_source.html#l00048">48</a> of file <a class="el" href="AStage_8hpp_source.html">AStage.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   48</span>{};</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -349,12 +365,13 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Called when the scene is leaving the active stack (about to be destroyed or paused). </p>
+<p>Called when the scene is leaving the active stack. </p>
+<p>This is an empty lifecycle hook, called just before the scene is destroyed or paused. </p>
 
 <p>Implements <a class="el" href="classasge_1_1scene_1_1SceneStage.html#a21390ac543638d0bf857f5e145c3ae31">asge::scene::SceneStage</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="AStage_8hpp_source.html#l00025">25</a> of file <a class="el" href="AStage_8hpp_source.html">AStage.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   25</span>{};</div>
+<p class="definition">Definition at line <a class="el" href="AStage_8hpp_source.html#l00055">55</a> of file <a class="el" href="AStage_8hpp_source.html">AStage.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   55</span>{};</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -382,11 +399,12 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Called when the scene is paused (another scene pushed on top). </p>
+<p>This is an empty lifecycle hook to be overridden by derived scenes. </p>
 
 <p>Implements <a class="el" href="classasge_1_1scene_1_1SceneStage.html#a3f2f8e74c45b29ca276c6b8aa9bd44da">asge::scene::SceneStage</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="AStage_8hpp_source.html#l00028">28</a> of file <a class="el" href="AStage_8hpp_source.html">AStage.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   28</span>{};</div>
+<p class="definition">Definition at line <a class="el" href="AStage_8hpp_source.html#l00061">61</a> of file <a class="el" href="AStage_8hpp_source.html">AStage.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   61</span>{};</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -414,11 +432,12 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Called when the scene resumes after being paused. </p>
+<p>This is an empty lifecycle hook, called when this scene becomes the top of the stack again after a 'pop'. </p>
 
 <p>Implements <a class="el" href="classasge_1_1scene_1_1SceneStage.html#ad3f39a7f9ee032e64f2ad3ebd5044822">asge::scene::SceneStage</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="AStage_8hpp_source.html#l00031">31</a> of file <a class="el" href="AStage_8hpp_source.html">AStage.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   31</span>{};</div>
+<p class="definition">Definition at line <a class="el" href="AStage_8hpp_source.html#l00068">68</a> of file <a class="el" href="AStage_8hpp_source.html">AStage.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   68</span>{};</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -456,23 +475,24 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Update the scene logic. </p>
-<dl class="params"><dt>Parameters</dt><dd>
+<p>Updates the scene's logic and UI. </p>
+<p>This implementation overrides the base method to specifically call <a class="el" href="classasge_1_1scene_1_1AStage.html#ad117bf289ec4b502d7a3a4e2b5e77e34" title="Updates the scene&#39;s logic and UI.">update()</a> on the internal UIList. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">dt</td><td>Delta time (in seconds) since last frame. </td></tr>
+    <tr><td class="paramname">services</td><td>Reference to core engine services. </td></tr>
+    <tr><td class="paramname">dt</td><td>Delta time since the last frame. </td></tr>
   </table>
   </dd>
 </dl>
 
 <p>Implements <a class="el" href="classasge_1_1scene_1_1SceneStage.html#af943081de5609ec5f1adadd122354620">asge::scene::SceneStage</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="AStage_8cpp_source.html#l00014">14</a> of file <a class="el" href="AStage_8cpp_source.html">AStage.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   15</span>{</div>
-<div class="line"><span class="lineno">   16</span>    <a class="code hl_variable" href="classasge_1_1scene_1_1AStage.html#a972e362ea1b39228d0df10613debcd66">_ui</a>.<a class="code hl_function" href="classasge_1_1scene_1_1ui_1_1UIList.html#a17b6d29fdc41938bebd9f9514369581c">update</a>(services, dt);</div>
-<div class="line"><span class="lineno">   17</span>}</div>
-<div class="ttc" id="aclassasge_1_1scene_1_1ui_1_1UIList_html_a17b6d29fdc41938bebd9f9514369581c"><div class="ttname"><a href="classasge_1_1scene_1_1ui_1_1UIList.html#a17b6d29fdc41938bebd9f9514369581c">asge::scene::ui::UIList::update</a></div><div class="ttdeci">void update(Services &amp;services, double dt) override</div><div class="ttdef"><b>Definition</b> <a href="UIList_8cpp_source.html#l00015">UIList.cpp:15</a></div></div>
+<p class="definition">Definition at line <a class="el" href="AStage_8cpp_source.html#l00022">22</a> of file <a class="el" href="AStage_8cpp_source.html">AStage.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   23</span>{</div>
+<div class="line"><span class="lineno">   24</span>    <a class="code hl_variable" href="classasge_1_1scene_1_1AStage.html#a972e362ea1b39228d0df10613debcd66">_ui</a>.<a class="code hl_function" href="classasge_1_1scene_1_1ui_1_1UIList.html#a17b6d29fdc41938bebd9f9514369581c">update</a>(services, dt);</div>
+<div class="line"><span class="lineno">   25</span>}</div>
+<div class="ttc" id="aclassasge_1_1scene_1_1ui_1_1UIList_html_a17b6d29fdc41938bebd9f9514369581c"><div class="ttname"><a href="classasge_1_1scene_1_1ui_1_1UIList.html#a17b6d29fdc41938bebd9f9514369581c">asge::scene::ui::UIList::update</a></div><div class="ttdeci">void update(Services &amp;services, double dt) override</div><div class="ttdoc">Updates all UI elements contained in this list.</div><div class="ttdef"><b>Definition</b> <a href="UIList_8cpp_source.html#l00023">UIList.cpp:23</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="AStage_8hpp_source.html#l00039">_ui</a>, and <a class="el" href="UIList_8cpp_source.html#l00015">asge::scene::ui::UIList::update()</a>.</p>
+<p class="reference">References <a class="el" href="AStage_8hpp_source.html#l00098">_ui</a>, and <a class="el" href="UIList_8cpp_source.html#l00023">asge::scene::ui::UIList::update()</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -504,9 +524,11 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="AStage_8hpp_source.html#l00039">39</a> of file <a class="el" href="AStage_8hpp_source.html">AStage.hpp</a>.</p>
+<p>The UI element container for this stage. </p>
 
-<p class="reference">Referenced by <a class="el" href="AStage_8cpp_source.html#l00019">draw()</a>, <a class="el" href="GameOverStage_8cpp_source.html#l00023">rtype::client::scene::GameOverStage::init()</a>, <a class="el" href="GameStage_8cpp_source.html#l00041">rtype::client::scene::GameStage::init()</a>, <a class="el" href="MenuStage_8cpp_source.html#l00020">rtype::client::scene::MenuStage::init()</a>, <a class="el" href="OptionsStage_8cpp_source.html#l00021">rtype::client::scene::OptionsStage::init()</a>, and <a class="el" href="AStage_8cpp_source.html#l00014">update()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="AStage_8hpp_source.html#l00098">98</a> of file <a class="el" href="AStage_8hpp_source.html">AStage.hpp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="AStage_8cpp_source.html#l00027">draw()</a>, <a class="el" href="GameOverStage_8cpp_source.html#l00023">rtype::client::scene::GameOverStage::init()</a>, <a class="el" href="GameStage_8cpp_source.html#l00041">rtype::client::scene::GameStage::init()</a>, <a class="el" href="MenuStage_8cpp_source.html#l00020">rtype::client::scene::MenuStage::init()</a>, <a class="el" href="OptionsStage_8cpp_source.html#l00021">rtype::client::scene::OptionsStage::init()</a>, and <a class="el" href="AStage_8cpp_source.html#l00022">update()</a>.</p>
 
 </div>
 </div>

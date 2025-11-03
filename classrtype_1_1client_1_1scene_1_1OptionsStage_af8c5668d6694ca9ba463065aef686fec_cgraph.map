@@ -1,6 +1,6 @@
 <map id="rtype::client::scene::OptionsStage::init" name="rtype::client::scene::OptionsStage::init">
 <area shape="rect" id="Node000001" title="Initializes the options menu elements." alt="" coords="5,397,276,423"/>
-<area shape="rect" id="Node000002" href="$classasge_1_1scene_1_1ui_1_1UIList.html#ac7fd50b689e737e01963bf5e70354aa3" title=" " alt="" coords="327,5,591,31"/>
+<area shape="rect" id="Node000002" href="$classasge_1_1scene_1_1ui_1_1UIList.html#ac7fd50b689e737e01963bf5e70354aa3" title="Adds a new UI element to the list." alt="" coords="327,5,591,31"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="141,397,156,332,188,234,212,181,242,129,278,81,322,40,329,35,332,40,326,44,282,84,246,132,216,183,193,236,161,333,147,398"/>
 <area shape="rect" id="Node000003" href="$structasge_1_1Services.html#ab2574b16a9d7279d1756a42dcd1ddea8" title=" " alt="" coords="379,55,539,80"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="143,396,160,339,195,256,219,210,248,166,282,125,322,90,343,79,365,71,366,76,345,84,326,95,286,129,252,169,223,213,199,258,165,341,148,398"/>
@@ -14,7 +14,7 @@
 <area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="168,395,238,365,323,333,352,324,353,329,325,338,240,370,170,400"/>
 <area shape="rect" id="Node000008" href="$structasge_1_1Services.html#a693d25e8f9c77a8a44cd65befe8f79f0" title=" " alt="" coords="369,348,548,373"/>
 <area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="223,395,362,373,363,378,224,400"/>
-<area shape="rect" id="Node000009" href="$classasge_1_1scene_1_1IScene.html#a848c0b507b6646bb6fa96e20a766c345" title=" " alt="" coords="341,397,576,423"/>
+<area shape="rect" id="Node000009" href="$classasge_1_1scene_1_1IScene.html#a848c0b507b6646bb6fa96e20a766c345" title="Replace the top scene by constructing a new one in&#45;place." alt="" coords="341,397,576,423"/>
 <area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="276,407,328,407,328,413,276,413"/>
 <area shape="rect" id="Node000011" href="$classasge_1_1renderer_1_1IRenderer.html#ac5cee1d3074f847c58c9060a909c67c8" title=" " alt="" coords="365,447,552,487"/>
 <area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="212,420,352,445,351,451,212,425"/>
@@ -30,6 +30,6 @@
 <area shape="poly" id="edge15_Node000001_Node000016" title=" " alt="" coords="148,422,167,476,202,554,226,597,255,639,288,677,326,710,354,726,351,731,322,715,284,681,251,642,222,600,198,557,162,478,143,424"/>
 <area shape="rect" id="Node000017" href="$classasge_1_1renderer_1_1IRenderer.html#a8d46539988754e8f72110d69348c9be1" title=" " alt="" coords="365,790,552,830"/>
 <area shape="poly" id="edge16_Node000001_Node000017" title=" " alt="" coords="147,422,162,486,194,582,218,635,248,687,283,735,326,776,354,792,351,797,322,780,279,738,243,690,213,638,189,584,157,488,142,423"/>
-<area shape="rect" id="Node000010" href="$classasge_1_1scene_1_1IScene.html#a9092442bf9a61418f5678258601e8eca" title=" " alt="" coords="641,397,848,423"/>
+<area shape="rect" id="Node000010" href="$classasge_1_1scene_1_1IScene.html#a9092442bf9a61418f5678258601e8eca" title="Replace the top scene with a new one." alt="" coords="641,397,848,423"/>
 <area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="576,407,628,407,628,413,576,413"/>
 </map>

@@ -103,6 +103,9 @@ $(document).ready(function(){initNavTree('AStorageDevice_8hpp.html',''); initRes
   <div class="headertitle"><div class="title">AStorageDevice.hpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Abstract storage device with default no-op implementations.  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="StorageDevice_8hpp_source.html">StorageDevice.hpp</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for AStorageDevice.hpp:</div>
@@ -124,6 +127,7 @@ $(document).ready(function(){initNavTree('AStorageDevice_8hpp.html',''); initRes
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasge_1_1storage_1_1AStorageDevice.html">asge::storage::AStorageDevice</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstract base class implementing <a class="el" href="classasge_1_1storage_1_1StorageDevice.html" title="Base class representing a storage backend.">StorageDevice</a> with default stub methods.  <a href="classasge_1_1storage_1_1AStorageDevice.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
@@ -133,7 +137,15 @@ Namespaces</h2></td></tr>
 <tr class="memitem:namespaceasge_1_1storage" id="r_namespaceasge_1_1storage"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceasge_1_1storage.html">asge::storage</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-</div><!-- contents -->
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Abstract storage device with default no-op implementations. </p>
+<dl class="section version"><dt>Version</dt><dd>1.0 </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2025-11-03</dd></dl>
+<p>AStorageDevice inherits from StorageDevice and provides default "do nothing" implementations for all methods. All functions return false or empty results. Subclasses should override the necessary methods to provide functional storage.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classasge_1_1storage_1_1StorageDevice.html" title="Base class representing a storage backend.">asge::storage::StorageDevice</a> </dd></dl>
+
+<p class="definition">Definition in file <a class="el" href="AStorageDevice_8hpp_source.html">AStorageDevice.hpp</a>.</p>
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

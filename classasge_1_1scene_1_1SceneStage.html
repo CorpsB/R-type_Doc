@@ -163,7 +163,7 @@ Public Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Abstract interface implemented by user-defined scenes. </p>
-<p>This interface defines the full lifecycle and behavior of a game scene. <a class="el" href="classasge_1_1scene_1_1SceneStage.html" title="Abstract interface implemented by user-defined scenes.">SceneStage</a> is <em>not</em> an <code><a class="el" href="classasge_1_1scene_1_1IScene.html">IScene</a></code>; rather, it’s a higher-level construct managed by the <code><a class="el" href="classasge_1_1scene_1_1SceneManager.html">SceneManager</a></code>.</p>
+<p>This interface defines the full lifecycle and behavior of a game scene. <a class="el" href="classasge_1_1scene_1_1SceneStage.html" title="Abstract interface implemented by user-defined scenes.">SceneStage</a> is <em>not</em> an <code><a class="el" href="classasge_1_1scene_1_1IScene.html" title="Abstract interface for scene stack management.">IScene</a></code>; rather, it’s a higher-level construct managed by the <code><a class="el" href="classasge_1_1scene_1_1SceneManager.html" title="Implements the IScene interface to manage a stack of scenes.">SceneManager</a></code>.</p>
 <ul>
 <li>Each stage can represent a level, a menu, or a state of the application.</li>
 <li>It defines how it reacts to lifecycle events and per-frame updates.</li>
@@ -523,7 +523,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Whether this scene should still receive input events when not active. </p>
-<p>If true, the <a class="el" href="classasge_1_1scene_1_1SceneManager.html">SceneManager</a> may call <code><a class="el" href="classasge_1_1scene_1_1SceneStage.html#a70ebe7a0fd85db70a9cd059033ac3f6c" title="Handle an input or system event.">handleEvent()</a></code> even while the scene is covered by others — provided that upper scenes did not consume the event.</p>
+<p>If true, the <a class="el" href="classasge_1_1scene_1_1SceneManager.html" title="Implements the IScene interface to manage a stack of scenes.">SceneManager</a> may call <code><a class="el" href="classasge_1_1scene_1_1SceneStage.html#a70ebe7a0fd85db70a9cd059033ac3f6c" title="Handle an input or system event.">handleEvent()</a></code> even while the scene is covered by others — provided that upper scenes did not consume the event.</p>
 <dl class="section return"><dt>Returns</dt><dd>false by default. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="SceneStage_8hpp_source.html#l00115">115</a> of file <a class="el" href="SceneStage_8hpp_source.html">SceneStage.hpp</a>.</p>

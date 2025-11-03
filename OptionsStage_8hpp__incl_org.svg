@@ -38,7 +38,7 @@
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="AStage_8hpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000003"><a xlink:href="AStage_8hpp.html" target="_top" xlink:title="Defines the AStage abstract base class for game scenes.">
 <polygon fill="white" stroke="#666666" points="833.41,-195 693.41,-195 693.41,-165 833.41,-165 833.41,-195"/>
 <text text-anchor="start" x="701.41" y="-183" font-family="Helvetica,sans-Serif" font-size="10.00">../../../../lib/asge/src/scene</text>
 <text text-anchor="middle" x="763.41" y="-172" font-family="Helvetica,sans-Serif" font-size="10.00">/SceneStage/AStage.hpp</text>
@@ -57,7 +57,7 @@
 <!-- Node14 -->
 <g id="Node000014" class="node">
 <title>Node14</title>
-<g id="a_Node000014"><a xlink:href="SceneManager_8hpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000014"><a xlink:href="SceneManager_8hpp.html" target="_top" xlink:title="Manages the stack of game scenes (IScene).">
 <polygon fill="white" stroke="#666666" points="911.41,-459 771.41,-459 771.41,-429 911.41,-429 911.41,-459"/>
 <text text-anchor="start" x="779.41" y="-447" font-family="Helvetica,sans-Serif" font-size="10.00">../../../../lib/asge/src/scene</text>
 <text text-anchor="middle" x="841.41" y="-436" font-family="Helvetica,sans-Serif" font-size="10.00">/SceneManager.hpp</text>
@@ -224,7 +224,7 @@
 <!-- Node5 -->
 <g id="Node000005" class="node">
 <title>Node5</title>
-<g id="a_Node000005"><a xlink:href="UIList_8hpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000005"><a xlink:href="UIList_8hpp.html" target="_top" xlink:title="Defines the UIList class, a container for other UI elements.">
 <polygon fill="white" stroke="#666666" points="968.91,-74 853.91,-74 853.91,-55 968.91,-55 968.91,-74"/>
 <text text-anchor="middle" x="911.41" y="-62" font-family="Helvetica,sans-Serif" font-size="10.00">../ui/UIlist/UIList.hpp</text>
 </a>
@@ -323,7 +323,7 @@
 <!-- Node9 -->
 <g id="Node000009" class="node">
 <title>Node9</title>
-<g id="a_Node000009"><a xlink:href="UIElement_8hpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000009"><a xlink:href="UIElement_8hpp.html" target="_top" xlink:title="Defines the base interface for all UI elements.">
 <polygon fill="white" stroke="#666666" points="960.41,-19 862.41,-19 862.41,0 960.41,0 960.41,-19"/>
 <text text-anchor="middle" x="911.41" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">../UIElement.hpp</text>
 </a>
@@ -458,7 +458,7 @@
 <!-- Node15 -->
 <g id="Node000015" class="node">
 <title>Node15</title>
-<g id="a_Node000015"><a xlink:href="IScene_8hpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000015"><a xlink:href="IScene_8hpp.html" target="_top" xlink:title="Interface for managing a stack of scenes.">
 <polygon fill="white" stroke="#666666" points="977.41,-189.5 907.41,-189.5 907.41,-170.5 977.41,-170.5 977.41,-189.5"/>
 <text text-anchor="middle" x="942.41" y="-177.5" font-family="Helvetica,sans-Serif" font-size="10.00">IScene.hpp</text>
 </a>

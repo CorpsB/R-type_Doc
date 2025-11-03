@@ -111,70 +111,135 @@ $(document).ready(function(){initNavTree('IScene_8hpp_source.html',''); initResi
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">** File description:</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment">** IScene</span></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">*/</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#pragma once</span></div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;memory&gt;</span></div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &quot;<a class="code" href="SceneStage_8hpp.html">./SceneStage/SceneStage.hpp</a>&quot;</span></div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &quot;../../includes/types/SceneTypes.hpp&quot;</span></div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceasge.html">asge</a> { <span class="keyword">struct </span>Services; }</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceasge_1_1scene.html">asge::scene</a> {</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="namespaceasge_1_1scene.html#acf580ea2d5b4178738a21e5551ba8c22">   20</a></span><span class="keyword">using </span><a class="code hl_typedef" href="namespaceasge_1_1scene.html#acf580ea2d5b4178738a21e5551ba8c22">ScenePtr</a> = std::unique_ptr&lt;SceneStage&gt;;</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
-<div class="foldopen" id="foldopen00022" data-start="{" data-end="};">
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="classasge_1_1scene_1_1IScene.html">   22</a></span><span class="keyword">class </span><a class="code hl_class" href="classasge_1_1scene_1_1IScene.html">IScene</a> {</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="classasge_1_1scene_1_1IScene.html#a0a6345da04d2794856e4fdec052b0149">   24</a></span>        <span class="keyword">virtual</span> <a class="code hl_function" href="classasge_1_1scene_1_1IScene.html#a0a6345da04d2794856e4fdec052b0149">~IScene</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment"></span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment">/**</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment"> * @file IScene.hpp</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment"> * @brief Interface for managing a stack of scenes.</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment"> * @version 1.0</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment"> * @date 2025-11-03</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment"> * @details</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment"> * IScene defines the minimal contract for a scene stack manager. It supports</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment"> * pushing, popping, replacing scenes, updating the active scene, drawing it,</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment"> * and flushing pending transitions. It also provides templated helpers for</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment"> * creating and pushing/replacing scenes directly.</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#include &lt;memory&gt;</span></div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="classasge_1_1scene_1_1IScene.html#a4af54f6efd1b49aaab6acc000917d4dd">   26</a></span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classasge_1_1scene_1_1IScene.html#a4af54f6efd1b49aaab6acc000917d4dd">push</a>(<a class="code hl_typedef" href="namespaceasge_1_1scene.html#acf580ea2d5b4178738a21e5551ba8c22">ScenePtr</a> scene) = 0;</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="classasge_1_1scene_1_1IScene.html#a27c8082be30f2448eab0c7d700233559">   27</a></span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classasge_1_1scene_1_1IScene.html#a27c8082be30f2448eab0c7d700233559">pop</a>() = 0;</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="classasge_1_1scene_1_1IScene.html#a9092442bf9a61418f5678258601e8eca">   28</a></span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classasge_1_1scene_1_1IScene.html#a9092442bf9a61418f5678258601e8eca">replace</a>(<a class="code hl_typedef" href="namespaceasge_1_1scene.html#acf580ea2d5b4178738a21e5551ba8c22">ScenePtr</a> scene) = 0;</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="classasge_1_1scene_1_1IScene.html#a8418952530977e0d6091449f4b254d2b">   30</a></span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classasge_1_1scene_1_1IScene.html#a8418952530977e0d6091449f4b254d2b">update</a>(<span class="keywordtype">double</span> dt) = 0;</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="classasge_1_1scene_1_1IScene.html#abc056e82dc99c62d5e44c31bd84f4095">   31</a></span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classasge_1_1scene_1_1IScene.html#abc056e82dc99c62d5e44c31bd84f4095">draw</a>() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#include &quot;<a class="code" href="SceneStage_8hpp.html">./SceneStage/SceneStage.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#include &quot;../../includes/types/SceneTypes.hpp&quot;</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceasge.html">asge</a> { <span class="keyword">struct </span>Services; }</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceasge_1_1scene.html">asge::scene</a> {</div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="classasge_1_1scene_1_1IScene.html#a977fb070d247ec71fe4bc0c41773968c">   33</a></span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classasge_1_1scene_1_1IScene.html#a977fb070d247ec71fe4bc0c41773968c">flushTransitions</a>() = 0;</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span>... Args&gt;</div>
-<div class="foldopen" id="foldopen00036" data-start="{" data-end="}">
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="classasge_1_1scene_1_1IScene.html#a453222dc810e85bc04f7352b76d661a6">   36</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classasge_1_1scene_1_1IScene.html#a453222dc810e85bc04f7352b76d661a6">pushNew</a>(Args&amp;&amp;... args)</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        {</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>            <a class="code hl_function" href="classasge_1_1scene_1_1IScene.html#a4af54f6efd1b49aaab6acc000917d4dd">push</a>(std::make_unique&lt;T&gt;(std::forward&lt;Args&gt;(args)...));</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        }</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="namespaceasge_1_1scene.html#acf580ea2d5b4178738a21e5551ba8c22">   33</a></span><span class="keyword">using </span><a class="code hl_typedef" href="namespaceasge_1_1scene.html#acf580ea2d5b4178738a21e5551ba8c22">ScenePtr</a> = std::unique_ptr&lt;SceneStage&gt;;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="comment"></span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="comment">/**</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="comment"> * @class IScene</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="comment"> * @brief Abstract interface for scene stack management.</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="comment"> * @details</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="comment"> * Provides basic operations for a scene stack: push, pop, replace, update, draw,</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="comment"> * and flush transitions. Also provides templated helpers for creating and adding</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="comment"> * new scenes in a single call.</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="comment"> */</span></div>
+<div class="foldopen" id="foldopen00044" data-start="{" data-end="};">
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="classasge_1_1scene_1_1IScene.html">   44</a></span><span class="keyword">class </span><a class="code hl_class" href="classasge_1_1scene_1_1IScene.html">IScene</a> {</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="keyword">public</span>:<span class="comment"></span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="comment">        /**</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="comment">         * @brief Virtual destructor for safe polymorphic deletion.</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="comment">         */</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="classasge_1_1scene_1_1IScene.html#a0a6345da04d2794856e4fdec052b0149">   49</a></span>        <span class="keyword">virtual</span> <a class="code hl_function" href="classasge_1_1scene_1_1IScene.html#a0a6345da04d2794856e4fdec052b0149">~IScene</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="comment"></span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="comment">        /**</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="comment">         * @brief Push a new scene onto the stack.</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="comment">         * @param scene Scene pointer to push.</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="comment">         */</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="classasge_1_1scene_1_1IScene.html#a4af54f6efd1b49aaab6acc000917d4dd">   55</a></span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classasge_1_1scene_1_1IScene.html#a4af54f6efd1b49aaab6acc000917d4dd">push</a>(<a class="code hl_typedef" href="namespaceasge_1_1scene.html#acf580ea2d5b4178738a21e5551ba8c22">ScenePtr</a> scene) = 0;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="comment"></span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="comment">        /**</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="comment">         * @brief Pop the top scene from the stack.</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="comment">         */</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="classasge_1_1scene_1_1IScene.html#a27c8082be30f2448eab0c7d700233559">   60</a></span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classasge_1_1scene_1_1IScene.html#a27c8082be30f2448eab0c7d700233559">pop</a>() = 0;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="comment"></span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="comment">        /**</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="comment">         * @brief Replace the top scene with a new one.</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="comment">         * @param scene Scene pointer to replace the top with.</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="comment">         */</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="classasge_1_1scene_1_1IScene.html#a9092442bf9a61418f5678258601e8eca">   66</a></span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classasge_1_1scene_1_1IScene.html#a9092442bf9a61418f5678258601e8eca">replace</a>(<a class="code hl_typedef" href="namespaceasge_1_1scene.html#acf580ea2d5b4178738a21e5551ba8c22">ScenePtr</a> scene) = 0;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="comment"></span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="comment">        /**</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="comment">         * @brief Update the current active scene.</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="comment">         * @param dt Delta time since last update.</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="comment">         */</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="classasge_1_1scene_1_1IScene.html#a8418952530977e0d6091449f4b254d2b">   72</a></span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classasge_1_1scene_1_1IScene.html#a8418952530977e0d6091449f4b254d2b">update</a>(<span class="keywordtype">double</span> dt) = 0;</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="comment"></span> </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="comment">        /**</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="comment">         * @brief Draw the current active scene.</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="comment">         */</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno"><a class="line" href="classasge_1_1scene_1_1IScene.html#abc056e82dc99c62d5e44c31bd84f4095">   77</a></span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classasge_1_1scene_1_1IScene.html#abc056e82dc99c62d5e44c31bd84f4095">draw</a>() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="comment"></span> </div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="comment">        /**</span></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="comment">         * @brief Execute all pending push/pop/replace operations.</span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="comment">         */</span></div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno"><a class="line" href="classasge_1_1scene_1_1IScene.html#a977fb070d247ec71fe4bc0c41773968c">   82</a></span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classasge_1_1scene_1_1IScene.html#a977fb070d247ec71fe4bc0c41773968c">flushTransitions</a>() = 0;</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="comment"></span> </div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><span class="comment">        /**</span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="comment">         * @brief Push a new scene by constructing it in-place.</span></div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span><span class="comment">         * @tparam T Scene type to create.</span></div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span><span class="comment">         * @tparam Args Constructor argument types.</span></div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span><span class="comment">         * @param args Constructor arguments.</span></div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span><span class="comment">         */</span></div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span>... Args&gt;</div>
+<div class="foldopen" id="foldopen00091" data-start="{" data-end="}">
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno"><a class="line" href="classasge_1_1scene_1_1IScene.html#a453222dc810e85bc04f7352b76d661a6">   91</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classasge_1_1scene_1_1IScene.html#a453222dc810e85bc04f7352b76d661a6">pushNew</a>(Args&amp;&amp;... args)</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>        {</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>            <a class="code hl_function" href="classasge_1_1scene_1_1IScene.html#a4af54f6efd1b49aaab6acc000917d4dd">push</a>(std::make_unique&lt;T&gt;(std::forward&lt;Args&gt;(args)...));</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>        }</div>
 </div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span>... Args&gt;</div>
-<div class="foldopen" id="foldopen00042" data-start="{" data-end="}">
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="classasge_1_1scene_1_1IScene.html#a848c0b507b6646bb6fa96e20a766c345">   42</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classasge_1_1scene_1_1IScene.html#a848c0b507b6646bb6fa96e20a766c345">replaceNew</a>(Args&amp;&amp;... args)</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        {</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>            <a class="code hl_function" href="classasge_1_1scene_1_1IScene.html#a9092442bf9a61418f5678258601e8eca">replace</a>(std::make_unique&lt;T&gt;(std::forward&lt;Args&gt;(args)...));</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        }</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span><span class="comment"></span> </div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span><span class="comment">        /**</span></div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span><span class="comment">         * @brief Replace the top scene by constructing a new one in-place.</span></div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span><span class="comment">         * @tparam T Scene type to create.</span></div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span><span class="comment">         * @tparam Args Constructor argument types.</span></div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span><span class="comment">         * @param args Constructor arguments.</span></div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span><span class="comment">         */</span></div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>        <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span>... Args&gt;</div>
+<div class="foldopen" id="foldopen00103" data-start="{" data-end="}">
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno"><a class="line" href="classasge_1_1scene_1_1IScene.html#a848c0b507b6646bb6fa96e20a766c345">  103</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classasge_1_1scene_1_1IScene.html#a848c0b507b6646bb6fa96e20a766c345">replaceNew</a>(Args&amp;&amp;... args)</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>        {</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>            <a class="code hl_function" href="classasge_1_1scene_1_1IScene.html#a9092442bf9a61418f5678258601e8eca">replace</a>(std::make_unique&lt;T&gt;(std::forward&lt;Args&gt;(args)...));</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>        }</div>
 </div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="classasge_1_1scene_1_1IScene.html#a4c9bf17aba94009e52c908c683113d1d">   47</a></span>        <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="classasge_1_1scene_1_1IScene.html#a4c9bf17aba94009e52c908c683113d1d">empty</a>() <span class="keyword">const</span> = 0;</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>};</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span><span class="comment"></span> </div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span><span class="comment">        /**</span></div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span><span class="comment">         * @brief Check if the scene stack is empty.</span></div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span><span class="comment">         * @return true if empty, false otherwise.</span></div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span><span class="comment">         */</span></div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno"><a class="line" href="classasge_1_1scene_1_1IScene.html#a4c9bf17aba94009e52c908c683113d1d">  112</a></span>        <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="classasge_1_1scene_1_1IScene.html#a4c9bf17aba94009e52c908c683113d1d">empty</a>() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>};</div>
 </div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>} <span class="comment">// namespace asge::scene</span></div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span> </div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>}</div>
 <div class="ttc" id="aSceneStage_8hpp_html"><div class="ttname"><a href="SceneStage_8hpp.html">SceneStage.hpp</a></div><div class="ttdoc">Defines the abstract base class for application-level scenes.</div></div>
-<div class="ttc" id="aclassasge_1_1scene_1_1IScene_html"><div class="ttname"><a href="classasge_1_1scene_1_1IScene.html">asge::scene::IScene</a></div><div class="ttdef"><b>Definition</b> <a href="IScene_8hpp_source.html#l00022">IScene.hpp:22</a></div></div>
-<div class="ttc" id="aclassasge_1_1scene_1_1IScene_html_a0a6345da04d2794856e4fdec052b0149"><div class="ttname"><a href="classasge_1_1scene_1_1IScene.html#a0a6345da04d2794856e4fdec052b0149">asge::scene::IScene::~IScene</a></div><div class="ttdeci">virtual ~IScene()=default</div></div>
-<div class="ttc" id="aclassasge_1_1scene_1_1IScene_html_a27c8082be30f2448eab0c7d700233559"><div class="ttname"><a href="classasge_1_1scene_1_1IScene.html#a27c8082be30f2448eab0c7d700233559">asge::scene::IScene::pop</a></div><div class="ttdeci">virtual void pop()=0</div></div>
-<div class="ttc" id="aclassasge_1_1scene_1_1IScene_html_a453222dc810e85bc04f7352b76d661a6"><div class="ttname"><a href="classasge_1_1scene_1_1IScene.html#a453222dc810e85bc04f7352b76d661a6">asge::scene::IScene::pushNew</a></div><div class="ttdeci">void pushNew(Args &amp;&amp;... args)</div><div class="ttdef"><b>Definition</b> <a href="IScene_8hpp_source.html#l00036">IScene.hpp:36</a></div></div>
-<div class="ttc" id="aclassasge_1_1scene_1_1IScene_html_a4af54f6efd1b49aaab6acc000917d4dd"><div class="ttname"><a href="classasge_1_1scene_1_1IScene.html#a4af54f6efd1b49aaab6acc000917d4dd">asge::scene::IScene::push</a></div><div class="ttdeci">virtual void push(ScenePtr scene)=0</div></div>
-<div class="ttc" id="aclassasge_1_1scene_1_1IScene_html_a4c9bf17aba94009e52c908c683113d1d"><div class="ttname"><a href="classasge_1_1scene_1_1IScene.html#a4c9bf17aba94009e52c908c683113d1d">asge::scene::IScene::empty</a></div><div class="ttdeci">virtual bool empty() const =0</div></div>
-<div class="ttc" id="aclassasge_1_1scene_1_1IScene_html_a8418952530977e0d6091449f4b254d2b"><div class="ttname"><a href="classasge_1_1scene_1_1IScene.html#a8418952530977e0d6091449f4b254d2b">asge::scene::IScene::update</a></div><div class="ttdeci">virtual void update(double dt)=0</div></div>
-<div class="ttc" id="aclassasge_1_1scene_1_1IScene_html_a848c0b507b6646bb6fa96e20a766c345"><div class="ttname"><a href="classasge_1_1scene_1_1IScene.html#a848c0b507b6646bb6fa96e20a766c345">asge::scene::IScene::replaceNew</a></div><div class="ttdeci">void replaceNew(Args &amp;&amp;... args)</div><div class="ttdef"><b>Definition</b> <a href="IScene_8hpp_source.html#l00042">IScene.hpp:42</a></div></div>
-<div class="ttc" id="aclassasge_1_1scene_1_1IScene_html_a9092442bf9a61418f5678258601e8eca"><div class="ttname"><a href="classasge_1_1scene_1_1IScene.html#a9092442bf9a61418f5678258601e8eca">asge::scene::IScene::replace</a></div><div class="ttdeci">virtual void replace(ScenePtr scene)=0</div></div>
-<div class="ttc" id="aclassasge_1_1scene_1_1IScene_html_a977fb070d247ec71fe4bc0c41773968c"><div class="ttname"><a href="classasge_1_1scene_1_1IScene.html#a977fb070d247ec71fe4bc0c41773968c">asge::scene::IScene::flushTransitions</a></div><div class="ttdeci">virtual void flushTransitions()=0</div></div>
-<div class="ttc" id="aclassasge_1_1scene_1_1IScene_html_abc056e82dc99c62d5e44c31bd84f4095"><div class="ttname"><a href="classasge_1_1scene_1_1IScene.html#abc056e82dc99c62d5e44c31bd84f4095">asge::scene::IScene::draw</a></div><div class="ttdeci">virtual void draw() const =0</div></div>
+<div class="ttc" id="aclassasge_1_1scene_1_1IScene_html"><div class="ttname"><a href="classasge_1_1scene_1_1IScene.html">asge::scene::IScene</a></div><div class="ttdoc">Abstract interface for scene stack management.</div><div class="ttdef"><b>Definition</b> <a href="IScene_8hpp_source.html#l00044">IScene.hpp:44</a></div></div>
+<div class="ttc" id="aclassasge_1_1scene_1_1IScene_html_a0a6345da04d2794856e4fdec052b0149"><div class="ttname"><a href="classasge_1_1scene_1_1IScene.html#a0a6345da04d2794856e4fdec052b0149">asge::scene::IScene::~IScene</a></div><div class="ttdeci">virtual ~IScene()=default</div><div class="ttdoc">Virtual destructor for safe polymorphic deletion.</div></div>
+<div class="ttc" id="aclassasge_1_1scene_1_1IScene_html_a27c8082be30f2448eab0c7d700233559"><div class="ttname"><a href="classasge_1_1scene_1_1IScene.html#a27c8082be30f2448eab0c7d700233559">asge::scene::IScene::pop</a></div><div class="ttdeci">virtual void pop()=0</div><div class="ttdoc">Pop the top scene from the stack.</div></div>
+<div class="ttc" id="aclassasge_1_1scene_1_1IScene_html_a453222dc810e85bc04f7352b76d661a6"><div class="ttname"><a href="classasge_1_1scene_1_1IScene.html#a453222dc810e85bc04f7352b76d661a6">asge::scene::IScene::pushNew</a></div><div class="ttdeci">void pushNew(Args &amp;&amp;... args)</div><div class="ttdoc">Push a new scene by constructing it in-place.</div><div class="ttdef"><b>Definition</b> <a href="IScene_8hpp_source.html#l00091">IScene.hpp:91</a></div></div>
+<div class="ttc" id="aclassasge_1_1scene_1_1IScene_html_a4af54f6efd1b49aaab6acc000917d4dd"><div class="ttname"><a href="classasge_1_1scene_1_1IScene.html#a4af54f6efd1b49aaab6acc000917d4dd">asge::scene::IScene::push</a></div><div class="ttdeci">virtual void push(ScenePtr scene)=0</div><div class="ttdoc">Push a new scene onto the stack.</div></div>
+<div class="ttc" id="aclassasge_1_1scene_1_1IScene_html_a4c9bf17aba94009e52c908c683113d1d"><div class="ttname"><a href="classasge_1_1scene_1_1IScene.html#a4c9bf17aba94009e52c908c683113d1d">asge::scene::IScene::empty</a></div><div class="ttdeci">virtual bool empty() const =0</div><div class="ttdoc">Check if the scene stack is empty.</div></div>
+<div class="ttc" id="aclassasge_1_1scene_1_1IScene_html_a8418952530977e0d6091449f4b254d2b"><div class="ttname"><a href="classasge_1_1scene_1_1IScene.html#a8418952530977e0d6091449f4b254d2b">asge::scene::IScene::update</a></div><div class="ttdeci">virtual void update(double dt)=0</div><div class="ttdoc">Update the current active scene.</div></div>
+<div class="ttc" id="aclassasge_1_1scene_1_1IScene_html_a848c0b507b6646bb6fa96e20a766c345"><div class="ttname"><a href="classasge_1_1scene_1_1IScene.html#a848c0b507b6646bb6fa96e20a766c345">asge::scene::IScene::replaceNew</a></div><div class="ttdeci">void replaceNew(Args &amp;&amp;... args)</div><div class="ttdoc">Replace the top scene by constructing a new one in-place.</div><div class="ttdef"><b>Definition</b> <a href="IScene_8hpp_source.html#l00103">IScene.hpp:103</a></div></div>
+<div class="ttc" id="aclassasge_1_1scene_1_1IScene_html_a9092442bf9a61418f5678258601e8eca"><div class="ttname"><a href="classasge_1_1scene_1_1IScene.html#a9092442bf9a61418f5678258601e8eca">asge::scene::IScene::replace</a></div><div class="ttdeci">virtual void replace(ScenePtr scene)=0</div><div class="ttdoc">Replace the top scene with a new one.</div></div>
+<div class="ttc" id="aclassasge_1_1scene_1_1IScene_html_a977fb070d247ec71fe4bc0c41773968c"><div class="ttname"><a href="classasge_1_1scene_1_1IScene.html#a977fb070d247ec71fe4bc0c41773968c">asge::scene::IScene::flushTransitions</a></div><div class="ttdeci">virtual void flushTransitions()=0</div><div class="ttdoc">Execute all pending push/pop/replace operations.</div></div>
+<div class="ttc" id="aclassasge_1_1scene_1_1IScene_html_abc056e82dc99c62d5e44c31bd84f4095"><div class="ttname"><a href="classasge_1_1scene_1_1IScene.html#abc056e82dc99c62d5e44c31bd84f4095">asge::scene::IScene::draw</a></div><div class="ttdeci">virtual void draw() const =0</div><div class="ttdoc">Draw the current active scene.</div></div>
 <div class="ttc" id="anamespaceasge_1_1scene_html"><div class="ttname"><a href="namespaceasge_1_1scene.html">asge::scene</a></div><div class="ttdef"><b>Definition</b> <a href="SceneTypes_8hpp_source.html#l00033">SceneTypes.hpp:33</a></div></div>
-<div class="ttc" id="anamespaceasge_1_1scene_html_acf580ea2d5b4178738a21e5551ba8c22"><div class="ttname"><a href="namespaceasge_1_1scene.html#acf580ea2d5b4178738a21e5551ba8c22">asge::scene::ScenePtr</a></div><div class="ttdeci">std::unique_ptr&lt; SceneStage &gt; ScenePtr</div><div class="ttdef"><b>Definition</b> <a href="IScene_8hpp_source.html#l00020">IScene.hpp:20</a></div></div>
+<div class="ttc" id="anamespaceasge_1_1scene_html_acf580ea2d5b4178738a21e5551ba8c22"><div class="ttname"><a href="namespaceasge_1_1scene.html#acf580ea2d5b4178738a21e5551ba8c22">asge::scene::ScenePtr</a></div><div class="ttdeci">std::unique_ptr&lt; SceneStage &gt; ScenePtr</div><div class="ttdef"><b>Definition</b> <a href="IScene_8hpp_source.html#l00033">IScene.hpp:33</a></div></div>
 <div class="ttc" id="anamespaceasge_html"><div class="ttname"><a href="namespaceasge.html">asge</a></div><div class="ttdef"><b>Definition</b> <a href="ASGE_8hpp_source.html#l00036">ASGE.hpp:36</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

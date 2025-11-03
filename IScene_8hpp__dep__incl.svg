@@ -57,7 +57,7 @@ var sectionId = 'dynsection-1';
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title=" ">
+<g id="a_Node000001"><a xlink:title="Interface for managing a stack of scenes.">
 <polygon fill="#999999" stroke="#666666" points="651.44,-349 581.44,-349 581.44,-330 651.44,-330 651.44,-349"/>
 <text text-anchor="middle" x="616.44" y="-337" font-family="Helvetica,sans-Serif" font-size="10.00">IScene.hpp</text>
 </a>
@@ -84,7 +84,7 @@ var sectionId = 'dynsection-1';
 <!-- Node49 -->
 <g id="Node000049" class="node">
 <title>Node49</title>
-<g id="a_Node000049"><a xlink:href="SceneManager_8hpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000049"><a xlink:href="SceneManager_8hpp.html" target="_top" xlink:title="Manages the stack of game scenes (IScene).">
 <polygon fill="white" stroke="#666666" points="220.94,-184 111.94,-184 111.94,-165 220.94,-165 220.94,-184"/>
 <text text-anchor="middle" x="166.44" y="-172" font-family="Helvetica,sans-Serif" font-size="10.00">SceneManager.hpp</text>
 </a>
@@ -1290,7 +1290,7 @@ var sectionId = 'dynsection-1';
 <!-- Node51 -->
 <g id="Node000051" class="node">
 <title>Node51</title>
-<g id="a_Node000051"><a xlink:href="SceneManager_8cpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000051"><a xlink:href="SceneManager_8cpp.html" target="_top" xlink:title="Implementation of the SceneManager class.">
 <polygon fill="white" stroke="#666666" points="229.44,-129 121.44,-129 121.44,-110 229.44,-110 229.44,-129"/>
 <text text-anchor="middle" x="175.44" y="-117" font-family="Helvetica,sans-Serif" font-size="10.00">SceneManager.cpp</text>
 </a>

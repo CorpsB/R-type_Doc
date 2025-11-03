@@ -2,9 +2,9 @@
 <area shape="rect" id="Node000001" title="Defines the MenuStage class responsible for displaying and managing the main menu interface." alt="" coords="2179,5,2302,31"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="26,335,106,361"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="2179,25,1829,47,1356,81,1221,86,1048,85,852,83,647,86,446,98,352,110,265,125,186,145,117,171,59,203,16,242,10,251,8,261,14,283,27,305,44,324,40,328,23,308,9,285,3,261,5,249,12,238,56,199,114,166,184,140,264,120,351,104,446,93,646,81,852,78,1048,80,1221,81,1356,76,1829,41,2178,20"/>
-<area shape="rect" id="Node000003" href="$AStage_8hpp.html" title=" " alt="" coords="2742,504,2928,544"/>
+<area shape="rect" id="Node000003" href="$AStage_8hpp.html" title="Defines the AStage abstract base class for game scenes." alt="" coords="2742,504,2928,544"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="2196,33,2145,52,2093,80,2070,98,2052,119,2041,143,2036,171,2036,261,2041,274,2057,288,2114,320,2200,354,2305,388,2537,451,2737,498,2735,504,2535,456,2304,393,2198,359,2112,325,2053,293,2037,277,2031,262,2031,170,2035,142,2048,116,2067,94,2090,76,2143,47,2194,28"/>
-<area shape="rect" id="Node000014" href="$SceneManager_8hpp.html" title=" " alt="" coords="40,240,227,280"/>
+<area shape="rect" id="Node000014" href="$SceneManager_8hpp.html" title="Manages the stack of game scenes (IScene)." alt="" coords="40,240,227,280"/>
 <area shape="poly" id="edge20_Node000001_Node000014" title=" " alt="" coords="2179,27,1882,54,1408,102,835,165,241,242,240,237,834,160,1407,96,1881,49,2178,22"/>
 <area shape="rect" id="Node000016" href="$OptionList_8hpp.html" title="Declares the OptionList class used to manage and render UI options." alt="" coords="7953,152,8133,192"/>
 <area shape="poly" id="edge27_Node000001_Node000016" title=" " alt="" coords="2302,18,7939,165,7939,171,2302,24"/>
@@ -18,7 +18,7 @@
 <area shape="poly" id="edge192_Node000001_Node000073" title=" " alt="" coords="2302,23,2806,78,2805,83,2301,29"/>
 <area shape="rect" id="Node000004" title=" " alt="" coords="3621,739,3684,764"/>
 <area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="2751,547,2638,576,2523,612,2476,632,2442,653,2426,672,2426,680,2431,689,2449,696,2487,703,2612,713,2980,726,3368,732,3607,737,3607,742,3368,737,2980,731,2611,719,2486,708,2448,701,2428,693,2421,682,2421,670,2439,649,2473,628,2521,607,2636,570,2749,542"/>
-<area shape="rect" id="Node000005" href="$UIList_8hpp.html" title=" " alt="" coords="3458,665,3612,691"/>
+<area shape="rect" id="Node000005" href="$UIList_8hpp.html" title="Defines the UIList class, a container for other UI elements." alt="" coords="3458,665,3612,691"/>
 <area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="2829,545,2820,581,2822,600,2830,615,2854,623,2907,631,3075,647,3445,670,3444,675,3074,652,2907,637,2852,628,2827,619,2817,601,2815,581,2824,544"/>
 <area shape="rect" id="Node000010" href="$SceneStage_8hpp.html" title="Defines the abstract base class for application&#45;level scenes." alt="" coords="3402,592,3529,617"/>
 <area shape="poly" id="edge10_Node000003_Node000010" title=" " alt="" coords="2929,534,3389,591,3388,596,2928,540"/>
@@ -29,7 +29,7 @@
 <area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="3458,687,3338,693,2779,715,2236,732,1481,751,1481,746,2236,727,2779,710,3337,688,3458,682"/>
 <area shape="rect" id="Node000008" title=" " alt="" coords="7460,739,7538,764"/>
 <area shape="poly" id="edge8_Node000005_Node000008" title=" " alt="" coords="3612,684,3675,688,4212,710,4667,721,5066,725,5438,724,6211,722,6666,725,7203,736,7447,745,7447,750,7203,741,6665,731,6211,727,5438,730,5066,730,4667,726,4212,715,3675,693,3612,689"/>
-<area shape="rect" id="Node000009" href="$UIElement_8hpp.html" title=" " alt="" coords="3466,739,3596,764"/>
+<area shape="rect" id="Node000009" href="$UIElement_8hpp.html" title="Defines the base interface for all UI elements." alt="" coords="3466,739,3596,764"/>
 <area shape="poly" id="edge9_Node000005_Node000009" title=" " alt="" coords="3537,691,3535,725,3530,725,3532,691"/>
 <area shape="poly" id="edge19_Node000010_Node000005" title=" " alt="" coords="3479,616,3516,654,3512,657,3475,620"/>
 <area shape="poly" id="edge11_Node000010_Node000006" title=" " alt="" coords="3529,613,3542,615,3666,621,3820,624,4178,623,4362,624,4536,630,4688,642,4754,651,4810,663,4837,676,4862,688,5816,745,5816,750,4861,693,4834,680,4809,668,4753,656,4688,647,4535,635,4362,630,4178,628,3820,629,3665,627,3541,620,3529,619"/>
@@ -44,7 +44,7 @@
 <area shape="rect" id="Node000013" title=" " alt="" coords="995,739,1070,764"/>
 <area shape="poly" id="edge18_Node000011_Node000013" title=" " alt="" coords="2574,690,2512,693,2155,709,1876,718,1240,741,1083,750,1083,744,1240,736,1876,712,2154,703,2512,688,2574,685"/>
 <area shape="poly" id="edge26_Node000014_Node000002" title=" " alt="" coords="121,282,85,326,81,323,116,279"/>
-<area shape="rect" id="Node000015" href="$IScene_8hpp.html" title=" " alt="" coords="3452,511,3546,537"/>
+<area shape="rect" id="Node000015" href="$IScene_8hpp.html" title="Interface for managing a stack of scenes." alt="" coords="3452,511,3546,537"/>
 <area shape="poly" id="edge21_Node000014_Node000015" title=" " alt="" coords="227,276,239,277,478,298,681,308,859,311,1026,309,1371,306,1574,312,1814,325,2058,345,2306,370,2784,424,3183,475,3439,511,3438,516,3182,481,2783,429,2306,375,2057,351,1813,331,1574,317,1371,312,1026,315,859,316,681,313,478,303,239,283,227,281"/>
 <area shape="poly" id="edge22_Node000015_Node000006" title=" " alt="" coords="3546,534,3591,541,3797,562,3972,573,4127,578,4270,578,4569,576,4745,579,4952,589,5076,593,5183,591,5365,583,5452,585,5543,596,5643,621,5759,663,5783,676,5806,692,5842,726,5838,730,5803,696,5780,680,5757,668,5642,626,5542,602,5451,590,5365,588,5183,596,5076,599,4952,595,4745,585,4569,581,4270,583,4127,583,3972,579,3797,568,3591,547,3546,539"/>
 <area shape="poly" id="edge23_Node000015_Node000008" title=" " alt="" coords="3546,534,3591,541,3798,547,4220,550,5422,552,6059,555,6623,561,7044,572,7178,580,7249,589,7286,609,7347,647,7472,729,7469,733,7345,651,7284,613,7247,595,7177,585,7043,577,6623,566,6059,560,5422,557,4220,555,3798,553,3591,547,3546,539"/>

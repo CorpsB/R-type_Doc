@@ -21,7 +21,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title="Render the scene contents to the screen.">
+<g id="a_Node000001"><a xlink:title="Draws the scene&#39;s UI.">
 <polygon fill="#999999" stroke="#666666" points="145,-19 0,-19 0,0 145,0 145,-19"/>
 <text text-anchor="middle" x="72.5" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">asge::scene::AStage::draw</text>
 </a>
@@ -30,7 +30,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="classasge_1_1scene_1_1ui_1_1UIList.html#aef05a095132d3dbbfcee6e87ac542b84" target="_top" xlink:title=" ">
+<g id="a_Node000002"><a xlink:href="classasge_1_1scene_1_1ui_1_1UIList.html#aef05a095132d3dbbfcee6e87ac542b84" target="_top" xlink:title="Draws all UI elements contained in this list.">
 <polygon fill="white" stroke="#666666" points="334,-19 181,-19 181,0 334,0 334,-19"/>
 <text text-anchor="middle" x="257.5" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">asge::scene::ui::UIList::draw</text>
 </a>

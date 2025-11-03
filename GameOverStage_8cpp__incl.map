@@ -2,7 +2,7 @@
 <area shape="rect" id="Node000001" title="Implementation of the GameOverStage class for displaying the game over screen." alt="" coords="3730,5,3886,31"/>
 <area shape="rect" id="Node000002" href="$GameOverStage_8hpp.html" title="Declaration of the GameOverStage class for displaying the game over screen." alt="" coords="3730,79,3887,104"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="3811,31,3811,65,3806,65,3806,31"/>
-<area shape="rect" id="Node000003" href="$AStage_8hpp.html" title=" " alt="" coords="6268,563,6455,603"/>
+<area shape="rect" id="Node000003" href="$AStage_8hpp.html" title="Defines the AStage abstract base class for game scenes." alt="" coords="6268,563,6455,603"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="3887,91,4736,104,6064,132,6729,150,7301,172,7706,196,7825,209,7860,216,7877,223,7892,244,7900,263,7899,283,7891,301,7876,319,7855,336,7795,367,7716,397,7620,423,7510,448,7390,471,7134,509,6877,540,6469,577,6469,571,6876,535,7133,504,7389,466,7509,443,7618,418,7714,391,7793,362,7852,331,7872,315,7886,298,7894,281,7894,264,7888,246,7873,227,7858,221,7824,214,7706,201,7300,177,6729,156,6064,137,4736,110,3887,96"/>
 <area shape="rect" id="Node000014" href="$LanguageManager_8hpp.html" title="Declaration of the LanguageManager singleton class for managing localization." alt="" coords="10,394,236,419"/>
 <area shape="poly" id="edge20_Node000002_Node000014" title=" " alt="" coords="3730,97,3032,115,2536,132,2029,155,1487,186,946,228,878,231,814,228,694,213,585,192,484,173,436,167,389,165,343,169,297,178,252,195,207,220,161,255,115,300,105,318,103,339,107,361,114,381,109,382,102,362,98,339,100,317,110,297,157,251,204,216,250,190,296,173,342,163,389,160,436,162,485,167,586,186,695,208,814,223,878,225,946,223,1487,181,2028,149,2536,127,3032,110,3729,92"/>
@@ -14,7 +14,7 @@
 <area shape="poly" id="edge176_Node000002_Node000070" title=" " alt="" coords="3811,104,3811,138,3806,138,3806,104"/>
 <area shape="rect" id="Node000004" title=" " alt="" coords="4542,797,4605,823"/>
 <area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="6269,593,5941,617,5508,652,5108,691,4963,709,4879,726,4858,738,4836,752,4779,771,4720,787,4619,805,4618,800,4719,781,4777,766,4834,747,4855,734,4877,722,4962,704,5108,685,5508,646,5941,612,6268,588"/>
-<area shape="rect" id="Node000005" href="$UIList_8hpp.html" title=" " alt="" coords="6284,724,6437,749"/>
+<area shape="rect" id="Node000005" href="$UIList_8hpp.html" title="Defines the UIList class, a container for other UI elements." alt="" coords="6284,724,6437,749"/>
 <area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="6369,603,6374,637,6375,676,6369,711,6364,710,6370,676,6369,637,6364,603"/>
 <area shape="rect" id="Node000010" href="$SceneStage_8hpp.html" title="Defines the abstract base class for application&#45;level scenes." alt="" coords="6233,651,6360,676"/>
 <area shape="poly" id="edge10_Node000003_Node000010" title=" " alt="" coords="6348,605,6317,642,6313,638,6344,601"/>
@@ -25,7 +25,7 @@
 <area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="6284,746,6170,752,5590,771,5099,782,4266,790,3433,791,2362,800,1763,810,1763,805,2362,795,3433,785,4266,784,5099,776,5590,765,6170,747,6283,741"/>
 <area shape="rect" id="Node000008" title=" " alt="" coords="7827,797,7904,823"/>
 <area shape="poly" id="edge8_Node000005_Node000008" title=" " alt="" coords="6438,740,6551,747,7300,782,7814,804,7813,809,7300,788,6551,752,6437,745"/>
-<area shape="rect" id="Node000009" href="$UIElement_8hpp.html" title=" " alt="" coords="6295,797,6426,823"/>
+<area shape="rect" id="Node000009" href="$UIElement_8hpp.html" title="Defines the base interface for all UI elements." alt="" coords="6295,797,6426,823"/>
 <area shape="poly" id="edge9_Node000005_Node000009" title=" " alt="" coords="6363,750,6363,784,6358,784,6358,750"/>
 <area shape="poly" id="edge19_Node000010_Node000005" title=" " alt="" coords="6309,675,6343,712,6339,716,6305,678"/>
 <area shape="poly" id="edge11_Node000010_Node000006" title=" " alt="" coords="6292,678,6262,716,6240,736,6215,752,6183,764,6145,774,6054,788,5951,795,5840,798,5623,798,5455,800,5324,808,5324,803,5455,795,5623,793,5840,793,5951,790,6054,782,6143,769,6181,759,6213,747,6237,732,6258,712,6287,674"/>
@@ -77,7 +77,7 @@
 <area shape="poly" id="edge110_Node000020_Node000052" title=" " alt="" coords="4375,424,4503,472,4828,610,5063,716,5061,720,4826,615,4501,477,4373,429"/>
 <area shape="rect" id="Node000053" href="$IInput_8hpp.html" title="Public interface for the input service (polling, snapshots, queries)." alt="" coords="2970,651,3129,676"/>
 <area shape="poly" id="edge115_Node000020_Node000053" title=" " alt="" coords="4231,415,4035,434,3921,452,3808,477,3781,486,3761,496,3713,517,3632,540,3526,564,3337,605,3121,651,3119,645,3336,600,3525,559,3630,534,3712,512,3758,491,3779,481,3806,472,3920,447,4034,429,4231,410"/>
-<area shape="rect" id="Node000057" href="$IScene_8hpp.html" title=" " alt="" coords="5496,570,5667,595"/>
+<area shape="rect" id="Node000057" href="$IScene_8hpp.html" title="Interface for managing a stack of scenes." alt="" coords="5496,570,5667,595"/>
 <area shape="poly" id="edge124_Node000020_Node000057" title=" " alt="" coords="4410,406,4678,410,5021,420,5188,428,5334,439,5445,454,5484,463,5510,472,5532,490,5551,512,5575,556,5570,558,5546,515,5529,494,5507,477,5483,468,5444,459,5333,445,5187,434,5021,425,4678,415,4410,411"/>
 <area shape="rect" id="Node000058" href="$PluginManager_8hpp.html" title="Central orchestrator for loading, tracking, and unloading plugins." alt="" coords="5270,482,5496,507"/>
 <area shape="poly" id="edge129_Node000020_Node000058" title=" " alt="" coords="4410,413,5257,481,5257,486,4410,418"/>

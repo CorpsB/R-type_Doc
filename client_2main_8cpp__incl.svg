@@ -579,7 +579,7 @@ var sectionId = 'dynsection-0';
 <!-- Node52 -->
 <g id="Node000052" class="node">
 <title>Node52</title>
-<g id="a_Node000052"><a xlink:href="IScene_8hpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000052"><a xlink:href="IScene_8hpp.html" target="_top" xlink:title="Interface for managing a stack of scenes.">
 <polygon fill="white" stroke="#666666" points="2589,-189.5 2461,-189.5 2461,-170.5 2589,-170.5 2589,-189.5"/>
 <text text-anchor="middle" x="2525" y="-177.5" font-family="Helvetica,sans-Serif" font-size="10.00">../src/scene/IScene.hpp</text>
 </a>
@@ -1749,7 +1749,7 @@ var sectionId = 'dynsection-0';
 <!-- Node55 -->
 <g id="Node000055" class="node">
 <title>Node55</title>
-<g id="a_Node000055"><a xlink:href="UIList_8hpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000055"><a xlink:href="UIList_8hpp.html" target="_top" xlink:title="Defines the UIList class, a container for other UI elements.">
 <polygon fill="white" stroke="#666666" points="3089.5,-74 2974.5,-74 2974.5,-55 3089.5,-55 3089.5,-74"/>
 <text text-anchor="middle" x="3032" y="-62" font-family="Helvetica,sans-Serif" font-size="10.00">../ui/UIlist/UIList.hpp</text>
 </a>
@@ -1848,7 +1848,7 @@ var sectionId = 'dynsection-0';
 <!-- Node56 -->
 <g id="Node000056" class="node">
 <title>Node56</title>
-<g id="a_Node000056"><a xlink:href="UIElement_8hpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000056"><a xlink:href="UIElement_8hpp.html" target="_top" xlink:title="Defines the base interface for all UI elements.">
 <polygon fill="white" stroke="#666666" points="3081,-19 2983,-19 2983,0 3081,0 3081,-19"/>
 <text text-anchor="middle" x="3032" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">../UIElement.hpp</text>
 </a>
@@ -2980,7 +2980,7 @@ var sectionId = 'dynsection-0';
 <!-- Node85 -->
 <g id="Node000085" class="node">
 <title>Node85</title>
-<g id="a_Node000085"><a xlink:href="AStage_8hpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000085"><a xlink:href="AStage_8hpp.html" target="_top" xlink:title="Defines the AStage abstract base class for game scenes.">
 <polygon fill="white" stroke="#666666" points="3308,-525 3168,-525 3168,-495 3308,-495 3308,-525"/>
 <text text-anchor="start" x="3176" y="-513" font-family="Helvetica,sans-Serif" font-size="10.00">../../../../lib/asge/src/scene</text>
 <text text-anchor="middle" x="3238" y="-502" font-family="Helvetica,sans-Serif" font-size="10.00">/SceneStage/AStage.hpp</text>
@@ -2999,7 +2999,7 @@ var sectionId = 'dynsection-0';
 <!-- Node86 -->
 <g id="Node000086" class="node">
 <title>Node86</title>
-<g id="a_Node000086"><a xlink:href="SceneManager_8hpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000086"><a xlink:href="SceneManager_8hpp.html" target="_top" xlink:title="Manages the stack of game scenes (IScene).">
 <polygon fill="white" stroke="#666666" points="2686,-459 2546,-459 2546,-429 2686,-429 2686,-459"/>
 <text text-anchor="start" x="2554" y="-447" font-family="Helvetica,sans-Serif" font-size="10.00">../../../../lib/asge/src/scene</text>
 <text text-anchor="middle" x="2616" y="-436" font-family="Helvetica,sans-Serif" font-size="10.00">/SceneManager.hpp</text>

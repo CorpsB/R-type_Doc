@@ -2,13 +2,13 @@
 <area shape="rect" id="Node000001" title=" " alt="" coords="274,5,387,31"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="323,152,403,177"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="336,31,360,138,355,139,331,32"/>
-<area shape="rect" id="Node000003" href="$AStage_8hpp.html" title=" " alt="" coords="110,152,298,177"/>
+<area shape="rect" id="Node000003" href="$AStage_8hpp.html" title="Defines the AStage abstract base class for game scenes." alt="" coords="110,152,298,177"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="322,33,225,143,221,140,318,29"/>
-<area shape="rect" id="Node000014" href="$SceneManager_8hpp.html" title=" " alt="" coords="368,79,525,104"/>
+<area shape="rect" id="Node000014" href="$SceneManager_8hpp.html" title="Manages the stack of game scenes (IScene)." alt="" coords="368,79,525,104"/>
 <area shape="poly" id="edge20_Node000001_Node000014" title=" " alt="" coords="351,28,417,69,415,74,348,33"/>
 <area shape="rect" id="Node000004" title=" " alt="" coords="161,372,223,397"/>
 <area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="195,179,154,229,133,263,117,300,114,312,117,323,134,346,157,363,154,367,131,349,112,325,109,312,112,298,128,260,150,226,191,176"/>
-<area shape="rect" id="Node000005" href="$UIList_8hpp.html" title=" " alt="" coords="127,299,281,324"/>
+<area shape="rect" id="Node000005" href="$UIList_8hpp.html" title="Defines the UIList class, a container for other UI elements." alt="" coords="127,299,281,324"/>
 <area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="207,178,207,285,201,285,201,178"/>
 <area shape="rect" id="Node000010" href="$SceneStage_8hpp.html" title="Defines the abstract base class for application&#45;level scenes." alt="" coords="361,225,487,251"/>
 <area shape="poly" id="edge10_Node000003_Node000010" title=" " alt="" coords="240,175,376,219,375,224,239,180"/>
@@ -19,7 +19,7 @@
 <area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="238,321,366,365,364,370,237,327"/>
 <area shape="rect" id="Node000008" title=" " alt="" coords="248,372,325,397"/>
 <area shape="poly" id="edge8_Node000005_Node000008" title=" " alt="" coords="219,322,264,361,261,365,216,326"/>
-<area shape="rect" id="Node000009" href="$UIElement_8hpp.html" title=" " alt="" coords="5,372,136,397"/>
+<area shape="rect" id="Node000009" href="$UIElement_8hpp.html" title="Defines the base interface for all UI elements." alt="" coords="5,372,136,397"/>
 <area shape="poly" id="edge9_Node000005_Node000009" title=" " alt="" coords="184,326,106,368,103,363,181,322"/>
 <area shape="poly" id="edge19_Node000010_Node000005" title=" " alt="" coords="389,253,253,297,252,292,388,248"/>
 <area shape="poly" id="edge11_Node000010_Node000006" title=" " alt="" coords="488,236,534,241,585,251,635,269,680,297,693,310,703,326,715,357,710,359,698,328,689,313,677,301,633,274,583,256,533,246,488,242"/>
@@ -34,7 +34,7 @@
 <area shape="rect" id="Node000013" title=" " alt="" coords="499,372,573,397"/>
 <area shape="poly" id="edge18_Node000011_Node000013" title=" " alt="" coords="539,324,539,358,533,358,533,324"/>
 <area shape="poly" id="edge26_Node000014_Node000002" title=" " alt="" coords="435,106,389,145,385,141,431,102"/>
-<area shape="rect" id="Node000015" href="$IScene_8hpp.html" title=" " alt="" coords="427,152,520,177"/>
+<area shape="rect" id="Node000015" href="$IScene_8hpp.html" title="Interface for managing a stack of scenes." alt="" coords="427,152,520,177"/>
 <area shape="poly" id="edge21_Node000014_Node000015" title=" " alt="" coords="454,103,467,138,462,140,449,105"/>
 <area shape="poly" id="edge22_Node000015_Node000006" title=" " alt="" coords="517,175,563,191,616,217,667,252,690,273,709,297,720,328,722,358,717,359,715,329,704,300,686,277,664,256,613,221,561,196,515,180"/>
 <area shape="poly" id="edge23_Node000015_Node000008" title=" " alt="" coords="431,180,388,198,368,211,350,227,327,259,311,294,293,359,288,358,306,292,323,256,346,224,365,207,386,194,429,175"/>

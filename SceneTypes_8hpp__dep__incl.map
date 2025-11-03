@@ -1,12 +1,12 @@
 <map id="SceneTypes.hpp" name="SceneTypes.hpp">
 <area shape="rect" id="Node000001" title="Fundamental POD types and enums used by the scene subsystem." alt="" coords="1423,5,1550,31"/>
-<area shape="rect" id="Node000002" href="$IScene_8hpp.html" title=" " alt="" coords="1389,152,1483,177"/>
+<area shape="rect" id="Node000002" href="$IScene_8hpp.html" title="Interface for managing a stack of scenes." alt="" coords="1389,152,1483,177"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1479,45,1465,80,1442,153,1437,151,1460,78,1474,43"/>
 <area shape="rect" id="Node000053" href="$SceneStage_8hpp.html" title="Defines the abstract base class for application&#45;level scenes." alt="" coords="1474,79,1601,104"/>
 <area shape="poly" id="edge90_Node000001_Node000053" title=" " alt="" coords="1505,41,1531,77,1527,80,1501,44"/>
 <area shape="rect" id="Node000003" href="$ASGE_8hpp.html" title="Core public configuration, service container and engine hooks." alt="" coords="1393,225,1479,251"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="1439,191,1439,225,1433,225,1433,191"/>
-<area shape="rect" id="Node000050" href="$SceneManager_8hpp.html" title=" " alt="" coords="463,372,609,397"/>
+<area shape="rect" id="Node000050" href="$SceneManager_8hpp.html" title="Manages the stack of game scenes (IScene)." alt="" coords="463,372,609,397"/>
 <area shape="poly" id="edge84_Node000002_Node000050" title=" " alt="" coords="1376,172,1139,186,821,212,665,230,531,251,430,274,397,287,378,300,371,313,371,323,378,333,390,342,427,358,470,369,468,375,425,363,387,347,374,337,366,325,366,311,374,297,395,283,429,269,530,245,665,225,820,207,1138,181,1376,166"/>
 <area shape="rect" id="Node000004" href="$ActionHandler_8hpp.html" title="Helper functions for parsing and executing high&#45;level script actions." alt="" coords="2171,299,2312,324"/>
 <area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="1493,240,1779,261,2159,296,2171,297,2170,303,2158,301,1778,266,1492,246"/>
@@ -140,16 +140,16 @@
 <area shape="poly" id="edge88_Node000050_Node000020" title=" " alt="" coords="620,397,761,422,817,434,843,443,853,462,856,483,851,519,846,518,851,483,848,464,840,447,815,439,760,427,619,402"/>
 <area shape="rect" id="Node000051" href="$NullStage_8hpp.html" title=" " alt="" coords="1097,519,1210,544"/>
 <area shape="poly" id="edge87_Node000050_Node000051" title=" " alt="" coords="623,396,739,416,867,443,1008,481,1120,516,1118,521,1007,486,866,448,738,421,622,401"/>
-<area shape="rect" id="Node000052" href="$SceneManager_8cpp.html" title=" " alt="" coords="685,445,829,471"/>
+<area shape="rect" id="Node000052" href="$SceneManager_8cpp.html" title="Implementation of the SceneManager class." alt="" coords="685,445,829,471"/>
 <area shape="poly" id="edge89_Node000050_Node000052" title=" " alt="" coords="585,399,722,443,721,448,584,404"/>
 <area shape="poly" id="edge98_Node000053_Node000002" title=" " alt="" coords="1511,114,1454,154,1451,150,1508,110"/>
-<area shape="rect" id="Node000054" href="$AStage_8hpp.html" title=" " alt="" coords="1340,445,1436,471"/>
+<area shape="rect" id="Node000054" href="$AStage_8hpp.html" title="Defines the AStage abstract base class for game scenes." alt="" coords="1340,445,1436,471"/>
 <area shape="poly" id="edge91_Node000053_Node000054" title=" " alt="" coords="1615,93,1865,105,2181,131,2330,149,2453,173,2501,186,2538,201,2562,218,2571,236,2571,313,2568,353,2561,384,2548,408,2528,426,2501,437,2466,444,2369,446,2046,434,1807,434,1508,448,1437,454,1436,449,1508,443,1807,429,2046,428,2369,441,2465,439,2499,432,2525,421,2544,405,2556,382,2563,352,2565,313,2565,237,2558,221,2536,206,2500,191,2452,178,2329,155,2181,136,1864,110,1614,98"/>
 <area shape="poly" id="edge93_Node000054_Node000012" title=" " alt="" coords="1433,473,1552,516,1550,521,1431,478"/>
 <area shape="poly" id="edge94_Node000054_Node000015" title=" " alt="" coords="1400,483,1414,518,1409,520,1395,485"/>
 <area shape="poly" id="edge95_Node000054_Node000018" title=" " alt="" coords="1326,473,1129,493,974,499,821,505,626,521,614,523,613,517,625,516,820,500,974,494,1128,487,1326,468"/>
 <area shape="poly" id="edge97_Node000054_Node000020" title=" " alt="" coords="1326,474,1125,499,927,521,914,523,914,518,926,516,1124,494,1326,468"/>
 <area shape="poly" id="edge96_Node000054_Node000051" title=" " alt="" coords="1338,477,1192,521,1191,516,1337,472"/>
-<area shape="rect" id="Node000055" href="$AStage_8cpp.html" title=" " alt="" coords="1234,519,1329,544"/>
+<area shape="rect" id="Node000055" href="$AStage_8cpp.html" title="Implementation of the AStage class." alt="" coords="1234,519,1329,544"/>
 <area shape="poly" id="edge92_Node000054_Node000055" title=" " alt="" coords="1361,480,1300,521,1297,516,1358,476"/>
 </map>

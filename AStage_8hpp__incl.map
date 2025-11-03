@@ -1,8 +1,8 @@
 <map id="AStage.hpp" name="AStage.hpp">
-<area shape="rect" id="Node000001" title=" " alt="" coords="161,5,257,31"/>
+<area shape="rect" id="Node000001" title="Defines the AStage abstract base class for game scenes." alt="" coords="161,5,257,31"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="107,225,170,251"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="208,32,149,213,144,211,203,30"/>
-<area shape="rect" id="Node000003" href="$UIList_8hpp.html" title=" " alt="" coords="183,152,337,177"/>
+<area shape="rect" id="Node000003" href="$UIList_8hpp.html" title="Defines the UIList class, a container for other UI elements." alt="" coords="183,152,337,177"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="215,30,237,103,252,138,247,140,232,105,210,32"/>
 <area shape="rect" id="Node000008" href="$SceneStage_8hpp.html" title="Defines the abstract base class for application&#45;level scenes." alt="" coords="247,79,374,104"/>
 <area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="227,28,284,68,281,73,224,33"/>
@@ -13,7 +13,7 @@
 <area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="298,175,444,219,443,224,297,180"/>
 <area shape="rect" id="Node000006" title=" " alt="" coords="5,225,83,251"/>
 <area shape="poly" id="edge6_Node000003_Node000006" title=" " alt="" coords="226,180,93,223,91,218,224,175"/>
-<area shape="rect" id="Node000007" href="$UIElement_8hpp.html" title=" " alt="" coords="195,225,325,251"/>
+<area shape="rect" id="Node000007" href="$UIElement_8hpp.html" title="Defines the base interface for all UI elements." alt="" coords="195,225,325,251"/>
 <area shape="poly" id="edge7_Node000003_Node000007" title=" " alt="" coords="263,178,263,212,257,212,257,178"/>
 <area shape="poly" id="edge17_Node000008_Node000003" title=" " alt="" coords="304,106,278,142,274,139,300,103"/>
 <area shape="poly" id="edge9_Node000008_Node000004" title=" " alt="" coords="321,103,350,151,374,211,369,213,346,153,317,105"/>

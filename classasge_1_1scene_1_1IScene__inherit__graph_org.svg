@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title=" ">
+<g id="a_Node000001"><a xlink:title="Abstract interface for scene stack management.">
 <polygon fill="#999999" stroke="transparent" points="190,-448 6,-448 6,-242 190,-242 190,-448"/>
 <text text-anchor="start" x="49.5" y="-436" font-family="Helvetica,sans-Serif" font-size="10.00">asge::scene::IScene</text>
 <text text-anchor="start" x="96" y="-421" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
@@ -46,7 +46,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="classasge_1_1scene_1_1SceneManager.html" target="_top" xlink:title=" ">
+<g id="a_Node000002"><a xlink:href="classasge_1_1scene_1_1SceneManager.html" target="_top" xlink:title="Implements the IScene interface to manage a stack of scenes.">
 <polygon fill="white" stroke="transparent" points="196,-206 0,-206 0,0 196,0 196,-206"/>
 <text text-anchor="start" x="30" y="-194" font-family="Helvetica,sans-Serif" font-size="10.00">asge::scene::SceneManager</text>
 <text text-anchor="start" x="6.5" y="-179" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>

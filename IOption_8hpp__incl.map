@@ -32,7 +32,7 @@
 <area shape="poly" id="edge85_Node000004_Node000041" title=" " alt="" coords="3057,121,2713,249,2457,341,2340,368,2230,387,2229,382,2339,363,2455,336,2712,244,3056,116"/>
 <area shape="rect" id="Node000042" href="$IInput_8hpp.html" title="Public interface for the input service (polling, snapshots, queries)." alt="" coords="3497,313,3656,339"/>
 <area shape="poly" id="edge90_Node000004_Node000042" title=" " alt="" coords="3115,118,3131,155,3144,174,3159,190,3196,217,3236,240,3322,275,3407,299,3483,313,3482,318,3406,304,3320,280,3234,244,3193,221,3156,194,3140,177,3127,157,3110,120"/>
-<area shape="rect" id="Node000046" href="$IScene_8hpp.html" title=" " alt="" coords="4499,240,4670,265"/>
+<area shape="rect" id="Node000046" href="$IScene_8hpp.html" title="Interface for managing a stack of scenes." alt="" coords="4499,240,4670,265"/>
 <area shape="poly" id="edge99_Node000004_Node000046" title=" " alt="" coords="3197,107,4486,239,4485,244,3196,112"/>
 <area shape="rect" id="Node000051" href="$PluginManager_8hpp.html" title="Central orchestrator for loading, tracking, and unloading plugins." alt="" coords="5482,167,5708,192"/>
 <area shape="poly" id="edge118_Node000004_Node000051" title=" " alt="" coords="3197,100,5469,171,5468,177,3196,105"/>
@@ -162,7 +162,7 @@
 <area shape="poly" id="edge103_Node000047_Node000002" title=" " alt="" coords="4572,341,4527,376,4468,414,4418,439,4370,459,4368,454,4416,434,4466,410,4524,371,4569,337"/>
 <area shape="poly" id="edge104_Node000047_Node000006" title=" " alt="" coords="4692,329,4919,346,5052,362,5183,384,5310,417,5414,453,5412,458,5308,423,5182,389,5051,367,4919,351,4691,334"/>
 <area shape="poly" id="edge105_Node000047_Node000048" title=" " alt="" coords="4477,337,3719,389,3718,384,4477,332"/>
-<area shape="rect" id="Node000049" href="$UIList_8hpp.html" title=" " alt="" coords="4632,387,4785,412"/>
+<area shape="rect" id="Node000049" href="$UIList_8hpp.html" title="Defines the UIList class, a container for other UI elements." alt="" coords="4632,387,4785,412"/>
 <area shape="poly" id="edge111_Node000047_Node000049" title=" " alt="" coords="4605,336,4677,377,4675,382,4603,341"/>
 <area shape="poly" id="edge107_Node000048_Node000002" title=" " alt="" coords="3696,409,4284,465,4284,470,3695,415"/>
 <area shape="poly" id="edge109_Node000048_Node000007" title=" " alt="" coords="3542,415,3409,459,3407,454,3540,409"/>
@@ -173,7 +173,7 @@
 <area shape="poly" id="edge115_Node000049_Node000006" title=" " alt="" coords="4785,405,5403,464,5402,469,4785,411"/>
 <area shape="poly" id="edge114_Node000049_Node000007" title=" " alt="" coords="4631,413,4612,415,4249,440,3896,457,3409,473,3409,468,3895,452,4249,434,4612,409,4631,408"/>
 <area shape="poly" id="edge113_Node000049_Node000010" title=" " alt="" coords="4631,407,4467,415,3113,471,3113,466,4467,409,4631,402"/>
-<area shape="rect" id="Node000050" href="$UIElement_8hpp.html" title=" " alt="" coords="4643,460,4774,485"/>
+<area shape="rect" id="Node000050" href="$UIElement_8hpp.html" title="Defines the base interface for all UI elements." alt="" coords="4643,460,4774,485"/>
 <area shape="poly" id="edge116_Node000049_Node000050" title=" " alt="" coords="4711,412,4711,446,4706,446,4706,412"/>
 <area shape="poly" id="edge148_Node000051_Node000002" title=" " alt="" coords="5603,191,5618,233,5631,293,5633,325,5630,357,5620,387,5602,414,5435,427,5064,445,4370,472,4370,467,5064,439,5434,422,5599,410,5615,385,5625,356,5628,325,5626,293,5613,235,5598,193"/>
 <area shape="poly" id="edge149_Node000051_Node000006" title=" " alt="" coords="5708,181,5914,196,6027,211,6132,233,6178,246,6218,262,6252,280,6276,301,6291,325,6294,352,6285,382,6260,414,6231,421,6161,428,5945,444,5508,471,5507,466,5944,439,6161,423,6230,415,6257,410,6280,379,6289,352,6286,327,6272,305,6249,285,6216,267,6176,251,6130,238,6026,216,5914,201,5708,186"/>

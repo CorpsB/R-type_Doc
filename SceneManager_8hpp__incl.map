@@ -1,6 +1,6 @@
 <map id="SceneManager.hpp" name="SceneManager.hpp">
-<area shape="rect" id="Node000001" title=" " alt="" coords="97,5,242,31"/>
-<area shape="rect" id="Node000002" href="$IScene_8hpp.html" title=" " alt="" coords="68,79,161,104"/>
+<area shape="rect" id="Node000001" title="Manages the stack of game scenes (IScene)." alt="" coords="97,5,242,31"/>
+<area shape="rect" id="Node000002" href="$IScene_8hpp.html" title="Interface for managing a stack of scenes." alt="" coords="68,79,161,104"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="162,33,134,69,130,66,158,29"/>
 <area shape="rect" id="Node000013" title=" " alt="" coords="185,79,265,104"/>
 <area shape="poly" id="edge20_Node000001_Node000013" title=" " alt="" coords="181,29,210,66,206,69,176,33"/>
@@ -15,7 +15,7 @@
 <area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="186,179,147,287,142,285,181,177"/>
 <area shape="poly" id="edge6_Node000005_Node000004" title=" " alt="" coords="178,180,67,291,63,287,174,176"/>
 <area shape="poly" id="edge7_Node000005_Node000006" title=" " alt="" coords="237,175,428,220,427,225,236,180"/>
-<area shape="rect" id="Node000011" href="$UIList_8hpp.html" title=" " alt="" coords="182,225,335,251"/>
+<area shape="rect" id="Node000011" href="$UIList_8hpp.html" title="Defines the UIList class, a container for other UI elements." alt="" coords="182,225,335,251"/>
 <area shape="poly" id="edge13_Node000005_Node000011" title=" " alt="" coords="202,176,240,214,236,218,198,180"/>
 <area shape="poly" id="edge9_Node000006_Node000003" title=" " alt="" coords="421,253,312,273,180,301,179,296,311,268,420,248"/>
 <area shape="rect" id="Node000007" title=" " alt="" coords="679,299,745,324"/>
@@ -30,6 +30,6 @@
 <area shape="poly" id="edge17_Node000011_Node000004" title=" " alt="" coords="225,253,93,297,91,292,223,248"/>
 <area shape="poly" id="edge15_Node000011_Node000008" title=" " alt="" coords="297,248,443,292,442,297,296,253"/>
 <area shape="poly" id="edge16_Node000011_Node000009" title=" " alt="" coords="279,248,346,289,344,294,276,253"/>
-<area shape="rect" id="Node000012" href="$UIElement_8hpp.html" title=" " alt="" coords="189,299,320,324"/>
+<area shape="rect" id="Node000012" href="$UIElement_8hpp.html" title="Defines the base interface for all UI elements." alt="" coords="189,299,320,324"/>
 <area shape="poly" id="edge18_Node000011_Node000012" title=" " alt="" coords="261,251,259,285,253,285,255,251"/>
 </map>

@@ -104,6 +104,9 @@ $(document).ready(function(){initNavTree('IScene_8hpp.html',''); initResizable()
   <div class="headertitle"><div class="title">IScene.hpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Interface for managing a stack of scenes.  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;string&gt;</code><br />
 <code>#include &lt;memory&gt;</code><br />
 <code>#include &quot;<a class="el" href="SceneStage_8hpp_source.html">./SceneStage/SceneStage.hpp</a>&quot;</code><br />
@@ -128,6 +131,7 @@ $(document).ready(function(){initNavTree('IScene_8hpp.html',''); initResizable()
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasge_1_1scene_1_1IScene.html">asge::scene::IScene</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstract interface for scene stack management.  <a href="classasge_1_1scene_1_1IScene.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
@@ -142,7 +146,14 @@ Typedefs</h2></td></tr>
 <tr class="memitem:acf580ea2d5b4178738a21e5551ba8c22" id="r_acf580ea2d5b4178738a21e5551ba8c22"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceasge_1_1scene.html#acf580ea2d5b4178738a21e5551ba8c22">asge::scene::ScenePtr</a> = std::unique_ptr&lt; <a class="el" href="classasge_1_1scene_1_1SceneStage.html">SceneStage</a> &gt;</td></tr>
 <tr class="separator:acf580ea2d5b4178738a21e5551ba8c22"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-</div><!-- contents -->
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Interface for managing a stack of scenes. </p>
+<dl class="section version"><dt>Version</dt><dd>1.0 </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2025-11-03</dd></dl>
+<p>IScene defines the minimal contract for a scene stack manager. It supports pushing, popping, replacing scenes, updating the active scene, drawing it, and flushing pending transitions. It also provides templated helpers for creating and pushing/replacing scenes directly. </p>
+
+<p class="definition">Definition in file <a class="el" href="IScene_8hpp_source.html">IScene.hpp</a>.</p>
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

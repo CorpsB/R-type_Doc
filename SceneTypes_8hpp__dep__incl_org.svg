@@ -20,7 +20,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="IScene_8hpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000002"><a xlink:href="IScene_8hpp.html" target="_top" xlink:title="Interface for managing a stack of scenes.">
 <polygon fill="white" stroke="#666666" points="1108,-349 1038,-349 1038,-330 1108,-330 1108,-349"/>
 <text text-anchor="middle" x="1073" y="-337" font-family="Helvetica,sans-Serif" font-size="10.00">IScene.hpp</text>
 </a>
@@ -74,7 +74,7 @@
 <!-- Node50 -->
 <g id="Node000050" class="node">
 <title>Node50</title>
-<g id="a_Node000050"><a xlink:href="SceneManager_8hpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000050"><a xlink:href="SceneManager_8hpp.html" target="_top" xlink:title="Manages the stack of game scenes (IScene).">
 <polygon fill="white" stroke="#666666" points="452.5,-184 343.5,-184 343.5,-165 452.5,-165 452.5,-184"/>
 <text text-anchor="middle" x="398" y="-172" font-family="Helvetica,sans-Serif" font-size="10.00">SceneManager.hpp</text>
 </a>
@@ -1280,7 +1280,7 @@
 <!-- Node52 -->
 <g id="Node000052" class="node">
 <title>Node52</title>
-<g id="a_Node000052"><a xlink:href="SceneManager_8cpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000052"><a xlink:href="SceneManager_8cpp.html" target="_top" xlink:title="Implementation of the SceneManager class.">
 <polygon fill="white" stroke="#666666" points="618,-129 510,-129 510,-110 618,-110 618,-129"/>
 <text text-anchor="middle" x="564" y="-117" font-family="Helvetica,sans-Serif" font-size="10.00">SceneManager.cpp</text>
 </a>
@@ -1307,7 +1307,7 @@
 <!-- Node54 -->
 <g id="Node000054" class="node">
 <title>Node54</title>
-<g id="a_Node000054"><a xlink:href="AStage_8hpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000054"><a xlink:href="AStage_8hpp.html" target="_top" xlink:title="Defines the AStage abstract base class for game scenes.">
 <polygon fill="white" stroke="#666666" points="1073,-129 1001,-129 1001,-110 1073,-110 1073,-129"/>
 <text text-anchor="middle" x="1037" y="-117" font-family="Helvetica,sans-Serif" font-size="10.00">AStage.hpp</text>
 </a>
@@ -1370,7 +1370,7 @@
 <!-- Node55 -->
 <g id="Node000055" class="node">
 <title>Node55</title>
-<g id="a_Node000055"><a xlink:href="AStage_8cpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000055"><a xlink:href="AStage_8cpp.html" target="_top" xlink:title="Implementation of the AStage class.">
 <polygon fill="white" stroke="#666666" points="992.5,-74 921.5,-74 921.5,-55 992.5,-55 992.5,-74"/>
 <text text-anchor="middle" x="957" y="-62" font-family="Helvetica,sans-Serif" font-size="10.00">AStage.cpp</text>
 </a>

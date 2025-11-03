@@ -59,7 +59,7 @@
 <area shape="poly" id="edge91_Node000010_Node000046" title=" " alt="" coords="3328,200,3320,243,3304,296,3277,354,3245,409,3190,494,3185,491,3241,407,3272,351,3299,294,3315,242,3322,199"/>
 <area shape="rect" id="Node000047" href="$IInput_8hpp.html" title="Public interface for the input service (polling, snapshots, queries)." alt="" coords="5201,431,5359,456"/>
 <area shape="poly" id="edge96_Node000010_Node000047" title=" " alt="" coords="3404,186,3592,190,3855,200,4158,220,4314,234,4466,252,4584,270,4676,290,4883,340,5224,425,5223,430,4882,345,4675,295,4583,276,4465,257,4313,239,4158,225,3855,205,3592,195,3404,191"/>
-<area shape="rect" id="Node000051" href="$IScene_8hpp.html" title=" " alt="" coords="1968,350,2139,375"/>
+<area shape="rect" id="Node000051" href="$IScene_8hpp.html" title="Interface for managing a stack of scenes." alt="" coords="1968,350,2139,375"/>
 <area shape="poly" id="edge105_Node000010_Node000051" title=" " alt="" coords="3249,192,2989,197,2649,209,2335,229,2223,242,2158,257,2131,274,2106,296,2070,340,2066,337,2102,292,2127,270,2156,252,2222,236,2335,223,2648,204,2989,192,3249,187"/>
 <area shape="rect" id="Node000056" href="$PluginManager_8hpp.html" title="Central orchestrator for loading, tracking, and unloading plugins." alt="" coords="2425,262,2650,287"/>
 <area shape="poly" id="edge124_Node000010_Node000056" title=" " alt="" coords="3249,199,2656,263,2656,258,3249,194"/>
@@ -186,7 +186,7 @@
 <area shape="poly" id="edge110_Node000052_Node000005" title=" " alt="" coords="1873,451,1280,474,984,490,877,498,814,507,765,520,717,538,638,574,636,569,715,533,763,515,813,501,877,493,984,484,1280,468,1873,445"/>
 <area shape="poly" id="edge109_Node000052_Node000006" title=" " alt="" coords="1883,459,1834,469,1795,484,1782,494,1776,503,1776,514,1784,527,1799,533,1831,539,1936,550,2243,564,2716,575,2837,583,2836,588,2716,580,2243,569,1936,555,1831,545,1798,539,1781,531,1771,516,1770,502,1778,490,1792,480,1833,464,1882,453"/>
 <area shape="poly" id="edge111_Node000052_Node000053" title=" " alt="" coords="2088,446,2598,466,3282,501,3282,507,2598,471,2087,451"/>
-<area shape="rect" id="Node000054" href="$UIList_8hpp.html" title=" " alt="" coords="1934,504,2087,529"/>
+<area shape="rect" id="Node000054" href="$UIList_8hpp.html" title="Defines the UIList class, a container for other UI elements." alt="" coords="1934,504,2087,529"/>
 <area shape="poly" id="edge117_Node000052_Node000054" title=" " alt="" coords="1988,455,2003,491,1998,493,1983,457"/>
 <area shape="poly" id="edge113_Node000053_Node000006" title=" " alt="" coords="3338,532,2923,586,2923,580,3337,527"/>
 <area shape="poly" id="edge116_Node000053_Node000008" title=" " alt="" coords="3295,531,3284,532,2897,549,2371,566,1532,590,1532,585,2371,561,2897,543,3284,527,3295,526"/>
@@ -197,7 +197,7 @@
 <area shape="poly" id="edge118_Node000054_Node000006" title=" " alt="" coords="2088,525,2107,527,2473,556,2837,583,2837,588,2473,562,2106,532,2087,530"/>
 <area shape="poly" id="edge120_Node000054_Node000013" title=" " alt="" coords="2088,519,2252,527,3261,564,3920,585,3920,590,3260,569,2252,532,2088,525"/>
 <area shape="poly" id="edge119_Node000054_Node000016" title=" " alt="" coords="2088,520,2252,527,2720,539,3116,545,3787,548,4459,552,4855,560,5323,575,5449,581,5448,586,5323,580,4855,566,4459,558,3787,554,3115,551,2720,544,2252,532,2088,525"/>
-<area shape="rect" id="Node000055" href="$UIElement_8hpp.html" title=" " alt="" coords="1945,577,2076,603"/>
+<area shape="rect" id="Node000055" href="$UIElement_8hpp.html" title="Defines the base interface for all UI elements." alt="" coords="1945,577,2076,603"/>
 <area shape="poly" id="edge122_Node000054_Node000055" title=" " alt="" coords="2013,530,2013,564,2008,564,2008,530"/>
 <area shape="poly" id="edge155_Node000056_Node000005" title=" " alt="" coords="2425,281,1962,300,1666,318,1367,345,861,422,517,477,359,506,355,517,359,528,384,539,434,553,552,577,551,582,433,558,382,544,355,531,349,517,356,502,516,472,860,417,1366,340,1666,313,1962,294,2424,276"/>
 <area shape="poly" id="edge154_Node000056_Node000006" title=" " alt="" coords="2506,290,2414,327,2360,354,2310,385,2268,418,2252,436,2241,454,2235,472,2235,490,2241,509,2253,527,2328,539,2496,555,2838,583,2837,588,2496,560,2328,544,2251,532,2236,511,2229,491,2230,471,2236,452,2248,433,2264,414,2307,380,2358,349,2412,323,2504,285"/>

@@ -1,5 +1,5 @@
 <map id="IScene.hpp" name="IScene.hpp">
-<area shape="rect" id="Node000001" title=" " alt="" coords="68,5,161,31"/>
+<area shape="rect" id="Node000001" title="Interface for managing a stack of scenes." alt="" coords="68,5,161,31"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="107,225,165,251"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="103,33,85,53,71,80,68,91,71,103,80,134,94,164,122,212,118,215,89,166,75,136,65,105,63,91,65,78,81,50,99,29"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="5,225,83,251"/>
@@ -11,7 +11,7 @@
 <area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="186,105,147,213,142,212,181,104"/>
 <area shape="poly" id="edge5_Node000004_Node000003" title=" " alt="" coords="178,106,67,217,63,213,174,103"/>
 <area shape="poly" id="edge6_Node000004_Node000005" title=" " alt="" coords="237,101,428,146,427,151,236,107"/>
-<area shape="rect" id="Node000010" href="$UIList_8hpp.html" title=" " alt="" coords="182,152,335,177"/>
+<area shape="rect" id="Node000010" href="$UIList_8hpp.html" title="Defines the UIList class, a container for other UI elements." alt="" coords="182,152,335,177"/>
 <area shape="poly" id="edge12_Node000004_Node000010" title=" " alt="" coords="202,102,240,140,236,144,198,106"/>
 <area shape="poly" id="edge8_Node000005_Node000002" title=" " alt="" coords="421,180,312,200,180,228,179,223,311,195,420,175"/>
 <area shape="rect" id="Node000006" title=" " alt="" coords="679,225,745,251"/>
@@ -26,6 +26,6 @@
 <area shape="poly" id="edge16_Node000010_Node000003" title=" " alt="" coords="225,180,93,223,91,218,223,175"/>
 <area shape="poly" id="edge14_Node000010_Node000007" title=" " alt="" coords="297,175,443,219,442,224,296,180"/>
 <area shape="poly" id="edge15_Node000010_Node000008" title=" " alt="" coords="279,175,346,216,344,220,276,180"/>
-<area shape="rect" id="Node000011" href="$UIElement_8hpp.html" title=" " alt="" coords="189,225,320,251"/>
+<area shape="rect" id="Node000011" href="$UIElement_8hpp.html" title="Defines the base interface for all UI elements." alt="" coords="189,225,320,251"/>
 <area shape="poly" id="edge17_Node000010_Node000011" title=" " alt="" coords="261,178,259,212,253,212,255,178"/>
 </map>

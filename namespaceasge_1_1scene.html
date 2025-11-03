@@ -115,13 +115,16 @@ Namespaces</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasge_1_1scene_1_1AStage.html">AStage</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An abstract base class for a scene stage, providing default UI handling.  <a href="classasge_1_1scene_1_1AStage.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasge_1_1scene_1_1IScene.html">IScene</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstract interface for scene stack management.  <a href="classasge_1_1scene_1_1IScene.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:structasge_1_1scene_1_1SceneHandle" id="r_structasge_1_1scene_1_1SceneHandle"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceasge_1_1scene.html#structasge_1_1scene_1_1SceneHandle">SceneHandle</a></td></tr>
 <tr class="memdesc:structasge_1_1scene_1_1SceneHandle"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lightweight descriptor for a pushed scene instance.  <a href="namespaceasge_1_1scene.html#structasge_1_1scene_1_1SceneHandle">More...</a><br /></td></tr>
 <tr class="separator:structasge_1_1scene_1_1SceneHandle"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasge_1_1scene_1_1SceneManager.html">SceneManager</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implements the <a class="el" href="classasge_1_1scene_1_1IScene.html" title="Abstract interface for scene stack management.">IScene</a> interface to manage a stack of scenes.  <a href="classasge_1_1scene_1_1SceneManager.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasge_1_1scene_1_1SceneStage.html">SceneStage</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstract interface implemented by user-defined scenes.  <a href="classasge_1_1scene_1_1SceneStage.html#details">More...</a><br /></td></tr>
@@ -183,9 +186,9 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <div class="textblock"><p>Lightweight descriptor for a pushed scene instance. </p>
-<p><a class="el" href="namespaceasge_1_1scene.html#structasge_1_1scene_1_1SceneHandle" title="Lightweight descriptor for a pushed scene instance.">SceneHandle</a> represents metadata for a scene instance pushed onto the <a class="el" href="classasge_1_1scene_1_1SceneManager.html">SceneManager</a> stack. It is intentionally copyable and small so the manager can queue pending operations using it.</p>
+<p><a class="el" href="namespaceasge_1_1scene.html#structasge_1_1scene_1_1SceneHandle" title="Lightweight descriptor for a pushed scene instance.">SceneHandle</a> represents metadata for a scene instance pushed onto the <a class="el" href="classasge_1_1scene_1_1SceneManager.html" title="Implements the IScene interface to manage a stack of scenes.">SceneManager</a> stack. It is intentionally copyable and small so the manager can queue pending operations using it.</p>
 <p>Members:</p><ul>
-<li>id: numeric id assigned by <a class="el" href="classasge_1_1scene_1_1SceneManager.html">SceneManager</a> (0 = invalid/unassigned).</li>
+<li>id: numeric id assigned by <a class="el" href="classasge_1_1scene_1_1SceneManager.html" title="Implements the IScene interface to manage a stack of scenes.">SceneManager</a> (0 = invalid/unassigned).</li>
 <li>type: textual type identifier used for diagnostics and factory lookups.</li>
 <li>flags: SceneFlag bitset describing overlay/modal/persistence behaviour.</li>
 <li>params: optional key/value parameters forwarded to scene init. </li>
@@ -278,7 +281,7 @@ Scene type name (e.g. "GameStage" or "MainMenu"). </td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="IScene_8hpp_source.html#l00020">20</a> of file <a class="el" href="IScene_8hpp_source.html">IScene.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="IScene_8hpp_source.html#l00033">33</a> of file <a class="el" href="IScene_8hpp_source.html">IScene.hpp</a>.</p>
 
 </div>
 </div>
@@ -304,7 +307,7 @@ Scene type name (e.g. "GameStage" or "MainMenu"). </td></tr>
 </div><div class="memdoc">
 
 <p>Flags describing a scene instance behaviour. </p>
-<p>The flags are used by <a class="el" href="classasge_1_1scene_1_1SceneManager.html">SceneManager</a> and <a class="el" href="classasge_1_1scene_1_1SceneStage.html" title="Abstract interface implemented by user-defined scenes.">SceneStage</a> to control how a scene behaves in a stack. Typical usage:</p><ul>
+<p>The flags are used by <a class="el" href="classasge_1_1scene_1_1SceneManager.html" title="Implements the IScene interface to manage a stack of scenes.">SceneManager</a> and <a class="el" href="classasge_1_1scene_1_1SceneStage.html" title="Abstract interface implemented by user-defined scenes.">SceneStage</a> to control how a scene behaves in a stack. Typical usage:</p><ul>
 <li>Overlay: scene renders on top of the previous scene (previous remains visible).</li>
 <li>Modal: blocks input to scenes underneath.</li>
 <li>Persistent: the scene should not be automatically destroyed across some transitions. </li>
@@ -355,7 +358,7 @@ Scene type name (e.g. "GameStage" or "MainMenu"). </td></tr>
 </div><div class="memdoc">
 
 <p>Lifecycle state machine tracked by IScene/SceneStage/SceneManager. </p>
-<p>Scenes transition through these states as they are created, initialized, entered, paused/resumed and finally destroyed. <a class="el" href="classasge_1_1scene_1_1SceneManager.html">SceneManager</a> uses this enum to decide which callbacks (onEnter/onExit) to invoke and to prevent double-init/double-destroy. </p>
+<p>Scenes transition through these states as they are created, initialized, entered, paused/resumed and finally destroyed. <a class="el" href="classasge_1_1scene_1_1SceneManager.html" title="Implements the IScene interface to manage a stack of scenes.">SceneManager</a> uses this enum to decide which callbacks (onEnter/onExit) to invoke and to prevent double-init/double-destroy. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a394511a85816ba014b7cee9fa839df62a0eceeb45861f9585dd7a97a3e36f85c6" name="a394511a85816ba014b7cee9fa839df62a0eceeb45861f9585dd7a97a3e36f85c6"></a>Created&#160;</td><td class="fielddoc"><p>Scene object constructed but not initialized. </p>
 </td></tr>

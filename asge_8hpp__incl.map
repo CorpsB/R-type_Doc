@@ -34,7 +34,7 @@
 <area shape="poly" id="edge83_Node000002_Node000041" title=" " alt="" coords="4303,264,4606,286,4795,303,4986,325,5410,388,5823,459,6172,525,6405,572,6404,577,6171,531,5822,465,5409,393,4985,331,4795,309,4606,291,4303,269"/>
 <area shape="rect" id="Node000042" href="$IInput_8hpp.html" title="Public interface for the input service (polling, snapshots, queries)." alt="" coords="6805,504,6963,529"/>
 <area shape="poly" id="edge88_Node000002_Node000042" title=" " alt="" coords="4303,259,4697,260,5261,269,5555,277,5832,289,6070,305,6250,325,6337,342,6425,362,6595,410,6741,459,6843,497,6841,502,6739,464,6594,416,6424,368,6336,347,6249,331,6070,310,5832,294,5555,282,5261,274,4697,266,4303,264"/>
-<area shape="rect" id="Node000046" href="$IScene_8hpp.html" title=" " alt="" coords="3693,423,3864,449"/>
+<area shape="rect" id="Node000046" href="$IScene_8hpp.html" title="Interface for managing a stack of scenes." alt="" coords="3693,423,3864,449"/>
 <area shape="poly" id="edge97_Node000002_Node000046" title=" " alt="" coords="4186,275,3821,421,3819,416,4184,270"/>
 <area shape="rect" id="Node000051" href="$PluginManager_8hpp.html" title="Central orchestrator for loading, tracking, and unloading plugins." alt="" coords="2995,335,3221,361"/>
 <area shape="poly" id="edge116_Node000002_Node000051" title=" " alt="" coords="4124,270,3759,294,3290,331,3227,337,3226,331,3289,325,3759,289,4123,264"/>
@@ -164,7 +164,7 @@
 <area shape="poly" id="edge102_Node000047_Node000005" title=" " alt="" coords="3346,523,2379,550,1882,566,1632,580,1594,591,1557,605,1391,651,1390,646,1555,600,1593,586,1632,575,1882,561,2379,544,3346,518"/>
 <area shape="poly" id="edge101_Node000047_Node000008" title=" " alt="" coords="3473,527,3544,564,3589,584,3637,600,3713,618,3791,632,3945,650,4081,658,4179,660,4179,665,4081,663,3945,656,3790,638,3712,623,3635,605,3587,589,3541,569,3471,532"/>
 <area shape="poly" id="edge103_Node000047_Node000048" title=" " alt="" coords="3506,527,3713,572,3712,577,3505,532"/>
-<area shape="rect" id="Node000049" href="$UIList_8hpp.html" title=" " alt="" coords="1841,577,1994,603"/>
+<area shape="rect" id="Node000049" href="$UIList_8hpp.html" title="Defines the UIList class, a container for other UI elements." alt="" coords="1841,577,1994,603"/>
 <area shape="poly" id="edge109_Node000047_Node000049" title=" " alt="" coords="3346,524,2794,543,2429,560,2057,580,2008,583,2008,578,2057,575,2428,554,2794,538,3346,518"/>
 <area shape="poly" id="edge107_Node000048_Node000006" title=" " alt="" coords="3678,605,3199,660,3198,654,3678,600"/>
 <area shape="poly" id="edge105_Node000048_Node000008" title=" " alt="" coords="3850,600,4180,653,4179,658,3850,605"/>
@@ -175,7 +175,7 @@
 <area shape="poly" id="edge112_Node000049_Node000006" title=" " alt="" coords="1995,598,2014,600,2342,624,2662,641,3108,658,3108,663,2662,646,2342,629,2013,605,1994,604"/>
 <area shape="poly" id="edge110_Node000049_Node000008" title=" " alt="" coords="1994,596,2057,600,2718,628,3354,646,4179,659,4179,664,3354,651,2717,634,2057,605,1994,601"/>
 <area shape="poly" id="edge111_Node000049_Node000010" title=" " alt="" coords="1953,600,2085,644,2083,649,1951,605"/>
-<area shape="rect" id="Node000050" href="$UIElement_8hpp.html" title=" " alt="" coords="1852,651,1983,676"/>
+<area shape="rect" id="Node000050" href="$UIElement_8hpp.html" title="Defines the base interface for all UI elements." alt="" coords="1852,651,1983,676"/>
 <area shape="poly" id="edge114_Node000049_Node000050" title=" " alt="" coords="1920,603,1920,637,1915,637,1915,603"/>
 <area shape="poly" id="edge147_Node000051_Node000005" title=" " alt="" coords="2995,354,2182,375,1720,394,1529,406,1383,419,1250,429,1146,437,1097,445,1046,457,990,477,925,506,875,534,859,552,844,579,819,624,819,626,822,627,846,626,896,624,978,624,1097,631,1260,648,1287,652,1286,657,1260,653,1097,636,978,629,896,629,846,632,821,632,815,629,814,623,839,576,854,548,872,530,923,502,988,472,1044,452,1096,439,1146,432,1250,424,1382,413,1528,401,1720,389,2182,370,2995,349"/>
 <area shape="poly" id="edge146_Node000051_Node000008" title=" " alt="" coords="3221,349,3420,355,3658,367,3885,386,3978,399,4049,413,4130,436,4165,448,4195,463,4222,481,4246,505,4266,537,4284,576,4287,590,4284,604,4270,626,4252,644,4248,640,4266,623,4279,602,4282,590,4279,578,4261,539,4241,509,4219,485,4192,467,4163,453,4129,441,4047,419,3977,404,3884,391,3658,372,3419,361,3221,354"/>
