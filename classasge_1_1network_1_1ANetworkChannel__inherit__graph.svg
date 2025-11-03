@@ -46,7 +46,7 @@
   </g>
 </defs>
 <script type="application/ecmascript">
-var viewWidth = 219;
+var viewWidth = 394;
 var viewHeight = 1155;
 var sectionId = 'dynsection-0';
 </script>
@@ -58,106 +58,104 @@ var sectionId = 'dynsection-0';
 <g id="Node000001" class="node">
 <title>Node1</title>
 <g id="a_Node000001"><a xlink:title=" ">
-<polygon fill="#999999" stroke="transparent" points="211,-784 0,-784 0,-468 211,-468 211,-784"/>
-<text text-anchor="start" x="24.5" y="-772" font-family="Helvetica,sans-Serif" font-size="10.00">asge::network::ANetworkChannel</text>
-<text text-anchor="start" x="104" y="-757" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<text text-anchor="start" x="4.5" y="-742" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="17.5" y="-742" font-family="Helvetica,sans-Serif" font-size="10.00">~ANetworkChannel() override=default</text>
-<text text-anchor="start" x="4.5" y="-727" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="17.5" y="-727" font-family="Helvetica,sans-Serif" font-size="10.00">bool openServer(std::uint16</text>
-<text text-anchor="start" x="17.5" y="-716" font-family="Helvetica,sans-Serif" font-size="10.00">_t port) override</text>
-<text text-anchor="start" x="4.5" y="-701" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="17.5" y="-701" font-family="Helvetica,sans-Serif" font-size="10.00">bool openClient(const std</text>
-<text text-anchor="start" x="17.5" y="-690" font-family="Helvetica,sans-Serif" font-size="10.00">::string &amp;address, std::uint16</text>
-<text text-anchor="start" x="17.5" y="-679" font-family="Helvetica,sans-Serif" font-size="10.00">_t port) override</text>
-<text text-anchor="start" x="4.5" y="-664" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="17.5" y="-664" font-family="Helvetica,sans-Serif" font-size="10.00">bool setNonBlocking(bool non</text>
-<text text-anchor="start" x="17.5" y="-653" font-family="Helvetica,sans-Serif" font-size="10.00">_blocking) override</text>
-<text text-anchor="start" x="4.5" y="-638" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="17.5" y="-638" font-family="Helvetica,sans-Serif" font-size="10.00">void setMtu(std::size_t mtu)</text>
-<text text-anchor="start" x="17.5" y="-627" font-family="Helvetica,sans-Serif" font-size="10.00"> override</text>
-<text text-anchor="start" x="4.5" y="-612" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="17.5" y="-612" font-family="Helvetica,sans-Serif" font-size="10.00">std::size_t mtu() const override</text>
-<text text-anchor="start" x="4.5" y="-597" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="17.5" y="-597" font-family="Helvetica,sans-Serif" font-size="10.00">bool send(const std::vector</text>
-<text text-anchor="start" x="17.5" y="-586" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; std::uint8_t &gt; &amp;bytes) override</text>
-<text text-anchor="start" x="4.5" y="-571" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="17.5" y="-571" font-family="Helvetica,sans-Serif" font-size="10.00">bool sendTo(const std::vector</text>
-<text text-anchor="start" x="17.5" y="-560" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; std::uint8_t &gt; &amp;bytes, const</text>
-<text text-anchor="start" x="17.5" y="-549" font-family="Helvetica,sans-Serif" font-size="10.00"> std::string &amp;address, std::uint16</text>
-<text text-anchor="start" x="17.5" y="-538" font-family="Helvetica,sans-Serif" font-size="10.00">_t port) override</text>
-<text text-anchor="start" x="4.5" y="-523" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="17.5" y="-523" font-family="Helvetica,sans-Serif" font-size="10.00">void poll(std::function&lt; void</text>
-<text text-anchor="start" x="17.5" y="-512" font-family="Helvetica,sans-Serif" font-size="10.00">(const std::vector&lt; std::uint8</text>
-<text text-anchor="start" x="17.5" y="-501" font-family="Helvetica,sans-Serif" font-size="10.00">_t &gt; &amp;, const std::string &amp;, std</text>
-<text text-anchor="start" x="17.5" y="-490" font-family="Helvetica,sans-Serif" font-size="10.00">::uint16_t)&gt; onPacket) override</text>
-<text text-anchor="start" x="4.5" y="-475" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="17.5" y="-475" font-family="Helvetica,sans-Serif" font-size="10.00">void close() override</text>
-<polygon fill="#666666" stroke="#666666" points="0.5,-767 0.5,-767 211.5,-767 211.5,-767 0.5,-767"/>
-<polygon fill="#666666" stroke="#666666" points="0.5,-752 0.5,-752 211.5,-752 211.5,-752 0.5,-752"/>
-<polygon fill="none" stroke="#666666" points="0,-468 0,-784 211,-784 211,-468 0,-468"/>
+<polygon fill="#999999" stroke="transparent" points="298.5,-784 87.5,-784 87.5,-468 298.5,-468 298.5,-784"/>
+<text text-anchor="start" x="112" y="-772" font-family="Helvetica,sans-Serif" font-size="10.00">asge::network::ANetworkChannel</text>
+<text text-anchor="start" x="191.5" y="-757" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<text text-anchor="start" x="92" y="-742" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="105" y="-742" font-family="Helvetica,sans-Serif" font-size="10.00">~ANetworkChannel() override=default</text>
+<text text-anchor="start" x="92" y="-727" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="105" y="-727" font-family="Helvetica,sans-Serif" font-size="10.00">bool openServer(std::uint16</text>
+<text text-anchor="start" x="105" y="-716" font-family="Helvetica,sans-Serif" font-size="10.00">_t port) override</text>
+<text text-anchor="start" x="92" y="-701" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="105" y="-701" font-family="Helvetica,sans-Serif" font-size="10.00">bool openClient(const std</text>
+<text text-anchor="start" x="105" y="-690" font-family="Helvetica,sans-Serif" font-size="10.00">::string &amp;address, std::uint16</text>
+<text text-anchor="start" x="105" y="-679" font-family="Helvetica,sans-Serif" font-size="10.00">_t port) override</text>
+<text text-anchor="start" x="92" y="-664" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="105" y="-664" font-family="Helvetica,sans-Serif" font-size="10.00">bool setNonBlocking(bool non</text>
+<text text-anchor="start" x="105" y="-653" font-family="Helvetica,sans-Serif" font-size="10.00">_blocking) override</text>
+<text text-anchor="start" x="92" y="-638" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="105" y="-638" font-family="Helvetica,sans-Serif" font-size="10.00">void setMtu(std::size_t mtu)</text>
+<text text-anchor="start" x="105" y="-627" font-family="Helvetica,sans-Serif" font-size="10.00"> override</text>
+<text text-anchor="start" x="92" y="-612" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="105" y="-612" font-family="Helvetica,sans-Serif" font-size="10.00">std::size_t mtu() const override</text>
+<text text-anchor="start" x="92" y="-597" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="105" y="-597" font-family="Helvetica,sans-Serif" font-size="10.00">bool send(const std::vector</text>
+<text text-anchor="start" x="105" y="-586" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; std::uint8_t &gt; &amp;bytes) override</text>
+<text text-anchor="start" x="92" y="-571" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="105" y="-571" font-family="Helvetica,sans-Serif" font-size="10.00">bool sendTo(const std::vector</text>
+<text text-anchor="start" x="105" y="-560" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; std::uint8_t &gt; &amp;bytes, const</text>
+<text text-anchor="start" x="105" y="-549" font-family="Helvetica,sans-Serif" font-size="10.00"> std::string &amp;address, std::uint16</text>
+<text text-anchor="start" x="105" y="-538" font-family="Helvetica,sans-Serif" font-size="10.00">_t port) override</text>
+<text text-anchor="start" x="92" y="-523" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="105" y="-523" font-family="Helvetica,sans-Serif" font-size="10.00">void poll(std::function&lt; void</text>
+<text text-anchor="start" x="105" y="-512" font-family="Helvetica,sans-Serif" font-size="10.00">(const std::vector&lt; std::uint8</text>
+<text text-anchor="start" x="105" y="-501" font-family="Helvetica,sans-Serif" font-size="10.00">_t &gt; &amp;, const std::string &amp;, std</text>
+<text text-anchor="start" x="105" y="-490" font-family="Helvetica,sans-Serif" font-size="10.00">::uint16_t)&gt; onPacket) override</text>
+<text text-anchor="start" x="92" y="-475" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="105" y="-475" font-family="Helvetica,sans-Serif" font-size="10.00">void close() override</text>
+<polygon fill="#666666" stroke="#666666" points="88,-767 88,-767 299,-767 299,-767 88,-767"/>
+<polygon fill="#666666" stroke="#666666" points="88,-752 88,-752 299,-752 299,-752 88,-752"/>
+<polygon fill="none" stroke="#666666" points="87.5,-468 87.5,-784 298.5,-784 298.5,-468 87.5,-468"/>
 </a>
 </g>
 </g>
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="classasge_1_1network_1_1UDPChannel.html" target="_top" xlink:title="Concrete NetworkChannel based on UDP sockets using Boost.Asio.">
-<polygon fill="white" stroke="transparent" points="197.5,-432 13.5,-432 13.5,0 197.5,0 197.5,-432"/>
-<text text-anchor="start" x="37.5" y="-420" font-family="Helvetica,sans-Serif" font-size="10.00">asge::network::UDPChannel</text>
-<text text-anchor="start" x="20" y="-405" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="30.5" y="-405" font-family="Helvetica,sans-Serif" font-size="10.00">bool _debug</text>
-<text text-anchor="start" x="20" y="-390" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="30.5" y="-390" font-family="Helvetica,sans-Serif" font-size="10.00">std::size_t _mtu</text>
-<text text-anchor="start" x="20" y="-375" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="30.5" y="-375" font-family="Helvetica,sans-Serif" font-size="10.00">bool _nonBlocking</text>
-<text text-anchor="start" x="20" y="-360" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="30.5" y="-360" font-family="Helvetica,sans-Serif" font-size="10.00">boost::asio::io_context _io</text>
-<text text-anchor="start" x="20" y="-345" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="30.5" y="-345" font-family="Helvetica,sans-Serif" font-size="10.00">udp::socket _socket</text>
-<text text-anchor="start" x="20" y="-330" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="30.5" y="-330" font-family="Helvetica,sans-Serif" font-size="10.00">std::optional&lt; udp::endpoint</text>
-<text text-anchor="start" x="30.5" y="-319" font-family="Helvetica,sans-Serif" font-size="10.00"> &gt; _defaultRemote</text>
-<text text-anchor="start" x="20" y="-304" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="30.5" y="-304" font-family="Helvetica,sans-Serif" font-size="10.00">std::mutex _mx</text>
-<text text-anchor="start" x="17.5" y="-289" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="30.5" y="-289" font-family="Helvetica,sans-Serif" font-size="10.00">UDPChannel(bool debug=false)</text>
-<text text-anchor="start" x="17.5" y="-274" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="30.5" y="-274" font-family="Helvetica,sans-Serif" font-size="10.00">~UDPChannel() override</text>
-<text text-anchor="start" x="17.5" y="-259" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="30.5" y="-259" font-family="Helvetica,sans-Serif" font-size="10.00">bool openServer(std::uint16</text>
-<text text-anchor="start" x="30.5" y="-248" font-family="Helvetica,sans-Serif" font-size="10.00">_t port) override</text>
-<text text-anchor="start" x="17.5" y="-233" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="30.5" y="-233" font-family="Helvetica,sans-Serif" font-size="10.00">bool openClient(const std</text>
-<text text-anchor="start" x="30.5" y="-222" font-family="Helvetica,sans-Serif" font-size="10.00">::string &amp;address, std::uint16</text>
-<text text-anchor="start" x="30.5" y="-211" font-family="Helvetica,sans-Serif" font-size="10.00">_t port) override</text>
-<text text-anchor="start" x="17.5" y="-196" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="30.5" y="-196" font-family="Helvetica,sans-Serif" font-size="10.00">bool setNonBlocking(bool nb)</text>
-<text text-anchor="start" x="30.5" y="-185" font-family="Helvetica,sans-Serif" font-size="10.00"> override</text>
-<text text-anchor="start" x="17.5" y="-170" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="30.5" y="-170" font-family="Helvetica,sans-Serif" font-size="10.00">void setMtu(std::size_t mtu)</text>
-<text text-anchor="start" x="30.5" y="-159" font-family="Helvetica,sans-Serif" font-size="10.00"> override</text>
-<text text-anchor="start" x="17.5" y="-144" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="30.5" y="-144" font-family="Helvetica,sans-Serif" font-size="10.00">std::size_t mtu() const override</text>
-<text text-anchor="start" x="17.5" y="-129" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="30.5" y="-129" font-family="Helvetica,sans-Serif" font-size="10.00">bool send(const std::vector</text>
-<text text-anchor="start" x="30.5" y="-118" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; std::uint8_t &gt; &amp;bytes) override</text>
-<text text-anchor="start" x="17.5" y="-103" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="30.5" y="-103" font-family="Helvetica,sans-Serif" font-size="10.00">bool sendTo(const std::vector</text>
-<text text-anchor="start" x="30.5" y="-92" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; std::uint8_t &gt; &amp;bytes, const</text>
-<text text-anchor="start" x="30.5" y="-81" font-family="Helvetica,sans-Serif" font-size="10.00"> std::string &amp;address, std::uint16</text>
-<text text-anchor="start" x="30.5" y="-70" font-family="Helvetica,sans-Serif" font-size="10.00">_t port) override</text>
-<text text-anchor="start" x="17.5" y="-55" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="30.5" y="-55" font-family="Helvetica,sans-Serif" font-size="10.00">void poll(std::function&lt; void</text>
-<text text-anchor="start" x="30.5" y="-44" font-family="Helvetica,sans-Serif" font-size="10.00">(const std::vector&lt; std::uint8</text>
-<text text-anchor="start" x="30.5" y="-33" font-family="Helvetica,sans-Serif" font-size="10.00">_t &gt; &amp;, const std::string &amp;, std</text>
-<text text-anchor="start" x="30.5" y="-22" font-family="Helvetica,sans-Serif" font-size="10.00">::uint16_t)&gt; onPacket) override</text>
-<text text-anchor="start" x="17.5" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="30.5" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">void close() override</text>
-<polygon fill="#666666" stroke="#666666" points="13.5,-415 13.5,-415 197.5,-415 197.5,-415 13.5,-415"/>
-<polygon fill="#666666" stroke="#666666" points="13.5,-299 13.5,-299 28.5,-299 28.5,-299 13.5,-299"/>
-<polygon fill="#666666" stroke="#666666" points="28.5,-299 28.5,-299 197.5,-299 197.5,-299 28.5,-299"/>
-<polygon fill="none" stroke="#666666" points="13.5,0 13.5,-432 197.5,-432 197.5,0 13.5,0"/>
+<g id="a_Node000003"><a xlink:href="classasge_1_1network_1_1LoopbackChannel.html" target="_top" xlink:title="In&#45;memory echo implementation of NetworkChannel.">
+<polygon fill="white" stroke="transparent" points="184,-424.5 0,-424.5 0,-7.5 184,-7.5 184,-424.5"/>
+<text text-anchor="start" x="11" y="-412" font-family="Helvetica,sans-Serif" font-size="10.00">asge::network::LoopbackChannel</text>
+<text text-anchor="start" x="6.5" y="-397" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="17" y="-397" font-family="Helvetica,sans-Serif" font-size="10.00">std::string _selfAddress</text>
+<text text-anchor="start" x="6.5" y="-382" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="17" y="-382" font-family="Helvetica,sans-Serif" font-size="10.00">std::uint16_t _selfPort</text>
+<text text-anchor="start" x="6.5" y="-367" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="17" y="-367" font-family="Helvetica,sans-Serif" font-size="10.00">bool _nonBlocking</text>
+<text text-anchor="start" x="6.5" y="-352" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="17" y="-352" font-family="Helvetica,sans-Serif" font-size="10.00">std::size_t _mtu</text>
+<text text-anchor="start" x="6.5" y="-337" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="17" y="-337" font-family="Helvetica,sans-Serif" font-size="10.00">std::mutex _mutex</text>
+<text text-anchor="start" x="6.5" y="-322" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="17" y="-322" font-family="Helvetica,sans-Serif" font-size="10.00">std::deque&lt; std::vector&lt; std</text>
+<text text-anchor="start" x="17" y="-311" font-family="Helvetica,sans-Serif" font-size="10.00">::uint8_t &gt; &gt; _queue</text>
+<text text-anchor="start" x="4" y="-296" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="17" y="-296" font-family="Helvetica,sans-Serif" font-size="10.00">LoopbackChannel()</text>
+<text text-anchor="start" x="4" y="-281" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="17" y="-281" font-family="Helvetica,sans-Serif" font-size="10.00">~LoopbackChannel() override</text>
+<text text-anchor="start" x="4" y="-266" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="17" y="-266" font-family="Helvetica,sans-Serif" font-size="10.00">bool openServer(std::uint16</text>
+<text text-anchor="start" x="17" y="-255" font-family="Helvetica,sans-Serif" font-size="10.00">_t port) override</text>
+<text text-anchor="start" x="4" y="-240" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="17" y="-240" font-family="Helvetica,sans-Serif" font-size="10.00">bool openClient(const std</text>
+<text text-anchor="start" x="17" y="-229" font-family="Helvetica,sans-Serif" font-size="10.00">::string &amp;address, std::uint16</text>
+<text text-anchor="start" x="17" y="-218" font-family="Helvetica,sans-Serif" font-size="10.00">_t port) override</text>
+<text text-anchor="start" x="4" y="-203" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="17" y="-203" font-family="Helvetica,sans-Serif" font-size="10.00">bool setNonBlocking(bool non</text>
+<text text-anchor="start" x="17" y="-192" font-family="Helvetica,sans-Serif" font-size="10.00">_blocking) override</text>
+<text text-anchor="start" x="4" y="-177" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="17" y="-177" font-family="Helvetica,sans-Serif" font-size="10.00">void setMtu(std::size_t mtu)</text>
+<text text-anchor="start" x="17" y="-166" font-family="Helvetica,sans-Serif" font-size="10.00"> override</text>
+<text text-anchor="start" x="4" y="-151" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="17" y="-151" font-family="Helvetica,sans-Serif" font-size="10.00">std::size_t mtu() const override</text>
+<text text-anchor="start" x="4" y="-136" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="17" y="-136" font-family="Helvetica,sans-Serif" font-size="10.00">bool send(const std::vector</text>
+<text text-anchor="start" x="17" y="-125" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; std::uint8_t &gt; &amp;bytes) override</text>
+<text text-anchor="start" x="4" y="-110" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="17" y="-110" font-family="Helvetica,sans-Serif" font-size="10.00">bool sendTo(const std::vector</text>
+<text text-anchor="start" x="17" y="-99" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; std::uint8_t &gt; &amp;bytes, const</text>
+<text text-anchor="start" x="17" y="-88" font-family="Helvetica,sans-Serif" font-size="10.00"> std::string &amp;address, std::uint16</text>
+<text text-anchor="start" x="17" y="-77" font-family="Helvetica,sans-Serif" font-size="10.00">_t port) override</text>
+<text text-anchor="start" x="4" y="-62" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="17" y="-62" font-family="Helvetica,sans-Serif" font-size="10.00">void poll(std::function&lt; void</text>
+<text text-anchor="start" x="17" y="-51" font-family="Helvetica,sans-Serif" font-size="10.00">(const std::vector&lt; std::uint8</text>
+<text text-anchor="start" x="17" y="-40" font-family="Helvetica,sans-Serif" font-size="10.00">_t &gt; &amp;, const std::string &amp;, std</text>
+<text text-anchor="start" x="17" y="-29" font-family="Helvetica,sans-Serif" font-size="10.00">::uint16_t)&gt; onPacket) override</text>
+<text text-anchor="start" x="4" y="-14" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="17" y="-14" font-family="Helvetica,sans-Serif" font-size="10.00">void close() override</text>
+<polygon fill="#666666" stroke="#666666" points="0,-407 0,-407 184,-407 184,-407 0,-407"/>
+<polygon fill="#666666" stroke="#666666" points="0,-306 0,-306 15,-306 15,-306 0,-306"/>
+<polygon fill="#666666" stroke="#666666" points="15,-306 15,-306 184,-306 184,-306 15,-306"/>
+<polygon fill="none" stroke="#666666" points="0,-7.5 0,-424.5 184,-424.5 184,-7.5 0,-7.5"/>
 </a>
 </g>
 </g>
@@ -165,8 +163,79 @@ var sectionId = 'dynsection-0';
 <g id="edge2_Node000001_Node000003" class="edge">
 <title>Node1&#45;&gt;Node3</title>
 <g id="a_edge2_Node000001_Node000003"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M105.5,-457.67C105.5,-449.29 105.5,-440.83 105.5,-432.34"/>
-<polygon fill="none" stroke="#63b8ff" points="102,-457.84 105.5,-467.84 109,-457.84 102,-457.84"/>
+<path fill="none" stroke="#63b8ff" d="M151.62,-457.85C148.92,-446.92 146.17,-435.84 143.43,-424.75"/>
+<polygon fill="none" stroke="#63b8ff" points="148.29,-458.97 154.1,-467.84 155.09,-457.29 148.29,-458.97"/>
+</a>
+</g>
+</g>
+<!-- Node4 -->
+<g id="Node000004" class="node">
+<title>Node4</title>
+<g id="a_Node000004"><a xlink:href="classasge_1_1network_1_1UDPChannel.html" target="_top" xlink:title="Concrete NetworkChannel based on UDP sockets using Boost.Asio.">
+<polygon fill="white" stroke="transparent" points="386,-432 202,-432 202,0 386,0 386,-432"/>
+<text text-anchor="start" x="226" y="-420" font-family="Helvetica,sans-Serif" font-size="10.00">asge::network::UDPChannel</text>
+<text text-anchor="start" x="208.5" y="-405" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="219" y="-405" font-family="Helvetica,sans-Serif" font-size="10.00">bool _debug</text>
+<text text-anchor="start" x="208.5" y="-390" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="219" y="-390" font-family="Helvetica,sans-Serif" font-size="10.00">std::size_t _mtu</text>
+<text text-anchor="start" x="208.5" y="-375" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="219" y="-375" font-family="Helvetica,sans-Serif" font-size="10.00">bool _nonBlocking</text>
+<text text-anchor="start" x="208.5" y="-360" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="219" y="-360" font-family="Helvetica,sans-Serif" font-size="10.00">boost::asio::io_context _io</text>
+<text text-anchor="start" x="208.5" y="-345" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="219" y="-345" font-family="Helvetica,sans-Serif" font-size="10.00">udp::socket _socket</text>
+<text text-anchor="start" x="208.5" y="-330" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="219" y="-330" font-family="Helvetica,sans-Serif" font-size="10.00">std::optional&lt; udp::endpoint</text>
+<text text-anchor="start" x="219" y="-319" font-family="Helvetica,sans-Serif" font-size="10.00"> &gt; _defaultRemote</text>
+<text text-anchor="start" x="208.5" y="-304" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="219" y="-304" font-family="Helvetica,sans-Serif" font-size="10.00">std::mutex _mx</text>
+<text text-anchor="start" x="206" y="-289" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="219" y="-289" font-family="Helvetica,sans-Serif" font-size="10.00">UDPChannel(bool debug=false)</text>
+<text text-anchor="start" x="206" y="-274" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="219" y="-274" font-family="Helvetica,sans-Serif" font-size="10.00">~UDPChannel() override</text>
+<text text-anchor="start" x="206" y="-259" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="219" y="-259" font-family="Helvetica,sans-Serif" font-size="10.00">bool openServer(std::uint16</text>
+<text text-anchor="start" x="219" y="-248" font-family="Helvetica,sans-Serif" font-size="10.00">_t port) override</text>
+<text text-anchor="start" x="206" y="-233" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="219" y="-233" font-family="Helvetica,sans-Serif" font-size="10.00">bool openClient(const std</text>
+<text text-anchor="start" x="219" y="-222" font-family="Helvetica,sans-Serif" font-size="10.00">::string &amp;address, std::uint16</text>
+<text text-anchor="start" x="219" y="-211" font-family="Helvetica,sans-Serif" font-size="10.00">_t port) override</text>
+<text text-anchor="start" x="206" y="-196" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="219" y="-196" font-family="Helvetica,sans-Serif" font-size="10.00">bool setNonBlocking(bool nb)</text>
+<text text-anchor="start" x="219" y="-185" font-family="Helvetica,sans-Serif" font-size="10.00"> override</text>
+<text text-anchor="start" x="206" y="-170" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="219" y="-170" font-family="Helvetica,sans-Serif" font-size="10.00">void setMtu(std::size_t mtu)</text>
+<text text-anchor="start" x="219" y="-159" font-family="Helvetica,sans-Serif" font-size="10.00"> override</text>
+<text text-anchor="start" x="206" y="-144" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="219" y="-144" font-family="Helvetica,sans-Serif" font-size="10.00">std::size_t mtu() const override</text>
+<text text-anchor="start" x="206" y="-129" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="219" y="-129" font-family="Helvetica,sans-Serif" font-size="10.00">bool send(const std::vector</text>
+<text text-anchor="start" x="219" y="-118" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; std::uint8_t &gt; &amp;bytes) override</text>
+<text text-anchor="start" x="206" y="-103" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="219" y="-103" font-family="Helvetica,sans-Serif" font-size="10.00">bool sendTo(const std::vector</text>
+<text text-anchor="start" x="219" y="-92" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; std::uint8_t &gt; &amp;bytes, const</text>
+<text text-anchor="start" x="219" y="-81" font-family="Helvetica,sans-Serif" font-size="10.00"> std::string &amp;address, std::uint16</text>
+<text text-anchor="start" x="219" y="-70" font-family="Helvetica,sans-Serif" font-size="10.00">_t port) override</text>
+<text text-anchor="start" x="206" y="-55" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="219" y="-55" font-family="Helvetica,sans-Serif" font-size="10.00">void poll(std::function&lt; void</text>
+<text text-anchor="start" x="219" y="-44" font-family="Helvetica,sans-Serif" font-size="10.00">(const std::vector&lt; std::uint8</text>
+<text text-anchor="start" x="219" y="-33" font-family="Helvetica,sans-Serif" font-size="10.00">_t &gt; &amp;, const std::string &amp;, std</text>
+<text text-anchor="start" x="219" y="-22" font-family="Helvetica,sans-Serif" font-size="10.00">::uint16_t)&gt; onPacket) override</text>
+<text text-anchor="start" x="206" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="219" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">void close() override</text>
+<polygon fill="#666666" stroke="#666666" points="202,-415 202,-415 386,-415 386,-415 202,-415"/>
+<polygon fill="#666666" stroke="#666666" points="202,-299 202,-299 217,-299 217,-299 202,-299"/>
+<polygon fill="#666666" stroke="#666666" points="217,-299 217,-299 386,-299 386,-299 217,-299"/>
+<polygon fill="none" stroke="#666666" points="202,0 202,-432 386,-432 386,0 202,0"/>
+</a>
+</g>
+</g>
+<!-- Node1&#45;&gt;Node4 -->
+<g id="edge3_Node000001_Node000004" class="edge">
+<title>Node1&#45;&gt;Node4</title>
+<g id="a_edge3_Node000001_Node000004"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M234.35,-457.94C236.45,-449.48 238.57,-440.92 240.69,-432.34"/>
+<polygon fill="none" stroke="#63b8ff" points="230.91,-457.29 231.9,-467.84 237.71,-458.97 230.91,-457.29"/>
 </a>
 </g>
 </g>
@@ -174,45 +243,45 @@ var sectionId = 'dynsection-0';
 <g id="Node000002" class="node">
 <title>Node2</title>
 <g id="a_Node000002"><a xlink:href="classasge_1_1network_1_1NetworkChannel.html" target="_top" xlink:title="Abstract base class for low&#45;level communication channels.">
-<polygon fill="white" stroke="transparent" points="203.5,-1147 7.5,-1147 7.5,-820 203.5,-820 203.5,-1147"/>
-<text text-anchor="start" x="27" y="-1134.5" font-family="Helvetica,sans-Serif" font-size="10.00">asge::network::NetworkChannel</text>
-<text text-anchor="start" x="103.5" y="-1119.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<text text-anchor="start" x="11.5" y="-1104.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="24.5" y="-1104.5" font-family="Helvetica,sans-Serif" font-size="10.00">virtual ~NetworkChannel()=default</text>
-<text text-anchor="start" x="11.5" y="-1089.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="24.5" y="-1089.5" font-family="Helvetica,sans-Serif" font-size="10.00">virtual bool openServer(std</text>
-<text text-anchor="start" x="24.5" y="-1078.5" font-family="Helvetica,sans-Serif" font-size="10.00">::uint16_t port)=0</text>
-<text text-anchor="start" x="11.5" y="-1063.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="24.5" y="-1063.5" font-family="Helvetica,sans-Serif" font-size="10.00">virtual bool openClient(const</text>
-<text text-anchor="start" x="24.5" y="-1052.5" font-family="Helvetica,sans-Serif" font-size="10.00"> std::string &amp;address, std::uint16</text>
-<text text-anchor="start" x="24.5" y="-1041.5" font-family="Helvetica,sans-Serif" font-size="10.00">_t port)=0</text>
-<text text-anchor="start" x="11.5" y="-1026.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="24.5" y="-1026.5" font-family="Helvetica,sans-Serif" font-size="10.00">virtual bool setNonBlocking</text>
-<text text-anchor="start" x="24.5" y="-1015.5" font-family="Helvetica,sans-Serif" font-size="10.00">(bool non_blocking)=0</text>
-<text text-anchor="start" x="11.5" y="-1000.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="24.5" y="-1000.5" font-family="Helvetica,sans-Serif" font-size="10.00">virtual void setMtu(std::size</text>
-<text text-anchor="start" x="24.5" y="-989.5" font-family="Helvetica,sans-Serif" font-size="10.00">_t mtu)=0</text>
-<text text-anchor="start" x="11.5" y="-974.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="24.5" y="-974.5" font-family="Helvetica,sans-Serif" font-size="10.00">virtual std::size_t mtu()</text>
-<text text-anchor="start" x="24.5" y="-963.5" font-family="Helvetica,sans-Serif" font-size="10.00"> const =0</text>
-<text text-anchor="start" x="11.5" y="-948.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="24.5" y="-948.5" font-family="Helvetica,sans-Serif" font-size="10.00">virtual bool send(const std</text>
-<text text-anchor="start" x="24.5" y="-937.5" font-family="Helvetica,sans-Serif" font-size="10.00">::vector&lt; std::uint8_t &gt; &amp;bytes)=0</text>
-<text text-anchor="start" x="11.5" y="-922.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="24.5" y="-922.5" font-family="Helvetica,sans-Serif" font-size="10.00">virtual bool sendTo(const</text>
-<text text-anchor="start" x="24.5" y="-911.5" font-family="Helvetica,sans-Serif" font-size="10.00"> std::vector&lt; std::uint8_t</text>
-<text text-anchor="start" x="24.5" y="-900.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &gt; &amp;bytes, const std::string</text>
-<text text-anchor="start" x="24.5" y="-889.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &amp;address, std::uint16_t port)=0</text>
-<text text-anchor="start" x="11.5" y="-874.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="24.5" y="-874.5" font-family="Helvetica,sans-Serif" font-size="10.00">virtual void poll(std::function</text>
-<text text-anchor="start" x="24.5" y="-863.5" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; void(const std::vector&lt; std</text>
-<text text-anchor="start" x="24.5" y="-852.5" font-family="Helvetica,sans-Serif" font-size="10.00">::uint8_t &gt; &amp;, const std::string</text>
-<text text-anchor="start" x="24.5" y="-841.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &amp;, std::uint16_t)&gt; onPacket)=0</text>
-<text text-anchor="start" x="11.5" y="-826.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="24.5" y="-826.5" font-family="Helvetica,sans-Serif" font-size="10.00">virtual void close()=0</text>
-<polygon fill="#666666" stroke="#666666" points="7.5,-1129.5 7.5,-1129.5 203.5,-1129.5 203.5,-1129.5 7.5,-1129.5"/>
-<polygon fill="#666666" stroke="#666666" points="7.5,-1114.5 7.5,-1114.5 203.5,-1114.5 203.5,-1114.5 7.5,-1114.5"/>
-<polygon fill="none" stroke="#666666" points="7.5,-820 7.5,-1147 203.5,-1147 203.5,-820 7.5,-820"/>
+<polygon fill="white" stroke="transparent" points="291,-1147 95,-1147 95,-820 291,-820 291,-1147"/>
+<text text-anchor="start" x="114.5" y="-1134.5" font-family="Helvetica,sans-Serif" font-size="10.00">asge::network::NetworkChannel</text>
+<text text-anchor="start" x="191" y="-1119.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<text text-anchor="start" x="99" y="-1104.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="112" y="-1104.5" font-family="Helvetica,sans-Serif" font-size="10.00">virtual ~NetworkChannel()=default</text>
+<text text-anchor="start" x="99" y="-1089.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="112" y="-1089.5" font-family="Helvetica,sans-Serif" font-size="10.00">virtual bool openServer(std</text>
+<text text-anchor="start" x="112" y="-1078.5" font-family="Helvetica,sans-Serif" font-size="10.00">::uint16_t port)=0</text>
+<text text-anchor="start" x="99" y="-1063.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="112" y="-1063.5" font-family="Helvetica,sans-Serif" font-size="10.00">virtual bool openClient(const</text>
+<text text-anchor="start" x="112" y="-1052.5" font-family="Helvetica,sans-Serif" font-size="10.00"> std::string &amp;address, std::uint16</text>
+<text text-anchor="start" x="112" y="-1041.5" font-family="Helvetica,sans-Serif" font-size="10.00">_t port)=0</text>
+<text text-anchor="start" x="99" y="-1026.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="112" y="-1026.5" font-family="Helvetica,sans-Serif" font-size="10.00">virtual bool setNonBlocking</text>
+<text text-anchor="start" x="112" y="-1015.5" font-family="Helvetica,sans-Serif" font-size="10.00">(bool non_blocking)=0</text>
+<text text-anchor="start" x="99" y="-1000.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="112" y="-1000.5" font-family="Helvetica,sans-Serif" font-size="10.00">virtual void setMtu(std::size</text>
+<text text-anchor="start" x="112" y="-989.5" font-family="Helvetica,sans-Serif" font-size="10.00">_t mtu)=0</text>
+<text text-anchor="start" x="99" y="-974.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="112" y="-974.5" font-family="Helvetica,sans-Serif" font-size="10.00">virtual std::size_t mtu()</text>
+<text text-anchor="start" x="112" y="-963.5" font-family="Helvetica,sans-Serif" font-size="10.00"> const =0</text>
+<text text-anchor="start" x="99" y="-948.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="112" y="-948.5" font-family="Helvetica,sans-Serif" font-size="10.00">virtual bool send(const std</text>
+<text text-anchor="start" x="112" y="-937.5" font-family="Helvetica,sans-Serif" font-size="10.00">::vector&lt; std::uint8_t &gt; &amp;bytes)=0</text>
+<text text-anchor="start" x="99" y="-922.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="112" y="-922.5" font-family="Helvetica,sans-Serif" font-size="10.00">virtual bool sendTo(const</text>
+<text text-anchor="start" x="112" y="-911.5" font-family="Helvetica,sans-Serif" font-size="10.00"> std::vector&lt; std::uint8_t</text>
+<text text-anchor="start" x="112" y="-900.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &gt; &amp;bytes, const std::string</text>
+<text text-anchor="start" x="112" y="-889.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &amp;address, std::uint16_t port)=0</text>
+<text text-anchor="start" x="99" y="-874.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="112" y="-874.5" font-family="Helvetica,sans-Serif" font-size="10.00">virtual void poll(std::function</text>
+<text text-anchor="start" x="112" y="-863.5" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; void(const std::vector&lt; std</text>
+<text text-anchor="start" x="112" y="-852.5" font-family="Helvetica,sans-Serif" font-size="10.00">::uint8_t &gt; &amp;, const std::string</text>
+<text text-anchor="start" x="112" y="-841.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &amp;, std::uint16_t)&gt; onPacket)=0</text>
+<text text-anchor="start" x="99" y="-826.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="112" y="-826.5" font-family="Helvetica,sans-Serif" font-size="10.00">virtual void close()=0</text>
+<polygon fill="#666666" stroke="#666666" points="95,-1129.5 95,-1129.5 291,-1129.5 291,-1129.5 95,-1129.5"/>
+<polygon fill="#666666" stroke="#666666" points="95,-1114.5 95,-1114.5 291,-1114.5 291,-1114.5 95,-1114.5"/>
+<polygon fill="none" stroke="#666666" points="95,-820 95,-1147 291,-1147 291,-820 95,-820"/>
 </a>
 </g>
 </g>
@@ -220,8 +289,8 @@ var sectionId = 'dynsection-0';
 <g id="edge1_Node000001_Node000002" class="edge">
 <title>Node2&#45;&gt;Node1</title>
 <g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M105.5,-809.79C105.5,-801.23 105.5,-792.64 105.5,-784.13"/>
-<polygon fill="none" stroke="#63b8ff" points="102,-809.84 105.5,-819.84 109,-809.84 102,-809.84"/>
+<path fill="none" stroke="#63b8ff" d="M193,-809.79C193,-801.23 193,-792.64 193,-784.13"/>
+<polygon fill="none" stroke="#63b8ff" points="189.5,-809.84 193,-819.84 196.5,-809.84 189.5,-809.84"/>
 </a>
 </g>
 </g>

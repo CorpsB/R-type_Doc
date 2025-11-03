@@ -63,9 +63,9 @@ var hierarchy =
     [ "asge::network::NetHeader", "namespaceasge_1_1network.html#structasge_1_1network_1_1NetHeader", null ],
     [ "asge::network::NetworkChannel", "classasge_1_1network_1_1NetworkChannel.html", [
       [ "asge::network::ANetworkChannel", "classasge_1_1network_1_1ANetworkChannel.html", [
+        [ "asge::network::LoopbackChannel", "classasge_1_1network_1_1LoopbackChannel.html", null ],
         [ "asge::network::UDPChannel", "classasge_1_1network_1_1UDPChannel.html", null ]
-      ] ],
-      [ "asge::network::LoopbackChannel", "classasge_1_1network_1_1LoopbackChannel.html", null ]
+      ] ]
     ] ],
     [ "asge::network::NetworkManager::ConnTx", "classasge_1_1network_1_1NetworkManager.html#structasge_1_1network_1_1NetworkManager_1_1ConnTx", null ],
     [ "asge::network::NetworkManager::InFlight", "classasge_1_1network_1_1NetworkManager.html#structasge_1_1network_1_1NetworkManager_1_1InFlight", null ],
