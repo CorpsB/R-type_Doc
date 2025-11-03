@@ -66,7 +66,7 @@ var sectionId = 'dynsection-6';
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="classrtype_1_1client_1_1scene_1_1MenuStage.html#abfbf3c055e6d8093e6a7072dab622efe" target="_top" xlink:title=" ">
+<g id="a_Node000002"><a xlink:href="classrtype_1_1client_1_1scene_1_1MenuStage.html#abfbf3c055e6d8093e6a7072dab622efe" target="_top" xlink:title="Initializes the main menu UI components and options.">
 <polygon fill="white" stroke="#666666" points="414.5,-96 222.5,-96 222.5,-77 414.5,-77 414.5,-96"/>
 <text text-anchor="middle" x="318.5" y="-84" font-family="Helvetica,sans-Serif" font-size="10.00">rtype::client::scene::MenuStage::init</text>
 </a>
@@ -84,7 +84,7 @@ var sectionId = 'dynsection-6';
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a xlink:href="classrtype_1_1client_1_1scene_1_1OptionsStage.html#af8c5668d6694ca9ba463065aef686fec" target="_top" xlink:title=" ">
+<g id="a_Node000004"><a xlink:href="classrtype_1_1client_1_1scene_1_1OptionsStage.html#af8c5668d6694ca9ba463065aef686fec" target="_top" xlink:title="Initializes the options menu elements.">
 <polygon fill="white" stroke="#666666" points="420,-56 217,-56 217,-37 420,-37 420,-56"/>
 <text text-anchor="middle" x="318.5" y="-44" font-family="Helvetica,sans-Serif" font-size="10.00">rtype::client::scene::OptionsStage::init</text>
 </a>
@@ -120,7 +120,7 @@ var sectionId = 'dynsection-6';
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="classrtype_1_1client_1_1scene_1_1MenuStage.html#a92cbb9a8117bfc9031df5bb64ced2538" target="_top" xlink:title=" ">
+<g id="a_Node000003"><a xlink:href="classrtype_1_1client_1_1scene_1_1MenuStage.html#a92cbb9a8117bfc9031df5bb64ced2538" target="_top" xlink:title="Constructs a MenuStage and initializes it with the given engine.">
 <polygon fill="white" stroke="#666666" points="175.5,-106.5 5.5,-106.5 5.5,-76.5 175.5,-76.5 175.5,-106.5"/>
 <text text-anchor="start" x="13.5" y="-94.5" font-family="Helvetica,sans-Serif" font-size="10.00">rtype::client::scene::MenuStage</text>
 <text text-anchor="middle" x="90.5" y="-83.5" font-family="Helvetica,sans-Serif" font-size="10.00">::MenuStage</text>
@@ -139,7 +139,7 @@ var sectionId = 'dynsection-6';
 <!-- Node5 -->
 <g id="Node000005" class="node">
 <title>Node5</title>
-<g id="a_Node000005"><a xlink:href="classrtype_1_1client_1_1scene_1_1OptionsStage.html#aaa61f311c7740685070209d953ea7591" target="_top" xlink:title=" ">
+<g id="a_Node000005"><a xlink:href="classrtype_1_1client_1_1scene_1_1OptionsStage.html#aaa61f311c7740685070209d953ea7591" target="_top" xlink:title="Constructs the OptionsStage and initializes its UI elements.">
 <polygon fill="white" stroke="#666666" points="181,-58.5 0,-58.5 0,-28.5 181,-28.5 181,-58.5"/>
 <text text-anchor="start" x="8" y="-46.5" font-family="Helvetica,sans-Serif" font-size="10.00">rtype::client::scene::OptionsStage</text>
 <text text-anchor="middle" x="90.5" y="-35.5" font-family="Helvetica,sans-Serif" font-size="10.00">::OptionsStage</text>

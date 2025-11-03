@@ -106,6 +106,9 @@ $(document).ready(function(){initNavTree('classrtype_1_1client_1_1lang_1_1Langua
 </div><!--header-->
 <div class="contents">
 
+<p>Singleton class managing the game's localization system.  
+ <a href="classrtype_1_1client_1_1lang_1_1LanguageManager.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="LanguageManager_8hpp_source.html">LanguageManager.hpp</a>&gt;</code></p>
 <div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Collaboration diagram for rtype::client::lang::LanguageManager:</div>
@@ -118,35 +121,47 @@ $(document).ready(function(){initNavTree('classrtype_1_1client_1_1lang_1_1Langua
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a81b6d35a104b8cde24c60c7fdcb40f6a" id="r_a81b6d35a104b8cde24c60c7fdcb40f6a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtype_1_1client_1_1lang_1_1LanguageManager.html#a81b6d35a104b8cde24c60c7fdcb40f6a">LanguageManager</a> ()=default</td></tr>
+<tr class="memdesc:a81b6d35a104b8cde24c60c7fdcb40f6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor.  <br /></td></tr>
 <tr class="separator:a81b6d35a104b8cde24c60c7fdcb40f6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa81ce6fe40b242ff64d1ac4458a18189" id="r_aa81ce6fe40b242ff64d1ac4458a18189"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtype_1_1client_1_1lang_1_1LanguageManager.html#aa81ce6fe40b242ff64d1ac4458a18189">~LanguageManager</a> ()=default</td></tr>
+<tr class="memdesc:aa81ce6fe40b242ff64d1ac4458a18189"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default destructor.  <br /></td></tr>
 <tr class="separator:aa81ce6fe40b242ff64d1ac4458a18189"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d0cc2a57918f5c75a161a92b7e092c9" id="r_a4d0cc2a57918f5c75a161a92b7e092c9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtype_1_1client_1_1lang_1_1LanguageManager.html#a4d0cc2a57918f5c75a161a92b7e092c9">setLanguage</a> (const std::string &amp;lang)</td></tr>
+<tr class="memdesc:a4d0cc2a57918f5c75a161a92b7e092c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the current language.  <br /></td></tr>
 <tr class="separator:a4d0cc2a57918f5c75a161a92b7e092c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abcfbd27c92627d74383f4d98cac6b494" id="r_abcfbd27c92627d74383f4d98cac6b494"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtype_1_1client_1_1lang_1_1LanguageManager.html#abcfbd27c92627d74383f4d98cac6b494">getCurrentLanguage</a> () const</td></tr>
+<tr class="memdesc:abcfbd27c92627d74383f4d98cac6b494"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the current language code.  <br /></td></tr>
 <tr class="separator:abcfbd27c92627d74383f4d98cac6b494"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a40deca2b17baf12ce7b4a2e3b0f9b3f7" id="r_a40deca2b17baf12ce7b4a2e3b0f9b3f7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtype_1_1client_1_1lang_1_1LanguageManager.html#a40deca2b17baf12ce7b4a2e3b0f9b3f7">loadLanguageFile</a> (const std::string &amp;filepath)</td></tr>
+<tr class="memdesc:a40deca2b17baf12ce7b4a2e3b0f9b3f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads a language JSON file into memory.  <br /></td></tr>
 <tr class="separator:a40deca2b17baf12ce7b4a2e3b0f9b3f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a00f8cc6c863e04f653bb1232d7012564" id="r_a00f8cc6c863e04f653bb1232d7012564"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtype_1_1client_1_1lang_1_1LanguageManager.html#a00f8cc6c863e04f653bb1232d7012564">getString</a> (const std::string &amp;key) const</td></tr>
+<tr class="memdesc:a00f8cc6c863e04f653bb1232d7012564"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves a localized string by key.  <br /></td></tr>
 <tr class="separator:a00f8cc6c863e04f653bb1232d7012564"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:ad68186a2f5319362e50262fd005d663a" id="r_ad68186a2f5319362e50262fd005d663a"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classrtype_1_1client_1_1lang_1_1LanguageManager.html">LanguageManager</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtype_1_1client_1_1lang_1_1LanguageManager.html#ad68186a2f5319362e50262fd005d663a">getInstance</a> ()</td></tr>
+<tr class="memdesc:ad68186a2f5319362e50262fd005d663a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides access to the singleton instance of <a class="el" href="classrtype_1_1client_1_1lang_1_1LanguageManager.html" title="Singleton class managing the game&#39;s localization system.">LanguageManager</a>.  <br /></td></tr>
 <tr class="separator:ad68186a2f5319362e50262fd005d663a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a854caf0cfd43324b62605619c498f1f3" id="r_a854caf0cfd43324b62605619c498f1f3"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtype_1_1client_1_1lang_1_1LanguageManager.html#a854caf0cfd43324b62605619c498f1f3">_currentLanguage</a> = &quot;EN&quot;</td></tr>
+<tr class="memdesc:a854caf0cfd43324b62605619c498f1f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Currently selected language code.  <br /></td></tr>
 <tr class="separator:a854caf0cfd43324b62605619c498f1f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad88ca28977373060375f646646b8acad" id="r_ad88ca28977373060375f646646b8acad"><td class="memItemLeft" align="right" valign="top">std::unordered_map&lt; std::string, std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtype_1_1client_1_1lang_1_1LanguageManager.html#ad88ca28977373060375f646646b8acad">_singleTranslations</a></td></tr>
+<tr class="memdesc:ad88ca28977373060375f646646b8acad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Single-key translations.  <br /></td></tr>
 <tr class="separator:ad88ca28977373060375f646646b8acad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a752393822390d15a2309ac4637528467" id="r_a752393822390d15a2309ac4637528467"><td class="memItemLeft" align="right" valign="top">std::unordered_map&lt; std::string, <a class="el" href="namespacertype_1_1client_1_1lang.html#ace223e6f27c476daa27eaece53e99866">LanguageMap</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtype_1_1client_1_1lang_1_1LanguageManager.html#a752393822390d15a2309ac4637528467">_multiTranslations</a></td></tr>
+<tr class="memdesc:a752393822390d15a2309ac4637528467"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multi-language translations.  <br /></td></tr>
 <tr class="separator:a752393822390d15a2309ac4637528467"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="LanguageManager_8hpp_source.html#l00021">21</a> of file <a class="el" href="LanguageManager_8hpp_source.html">LanguageManager.hpp</a>.</p>
+<div class="textblock"><p>Singleton class managing the game's localization system. </p>
+<p>Handles loading language files, managing current language state, and providing access to localized strings. </p>
+
+<p class="definition">Definition at line <a class="el" href="LanguageManager_8hpp_source.html#l00040">40</a> of file <a class="el" href="LanguageManager_8hpp_source.html">LanguageManager.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a81b6d35a104b8cde24c60c7fdcb40f6a" name="a81b6d35a104b8cde24c60c7fdcb40f6a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a81b6d35a104b8cde24c60c7fdcb40f6a">&#9670;&#160;</a></span>LanguageManager()</h2>
@@ -170,6 +185,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Default constructor. </p>
 
 </div>
 </div>
@@ -195,6 +212,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Default destructor. </p>
 
 </div>
 </div>
@@ -222,13 +241,16 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LanguageManager_8hpp_source.html#l00029">29</a> of file <a class="el" href="LanguageManager_8hpp_source.html">LanguageManager.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   29</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classrtype_1_1client_1_1lang_1_1LanguageManager.html#a854caf0cfd43324b62605619c498f1f3">_currentLanguage</a>; };</div>
-<div class="ttc" id="aclassrtype_1_1client_1_1lang_1_1LanguageManager_html_a854caf0cfd43324b62605619c498f1f3"><div class="ttname"><a href="classrtype_1_1client_1_1lang_1_1LanguageManager.html#a854caf0cfd43324b62605619c498f1f3">rtype::client::lang::LanguageManager::_currentLanguage</a></div><div class="ttdeci">std::string _currentLanguage</div><div class="ttdef"><b>Definition</b> <a href="LanguageManager_8hpp_source.html#l00035">LanguageManager.hpp:35</a></div></div>
-</div><!-- fragment -->
-<p class="reference">References <a class="el" href="LanguageManager_8hpp_source.html#l00035">_currentLanguage</a>.</p>
+<p>Retrieves the current language code. </p>
+<dl class="section return"><dt>Returns</dt><dd>Reference to the current language string. </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="OptionsStage_8cpp_source.html#l00014">rtype::client::scene::OptionsStage::init()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LanguageManager_8hpp_source.html#l00068">68</a> of file <a class="el" href="LanguageManager_8hpp_source.html">LanguageManager.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   68</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classrtype_1_1client_1_1lang_1_1LanguageManager.html#a854caf0cfd43324b62605619c498f1f3">_currentLanguage</a>; };</div>
+<div class="ttc" id="aclassrtype_1_1client_1_1lang_1_1LanguageManager_html_a854caf0cfd43324b62605619c498f1f3"><div class="ttname"><a href="classrtype_1_1client_1_1lang_1_1LanguageManager.html#a854caf0cfd43324b62605619c498f1f3">rtype::client::lang::LanguageManager::_currentLanguage</a></div><div class="ttdeci">std::string _currentLanguage</div><div class="ttdoc">Currently selected language code.</div><div class="ttdef"><b>Definition</b> <a href="LanguageManager_8hpp_source.html#l00085">LanguageManager.hpp:85</a></div></div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="LanguageManager_8hpp_source.html#l00085">_currentLanguage</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="OptionsStage_8cpp_source.html#l00021">rtype::client::scene::OptionsStage::init()</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
@@ -262,15 +284,18 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LanguageManager_8cpp_source.html#l00014">14</a> of file <a class="el" href="LanguageManager_8cpp_source.html">LanguageManager.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   15</span>{</div>
-<div class="line"><span class="lineno">   16</span>    <span class="keyword">static</span> <a class="code hl_function" href="classrtype_1_1client_1_1lang_1_1LanguageManager.html#a81b6d35a104b8cde24c60c7fdcb40f6a">LanguageManager</a> instance;</div>
-<div class="line"><span class="lineno">   17</span> </div>
-<div class="line"><span class="lineno">   18</span>    <span class="keywordflow">return</span> instance;</div>
-<div class="line"><span class="lineno">   19</span>}</div>
-<div class="ttc" id="aclassrtype_1_1client_1_1lang_1_1LanguageManager_html_a81b6d35a104b8cde24c60c7fdcb40f6a"><div class="ttname"><a href="classrtype_1_1client_1_1lang_1_1LanguageManager.html#a81b6d35a104b8cde24c60c7fdcb40f6a">rtype::client::lang::LanguageManager::LanguageManager</a></div><div class="ttdeci">LanguageManager()=default</div></div>
+<p>Provides access to the singleton instance of <a class="el" href="classrtype_1_1client_1_1lang_1_1LanguageManager.html" title="Singleton class managing the game&#39;s localization system.">LanguageManager</a>. </p>
+<dl class="section return"><dt>Returns</dt><dd>Reference to the <a class="el" href="classrtype_1_1client_1_1lang_1_1LanguageManager.html" title="Singleton class managing the game&#39;s localization system.">LanguageManager</a> singleton. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="LanguageManager_8cpp_source.html#l00024">24</a> of file <a class="el" href="LanguageManager_8cpp_source.html">LanguageManager.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   25</span>{</div>
+<div class="line"><span class="lineno">   26</span>    <span class="keyword">static</span> <a class="code hl_function" href="classrtype_1_1client_1_1lang_1_1LanguageManager.html#a81b6d35a104b8cde24c60c7fdcb40f6a">LanguageManager</a> instance;</div>
+<div class="line"><span class="lineno">   27</span> </div>
+<div class="line"><span class="lineno">   28</span>    <span class="keywordflow">return</span> instance;</div>
+<div class="line"><span class="lineno">   29</span>}</div>
+<div class="ttc" id="aclassrtype_1_1client_1_1lang_1_1LanguageManager_html_a81b6d35a104b8cde24c60c7fdcb40f6a"><div class="ttname"><a href="classrtype_1_1client_1_1lang_1_1LanguageManager.html#a81b6d35a104b8cde24c60c7fdcb40f6a">rtype::client::lang::LanguageManager::LanguageManager</a></div><div class="ttdeci">LanguageManager()=default</div><div class="ttdoc">Default constructor.</div></div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="MultipleOption_8cpp_source.html#l00029">rtype::client::ui::MultipleOption::draw()</a>, <a class="el" href="RangeOption_8cpp_source.html#l00034">rtype::client::ui::RangeOption::draw()</a>, <a class="el" href="SingleOption_8cpp_source.html#l00023">rtype::client::ui::SingleOption::draw()</a>, <a class="el" href="GameOverStage_8cpp_source.html#l00012">rtype::client::scene::GameOverStage::init()</a>, <a class="el" href="GameStage_8cpp_source.html#l00030">rtype::client::scene::GameStage::init()</a>, <a class="el" href="OptionsStage_8cpp_source.html#l00014">rtype::client::scene::OptionsStage::init()</a>, and <a class="el" href="client_2main_8cpp_source.html#l00042">main()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="MultipleOption_8cpp_source.html#l00036">rtype::client::ui::MultipleOption::draw()</a>, <a class="el" href="RangeOption_8cpp_source.html#l00040">rtype::client::ui::RangeOption::draw()</a>, <a class="el" href="SingleOption_8cpp_source.html#l00036">rtype::client::ui::SingleOption::draw()</a>, <a class="el" href="GameOverStage_8cpp_source.html#l00023">rtype::client::scene::GameOverStage::init()</a>, <a class="el" href="GameStage_8cpp_source.html#l00041">rtype::client::scene::GameStage::init()</a>, <a class="el" href="OptionsStage_8cpp_source.html#l00021">rtype::client::scene::OptionsStage::init()</a>, and <a class="el" href="client_2main_8cpp_source.html#l00042">main()</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -297,31 +322,40 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LanguageManager_8cpp_source.html#l00050">50</a> of file <a class="el" href="LanguageManager_8cpp_source.html">LanguageManager.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   51</span>{</div>
-<div class="line"><span class="lineno">   52</span>    <span class="keyword">static</span> <span class="keyword">const</span> std::string missingKey = <span class="stringliteral">&quot;[MISSING KEY]&quot;</span>;</div>
-<div class="line"><span class="lineno">   53</span>    <span class="keyword">static</span> <span class="keyword">const</span> std::string missingTranslation = <span class="stringliteral">&quot;[MISSING TRANSLATION]&quot;</span>;</div>
-<div class="line"><span class="lineno">   54</span>    <span class="keyword">auto</span> keySingle = <a class="code hl_variable" href="classrtype_1_1client_1_1lang_1_1LanguageManager.html#ad88ca28977373060375f646646b8acad">_singleTranslations</a>.find(key);</div>
-<div class="line"><span class="lineno">   55</span>    <span class="keyword">auto</span> keyMulti = <a class="code hl_variable" href="classrtype_1_1client_1_1lang_1_1LanguageManager.html#a752393822390d15a2309ac4637528467">_multiTranslations</a>.find(key);</div>
-<div class="line"><span class="lineno">   56</span> </div>
-<div class="line"><span class="lineno">   57</span>    <span class="keywordflow">if</span> (keySingle == <a class="code hl_variable" href="classrtype_1_1client_1_1lang_1_1LanguageManager.html#ad88ca28977373060375f646646b8acad">_singleTranslations</a>.end()) {</div>
-<div class="line"><span class="lineno">   58</span>        <span class="keywordflow">if</span> (keyMulti == <a class="code hl_variable" href="classrtype_1_1client_1_1lang_1_1LanguageManager.html#a752393822390d15a2309ac4637528467">_multiTranslations</a>.end())</div>
-<div class="line"><span class="lineno">   59</span>            <span class="keywordflow">return</span> missingKey;</div>
-<div class="line"><span class="lineno">   60</span>        <span class="keyword">const</span> <span class="keyword">auto</span> &amp;langMap = keyMulti-&gt;second;</div>
-<div class="line"><span class="lineno">   61</span>        <span class="keyword">auto</span> langIt = langMap.find(<a class="code hl_variable" href="classrtype_1_1client_1_1lang_1_1LanguageManager.html#a854caf0cfd43324b62605619c498f1f3">_currentLanguage</a>);</div>
-<div class="line"><span class="lineno">   62</span> </div>
-<div class="line"><span class="lineno">   63</span>        <span class="keywordflow">if</span> (langIt == langMap.end())</div>
-<div class="line"><span class="lineno">   64</span>            <span class="keywordflow">return</span> missingTranslation;</div>
-<div class="line"><span class="lineno">   65</span>        <span class="keywordflow">return</span> langIt-&gt;second;</div>
-<div class="line"><span class="lineno">   66</span>    }</div>
-<div class="line"><span class="lineno">   67</span>    <span class="keywordflow">return</span> keySingle-&gt;second;</div>
-<div class="line"><span class="lineno">   68</span>}</div>
-<div class="ttc" id="aclassrtype_1_1client_1_1lang_1_1LanguageManager_html_a752393822390d15a2309ac4637528467"><div class="ttname"><a href="classrtype_1_1client_1_1lang_1_1LanguageManager.html#a752393822390d15a2309ac4637528467">rtype::client::lang::LanguageManager::_multiTranslations</a></div><div class="ttdeci">std::unordered_map&lt; std::string, LanguageMap &gt; _multiTranslations</div><div class="ttdef"><b>Definition</b> <a href="LanguageManager_8hpp_source.html#l00037">LanguageManager.hpp:37</a></div></div>
-<div class="ttc" id="aclassrtype_1_1client_1_1lang_1_1LanguageManager_html_ad88ca28977373060375f646646b8acad"><div class="ttname"><a href="classrtype_1_1client_1_1lang_1_1LanguageManager.html#ad88ca28977373060375f646646b8acad">rtype::client::lang::LanguageManager::_singleTranslations</a></div><div class="ttdeci">std::unordered_map&lt; std::string, std::string &gt; _singleTranslations</div><div class="ttdef"><b>Definition</b> <a href="LanguageManager_8hpp_source.html#l00036">LanguageManager.hpp:36</a></div></div>
-</div><!-- fragment -->
-<p class="reference">References <a class="el" href="LanguageManager_8hpp_source.html#l00035">_currentLanguage</a>, <a class="el" href="LanguageManager_8hpp_source.html#l00037">_multiTranslations</a>, and <a class="el" href="LanguageManager_8hpp_source.html#l00036">_singleTranslations</a>.</p>
+<p>Retrieves a localized string by key. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>The key corresponding to the desired string. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Reference to the localized string, or a placeholder if missing. </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="MultipleOption_8cpp_source.html#l00029">rtype::client::ui::MultipleOption::draw()</a>, <a class="el" href="RangeOption_8cpp_source.html#l00034">rtype::client::ui::RangeOption::draw()</a>, <a class="el" href="SingleOption_8cpp_source.html#l00023">rtype::client::ui::SingleOption::draw()</a>, <a class="el" href="GameOverStage_8cpp_source.html#l00012">rtype::client::scene::GameOverStage::init()</a>, and <a class="el" href="GameStage_8cpp_source.html#l00030">rtype::client::scene::GameStage::init()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LanguageManager_8cpp_source.html#l00060">60</a> of file <a class="el" href="LanguageManager_8cpp_source.html">LanguageManager.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   61</span>{</div>
+<div class="line"><span class="lineno">   62</span>    <span class="keyword">static</span> <span class="keyword">const</span> std::string missingKey = <span class="stringliteral">&quot;[MISSING KEY]&quot;</span>;</div>
+<div class="line"><span class="lineno">   63</span>    <span class="keyword">static</span> <span class="keyword">const</span> std::string missingTranslation = <span class="stringliteral">&quot;[MISSING TRANSLATION]&quot;</span>;</div>
+<div class="line"><span class="lineno">   64</span>    <span class="keyword">auto</span> keySingle = <a class="code hl_variable" href="classrtype_1_1client_1_1lang_1_1LanguageManager.html#ad88ca28977373060375f646646b8acad">_singleTranslations</a>.find(key);</div>
+<div class="line"><span class="lineno">   65</span>    <span class="keyword">auto</span> keyMulti = <a class="code hl_variable" href="classrtype_1_1client_1_1lang_1_1LanguageManager.html#a752393822390d15a2309ac4637528467">_multiTranslations</a>.find(key);</div>
+<div class="line"><span class="lineno">   66</span> </div>
+<div class="line"><span class="lineno">   67</span>    <span class="keywordflow">if</span> (keySingle == <a class="code hl_variable" href="classrtype_1_1client_1_1lang_1_1LanguageManager.html#ad88ca28977373060375f646646b8acad">_singleTranslations</a>.end()) {</div>
+<div class="line"><span class="lineno">   68</span>        <span class="keywordflow">if</span> (keyMulti == <a class="code hl_variable" href="classrtype_1_1client_1_1lang_1_1LanguageManager.html#a752393822390d15a2309ac4637528467">_multiTranslations</a>.end())</div>
+<div class="line"><span class="lineno">   69</span>            <span class="keywordflow">return</span> missingKey;</div>
+<div class="line"><span class="lineno">   70</span>        <span class="keyword">const</span> <span class="keyword">auto</span> &amp;langMap = keyMulti-&gt;second;</div>
+<div class="line"><span class="lineno">   71</span>        <span class="keyword">auto</span> langIt = langMap.find(<a class="code hl_variable" href="classrtype_1_1client_1_1lang_1_1LanguageManager.html#a854caf0cfd43324b62605619c498f1f3">_currentLanguage</a>);</div>
+<div class="line"><span class="lineno">   72</span> </div>
+<div class="line"><span class="lineno">   73</span>        <span class="keywordflow">if</span> (langIt == langMap.end())</div>
+<div class="line"><span class="lineno">   74</span>            <span class="keywordflow">return</span> missingTranslation;</div>
+<div class="line"><span class="lineno">   75</span>        <span class="keywordflow">return</span> langIt-&gt;second;</div>
+<div class="line"><span class="lineno">   76</span>    }</div>
+<div class="line"><span class="lineno">   77</span>    <span class="keywordflow">return</span> keySingle-&gt;second;</div>
+<div class="line"><span class="lineno">   78</span>}</div>
+<div class="ttc" id="aclassrtype_1_1client_1_1lang_1_1LanguageManager_html_a752393822390d15a2309ac4637528467"><div class="ttname"><a href="classrtype_1_1client_1_1lang_1_1LanguageManager.html#a752393822390d15a2309ac4637528467">rtype::client::lang::LanguageManager::_multiTranslations</a></div><div class="ttdeci">std::unordered_map&lt; std::string, LanguageMap &gt; _multiTranslations</div><div class="ttdoc">Multi-language translations.</div><div class="ttdef"><b>Definition</b> <a href="LanguageManager_8hpp_source.html#l00087">LanguageManager.hpp:87</a></div></div>
+<div class="ttc" id="aclassrtype_1_1client_1_1lang_1_1LanguageManager_html_ad88ca28977373060375f646646b8acad"><div class="ttname"><a href="classrtype_1_1client_1_1lang_1_1LanguageManager.html#ad88ca28977373060375f646646b8acad">rtype::client::lang::LanguageManager::_singleTranslations</a></div><div class="ttdeci">std::unordered_map&lt; std::string, std::string &gt; _singleTranslations</div><div class="ttdoc">Single-key translations.</div><div class="ttdef"><b>Definition</b> <a href="LanguageManager_8hpp_source.html#l00086">LanguageManager.hpp:86</a></div></div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="LanguageManager_8hpp_source.html#l00085">_currentLanguage</a>, <a class="el" href="LanguageManager_8hpp_source.html#l00087">_multiTranslations</a>, and <a class="el" href="LanguageManager_8hpp_source.html#l00086">_singleTranslations</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="MultipleOption_8cpp_source.html#l00036">rtype::client::ui::MultipleOption::draw()</a>, <a class="el" href="RangeOption_8cpp_source.html#l00040">rtype::client::ui::RangeOption::draw()</a>, <a class="el" href="SingleOption_8cpp_source.html#l00036">rtype::client::ui::SingleOption::draw()</a>, <a class="el" href="GameOverStage_8cpp_source.html#l00023">rtype::client::scene::GameOverStage::init()</a>, and <a class="el" href="GameStage_8cpp_source.html#l00041">rtype::client::scene::GameStage::init()</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -348,38 +382,47 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LanguageManager_8cpp_source.html#l00021">21</a> of file <a class="el" href="LanguageManager_8cpp_source.html">LanguageManager.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   22</span>{</div>
-<div class="line"><span class="lineno">   23</span>    std::ifstream file(filepath);</div>
-<div class="line"><span class="lineno">   24</span> </div>
-<div class="line"><span class="lineno">   25</span>    <span class="keywordflow">if</span> (!file.is_open()) {</div>
-<div class="line"><span class="lineno">   26</span>        std::cerr &lt;&lt; <span class="stringliteral">&quot;[LanguageManager] Failed to open language file: &quot;</span> &lt;&lt; filepath &lt;&lt; std::endl;</div>
-<div class="line"><span class="lineno">   27</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">   28</span>    }</div>
-<div class="line"><span class="lineno">   29</span>    <a class="code hl_typedef" href="namespacertype_1_1client_1_1lang.html#a3a218a8b56d5f49ac055b8827f43c586">json</a> j;</div>
-<div class="line"><span class="lineno">   30</span> </div>
-<div class="line"><span class="lineno">   31</span>    file &gt;&gt; j;</div>
-<div class="line"><span class="lineno">   32</span>    <a class="code hl_variable" href="classrtype_1_1client_1_1lang_1_1LanguageManager.html#a752393822390d15a2309ac4637528467">_multiTranslations</a>.clear();</div>
-<div class="line"><span class="lineno">   33</span>    <a class="code hl_variable" href="classrtype_1_1client_1_1lang_1_1LanguageManager.html#ad88ca28977373060375f646646b8acad">_singleTranslations</a>.clear();</div>
-<div class="line"><span class="lineno">   34</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;[key, rest]: j.items()) {</div>
-<div class="line"><span class="lineno">   35</span>        <span class="keywordflow">if</span> (key[0] == <span class="charliteral">&#39;S&#39;</span>) {</div>
-<div class="line"><span class="lineno">   36</span>            <a class="code hl_variable" href="classrtype_1_1client_1_1lang_1_1LanguageManager.html#ad88ca28977373060375f646646b8acad">_singleTranslations</a>[key] = rest;</div>
-<div class="line"><span class="lineno">   37</span>        } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">   38</span>            <a class="code hl_typedef" href="namespacertype_1_1client_1_1lang.html#ace223e6f27c476daa27eaece53e99866">LanguageMap</a> langMap;</div>
-<div class="line"><span class="lineno">   39</span> </div>
-<div class="line"><span class="lineno">   40</span>            <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;[lang, value]: rest.items()) {</div>
-<div class="line"><span class="lineno">   41</span>                <span class="keywordflow">if</span> (value.is_string())</div>
-<div class="line"><span class="lineno">   42</span>                    langMap[lang] = value.get&lt;std::string&gt;();</div>
-<div class="line"><span class="lineno">   43</span>            }</div>
-<div class="line"><span class="lineno">   44</span>            <a class="code hl_variable" href="classrtype_1_1client_1_1lang_1_1LanguageManager.html#a752393822390d15a2309ac4637528467">_multiTranslations</a>[key] = langMap;</div>
-<div class="line"><span class="lineno">   45</span>        }</div>
-<div class="line"><span class="lineno">   46</span>    }</div>
-<div class="line"><span class="lineno">   47</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">   48</span>}</div>
-<div class="ttc" id="anamespacertype_1_1client_1_1lang_html_a3a218a8b56d5f49ac055b8827f43c586"><div class="ttname"><a href="namespacertype_1_1client_1_1lang.html#a3a218a8b56d5f49ac055b8827f43c586">rtype::client::lang::json</a></div><div class="ttdeci">nlohmann::json json</div><div class="ttdef"><b>Definition</b> <a href="LanguageManager_8cpp_source.html#l00012">LanguageManager.cpp:12</a></div></div>
-<div class="ttc" id="anamespacertype_1_1client_1_1lang_html_ace223e6f27c476daa27eaece53e99866"><div class="ttname"><a href="namespacertype_1_1client_1_1lang.html#ace223e6f27c476daa27eaece53e99866">rtype::client::lang::LanguageMap</a></div><div class="ttdeci">std::unordered_map&lt; std::string, std::string &gt; LanguageMap</div><div class="ttdef"><b>Definition</b> <a href="LanguageManager_8hpp_source.html#l00019">LanguageManager.hpp:19</a></div></div>
+<p>Loads a language JSON file into memory. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filepath</td><td>Path to the JSON language file. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if file was successfully loaded, false otherwise. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="LanguageManager_8cpp_source.html#l00031">31</a> of file <a class="el" href="LanguageManager_8cpp_source.html">LanguageManager.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   32</span>{</div>
+<div class="line"><span class="lineno">   33</span>    std::ifstream file(filepath);</div>
+<div class="line"><span class="lineno">   34</span> </div>
+<div class="line"><span class="lineno">   35</span>    <span class="keywordflow">if</span> (!file.is_open()) {</div>
+<div class="line"><span class="lineno">   36</span>        std::cerr &lt;&lt; <span class="stringliteral">&quot;[LanguageManager] Failed to open language file: &quot;</span> &lt;&lt; filepath &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">   37</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">   38</span>    }</div>
+<div class="line"><span class="lineno">   39</span>    <a class="code hl_typedef" href="namespacertype_1_1client_1_1lang.html#a3a218a8b56d5f49ac055b8827f43c586">json</a> j;</div>
+<div class="line"><span class="lineno">   40</span> </div>
+<div class="line"><span class="lineno">   41</span>    file &gt;&gt; j;</div>
+<div class="line"><span class="lineno">   42</span>    <a class="code hl_variable" href="classrtype_1_1client_1_1lang_1_1LanguageManager.html#a752393822390d15a2309ac4637528467">_multiTranslations</a>.clear();</div>
+<div class="line"><span class="lineno">   43</span>    <a class="code hl_variable" href="classrtype_1_1client_1_1lang_1_1LanguageManager.html#ad88ca28977373060375f646646b8acad">_singleTranslations</a>.clear();</div>
+<div class="line"><span class="lineno">   44</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;[key, rest]: j.items()) {</div>
+<div class="line"><span class="lineno">   45</span>        <span class="keywordflow">if</span> (key[0] == <span class="charliteral">&#39;S&#39;</span>) {</div>
+<div class="line"><span class="lineno">   46</span>            <a class="code hl_variable" href="classrtype_1_1client_1_1lang_1_1LanguageManager.html#ad88ca28977373060375f646646b8acad">_singleTranslations</a>[key] = rest;</div>
+<div class="line"><span class="lineno">   47</span>        } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">   48</span>            <a class="code hl_typedef" href="namespacertype_1_1client_1_1lang.html#ace223e6f27c476daa27eaece53e99866">LanguageMap</a> langMap;</div>
+<div class="line"><span class="lineno">   49</span> </div>
+<div class="line"><span class="lineno">   50</span>            <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;[lang, value]: rest.items()) {</div>
+<div class="line"><span class="lineno">   51</span>                <span class="keywordflow">if</span> (value.is_string())</div>
+<div class="line"><span class="lineno">   52</span>                    langMap[lang] = value.get&lt;std::string&gt;();</div>
+<div class="line"><span class="lineno">   53</span>            }</div>
+<div class="line"><span class="lineno">   54</span>            <a class="code hl_variable" href="classrtype_1_1client_1_1lang_1_1LanguageManager.html#a752393822390d15a2309ac4637528467">_multiTranslations</a>[key] = langMap;</div>
+<div class="line"><span class="lineno">   55</span>        }</div>
+<div class="line"><span class="lineno">   56</span>    }</div>
+<div class="line"><span class="lineno">   57</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">   58</span>}</div>
+<div class="ttc" id="anamespacertype_1_1client_1_1lang_html_a3a218a8b56d5f49ac055b8827f43c586"><div class="ttname"><a href="namespacertype_1_1client_1_1lang.html#a3a218a8b56d5f49ac055b8827f43c586">rtype::client::lang::json</a></div><div class="ttdeci">nlohmann::json json</div><div class="ttdef"><b>Definition</b> <a href="LanguageManager_8cpp_source.html#l00022">LanguageManager.cpp:22</a></div></div>
+<div class="ttc" id="anamespacertype_1_1client_1_1lang_html_ace223e6f27c476daa27eaece53e99866"><div class="ttname"><a href="namespacertype_1_1client_1_1lang.html#ace223e6f27c476daa27eaece53e99866">rtype::client::lang::LanguageMap</a></div><div class="ttdeci">std::unordered_map&lt; std::string, std::string &gt; LanguageMap</div><div class="ttdef"><b>Definition</b> <a href="LanguageManager_8hpp_source.html#l00030">LanguageManager.hpp:30</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="LanguageManager_8hpp_source.html#l00037">_multiTranslations</a>, and <a class="el" href="LanguageManager_8hpp_source.html#l00036">_singleTranslations</a>.</p>
+<p class="reference">References <a class="el" href="LanguageManager_8hpp_source.html#l00087">_multiTranslations</a>, and <a class="el" href="LanguageManager_8hpp_source.html#l00086">_singleTranslations</a>.</p>
 
 </div>
 </div>
@@ -407,12 +450,20 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LanguageManager_8hpp_source.html#l00028">28</a> of file <a class="el" href="LanguageManager_8hpp_source.html">LanguageManager.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   28</span>{ <a class="code hl_variable" href="classrtype_1_1client_1_1lang_1_1LanguageManager.html#a854caf0cfd43324b62605619c498f1f3">_currentLanguage</a> = lang; };</div>
-</div><!-- fragment -->
-<p class="reference">References <a class="el" href="LanguageManager_8hpp_source.html#l00035">_currentLanguage</a>.</p>
+<p>Sets the current language. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lang</td><td>Language code to set as current. </td></tr>
+  </table>
+  </dd>
+</dl>
 
-<p class="reference">Referenced by <a class="el" href="OptionsStage_8cpp_source.html#l00014">rtype::client::scene::OptionsStage::init()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LanguageManager_8hpp_source.html#l00062">62</a> of file <a class="el" href="LanguageManager_8hpp_source.html">LanguageManager.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   62</span>{ <a class="code hl_variable" href="classrtype_1_1client_1_1lang_1_1LanguageManager.html#a854caf0cfd43324b62605619c498f1f3">_currentLanguage</a> = lang; };</div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="LanguageManager_8hpp_source.html#l00085">_currentLanguage</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="OptionsStage_8cpp_source.html#l00021">rtype::client::scene::OptionsStage::init()</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
@@ -444,9 +495,11 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LanguageManager_8hpp_source.html#l00035">35</a> of file <a class="el" href="LanguageManager_8hpp_source.html">LanguageManager.hpp</a>.</p>
+<p>Currently selected language code. </p>
 
-<p class="reference">Referenced by <a class="el" href="LanguageManager_8hpp_source.html#l00029">getCurrentLanguage()</a>, <a class="el" href="LanguageManager_8cpp_source.html#l00050">getString()</a>, and <a class="el" href="LanguageManager_8hpp_source.html#l00028">setLanguage()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LanguageManager_8hpp_source.html#l00085">85</a> of file <a class="el" href="LanguageManager_8hpp_source.html">LanguageManager.hpp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="LanguageManager_8hpp_source.html#l00068">getCurrentLanguage()</a>, <a class="el" href="LanguageManager_8cpp_source.html#l00060">getString()</a>, and <a class="el" href="LanguageManager_8hpp_source.html#l00062">setLanguage()</a>.</p>
 
 </div>
 </div>
@@ -470,9 +523,11 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LanguageManager_8hpp_source.html#l00037">37</a> of file <a class="el" href="LanguageManager_8hpp_source.html">LanguageManager.hpp</a>.</p>
+<p>Multi-language translations. </p>
 
-<p class="reference">Referenced by <a class="el" href="LanguageManager_8cpp_source.html#l00050">getString()</a>, and <a class="el" href="LanguageManager_8cpp_source.html#l00021">loadLanguageFile()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LanguageManager_8hpp_source.html#l00087">87</a> of file <a class="el" href="LanguageManager_8hpp_source.html">LanguageManager.hpp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="LanguageManager_8cpp_source.html#l00060">getString()</a>, and <a class="el" href="LanguageManager_8cpp_source.html#l00031">loadLanguageFile()</a>.</p>
 
 </div>
 </div>
@@ -496,9 +551,11 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LanguageManager_8hpp_source.html#l00036">36</a> of file <a class="el" href="LanguageManager_8hpp_source.html">LanguageManager.hpp</a>.</p>
+<p>Single-key translations. </p>
 
-<p class="reference">Referenced by <a class="el" href="LanguageManager_8cpp_source.html#l00050">getString()</a>, and <a class="el" href="LanguageManager_8cpp_source.html#l00021">loadLanguageFile()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LanguageManager_8hpp_source.html#l00086">86</a> of file <a class="el" href="LanguageManager_8hpp_source.html">LanguageManager.hpp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="LanguageManager_8cpp_source.html#l00060">getString()</a>, and <a class="el" href="LanguageManager_8cpp_source.html#l00031">loadLanguageFile()</a>.</p>
 
 </div>
 </div>

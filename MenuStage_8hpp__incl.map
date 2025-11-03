@@ -1,18 +1,18 @@
 <map id="MenuStage.hpp" name="MenuStage.hpp">
-<area shape="rect" id="Node000001" title=" " alt="" coords="2179,5,2302,31"/>
+<area shape="rect" id="Node000001" title="Defines the MenuStage class responsible for displaying and managing the main menu interface." alt="" coords="2179,5,2302,31"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="26,335,106,361"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="2179,25,1829,47,1356,81,1221,86,1048,85,852,83,647,86,446,98,352,110,265,125,186,145,117,171,59,203,16,242,10,251,8,261,14,283,27,305,44,324,40,328,23,308,9,285,3,261,5,249,12,238,56,199,114,166,184,140,264,120,351,104,446,93,646,81,852,78,1048,80,1221,81,1356,76,1829,41,2178,20"/>
 <area shape="rect" id="Node000003" href="$AStage_8hpp.html" title=" " alt="" coords="2742,504,2928,544"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="2196,33,2145,52,2093,80,2070,98,2052,119,2041,143,2036,171,2036,261,2041,274,2057,288,2114,320,2200,354,2305,388,2537,451,2737,498,2735,504,2535,456,2304,393,2198,359,2112,325,2053,293,2037,277,2031,262,2031,170,2035,142,2048,116,2067,94,2090,76,2143,47,2194,28"/>
 <area shape="rect" id="Node000014" href="$SceneManager_8hpp.html" title=" " alt="" coords="40,240,227,280"/>
 <area shape="poly" id="edge20_Node000001_Node000014" title=" " alt="" coords="2179,27,1882,54,1408,102,835,165,241,242,240,237,834,160,1407,96,1881,49,2178,22"/>
-<area shape="rect" id="Node000016" href="$OptionList_8hpp.html" title=" " alt="" coords="7953,152,8133,192"/>
+<area shape="rect" id="Node000016" href="$OptionList_8hpp.html" title="Declares the OptionList class used to manage and render UI options." alt="" coords="7953,152,8133,192"/>
 <area shape="poly" id="edge27_Node000001_Node000016" title=" " alt="" coords="2302,18,7939,165,7939,171,2302,24"/>
-<area shape="rect" id="Node000067" href="$SingleOption_8hpp.html" title=" " alt="" coords="2071,152,2268,192"/>
+<area shape="rect" id="Node000067" href="$SingleOption_8hpp.html" title="Defines the SingleOption class for a simple selectable UI option." alt="" coords="2071,152,2268,192"/>
 <area shape="poly" id="edge177_Node000001_Node000067" title=" " alt="" coords="2237,32,2187,141,2182,138,2233,30"/>
-<area shape="rect" id="Node000071" href="$MultipleOption_8hpp.html" title=" " alt="" coords="2292,152,2503,192"/>
+<area shape="rect" id="Node000071" href="$MultipleOption_8hpp.html" title="Declares the MultipleOption class for handling multi&#45;choice UI elements." alt="" coords="2292,152,2503,192"/>
 <area shape="poly" id="edge186_Node000001_Node000071" title=" " alt="" coords="2254,29,2370,141,2366,144,2250,33"/>
-<area shape="rect" id="Node000072" href="$RangeOption_8hpp.html" title=" " alt="" coords="2526,152,2725,192"/>
+<area shape="rect" id="Node000072" href="$RangeOption_8hpp.html" title="Defines the RangeOption class for adjustable numeric UI options." alt="" coords="2526,152,2725,192"/>
 <area shape="poly" id="edge189_Node000001_Node000072" title=" " alt="" coords="2270,28,2566,144,2564,149,2268,33"/>
 <area shape="rect" id="Node000073" href="$asge_8hpp.html" title=" " alt="" coords="2819,79,2968,104"/>
 <area shape="poly" id="edge192_Node000001_Node000073" title=" " alt="" coords="2302,23,2806,78,2805,83,2301,29"/>
@@ -55,7 +55,7 @@
 <area shape="poly" id="edge30_Node000016_Node000008" title=" " alt="" coords="8133,177,8320,198,8407,216,8442,226,8468,238,8503,259,8530,281,8546,308,8552,346,8552,606,8552,633,8548,655,8538,675,8519,693,8498,703,8465,711,8370,723,8247,731,8110,736,7690,741,7551,750,7551,744,7689,736,8110,730,8247,726,8370,718,8464,706,8496,698,8516,688,8534,671,8543,654,8546,633,8547,606,8547,347,8541,310,8526,284,8500,263,8466,242,8440,231,8406,221,8319,204,8133,182"/>
 <area shape="rect" id="Node000017" title=" " alt="" coords="7130,739,7190,764"/>
 <area shape="poly" id="edge31_Node000016_Node000017" title=" " alt="" coords="8134,171,8233,182,8286,193,8337,209,8382,232,8418,261,8432,279,8442,299,8449,322,8451,347,8451,606,8449,632,8443,653,8433,669,8419,681,8385,695,8340,698,8235,691,8178,689,8122,693,7925,714,7657,731,7204,751,7204,746,7656,725,7925,708,8121,688,8178,684,8235,686,8340,693,8383,690,8417,677,8429,666,8438,651,8444,631,8446,606,8446,347,8443,323,8437,301,8427,282,8414,265,8379,236,8335,214,8285,198,8233,187,8133,177"/>
-<area shape="rect" id="Node000018" href="$IOption_8hpp.html" title=" " alt="" coords="5204,247,5314,273"/>
+<area shape="rect" id="Node000018" href="$IOption_8hpp.html" title="Defines the IOption interface for menu options in the UI." alt="" coords="5204,247,5314,273"/>
 <area shape="poly" id="edge32_Node000016_Node000018" title=" " alt="" coords="7953,177,7452,182,6707,193,5940,213,5619,226,5377,243,5327,249,5327,244,5376,237,5619,221,5940,207,6706,188,7452,176,7953,171"/>
 <area shape="rect" id="Node000020" href="$ASGE_8hpp.html" title="Core public configuration, service container and engine hooks." alt="" coords="5898,328,6076,368"/>
 <area shape="poly" id="edge176_Node000016_Node000020" title=" " alt="" coords="7953,184,6090,341,6089,335,7952,178"/>
@@ -250,7 +250,7 @@
 <area shape="rect" id="Node000065" title=" " alt="" coords="5973,665,6044,691"/>
 <area shape="poly" id="edge166_Node000064_Node000065" title=" " alt="" coords="5942,615,5986,654,5983,658,5938,619"/>
 <area shape="poly" id="edge178_Node000067_Node000018" title=" " alt="" coords="2269,188,2280,189,2559,208,2930,223,3811,243,4655,253,5190,256,5190,261,4655,258,3811,249,2930,229,2559,214,2280,195,2268,193"/>
-<area shape="rect" id="Node000068" href="$LanguageManager_8hpp.html" title=" " alt="" coords="251,247,488,273"/>
+<area shape="rect" id="Node000068" href="$LanguageManager_8hpp.html" title="Declaration of the LanguageManager singleton class for managing localization." alt="" coords="251,247,488,273"/>
 <area shape="poly" id="edge179_Node000067_Node000068" title=" " alt="" coords="2071,177,1801,181,1414,191,965,211,734,225,507,243,458,248,457,243,507,237,733,220,964,205,1414,186,1801,175,2070,171"/>
 <area shape="poly" id="edge182_Node000068_Node000002" title=" " alt="" coords="329,275,120,334,118,329,328,270"/>
 <area shape="poly" id="edge181_Node000068_Node000006" title=" " alt="" coords="489,269,602,277,1008,296,1324,303,1641,310,2047,325,2335,330,2819,330,3431,333,4105,343,4443,354,4771,368,5081,388,5364,414,5612,446,5719,465,5815,485,5898,508,5967,533,6021,560,6058,590,6075,615,6080,640,6074,666,6058,692,6043,709,6025,722,5984,740,5941,750,5902,753,5902,748,5940,745,5982,735,6022,718,6040,705,6054,689,6069,664,6075,640,6070,617,6054,594,6018,565,5965,538,5897,513,5814,491,5718,470,5611,451,5364,419,5081,393,4771,374,4443,359,4104,349,3431,338,2819,335,2335,335,2047,331,1640,315,1324,308,1008,301,601,283,489,275"/>

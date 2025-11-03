@@ -14,15 +14,15 @@
 <area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="4868,17,5557,31,6693,62,7266,83,7756,108,7949,122,8097,136,8193,152,8218,160,8228,170,8228,694,8221,730,8202,760,8175,784,8141,802,8103,816,8065,826,7995,837,7994,832,8064,821,8102,811,8139,797,8172,779,8198,756,8216,728,8223,694,8223,172,8215,165,8191,157,8097,142,7949,127,7755,114,7265,89,6692,67,5557,37,4868,23"/>
 <area shape="rect" id="Node000008" href="$asge_8hpp.html" title=" " alt="" coords="4440,159,4565,185"/>
 <area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="4785,25,4646,43,4578,59,4552,69,4534,81,4522,95,4514,111,4506,146,4501,145,4509,110,4518,92,4530,77,4549,65,4576,54,4645,38,4784,20"/>
-<area shape="rect" id="Node000084" href="$MenuStage_8hpp.html" title=" " alt="" coords="3653,79,3902,104"/>
+<area shape="rect" id="Node000084" href="$MenuStage_8hpp.html" title="Defines the MenuStage class responsible for displaying and managing the main menu interface." alt="" coords="3653,79,3902,104"/>
 <area shape="poly" id="edge230_Node000001_Node000084" title=" " alt="" coords="4785,25,3916,83,3915,78,4785,19"/>
-<area shape="rect" id="Node000090" href="$LanguageManager_8hpp.html" title=" " alt="" coords="5053,247,5291,273"/>
+<area shape="rect" id="Node000090" href="$LanguageManager_8hpp.html" title="Declaration of the LanguageManager singleton class for managing localization." alt="" coords="5053,247,5291,273"/>
 <area shape="poly" id="edge291_Node000001_Node000090" title=" " alt="" coords="4868,18,4941,23,5027,33,5105,50,5135,62,5155,77,5168,95,5177,115,5186,157,5185,199,5180,234,5175,233,5180,199,5180,158,5172,116,5164,97,5151,81,5132,67,5103,55,5026,38,4941,28,4868,24"/>
-<area shape="rect" id="Node000095" href="$OptionsStage_8hpp.html" title=" " alt="" coords="4053,79,4331,104"/>
+<area shape="rect" id="Node000095" href="$OptionsStage_8hpp.html" title="Declares the OptionsStage class which manages the game options menu." alt="" coords="4053,79,4331,104"/>
 <area shape="poly" id="edge265_Node000001_Node000095" title=" " alt="" coords="4785,27,4308,80,4307,74,4785,21"/>
-<area shape="rect" id="Node000097" href="$GameStage_8hpp.html" title=" " alt="" coords="4545,79,4799,104"/>
+<area shape="rect" id="Node000097" href="$GameStage_8hpp.html" title="Declaration of the GameStage class managing the main gameplay stage." alt="" coords="4545,79,4799,104"/>
 <area shape="poly" id="edge277_Node000001_Node000097" title=" " alt="" coords="4803,33,4711,75,4709,70,4801,28"/>
-<area shape="rect" id="Node000099" href="$GameOverStage_8hpp.html" title=" " alt="" coords="4824,79,5141,104"/>
+<area shape="rect" id="Node000099" href="$GameOverStage_8hpp.html" title="Declaration of the GameOverStage class for displaying the game over screen." alt="" coords="4824,79,5141,104"/>
 <area shape="poly" id="edge285_Node000001_Node000099" title=" " alt="" coords="4853,28,4946,70,4944,75,4851,33"/>
 <area shape="rect" id="Node000009" href="$ASGE_8hpp.html" title="Core public configuration, service container and engine hooks." alt="" coords="3283,423,3461,449"/>
 <area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="4464,187,4428,195,4353,202,4259,205,4039,207,3927,210,3821,215,3729,225,3657,243,3640,250,3628,259,3600,282,3402,417,3399,413,3597,278,3624,255,3637,246,3655,237,3728,220,3821,210,3927,204,4039,202,4258,200,4353,197,4428,189,4462,182"/>
@@ -327,13 +327,13 @@
 <area shape="poly" id="edge232_Node000084_Node000085" title=" " alt="" coords="3857,101,4216,153,4215,158,3856,107"/>
 <area shape="rect" id="Node000086" href="$SceneManager_8hpp.html" title=" " alt="" coords="3400,240,3587,280"/>
 <area shape="poly" id="edge236_Node000084_Node000086" title=" " alt="" coords="3653,101,3587,107,3525,118,3473,133,3454,143,3441,154,3434,171,3437,190,3448,210,3464,228,3459,232,3444,213,3432,192,3428,171,3437,150,3451,138,3471,128,3523,113,3587,102,3652,95"/>
-<area shape="rect" id="Node000087" href="$OptionList_8hpp.html" title=" " alt="" coords="2891,240,3071,280"/>
+<area shape="rect" id="Node000087" href="$OptionList_8hpp.html" title="Declares the OptionList class used to manage and render UI options." alt="" coords="2891,240,3071,280"/>
 <area shape="poly" id="edge239_Node000084_Node000087" title=" " alt="" coords="3653,103,3481,122,3387,136,3294,155,3156,195,3040,237,3038,232,3154,190,3293,149,3386,131,3481,116,3652,98"/>
-<area shape="rect" id="Node000089" href="$SingleOption_8hpp.html" title=" " alt="" coords="3451,152,3648,192"/>
+<area shape="rect" id="Node000089" href="$SingleOption_8hpp.html" title="Defines the SingleOption class for a simple selectable UI option." alt="" coords="3451,152,3648,192"/>
 <area shape="poly" id="edge249_Node000084_Node000089" title=" " alt="" coords="3745,107,3618,150,3616,145,3743,101"/>
-<area shape="rect" id="Node000093" href="$MultipleOption_8hpp.html" title=" " alt="" coords="3672,152,3883,192"/>
+<area shape="rect" id="Node000093" href="$MultipleOption_8hpp.html" title="Declares the MultipleOption class for handling multi&#45;choice UI elements." alt="" coords="3672,152,3883,192"/>
 <area shape="poly" id="edge258_Node000084_Node000093" title=" " alt="" coords="3780,104,3780,138,3775,138,3775,104"/>
-<area shape="rect" id="Node000094" href="$RangeOption_8hpp.html" title=" " alt="" coords="3906,152,4105,192"/>
+<area shape="rect" id="Node000094" href="$RangeOption_8hpp.html" title="Defines the RangeOption class for adjustable numeric UI options." alt="" coords="3906,152,4105,192"/>
 <area shape="poly" id="edge261_Node000084_Node000094" title=" " alt="" coords="3811,101,3939,145,3937,150,3810,107"/>
 <area shape="poly" id="edge233_Node000085_Node000013" title=" " alt="" coords="4417,188,4428,189,4506,196,4574,197,4690,191,4745,190,4803,196,4867,211,4940,238,4955,247,4963,258,4972,269,4985,278,5034,297,5076,308,5115,312,5152,313,5230,313,5276,317,5328,325,5377,333,5420,337,5495,342,5529,348,5563,361,5597,382,5631,414,5671,460,5704,505,5731,551,5749,597,5756,643,5751,689,5732,735,5698,781,5683,788,5654,794,5561,805,5282,822,4973,834,4750,840,4749,834,4973,828,5282,817,5561,799,5653,788,5681,782,5694,777,5728,732,5746,688,5751,643,5744,599,5726,554,5700,508,5666,463,5627,418,5593,386,5561,365,5528,353,5494,347,5419,342,5376,339,5328,331,5275,322,5230,319,5152,319,5114,318,5075,313,5032,302,4983,282,4968,272,4959,261,4951,251,4937,242,4865,216,4802,201,4745,196,4690,196,4574,202,4506,202,4428,195,4416,193"/>
 <area shape="poly" id="edge235_Node000085_Node000053" title=" " alt="" coords="4229,189,4106,212,3975,246,3917,267,3871,292,3840,318,3832,332,3829,347,3829,437,3827,464,3820,490,3796,535,3760,573,3716,605,3666,631,3614,652,3518,680,3517,674,3612,647,3663,626,3713,600,3757,569,3792,531,3815,488,3822,463,3824,437,3824,346,3827,330,3836,315,3868,287,3915,263,3973,241,4105,207,4228,184"/>
@@ -345,7 +345,7 @@
 <area shape="poly" id="edge242_Node000087_Node000012" title=" " alt="" coords="2891,274,2564,320,2350,357,2125,404,1906,459,1804,490,1710,524,1625,560,1553,598,1495,639,1453,682,1438,707,1432,731,1437,754,1452,777,1468,783,1500,790,1608,802,1931,819,2289,830,2548,835,2548,840,2289,835,1931,825,1607,807,1499,795,1466,788,1449,781,1432,756,1427,730,1433,705,1449,678,1491,635,1550,594,1623,555,1708,519,1802,485,1905,454,2124,398,2349,352,2564,315,2891,269"/>
 <area shape="poly" id="edge240_Node000087_Node000013" title=" " alt="" coords="3043,277,3177,326,3219,346,3261,365,3320,383,3366,391,3414,399,3474,413,3581,448,3663,479,3745,510,3853,541,3916,555,3976,563,4087,567,4187,561,4282,554,4372,554,4418,559,4463,569,4509,585,4556,608,4605,638,4655,678,4680,709,4695,745,4703,781,4706,812,4701,813,4698,782,4690,746,4675,711,4651,682,4602,643,4554,612,4507,590,4462,574,4417,564,4372,559,4282,559,4188,566,4087,572,3976,568,3915,560,3851,547,3743,515,3661,484,3580,453,3473,419,3413,405,3366,397,3318,388,3259,371,3217,351,3175,330,3041,283"/>
 <area shape="poly" id="edge243_Node000087_Node000026" title=" " alt="" coords="2891,265,2356,270,1576,281,830,301,556,314,459,322,395,331,319,340,256,347,229,355,203,368,179,388,154,418,125,468,108,518,103,567,109,615,126,660,153,702,191,741,239,776,281,799,319,812,354,818,389,819,463,817,506,818,555,824,570,827,569,832,554,829,505,823,463,822,389,825,354,823,318,817,279,804,236,781,188,745,149,706,121,662,104,616,98,567,103,517,120,466,150,414,175,384,200,363,227,350,255,342,318,335,394,325,459,317,556,309,829,296,1576,276,2355,264,2891,259"/>
-<area shape="rect" id="Node000088" href="$IOption_8hpp.html" title=" " alt="" coords="3055,335,3164,361"/>
+<area shape="rect" id="Node000088" href="$IOption_8hpp.html" title="Defines the IOption interface for menu options in the UI." alt="" coords="3055,335,3164,361"/>
 <area shape="poly" id="edge244_Node000087_Node000088" title=" " alt="" coords="3011,278,3082,325,3079,330,3008,282"/>
 <area shape="poly" id="edge245_Node000088_Node000004" title=" " alt="" coords="3054,352,2629,357,1961,369,1263,389,969,402,748,419,652,424,557,424,466,424,383,430,346,436,313,446,283,460,258,478,238,502,223,531,214,567,211,611,211,694,211,721,214,742,223,760,241,776,267,784,319,791,485,802,971,814,1476,819,1780,825,1780,831,1476,824,970,819,485,808,318,797,266,790,239,781,219,763,209,743,206,721,205,694,205,611,209,566,218,529,234,499,255,474,281,455,311,441,345,431,382,425,465,419,557,419,652,419,748,413,969,397,1262,384,1961,364,2629,352,3054,347"/>
 <area shape="poly" id="edge247_Node000088_Node000009" title=" " alt="" coords="3146,358,3324,416,3323,421,3144,363"/>
@@ -373,14 +373,14 @@
 <area shape="poly" id="edge269_Node000095_Node000090" title=" " alt="" coords="4331,94,4391,101,4454,112,4518,128,4578,150,4594,159,4605,170,4614,181,4629,190,4687,211,4738,223,4783,229,4827,231,4919,230,4972,232,5035,237,5077,243,5077,248,5034,243,4972,237,4919,235,4827,236,4783,234,4737,228,4686,216,4627,194,4611,185,4601,174,4591,164,4576,154,4516,133,4453,117,4390,106,4331,100"/>
 <area shape="poly" id="edge272_Node000095_Node000093" title=" " alt="" coords="4132,107,3890,152,3889,147,4131,101"/>
 <area shape="poly" id="edge273_Node000095_Node000094" title=" " alt="" coords="4166,106,4064,149,4062,144,4164,102"/>
-<area shape="rect" id="Node000096" href="$ProgressBar_8hpp.html" title=" " alt="" coords="4640,159,4888,185"/>
+<area shape="rect" id="Node000096" href="$ProgressBar_8hpp.html" title="UI element representing a horizontal progress bar." alt="" coords="4640,159,4888,185"/>
 <area shape="poly" id="edge274_Node000095_Node000096" title=" " alt="" coords="4276,101,4668,155,4667,160,4275,107"/>
 <area shape="poly" id="edge275_Node000096_Node000009" title=" " alt="" coords="4657,187,4578,195,4468,201,4374,203,4215,202,4139,203,4058,209,3967,221,3859,243,3765,273,3638,323,3411,420,3409,415,3636,318,3763,268,3858,237,3966,216,4058,204,4139,198,4215,197,4374,198,4468,196,4577,189,4656,182"/>
 <area shape="poly" id="edge284_Node000097_Node000008" title=" " alt="" coords="4648,106,4541,156,4538,151,4646,102"/>
 <area shape="poly" id="edge278_Node000097_Node000085" title=" " alt="" coords="4622,107,4420,152,4419,146,4621,101"/>
 <area shape="poly" id="edge279_Node000097_Node000090" title=" " alt="" coords="4772,101,4953,125,5029,138,5072,150,5108,184,5155,235,5151,239,5104,187,5069,154,5028,143,4952,130,4771,107"/>
 <area shape="poly" id="edge280_Node000097_Node000096" title=" " alt="" coords="4687,102,4742,148,4738,152,4684,106"/>
-<area shape="rect" id="Node000098" href="$Text_8hpp.html" title=" " alt="" coords="4912,159,5059,185"/>
+<area shape="rect" id="Node000098" href="$Text_8hpp.html" title="UI text rendering element for the R&#45;Type client interface." alt="" coords="4912,159,5059,185"/>
 <area shape="poly" id="edge281_Node000097_Node000098" title=" " alt="" coords="4718,101,4927,153,4926,159,4717,107"/>
 <area shape="poly" id="edge282_Node000098_Node000009" title=" " alt="" coords="4938,187,4900,195,4725,221,4576,238,4321,257,4198,265,4067,278,3919,299,3745,331,3593,371,3423,422,3421,417,3591,366,3743,325,3918,294,4067,273,4198,260,4321,251,4575,232,4724,216,4900,189,4937,182"/>
 <area shape="poly" id="edge283_Node000098_Node000090" title=" " alt="" coords="5012,182,5136,239,5133,244,5009,187"/>

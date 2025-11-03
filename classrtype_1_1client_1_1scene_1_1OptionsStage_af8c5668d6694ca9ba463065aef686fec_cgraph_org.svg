@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title=" ">
+<g id="a_Node000001"><a xlink:title="Initializes the options menu elements.">
 <polygon fill="#999999" stroke="#666666" points="203,-324.5 0,-324.5 0,-305.5 203,-305.5 203,-324.5"/>
 <text text-anchor="middle" x="101.5" y="-312.5" font-family="Helvetica,sans-Serif" font-size="10.00">rtype::client::scene::OptionsStage::init</text>
 </a>
@@ -56,7 +56,7 @@
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a xlink:href="classrtype_1_1client_1_1lang_1_1LanguageManager.html#abcfbd27c92627d74383f4d98cac6b494" target="_top" xlink:title=" ">
+<g id="a_Node000004"><a xlink:href="classrtype_1_1client_1_1lang_1_1LanguageManager.html#abcfbd27c92627d74383f4d98cac6b494" target="_top" xlink:title="Retrieves the current language code.">
 <polygon fill="white" stroke="#666666" points="439,-544 241,-544 241,-514 439,-514 439,-544"/>
 <text text-anchor="start" x="249" y="-532" font-family="Helvetica,sans-Serif" font-size="10.00">rtype::client::lang::LanguageManager</text>
 <text text-anchor="middle" x="340" y="-521" font-family="Helvetica,sans-Serif" font-size="10.00">::getCurrentLanguage</text>
@@ -75,7 +75,7 @@
 <!-- Node5 -->
 <g id="Node000005" class="node">
 <title>Node5</title>
-<g id="a_Node000005"><a xlink:href="classrtype_1_1client_1_1lang_1_1LanguageManager.html#ad68186a2f5319362e50262fd005d663a" target="_top" xlink:title=" ">
+<g id="a_Node000005"><a xlink:href="classrtype_1_1client_1_1lang_1_1LanguageManager.html#ad68186a2f5319362e50262fd005d663a" target="_top" xlink:title="Provides access to the singleton instance of LanguageManager.">
 <polygon fill="white" stroke="#666666" points="439,-496 241,-496 241,-466 439,-466 439,-496"/>
 <text text-anchor="start" x="249" y="-484" font-family="Helvetica,sans-Serif" font-size="10.00">rtype::client::lang::LanguageManager</text>
 <text text-anchor="middle" x="340" y="-473" font-family="Helvetica,sans-Serif" font-size="10.00">::getInstance</text>
@@ -222,7 +222,7 @@
 <!-- Node14 -->
 <g id="Node000014" class="node">
 <title>Node14</title>
-<g id="a_Node000014"><a xlink:href="classrtype_1_1client_1_1lang_1_1LanguageManager.html#a4d0cc2a57918f5c75a161a92b7e092c9" target="_top" xlink:title=" ">
+<g id="a_Node000014"><a xlink:href="classrtype_1_1client_1_1lang_1_1LanguageManager.html#a4d0cc2a57918f5c75a161a92b7e092c9" target="_top" xlink:title="Sets the current language.">
 <polygon fill="white" stroke="#666666" points="439,-164 241,-164 241,-134 439,-134 439,-164"/>
 <text text-anchor="start" x="249" y="-152" font-family="Helvetica,sans-Serif" font-size="10.00">rtype::client::lang::LanguageManager</text>
 <text text-anchor="middle" x="340" y="-141" font-family="Helvetica,sans-Serif" font-size="10.00">::setLanguage</text>

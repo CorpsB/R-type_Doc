@@ -38,7 +38,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="classrtype_1_1client_1_1scene_1_1GameOverStage.html" target="_top" xlink:title=" ">
+<g id="a_Node000002"><a xlink:href="classrtype_1_1client_1_1scene_1_1GameOverStage.html" target="_top" xlink:title="Represents the game over screen stage.">
 <polygon fill="white" stroke="#666666" points="520,-167 324,-167 324,-148 520,-148 520,-167"/>
 <text text-anchor="middle" x="422" y="-155" font-family="Helvetica,sans-Serif" font-size="10.00">rtype::client::scene::GameOverStage</text>
 </a>
@@ -56,7 +56,7 @@
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="classrtype_1_1client_1_1scene_1_1GameStage.html" target="_top" xlink:title=" ">
+<g id="a_Node000003"><a xlink:href="classrtype_1_1client_1_1scene_1_1GameStage.html" target="_top" xlink:title="Represents the main gameplay stage of the game.">
 <polygon fill="white" stroke="#666666" points="508.5,-130 335.5,-130 335.5,-111 508.5,-111 508.5,-130"/>
 <text text-anchor="middle" x="422" y="-118" font-family="Helvetica,sans-Serif" font-size="10.00">rtype::client::scene::GameStage</text>
 </a>
@@ -74,7 +74,7 @@
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a xlink:href="classrtype_1_1client_1_1scene_1_1MenuStage.html" target="_top" xlink:title=" ">
+<g id="a_Node000004"><a xlink:href="classrtype_1_1client_1_1scene_1_1MenuStage.html" target="_top" xlink:title="Handles the creation and display of the main menu.">
 <polygon fill="white" stroke="#666666" points="507,-93 337,-93 337,-74 507,-74 507,-93"/>
 <text text-anchor="middle" x="422" y="-81" font-family="Helvetica,sans-Serif" font-size="10.00">rtype::client::scene::MenuStage</text>
 </a>
@@ -110,7 +110,7 @@
 <!-- Node6 -->
 <g id="Node000006" class="node">
 <title>Node6</title>
-<g id="a_Node000006"><a xlink:href="classrtype_1_1client_1_1scene_1_1OptionsStage.html" target="_top" xlink:title=" ">
+<g id="a_Node000006"><a xlink:href="classrtype_1_1client_1_1scene_1_1OptionsStage.html" target="_top" xlink:title="Represents the scene where users can configure various game options.">
 <polygon fill="white" stroke="#666666" points="512.5,-19 331.5,-19 331.5,0 512.5,0 512.5,-19"/>
 <text text-anchor="middle" x="422" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">rtype::client::scene::OptionsStage</text>
 </a>

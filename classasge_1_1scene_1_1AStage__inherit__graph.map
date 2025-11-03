@@ -1,14 +1,14 @@
 <map id="asge::scene::AStage" name="asge::scene::AStage">
 <area shape="rect" id="Node000001" title=" " alt="" coords="521,412,759,676"/>
-<area shape="rect" id="Node000003" href="$classrtype_1_1client_1_1scene_1_1GameOverStage.html" title=" " alt="" coords="5,724,259,839"/>
+<area shape="rect" id="Node000003" href="$classrtype_1_1client_1_1scene_1_1GameOverStage.html" title="Represents the game over screen stage." alt="" coords="5,724,259,839"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="510,609,255,726,252,721,507,604"/>
-<area shape="rect" id="Node000004" href="$classrtype_1_1client_1_1scene_1_1GameStage.html" title=" " alt="" coords="283,724,506,839"/>
+<area shape="rect" id="Node000004" href="$classrtype_1_1client_1_1scene_1_1GameStage.html" title="Represents the main gameplay stage of the game." alt="" coords="283,724,506,839"/>
 <area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="513,670,456,725,452,722,510,666"/>
-<area shape="rect" id="Node000005" href="$classrtype_1_1client_1_1scene_1_1MenuStage.html" title=" " alt="" coords="530,724,750,839"/>
+<area shape="rect" id="Node000005" href="$classrtype_1_1client_1_1scene_1_1MenuStage.html" title="Handles the creation and display of the main menu." alt="" coords="530,724,750,839"/>
 <area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="643,690,643,723,637,723,637,690"/>
 <area shape="rect" id="Node000006" href="$classrtype_1_1client_1_1scene_1_1NullStage.html" title=" " alt="" coords="775,731,1028,831"/>
 <area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="771,659,849,729,845,733,767,663"/>
-<area shape="rect" id="Node000007" href="$classrtype_1_1client_1_1scene_1_1OptionsStage.html" title=" " alt="" coords="1053,724,1286,839"/>
+<area shape="rect" id="Node000007" href="$classrtype_1_1client_1_1scene_1_1OptionsStage.html" title="Represents the scene where users can configure various game options." alt="" coords="1053,724,1286,839"/>
 <area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="772,601,1053,726,1051,731,770,606"/>
 <area shape="rect" id="Node000002" href="$classasge_1_1scene_1_1SceneStage.html" title="Abstract interface implemented by user&#45;defined scenes." alt="" coords="462,5,818,364"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="643,378,643,412,637,412,637,378"/>

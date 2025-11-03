@@ -1,12 +1,12 @@
 <map id="rtype::client::ui::RangeOption::draw" name="rtype::client::ui::RangeOption::draw">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,173,257,198"/>
+<area shape="rect" id="Node000001" title="Draws the range option to the screen." alt="" coords="5,173,257,198"/>
 <area shape="rect" id="Node000002" href="$classasge_1_1renderer_1_1IRenderer.html#a88a3fc359a23782e201a06e9fafe9a9d" title="Draw a filled or outlined axis&#45;aligned rectangle." alt="" coords="344,5,531,45"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="144,171,209,115,255,83,304,55,330,45,332,50,306,60,258,87,213,119,147,175"/>
 <area shape="rect" id="Node000003" href="$classasge_1_1renderer_1_1IRenderer.html#a3aff2fac62dd5b10807e0a5dc872e1b3" title="Draw a text string at (x,y) with a given pixel size." alt="" coords="344,69,531,109"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="163,170,305,119,334,110,336,115,306,124,165,175"/>
-<area shape="rect" id="Node000004" href="$classrtype_1_1client_1_1lang_1_1LanguageManager.html#ad68186a2f5319362e50262fd005d663a" title=" " alt="" coords="305,133,569,173"/>
+<area shape="rect" id="Node000004" href="$classrtype_1_1client_1_1lang_1_1LanguageManager.html#ad68186a2f5319362e50262fd005d663a" title="Provides access to the singleton instance of LanguageManager." alt="" coords="305,133,569,173"/>
 <area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="253,170,291,166,292,171,253,175"/>
-<area shape="rect" id="Node000005" href="$classrtype_1_1client_1_1lang_1_1LanguageManager.html#a00f8cc6c863e04f653bb1232d7012564" title=" " alt="" coords="305,197,569,237"/>
+<area shape="rect" id="Node000005" href="$classrtype_1_1client_1_1lang_1_1LanguageManager.html#a00f8cc6c863e04f653bb1232d7012564" title="Retrieves a localized string by key." alt="" coords="305,197,569,237"/>
 <area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="253,195,292,199,291,205,253,201"/>
 <area shape="rect" id="Node000006" href="$classasge_1_1renderer_1_1IRenderer.html#a5c95d7f532fa5bcfeebc6c1287838a8f" title="Measure text (width,height) for a pixel size." alt="" coords="344,261,531,301"/>
 <area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="165,196,306,247,336,255,334,260,305,252,163,201"/>

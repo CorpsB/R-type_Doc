@@ -1,12 +1,12 @@
 <map id="rtype::client::scene::GameStage::GameStage" name="rtype::client::scene::GameStage::GameStage">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,122,236,162"/>
+<area shape="rect" id="Node000001" title="Constructs a GameStage and initializes it with the given engine." alt="" coords="5,122,236,162"/>
 <area shape="rect" id="Node000002" href="$classasge_1_1renderer_1_1IRenderer.html#aa2f05b05817401841f0013d549260278" title="Clear current render target with RGBA float color (0..1)." alt="" coords="300,5,527,31"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="146,120,207,79,244,57,283,40,307,32,309,37,285,44,246,62,209,83,149,124"/>
 <area shape="rect" id="Node000003" href="$structasge_1_1Services.html#ad5f04c5251baecb72828b2feaa59bacf" title=" " alt="" coords="332,55,495,80"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="180,119,283,89,322,80,323,85,285,94,181,124"/>
 <area shape="rect" id="Node000004" href="$classasge_1_1EngineCore.html#a2d6b415923c0cf58eb6133d0dc5ec943" title=" " alt="" coords="288,104,539,129"/>
 <area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="236,129,274,126,275,131,236,135"/>
-<area shape="rect" id="Node000006" href="$classrtype_1_1client_1_1scene_1_1GameStage.html#a72249595d35e1e8884cc6000fef8cdaf" title=" " alt="" coords="284,153,543,179"/>
+<area shape="rect" id="Node000006" href="$classrtype_1_1client_1_1scene_1_1GameStage.html#a72249595d35e1e8884cc6000fef8cdaf" title="Initializes the UI elements and sets up the gameplay stage." alt="" coords="284,153,543,179"/>
 <area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="236,149,270,152,270,157,236,154"/>
 <area shape="rect" id="Node000010" href="$structasge_1_1Services.html#a693d25e8f9c77a8a44cd65befe8f79f0" title=" " alt="" coords="324,203,503,228"/>
 <area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="185,159,285,187,329,197,327,202,283,193,184,165"/>
@@ -16,8 +16,8 @@
 <area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="519,101,592,92,592,98,519,107"/>
 <area shape="rect" id="Node000007" href="$classasge_1_1scene_1_1ui_1_1UIList.html#ac7fd50b689e737e01963bf5e70354aa3" title=" " alt="" coords="591,124,855,149"/>
 <area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="543,151,577,148,577,153,543,156"/>
-<area shape="rect" id="Node000008" href="$classrtype_1_1client_1_1lang_1_1LanguageManager.html#ad68186a2f5319362e50262fd005d663a" title=" " alt="" coords="591,174,855,214"/>
+<area shape="rect" id="Node000008" href="$classrtype_1_1client_1_1lang_1_1LanguageManager.html#ad68186a2f5319362e50262fd005d663a" title="Provides access to the singleton instance of LanguageManager." alt="" coords="591,174,855,214"/>
 <area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="543,175,577,178,577,183,543,180"/>
-<area shape="rect" id="Node000009" href="$classrtype_1_1client_1_1lang_1_1LanguageManager.html#a00f8cc6c863e04f653bb1232d7012564" title=" " alt="" coords="591,238,855,278"/>
+<area shape="rect" id="Node000009" href="$classrtype_1_1client_1_1lang_1_1LanguageManager.html#a00f8cc6c863e04f653bb1232d7012564" title="Retrieves a localized string by key." alt="" coords="591,238,855,278"/>
 <area shape="poly" id="edge8_Node000006_Node000009" title=" " alt="" coords="510,176,544,188,559,196,569,206,578,215,592,224,609,231,607,236,589,228,575,219,565,210,555,201,542,192,509,181"/>
 </map>

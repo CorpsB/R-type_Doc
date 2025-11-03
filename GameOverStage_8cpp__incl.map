@@ -1,14 +1,14 @@
 <map id="GameOverStage.cpp" name="GameOverStage.cpp">
-<area shape="rect" id="Node000001" title=" " alt="" coords="3730,5,3886,31"/>
-<area shape="rect" id="Node000002" href="$GameOverStage_8hpp.html" title=" " alt="" coords="3730,79,3887,104"/>
+<area shape="rect" id="Node000001" title="Implementation of the GameOverStage class for displaying the game over screen." alt="" coords="3730,5,3886,31"/>
+<area shape="rect" id="Node000002" href="$GameOverStage_8hpp.html" title="Declaration of the GameOverStage class for displaying the game over screen." alt="" coords="3730,79,3887,104"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="3811,31,3811,65,3806,65,3806,31"/>
 <area shape="rect" id="Node000003" href="$AStage_8hpp.html" title=" " alt="" coords="6268,563,6455,603"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="3887,91,4736,104,6064,132,6729,150,7301,172,7706,196,7825,209,7860,216,7877,223,7892,244,7900,263,7899,283,7891,301,7876,319,7855,336,7795,367,7716,397,7620,423,7510,448,7390,471,7134,509,6877,540,6469,577,6469,571,6876,535,7133,504,7389,466,7509,443,7618,418,7714,391,7793,362,7852,331,7872,315,7886,298,7894,281,7894,264,7888,246,7873,227,7858,221,7824,214,7706,201,7300,177,6729,156,6064,137,4736,110,3887,96"/>
-<area shape="rect" id="Node000014" href="$LanguageManager_8hpp.html" title=" " alt="" coords="10,394,236,419"/>
+<area shape="rect" id="Node000014" href="$LanguageManager_8hpp.html" title="Declaration of the LanguageManager singleton class for managing localization." alt="" coords="10,394,236,419"/>
 <area shape="poly" id="edge20_Node000002_Node000014" title=" " alt="" coords="3730,97,3032,115,2536,132,2029,155,1487,186,946,228,878,231,814,228,694,213,585,192,484,173,436,167,389,165,343,169,297,178,252,195,207,220,161,255,115,300,105,318,103,339,107,361,114,381,109,382,102,362,98,339,100,317,110,297,157,251,204,216,250,190,296,173,342,163,389,160,436,162,485,167,586,186,695,208,814,223,878,225,946,223,1487,181,2028,149,2536,127,3032,110,3729,92"/>
-<area shape="rect" id="Node000019" href="$ProgressBar_8hpp.html" title=" " alt="" coords="7615,225,7863,251"/>
+<area shape="rect" id="Node000019" href="$ProgressBar_8hpp.html" title="UI element representing a horizontal progress bar." alt="" coords="7615,225,7863,251"/>
 <area shape="poly" id="edge27_Node000002_Node000019" title=" " alt="" coords="3887,93,7601,229,7601,234,3887,98"/>
-<area shape="rect" id="Node000069" href="$Text_8hpp.html" title=" " alt="" coords="124,306,271,331"/>
+<area shape="rect" id="Node000069" href="$Text_8hpp.html" title="UI text rendering element for the R&#45;Type client interface." alt="" coords="124,306,271,331"/>
 <area shape="poly" id="edge173_Node000002_Node000069" title=" " alt="" coords="3730,98,3232,118,2402,157,1910,185,1390,218,862,257,343,301,285,308,285,303,343,296,861,251,1390,213,1909,179,2402,152,3231,112,3729,93"/>
 <area shape="rect" id="Node000070" href="$asge_8hpp.html" title=" " alt="" coords="3734,152,3883,177"/>
 <area shape="poly" id="edge176_Node000002_Node000070" title=" " alt="" coords="3811,104,3811,138,3806,138,3806,104"/>

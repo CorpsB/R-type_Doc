@@ -1,27 +1,27 @@
 <map id="asge::Services::renderer" name="asge::Services::renderer">
 <area shape="rect" id="Node000001" title=" " alt="" coords="613,243,792,269"/>
-<area shape="rect" id="Node000002" href="$classrtype_1_1client_1_1scene_1_1GameStage.html#ae710618b288d443051ba386e89e9a87f" title=" " alt="" coords="315,5,545,45"/>
+<area shape="rect" id="Node000002" href="$classrtype_1_1client_1_1scene_1_1GameStage.html#ae710618b288d443051ba386e89e9a87f" title="Constructs a GameStage and initializes it with the given engine." alt="" coords="315,5,545,45"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="689,231,670,192,643,146,608,99,564,60,542,48,545,43,567,55,611,95,648,143,675,190,693,229"/>
-<area shape="rect" id="Node000003" href="$classrtype_1_1client_1_1ui_1_1ProgressBar.html#ae059dd7178d6273daa7531fc847150bb" title=" " alt="" coords="307,70,553,95"/>
+<area shape="rect" id="Node000003" href="$classrtype_1_1client_1_1ui_1_1ProgressBar.html#ae059dd7178d6273daa7531fc847150bb" title="Draws the progress bar using ASGE&#39;s rendering interface." alt="" coords="307,70,553,95"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="684,233,636,169,603,136,564,109,538,98,540,93,567,104,606,132,640,166,689,230"/>
-<area shape="rect" id="Node000004" href="$classrtype_1_1client_1_1ui_1_1Text.html#ac64f2f7f0518d04f7b8048315269dfb9" title=" " alt="" coords="333,119,527,145"/>
+<area shape="rect" id="Node000004" href="$classrtype_1_1client_1_1ui_1_1Text.html#ac64f2f7f0518d04f7b8048315269dfb9" title="Draws the text element using the ASGE renderer." alt="" coords="333,119,527,145"/>
 <area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="677,236,627,195,597,175,564,158,527,146,528,141,566,154,599,171,630,191,680,232"/>
-<area shape="rect" id="Node000005" href="$classrtype_1_1client_1_1ui_1_1MultipleOption.html#ae13d6a39afa167bf0cf93d07e8484c11" title=" " alt="" coords="298,169,562,194"/>
+<area shape="rect" id="Node000005" href="$classrtype_1_1client_1_1ui_1_1MultipleOption.html#ae13d6a39afa167bf0cf93d07e8484c11" title="Draws the option and its current choice." alt="" coords="298,169,562,194"/>
 <area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="658,240,565,208,515,197,516,191,566,203,660,235"/>
-<area shape="rect" id="Node000006" href="$classrtype_1_1client_1_1ui_1_1RangeOption.html#a772e231a856c52f910621015b7fd4ff4" title=" " alt="" coords="304,218,556,243"/>
+<area shape="rect" id="Node000006" href="$classrtype_1_1client_1_1ui_1_1RangeOption.html#a772e231a856c52f910621015b7fd4ff4" title="Draws the range option to the screen." alt="" coords="304,218,556,243"/>
 <area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="600,249,556,245,556,240,600,244"/>
-<area shape="rect" id="Node000007" href="$classrtype_1_1client_1_1ui_1_1SingleOption.html#af6bfa788c4e591d5e8ca4ed31d0776cf" title=" " alt="" coords="305,267,555,293"/>
+<area shape="rect" id="Node000007" href="$classrtype_1_1client_1_1ui_1_1SingleOption.html#af6bfa788c4e591d5e8ca4ed31d0776cf" title="Draws the option to the screen." alt="" coords="305,267,555,293"/>
 <area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="600,268,556,272,555,266,599,262"/>
-<area shape="rect" id="Node000008" href="$classrtype_1_1client_1_1scene_1_1MenuStage.html#abfbf3c055e6d8093e6a7072dab622efe" title=" " alt="" coords="302,317,558,342"/>
+<area shape="rect" id="Node000008" href="$classrtype_1_1client_1_1scene_1_1MenuStage.html#abfbf3c055e6d8093e6a7072dab622efe" title="Initializes the main menu UI components and options." alt="" coords="302,317,558,342"/>
 <area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="658,276,566,307,510,319,509,314,565,301,656,271"/>
-<area shape="rect" id="Node000010" href="$classrtype_1_1client_1_1scene_1_1OptionsStage.html#af8c5668d6694ca9ba463065aef686fec" title=" " alt="" coords="295,366,565,391"/>
+<area shape="rect" id="Node000010" href="$classrtype_1_1client_1_1scene_1_1OptionsStage.html#af8c5668d6694ca9ba463065aef686fec" title="Initializes the options menu elements." alt="" coords="295,366,565,391"/>
 <area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="679,280,630,320,599,340,566,357,532,368,530,363,564,352,596,336,627,316,676,276"/>
 <area shape="rect" id="Node000012" href="$client_2main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="403,415,457,441"/>
 <area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="689,282,640,345,606,379,567,406,539,418,510,425,458,431,457,426,509,420,537,413,564,402,602,375,636,342,684,279"/>
 <area shape="rect" id="Node000013" href="$classasge_1_1world_1_1RenderSystem.html#ab105d2038d033f22d47cf65806764187" title="Draws all tracked entities using the renderer service." alt="" coords="305,465,555,490"/>
 <area shape="poly" id="edge12_Node000001_Node000013" title=" " alt="" coords="694,283,676,322,649,369,612,416,591,438,567,456,544,467,542,462,564,451,587,434,608,413,644,366,671,319,689,280"/>
-<area shape="rect" id="Node000009" href="$classrtype_1_1client_1_1scene_1_1MenuStage.html#a92cbb9a8117bfc9031df5bb64ced2538" title=" " alt="" coords="13,303,239,343"/>
+<area shape="rect" id="Node000009" href="$classrtype_1_1client_1_1scene_1_1MenuStage.html#a92cbb9a8117bfc9031df5bb64ced2538" title="Constructs a MenuStage and initializes it with the given engine." alt="" coords="13,303,239,343"/>
 <area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="288,329,240,328,240,322,288,324"/>
-<area shape="rect" id="Node000011" href="$classrtype_1_1client_1_1scene_1_1OptionsStage.html#aaa61f311c7740685070209d953ea7591" title=" " alt="" coords="5,367,247,407"/>
+<area shape="rect" id="Node000011" href="$classrtype_1_1client_1_1scene_1_1OptionsStage.html#aaa61f311c7740685070209d953ea7591" title="Constructs the OptionsStage and initializes its UI elements." alt="" coords="5,367,247,407"/>
 <area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="281,385,247,386,247,381,281,380"/>
 </map>

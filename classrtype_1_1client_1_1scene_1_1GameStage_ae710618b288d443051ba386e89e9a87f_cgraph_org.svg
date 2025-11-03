@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title=" ">
+<g id="a_Node000001"><a xlink:title="Constructs a GameStage and initializes it with the given engine.">
 <polygon fill="#999999" stroke="#666666" points="173,-117 0,-117 0,-87 173,-87 173,-117"/>
 <text text-anchor="start" x="8" y="-105" font-family="Helvetica,sans-Serif" font-size="10.00">rtype::client::scene::GameStage</text>
 <text text-anchor="middle" x="86.5" y="-94" font-family="Helvetica,sans-Serif" font-size="10.00">::GameStage</text>
@@ -75,7 +75,7 @@
 <!-- Node6 -->
 <g id="Node000006" class="node">
 <title>Node6</title>
-<g id="a_Node000006"><a xlink:href="classrtype_1_1client_1_1scene_1_1GameStage.html#a72249595d35e1e8884cc6000fef8cdaf" target="_top" xlink:title=" ">
+<g id="a_Node000006"><a xlink:href="classrtype_1_1client_1_1scene_1_1GameStage.html#a72249595d35e1e8884cc6000fef8cdaf" target="_top" xlink:title="Initializes the UI elements and sets up the gameplay stage.">
 <polygon fill="white" stroke="#666666" points="403,-93.5 209,-93.5 209,-74.5 403,-74.5 403,-93.5"/>
 <text text-anchor="middle" x="306" y="-81.5" font-family="Helvetica,sans-Serif" font-size="10.00">rtype::client::scene::GameStage::init</text>
 </a>
@@ -166,7 +166,7 @@
 <!-- Node8 -->
 <g id="Node000008" class="node">
 <title>Node8</title>
-<g id="a_Node000008"><a xlink:href="classrtype_1_1client_1_1lang_1_1LanguageManager.html#ad68186a2f5319362e50262fd005d663a" target="_top" xlink:title=" ">
+<g id="a_Node000008"><a xlink:href="classrtype_1_1client_1_1lang_1_1LanguageManager.html#ad68186a2f5319362e50262fd005d663a" target="_top" xlink:title="Provides access to the singleton instance of LanguageManager.">
 <polygon fill="white" stroke="#666666" points="637,-78 439,-78 439,-48 637,-48 637,-78"/>
 <text text-anchor="start" x="447" y="-66" font-family="Helvetica,sans-Serif" font-size="10.00">rtype::client::lang::LanguageManager</text>
 <text text-anchor="middle" x="538" y="-55" font-family="Helvetica,sans-Serif" font-size="10.00">::getInstance</text>
@@ -185,7 +185,7 @@
 <!-- Node9 -->
 <g id="Node000009" class="node">
 <title>Node9</title>
-<g id="a_Node000009"><a xlink:href="classrtype_1_1client_1_1lang_1_1LanguageManager.html#a00f8cc6c863e04f653bb1232d7012564" target="_top" xlink:title=" ">
+<g id="a_Node000009"><a xlink:href="classrtype_1_1client_1_1lang_1_1LanguageManager.html#a00f8cc6c863e04f653bb1232d7012564" target="_top" xlink:title="Retrieves a localized string by key.">
 <polygon fill="white" stroke="#666666" points="637,-30 439,-30 439,0 637,0 637,-30"/>
 <text text-anchor="start" x="447" y="-18" font-family="Helvetica,sans-Serif" font-size="10.00">rtype::client::lang::LanguageManager</text>
 <text text-anchor="middle" x="538" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">::getString</text>

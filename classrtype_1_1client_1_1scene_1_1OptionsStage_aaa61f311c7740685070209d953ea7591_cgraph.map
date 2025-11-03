@@ -1,14 +1,14 @@
 <map id="rtype::client::scene::OptionsStage::OptionsStage" name="rtype::client::scene::OptionsStage::OptionsStage">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,390,247,430"/>
-<area shape="rect" id="Node000002" href="$classrtype_1_1client_1_1scene_1_1OptionsStage.html#af8c5668d6694ca9ba463065aef686fec" title=" " alt="" coords="295,397,565,423"/>
+<area shape="rect" id="Node000001" title="Constructs the OptionsStage and initializes its UI elements." alt="" coords="5,390,247,430"/>
+<area shape="rect" id="Node000002" href="$classrtype_1_1client_1_1scene_1_1OptionsStage.html#af8c5668d6694ca9ba463065aef686fec" title="Initializes the options menu elements." alt="" coords="295,397,565,423"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="247,407,281,407,281,413,247,413"/>
 <area shape="rect" id="Node000003" href="$classasge_1_1scene_1_1ui_1_1UIList.html#ac7fd50b689e737e01963bf5e70354aa3" title=" " alt="" coords="616,5,880,31"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="431,397,445,332,477,234,501,181,531,129,568,81,612,40,619,35,622,40,615,44,572,84,535,132,506,183,482,236,450,333,436,398"/>
 <area shape="rect" id="Node000004" href="$structasge_1_1Services.html#ab2574b16a9d7279d1756a42dcd1ddea8" title=" " alt="" coords="668,55,828,80"/>
 <area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="432,396,449,339,484,256,508,210,537,166,572,125,612,90,632,79,654,71,656,76,634,84,615,95,576,129,542,169,513,213,489,258,454,341,437,398"/>
-<area shape="rect" id="Node000005" href="$classrtype_1_1client_1_1lang_1_1LanguageManager.html#abcfbd27c92627d74383f4d98cac6b494" title=" " alt="" coords="616,105,880,145"/>
+<area shape="rect" id="Node000005" href="$classrtype_1_1client_1_1lang_1_1LanguageManager.html#abcfbd27c92627d74383f4d98cac6b494" title="Retrieves the current language code." alt="" coords="616,105,880,145"/>
 <area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="434,396,456,350,493,284,546,214,577,182,612,154,622,148,625,153,615,159,581,186,550,217,498,287,461,352,439,398"/>
-<area shape="rect" id="Node000006" href="$classrtype_1_1client_1_1lang_1_1LanguageManager.html#ad68186a2f5319362e50262fd005d663a" title=" " alt="" coords="616,169,880,209"/>
+<area shape="rect" id="Node000006" href="$classrtype_1_1client_1_1lang_1_1LanguageManager.html#ad68186a2f5319362e50262fd005d663a" title="Provides access to the singleton instance of LanguageManager." alt="" coords="616,169,880,209"/>
 <area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="438,395,463,360,503,312,553,261,612,218,625,211,628,216,615,223,557,265,507,315,467,363,442,399"/>
 <area shape="rect" id="Node000007" href="$classasge_1_1audio_1_1IAudio.html#a0a487961dc3de48a19a5816b5d5f3b79" title="Gets the current master volume level." alt="" coords="613,233,883,259"/>
 <area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="442,395,510,334,559,298,612,269,636,260,638,265,614,274,562,303,513,338,445,399"/>
@@ -24,7 +24,7 @@
 <area shape="poly" id="edge12_Node000002_Node000013" title=" " alt="" coords="454,420,524,458,614,497,654,508,652,513,612,502,521,463,451,425"/>
 <area shape="rect" id="Node000014" href="$classasge_1_1EngineCore.html#a76162688bdb67419c8f9f4f318c71b54" title=" " alt="" coords="649,561,847,587"/>
 <area shape="poly" id="edge13_Node000002_Node000014" title=" " alt="" coords="445,421,513,482,562,517,614,546,638,555,636,560,612,551,559,522,510,486,442,425"/>
-<area shape="rect" id="Node000015" href="$classrtype_1_1client_1_1lang_1_1LanguageManager.html#a4d0cc2a57918f5c75a161a92b7e092c9" title=" " alt="" coords="616,611,880,651"/>
+<area shape="rect" id="Node000015" href="$classrtype_1_1client_1_1lang_1_1LanguageManager.html#a4d0cc2a57918f5c75a161a92b7e092c9" title="Sets the current language." alt="" coords="616,611,880,651"/>
 <area shape="poly" id="edge14_Node000002_Node000015" title=" " alt="" coords="442,421,467,456,507,504,557,554,615,596,631,604,628,609,612,600,553,558,503,507,463,460,438,424"/>
 <area shape="rect" id="Node000016" href="$classasge_1_1audio_1_1IAudio.html#a31f5f0c0a727346873b67ec7475a0887" title="Sets the master volume multiplier." alt="" coords="614,676,882,701"/>
 <area shape="poly" id="edge15_Node000002_Node000016" title=" " alt="" coords="439,422,460,469,497,534,549,604,580,635,615,661,628,668,625,673,612,666,577,639,545,607,493,537,455,471,434,424"/>

@@ -105,6 +105,9 @@ $(document).ready(function(){initNavTree('classrtype_1_1client_1_1ui_1_1Progress
 </div><!--header-->
 <div class="contents">
 
+<p>A simple drawable progress bar UI element.  
+ <a href="classrtype_1_1client_1_1ui_1_1ProgressBar.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="ProgressBar_8hpp_source.html">ProgressBar.hpp</a>&gt;</code></p>
 <div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for rtype::client::ui::ProgressBar:</div>
@@ -124,12 +127,16 @@ $(document).ready(function(){initNavTree('classrtype_1_1client_1_1ui_1_1Progress
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:aba6c5d7e7b0c9986e020998da36d2974" id="r_aba6c5d7e7b0c9986e020998da36d2974"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtype_1_1client_1_1ui_1_1ProgressBar.html#aba6c5d7e7b0c9986e020998da36d2974">ProgressBar</a> (<a class="el" href="namespaceasge_1_1scene_1_1ui.html#structasge_1_1scene_1_1ui_1_1UIPosition">asge::scene::ui::UIPosition</a> pos, <a class="el" href="namespaceasge_1_1scene_1_1ui.html#structasge_1_1scene_1_1ui_1_1UISize">asge::scene::ui::UISize</a> siz, float max_value)</td></tr>
+<tr class="memdesc:aba6c5d7e7b0c9986e020998da36d2974"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a new <a class="el" href="classrtype_1_1client_1_1ui_1_1ProgressBar.html" title="A simple drawable progress bar UI element.">ProgressBar</a> instance.  <br /></td></tr>
 <tr class="separator:aba6c5d7e7b0c9986e020998da36d2974"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a81e9767bff4d3d097304d1ce424155cc" id="r_a81e9767bff4d3d097304d1ce424155cc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtype_1_1client_1_1ui_1_1ProgressBar.html#a81e9767bff4d3d097304d1ce424155cc">update</a> (<a class="el" href="structasge_1_1Services.html">asge::Services</a> &amp;services, double dt) override</td></tr>
+<tr class="memdesc:a81e9767bff4d3d097304d1ce424155cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the progress bar (currently unused).  <br /></td></tr>
 <tr class="separator:a81e9767bff4d3d097304d1ce424155cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae059dd7178d6273daa7531fc847150bb" id="r_ae059dd7178d6273daa7531fc847150bb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtype_1_1client_1_1ui_1_1ProgressBar.html#ae059dd7178d6273daa7531fc847150bb">draw</a> (<a class="el" href="structasge_1_1Services.html">asge::Services</a> &amp;services) const override</td></tr>
+<tr class="memdesc:ae059dd7178d6273daa7531fc847150bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws the progress bar using ASGE's rendering interface.  <br /></td></tr>
 <tr class="separator:ae059dd7178d6273daa7531fc847150bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a915943f47ab885920cfa6f99f0f3fc5b" id="r_a915943f47ab885920cfa6f99f0f3fc5b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtype_1_1client_1_1ui_1_1ProgressBar.html#a915943f47ab885920cfa6f99f0f3fc5b">setValue</a> (float value)</td></tr>
+<tr class="memdesc:a915943f47ab885920cfa6f99f0f3fc5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the current value of the progress bar.  <br /></td></tr>
 <tr class="separator:a915943f47ab885920cfa6f99f0f3fc5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classasge_1_1scene_1_1ui_1_1UIElement"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classasge_1_1scene_1_1ui_1_1UIElement')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classasge_1_1scene_1_1ui_1_1UIElement.html">asge::scene::ui::UIElement</a></td></tr>
 <tr class="memitem:a6668b2792630227c8cf28754d5280d50 inherit pub_methods_classasge_1_1scene_1_1ui_1_1UIElement" id="r_a6668b2792630227c8cf28754d5280d50"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasge_1_1scene_1_1ui_1_1UIElement.html#a6668b2792630227c8cf28754d5280d50">~UIElement</a> ()=default</td></tr>
@@ -138,17 +145,23 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a877fd5681d95469dc4ec6766039d8863" id="r_a877fd5681d95469dc4ec6766039d8863"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceasge_1_1scene_1_1ui.html#structasge_1_1scene_1_1ui_1_1UIPosition">asge::scene::ui::UIPosition</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtype_1_1client_1_1ui_1_1ProgressBar.html#a877fd5681d95469dc4ec6766039d8863">_pos</a></td></tr>
+<tr class="memdesc:a877fd5681d95469dc4ec6766039d8863"><td class="mdescLeft">&#160;</td><td class="mdescRight">On-screen position (center).  <br /></td></tr>
 <tr class="separator:a877fd5681d95469dc4ec6766039d8863"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa15e868795fbb57316da8cee32cf5b70" id="r_aa15e868795fbb57316da8cee32cf5b70"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceasge_1_1scene_1_1ui.html#structasge_1_1scene_1_1ui_1_1UISize">asge::scene::ui::UISize</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtype_1_1client_1_1ui_1_1ProgressBar.html#aa15e868795fbb57316da8cee32cf5b70">_siz</a></td></tr>
+<tr class="memdesc:aa15e868795fbb57316da8cee32cf5b70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Size of the progress bar.  <br /></td></tr>
 <tr class="separator:aa15e868795fbb57316da8cee32cf5b70"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6f20a2221fdaaa4485e234bbc89797a5" id="r_a6f20a2221fdaaa4485e234bbc89797a5"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtype_1_1client_1_1ui_1_1ProgressBar.html#a6f20a2221fdaaa4485e234bbc89797a5">_max_value</a></td></tr>
+<tr class="memdesc:a6f20a2221fdaaa4485e234bbc89797a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum allowed progress value.  <br /></td></tr>
 <tr class="separator:a6f20a2221fdaaa4485e234bbc89797a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aed18919b9ef76c721a6ca8d31d95d28f" id="r_aed18919b9ef76c721a6ca8d31d95d28f"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtype_1_1client_1_1ui_1_1ProgressBar.html#aed18919b9ef76c721a6ca8d31d95d28f">_current_value</a></td></tr>
+<tr class="memdesc:aed18919b9ef76c721a6ca8d31d95d28f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current progress value.  <br /></td></tr>
 <tr class="separator:aed18919b9ef76c721a6ca8d31d95d28f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="ProgressBar_8hpp_source.html#l00014">14</a> of file <a class="el" href="ProgressBar_8hpp_source.html">ProgressBar.hpp</a>.</p>
+<div class="textblock"><p>A simple drawable progress bar UI element. </p>
+<p>The <a class="el" href="classrtype_1_1client_1_1ui_1_1ProgressBar.html" title="A simple drawable progress bar UI element.">ProgressBar</a> draws a rectangular bar that fills proportionally to the current value. It is centered on the provided position and uses ASGE’s rendering services for drawing. </p>
+
+<p class="definition">Definition at line <a class="el" href="ProgressBar_8hpp_source.html#l00035">35</a> of file <a class="el" href="ProgressBar_8hpp_source.html">ProgressBar.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aba6c5d7e7b0c9986e020998da36d2974" name="aba6c5d7e7b0c9986e020998da36d2974"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aba6c5d7e7b0c9986e020998da36d2974">&#9670;&#160;</a></span>ProgressBar()</h2>
@@ -190,13 +203,23 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ProgressBar_8hpp_source.html#l00016">16</a> of file <a class="el" href="ProgressBar_8hpp_source.html">ProgressBar.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   16</span>                                                                                       :</div>
-<div class="line"><span class="lineno">   17</span>            <a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1ProgressBar.html#a877fd5681d95469dc4ec6766039d8863">_pos</a>(pos), <a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1ProgressBar.html#aa15e868795fbb57316da8cee32cf5b70">_siz</a>(siz), <a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1ProgressBar.html#a6f20a2221fdaaa4485e234bbc89797a5">_max_value</a>(max_value), <a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1ProgressBar.html#aed18919b9ef76c721a6ca8d31d95d28f">_current_value</a>(0.f) {};</div>
-<div class="ttc" id="aclassrtype_1_1client_1_1ui_1_1ProgressBar_html_a6f20a2221fdaaa4485e234bbc89797a5"><div class="ttname"><a href="classrtype_1_1client_1_1ui_1_1ProgressBar.html#a6f20a2221fdaaa4485e234bbc89797a5">rtype::client::ui::ProgressBar::_max_value</a></div><div class="ttdeci">float _max_value</div><div class="ttdef"><b>Definition</b> <a href="ProgressBar_8hpp_source.html#l00028">ProgressBar.hpp:28</a></div></div>
-<div class="ttc" id="aclassrtype_1_1client_1_1ui_1_1ProgressBar_html_a877fd5681d95469dc4ec6766039d8863"><div class="ttname"><a href="classrtype_1_1client_1_1ui_1_1ProgressBar.html#a877fd5681d95469dc4ec6766039d8863">rtype::client::ui::ProgressBar::_pos</a></div><div class="ttdeci">asge::scene::ui::UIPosition _pos</div><div class="ttdef"><b>Definition</b> <a href="ProgressBar_8hpp_source.html#l00025">ProgressBar.hpp:25</a></div></div>
-<div class="ttc" id="aclassrtype_1_1client_1_1ui_1_1ProgressBar_html_aa15e868795fbb57316da8cee32cf5b70"><div class="ttname"><a href="classrtype_1_1client_1_1ui_1_1ProgressBar.html#aa15e868795fbb57316da8cee32cf5b70">rtype::client::ui::ProgressBar::_siz</a></div><div class="ttdeci">asge::scene::ui::UISize _siz</div><div class="ttdef"><b>Definition</b> <a href="ProgressBar_8hpp_source.html#l00026">ProgressBar.hpp:26</a></div></div>
-<div class="ttc" id="aclassrtype_1_1client_1_1ui_1_1ProgressBar_html_aed18919b9ef76c721a6ca8d31d95d28f"><div class="ttname"><a href="classrtype_1_1client_1_1ui_1_1ProgressBar.html#aed18919b9ef76c721a6ca8d31d95d28f">rtype::client::ui::ProgressBar::_current_value</a></div><div class="ttdeci">float _current_value</div><div class="ttdef"><b>Definition</b> <a href="ProgressBar_8hpp_source.html#l00029">ProgressBar.hpp:29</a></div></div>
+<p>Constructs a new <a class="el" href="classrtype_1_1client_1_1ui_1_1ProgressBar.html" title="A simple drawable progress bar UI element.">ProgressBar</a> instance. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pos</td><td>Center position of the progress bar. </td></tr>
+    <tr><td class="paramname">siz</td><td>Total size (width/height) of the bar. </td></tr>
+    <tr><td class="paramname">max_value</td><td>Maximum numeric value the bar represents. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="ProgressBar_8hpp_source.html#l00044">44</a> of file <a class="el" href="ProgressBar_8hpp_source.html">ProgressBar.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   44</span>                                                                                       :</div>
+<div class="line"><span class="lineno">   45</span>            <a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1ProgressBar.html#a877fd5681d95469dc4ec6766039d8863">_pos</a>(pos), <a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1ProgressBar.html#aa15e868795fbb57316da8cee32cf5b70">_siz</a>(siz), <a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1ProgressBar.html#a6f20a2221fdaaa4485e234bbc89797a5">_max_value</a>(max_value), <a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1ProgressBar.html#aed18919b9ef76c721a6ca8d31d95d28f">_current_value</a>(0.f) {};</div>
+<div class="ttc" id="aclassrtype_1_1client_1_1ui_1_1ProgressBar_html_a6f20a2221fdaaa4485e234bbc89797a5"><div class="ttname"><a href="classrtype_1_1client_1_1ui_1_1ProgressBar.html#a6f20a2221fdaaa4485e234bbc89797a5">rtype::client::ui::ProgressBar::_max_value</a></div><div class="ttdeci">float _max_value</div><div class="ttdoc">Maximum allowed progress value.</div><div class="ttdef"><b>Definition</b> <a href="ProgressBar_8hpp_source.html#l00075">ProgressBar.hpp:75</a></div></div>
+<div class="ttc" id="aclassrtype_1_1client_1_1ui_1_1ProgressBar_html_a877fd5681d95469dc4ec6766039d8863"><div class="ttname"><a href="classrtype_1_1client_1_1ui_1_1ProgressBar.html#a877fd5681d95469dc4ec6766039d8863">rtype::client::ui::ProgressBar::_pos</a></div><div class="ttdeci">asge::scene::ui::UIPosition _pos</div><div class="ttdoc">On-screen position (center).</div><div class="ttdef"><b>Definition</b> <a href="ProgressBar_8hpp_source.html#l00073">ProgressBar.hpp:73</a></div></div>
+<div class="ttc" id="aclassrtype_1_1client_1_1ui_1_1ProgressBar_html_aa15e868795fbb57316da8cee32cf5b70"><div class="ttname"><a href="classrtype_1_1client_1_1ui_1_1ProgressBar.html#aa15e868795fbb57316da8cee32cf5b70">rtype::client::ui::ProgressBar::_siz</a></div><div class="ttdeci">asge::scene::ui::UISize _siz</div><div class="ttdoc">Size of the progress bar.</div><div class="ttdef"><b>Definition</b> <a href="ProgressBar_8hpp_source.html#l00074">ProgressBar.hpp:74</a></div></div>
+<div class="ttc" id="aclassrtype_1_1client_1_1ui_1_1ProgressBar_html_aed18919b9ef76c721a6ca8d31d95d28f"><div class="ttname"><a href="classrtype_1_1client_1_1ui_1_1ProgressBar.html#aed18919b9ef76c721a6ca8d31d95d28f">rtype::client::ui::ProgressBar::_current_value</a></div><div class="ttdeci">float _current_value</div><div class="ttdoc">Current progress value.</div><div class="ttdef"><b>Definition</b> <a href="ProgressBar_8hpp_source.html#l00076">ProgressBar.hpp:76</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -225,25 +248,33 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Draws the progress bar using ASGE's rendering interface. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">services</td><td>ASGE service locator providing renderer access. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 <p>Implements <a class="el" href="classasge_1_1scene_1_1ui_1_1UIElement.html#aa5190dcf4161ca8a1a19fc9463e2aeb6">asge::scene::ui::UIElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="ProgressBar_8cpp_source.html#l00028">28</a> of file <a class="el" href="ProgressBar_8cpp_source.html">ProgressBar.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   29</span>{</div>
-<div class="line"><span class="lineno">   30</span>    <a class="code hl_class" href="classasge_1_1renderer_1_1IRenderer.html">asge::renderer::IRenderer</a> &amp;renderer = services.<a class="code hl_function" href="structasge_1_1Services.html#a693d25e8f9c77a8a44cd65befe8f79f0">renderer</a>();</div>
-<div class="line"><span class="lineno">   31</span> </div>
-<div class="line"><span class="lineno">   32</span>    <a class="code hl_struct" href="namespaceasge_1_1renderer.html#structasge_1_1renderer_1_1RGBAColor">asge::renderer::RGBAColor</a> outlineCol{255, 255, 255};</div>
-<div class="line"><span class="lineno">   33</span>    <a class="code hl_struct" href="namespaceasge_1_1renderer.html#structasge_1_1renderer_1_1RGBAColor">asge::renderer::RGBAColor</a> boxCol{0, 0, 0, 255};</div>
-<div class="line"><span class="lineno">   34</span>    <a class="code hl_struct" href="namespaceasge_1_1renderer.html#structasge_1_1renderer_1_1RGBAColor">asge::renderer::RGBAColor</a> fillCol{255, 255, 255, 255};</div>
-<div class="line"><span class="lineno">   35</span> </div>
-<div class="line"><span class="lineno">   36</span>    <a class="code hl_struct" href="namespaceasge_1_1renderer.html#structasge_1_1renderer_1_1Rect">asge::renderer::Rect</a> outlineRect{<a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1ProgressBar.html#a877fd5681d95469dc4ec6766039d8863">_pos</a>.<a class="code hl_variable" href="namespaceasge_1_1scene_1_1ui.html#a0b89231dbe7143653dcf34cb816c6915">x</a> - <a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1ProgressBar.html#aa15e868795fbb57316da8cee32cf5b70">_siz</a>.<a class="code hl_variable" href="namespaceasge_1_1scene_1_1ui.html#a7fb503e2349ce5a8ba36ca590470e989">width</a> / 2.f - 2.f, <a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1ProgressBar.html#a877fd5681d95469dc4ec6766039d8863">_pos</a>.<a class="code hl_variable" href="namespaceasge_1_1scene_1_1ui.html#aa1664538cdcf24d0e9679985b2c20c80">y</a> - <a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1ProgressBar.html#aa15e868795fbb57316da8cee32cf5b70">_siz</a>.<a class="code hl_variable" href="namespaceasge_1_1scene_1_1ui.html#a65b041b6aec85752daa61f48bf335388">height</a> / 2.f - 2.f, <a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1ProgressBar.html#aa15e868795fbb57316da8cee32cf5b70">_siz</a>.<a class="code hl_variable" href="namespaceasge_1_1scene_1_1ui.html#a7fb503e2349ce5a8ba36ca590470e989">width</a> + 4.f, <a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1ProgressBar.html#aa15e868795fbb57316da8cee32cf5b70">_siz</a>.<a class="code hl_variable" href="namespaceasge_1_1scene_1_1ui.html#a65b041b6aec85752daa61f48bf335388">height</a> + 4.f};</div>
-<div class="line"><span class="lineno">   37</span>    <a class="code hl_struct" href="namespaceasge_1_1renderer.html#structasge_1_1renderer_1_1Rect">asge::renderer::Rect</a> backRect{<a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1ProgressBar.html#a877fd5681d95469dc4ec6766039d8863">_pos</a>.<a class="code hl_variable" href="namespaceasge_1_1scene_1_1ui.html#a0b89231dbe7143653dcf34cb816c6915">x</a> - <a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1ProgressBar.html#aa15e868795fbb57316da8cee32cf5b70">_siz</a>.<a class="code hl_variable" href="namespaceasge_1_1scene_1_1ui.html#a7fb503e2349ce5a8ba36ca590470e989">width</a> / 2.f, <a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1ProgressBar.html#a877fd5681d95469dc4ec6766039d8863">_pos</a>.<a class="code hl_variable" href="namespaceasge_1_1scene_1_1ui.html#aa1664538cdcf24d0e9679985b2c20c80">y</a> - <a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1ProgressBar.html#aa15e868795fbb57316da8cee32cf5b70">_siz</a>.<a class="code hl_variable" href="namespaceasge_1_1scene_1_1ui.html#a65b041b6aec85752daa61f48bf335388">height</a> / 2.f, <a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1ProgressBar.html#aa15e868795fbb57316da8cee32cf5b70">_siz</a>.<a class="code hl_variable" href="namespaceasge_1_1scene_1_1ui.html#a7fb503e2349ce5a8ba36ca590470e989">width</a>, <a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1ProgressBar.html#aa15e868795fbb57316da8cee32cf5b70">_siz</a>.<a class="code hl_variable" href="namespaceasge_1_1scene_1_1ui.html#a65b041b6aec85752daa61f48bf335388">height</a>};</div>
-<div class="line"><span class="lineno">   38</span>    renderer.<a class="code hl_function" href="classasge_1_1renderer_1_1IRenderer.html#a88a3fc359a23782e201a06e9fafe9a9d">drawRectangle</a>(backRect, outlineCol);</div>
-<div class="line"><span class="lineno">   39</span>    renderer.<a class="code hl_function" href="classasge_1_1renderer_1_1IRenderer.html#a88a3fc359a23782e201a06e9fafe9a9d">drawRectangle</a>(backRect, outlineCol, <span class="keyword">false</span>, 4.f);</div>
-<div class="line"><span class="lineno">   40</span> </div>
-<div class="line"><span class="lineno">   41</span>    <span class="keywordtype">float</span> fillWidth = (<a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1ProgressBar.html#aed18919b9ef76c721a6ca8d31d95d28f">_current_value</a> / <a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1ProgressBar.html#a6f20a2221fdaaa4485e234bbc89797a5">_max_value</a>) * <a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1ProgressBar.html#aa15e868795fbb57316da8cee32cf5b70">_siz</a>.<a class="code hl_variable" href="namespaceasge_1_1scene_1_1ui.html#a7fb503e2349ce5a8ba36ca590470e989">width</a>;</div>
-<div class="line"><span class="lineno">   42</span>    <a class="code hl_struct" href="namespaceasge_1_1renderer.html#structasge_1_1renderer_1_1Rect">asge::renderer::Rect</a> fillRect{<a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1ProgressBar.html#a877fd5681d95469dc4ec6766039d8863">_pos</a>.<a class="code hl_variable" href="namespaceasge_1_1scene_1_1ui.html#a0b89231dbe7143653dcf34cb816c6915">x</a> - <a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1ProgressBar.html#aa15e868795fbb57316da8cee32cf5b70">_siz</a>.<a class="code hl_variable" href="namespaceasge_1_1scene_1_1ui.html#a7fb503e2349ce5a8ba36ca590470e989">width</a> / 2.f, <a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1ProgressBar.html#a877fd5681d95469dc4ec6766039d8863">_pos</a>.<a class="code hl_variable" href="namespaceasge_1_1scene_1_1ui.html#aa1664538cdcf24d0e9679985b2c20c80">y</a> - <a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1ProgressBar.html#aa15e868795fbb57316da8cee32cf5b70">_siz</a>.<a class="code hl_variable" href="namespaceasge_1_1scene_1_1ui.html#a65b041b6aec85752daa61f48bf335388">height</a> / 2.f, fillWidth, <a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1ProgressBar.html#aa15e868795fbb57316da8cee32cf5b70">_siz</a>.<a class="code hl_variable" href="namespaceasge_1_1scene_1_1ui.html#a65b041b6aec85752daa61f48bf335388">height</a>};</div>
-<div class="line"><span class="lineno">   43</span>    renderer.<a class="code hl_function" href="classasge_1_1renderer_1_1IRenderer.html#a88a3fc359a23782e201a06e9fafe9a9d">drawRectangle</a>(fillRect, fillCol);</div>
-<div class="line"><span class="lineno">   44</span>}</div>
+<p class="definition">Definition at line <a class="el" href="ProgressBar_8cpp_source.html#l00040">40</a> of file <a class="el" href="ProgressBar_8cpp_source.html">ProgressBar.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   41</span>{</div>
+<div class="line"><span class="lineno">   42</span>    <a class="code hl_class" href="classasge_1_1renderer_1_1IRenderer.html">asge::renderer::IRenderer</a> &amp;renderer = services.<a class="code hl_function" href="structasge_1_1Services.html#a693d25e8f9c77a8a44cd65befe8f79f0">renderer</a>();</div>
+<div class="line"><span class="lineno">   43</span> </div>
+<div class="line"><span class="lineno">   44</span>    <a class="code hl_struct" href="namespaceasge_1_1renderer.html#structasge_1_1renderer_1_1RGBAColor">asge::renderer::RGBAColor</a> outlineCol{255, 255, 255};</div>
+<div class="line"><span class="lineno">   45</span>    <a class="code hl_struct" href="namespaceasge_1_1renderer.html#structasge_1_1renderer_1_1RGBAColor">asge::renderer::RGBAColor</a> boxCol{0, 0, 0, 255};</div>
+<div class="line"><span class="lineno">   46</span>    <a class="code hl_struct" href="namespaceasge_1_1renderer.html#structasge_1_1renderer_1_1RGBAColor">asge::renderer::RGBAColor</a> fillCol{255, 255, 255, 255};</div>
+<div class="line"><span class="lineno">   47</span> </div>
+<div class="line"><span class="lineno">   48</span>    <a class="code hl_struct" href="namespaceasge_1_1renderer.html#structasge_1_1renderer_1_1Rect">asge::renderer::Rect</a> outlineRect{<a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1ProgressBar.html#a877fd5681d95469dc4ec6766039d8863">_pos</a>.<a class="code hl_variable" href="namespaceasge_1_1scene_1_1ui.html#a0b89231dbe7143653dcf34cb816c6915">x</a> - <a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1ProgressBar.html#aa15e868795fbb57316da8cee32cf5b70">_siz</a>.<a class="code hl_variable" href="namespaceasge_1_1scene_1_1ui.html#a7fb503e2349ce5a8ba36ca590470e989">width</a> / 2.f - 2.f, <a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1ProgressBar.html#a877fd5681d95469dc4ec6766039d8863">_pos</a>.<a class="code hl_variable" href="namespaceasge_1_1scene_1_1ui.html#aa1664538cdcf24d0e9679985b2c20c80">y</a> - <a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1ProgressBar.html#aa15e868795fbb57316da8cee32cf5b70">_siz</a>.<a class="code hl_variable" href="namespaceasge_1_1scene_1_1ui.html#a65b041b6aec85752daa61f48bf335388">height</a> / 2.f - 2.f, <a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1ProgressBar.html#aa15e868795fbb57316da8cee32cf5b70">_siz</a>.<a class="code hl_variable" href="namespaceasge_1_1scene_1_1ui.html#a7fb503e2349ce5a8ba36ca590470e989">width</a> + 4.f, <a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1ProgressBar.html#aa15e868795fbb57316da8cee32cf5b70">_siz</a>.<a class="code hl_variable" href="namespaceasge_1_1scene_1_1ui.html#a65b041b6aec85752daa61f48bf335388">height</a> + 4.f};</div>
+<div class="line"><span class="lineno">   49</span>    <a class="code hl_struct" href="namespaceasge_1_1renderer.html#structasge_1_1renderer_1_1Rect">asge::renderer::Rect</a> backRect{<a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1ProgressBar.html#a877fd5681d95469dc4ec6766039d8863">_pos</a>.<a class="code hl_variable" href="namespaceasge_1_1scene_1_1ui.html#a0b89231dbe7143653dcf34cb816c6915">x</a> - <a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1ProgressBar.html#aa15e868795fbb57316da8cee32cf5b70">_siz</a>.<a class="code hl_variable" href="namespaceasge_1_1scene_1_1ui.html#a7fb503e2349ce5a8ba36ca590470e989">width</a> / 2.f, <a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1ProgressBar.html#a877fd5681d95469dc4ec6766039d8863">_pos</a>.<a class="code hl_variable" href="namespaceasge_1_1scene_1_1ui.html#aa1664538cdcf24d0e9679985b2c20c80">y</a> - <a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1ProgressBar.html#aa15e868795fbb57316da8cee32cf5b70">_siz</a>.<a class="code hl_variable" href="namespaceasge_1_1scene_1_1ui.html#a65b041b6aec85752daa61f48bf335388">height</a> / 2.f, <a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1ProgressBar.html#aa15e868795fbb57316da8cee32cf5b70">_siz</a>.<a class="code hl_variable" href="namespaceasge_1_1scene_1_1ui.html#a7fb503e2349ce5a8ba36ca590470e989">width</a>, <a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1ProgressBar.html#aa15e868795fbb57316da8cee32cf5b70">_siz</a>.<a class="code hl_variable" href="namespaceasge_1_1scene_1_1ui.html#a65b041b6aec85752daa61f48bf335388">height</a>};</div>
+<div class="line"><span class="lineno">   50</span>    renderer.<a class="code hl_function" href="classasge_1_1renderer_1_1IRenderer.html#a88a3fc359a23782e201a06e9fafe9a9d">drawRectangle</a>(backRect, outlineCol);</div>
+<div class="line"><span class="lineno">   51</span>    renderer.<a class="code hl_function" href="classasge_1_1renderer_1_1IRenderer.html#a88a3fc359a23782e201a06e9fafe9a9d">drawRectangle</a>(backRect, outlineCol, <span class="keyword">false</span>, 4.f);</div>
+<div class="line"><span class="lineno">   52</span> </div>
+<div class="line"><span class="lineno">   53</span>    <span class="keywordtype">float</span> fillWidth = (<a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1ProgressBar.html#aed18919b9ef76c721a6ca8d31d95d28f">_current_value</a> / <a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1ProgressBar.html#a6f20a2221fdaaa4485e234bbc89797a5">_max_value</a>) * <a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1ProgressBar.html#aa15e868795fbb57316da8cee32cf5b70">_siz</a>.<a class="code hl_variable" href="namespaceasge_1_1scene_1_1ui.html#a7fb503e2349ce5a8ba36ca590470e989">width</a>;</div>
+<div class="line"><span class="lineno">   54</span>    <a class="code hl_struct" href="namespaceasge_1_1renderer.html#structasge_1_1renderer_1_1Rect">asge::renderer::Rect</a> fillRect{<a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1ProgressBar.html#a877fd5681d95469dc4ec6766039d8863">_pos</a>.<a class="code hl_variable" href="namespaceasge_1_1scene_1_1ui.html#a0b89231dbe7143653dcf34cb816c6915">x</a> - <a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1ProgressBar.html#aa15e868795fbb57316da8cee32cf5b70">_siz</a>.<a class="code hl_variable" href="namespaceasge_1_1scene_1_1ui.html#a7fb503e2349ce5a8ba36ca590470e989">width</a> / 2.f, <a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1ProgressBar.html#a877fd5681d95469dc4ec6766039d8863">_pos</a>.<a class="code hl_variable" href="namespaceasge_1_1scene_1_1ui.html#aa1664538cdcf24d0e9679985b2c20c80">y</a> - <a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1ProgressBar.html#aa15e868795fbb57316da8cee32cf5b70">_siz</a>.<a class="code hl_variable" href="namespaceasge_1_1scene_1_1ui.html#a65b041b6aec85752daa61f48bf335388">height</a> / 2.f, fillWidth, <a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1ProgressBar.html#aa15e868795fbb57316da8cee32cf5b70">_siz</a>.<a class="code hl_variable" href="namespaceasge_1_1scene_1_1ui.html#a65b041b6aec85752daa61f48bf335388">height</a>};</div>
+<div class="line"><span class="lineno">   55</span>    renderer.<a class="code hl_function" href="classasge_1_1renderer_1_1IRenderer.html#a88a3fc359a23782e201a06e9fafe9a9d">drawRectangle</a>(fillRect, fillCol);</div>
+<div class="line"><span class="lineno">   56</span>}</div>
 <div class="ttc" id="aclassasge_1_1renderer_1_1IRenderer_html"><div class="ttname"><a href="classasge_1_1renderer_1_1IRenderer.html">asge::renderer::IRenderer</a></div><div class="ttdoc">Minimal public rendering interface for the engine/game.</div><div class="ttdef"><b>Definition</b> <a href="IRenderer_8hpp_source.html#l00058">IRenderer.hpp:58</a></div></div>
 <div class="ttc" id="aclassasge_1_1renderer_1_1IRenderer_html_a88a3fc359a23782e201a06e9fafe9a9d"><div class="ttname"><a href="classasge_1_1renderer_1_1IRenderer.html#a88a3fc359a23782e201a06e9fafe9a9d">asge::renderer::IRenderer::drawRectangle</a></div><div class="ttdeci">virtual void drawRectangle(Rect rectangle, RGBAColor color, bool is_filled=true, float border_thickness=1.0f)=0</div><div class="ttdoc">Draw a filled or outlined axis-aligned rectangle.</div></div>
 <div class="ttc" id="anamespaceasge_1_1renderer_html_structasge_1_1renderer_1_1RGBAColor"><div class="ttname"><a href="namespaceasge_1_1renderer.html#structasge_1_1renderer_1_1RGBAColor">asge::renderer::RGBAColor</a></div><div class="ttdoc">RGBA color container where each channel is 0..255.</div><div class="ttdef"><b>Definition</b> <a href="RendererTypes_8hpp_source.html#l00082">RendererTypes.hpp:82</a></div></div>
@@ -254,7 +285,7 @@ Private Attributes</h2></td></tr>
 <div class="ttc" id="anamespaceasge_1_1scene_1_1ui_html_aa1664538cdcf24d0e9679985b2c20c80"><div class="ttname"><a href="namespaceasge_1_1scene_1_1ui.html#aa1664538cdcf24d0e9679985b2c20c80">asge::scene::ui::UIPosition::y</a></div><div class="ttdeci">float y</div><div class="ttdef"><b>Definition</b> <a href="UIElement_8hpp_source.html#l00016">UIElement.hpp:16</a></div></div>
 <div class="ttc" id="astructasge_1_1Services_html_a693d25e8f9c77a8a44cd65befe8f79f0"><div class="ttname"><a href="structasge_1_1Services.html#a693d25e8f9c77a8a44cd65befe8f79f0">asge::Services::renderer</a></div><div class="ttdeci">renderer::IRenderer &amp; renderer()</div><div class="ttdef"><b>Definition</b> <a href="ASGE_8hpp_source.html#l00125">ASGE.hpp:125</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="ProgressBar_8hpp_source.html#l00029">_current_value</a>, <a class="el" href="ProgressBar_8hpp_source.html#l00028">_max_value</a>, <a class="el" href="ProgressBar_8hpp_source.html#l00025">_pos</a>, <a class="el" href="ProgressBar_8hpp_source.html#l00026">_siz</a>, <a class="el" href="classasge_1_1renderer_1_1IRenderer.html#a88a3fc359a23782e201a06e9fafe9a9d">asge::renderer::IRenderer::drawRectangle()</a>, <a class="el" href="UIElement_8hpp_source.html#l00021">asge::scene::ui::UISize::height</a>, <a class="el" href="ASGE_8hpp_source.html#l00125">asge::Services::renderer()</a>, <a class="el" href="UIElement_8hpp_source.html#l00020">asge::scene::ui::UISize::width</a>, <a class="el" href="UIElement_8hpp_source.html#l00015">asge::scene::ui::UIPosition::x</a>, and <a class="el" href="UIElement_8hpp_source.html#l00016">asge::scene::ui::UIPosition::y</a>.</p>
+<p class="reference">References <a class="el" href="ProgressBar_8hpp_source.html#l00076">_current_value</a>, <a class="el" href="ProgressBar_8hpp_source.html#l00075">_max_value</a>, <a class="el" href="ProgressBar_8hpp_source.html#l00073">_pos</a>, <a class="el" href="ProgressBar_8hpp_source.html#l00074">_siz</a>, <a class="el" href="classasge_1_1renderer_1_1IRenderer.html#a88a3fc359a23782e201a06e9fafe9a9d">asge::renderer::IRenderer::drawRectangle()</a>, <a class="el" href="UIElement_8hpp_source.html#l00021">asge::scene::ui::UISize::height</a>, <a class="el" href="ASGE_8hpp_source.html#l00125">asge::Services::renderer()</a>, <a class="el" href="UIElement_8hpp_source.html#l00020">asge::scene::ui::UISize::width</a>, <a class="el" href="UIElement_8hpp_source.html#l00015">asge::scene::ui::UIPosition::x</a>, and <a class="el" href="UIElement_8hpp_source.html#l00016">asge::scene::ui::UIPosition::y</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -281,17 +312,26 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ProgressBar_8cpp_source.html#l00012">12</a> of file <a class="el" href="ProgressBar_8cpp_source.html">ProgressBar.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   13</span>{</div>
-<div class="line"><span class="lineno">   14</span>    <span class="keywordflow">if</span> (value &lt; 0.f)</div>
-<div class="line"><span class="lineno">   15</span>        <a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1ProgressBar.html#aed18919b9ef76c721a6ca8d31d95d28f">_current_value</a> = 0.f;</div>
-<div class="line"><span class="lineno">   16</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (value &gt; <a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1ProgressBar.html#a6f20a2221fdaaa4485e234bbc89797a5">_max_value</a>)</div>
-<div class="line"><span class="lineno">   17</span>        <a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1ProgressBar.html#aed18919b9ef76c721a6ca8d31d95d28f">_current_value</a> = <a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1ProgressBar.html#a6f20a2221fdaaa4485e234bbc89797a5">_max_value</a>;</div>
-<div class="line"><span class="lineno">   18</span>    <span class="keywordflow">else</span></div>
-<div class="line"><span class="lineno">   19</span>        <a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1ProgressBar.html#aed18919b9ef76c721a6ca8d31d95d28f">_current_value</a> = value;</div>
-<div class="line"><span class="lineno">   20</span>}</div>
+<p>Sets the current value of the progress bar. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>New progress value to set.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>The value is automatically clamped between 0 and <code>_max_value</code>. </p>
+
+<p class="definition">Definition at line <a class="el" href="ProgressBar_8cpp_source.html#l00024">24</a> of file <a class="el" href="ProgressBar_8cpp_source.html">ProgressBar.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   25</span>{</div>
+<div class="line"><span class="lineno">   26</span>    <span class="keywordflow">if</span> (value &lt; 0.f)</div>
+<div class="line"><span class="lineno">   27</span>        <a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1ProgressBar.html#aed18919b9ef76c721a6ca8d31d95d28f">_current_value</a> = 0.f;</div>
+<div class="line"><span class="lineno">   28</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (value &gt; <a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1ProgressBar.html#a6f20a2221fdaaa4485e234bbc89797a5">_max_value</a>)</div>
+<div class="line"><span class="lineno">   29</span>        <a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1ProgressBar.html#aed18919b9ef76c721a6ca8d31d95d28f">_current_value</a> = <a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1ProgressBar.html#a6f20a2221fdaaa4485e234bbc89797a5">_max_value</a>;</div>
+<div class="line"><span class="lineno">   30</span>    <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">   31</span>        <a class="code hl_variable" href="classrtype_1_1client_1_1ui_1_1ProgressBar.html#aed18919b9ef76c721a6ca8d31d95d28f">_current_value</a> = value;</div>
+<div class="line"><span class="lineno">   32</span>}</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="ProgressBar_8hpp_source.html#l00029">_current_value</a>, and <a class="el" href="ProgressBar_8hpp_source.html#l00028">_max_value</a>.</p>
+<p class="reference">References <a class="el" href="ProgressBar_8hpp_source.html#l00076">_current_value</a>, and <a class="el" href="ProgressBar_8hpp_source.html#l00075">_max_value</a>.</p>
 
 </div>
 </div>
@@ -329,13 +369,22 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Updates the progress bar (currently unused). </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">services</td><td>ASGE service locator. </td></tr>
+    <tr><td class="paramname">dt</td><td>Delta time since the last frame. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 <p>Implements <a class="el" href="classasge_1_1scene_1_1ui_1_1UIElement.html#acd9fcf0974ee7c11eb28a11e68a01610">asge::scene::ui::UIElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="ProgressBar_8cpp_source.html#l00022">22</a> of file <a class="el" href="ProgressBar_8cpp_source.html">ProgressBar.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   23</span>{</div>
-<div class="line"><span class="lineno">   24</span>    (void) services;</div>
-<div class="line"><span class="lineno">   25</span>    (void) dt;</div>
-<div class="line"><span class="lineno">   26</span>}</div>
+<p class="definition">Definition at line <a class="el" href="ProgressBar_8cpp_source.html#l00034">34</a> of file <a class="el" href="ProgressBar_8cpp_source.html">ProgressBar.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   35</span>{</div>
+<div class="line"><span class="lineno">   36</span>    (void) services;</div>
+<div class="line"><span class="lineno">   37</span>    (void) dt;</div>
+<div class="line"><span class="lineno">   38</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -360,9 +409,11 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ProgressBar_8hpp_source.html#l00029">29</a> of file <a class="el" href="ProgressBar_8hpp_source.html">ProgressBar.hpp</a>.</p>
+<p>Current progress value. </p>
 
-<p class="reference">Referenced by <a class="el" href="ProgressBar_8cpp_source.html#l00028">draw()</a>, and <a class="el" href="ProgressBar_8cpp_source.html#l00012">setValue()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ProgressBar_8hpp_source.html#l00076">76</a> of file <a class="el" href="ProgressBar_8hpp_source.html">ProgressBar.hpp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="ProgressBar_8cpp_source.html#l00040">draw()</a>, and <a class="el" href="ProgressBar_8cpp_source.html#l00024">setValue()</a>.</p>
 
 </div>
 </div>
@@ -386,9 +437,11 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ProgressBar_8hpp_source.html#l00028">28</a> of file <a class="el" href="ProgressBar_8hpp_source.html">ProgressBar.hpp</a>.</p>
+<p>Maximum allowed progress value. </p>
 
-<p class="reference">Referenced by <a class="el" href="ProgressBar_8cpp_source.html#l00028">draw()</a>, and <a class="el" href="ProgressBar_8cpp_source.html#l00012">setValue()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ProgressBar_8hpp_source.html#l00075">75</a> of file <a class="el" href="ProgressBar_8hpp_source.html">ProgressBar.hpp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="ProgressBar_8cpp_source.html#l00040">draw()</a>, and <a class="el" href="ProgressBar_8cpp_source.html#l00024">setValue()</a>.</p>
 
 </div>
 </div>
@@ -412,9 +465,11 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ProgressBar_8hpp_source.html#l00025">25</a> of file <a class="el" href="ProgressBar_8hpp_source.html">ProgressBar.hpp</a>.</p>
+<p>On-screen position (center). </p>
 
-<p class="reference">Referenced by <a class="el" href="ProgressBar_8cpp_source.html#l00028">draw()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ProgressBar_8hpp_source.html#l00073">73</a> of file <a class="el" href="ProgressBar_8hpp_source.html">ProgressBar.hpp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="ProgressBar_8cpp_source.html#l00040">draw()</a>.</p>
 
 </div>
 </div>
@@ -438,9 +493,11 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ProgressBar_8hpp_source.html#l00026">26</a> of file <a class="el" href="ProgressBar_8hpp_source.html">ProgressBar.hpp</a>.</p>
+<p>Size of the progress bar. </p>
 
-<p class="reference">Referenced by <a class="el" href="ProgressBar_8cpp_source.html#l00028">draw()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ProgressBar_8hpp_source.html#l00074">74</a> of file <a class="el" href="ProgressBar_8hpp_source.html">ProgressBar.hpp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="ProgressBar_8cpp_source.html#l00040">draw()</a>.</p>
 
 </div>
 </div>

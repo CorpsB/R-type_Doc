@@ -21,7 +21,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title=" ">
+<g id="a_Node000001"><a xlink:title="Initializes the UI elements and sets up the gameplay stage.">
 <polygon fill="#999999" stroke="#666666" points="194,-72.5 0,-72.5 0,-53.5 194,-53.5 194,-72.5"/>
 <text text-anchor="middle" x="97" y="-60.5" font-family="Helvetica,sans-Serif" font-size="10.00">rtype::client::scene::GameStage::init</text>
 </a>
@@ -48,7 +48,7 @@
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="classrtype_1_1client_1_1lang_1_1LanguageManager.html#ad68186a2f5319362e50262fd005d663a" target="_top" xlink:title=" ">
+<g id="a_Node000003"><a xlink:href="classrtype_1_1client_1_1lang_1_1LanguageManager.html#ad68186a2f5319362e50262fd005d663a" target="_top" xlink:title="Provides access to the singleton instance of LanguageManager.">
 <polygon fill="white" stroke="#666666" points="428,-78 230,-78 230,-48 428,-48 428,-78"/>
 <text text-anchor="start" x="238" y="-66" font-family="Helvetica,sans-Serif" font-size="10.00">rtype::client::lang::LanguageManager</text>
 <text text-anchor="middle" x="329" y="-55" font-family="Helvetica,sans-Serif" font-size="10.00">::getInstance</text>
@@ -67,7 +67,7 @@
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a xlink:href="classrtype_1_1client_1_1lang_1_1LanguageManager.html#a00f8cc6c863e04f653bb1232d7012564" target="_top" xlink:title=" ">
+<g id="a_Node000004"><a xlink:href="classrtype_1_1client_1_1lang_1_1LanguageManager.html#a00f8cc6c863e04f653bb1232d7012564" target="_top" xlink:title="Retrieves a localized string by key.">
 <polygon fill="white" stroke="#666666" points="428,-30 230,-30 230,0 428,0 428,-30"/>
 <text text-anchor="start" x="238" y="-18" font-family="Helvetica,sans-Serif" font-size="10.00">rtype::client::lang::LanguageManager</text>
 <text text-anchor="middle" x="329" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">::getString</text>

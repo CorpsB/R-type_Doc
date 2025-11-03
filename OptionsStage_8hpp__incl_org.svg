@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title=" ">
+<g id="a_Node000001"><a xlink:title="Declares the OptionsStage class which manages the game options menu.">
 <polygon fill="#999999" stroke="#666666" points="1077.91,-580 974.91,-580 974.91,-561 1077.91,-561 1077.91,-580"/>
 <text text-anchor="middle" x="1026.41" y="-568" font-family="Helvetica,sans-Serif" font-size="10.00">OptionsStage.hpp</text>
 </a>
@@ -76,7 +76,7 @@
 <!-- Node16 -->
 <g id="Node000016" class="node">
 <title>Node16</title>
-<g id="a_Node000016"><a xlink:href="LanguageManager_8hpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000016"><a xlink:href="LanguageManager_8hpp.html" target="_top" xlink:title="Declaration of the LanguageManager singleton class for managing localization.">
 <polygon fill="white" stroke="#666666" points="1175.91,-453.5 1006.91,-453.5 1006.91,-434.5 1175.91,-434.5 1175.91,-453.5"/>
 <text text-anchor="middle" x="1091.41" y="-441.5" font-family="Helvetica,sans-Serif" font-size="10.00">../../lang/LanguageManager.hpp</text>
 </a>
@@ -94,7 +94,7 @@
 <!-- Node20 -->
 <g id="Node000020" class="node">
 <title>Node20</title>
-<g id="a_Node000020"><a xlink:href="OptionList_8hpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000020"><a xlink:href="OptionList_8hpp.html" target="_top" xlink:title="Declares the OptionList class used to manage and render UI options.">
 <polygon fill="white" stroke="#666666" points="752.91,-459 617.91,-459 617.91,-429 752.91,-429 752.91,-459"/>
 <text text-anchor="start" x="625.91" y="-447" font-family="Helvetica,sans-Serif" font-size="10.00">../../ui/options/OptionList</text>
 <text text-anchor="middle" x="685.41" y="-436" font-family="Helvetica,sans-Serif" font-size="10.00">/OptionList.hpp</text>
@@ -113,7 +113,7 @@
 <!-- Node70 -->
 <g id="Node000070" class="node">
 <title>Node70</title>
-<g id="a_Node000070"><a xlink:href="SingleOption_8hpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000070"><a xlink:href="SingleOption_8hpp.html" target="_top" xlink:title="Defines the SingleOption class for a simple selectable UI option.">
 <polygon fill="white" stroke="#666666" points="1151.41,-525 1003.41,-525 1003.41,-495 1151.41,-495 1151.41,-525"/>
 <text text-anchor="start" x="1011.41" y="-513" font-family="Helvetica,sans-Serif" font-size="10.00">../../ui/options/SingleOption</text>
 <text text-anchor="middle" x="1077.41" y="-502" font-family="Helvetica,sans-Serif" font-size="10.00">/SingleOption.hpp</text>
@@ -132,7 +132,7 @@
 <!-- Node71 -->
 <g id="Node000071" class="node">
 <title>Node71</title>
-<g id="a_Node000071"><a xlink:href="MultipleOption_8hpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000071"><a xlink:href="MultipleOption_8hpp.html" target="_top" xlink:title="Declares the MultipleOption class for handling multi&#45;choice UI elements.">
 <polygon fill="white" stroke="#666666" points="1327.41,-525 1169.41,-525 1169.41,-495 1327.41,-495 1327.41,-525"/>
 <text text-anchor="start" x="1177.41" y="-513" font-family="Helvetica,sans-Serif" font-size="10.00">../../ui/options/MultipleOption</text>
 <text text-anchor="middle" x="1248.41" y="-502" font-family="Helvetica,sans-Serif" font-size="10.00">/MultipleOption.hpp</text>
@@ -151,7 +151,7 @@
 <!-- Node72 -->
 <g id="Node000072" class="node">
 <title>Node72</title>
-<g id="a_Node000072"><a xlink:href="RangeOption_8hpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000072"><a xlink:href="RangeOption_8hpp.html" target="_top" xlink:title="Defines the RangeOption class for adjustable numeric UI options.">
 <polygon fill="white" stroke="#666666" points="1493.91,-525 1344.91,-525 1344.91,-495 1493.91,-495 1493.91,-525"/>
 <text text-anchor="start" x="1352.91" y="-513" font-family="Helvetica,sans-Serif" font-size="10.00">../../ui/options/RangeOption</text>
 <text text-anchor="middle" x="1419.41" y="-502" font-family="Helvetica,sans-Serif" font-size="10.00">/RangeOption.hpp</text>
@@ -170,7 +170,7 @@
 <!-- Node73 -->
 <g id="Node000073" class="node">
 <title>Node73</title>
-<g id="a_Node000073"><a xlink:href="ProgressBar_8hpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000073"><a xlink:href="ProgressBar_8hpp.html" target="_top" xlink:title="UI element representing a horizontal progress bar.">
 <polygon fill="white" stroke="#666666" points="1586.41,-453.5 1400.41,-453.5 1400.41,-434.5 1586.41,-434.5 1586.41,-453.5"/>
 <text text-anchor="middle" x="1493.41" y="-441.5" font-family="Helvetica,sans-Serif" font-size="10.00">../../ui/progressbar/ProgressBar.hpp</text>
 </a>
@@ -638,7 +638,7 @@
 <!-- Node22 -->
 <g id="Node000022" class="node">
 <title>Node22</title>
-<g id="a_Node000022"><a xlink:href="IOption_8hpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000022"><a xlink:href="IOption_8hpp.html" target="_top" xlink:title="Defines the IOption interface for menu options in the UI.">
 <polygon fill="white" stroke="#666666" points="1283.41,-387.5 1201.41,-387.5 1201.41,-368.5 1283.41,-368.5 1283.41,-387.5"/>
 <text text-anchor="middle" x="1242.41" y="-375.5" font-family="Helvetica,sans-Serif" font-size="10.00">../IOption.hpp</text>
 </a>

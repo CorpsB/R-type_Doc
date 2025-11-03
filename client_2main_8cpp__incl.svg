@@ -192,7 +192,7 @@ var sectionId = 'dynsection-0';
 <!-- Node84 -->
 <g id="Node000084" class="node">
 <title>Node84</title>
-<g id="a_Node000084"><a xlink:href="MenuStage_8hpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000084"><a xlink:href="MenuStage_8hpp.html" target="_top" xlink:title="Defines the MenuStage class responsible for displaying and managing the main menu interface.">
 <polygon fill="white" stroke="#666666" points="2922.5,-580 2735.5,-580 2735.5,-561 2922.5,-561 2922.5,-580"/>
 <text text-anchor="middle" x="2829" y="-568" font-family="Helvetica,sans-Serif" font-size="10.00">scenes/MenuStage/MenuStage.hpp</text>
 </a>
@@ -210,7 +210,7 @@ var sectionId = 'dynsection-0';
 <!-- Node90 -->
 <g id="Node000090" class="node">
 <title>Node90</title>
-<g id="a_Node000090"><a xlink:href="LanguageManager_8hpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000090"><a xlink:href="LanguageManager_8hpp.html" target="_top" xlink:title="Declaration of the LanguageManager singleton class for managing localization.">
 <polygon fill="white" stroke="#666666" points="3964,-453.5 3786,-453.5 3786,-434.5 3964,-434.5 3964,-453.5"/>
 <text text-anchor="middle" x="3875" y="-441.5" font-family="Helvetica,sans-Serif" font-size="10.00">../../../lang/LanguageManager.hpp</text>
 </a>
@@ -228,7 +228,7 @@ var sectionId = 'dynsection-0';
 <!-- Node95 -->
 <g id="Node000095" class="node">
 <title>Node95</title>
-<g id="a_Node000095"><a xlink:href="OptionsStage_8hpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000095"><a xlink:href="OptionsStage_8hpp.html" target="_top" xlink:title="Declares the OptionsStage class which manages the game options menu.">
 <polygon fill="white" stroke="#666666" points="3244,-580 3036,-580 3036,-561 3244,-561 3244,-580"/>
 <text text-anchor="middle" x="3140" y="-568" font-family="Helvetica,sans-Serif" font-size="10.00">scenes/OptionsStage/OptionsStage.hpp</text>
 </a>
@@ -246,7 +246,7 @@ var sectionId = 'dynsection-0';
 <!-- Node97 -->
 <g id="Node000097" class="node">
 <title>Node97</title>
-<g id="a_Node000097"><a xlink:href="GameStage_8hpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000097"><a xlink:href="GameStage_8hpp.html" target="_top" xlink:title="Declaration of the GameStage class managing the main gameplay stage.">
 <polygon fill="white" stroke="#666666" points="3595.5,-580 3404.5,-580 3404.5,-561 3595.5,-561 3595.5,-580"/>
 <text text-anchor="middle" x="3500" y="-568" font-family="Helvetica,sans-Serif" font-size="10.00">scenes/GameStage/GameStage.hpp</text>
 </a>
@@ -264,7 +264,7 @@ var sectionId = 'dynsection-0';
 <!-- Node99 -->
 <g id="Node000099" class="node">
 <title>Node99</title>
-<g id="a_Node000099"><a xlink:href="GameOverStage_8hpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000099"><a xlink:href="GameOverStage_8hpp.html" target="_top" xlink:title="Declaration of the GameOverStage class for displaying the game over screen.">
 <polygon fill="white" stroke="#666666" points="3852,-580 3614,-580 3614,-561 3852,-561 3852,-580"/>
 <text text-anchor="middle" x="3733" y="-568" font-family="Helvetica,sans-Serif" font-size="10.00">scenes/GameOverStage/GameOverStage.hpp</text>
 </a>
@@ -3018,7 +3018,7 @@ var sectionId = 'dynsection-0';
 <!-- Node87 -->
 <g id="Node000087" class="node">
 <title>Node87</title>
-<g id="a_Node000087"><a xlink:href="OptionList_8hpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000087"><a xlink:href="OptionList_8hpp.html" target="_top" xlink:title="Declares the OptionList class used to manage and render UI options.">
 <polygon fill="white" stroke="#666666" points="2299.5,-459 2164.5,-459 2164.5,-429 2299.5,-429 2299.5,-459"/>
 <text text-anchor="start" x="2172.5" y="-447" font-family="Helvetica,sans-Serif" font-size="10.00">../../ui/options/OptionList</text>
 <text text-anchor="middle" x="2232" y="-436" font-family="Helvetica,sans-Serif" font-size="10.00">/OptionList.hpp</text>
@@ -3037,7 +3037,7 @@ var sectionId = 'dynsection-0';
 <!-- Node89 -->
 <g id="Node000089" class="node">
 <title>Node89</title>
-<g id="a_Node000089"><a xlink:href="SingleOption_8hpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000089"><a xlink:href="SingleOption_8hpp.html" target="_top" xlink:title="Defines the SingleOption class for a simple selectable UI option.">
 <polygon fill="white" stroke="#666666" points="2732,-525 2584,-525 2584,-495 2732,-495 2732,-525"/>
 <text text-anchor="start" x="2592" y="-513" font-family="Helvetica,sans-Serif" font-size="10.00">../../ui/options/SingleOption</text>
 <text text-anchor="middle" x="2658" y="-502" font-family="Helvetica,sans-Serif" font-size="10.00">/SingleOption.hpp</text>
@@ -3056,7 +3056,7 @@ var sectionId = 'dynsection-0';
 <!-- Node93 -->
 <g id="Node000093" class="node">
 <title>Node93</title>
-<g id="a_Node000093"><a xlink:href="MultipleOption_8hpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000093"><a xlink:href="MultipleOption_8hpp.html" target="_top" xlink:title="Declares the MultipleOption class for handling multi&#45;choice UI elements.">
 <polygon fill="white" stroke="#666666" points="2908,-525 2750,-525 2750,-495 2908,-495 2908,-525"/>
 <text text-anchor="start" x="2758" y="-513" font-family="Helvetica,sans-Serif" font-size="10.00">../../ui/options/MultipleOption</text>
 <text text-anchor="middle" x="2829" y="-502" font-family="Helvetica,sans-Serif" font-size="10.00">/MultipleOption.hpp</text>
@@ -3075,7 +3075,7 @@ var sectionId = 'dynsection-0';
 <!-- Node94 -->
 <g id="Node000094" class="node">
 <title>Node94</title>
-<g id="a_Node000094"><a xlink:href="RangeOption_8hpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000094"><a xlink:href="RangeOption_8hpp.html" target="_top" xlink:title="Defines the RangeOption class for adjustable numeric UI options.">
 <polygon fill="white" stroke="#666666" points="3074.5,-525 2925.5,-525 2925.5,-495 3074.5,-495 3074.5,-525"/>
 <text text-anchor="start" x="2933.5" y="-513" font-family="Helvetica,sans-Serif" font-size="10.00">../../ui/options/RangeOption</text>
 <text text-anchor="middle" x="3000" y="-502" font-family="Helvetica,sans-Serif" font-size="10.00">/RangeOption.hpp</text>
@@ -3184,7 +3184,7 @@ var sectionId = 'dynsection-0';
 <!-- Node88 -->
 <g id="Node000088" class="node">
 <title>Node88</title>
-<g id="a_Node000088"><a xlink:href="IOption_8hpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000088"><a xlink:href="IOption_8hpp.html" target="_top" xlink:title="Defines the IOption interface for menu options in the UI.">
 <polygon fill="white" stroke="#666666" points="2369,-387.5 2287,-387.5 2287,-368.5 2369,-368.5 2369,-387.5"/>
 <text text-anchor="middle" x="2328" y="-375.5" font-family="Helvetica,sans-Serif" font-size="10.00">../IOption.hpp</text>
 </a>
@@ -3436,7 +3436,7 @@ var sectionId = 'dynsection-0';
 <!-- Node96 -->
 <g id="Node000096" class="node">
 <title>Node96</title>
-<g id="a_Node000096"><a xlink:href="ProgressBar_8hpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000096"><a xlink:href="ProgressBar_8hpp.html" target="_top" xlink:title="UI element representing a horizontal progress bar.">
 <polygon fill="white" stroke="#666666" points="3662,-519.5 3476,-519.5 3476,-500.5 3662,-500.5 3662,-519.5"/>
 <text text-anchor="middle" x="3569" y="-507.5" font-family="Helvetica,sans-Serif" font-size="10.00">../../ui/progressbar/ProgressBar.hpp</text>
 </a>
@@ -3499,7 +3499,7 @@ var sectionId = 'dynsection-0';
 <!-- Node98 -->
 <g id="Node000098" class="node">
 <title>Node98</title>
-<g id="a_Node000098"><a xlink:href="Text_8hpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000098"><a xlink:href="Text_8hpp.html" target="_top" xlink:title="UI text rendering element for the R&#45;Type client interface.">
 <polygon fill="white" stroke="#666666" points="3790,-519.5 3680,-519.5 3680,-500.5 3790,-500.5 3790,-519.5"/>
 <text text-anchor="middle" x="3735" y="-507.5" font-family="Helvetica,sans-Serif" font-size="10.00">../../ui/text/Text.hpp</text>
 </a>

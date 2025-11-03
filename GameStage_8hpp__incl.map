@@ -1,12 +1,12 @@
 <map id="GameStage.hpp" name="GameStage.hpp">
-<area shape="rect" id="Node000001" title=" " alt="" coords="3745,5,3872,31"/>
+<area shape="rect" id="Node000001" title="Declaration of the GameStage class managing the main gameplay stage." alt="" coords="3745,5,3872,31"/>
 <area shape="rect" id="Node000002" href="$AStage_8hpp.html" title=" " alt="" coords="6268,489,6455,529"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="3872,18,4703,30,6038,58,6711,76,7291,98,7703,122,7824,136,7859,142,7877,150,7892,170,7900,190,7899,209,7891,228,7876,245,7855,262,7795,294,7716,323,7620,350,7510,375,7390,397,7134,436,6877,466,6469,503,6469,498,6876,461,7133,431,7389,392,7509,370,7618,345,7714,318,7793,289,7852,258,7872,242,7886,225,7894,208,7894,191,7888,173,7873,154,7858,148,7823,141,7703,128,7291,103,6711,82,6038,63,4703,36,3872,23"/>
-<area shape="rect" id="Node000013" href="$LanguageManager_8hpp.html" title=" " alt="" coords="10,321,236,346"/>
+<area shape="rect" id="Node000013" href="$LanguageManager_8hpp.html" title="Declaration of the LanguageManager singleton class for managing localization." alt="" coords="10,321,236,346"/>
 <area shape="poly" id="edge19_Node000001_Node000013" title=" " alt="" coords="3745,23,3052,41,2548,59,2029,81,1487,113,946,155,878,157,814,155,694,140,585,118,484,99,436,94,389,92,343,95,297,105,252,122,207,147,161,182,115,227,105,245,103,266,107,287,114,307,109,309,102,289,98,266,100,243,110,224,157,178,204,142,250,117,296,100,342,90,389,87,436,88,485,94,586,113,695,134,814,150,878,152,946,149,1487,108,2028,76,2547,53,3052,36,3745,18"/>
-<area shape="rect" id="Node000018" href="$ProgressBar_8hpp.html" title=" " alt="" coords="7615,152,7863,177"/>
+<area shape="rect" id="Node000018" href="$ProgressBar_8hpp.html" title="UI element representing a horizontal progress bar." alt="" coords="7615,152,7863,177"/>
 <area shape="poly" id="edge26_Node000001_Node000018" title=" " alt="" coords="3872,19,7601,156,7601,161,3872,24"/>
-<area shape="rect" id="Node000068" href="$Text_8hpp.html" title=" " alt="" coords="124,233,271,258"/>
+<area shape="rect" id="Node000068" href="$Text_8hpp.html" title="UI text rendering element for the R&#45;Type client interface." alt="" coords="124,233,271,258"/>
 <area shape="poly" id="edge172_Node000001_Node000068" title=" " alt="" coords="3745,24,3261,43,2429,82,1932,110,1405,144,869,183,343,228,285,234,285,229,343,223,869,177,1405,138,1931,105,2429,77,3261,38,3745,19"/>
 <area shape="rect" id="Node000069" href="$asge_8hpp.html" title=" " alt="" coords="3734,79,3883,104"/>
 <area shape="poly" id="edge175_Node000001_Node000069" title=" " alt="" coords="3811,31,3811,65,3806,65,3806,31"/>

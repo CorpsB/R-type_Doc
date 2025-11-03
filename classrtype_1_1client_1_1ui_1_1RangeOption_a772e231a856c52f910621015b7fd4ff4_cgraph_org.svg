@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title=" ">
+<g id="a_Node000001"><a xlink:title="Draws the range option to the screen.">
 <polygon fill="#999999" stroke="#666666" points="189,-134 0,-134 0,-115 189,-115 189,-134"/>
 <text text-anchor="middle" x="94.5" y="-122" font-family="Helvetica,sans-Serif" font-size="10.00">rtype::client::ui::RangeOption::draw</text>
 </a>
@@ -58,7 +58,7 @@
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a xlink:href="classrtype_1_1client_1_1lang_1_1LanguageManager.html#ad68186a2f5319362e50262fd005d663a" target="_top" xlink:title=" ">
+<g id="a_Node000004"><a xlink:href="classrtype_1_1client_1_1lang_1_1LanguageManager.html#ad68186a2f5319362e50262fd005d663a" target="_top" xlink:title="Provides access to the singleton instance of LanguageManager.">
 <polygon fill="white" stroke="#666666" points="423,-163.5 225,-163.5 225,-133.5 423,-133.5 423,-163.5"/>
 <text text-anchor="start" x="233" y="-151.5" font-family="Helvetica,sans-Serif" font-size="10.00">rtype::client::lang::LanguageManager</text>
 <text text-anchor="middle" x="324" y="-140.5" font-family="Helvetica,sans-Serif" font-size="10.00">::getInstance</text>
@@ -77,7 +77,7 @@
 <!-- Node5 -->
 <g id="Node000005" class="node">
 <title>Node5</title>
-<g id="a_Node000005"><a xlink:href="classrtype_1_1client_1_1lang_1_1LanguageManager.html#a00f8cc6c863e04f653bb1232d7012564" target="_top" xlink:title=" ">
+<g id="a_Node000005"><a xlink:href="classrtype_1_1client_1_1lang_1_1LanguageManager.html#a00f8cc6c863e04f653bb1232d7012564" target="_top" xlink:title="Retrieves a localized string by key.">
 <polygon fill="white" stroke="#666666" points="423,-115.5 225,-115.5 225,-85.5 423,-85.5 423,-115.5"/>
 <text text-anchor="start" x="233" y="-103.5" font-family="Helvetica,sans-Serif" font-size="10.00">rtype::client::lang::LanguageManager</text>
 <text text-anchor="middle" x="324" y="-92.5" font-family="Helvetica,sans-Serif" font-size="10.00">::getString</text>

@@ -103,6 +103,9 @@ $(document).ready(function(){initNavTree('MultipleOption_8hpp.html',''); initRes
   <div class="headertitle"><div class="title">MultipleOption.hpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Declares the MultipleOption class for handling multi-choice UI elements.  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="IOption_8hpp_source.html">../IOption.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="LanguageManager_8hpp_source.html">../../../lang/LanguageManager.hpp</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -125,8 +128,10 @@ $(document).ready(function(){initNavTree('MultipleOption_8hpp.html',''); initRes
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtype_1_1client_1_1ui_1_1MultipleOption.html">rtype::client::ui::MultipleOption</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a UI option with multiple selectable choices.  <a href="classrtype_1_1client_1_1ui_1_1MultipleOption.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:structrtype_1_1client_1_1ui_1_1MultipleOption_1_1Choice" id="r_structrtype_1_1client_1_1ui_1_1MultipleOption_1_1Choice"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtype_1_1client_1_1ui_1_1MultipleOption.html#structrtype_1_1client_1_1ui_1_1MultipleOption_1_1Choice">rtype::client::ui::MultipleOption::Choice</a></td></tr>
+<tr class="memdesc:structrtype_1_1client_1_1ui_1_1MultipleOption_1_1Choice"><td class="mdescLeft">&#160;</td><td class="mdescRight">Describes a selectable choice within a <a class="el" href="classrtype_1_1client_1_1ui_1_1MultipleOption.html" title="Represents a UI option with multiple selectable choices.">MultipleOption</a>.  <a href="classrtype_1_1client_1_1ui_1_1MultipleOption.html#structrtype_1_1client_1_1ui_1_1MultipleOption_1_1Choice">More...</a><br /></td></tr>
 <tr class="separator:structrtype_1_1client_1_1ui_1_1MultipleOption_1_1Choice"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
@@ -138,7 +143,12 @@ Namespaces</h2></td></tr>
 <tr class="memitem:namespacertype_1_1client_1_1ui" id="r_namespacertype_1_1client_1_1ui"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacertype_1_1client_1_1ui.html">rtype::client::ui</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/><h2 class="groupheader">Class Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Declares the MultipleOption class for handling multi-choice UI elements. </p>
+<dl class="section since"><dt>Since</dt><dd>0.1 </dd></dl>
+
+<p class="definition">Definition in file <a class="el" href="MultipleOption_8hpp_source.html">MultipleOption.hpp</a>.</p>
+</div><hr/><h2 class="groupheader">Class Documentation</h2>
 <a name="structrtype_1_1client_1_1ui_1_1MultipleOption_1_1Choice" id="structrtype_1_1client_1_1ui_1_1MultipleOption_1_1Choice"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#structrtype_1_1client_1_1ui_1_1MultipleOption_1_1Choice">&#9670;&#160;</a></span>rtype::client::ui::MultipleOption::Choice</h2>
 
@@ -150,8 +160,9 @@ Namespaces</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="MultipleOption_8hpp_source.html#l00018">18</a> of file <a class="el" href="MultipleOption_8hpp_source.html">MultipleOption.hpp</a>.</p>
+<div class="textblock"><p>Describes a selectable choice within a <a class="el" href="classrtype_1_1client_1_1ui_1_1MultipleOption.html" title="Represents a UI option with multiple selectable choices.">MultipleOption</a>. </p>
+
+<p class="definition">Definition at line <a class="el" href="MultipleOption_8hpp_source.html#l00036">36</a> of file <a class="el" href="MultipleOption_8hpp_source.html">MultipleOption.hpp</a>.</p>
 </div><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Collaboration diagram for rtype::client::ui::MultipleOption::Choice:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -166,19 +177,19 @@ Namespaces</h2></td></tr>
 <td class="fieldname">
 callback</td>
 <td class="fielddoc">
-</td></tr>
+Function executed when the choice is selected. </td></tr>
 <tr><td class="fieldtype">
 <a id="a1bb83d9fc863d7dc16cd151d1e38e103" name="a1bb83d9fc863d7dc16cd151d1e38e103"></a>string</td>
 <td class="fieldname">
 tag</td>
 <td class="fielddoc">
-</td></tr>
+Identifier for the choice. </td></tr>
 <tr><td class="fieldtype">
 <a id="a70feb956cabba91a5a95551d8ecdb64f" name="a70feb956cabba91a5a95551d8ecdb64f"></a>string</td>
 <td class="fieldname">
 text</td>
 <td class="fielddoc">
-</td></tr>
+Displayed label for the choice. </td></tr>
 </table>
 
 </div>

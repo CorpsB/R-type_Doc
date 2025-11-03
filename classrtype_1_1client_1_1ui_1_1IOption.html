@@ -104,6 +104,9 @@ $(document).ready(function(){initNavTree('classrtype_1_1client_1_1ui_1_1IOption.
 </div><!--header-->
 <div class="contents">
 
+<p>Interface representing a selectable option element in the UI.  
+ <a href="classrtype_1_1client_1_1ui_1_1IOption.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="IOption_8hpp_source.html">IOption.hpp</a>&gt;</code></p>
 <div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for rtype::client::ui::IOption:</div>
@@ -125,13 +128,17 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad6cd61a2162cd45f67a45c62ce4fbbb4" id="r_ad6cd61a2162cd45f67a45c62ce4fbbb4"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtype_1_1client_1_1ui_1_1IOption.html#ad6cd61a2162cd45f67a45c62ce4fbbb4">~IOption</a> ()=default</td></tr>
 <tr class="separator:ad6cd61a2162cd45f67a45c62ce4fbbb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7f8b78535cbf20e2f010e2cb67a727c7" id="r_a7f8b78535cbf20e2f010e2cb67a727c7"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtype_1_1client_1_1ui_1_1IOption.html#a7f8b78535cbf20e2f010e2cb67a727c7">update</a> (<a class="el" href="structasge_1_1Services.html">asge::Services</a> &amp;services, bool selected, double dt)=0</td></tr>
+<tr class="memdesc:a7f8b78535cbf20e2f010e2cb67a727c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the option's logic.  <br /></td></tr>
 <tr class="separator:a7f8b78535cbf20e2f010e2cb67a727c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1e75f13a8581a83f47e3cd9893a9e4f2" id="r_a1e75f13a8581a83f47e3cd9893a9e4f2"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtype_1_1client_1_1ui_1_1IOption.html#a1e75f13a8581a83f47e3cd9893a9e4f2">draw</a> (<a class="el" href="structasge_1_1Services.html">asge::Services</a> &amp;services, bool selected) const =0</td></tr>
+<tr class="memdesc:a1e75f13a8581a83f47e3cd9893a9e4f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws the option to the screen.  <br /></td></tr>
 <tr class="separator:a1e75f13a8581a83f47e3cd9893a9e4f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="IOption_8hpp_source.html#l00017">17</a> of file <a class="el" href="IOption_8hpp_source.html">IOption.hpp</a>.</p>
+<div class="textblock"><p>Interface representing a selectable option element in the UI. </p>
+<p>Provides a base interface for UI menu options that can be updated and drawn. </p>
+
+<p class="definition">Definition at line <a class="el" href="IOption_8hpp_source.html#l00030">30</a> of file <a class="el" href="IOption_8hpp_source.html">IOption.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ad6cd61a2162cd45f67a45c62ce4fbbb4" name="ad6cd61a2162cd45f67a45c62ce4fbbb4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad6cd61a2162cd45f67a45c62ce4fbbb4">&#9670;&#160;</a></span>~IOption()</h2>
@@ -193,6 +200,15 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Draws the option to the screen. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">services</td><td>Reference to ASGE services. </td></tr>
+    <tr><td class="paramname">selected</td><td>Whether the option is currently selected. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 <p>Implemented in <a class="el" href="classrtype_1_1client_1_1ui_1_1MultipleOption.html#ae13d6a39afa167bf0cf93d07e8484c11">rtype::client::ui::MultipleOption</a>, <a class="el" href="classrtype_1_1client_1_1ui_1_1RangeOption.html#a772e231a856c52f910621015b7fd4ff4">rtype::client::ui::RangeOption</a>, and <a class="el" href="classrtype_1_1client_1_1ui_1_1SingleOption.html#af6bfa788c4e591d5e8ca4ed31d0776cf">rtype::client::ui::SingleOption</a>.</p>
 
 </div>
@@ -236,6 +252,16 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Updates the option's logic. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">services</td><td>Reference to ASGE services. </td></tr>
+    <tr><td class="paramname">selected</td><td>Whether the option is currently selected. </td></tr>
+    <tr><td class="paramname">dt</td><td>Delta time since last update. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p>Implemented in <a class="el" href="classrtype_1_1client_1_1ui_1_1MultipleOption.html#aedfd2d8c73a581b395125a6bf719848a">rtype::client::ui::MultipleOption</a>, <a class="el" href="classrtype_1_1client_1_1ui_1_1RangeOption.html#a34414672876b5b9d5d1ba4211a368dc4">rtype::client::ui::RangeOption</a>, and <a class="el" href="classrtype_1_1client_1_1ui_1_1SingleOption.html#aad3cc0bd7506d4034ee4031b0924c496">rtype::client::ui::SingleOption</a>.</p>
 
