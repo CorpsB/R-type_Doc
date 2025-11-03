@@ -54,7 +54,7 @@ var searchData=
   ['rendersystem_51',['rendersystem',['../classasge_1_1world_1_1RenderSystem.html#a470c2b08b74eabf2f254aeb389f15dde',1,'asge::world::RenderSystem::RenderSystem()'],['../classasge_1_1world_1_1RenderSystem.html',1,'asge::world::RenderSystem']]],
   ['rendersystem_2ecpp_52',['RenderSystem.cpp',['../RenderSystem_8cpp.html',1,'']]],
   ['rendersystem_2ehpp_53',['RenderSystem.hpp',['../RenderSystem_8hpp.html',1,'']]],
-  ['replace_54',['replace',['../classasge_1_1scene_1_1SceneManager.html#a7c27c4de62ac57bc8574dc9c41b105f9',1,'asge::scene::SceneManager::replace()'],['../classasge_1_1scene_1_1IScene.html#a9092442bf9a61418f5678258601e8eca',1,'asge::scene::IScene::replace()'],['../classasge_1_1scene_1_1SceneManager.html#a6de430ad97d835bba550736fb6c9dc1da0ebe6df8a3ac338e0512acc741823fdb',1,'asge::scene::SceneManager::Replace']]],
+  ['replace_54',['replace',['../classasge_1_1scene_1_1SceneManager.html#a6de430ad97d835bba550736fb6c9dc1da0ebe6df8a3ac338e0512acc741823fdb',1,'asge::scene::SceneManager::Replace'],['../classasge_1_1scene_1_1SceneManager.html#a7c27c4de62ac57bc8574dc9c41b105f9',1,'asge::scene::SceneManager::replace(ScenePtr scene) override'],['../classasge_1_1scene_1_1IScene.html#a9092442bf9a61418f5678258601e8eca',1,'asge::scene::IScene::replace()']]],
   ['replaceinsidescreen_55',['replaceInsideScreen',['../classasge_1_1world_1_1systems_1_1PlayerSystem.html#a267382b40e6f1685024f0c6e4b25ca0a',1,'asge::world::systems::PlayerSystem']]],
   ['replacenew_56',['replaceNew',['../classasge_1_1scene_1_1IScene.html#a848c0b507b6646bb6fa96e20a766c345',1,'asge::scene::IScene']]],
   ['reserved_57',['reserved',['../namespaceasge_1_1network.html#aadea7d84d2227aa8b515dbb68b4a4065',1,'asge::network::NetHeader']]],

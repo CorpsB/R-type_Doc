@@ -18,6 +18,7 @@ var hierarchy =
     [ "asge::components::health_attr_t", "namespaceasge_1_1components.html#structasge_1_1components_1_1health__attr__t", null ],
     [ "asge::components::hitbox_attr_t", "namespaceasge_1_1components.html#structasge_1_1components_1_1hitbox__attr__t", null ],
     [ "asge::components::input_attr_t", "namespaceasge_1_1components.html#structasge_1_1components_1_1input__attr__t", null ],
+    [ "asge::components::master_attr_t", "namespaceasge_1_1components.html#structasge_1_1components_1_1master__attr__t", null ],
     [ "asge::components::name_attr_t", "namespaceasge_1_1components.html#structasge_1_1components_1_1name__attr__t", null ],
     [ "asge::components::position_attr_t", "namespaceasge_1_1components.html#structasge_1_1components_1_1position__attr__t", null ],
     [ "asge::components::scene_attr_t", "namespaceasge_1_1components.html#structasge_1_1components_1_1scene__attr__t", null ],

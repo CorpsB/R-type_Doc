@@ -50,5 +50,7 @@ var structasge_1_1Services =
     [ "_storage", "structasge_1_1Services.html#a2e9248d21928523d565126cc257f40ea", null ],
     [ "_timer", "structasge_1_1Services.html#a1f556505d7f17a643ef8a79b8d2837e0", null ],
     [ "_world", "structasge_1_1Services.html#a6e57d1858d2361cfb32c9ae3f3f2a79b", null ],
+    [ "last_max_score", "structasge_1_1Services.html#af01b6e69ee6fc7baa4b5f9a55d480d0d", null ],
+    [ "last_score", "structasge_1_1Services.html#a23c9d8e4e3713dc2ce17a62901eed4dc", null ],
     [ "player_id", "structasge_1_1Services.html#a808e50006fe3671f1d026f1a275f17fe", null ]
 ];

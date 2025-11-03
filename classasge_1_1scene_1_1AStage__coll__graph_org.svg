@@ -96,28 +96,34 @@
 <g id="Node000003" class="node">
 <title>Node3</title>
 <g id="a_Node000003"><a xlink:href="classasge_1_1scene_1_1ui_1_1UIList.html" target="_top" xlink:title="A UI element that acts as a container for other UI elements.">
-<polygon fill="white" stroke="transparent" points="467.5,-459.5 285.5,-459.5 285.5,-299.5 467.5,-299.5 467.5,-459.5"/>
-<text text-anchor="start" x="323" y="-447.5" font-family="Helvetica,sans-Serif" font-size="10.00">asge::scene::ui::UIList</text>
-<text text-anchor="start" x="292" y="-432.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="302.5" y="-432.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::unordered_map&lt; std::string,</text>
-<text text-anchor="start" x="302.5" y="-421.5" font-family="Helvetica,sans-Serif" font-size="10.00"> std::unique_ptr&lt; UIElement &gt;</text>
-<text text-anchor="start" x="302.5" y="-410.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &gt; _elements</text>
-<text text-anchor="start" x="289.5" y="-395.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="302.5" y="-395.5" font-family="Helvetica,sans-Serif" font-size="10.00">UIList()</text>
+<polygon fill="white" stroke="transparent" points="467.5,-485.5 285.5,-485.5 285.5,-273.5 467.5,-273.5 467.5,-485.5"/>
+<text text-anchor="start" x="323" y="-473.5" font-family="Helvetica,sans-Serif" font-size="10.00">asge::scene::ui::UIList</text>
+<text text-anchor="start" x="292" y="-458.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="302.5" y="-458.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::unordered_map&lt; std::string,</text>
+<text text-anchor="start" x="302.5" y="-447.5" font-family="Helvetica,sans-Serif" font-size="10.00"> std::unique_ptr&lt; UIElement &gt;</text>
+<text text-anchor="start" x="302.5" y="-436.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &gt; _elements</text>
+<text text-anchor="start" x="289.5" y="-421.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="302.5" y="-421.5" font-family="Helvetica,sans-Serif" font-size="10.00">UIList()</text>
+<text text-anchor="start" x="289.5" y="-406.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="302.5" y="-406.5" font-family="Helvetica,sans-Serif" font-size="10.00">void update(Services &amp;services,</text>
+<text text-anchor="start" x="302.5" y="-395.5" font-family="Helvetica,sans-Serif" font-size="10.00"> double dt) override</text>
 <text text-anchor="start" x="289.5" y="-380.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="302.5" y="-380.5" font-family="Helvetica,sans-Serif" font-size="10.00">void update(Services &amp;services,</text>
-<text text-anchor="start" x="302.5" y="-369.5" font-family="Helvetica,sans-Serif" font-size="10.00"> double dt) override</text>
+<text text-anchor="start" x="302.5" y="-380.5" font-family="Helvetica,sans-Serif" font-size="10.00">void draw(Services &amp;services)</text>
+<text text-anchor="start" x="302.5" y="-369.5" font-family="Helvetica,sans-Serif" font-size="10.00"> const override</text>
 <text text-anchor="start" x="289.5" y="-354.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="302.5" y="-354.5" font-family="Helvetica,sans-Serif" font-size="10.00">void draw(Services &amp;services)</text>
-<text text-anchor="start" x="302.5" y="-343.5" font-family="Helvetica,sans-Serif" font-size="10.00"> const override</text>
-<text text-anchor="start" x="289.5" y="-328.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="302.5" y="-328.5" font-family="Helvetica,sans-Serif" font-size="10.00">void addUIElement(const std</text>
-<text text-anchor="start" x="302.5" y="-317.5" font-family="Helvetica,sans-Serif" font-size="10.00">::string &amp;key, std::unique_ptr</text>
-<text text-anchor="start" x="302.5" y="-306.5" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; UIElement &gt; element)</text>
-<polygon fill="#666666" stroke="#666666" points="285.5,-442.5 285.5,-442.5 467.5,-442.5 467.5,-442.5 285.5,-442.5"/>
-<polygon fill="#666666" stroke="#666666" points="285.5,-405.5 285.5,-405.5 300.5,-405.5 300.5,-405.5 285.5,-405.5"/>
-<polygon fill="#666666" stroke="#666666" points="300.5,-405.5 300.5,-405.5 467.5,-405.5 467.5,-405.5 300.5,-405.5"/>
-<polygon fill="none" stroke="#666666" points="285.5,-299.5 285.5,-459.5 467.5,-459.5 467.5,-299.5 285.5,-299.5"/>
+<text text-anchor="start" x="302.5" y="-354.5" font-family="Helvetica,sans-Serif" font-size="10.00">void addUIElement(const std</text>
+<text text-anchor="start" x="302.5" y="-343.5" font-family="Helvetica,sans-Serif" font-size="10.00">::string &amp;key, std::unique_ptr</text>
+<text text-anchor="start" x="302.5" y="-332.5" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; UIElement &gt; element)</text>
+<text text-anchor="start" x="289.5" y="-317.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="302.5" y="-317.5" font-family="Helvetica,sans-Serif" font-size="10.00">UIElement * getUIElement(const</text>
+<text text-anchor="start" x="302.5" y="-306.5" font-family="Helvetica,sans-Serif" font-size="10.00"> std::string &amp;key)</text>
+<text text-anchor="start" x="289.5" y="-291.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="302.5" y="-291.5" font-family="Helvetica,sans-Serif" font-size="10.00">const UIElement * getUIElement</text>
+<text text-anchor="start" x="302.5" y="-280.5" font-family="Helvetica,sans-Serif" font-size="10.00">(const std::string &amp;key) const</text>
+<polygon fill="#666666" stroke="#666666" points="285.5,-468.5 285.5,-468.5 467.5,-468.5 467.5,-468.5 285.5,-468.5"/>
+<polygon fill="#666666" stroke="#666666" points="285.5,-431.5 285.5,-431.5 300.5,-431.5 300.5,-431.5 285.5,-431.5"/>
+<polygon fill="#666666" stroke="#666666" points="300.5,-431.5 300.5,-431.5 467.5,-431.5 467.5,-431.5 300.5,-431.5"/>
+<polygon fill="none" stroke="#666666" points="285.5,-273.5 285.5,-485.5 467.5,-485.5 467.5,-273.5 285.5,-273.5"/>
 </a>
 </g>
 </g>
@@ -125,7 +131,7 @@
 <g id="edge2_Node000001_Node000003" class="edge">
 <title>Node3&#45;&gt;Node1</title>
 <g id="a_edge2_Node000001_Node000003"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M318.79,-299.38C305.18,-281.3 290.54,-262.32 276.5,-245 266.5,-232.66 255.84,-219.91 245.1,-207.32"/>
+<path fill="none" stroke="#63b8ff" d="M298.92,-273.34C291.44,-263.68 283.88,-254.11 276.5,-245 266.5,-232.66 255.84,-219.91 245.1,-207.32"/>
 <polygon fill="none" stroke="#63b8ff" points="245.09,-207.31 238.15,-205.35 237.29,-198.2 244.23,-200.15 245.09,-207.31"/>
 </a>
 </g>
@@ -156,7 +162,7 @@
 <g id="edge3_Node000003_Node000004" class="edge">
 <title>Node4&#45;&gt;Node3</title>
 <g id="a_edge3_Node000003_Node000004"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M376.5,-540.81C376.5,-515.84 376.5,-486.48 376.5,-459.75"/>
+<path fill="none" stroke="#63b8ff" d="M376.5,-540.55C376.5,-523.56 376.5,-504.54 376.5,-485.71"/>
 <polygon fill="none" stroke="#63b8ff" points="373,-540.85 376.5,-550.85 380,-540.85 373,-540.85"/>
 </a>
 </g>

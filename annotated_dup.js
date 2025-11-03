@@ -19,6 +19,7 @@ var annotated_dup =
         [ "health_attr_t", "namespaceasge_1_1components.html#structasge_1_1components_1_1health__attr__t", "namespaceasge_1_1components_structasge_1_1components_1_1health__attr__t_dup" ],
         [ "hitbox_attr_t", "namespaceasge_1_1components.html#structasge_1_1components_1_1hitbox__attr__t", "namespaceasge_1_1components_structasge_1_1components_1_1hitbox__attr__t_dup" ],
         [ "input_attr_t", "namespaceasge_1_1components.html#structasge_1_1components_1_1input__attr__t", "namespaceasge_1_1components_structasge_1_1components_1_1input__attr__t_dup" ],
+        [ "master_attr_t", "namespaceasge_1_1components.html#structasge_1_1components_1_1master__attr__t", "namespaceasge_1_1components_structasge_1_1components_1_1master__attr__t_dup" ],
         [ "name_attr_t", "namespaceasge_1_1components.html#structasge_1_1components_1_1name__attr__t", "namespaceasge_1_1components_structasge_1_1components_1_1name__attr__t_dup" ],
         [ "position_attr_t", "namespaceasge_1_1components.html#structasge_1_1components_1_1position__attr__t", "namespaceasge_1_1components_structasge_1_1components_1_1position__attr__t_dup" ],
         [ "scene_attr_t", "namespaceasge_1_1components.html#structasge_1_1components_1_1scene__attr__t", "namespaceasge_1_1components_structasge_1_1components_1_1scene__attr__t_dup" ],

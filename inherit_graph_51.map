@@ -1,3 +1,7 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="Node000000" href="$namespaceasge_1_1renderer.html#structasge_1_1renderer_1_1Rect" title="Axis&#45;aligned rectangle expressed in pixels." alt="" coords="5,5,159,31"/>
+<area shape="rect" id="Node000000" href="$classasge_1_1renderer_1_1IRenderer.html" title="Minimal public rendering interface for the engine/game." alt="" coords="5,31,192,56"/>
+<area shape="rect" id="Node000001" href="$classasge_1_1renderer_1_1NullRenderer.html" title="Rendu no&#45;op pour serveur/headless/tests." alt="" coords="249,5,458,31"/>
+<area shape="poly" id="edge17_Node000000_Node000001" title=" " alt="" coords="205,30,248,26,249,31,206,35"/>
+<area shape="rect" id="Node000002" href="$classasge_1_1renderer_1_1RenderManager.html" title="Concrete implementation of IRenderer using a Raylib&#45;based RenderDriver." alt="" coords="240,55,467,80"/>
+<area shape="poly" id="edge18_Node000000_Node000002" title=" " alt="" coords="206,51,240,54,239,59,205,56"/>
 </map>

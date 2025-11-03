@@ -296,115 +296,125 @@ $(document).ready(function(){initNavTree('EntityBuilder_8cpp_source.html',''); i
 <div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
 <div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>}</div>
 </div>
-<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span><span class="comment"></span> </div>
-<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span><span class="comment">/**</span></div>
-<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span><span class="comment"> * @copydoc asge::script::EntityFactory::EntityBuilder::build(const std::optional&lt;uint32_t&gt; &amp;)</span></div>
-<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span><span class="comment"> */</span></div>
-<div class="foldopen" id="foldopen00174" data-start="{" data-end="}">
-<div class="line"><a id="l00174" name="l00174"></a><span class="lineno"><a class="line" href="classasge_1_1script_1_1EntityFactory_1_1EntityBuilder.html#aca48706aff2d5a0677b7a9e300fc644b">  174</a></span>uint32_t <a class="code hl_function" href="classasge_1_1script_1_1EntityFactory_1_1EntityBuilder.html#aca48706aff2d5a0677b7a9e300fc644b">asge::script::EntityFactory::EntityBuilder::build</a>(</div>
-<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>    <span class="keyword">const</span> std::optional&lt;uint32_t&gt; &amp;entity_id)</div>
-<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>{</div>
-<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>    <span class="keywordflow">if</span> (_isBuilt) {</div>
-<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>        <span class="keywordflow">return</span> _entityId;</div>
-<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>    }</div>
-<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span> </div>
-<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>    <span class="keywordflow">if</span> (!_services._world) {</div>
-<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>        <span class="keywordflow">if</span> (_services._debug) {</div>
-<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>            _services.debug().log(</div>
-<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>                <a class="code hl_enumvalue" href="namespaceasge_1_1debug.html#ab40068abfc51bf2673b5297cb3d5bf3ba0eaadb4fcb48a0a0ed7bc9868be9fbaa">asge::debug::Level::Warning</a>,</div>
-<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>                <span class="stringliteral">&quot;EntityBuilder::build: world service missing.&quot;</span>);</div>
-<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>        }</div>
-<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="namespaceasge_1_1world.html#a0364b76e70c15674871e77829b636c7c">asge::world::INVALID_ID</a>;</div>
-<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>    }</div>
-<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span> </div>
-<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>    <span class="keywordflow">try</span> {</div>
-<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>        <span class="keywordflow">if</span> (entity_id.has_value()) {</div>
-<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>            _services.world().createEntity(entity_id.value());</div>
-<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>            _entityId = entity_id.value();</div>
-<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>            _entityId = _services.world().createEntity();</div>
-<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>        }</div>
-<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>    }</div>
-<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>    <span class="keywordflow">catch</span> (...) {</div>
-<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>        <span class="keywordflow">if</span> (_services._debug) {</div>
-<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>            _services.debug().log(</div>
-<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>                <a class="code hl_enumvalue" href="namespaceasge_1_1debug.html#ab40068abfc51bf2673b5297cb3d5bf3ba0eaadb4fcb48a0a0ed7bc9868be9fbaa">asge::debug::Level::Warning</a>,</div>
-<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>                <span class="stringliteral">&quot;EntityBuilder::build: world.createEntity threw.&quot;</span>);</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span> </div>
+<div class="foldopen" id="foldopen00171" data-start="{" data-end="}">
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno"><a class="line" href="classasge_1_1script_1_1EntityFactory_1_1EntityBuilder.html#a70706577901150ba9699a83fc3509630">  171</a></span><a class="code hl_class" href="classasge_1_1script_1_1EntityFactory_1_1EntityBuilder.html">asge::script::EntityFactory::EntityBuilder</a> &amp;<a class="code hl_function" href="classasge_1_1script_1_1EntityFactory_1_1EntityBuilder.html#a70706577901150ba9699a83fc3509630">asge::script::EntityFactory::EntityBuilder::withScore</a>(</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>    <span class="keyword">const</span> <a class="code hl_struct" href="namespaceasge_1_1components.html#structasge_1_1components_1_1score__attr__t">components::score_attr_t</a> &amp;score)</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>{</div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>    _score = score;</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>}</div>
+</div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span><span class="comment"></span> </div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span><span class="comment">/**</span></div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span><span class="comment"> * @copydoc asge::script::EntityFactory::EntityBuilder::build(const std::optional&lt;uint32_t&gt; &amp;)</span></div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span><span class="comment"> */</span></div>
+<div class="foldopen" id="foldopen00181" data-start="{" data-end="}">
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno"><a class="line" href="classasge_1_1script_1_1EntityFactory_1_1EntityBuilder.html#aca48706aff2d5a0677b7a9e300fc644b">  181</a></span>uint32_t <a class="code hl_function" href="classasge_1_1script_1_1EntityFactory_1_1EntityBuilder.html#aca48706aff2d5a0677b7a9e300fc644b">asge::script::EntityFactory::EntityBuilder::build</a>(</div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>    <span class="keyword">const</span> std::optional&lt;uint32_t&gt; &amp;entity_id)</div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>{</div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>    <span class="keywordflow">if</span> (_isBuilt) {</div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>        <span class="keywordflow">return</span> _entityId;</div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>    }</div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span> </div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>    <span class="keywordflow">if</span> (!_services._world) {</div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>        <span class="keywordflow">if</span> (_services._debug) {</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>            _services.debug().log(</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>                <a class="code hl_enumvalue" href="namespaceasge_1_1debug.html#ab40068abfc51bf2673b5297cb3d5bf3ba0eaadb4fcb48a0a0ed7bc9868be9fbaa">asge::debug::Level::Warning</a>,</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>                <span class="stringliteral">&quot;EntityBuilder::build: world service missing.&quot;</span>);</div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>        }</div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="namespaceasge_1_1world.html#a0364b76e70c15674871e77829b636c7c">asge::world::INVALID_ID</a>;</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>    }</div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span> </div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>    <span class="keywordflow">try</span> {</div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>        <span class="keywordflow">if</span> (entity_id.has_value()) {</div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>            _services.world().createEntity(entity_id.value());</div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>            _entityId = entity_id.value();</div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>            _entityId = _services.world().createEntity();</div>
 <div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>        }</div>
-<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="namespaceasge_1_1world.html#a0364b76e70c15674871e77829b636c7c">asge::world::INVALID_ID</a>;</div>
-<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>    }</div>
-<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span> </div>
-<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>    <span class="keywordflow">try</span> {</div>
-<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>        <a class="code hl_struct" href="namespaceasge_1_1components.html#structasge_1_1components_1_1template__attr__t">components::template_attr_t</a> templateComponent {};</div>
-<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>        templateComponent.<a class="code hl_variable" href="namespaceasge_1_1components.html#ad42ab90929d2129c475bbb7a674201b3">template_id</a> = _templateId;</div>
-<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>        <span class="keywordflow">if</span> (!_services.world().addComponent&lt;<a class="code hl_struct" href="namespaceasge_1_1components.html#structasge_1_1components_1_1template__attr__t">components::template_attr_t</a>&gt;(_entityId, templateComponent)) {</div>
-<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>            <span class="keywordflow">if</span> (_services._debug) {</div>
-<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>                _services.debug().log(</div>
-<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>                    <a class="code hl_enumvalue" href="namespaceasge_1_1debug.html#ab40068abfc51bf2673b5297cb3d5bf3ba0eaadb4fcb48a0a0ed7bc9868be9fbaa">asge::debug::Level::Warning</a>,</div>
-<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>                    <span class="stringliteral">&quot;EntityBuilder::build: addComponent&lt;template_attr_t&gt; failed.&quot;</span>);</div>
-<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>            }</div>
-<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>        }</div>
-<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span> </div>
-<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>        addComponentIfPresent(_services, _entityId, _name, <span class="stringliteral">&quot;name_attr_t&quot;</span>);</div>
-<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>        addComponentIfPresent(_services, _entityId, _hitbox, <span class="stringliteral">&quot;hitbox_attr_t&quot;</span>);</div>
-<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>        addComponentIfPresent(_services, _entityId, _sprite, <span class="stringliteral">&quot;sprite_attr_t&quot;</span>);</div>
-<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>        addComponentIfPresent(_services, _entityId, _speed, <span class="stringliteral">&quot;speed_attr_t&quot;</span>);</div>
-<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>        addComponentIfPresent(_services, _entityId, _position, <span class="stringliteral">&quot;position_attr_t&quot;</span>);</div>
-<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>        addComponentIfPresent(_services, _entityId, _direction, <span class="stringliteral">&quot;direction_attr_t&quot;</span>);</div>
-<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>        addComponentIfPresent(_services, _entityId, _health, <span class="stringliteral">&quot;health_attr_t&quot;</span>);</div>
-<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>        addComponentIfPresent(_services, _entityId, _damage, <span class="stringliteral">&quot;damage_attr_t&quot;</span>);</div>
-<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>        addComponentIfPresent(_services, _entityId, _frequency, <span class="stringliteral">&quot;frequency_attr_t&quot;</span>);</div>
-<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>    }</div>
-<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>    <span class="keywordflow">catch</span> (...) {</div>
-<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>        <span class="keywordflow">if</span> (_services._debug) {</div>
-<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>            _services.debug().log(</div>
-<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>                <a class="code hl_enumvalue" href="namespaceasge_1_1debug.html#ab40068abfc51bf2673b5297cb3d5bf3ba0eaadb4fcb48a0a0ed7bc9868be9fbaa">asge::debug::Level::Warning</a>,</div>
-<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>                <span class="stringliteral">&quot;EntityBuilder::build: exception while adding components for eid=&quot;</span> + std::to_string(_entityId));</div>
-<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>        }</div>
-<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>    }</div>
-<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span> </div>
-<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>    <span class="keywordflow">if</span> (!_templateId.empty() &amp;&amp; _templateId == <span class="stringliteral">&quot;player&quot;</span>) {</div>
-<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>        <a class="code hl_struct" href="namespaceasge_1_1components.html#structasge_1_1components_1_1score__attr__t">components::score_attr_t</a> scoreAttributes {};</div>
-<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>        scoreAttributes.<a class="code hl_variable" href="namespaceasge_1_1components.html#ab13b48d5b1ca4865dbd6ecd863b2a29c">max_score</a> = 0;</div>
-<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>        scoreAttributes.score = 0;</div>
-<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span> </div>
-<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>        <span class="keywordflow">if</span> (!_services.world().addComponent&lt;<a class="code hl_struct" href="namespaceasge_1_1components.html#structasge_1_1components_1_1score__attr__t">components::score_attr_t</a>&gt;(_entityId, scoreAttributes)) {</div>
-<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>            <span class="keywordflow">if</span> (_services._debug) {</div>
-<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>                _services.debug().log(</div>
-<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>                    <a class="code hl_enumvalue" href="namespaceasge_1_1debug.html#ab40068abfc51bf2673b5297cb3d5bf3ba0eaadb4fcb48a0a0ed7bc9868be9fbaa">asge::debug::Level::Warning</a>,</div>
-<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>                    <span class="stringliteral">&quot;EntityBuilder::build: addComponent&lt;score_attr_t&gt; failed.&quot;</span>);</div>
-<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>            }</div>
-<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>        }</div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>    }</div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>    <span class="keywordflow">catch</span> (...) {</div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>        <span class="keywordflow">if</span> (_services._debug) {</div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>            _services.debug().log(</div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>                <a class="code hl_enumvalue" href="namespaceasge_1_1debug.html#ab40068abfc51bf2673b5297cb3d5bf3ba0eaadb4fcb48a0a0ed7bc9868be9fbaa">asge::debug::Level::Warning</a>,</div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>                <span class="stringliteral">&quot;EntityBuilder::build: world.createEntity threw.&quot;</span>);</div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>        }</div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="namespaceasge_1_1world.html#a0364b76e70c15674871e77829b636c7c">asge::world::INVALID_ID</a>;</div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>    }</div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span> </div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>    <span class="keywordflow">try</span> {</div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>        <a class="code hl_struct" href="namespaceasge_1_1components.html#structasge_1_1components_1_1template__attr__t">components::template_attr_t</a> templateComponent {};</div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>        templateComponent.<a class="code hl_variable" href="namespaceasge_1_1components.html#ad42ab90929d2129c475bbb7a674201b3">template_id</a> = _templateId;</div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>        <span class="keywordflow">if</span> (!_services.world().addComponent&lt;<a class="code hl_struct" href="namespaceasge_1_1components.html#structasge_1_1components_1_1template__attr__t">components::template_attr_t</a>&gt;(_entityId, templateComponent)) {</div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>            <span class="keywordflow">if</span> (_services._debug) {</div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>                _services.debug().log(</div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>                    <a class="code hl_enumvalue" href="namespaceasge_1_1debug.html#ab40068abfc51bf2673b5297cb3d5bf3ba0eaadb4fcb48a0a0ed7bc9868be9fbaa">asge::debug::Level::Warning</a>,</div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>                    <span class="stringliteral">&quot;EntityBuilder::build: addComponent&lt;template_attr_t&gt; failed.&quot;</span>);</div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>            }</div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>        }</div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span> </div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>        addComponentIfPresent(_services, _entityId, _name, <span class="stringliteral">&quot;name_attr_t&quot;</span>);</div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>        addComponentIfPresent(_services, _entityId, _hitbox, <span class="stringliteral">&quot;hitbox_attr_t&quot;</span>);</div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>        addComponentIfPresent(_services, _entityId, _sprite, <span class="stringliteral">&quot;sprite_attr_t&quot;</span>);</div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>        addComponentIfPresent(_services, _entityId, _speed, <span class="stringliteral">&quot;speed_attr_t&quot;</span>);</div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>        addComponentIfPresent(_services, _entityId, _position, <span class="stringliteral">&quot;position_attr_t&quot;</span>);</div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>        addComponentIfPresent(_services, _entityId, _direction, <span class="stringliteral">&quot;direction_attr_t&quot;</span>);</div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>        addComponentIfPresent(_services, _entityId, _health, <span class="stringliteral">&quot;health_attr_t&quot;</span>);</div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>        addComponentIfPresent(_services, _entityId, _damage, <span class="stringliteral">&quot;damage_attr_t&quot;</span>);</div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>        addComponentIfPresent(_services, _entityId, _frequency, <span class="stringliteral">&quot;frequency_attr_t&quot;</span>);</div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>        addComponentIfPresent(_services, _entityId, _score, <span class="stringliteral">&quot;score_attr_t&quot;</span>);</div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>    }</div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>    <span class="keywordflow">catch</span> (...) {</div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>        <span class="keywordflow">if</span> (_services._debug) {</div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>            _services.debug().log(</div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>                <a class="code hl_enumvalue" href="namespaceasge_1_1debug.html#ab40068abfc51bf2673b5297cb3d5bf3ba0eaadb4fcb48a0a0ed7bc9868be9fbaa">asge::debug::Level::Warning</a>,</div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>                <span class="stringliteral">&quot;EntityBuilder::build: exception while adding components for eid=&quot;</span> + std::to_string(_entityId));</div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>        }</div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>    }</div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span> </div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>    <span class="keywordflow">if</span> (!_templateId.empty() &amp;&amp; _templateId == <span class="stringliteral">&quot;player&quot;</span>) {</div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>        <a class="code hl_struct" href="namespaceasge_1_1components.html#structasge_1_1components_1_1score__attr__t">components::score_attr_t</a> scoreAttributes {};</div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>        scoreAttributes.<a class="code hl_variable" href="namespaceasge_1_1components.html#ab13b48d5b1ca4865dbd6ecd863b2a29c">max_score</a> = 0;</div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>        scoreAttributes.score = 0;</div>
 <div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span> </div>
-<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>        <a class="code hl_struct" href="namespaceasge_1_1components.html#structasge_1_1components_1_1input__attr__t">components::input_attr_t</a> inputAttributes {};</div>
-<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>        inputAttributes.<a class="code hl_variable" href="namespaceasge_1_1components.html#adbe1fa65508e09ec119793274c3cf4b3">fire</a> = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>        inputAttributes.pad = <a class="code hl_enumvalue" href="namespaceasge_1_1components.html#a806fc9d3301cce6bb6507b8a1dac33aca673bde324df512ee6ecbfd0a6e4a5e02">components::PLAYER_PAD::NO_PAD</a>;</div>
-<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span> </div>
-<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>        <span class="keywordflow">if</span> (!_services.world().addComponent&lt;<a class="code hl_struct" href="namespaceasge_1_1components.html#structasge_1_1components_1_1input__attr__t">components::input_attr_t</a>&gt;(_entityId, inputAttributes)) {</div>
-<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>            <span class="keywordflow">if</span> (_services._debug) {</div>
-<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>                _services.debug().log(</div>
-<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>                    <a class="code hl_enumvalue" href="namespaceasge_1_1debug.html#ab40068abfc51bf2673b5297cb3d5bf3ba0eaadb4fcb48a0a0ed7bc9868be9fbaa">asge::debug::Level::Warning</a>,</div>
-<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>                    <span class="stringliteral">&quot;EntityBuilder::build: addComponent&lt;input_attr_t&gt; failed.&quot;</span>);</div>
-<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>            }</div>
-<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>        }</div>
-<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>    }</div>
-<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span> </div>
-<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>    <span class="keywordflow">try</span> {</div>
-<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>        <span class="keywordflow">if</span> (!_templateId.empty() &amp;&amp; _services._scripts) {</div>
-<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>            _services.scripts().notifyEntityCreated(_entityId, _templateId);</div>
-<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>        }</div>
-<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>    }</div>
-<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>    <span class="keywordflow">catch</span> (...) {</div>
-<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>        <span class="keywordflow">if</span> (_services._debug) {</div>
-<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>            _services.debug().log(</div>
-<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>                <a class="code hl_enumvalue" href="namespaceasge_1_1debug.html#ab40068abfc51bf2673b5297cb3d5bf3ba0eaadb4fcb48a0a0ed7bc9868be9fbaa">asge::debug::Level::Warning</a>,</div>
-<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>                <span class="stringliteral">&quot;EntityBuilder::build: scripts.notifyEntityCreated threw for eid=&quot;</span> + std::to_string(_entityId));</div>
-<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>        }</div>
-<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>    }</div>
-<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span> </div>
-<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>    _isBuilt = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>    <span class="keywordflow">return</span> _entityId;</div>
-<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>}</div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>        <span class="keywordflow">if</span> (!_services.world().addComponent&lt;<a class="code hl_struct" href="namespaceasge_1_1components.html#structasge_1_1components_1_1score__attr__t">components::score_attr_t</a>&gt;(_entityId, scoreAttributes)) {</div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>            <span class="keywordflow">if</span> (_services._debug) {</div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>                _services.debug().log(</div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>                    <a class="code hl_enumvalue" href="namespaceasge_1_1debug.html#ab40068abfc51bf2673b5297cb3d5bf3ba0eaadb4fcb48a0a0ed7bc9868be9fbaa">asge::debug::Level::Warning</a>,</div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>                    <span class="stringliteral">&quot;EntityBuilder::build: addComponent&lt;score_attr_t&gt; failed.&quot;</span>);</div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>            }</div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>        }</div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span> </div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>        <a class="code hl_struct" href="namespaceasge_1_1components.html#structasge_1_1components_1_1input__attr__t">components::input_attr_t</a> inputAttributes {};</div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>        inputAttributes.<a class="code hl_variable" href="namespaceasge_1_1components.html#adbe1fa65508e09ec119793274c3cf4b3">fire</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>        inputAttributes.pad = <a class="code hl_enumvalue" href="namespaceasge_1_1components.html#a806fc9d3301cce6bb6507b8a1dac33aca673bde324df512ee6ecbfd0a6e4a5e02">components::PLAYER_PAD::NO_PAD</a>;</div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span> </div>
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>        <span class="keywordflow">if</span> (!_services.world().addComponent&lt;<a class="code hl_struct" href="namespaceasge_1_1components.html#structasge_1_1components_1_1input__attr__t">components::input_attr_t</a>&gt;(_entityId, inputAttributes)) {</div>
+<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>            <span class="keywordflow">if</span> (_services._debug) {</div>
+<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>                _services.debug().log(</div>
+<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>                    <a class="code hl_enumvalue" href="namespaceasge_1_1debug.html#ab40068abfc51bf2673b5297cb3d5bf3ba0eaadb4fcb48a0a0ed7bc9868be9fbaa">asge::debug::Level::Warning</a>,</div>
+<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>                    <span class="stringliteral">&quot;EntityBuilder::build: addComponent&lt;input_attr_t&gt; failed.&quot;</span>);</div>
+<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>            }</div>
+<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>        }</div>
+<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>    }</div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span> </div>
+<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>    <span class="keywordflow">try</span> {</div>
+<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>        <span class="keywordflow">if</span> (!_templateId.empty() &amp;&amp; _services._scripts) {</div>
+<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>            _services.scripts().notifyEntityCreated(_entityId, _templateId);</div>
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>        }</div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>    }</div>
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>    <span class="keywordflow">catch</span> (...) {</div>
+<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>        <span class="keywordflow">if</span> (_services._debug) {</div>
+<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>            _services.debug().log(</div>
+<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>                <a class="code hl_enumvalue" href="namespaceasge_1_1debug.html#ab40068abfc51bf2673b5297cb3d5bf3ba0eaadb4fcb48a0a0ed7bc9868be9fbaa">asge::debug::Level::Warning</a>,</div>
+<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>                <span class="stringliteral">&quot;EntityBuilder::build: scripts.notifyEntityCreated threw for eid=&quot;</span> + std::to_string(_entityId));</div>
+<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>        }</div>
+<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>    }</div>
+<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span> </div>
+<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>    _isBuilt = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>    <span class="keywordflow">return</span> _entityId;</div>
+<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span>}</div>
 </div>
 <div class="ttc" id="aEntityBuilder_8hpp_html"><div class="ttname"><a href="EntityBuilder_8hpp.html">EntityBuilder.hpp</a></div><div class="ttdoc">Fluent builder for composing ECS entities from script-provided templates.</div></div>
 <div class="ttc" id="aclassasge_1_1debug_1_1IDebug_html_ab16de8ad522314d2aea6eb483b4a5ae0"><div class="ttname"><a href="classasge_1_1debug_1_1IDebug.html#ab16de8ad522314d2aea6eb483b4a5ae0">asge::debug::IDebug::log</a></div><div class="ttdeci">virtual void log(Level level, const std::string &amp;msg)=0</div><div class="ttdoc">Logs a message with a given severity level.</div></div>
@@ -415,12 +425,13 @@ $(document).ready(function(){initNavTree('EntityBuilder_8cpp_source.html',''); i
 <div class="ttc" id="aclassasge_1_1script_1_1EntityFactory_1_1EntityBuilder_html_a419fe45489043b095c0364133465e00b"><div class="ttname"><a href="classasge_1_1script_1_1EntityFactory_1_1EntityBuilder.html#a419fe45489043b095c0364133465e00b">asge::script::EntityFactory::EntityBuilder::withTemplateId</a></div><div class="ttdeci">EntityBuilder &amp; withTemplateId(const std::string &amp;templateId)</div><div class="ttdoc">Sets the logical template identifier stored on the entity.</div><div class="ttdef"><b>Definition</b> <a href="EntityBuilder_8cpp_source.html#l00074">EntityBuilder.cpp:74</a></div></div>
 <div class="ttc" id="aclassasge_1_1script_1_1EntityFactory_1_1EntityBuilder_html_a4990e5542c1d1dc7858a67446b425cea"><div class="ttname"><a href="classasge_1_1script_1_1EntityFactory_1_1EntityBuilder.html#a4990e5542c1d1dc7858a67446b425cea">asge::script::EntityFactory::EntityBuilder::withDirection</a></div><div class="ttdeci">EntityBuilder &amp; withDirection(const components::direction_attr_t &amp;directionAttributes)</div><div class="ttdoc">Adds optional direction component data.</div><div class="ttdef"><b>Definition</b> <a href="EntityBuilder_8cpp_source.html#l00134">EntityBuilder.cpp:134</a></div></div>
 <div class="ttc" id="aclassasge_1_1script_1_1EntityFactory_1_1EntityBuilder_html_a661156d666452490b66280112ec770f2"><div class="ttname"><a href="classasge_1_1script_1_1EntityFactory_1_1EntityBuilder.html#a661156d666452490b66280112ec770f2">asge::script::EntityFactory::EntityBuilder::withPosition</a></div><div class="ttdeci">EntityBuilder &amp; withPosition(const components::position_attr_t &amp;positionAttributes)</div><div class="ttdoc">Adds optional position component data.</div><div class="ttdef"><b>Definition</b> <a href="EntityBuilder_8cpp_source.html#l00124">EntityBuilder.cpp:124</a></div></div>
+<div class="ttc" id="aclassasge_1_1script_1_1EntityFactory_1_1EntityBuilder_html_a70706577901150ba9699a83fc3509630"><div class="ttname"><a href="classasge_1_1script_1_1EntityFactory_1_1EntityBuilder.html#a70706577901150ba9699a83fc3509630">asge::script::EntityFactory::EntityBuilder::withScore</a></div><div class="ttdeci">EntityBuilder &amp; withScore(const components::score_attr_t &amp;score)</div><div class="ttdoc">Adds optional frequency component data.</div><div class="ttdef"><b>Definition</b> <a href="EntityBuilder_8cpp_source.html#l00171">EntityBuilder.cpp:171</a></div></div>
 <div class="ttc" id="aclassasge_1_1script_1_1EntityFactory_1_1EntityBuilder_html_a7de40dbe280c5449ce214ae5bb414611"><div class="ttname"><a href="classasge_1_1script_1_1EntityFactory_1_1EntityBuilder.html#a7de40dbe280c5449ce214ae5bb414611">asge::script::EntityFactory::EntityBuilder::withHitbox</a></div><div class="ttdeci">EntityBuilder &amp; withHitbox(const components::hitbox_attr_t &amp;hitboxAttributes)</div><div class="ttdoc">Adds optional hitbox component data.</div><div class="ttdef"><b>Definition</b> <a href="EntityBuilder_8cpp_source.html#l00094">EntityBuilder.cpp:94</a></div></div>
 <div class="ttc" id="aclassasge_1_1script_1_1EntityFactory_1_1EntityBuilder_html_a81a488d48c95347a663c761c7f540eaf"><div class="ttname"><a href="classasge_1_1script_1_1EntityFactory_1_1EntityBuilder.html#a81a488d48c95347a663c761c7f540eaf">asge::script::EntityFactory::EntityBuilder::EntityBuilder</a></div><div class="ttdeci">EntityBuilder(Services &amp;services) noexcept</div><div class="ttdoc">Constructs a builder with access to engine services.</div><div class="ttdef"><b>Definition</b> <a href="EntityBuilder_8cpp_source.html#l00064">EntityBuilder.cpp:64</a></div></div>
 <div class="ttc" id="aclassasge_1_1script_1_1EntityFactory_1_1EntityBuilder_html_a82903f49f7dd833978502e166a15e5a1"><div class="ttname"><a href="classasge_1_1script_1_1EntityFactory_1_1EntityBuilder.html#a82903f49f7dd833978502e166a15e5a1">asge::script::EntityFactory::EntityBuilder::withSpeed</a></div><div class="ttdeci">EntityBuilder &amp; withSpeed(const components::speed_attr_t &amp;speedAttributes)</div><div class="ttdoc">Adds optional speed component data.</div><div class="ttdef"><b>Definition</b> <a href="EntityBuilder_8cpp_source.html#l00114">EntityBuilder.cpp:114</a></div></div>
 <div class="ttc" id="aclassasge_1_1script_1_1EntityFactory_1_1EntityBuilder_html_a91edc040c8c6a90d3bcffa7a74edd0f1"><div class="ttname"><a href="classasge_1_1script_1_1EntityFactory_1_1EntityBuilder.html#a91edc040c8c6a90d3bcffa7a74edd0f1">asge::script::EntityFactory::EntityBuilder::withHealth</a></div><div class="ttdeci">EntityBuilder &amp; withHealth(const components::health_attr_t &amp;healthAttributes)</div><div class="ttdoc">Adds optional health component data.</div><div class="ttdef"><b>Definition</b> <a href="EntityBuilder_8cpp_source.html#l00144">EntityBuilder.cpp:144</a></div></div>
-<div class="ttc" id="aclassasge_1_1script_1_1EntityFactory_1_1EntityBuilder_html_ab8e9dbb91ba23a335a976cecbc93b6ba"><div class="ttname"><a href="classasge_1_1script_1_1EntityFactory_1_1EntityBuilder.html#ab8e9dbb91ba23a335a976cecbc93b6ba">asge::script::EntityFactory::EntityBuilder::_templateId</a></div><div class="ttdeci">std::string _templateId</div><div class="ttdoc">The template identifier applied as a component tag.</div><div class="ttdef"><b>Definition</b> <a href="EntityBuilder_8hpp_source.html#l00161">EntityBuilder.hpp:161</a></div></div>
-<div class="ttc" id="aclassasge_1_1script_1_1EntityFactory_1_1EntityBuilder_html_aca48706aff2d5a0677b7a9e300fc644b"><div class="ttname"><a href="classasge_1_1script_1_1EntityFactory_1_1EntityBuilder.html#aca48706aff2d5a0677b7a9e300fc644b">asge::script::EntityFactory::EntityBuilder::build</a></div><div class="ttdeci">uint32_t build(const std::optional&lt; uint32_t &gt; &amp;entity_id)</div><div class="ttdoc">Builds or completes the entity and attaches configured components.</div><div class="ttdef"><b>Definition</b> <a href="EntityBuilder_8cpp_source.html#l00174">EntityBuilder.cpp:174</a></div></div>
+<div class="ttc" id="aclassasge_1_1script_1_1EntityFactory_1_1EntityBuilder_html_ab8e9dbb91ba23a335a976cecbc93b6ba"><div class="ttname"><a href="classasge_1_1script_1_1EntityFactory_1_1EntityBuilder.html#ab8e9dbb91ba23a335a976cecbc93b6ba">asge::script::EntityFactory::EntityBuilder::_templateId</a></div><div class="ttdeci">std::string _templateId</div><div class="ttdoc">The template identifier applied as a component tag.</div><div class="ttdef"><b>Definition</b> <a href="EntityBuilder_8hpp_source.html#l00168">EntityBuilder.hpp:168</a></div></div>
+<div class="ttc" id="aclassasge_1_1script_1_1EntityFactory_1_1EntityBuilder_html_aca48706aff2d5a0677b7a9e300fc644b"><div class="ttname"><a href="classasge_1_1script_1_1EntityFactory_1_1EntityBuilder.html#aca48706aff2d5a0677b7a9e300fc644b">asge::script::EntityFactory::EntityBuilder::build</a></div><div class="ttdeci">uint32_t build(const std::optional&lt; uint32_t &gt; &amp;entity_id)</div><div class="ttdoc">Builds or completes the entity and attaches configured components.</div><div class="ttdef"><b>Definition</b> <a href="EntityBuilder_8cpp_source.html#l00181">EntityBuilder.cpp:181</a></div></div>
 <div class="ttc" id="aclassasge_1_1script_1_1EntityFactory_1_1EntityBuilder_html_ad36886030d756b02a63adb5b63d9e220"><div class="ttname"><a href="classasge_1_1script_1_1EntityFactory_1_1EntityBuilder.html#ad36886030d756b02a63adb5b63d9e220">asge::script::EntityFactory::EntityBuilder::withFrequency</a></div><div class="ttdeci">EntityBuilder &amp; withFrequency(const components::frequency_attr_t &amp;frequencyAttributes)</div><div class="ttdoc">Adds optional frequency component data.</div><div class="ttdef"><b>Definition</b> <a href="EntityBuilder_8cpp_source.html#l00164">EntityBuilder.cpp:164</a></div></div>
 <div class="ttc" id="aclassasge_1_1world_1_1World_html_ae2153d065d6805b97d8da9f6fa21009a"><div class="ttname"><a href="classasge_1_1world_1_1World.html#ae2153d065d6805b97d8da9f6fa21009a">asge::world::World::addComponent</a></div><div class="ttdeci">bool addComponent(uint32_t id, const T &amp;component)</div><div class="ttdoc">Adds a component to an entity and updates system eligibility.</div><div class="ttdef"><b>Definition</b> <a href="World_8hpp_source.html#l00169">World.hpp:169</a></div></div>
 <div class="ttc" id="anamespaceasge_1_1components_html_a806fc9d3301cce6bb6507b8a1dac33aca673bde324df512ee6ecbfd0a6e4a5e02"><div class="ttname"><a href="namespaceasge_1_1components.html#a806fc9d3301cce6bb6507b8a1dac33aca673bde324df512ee6ecbfd0a6e4a5e02">asge::components::NO_PAD</a></div><div class="ttdeci">@ NO_PAD</div><div class="ttdoc">No directional input detected.</div><div class="ttdef"><b>Definition</b> <a href="input_8hpp_source.html#l00037">input.hpp:37</a></div></div>
@@ -441,10 +452,10 @@ $(document).ready(function(){initNavTree('EntityBuilder_8cpp_source.html',''); i
 <div class="ttc" id="anamespaceasge_1_1components_html_structasge_1_1components_1_1template__attr__t"><div class="ttname"><a href="namespaceasge_1_1components.html#structasge_1_1components_1_1template__attr__t">asge::components::template_attr_t</a></div><div class="ttdoc">Component linking an entity to a prefab/template definition.</div><div class="ttdef"><b>Definition</b> <a href="template_8hpp_source.html#l00034">template.hpp:34</a></div></div>
 <div class="ttc" id="anamespaceasge_1_1debug_html_ab40068abfc51bf2673b5297cb3d5bf3ba0eaadb4fcb48a0a0ed7bc9868be9fbaa"><div class="ttname"><a href="namespaceasge_1_1debug.html#ab40068abfc51bf2673b5297cb3d5bf3ba0eaadb4fcb48a0a0ed7bc9868be9fbaa">asge::debug::Level::Warning</a></div><div class="ttdeci">@ Warning</div><div class="ttdoc">Indicates potential issues or non-critical problems.</div></div>
 <div class="ttc" id="anamespaceasge_1_1world_html_a0364b76e70c15674871e77829b636c7c"><div class="ttname"><a href="namespaceasge_1_1world.html#a0364b76e70c15674871e77829b636c7c">asge::world::INVALID_ID</a></div><div class="ttdeci">static constexpr uint32_t INVALID_ID</div><div class="ttdoc">Invalid entity index sentinel value.</div><div class="ttdef"><b>Definition</b> <a href="ComponentArray_8hpp_source.html#l00033">ComponentArray.hpp:33</a></div></div>
-<div class="ttc" id="astructasge_1_1Services_html"><div class="ttname"><a href="structasge_1_1Services.html">asge::Services</a></div><div class="ttdoc">RAII container owning the 12 public engine interfaces.</div><div class="ttdef"><b>Definition</b> <a href="ASGE_8hpp_source.html#l00087">ASGE.hpp:87</a></div></div>
-<div class="ttc" id="astructasge_1_1Services_html_a29ea58e68b682a2db82d9278925ef14f"><div class="ttname"><a href="structasge_1_1Services.html#a29ea58e68b682a2db82d9278925ef14f">asge::Services::_debug</a></div><div class="ttdeci">std::unique_ptr&lt; debug::IDebug &gt; _debug</div><div class="ttdef"><b>Definition</b> <a href="ASGE_8hpp_source.html#l00102">ASGE.hpp:102</a></div></div>
-<div class="ttc" id="astructasge_1_1Services_html_aea3119ef7b85846ba606b113cda3ae74"><div class="ttname"><a href="structasge_1_1Services.html#aea3119ef7b85846ba606b113cda3ae74">asge::Services::world</a></div><div class="ttdeci">world::World &amp; world()</div><div class="ttdef"><b>Definition</b> <a href="ASGE_8hpp_source.html#l00129">ASGE.hpp:129</a></div></div>
-<div class="ttc" id="astructasge_1_1Services_html_af7c99d591b82892004d16a419dda4738"><div class="ttname"><a href="structasge_1_1Services.html#af7c99d591b82892004d16a419dda4738">asge::Services::debug</a></div><div class="ttdeci">debug::IDebug &amp; debug()</div><div class="ttdef"><b>Definition</b> <a href="ASGE_8hpp_source.html#l00141">ASGE.hpp:141</a></div></div>
+<div class="ttc" id="astructasge_1_1Services_html"><div class="ttname"><a href="structasge_1_1Services.html">asge::Services</a></div><div class="ttdoc">RAII container owning the 12 public engine interfaces.</div><div class="ttdef"><b>Definition</b> <a href="ASGE_8hpp_source.html#l00088">ASGE.hpp:88</a></div></div>
+<div class="ttc" id="astructasge_1_1Services_html_a29ea58e68b682a2db82d9278925ef14f"><div class="ttname"><a href="structasge_1_1Services.html#a29ea58e68b682a2db82d9278925ef14f">asge::Services::_debug</a></div><div class="ttdeci">std::unique_ptr&lt; debug::IDebug &gt; _debug</div><div class="ttdef"><b>Definition</b> <a href="ASGE_8hpp_source.html#l00103">ASGE.hpp:103</a></div></div>
+<div class="ttc" id="astructasge_1_1Services_html_aea3119ef7b85846ba606b113cda3ae74"><div class="ttname"><a href="structasge_1_1Services.html#aea3119ef7b85846ba606b113cda3ae74">asge::Services::world</a></div><div class="ttdeci">world::World &amp; world()</div><div class="ttdef"><b>Definition</b> <a href="ASGE_8hpp_source.html#l00130">ASGE.hpp:130</a></div></div>
+<div class="ttc" id="astructasge_1_1Services_html_af7c99d591b82892004d16a419dda4738"><div class="ttname"><a href="structasge_1_1Services.html#af7c99d591b82892004d16a419dda4738">asge::Services::debug</a></div><div class="ttdeci">debug::IDebug &amp; debug()</div><div class="ttdef"><b>Definition</b> <a href="ASGE_8hpp_source.html#l00142">ASGE.hpp:142</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

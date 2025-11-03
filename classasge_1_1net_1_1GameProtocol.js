@@ -21,7 +21,8 @@ var classasge_1_1net_1_1GameProtocol =
       [ "SCORE", "classasge_1_1net_1_1GameProtocol.html#ab99c85bb79600c8f70f8fccff06e091daed2715e84fd1f153ce6dd4faa18fbada", null ],
       [ "SPEED", "classasge_1_1net_1_1GameProtocol.html#ab99c85bb79600c8f70f8fccff06e091daed53dbbf76bafc1d1bd9b18ce317d28c", null ],
       [ "SPRITE", "classasge_1_1net_1_1GameProtocol.html#ab99c85bb79600c8f70f8fccff06e091da8869f1f5238c3d1c0f67ad6847683dbe", null ],
-      [ "TEMPLATE", "classasge_1_1net_1_1GameProtocol.html#ab99c85bb79600c8f70f8fccff06e091da5108650f1d1bd45889996d7e9077e86e", null ]
+      [ "TEMPLATE", "classasge_1_1net_1_1GameProtocol.html#ab99c85bb79600c8f70f8fccff06e091da5108650f1d1bd45889996d7e9077e86e", null ],
+      [ "MASTER", "classasge_1_1net_1_1GameProtocol.html#ab99c85bb79600c8f70f8fccff06e091daa99f06a2fb07acb9c7b65a7b521270f5", null ]
     ] ],
     [ "MsgType", "classasge_1_1net_1_1GameProtocol.html#ad2fade22a9aae5bfbd771781f652a19a", [
       [ "EntityCreate", "classasge_1_1net_1_1GameProtocol.html#ad2fade22a9aae5bfbd771781f652a19aafcbbb2dde53b6ad6a6acb810fb6f1da4", null ],

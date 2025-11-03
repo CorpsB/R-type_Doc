@@ -7,6 +7,7 @@ var dir_7237263d9802f54a63382637fdee4ea4 =
     [ "health.hpp", "health_8hpp.html", "health_8hpp" ],
     [ "hitbox.hpp", "hitbox_8hpp.html", "hitbox_8hpp" ],
     [ "input.hpp", "input_8hpp.html", "input_8hpp" ],
+    [ "master.hpp", "master_8hpp.html", "master_8hpp" ],
     [ "name.hpp", "name_8hpp.html", "name_8hpp" ],
     [ "position.hpp", "position_8hpp.html", "position_8hpp" ],
     [ "scene.hpp", "scene_8hpp.html", "scene_8hpp" ],

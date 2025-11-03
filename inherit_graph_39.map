@@ -1,3 +1,9 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="Node000000" href="$classasge_1_1network_1_1NetworkManager.html#structasge_1_1network_1_1NetworkManager_1_1ConnTx" title=" " alt="" coords="5,5,296,31"/>
+<area shape="rect" id="Node000000" href="$classasge_1_1network_1_1NetworkChannel.html" title="Abstract base class for low&#45;level communication channels." alt="" coords="5,31,236,56"/>
+<area shape="rect" id="Node000001" href="$classasge_1_1network_1_1ANetworkChannel.html" title=" " alt="" coords="284,31,523,56"/>
+<area shape="poly" id="edge14_Node000000_Node000001" title=" " alt="" coords="250,41,284,41,284,46,250,46"/>
+<area shape="rect" id="Node000002" href="$classasge_1_1network_1_1LoopbackChannel.html" title="In&#45;memory echo implementation of NetworkChannel." alt="" coords="571,5,808,31"/>
+<area shape="poly" id="edge15_Node000001_Node000002" title=" " alt="" coords="536,29,570,26,571,31,536,34"/>
+<area shape="rect" id="Node000003" href="$classasge_1_1network_1_1UDPChannel.html" title="Concrete NetworkChannel based on UDP sockets using Boost.Asio." alt="" coords="588,55,791,80"/>
+<area shape="poly" id="edge16_Node000001_Node000003" title=" " alt="" coords="537,52,588,56,587,61,536,57"/>
 </map>

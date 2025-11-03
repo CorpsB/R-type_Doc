@@ -7,6 +7,8 @@ var classrtype_1_1client_1_1ui_1_1Text =
     ] ],
     [ "Text", "classrtype_1_1client_1_1ui_1_1Text.html#ae4bbea4ec17103714b329a2a859e7919", null ],
     [ "draw", "classrtype_1_1client_1_1ui_1_1Text.html#ac64f2f7f0518d04f7b8048315269dfb9", null ],
+    [ "getString", "classrtype_1_1client_1_1ui_1_1Text.html#ab1144762b9aec52ec5af181d652252ba", null ],
+    [ "setString", "classrtype_1_1client_1_1ui_1_1Text.html#aa2fdf21b38e6d5ad7a3d862b4c0f97a7", null ],
     [ "update", "classrtype_1_1client_1_1ui_1_1Text.html#ad345cda5f601569ca5591776ef4055eb", null ],
     [ "_alignment", "classrtype_1_1client_1_1ui_1_1Text.html#adc812f3253c6c084b552dac673a20088", null ],
     [ "_color", "classrtype_1_1client_1_1ui_1_1Text.html#afa3030b704df3ab6c21b124a9dccedfd", null ],
