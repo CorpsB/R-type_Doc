@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['gameoverstage_0',['GameOverStage',['../classrtype_1_1client_1_1scene_1_1GameOverStage.html#a7a18299e98c60fda684952be10e5a743',1,'rtype::client::scene::GameOverStage']]],
+  ['gameoverstage_0',['GameOverStage',['../classrtype_1_1client_1_1scene_1_1GameOverStage.html#a8193b4f5d5f825f0219baf9f1b772521',1,'rtype::client::scene::GameOverStage']]],
   ['gameprotocol_1',['GameProtocol',['../classasge_1_1net_1_1GameProtocol.html#a4707d62898811eb45a3378b5ee993c79',1,'asge::net::GameProtocol']]],
-  ['gamestage_2',['GameStage',['../classrtype_1_1client_1_1scene_1_1GameStage.html#a23257f08408b43897094af12e2064a74',1,'rtype::client::scene::GameStage']]],
+  ['gamestage_2',['GameStage',['../classrtype_1_1client_1_1scene_1_1GameStage.html#ae710618b288d443051ba386e89e9a87f',1,'rtype::client::scene::GameStage']]],
   ['gametimer_3',['GameTimer',['../classasge_1_1timer_1_1GameTimer.html#af1a30b8d737a468a337de2e1e3ad92b2',1,'asge::timer::GameTimer']]],
   ['getassetsroot_4',['getassetsroot',['../classasge_1_1script_1_1IScript.html#a8ee93dc9fbcea521bd3f8709b0e4b50a',1,'asge::script::IScript::getAssetsRoot()'],['../classasge_1_1script_1_1ScriptManager.html#abd12a8adceed524c7b4a1649e8bce5d5',1,'asge::script::ScriptManager::getAssetsRoot()']]],
   ['getaudio_5',['getaudio',['../classasge_1_1script_1_1IScript.html#ab02bf869f3b012cb0ad23c159c1c9881',1,'asge::script::IScript::getAudio()'],['../classasge_1_1script_1_1ScriptManager.html#abf5abc68d302e6078a8446ee7c0c7a97',1,'asge::script::ScriptManager::getAudio()']]],

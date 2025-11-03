@@ -1,39 +1,43 @@
 <map id="main" name="main">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,356,60,381"/>
-<area shape="rect" id="Node000002" href="$classasge_1_1EngineCore.html#a2d6b415923c0cf58eb6133d0dc5ec943" title=" " alt="" coords="115,77,365,102"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="31,355,32,309,41,244,50,208,63,173,82,141,106,113,113,108,116,112,110,117,86,144,68,176,55,210,46,245,37,310,36,355"/>
-<area shape="rect" id="Node000004" href="$classrtype_1_1client_1_1lang_1_1LanguageManager.html#ad68186a2f5319362e50262fd005d663a" title=" " alt="" coords="108,127,372,167"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="32,355,38,320,50,271,72,221,87,197,106,177,112,172,115,177,110,181,91,201,76,223,55,273,43,321,38,356"/>
-<area shape="rect" id="Node000005" href="$classasge_1_1EngineCore.html#af3569d21170da28698d2027c86f700d2" title="Initialise all engine subsystems." alt="" coords="158,192,322,217"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="34,355,42,328,56,293,77,257,106,227,143,210,146,214,110,232,82,261,61,295,47,329,39,356"/>
-<area shape="rect" id="Node000008" href="$classasge_1_1renderer_1_1IRenderer.html#aa7e2c8d85eb0855fd753ae29d2eaebd1" title="Load a font from storage using the engine storage layer." alt="" coords="147,242,333,282"/>
-<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="41,354,68,322,107,291,132,279,135,284,109,296,72,326,45,357"/>
-<area shape="rect" id="Node000009" href="$structasge_1_1Services.html#a693d25e8f9c77a8a44cd65befe8f79f0" title=" " alt="" coords="151,306,329,332"/>
-<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="59,356,107,340,145,332,146,337,109,345,61,361"/>
-<area shape="rect" id="Node000010" href="$classasge_1_1EngineCore.html#a62dcf0a61da12adf7e32010e936af492" title="Run the main loop until shutdown is requested." alt="" coords="143,356,337,381"/>
-<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="60,366,129,366,129,371,60,371"/>
-<area shape="rect" id="Node000044" href="$classasge_1_1EngineCore.html#a76162688bdb67419c8f9f4f318c71b54" title=" " alt="" coords="141,405,339,430"/>
-<area shape="poly" id="edge58_Node000001_Node000044" title=" " alt="" coords="61,375,109,390,152,400,151,405,107,395,59,380"/>
-<area shape="rect" id="Node000045" href="$classasge_1_1EngineCore.html#aced222c897881e2ef3598ade75f041f6" title="noexcept &#160;&#160;noexcept" alt="" coords="443,457,659,482"/>
-<area shape="poly" id="edge59_Node000001_Node000045" title=" " alt="" coords="45,380,71,411,89,427,109,439,150,455,192,466,279,480,364,484,440,481,440,486,364,489,279,485,191,472,148,460,107,444,86,431,67,415,41,383"/>
-<area shape="rect" id="Node000046" href="$classasge_1_1EngineCore.html#a7244130ae5489cc1621c544eddd86341" title="Gracefully shutdown the engine." alt="" coords="447,556,654,581"/>
-<area shape="poly" id="edge60_Node000001_Node000046" title=" " alt="" coords="38,381,43,415,54,460,76,506,91,525,109,542,133,553,165,562,247,572,342,575,433,573,433,578,342,580,247,578,164,567,131,558,107,546,87,529,71,508,49,462,37,416,32,382"/>
-<area shape="rect" id="Node000047" href="$client_2main_8cpp.html#af324be2966cf16926165deb4105f666f" title=" " alt="" coords="183,506,297,532"/>
-<area shape="poly" id="edge61_Node000001_Node000047" title=" " alt="" coords="41,380,65,432,84,461,110,485,138,500,170,509,168,515,136,505,106,489,80,464,60,434,36,382"/>
-<area shape="rect" id="Node000049" href="$structasge_1_1Services.html#ae02fb2f23f933abdb378042a59a044ea" title=" " alt="" coords="153,608,327,633"/>
-<area shape="poly" id="edge65_Node000001_Node000049" title=" " alt="" coords="37,381,40,421,51,476,73,536,89,563,110,586,142,606,139,610,106,590,85,566,68,538,46,478,35,421,32,381"/>
-<area shape="rect" id="Node000003" href="$classasge_1_1network_1_1NetworkManager.html#a27c790098d70703c0d35cf3835716f64" title="Lookup an existing connection id by address/port." alt="" coords="433,70,668,110"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="366,87,419,87,419,92,366,92"/>
-<area shape="rect" id="Node000006" href="$classasge_1_1EngineCore.html#a1666f7296f499d4eedd38748ab006c6b" title="Zero&#45;initialise the Services structure before bootstrap." alt="" coords="441,209,660,234"/>
-<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="322,206,428,212,428,217,322,211"/>
-<area shape="rect" id="Node000007" href="$classasge_1_1EngineCore.html#ab58f7a8b4490bf0719350c1c2c06261f" title="Reset the Services aggregate after shutdown." alt="" coords="420,160,681,185"/>
-<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="322,193,414,184,414,189,323,198"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,390,60,416"/>
+<area shape="rect" id="Node000002" href="$classrtype_1_1client_1_1lang_1_1LanguageManager.html#ad68186a2f5319362e50262fd005d663a" title=" " alt="" coords="108,63,372,103"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="33,390,41,331,56,248,78,167,91,135,106,113,110,109,114,113,110,117,96,137,83,169,62,249,46,332,38,390"/>
+<area shape="rect" id="Node000003" href="$classasge_1_1EngineCore.html#af3569d21170da28698d2027c86f700d2" title="Initialise all engine subsystems." alt="" coords="158,128,322,153"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="31,390,33,346,43,285,52,252,65,219,83,189,106,164,124,151,144,143,146,148,127,156,110,168,87,193,70,222,57,253,48,286,38,346,36,390"/>
+<area shape="rect" id="Node000006" href="$classasge_1_1renderer_1_1IRenderer.html#aa7e2c8d85eb0855fd753ae29d2eaebd1" title="Load a font from storage using the engine storage layer." alt="" coords="147,178,333,218"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="33,390,39,357,52,313,73,267,88,246,106,227,132,211,135,216,110,232,92,249,78,270,57,315,44,358,38,391"/>
+<area shape="rect" id="Node000007" href="$structasge_1_1Services.html#a693d25e8f9c77a8a44cd65befe8f79f0" title=" " alt="" coords="151,242,329,268"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="35,389,59,334,79,303,106,277,136,262,139,267,110,281,83,306,63,336,40,391"/>
+<area shape="rect" id="Node000008" href="$classasge_1_1scene_1_1IScene.html#a848c0b507b6646bb6fa96e20a766c345" title=" " alt="" coords="123,292,357,317"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="41,388,68,356,86,340,107,326,122,319,124,324,109,331,89,344,71,360,45,392"/>
+<area shape="rect" id="Node000010" href="$classasge_1_1EngineCore.html#a62dcf0a61da12adf7e32010e936af492" title="Run the main loop until shutdown is requested." alt="" coords="143,341,337,366"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="59,390,107,375,145,366,146,371,109,380,61,395"/>
+<area shape="rect" id="Node000044" href="$structasge_1_1Services.html#a595d69d94e08dd18812c5fe22df0ee3a" title=" " alt="" coords="159,390,321,416"/>
+<area shape="poly" id="edge58_Node000001_Node000044" title=" " alt="" coords="60,400,145,400,145,406,60,406"/>
+<area shape="rect" id="Node000045" href="$classasge_1_1EngineCore.html#a76162688bdb67419c8f9f4f318c71b54" title=" " alt="" coords="141,440,339,465"/>
+<area shape="poly" id="edge59_Node000001_Node000045" title=" " alt="" coords="61,410,109,424,152,434,151,439,107,429,59,415"/>
+<area shape="rect" id="Node000046" href="$classasge_1_1EngineCore.html#aced222c897881e2ef3598ade75f041f6" title="noexcept &#160;&#160;noexcept" alt="" coords="443,490,659,516"/>
+<area shape="poly" id="edge60_Node000001_Node000046" title=" " alt="" coords="45,414,71,446,89,462,109,474,150,489,193,501,282,515,368,518,444,514,444,519,368,523,281,520,192,506,149,495,107,479,86,466,67,450,41,418"/>
+<area shape="rect" id="Node000047" href="$classasge_1_1EngineCore.html#a7244130ae5489cc1621c544eddd86341" title="Gracefully shutdown the engine." alt="" coords="447,590,654,616"/>
+<area shape="poly" id="edge61_Node000001_Node000047" title=" " alt="" coords="38,416,43,449,54,494,76,540,91,560,109,577,133,588,165,597,247,607,342,610,433,607,433,613,342,615,247,612,164,602,131,593,107,581,87,564,71,543,49,496,37,451,32,416"/>
+<area shape="rect" id="Node000048" href="$client_2main_8cpp.html#af324be2966cf16926165deb4105f666f" title=" " alt="" coords="183,541,297,566"/>
+<area shape="poly" id="edge62_Node000001_Node000048" title=" " alt="" coords="41,415,65,466,84,495,110,519,138,535,170,544,168,549,136,540,106,524,80,499,60,469,36,417"/>
+<area shape="rect" id="Node000050" href="$classasge_1_1EngineCore.html#af01b8628f03abaac850a77b1dca8592a" title=" " alt="" coords="139,642,341,668"/>
+<area shape="poly" id="edge66_Node000001_Node000050" title=" " alt="" coords="37,415,40,455,51,511,73,570,89,597,110,621,128,634,125,638,106,625,85,601,68,573,46,512,35,456,32,416"/>
+<area shape="rect" id="Node000051" href="$structasge_1_1Services.html#ae02fb2f23f933abdb378042a59a044ea" title=" " alt="" coords="153,692,327,717"/>
+<area shape="poly" id="edge67_Node000001_Node000051" title=" " alt="" coords="38,415,47,472,62,552,83,629,96,659,110,678,124,689,141,696,139,701,122,693,106,682,91,661,78,631,57,553,41,473,33,416"/>
+<area shape="rect" id="Node000004" href="$classasge_1_1EngineCore.html#a1666f7296f499d4eedd38748ab006c6b" title="Zero&#45;initialise the Services structure before bootstrap." alt="" coords="441,170,660,196"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="323,149,445,166,444,171,322,154"/>
+<area shape="rect" id="Node000005" href="$classasge_1_1EngineCore.html#ab58f7a8b4490bf0719350c1c2c06261f" title="Reset the Services aggregate after shutdown." alt="" coords="420,121,681,146"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="322,136,406,134,406,139,322,141"/>
+<area shape="rect" id="Node000009" href="$classasge_1_1scene_1_1IScene.html#a9092442bf9a61418f5678258601e8eca" title=" " alt="" coords="447,228,654,253"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="312,289,371,276,419,263,465,253,467,258,421,268,373,281,313,294"/>
 <area shape="rect" id="Node000011" href="$namespaceasge_1_1script_1_1EntityFactory.html#a849abca2c7f7e288c0f4c6b934dfb18e" title="Create an entity from a parsed script handle." alt="" coords="793,895,984,935"/>
-<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="329,378,547,413,639,429,683,442,699,459,709,475,718,509,721,545,732,587,807,754,872,882,868,884,803,756,727,589,716,546,712,510,704,478,695,462,680,446,637,435,546,418,328,384"/>
-<area shape="rect" id="Node000027" href="$namespaceasge_1_1network_1_1EngineProtocol.html#a73adf06ac92d8fdd5d64795ec9f74a6f" title=" " alt="" coords="441,268,660,308"/>
-<area shape="poly" id="edge26_Node000010_Node000027" title=" " alt="" coords="314,353,371,340,473,310,474,315,373,345,315,358"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="321,364,373,375,421,391,461,402,497,409,561,416,590,422,620,433,650,450,683,476,705,502,714,527,721,555,732,587,874,882,869,884,727,589,715,556,709,529,700,505,679,479,647,454,618,438,589,428,560,422,497,414,460,407,419,396,371,380,320,369"/>
+<area shape="rect" id="Node000027" href="$namespaceasge_1_1network_1_1EngineProtocol.html#a73adf06ac92d8fdd5d64795ec9f74a6f" title=" " alt="" coords="441,278,660,318"/>
+<area shape="poly" id="edge26_Node000010_Node000027" title=" " alt="" coords="311,338,427,317,428,322,312,343"/>
 <area shape="rect" id="Node000042" href="$namespaceasge_1_1network_1_1EngineProtocol.html#a82866969b04ac179cc98621ee9dc33be" title=" " alt="" coords="441,342,660,382"/>
-<area shape="poly" id="edge49_Node000010_Node000042" title=" " alt="" coords="337,363,427,362,427,367,338,369"/>
+<area shape="poly" id="edge49_Node000010_Node000042" title=" " alt="" coords="338,353,427,356,427,361,337,359"/>
 <area shape="rect" id="Node000012" href="$classasge_1_1script_1_1EntityFactory_1_1EntityBuilder.html#aca48706aff2d5a0677b7a9e300fc644b" title="Builds or completes the entity and attaches configured components." alt="" coords="1164,991,1355,1031"/>
 <area shape="poly" id="edge11_Node000011_Node000012" title=" " alt="" coords="949,932,1097,976,1151,989,1150,994,1095,981,948,937"/>
 <area shape="rect" id="Node000013" href="$structasge_1_1Services.html#af7c99d591b82892004d16a419dda4738" title=" " alt="" coords="1177,457,1341,482"/>
@@ -65,11 +69,11 @@
 <area shape="rect" id="Node000026" href="$classasge_1_1script_1_1EntityFactory_1_1EntityBuilder.html#a419fe45489043b095c0364133465e00b" title="Sets the logical template identifier stored on the entity." alt="" coords="1148,1311,1371,1351"/>
 <area shape="poly" id="edge25_Node000011_Node000026" title=" " alt="" coords="897,934,917,1005,955,1104,981,1157,1014,1209,1053,1256,1098,1297,1136,1316,1134,1321,1094,1301,1049,1260,1010,1212,977,1160,950,1106,912,1007,892,936"/>
 <area shape="rect" id="Node000028" href="$classasge_1_1net_1_1GameProtocol.html#a5959bfae733c11f4c9624e3239e28d67" title=" " alt="" coords="729,104,1048,129"/>
-<area shape="poly" id="edge27_Node000027_Node000028" title=" " alt="" coords="625,266,680,243,704,227,728,209,851,134,854,138,731,213,707,231,683,248,627,271"/>
+<area shape="poly" id="edge27_Node000027_Node000028" title=" " alt="" coords="653,275,680,262,695,250,704,237,713,224,728,209,789,166,847,133,850,138,792,170,731,213,717,227,709,240,699,254,683,266,655,280"/>
 <area shape="rect" id="Node000038" href="$structasge_1_1Services.html#a39c85be8eef19d04f1c430b7ccf89d0c" title=" " alt="" coords="800,224,977,249"/>
-<area shape="poly" id="edge43_Node000027_Node000038" title=" " alt="" coords="660,268,729,258,789,248,790,254,730,263,661,274"/>
+<area shape="poly" id="edge43_Node000027_Node000038" title=" " alt="" coords="642,275,729,258,786,248,787,253,730,263,643,280"/>
 <area shape="rect" id="Node000039" href="$namespaceasge_1_1network_1_1EngineProtocol.html#a68d3134de9cd24d344f4c73df5a742be" title=" " alt="" coords="779,342,998,382"/>
-<area shape="poly" id="edge44_Node000027_Node000039" title=" " alt="" coords="644,306,783,336,782,341,643,311"/>
+<area shape="poly" id="edge44_Node000027_Node000039" title=" " alt="" coords="658,315,770,336,769,342,657,320"/>
 <area shape="rect" id="Node000029" href="$classasge_1_1net_1_1GameProtocol.html#aacff2ac9baf8e1410c4abd2cc4a1b4e5" title=" " alt="" coords="1096,205,1423,230"/>
 <area shape="poly" id="edge28_Node000028_Node000029" title=" " alt="" coords="937,126,1199,199,1198,204,936,132"/>
 <area shape="rect" id="Node000034" href="$classasge_1_1net_1_1GameProtocol.html#abbf747c9afd5f9fa6979a4c37adcde34" title=" " alt="" coords="1780,154,2051,180"/>
@@ -101,16 +105,16 @@
 <area shape="rect" id="Node000041" href="$classasge_1_1network_1_1INetwork.html#ac94ef6cdbb35ab91e68501175cf1f125" title="Send a data buffer to the remote peer." alt="" coords="1149,356,1369,381"/>
 <area shape="poly" id="edge48_Node000039_Node000041" title=" " alt="" coords="998,361,1136,363,1135,369,998,366"/>
 <area shape="poly" id="edge54_Node000042_Node000030" title=" " alt="" coords="645,379,730,391,1082,392,1423,390,1509,380,1509,385,1423,395,1082,397,729,396,645,384"/>
-<area shape="poly" id="edge57_Node000042_Node000031" title=" " alt="" coords="619,379,682,399,798,442,887,481,977,514,1031,529,1096,542,1188,556,1260,561,1331,557,1422,542,1462,531,1500,516,1565,485,1567,490,1502,521,1463,536,1423,547,1332,563,1260,567,1187,561,1096,547,1030,534,975,519,885,486,796,447,680,404,618,384"/>
-<area shape="poly" id="edge55_Node000042_Node000038" title=" " alt="" coords="638,339,680,318,694,303,702,288,711,272,728,258,756,245,786,238,787,243,758,250,731,262,715,276,707,291,699,307,683,322,640,344"/>
+<area shape="poly" id="edge57_Node000042_Node000031" title=" " alt="" coords="606,379,858,470,995,515,1097,540,1188,554,1260,560,1331,556,1422,540,1462,530,1500,516,1565,485,1567,490,1502,520,1463,535,1423,545,1332,561,1260,565,1187,559,1095,545,994,520,857,475,604,384"/>
+<area shape="poly" id="edge55_Node000042_Node000038" title=" " alt="" coords="659,339,680,327,695,311,703,293,711,275,728,258,756,245,785,237,787,242,757,250,731,262,715,278,707,295,700,314,683,332,661,344"/>
 <area shape="poly" id="edge56_Node000042_Node000039" title=" " alt="" coords="660,359,766,359,766,364,660,364"/>
 <area shape="rect" id="Node000043" href="$classasge_1_1net_1_1GameProtocol.html#ab76f8360999fabdb1e8b30b3c2a79ad7" title=" " alt="" coords="729,273,1048,298"/>
 <area shape="poly" id="edge50_Node000042_Node000043" title=" " alt="" coords="640,339,817,299,818,304,641,344"/>
 <area shape="poly" id="edge52_Node000043_Node000033" title=" " alt="" coords="1048,279,1457,269,1457,274,1048,284"/>
 <area shape="poly" id="edge53_Node000043_Node000035" title=" " alt="" coords="1021,270,1046,258,1062,243,1070,225,1077,207,1094,190,1140,168,1181,158,1220,157,1257,160,1295,163,1334,163,1376,156,1421,138,1436,127,1445,114,1454,101,1469,89,1484,82,1486,87,1472,93,1458,105,1449,117,1440,130,1424,143,1377,161,1334,169,1295,169,1257,165,1220,162,1182,163,1141,173,1098,194,1082,210,1074,227,1067,246,1050,262,1023,275"/>
 <area shape="poly" id="edge51_Node000043_Node000037" title=" " alt="" coords="1026,271,1046,258,1058,246,1065,233,1070,204,1074,175,1081,160,1094,146,1116,132,1119,137,1098,150,1086,163,1079,176,1075,205,1070,234,1063,249,1050,262,1029,275"/>
-<area shape="poly" id="edge63_Node000047_Node000045" title=" " alt="" coords="297,507,456,482,457,487,298,513"/>
-<area shape="poly" id="edge64_Node000047_Node000046" title=" " alt="" coords="298,525,457,551,456,556,297,530"/>
-<area shape="rect" id="Node000048" href="$classasge_1_1EngineCore.html#a3952e768523eca15881a20c622566b49" title=" " alt="" coords="455,506,647,532"/>
-<area shape="poly" id="edge62_Node000047_Node000048" title=" " alt="" coords="297,516,441,516,441,522,297,522"/>
+<area shape="poly" id="edge64_Node000048_Node000046" title=" " alt="" coords="297,542,458,515,459,520,298,547"/>
+<area shape="poly" id="edge65_Node000048_Node000047" title=" " alt="" coords="298,560,457,585,456,591,297,565"/>
+<area shape="rect" id="Node000049" href="$classasge_1_1EngineCore.html#a3952e768523eca15881a20c622566b49" title=" " alt="" coords="455,541,647,566"/>
+<area shape="poly" id="edge63_Node000048_Node000049" title=" " alt="" coords="297,551,441,551,441,556,297,556"/>
 </map>

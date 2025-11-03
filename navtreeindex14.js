@@ -1,8 +1,5 @@
 var NAVTREEINDEX14 =
 {
-"namespaceasge_1_1input.html#a5265976dcf7eba98927ad1471333b1cda5415e9052565ecaf84f33d7f20996fd9":[4,0,0,5,9,106],
-"namespaceasge_1_1input.html#a5265976dcf7eba98927ad1471333b1cda57cec4137b614c87cb4e24a3d003a3e0":[4,0,0,5,9,25],
-"namespaceasge_1_1input.html#a5265976dcf7eba98927ad1471333b1cda5dbc98dcc983a70728bd082d1a47546e":[4,0,0,5,9,19],
 "namespaceasge_1_1input.html#a5265976dcf7eba98927ad1471333b1cda61e9c06ea9a85a5088a499df6458d276":[4,0,0,5,9,23],
 "namespaceasge_1_1input.html#a5265976dcf7eba98927ad1471333b1cda61ee777e7f71dc466c3b2c685d8d313b":[4,0,0,5,9,65],
 "namespaceasge_1_1input.html#a5265976dcf7eba98927ad1471333b1cda62e75b78c155e8549c5c5edb434a7757":[4,0,0,5,9,91],
@@ -249,5 +246,8 @@ var NAVTREEINDEX14 =
 "namespacertype_1_1client_1_1lang.html#a3a218a8b56d5f49ac055b8827f43c586":[4,0,1,0,0,1],
 "namespacertype_1_1client_1_1lang.html#ace223e6f27c476daa27eaece53e99866":[4,0,1,0,0,2],
 "namespacertype_1_1client_1_1scene.html":[4,0,1,0,1],
-"namespacertype_1_1client_1_1ui.html":[4,0,1,0,2]
+"namespacertype_1_1client_1_1ui.html":[4,0,1,0,2],
+"namespaces.html":[4,0],
+"pages.html":[],
+"position_8hpp.html":[6,0,1,0,0,0,8]
 };

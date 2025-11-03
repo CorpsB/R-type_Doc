@@ -126,8 +126,8 @@ var sectionId = 'dynsection-0';
 <text text-anchor="start" x="4.5" y="-571.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
 <text text-anchor="start" x="17.5" y="-571.5" font-family="Helvetica,sans-Serif" font-size="10.00">virtual ~SceneStage()=default</text>
 <text text-anchor="start" x="4.5" y="-556.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="17.5" y="-556.5" font-family="Helvetica,sans-Serif" font-size="10.00">virtual void init(Services</text>
-<text text-anchor="start" x="17.5" y="-545.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &amp;services)=0</text>
+<text text-anchor="start" x="17.5" y="-556.5" font-family="Helvetica,sans-Serif" font-size="10.00">virtual void init(EngineCore</text>
+<text text-anchor="start" x="17.5" y="-545.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &amp;core)=0</text>
 <text text-anchor="start" x="4.5" y="-530.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
 <text text-anchor="start" x="17.5" y="-530.5" font-family="Helvetica,sans-Serif" font-size="10.00">virtual void onEnter()=0</text>
 <text text-anchor="start" x="4.5" y="-515.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>

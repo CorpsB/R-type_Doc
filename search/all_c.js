@@ -1,7 +1,7 @@
 var searchData=
 [
   ['d_0',['D',['../namespaceasge_1_1input.html#a5265976dcf7eba98927ad1471333b1cdaf623e75af30e62bbd73d6df5b50bb7b5',1,'asge::input']]],
-  ['damage_1',['damage',['../namespaceasge_1_1components.html#a993ef28593d1ef3f39eb7ca1f68a6eab',1,'asge::components::damage_attr_t::damage'],['../classasge_1_1net_1_1GameProtocol.html#ab99c85bb79600c8f70f8fccff06e091dad02e21e5a4e79cc2339ae77a47573b25',1,'asge::net::GameProtocol::DAMAGE']]],
+  ['damage_1',['damage',['../classasge_1_1net_1_1GameProtocol.html#ab99c85bb79600c8f70f8fccff06e091dad02e21e5a4e79cc2339ae77a47573b25',1,'asge::net::GameProtocol::DAMAGE'],['../namespaceasge_1_1components.html#a993ef28593d1ef3f39eb7ca1f68a6eab',1,'asge::components::damage_attr_t::damage']]],
   ['damage_2ehpp_2',['damage.hpp',['../damage_8hpp.html',1,'']]],
   ['damage_5fattr_5ft_3',['damage_attr_t',['../namespaceasge_1_1components.html#structasge_1_1components_1_1damage__attr__t',1,'asge::components']]],
   ['data_4',['data',['../classasge_1_1network_1_1NetworkManager.html#ae58591b04c4bd18995292480821fa6ab',1,'asge::network::NetworkManager::Pending']]],

@@ -86,8 +86,6 @@ var NAVTREEINDEX1 =
 "LogRecorder_8cpp_source.html":[6,0,1,0,1,1,0,0],
 "LogRecorder_8hpp.html":[6,0,1,0,1,1,0,1],
 "LogRecorder_8hpp_source.html":[6,0,1,0,1,1,0,1],
-"LogicStage_8hpp.html":[6,0,1,0,1,10,1,0,0],
-"LogicStage_8hpp_source.html":[6,0,1,0,1,10,1,0,0],
 "LoopBackChannel_8cpp.html":[6,0,1,0,1,6,9],
 "LoopBackChannel_8cpp_source.html":[6,0,1,0,1,6,9],
 "LoopbackChannel_8hpp.html":[6,0,1,0,1,6,10],
@@ -196,8 +194,8 @@ var NAVTREEINDEX1 =
 "SceneManager_8cpp_source.html":[6,0,1,0,1,10,4],
 "SceneManager_8hpp.html":[6,0,1,0,1,10,5],
 "SceneManager_8hpp_source.html":[6,0,1,0,1,10,5],
-"SceneStage_8hpp.html":[6,0,1,0,1,10,1,3],
-"SceneStage_8hpp_source.html":[6,0,1,0,1,10,1,3],
+"SceneStage_8hpp.html":[6,0,1,0,1,10,1,2],
+"SceneStage_8hpp_source.html":[6,0,1,0,1,10,1,2],
 "SceneTypes_8hpp.html":[6,0,1,0,0,1,5],
 "SceneTypes_8hpp.html#a394511a85816ba014b7cee9fa839df62":[6,0,1,0,0,1,5,4],
 "SceneTypes_8hpp.html#a394511a85816ba014b7cee9fa839df62a0eceeb45861f9585dd7a97a3e36f85c6":[6,0,1,0,0,1,5,4,0],
@@ -249,5 +247,7 @@ var NAVTREEINDEX1 =
 "SystemTimer_8hpp_source.html":[6,0,1,0,1,13,1,1],
 "System_8hpp.html":[6,0,1,0,1,14,4,4],
 "System_8hpp_source.html":[6,0,1,0,1,14,4,4],
-"Text_8cpp.html":[6,0,2,0,2,2,0]
+"Text_8cpp.html":[6,0,2,0,2,2,0],
+"Text_8cpp_source.html":[6,0,2,0,2,2,0],
+"Text_8hpp.html":[6,0,2,0,2,2,1]
 };

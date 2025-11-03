@@ -56,7 +56,6 @@ var classasge_1_1EngineCore =
     [ "tick", "classasge_1_1EngineCore.html#a5f49993810d0ffa39c51dd8d8e889bd3", null ],
     [ "_accumulated_distance", "classasge_1_1EngineCore.html#a78e82bef925dfaf65696bf9f0e0f35cb", null ],
     [ "_collision_system", "classasge_1_1EngineCore.html#abb0c1410fe06cd028ad38ee23d745836", null ],
-    [ "_gameRunning", "classasge_1_1EngineCore.html#a19067746ea3cf5a864e829b4a6999d8c", null ],
     [ "_hooks", "classasge_1_1EngineCore.html#ab2dc65fe0d639c45bff602bda1899611", null ],
     [ "_initialized", "classasge_1_1EngineCore.html#a4fd6a4b39231a909103ebb20c2ff9060", null ],
     [ "_last_tick", "classasge_1_1EngineCore.html#aa32aa27b63a85e9336239ec40e6ea0d2", null ],

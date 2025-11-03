@@ -128,8 +128,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aba8a47bd0cd35e9a32dfd8060aa365b6" id="r_aba8a47bd0cd35e9a32dfd8060aa365b6"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasge_1_1scene_1_1SceneStage.html#aba8a47bd0cd35e9a32dfd8060aa365b6">~SceneStage</a> ()=default</td></tr>
 <tr class="memdesc:aba8a47bd0cd35e9a32dfd8060aa365b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual destructor for safe polymorphic destruction.  <br /></td></tr>
 <tr class="separator:aba8a47bd0cd35e9a32dfd8060aa365b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad53075dd17dd0b5702bcb9bf96f60fb6" id="r_ad53075dd17dd0b5702bcb9bf96f60fb6"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasge_1_1scene_1_1SceneStage.html#ad53075dd17dd0b5702bcb9bf96f60fb6">init</a> (<a class="el" href="structasge_1_1Services.html">Services</a> &amp;services)=0</td></tr>
-<tr class="separator:ad53075dd17dd0b5702bcb9bf96f60fb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae73f925c04af1e8eaf19b32151ecb29a" id="r_ae73f925c04af1e8eaf19b32151ecb29a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasge_1_1scene_1_1SceneStage.html#ae73f925c04af1e8eaf19b32151ecb29a">init</a> (<a class="el" href="classasge_1_1EngineCore.html">EngineCore</a> &amp;core)=0</td></tr>
+<tr class="separator:ae73f925c04af1e8eaf19b32151ecb29a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d739732d3acf082928cff30f4b17eea" id="r_a3d739732d3acf082928cff30f4b17eea"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasge_1_1scene_1_1SceneStage.html#a3d739732d3acf082928cff30f4b17eea">onEnter</a> ()=0</td></tr>
 <tr class="memdesc:a3d739732d3acf082928cff30f4b17eea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the scene becomes the active one (entered top of stack).  <br /></td></tr>
 <tr class="separator:a3d739732d3acf082928cff30f4b17eea"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -170,7 +170,7 @@ Public Member Functions</h2></td></tr>
 <li>Background behavior is customizable through <code>wants*WhenBackground()</code> flags. </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="SceneStage_8hpp_source.html#l00052">52</a> of file <a class="el" href="SceneStage_8hpp_source.html">SceneStage.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SceneStage_8hpp_source.html#l00055">55</a> of file <a class="el" href="SceneStage_8hpp_source.html">SceneStage.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aba8a47bd0cd35e9a32dfd8060aa365b6" name="aba8a47bd0cd35e9a32dfd8060aa365b6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aba8a47bd0cd35e9a32dfd8060aa365b6">&#9670;&#160;</a></span>~SceneStage()</h2>
@@ -278,8 +278,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ad53075dd17dd0b5702bcb9bf96f60fb6" name="ad53075dd17dd0b5702bcb9bf96f60fb6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad53075dd17dd0b5702bcb9bf96f60fb6">&#9670;&#160;</a></span>init()</h2>
+<a id="ae73f925c04af1e8eaf19b32151ecb29a" name="ae73f925c04af1e8eaf19b32151ecb29a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae73f925c04af1e8eaf19b32151ecb29a">&#9670;&#160;</a></span>init()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -290,8 +290,8 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">virtual void asge::scene::SceneStage::init </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structasge_1_1Services.html">Services</a> &amp;&#160;</td>
-          <td class="paramname"><em>services</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="classasge_1_1EngineCore.html">EngineCore</a> &amp;&#160;</td>
+          <td class="paramname"><em>core</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -302,7 +302,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classrtype_1_1client_1_1scene_1_1NullStage.html#ad2deb0f818cba474cd4d2915e00da4db">rtype::client::scene::NullStage</a>, <a class="el" href="classrtype_1_1client_1_1scene_1_1GameOverStage.html#a3e3e881735d763e282c114deaff6def6">rtype::client::scene::GameOverStage</a>, <a class="el" href="classrtype_1_1client_1_1scene_1_1GameStage.html#a5cca35a2be818169e83a8b430c00e34c">rtype::client::scene::GameStage</a>, <a class="el" href="classrtype_1_1client_1_1scene_1_1MenuStage.html#af920f1d6335c3eede2de12eaf5b381e2">rtype::client::scene::MenuStage</a>, and <a class="el" href="classrtype_1_1client_1_1scene_1_1OptionsStage.html#af03f2ee36999dc3df3fff81212907968">rtype::client::scene::OptionsStage</a>.</p>
+<p>Implemented in <a class="el" href="classrtype_1_1client_1_1scene_1_1GameOverStage.html#a2599b93d01dbd78888fdf005566cdd21">rtype::client::scene::GameOverStage</a>, <a class="el" href="classrtype_1_1client_1_1scene_1_1GameStage.html#a72249595d35e1e8884cc6000fef8cdaf">rtype::client::scene::GameStage</a>, <a class="el" href="classrtype_1_1client_1_1scene_1_1MenuStage.html#abfbf3c055e6d8093e6a7072dab622efe">rtype::client::scene::MenuStage</a>, and <a class="el" href="classrtype_1_1client_1_1scene_1_1OptionsStage.html#af8c5668d6694ca9ba463065aef686fec">rtype::client::scene::OptionsStage</a>.</p>
 
 </div>
 </div>
@@ -494,8 +494,8 @@ Public Member Functions</h2></td></tr>
 <p>Whether this scene continues to draw while in background. </p>
 <dl class="section return"><dt>Returns</dt><dd>false by default. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="SceneStage_8hpp_source.html#l00095">95</a> of file <a class="el" href="SceneStage_8hpp_source.html">SceneStage.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   95</span>{ <span class="keywordflow">return</span> <span class="keyword">false</span>; }</div>
+<p class="definition">Definition at line <a class="el" href="SceneStage_8hpp_source.html#l00098">98</a> of file <a class="el" href="SceneStage_8hpp_source.html">SceneStage.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   98</span>{ <span class="keywordflow">return</span> <span class="keyword">false</span>; }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -526,8 +526,8 @@ Public Member Functions</h2></td></tr>
 <p>If true, the <a class="el" href="classasge_1_1scene_1_1SceneManager.html">SceneManager</a> may call <code><a class="el" href="classasge_1_1scene_1_1SceneStage.html#a70ebe7a0fd85db70a9cd059033ac3f6c" title="Handle an input or system event.">handleEvent()</a></code> even while the scene is covered by others — provided that upper scenes did not consume the event.</p>
 <dl class="section return"><dt>Returns</dt><dd>false by default. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="SceneStage_8hpp_source.html#l00112">112</a> of file <a class="el" href="SceneStage_8hpp_source.html">SceneStage.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  112</span>{ <span class="keywordflow">return</span> <span class="keyword">false</span>; }</div>
+<p class="definition">Definition at line <a class="el" href="SceneStage_8hpp_source.html#l00115">115</a> of file <a class="el" href="SceneStage_8hpp_source.html">SceneStage.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  115</span>{ <span class="keywordflow">return</span> <span class="keyword">false</span>; }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -557,8 +557,8 @@ Public Member Functions</h2></td></tr>
 <p>Whether this scene continues to update while in background. </p>
 <dl class="section return"><dt>Returns</dt><dd>false by default. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="SceneStage_8hpp_source.html#l00101">101</a> of file <a class="el" href="SceneStage_8hpp_source.html">SceneStage.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  101</span>{ <span class="keywordflow">return</span> <span class="keyword">false</span>; }</div>
+<p class="definition">Definition at line <a class="el" href="SceneStage_8hpp_source.html#l00104">104</a> of file <a class="el" href="SceneStage_8hpp_source.html">SceneStage.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  104</span>{ <span class="keywordflow">return</span> <span class="keyword">false</span>; }</div>
 </div><!-- fragment -->
 </div>
 </div>

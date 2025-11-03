@@ -1,5 +1,5 @@
 var classrtype_1_1client_1_1scene_1_1GameOverStage =
 [
-    [ "GameOverStage", "classrtype_1_1client_1_1scene_1_1GameOverStage.html#a7a18299e98c60fda684952be10e5a743", null ],
-    [ "init", "classrtype_1_1client_1_1scene_1_1GameOverStage.html#a3e3e881735d763e282c114deaff6def6", null ]
+    [ "GameOverStage", "classrtype_1_1client_1_1scene_1_1GameOverStage.html#a8193b4f5d5f825f0219baf9f1b772521", null ],
+    [ "init", "classrtype_1_1client_1_1scene_1_1GameOverStage.html#a2599b93d01dbd78888fdf005566cdd21", null ]
 ];

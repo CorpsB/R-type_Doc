@@ -1,25 +1,27 @@
 <map id="asge::Services::renderer" name="asge::Services::renderer">
-<area shape="rect" id="Node000001" title=" " alt="" coords="613,203,792,228"/>
-<area shape="rect" id="Node000002" href="$classrtype_1_1client_1_1ui_1_1ProgressBar.html#ae059dd7178d6273daa7531fc847150bb" title=" " alt="" coords="307,5,553,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="687,191,668,157,640,117,605,77,564,44,540,33,542,28,567,40,609,73,644,113,672,154,692,189"/>
-<area shape="rect" id="Node000003" href="$classrtype_1_1client_1_1ui_1_1Text.html#ac64f2f7f0518d04f7b8048315269dfb9" title=" " alt="" coords="333,55,527,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="681,194,632,142,600,115,564,94,527,80,528,75,566,89,603,111,636,138,685,190"/>
-<area shape="rect" id="Node000004" href="$classrtype_1_1client_1_1ui_1_1MultipleOption.html#ae13d6a39afa167bf0cf93d07e8484c11" title=" " alt="" coords="298,104,562,129"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="670,198,622,169,564,143,524,132,526,127,566,138,624,164,673,193"/>
-<area shape="rect" id="Node000005" href="$classrtype_1_1client_1_1ui_1_1RangeOption.html#a772e231a856c52f910621015b7fd4ff4" title=" " alt="" coords="304,153,556,179"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="620,203,565,193,502,181,503,176,566,187,621,197"/>
-<area shape="rect" id="Node000006" href="$classrtype_1_1client_1_1ui_1_1SingleOption.html#af6bfa788c4e591d5e8ca4ed31d0776cf" title=" " alt="" coords="305,203,555,228"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="600,218,556,218,556,213,600,213"/>
-<area shape="rect" id="Node000007" href="$classrtype_1_1client_1_1scene_1_1MenuStage.html#af920f1d6335c3eede2de12eaf5b381e2" title=" " alt="" coords="302,252,558,277"/>
-<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="619,233,502,255,501,249,618,228"/>
-<area shape="rect" id="Node000009" href="$classrtype_1_1client_1_1scene_1_1OptionsStage.html#af03f2ee36999dc3df3fff81212907968" title=" " alt="" coords="295,301,565,327"/>
-<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="672,238,624,266,566,291,520,304,519,299,564,286,621,261,669,233"/>
-<area shape="rect" id="Node000011" href="$client_2main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="403,351,457,376"/>
-<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="685,241,635,292,602,318,567,340,539,351,509,359,458,365,457,360,508,353,537,346,564,336,599,314,631,288,681,237"/>
-<area shape="rect" id="Node000012" href="$classasge_1_1world_1_1RenderSystem.html#ab105d2038d033f22d47cf65806764187" title="Draws all tracked entities using the renderer service." alt="" coords="305,400,555,425"/>
-<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="691,242,672,276,644,316,609,356,567,390,539,402,537,398,564,385,605,353,640,313,667,273,687,239"/>
-<area shape="rect" id="Node000008" href="$classrtype_1_1client_1_1scene_1_1MenuStage.html#a00489608286872d7b78c78ae268bd32e" title=" " alt="" coords="13,238,239,278"/>
-<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="288,264,240,263,240,258,288,259"/>
-<area shape="rect" id="Node000010" href="$classrtype_1_1client_1_1scene_1_1OptionsStage.html#adf3350b31a0b43b119b148126c9e9034" title=" " alt="" coords="5,302,247,342"/>
-<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="281,321,247,321,247,316,281,315"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="613,243,792,269"/>
+<area shape="rect" id="Node000002" href="$classrtype_1_1client_1_1scene_1_1GameStage.html#ae710618b288d443051ba386e89e9a87f" title=" " alt="" coords="315,5,545,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="689,231,670,192,643,146,608,99,564,60,542,48,545,43,567,55,611,95,648,143,675,190,693,229"/>
+<area shape="rect" id="Node000003" href="$classrtype_1_1client_1_1ui_1_1ProgressBar.html#ae059dd7178d6273daa7531fc847150bb" title=" " alt="" coords="307,70,553,95"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="684,233,636,169,603,136,564,109,538,98,540,93,567,104,606,132,640,166,689,230"/>
+<area shape="rect" id="Node000004" href="$classrtype_1_1client_1_1ui_1_1Text.html#ac64f2f7f0518d04f7b8048315269dfb9" title=" " alt="" coords="333,119,527,145"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="677,236,627,195,597,175,564,158,527,146,528,141,566,154,599,171,630,191,680,232"/>
+<area shape="rect" id="Node000005" href="$classrtype_1_1client_1_1ui_1_1MultipleOption.html#ae13d6a39afa167bf0cf93d07e8484c11" title=" " alt="" coords="298,169,562,194"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="658,240,565,208,515,197,516,191,566,203,660,235"/>
+<area shape="rect" id="Node000006" href="$classrtype_1_1client_1_1ui_1_1RangeOption.html#a772e231a856c52f910621015b7fd4ff4" title=" " alt="" coords="304,218,556,243"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="600,249,556,245,556,240,600,244"/>
+<area shape="rect" id="Node000007" href="$classrtype_1_1client_1_1ui_1_1SingleOption.html#af6bfa788c4e591d5e8ca4ed31d0776cf" title=" " alt="" coords="305,267,555,293"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="600,268,556,272,555,266,599,262"/>
+<area shape="rect" id="Node000008" href="$classrtype_1_1client_1_1scene_1_1MenuStage.html#abfbf3c055e6d8093e6a7072dab622efe" title=" " alt="" coords="302,317,558,342"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="658,276,566,307,510,319,509,314,565,301,656,271"/>
+<area shape="rect" id="Node000010" href="$classrtype_1_1client_1_1scene_1_1OptionsStage.html#af8c5668d6694ca9ba463065aef686fec" title=" " alt="" coords="295,366,565,391"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="679,280,630,320,599,340,566,357,532,368,530,363,564,352,596,336,627,316,676,276"/>
+<area shape="rect" id="Node000012" href="$client_2main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="403,415,457,441"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="689,282,640,345,606,379,567,406,539,418,510,425,458,431,457,426,509,420,537,413,564,402,602,375,636,342,684,279"/>
+<area shape="rect" id="Node000013" href="$classasge_1_1world_1_1RenderSystem.html#ab105d2038d033f22d47cf65806764187" title="Draws all tracked entities using the renderer service." alt="" coords="305,465,555,490"/>
+<area shape="poly" id="edge12_Node000001_Node000013" title=" " alt="" coords="694,283,676,322,649,369,612,416,591,438,567,456,544,467,542,462,564,451,587,434,608,413,644,366,671,319,689,280"/>
+<area shape="rect" id="Node000009" href="$classrtype_1_1client_1_1scene_1_1MenuStage.html#a92cbb9a8117bfc9031df5bb64ced2538" title=" " alt="" coords="13,303,239,343"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="288,329,240,328,240,322,288,324"/>
+<area shape="rect" id="Node000011" href="$classrtype_1_1client_1_1scene_1_1OptionsStage.html#aaa61f311c7740685070209d953ea7591" title=" " alt="" coords="5,367,247,407"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="281,385,247,386,247,381,281,380"/>
 </map>

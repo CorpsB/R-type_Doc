@@ -30,7 +30,7 @@ var searchData=
   ['optionlist_2ecpp_27',['OptionList.cpp',['../OptionList_8cpp.html',1,'']]],
   ['optionlist_2ehpp_28',['OptionList.hpp',['../OptionList_8hpp.html',1,'']]],
   ['options_29',['options',['../namespaceasge_1_1audio.html#ac87487cc88ad523fbfb1eb86d019875d',1,'asge::audio::SongEntry']]],
-  ['optionsstage_30',['optionsstage',['../classrtype_1_1client_1_1scene_1_1OptionsStage.html#adf3350b31a0b43b119b148126c9e9034',1,'rtype::client::scene::OptionsStage::OptionsStage()'],['../classrtype_1_1client_1_1scene_1_1OptionsStage.html',1,'rtype::client::scene::OptionsStage']]],
+  ['optionsstage_30',['optionsstage',['../classrtype_1_1client_1_1scene_1_1OptionsStage.html#aaa61f311c7740685070209d953ea7591',1,'rtype::client::scene::OptionsStage::OptionsStage()'],['../classrtype_1_1client_1_1scene_1_1OptionsStage.html',1,'rtype::client::scene::OptionsStage']]],
   ['optionsstage_2ecpp_31',['OptionsStage.cpp',['../OptionsStage_8cpp.html',1,'']]],
   ['optionsstage_2ehpp_32',['OptionsStage.hpp',['../OptionsStage_8hpp.html',1,'']]],
   ['optype_33',['OpType',['../classasge_1_1scene_1_1SceneManager.html#a6de430ad97d835bba550736fb6c9dc1d',1,'asge::scene::SceneManager']]],

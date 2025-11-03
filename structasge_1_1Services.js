@@ -35,6 +35,7 @@ var structasge_1_1Services =
     [ "_debug", "structasge_1_1Services.html#a29ea58e68b682a2db82d9278925ef14f", null ],
     [ "_events", "structasge_1_1Services.html#a2c07b0c237b55833af4c87d3d1b59e73", null ],
     [ "_game_protocol", "structasge_1_1Services.html#a8694a4c30acdd9f2a27e6acf3538426c", null ],
+    [ "_gameRunning", "structasge_1_1Services.html#ade8a3d61aecf154d6a765a739405d3fd", null ],
     [ "_input", "structasge_1_1Services.html#aefbc19f2cd9d1175f0d0d1a08752ce43", null ],
     [ "_jobs", "structasge_1_1Services.html#a2dc619ed63594e2d379883d3868ae948", null ],
     [ "_net_comp_rate_hz", "structasge_1_1Services.html#a5b58ff3b19560f5fc4be56bad36fcc35", null ],

@@ -58,157 +58,155 @@ var sectionId = 'dynsection-0';
 <g id="Node000001" class="node">
 <title>Node1</title>
 <g id="a_Node000001"><a xlink:title="High&#45;level orchestrator responsible for bootstrapping and running the engine.">
-<polygon fill="#999999" stroke="transparent" points="404.5,-1187 169.5,-1187 169.5,0 404.5,0 404.5,-1187"/>
-<text text-anchor="start" x="245" y="-1174.5" font-family="Helvetica,sans-Serif" font-size="10.00">asge::EngineCore</text>
-<text text-anchor="start" x="176.5" y="-1159.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="187" y="-1159.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::shared_ptr&lt; world::RenderSystem</text>
-<text text-anchor="start" x="187" y="-1148.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &gt; _render_system</text>
-<text text-anchor="start" x="176.5" y="-1133.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="187" y="-1133.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::shared_ptr&lt; world::systems</text>
-<text text-anchor="start" x="187" y="-1122.5" font-family="Helvetica,sans-Serif" font-size="10.00">::CollisionSystem &gt; _collision_system</text>
-<text text-anchor="start" x="176.5" y="-1107.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="187" y="-1107.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::shared_ptr&lt; world::systems</text>
-<text text-anchor="start" x="187" y="-1096.5" font-family="Helvetica,sans-Serif" font-size="10.00">::MovementSystem &gt; _movement_system</text>
-<text text-anchor="start" x="176.5" y="-1081.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="187" y="-1081.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::shared_ptr&lt; world::systems</text>
-<text text-anchor="start" x="187" y="-1070.5" font-family="Helvetica,sans-Serif" font-size="10.00">::PlayerSystem &gt; _player_system</text>
-<text text-anchor="start" x="176.5" y="-1055.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="187" y="-1055.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::unique_ptr&lt; script::LevelSpawner</text>
-<text text-anchor="start" x="187" y="-1044.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &gt; _level_spawner</text>
-<text text-anchor="start" x="176.5" y="-1029.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="187" y="-1029.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::atomic&lt; bool &gt; _initialized</text>
-<text text-anchor="start" x="176.5" y="-1014.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="187" y="-1014.5" font-family="Helvetica,sans-Serif" font-size="10.00">bool _gameRunning</text>
-<text text-anchor="start" x="176.5" y="-999.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="187" y="-999.5" font-family="Helvetica,sans-Serif" font-size="10.00">uint32_t _player_cpt</text>
-<text text-anchor="start" x="176.5" y="-984.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="187" y="-984.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::vector&lt; std::pair&lt; uint32</text>
-<text text-anchor="start" x="187" y="-973.5" font-family="Helvetica,sans-Serif" font-size="10.00">_t, uint32_t &gt; &gt; _player_ids_conns</text>
-<text text-anchor="start" x="176.5" y="-958.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="187" y="-958.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::thread _networkThread</text>
-<text text-anchor="start" x="176.5" y="-943.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="187" y="-943.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::atomic&lt; bool &gt; _networkThread</text>
-<text text-anchor="start" x="187" y="-932.5" font-family="Helvetica,sans-Serif" font-size="10.00">Running</text>
-<text text-anchor="start" x="176.5" y="-917.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="187" y="-917.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::mutex _net_queue_mutex</text>
-<text text-anchor="start" x="176.5" y="-902.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="187" y="-902.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::deque&lt; network::PacketEnvelope</text>
-<text text-anchor="start" x="187" y="-891.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &gt; _net_queue</text>
-<text text-anchor="start" x="176.5" y="-876.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="187" y="-876.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::uint64_t _accumulated</text>
-<text text-anchor="start" x="187" y="-865.5" font-family="Helvetica,sans-Serif" font-size="10.00">_distance</text>
-<text text-anchor="start" x="176.5" y="-850.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="187" y="-850.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::chrono::steady_clock</text>
-<text text-anchor="start" x="187" y="-839.5" font-family="Helvetica,sans-Serif" font-size="10.00">::time_point _last_tick</text>
-<text text-anchor="start" x="174" y="-824.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="187" y="-824.5" font-family="Helvetica,sans-Serif" font-size="10.00">EngineCore(const EngineConfig</text>
-<text text-anchor="start" x="187" y="-813.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &amp;cfg) noexcept</text>
-<text text-anchor="start" x="174" y="-798.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="187" y="-798.5" font-family="Helvetica,sans-Serif" font-size="10.00">~EngineCore()</text>
-<text text-anchor="start" x="174" y="-783.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="187" y="-783.5" font-family="Helvetica,sans-Serif" font-size="10.00">EngineCore(const EngineCore</text>
-<text text-anchor="start" x="187" y="-772.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &amp;)=delete</text>
-<text text-anchor="start" x="174" y="-757.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="187" y="-757.5" font-family="Helvetica,sans-Serif" font-size="10.00">EngineCore &amp; operator=(const</text>
-<text text-anchor="start" x="187" y="-746.5" font-family="Helvetica,sans-Serif" font-size="10.00"> EngineCore &amp;)=delete</text>
-<text text-anchor="start" x="174" y="-731.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="187" y="-731.5" font-family="Helvetica,sans-Serif" font-size="10.00">void init()</text>
-<text text-anchor="start" x="174" y="-716.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="187" y="-716.5" font-family="Helvetica,sans-Serif" font-size="10.00">void tick()</text>
-<text text-anchor="start" x="174" y="-701.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="187" y="-701.5" font-family="Helvetica,sans-Serif" font-size="10.00">void runLoop()</text>
-<text text-anchor="start" x="174" y="-686.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="187" y="-686.5" font-family="Helvetica,sans-Serif" font-size="10.00">void shutdown() noexcept</text>
-<text text-anchor="start" x="174" y="-671.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="187" y="-671.5" font-family="Helvetica,sans-Serif" font-size="10.00">void startWith(Args &amp;&amp;... args)</text>
-<text text-anchor="start" x="174" y="-656.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="187" y="-656.5" font-family="Helvetica,sans-Serif" font-size="10.00">Services &amp; services() noexcept</text>
-<text text-anchor="start" x="174" y="-641.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="187" y="-641.5" font-family="Helvetica,sans-Serif" font-size="10.00">const Services &amp; services</text>
-<text text-anchor="start" x="187" y="-630.5" font-family="Helvetica,sans-Serif" font-size="10.00">() const noexcept</text>
-<text text-anchor="start" x="174" y="-615.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="187" y="-615.5" font-family="Helvetica,sans-Serif" font-size="10.00">bool isInitialized() const</text>
-<text text-anchor="start" x="187" y="-604.5" font-family="Helvetica,sans-Serif" font-size="10.00"> noexcept</text>
-<text text-anchor="start" x="174" y="-589.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="187" y="-589.5" font-family="Helvetica,sans-Serif" font-size="10.00">bool running() const noexcept</text>
-<text text-anchor="start" x="174" y="-574.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="187" y="-574.5" font-family="Helvetica,sans-Serif" font-size="10.00">void setRunning(bool state)</text>
-<text text-anchor="start" x="187" y="-563.5" font-family="Helvetica,sans-Serif" font-size="10.00"> noexcept</text>
-<text text-anchor="start" x="174" y="-548.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="187" y="-548.5" font-family="Helvetica,sans-Serif" font-size="10.00">void setHeadlessMode(bool on)</text>
-<text text-anchor="start" x="174" y="-533.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="187" y="-533.5" font-family="Helvetica,sans-Serif" font-size="10.00">bool startServer(unsigned</text>
-<text text-anchor="start" x="187" y="-522.5" font-family="Helvetica,sans-Serif" font-size="10.00"> short port)</text>
-<text text-anchor="start" x="174" y="-507.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="187" y="-507.5" font-family="Helvetica,sans-Serif" font-size="10.00">bool connectToServer(const</text>
-<text text-anchor="start" x="187" y="-496.5" font-family="Helvetica,sans-Serif" font-size="10.00"> std::string &amp;addr, unsigned</text>
-<text text-anchor="start" x="187" y="-485.5" font-family="Helvetica,sans-Serif" font-size="10.00"> short port)</text>
-<text text-anchor="start" x="174" y="-470.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="187" y="-470.5" font-family="Helvetica,sans-Serif" font-size="10.00">void pollPlayer(std::optional</text>
-<text text-anchor="start" x="187" y="-459.5" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; std::chrono::milliseconds &gt;</text>
-<text text-anchor="start" x="187" y="-448.5" font-family="Helvetica,sans-Serif" font-size="10.00"> timeout)</text>
-<text text-anchor="start" x="174" y="-433.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="187" y="-433.5" font-family="Helvetica,sans-Serif" font-size="10.00">void setHooks(const EngineHooks &amp;hooks)</text>
-<text text-anchor="start" x="174" y="-418.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="187" y="-418.5" font-family="Helvetica,sans-Serif" font-size="10.00">void injectStorage(std::unique</text>
-<text text-anchor="start" x="187" y="-407.5" font-family="Helvetica,sans-Serif" font-size="10.00">_ptr&lt; storage::IStorage &gt; storage_backend)</text>
-<text text-anchor="start" x="176.5" y="-392.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="187" y="-392.5" font-family="Helvetica,sans-Serif" font-size="10.00">void initServices()</text>
-<text text-anchor="start" x="176.5" y="-377.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="187" y="-377.5" font-family="Helvetica,sans-Serif" font-size="10.00">void initNetwork()</text>
-<text text-anchor="start" x="176.5" y="-362.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="187" y="-362.5" font-family="Helvetica,sans-Serif" font-size="10.00">void initDebug()</text>
-<text text-anchor="start" x="176.5" y="-347.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="187" y="-347.5" font-family="Helvetica,sans-Serif" font-size="10.00">void initTimer()</text>
-<text text-anchor="start" x="176.5" y="-332.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="187" y="-332.5" font-family="Helvetica,sans-Serif" font-size="10.00">void initStorage()</text>
-<text text-anchor="start" x="176.5" y="-317.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="187" y="-317.5" font-family="Helvetica,sans-Serif" font-size="10.00">void initJobs()</text>
-<text text-anchor="start" x="176.5" y="-302.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="187" y="-302.5" font-family="Helvetica,sans-Serif" font-size="10.00">void initEvents()</text>
-<text text-anchor="start" x="176.5" y="-287.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="187" y="-287.5" font-family="Helvetica,sans-Serif" font-size="10.00">void initInput()</text>
-<text text-anchor="start" x="176.5" y="-272.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="187" y="-272.5" font-family="Helvetica,sans-Serif" font-size="10.00">void initPlugins()</text>
-<text text-anchor="start" x="176.5" y="-257.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="187" y="-257.5" font-family="Helvetica,sans-Serif" font-size="10.00">void initRendererAndAudio()</text>
-<text text-anchor="start" x="176.5" y="-242.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="187" y="-242.5" font-family="Helvetica,sans-Serif" font-size="10.00">void initScripts()</text>
-<text text-anchor="start" x="176.5" y="-227.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="187" y="-227.5" font-family="Helvetica,sans-Serif" font-size="10.00">void initWorld()</text>
-<text text-anchor="start" x="176.5" y="-212.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="187" y="-212.5" font-family="Helvetica,sans-Serif" font-size="10.00">void initScene()</text>
-<text text-anchor="start" x="176.5" y="-197.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="187" y="-197.5" font-family="Helvetica,sans-Serif" font-size="10.00">void shutdownServices() noexcept</text>
-<text text-anchor="start" x="176.5" y="-182.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="187" y="-182.5" font-family="Helvetica,sans-Serif" font-size="10.00">void shutdownNetwork() noexcept</text>
-<text text-anchor="start" x="176.5" y="-167.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="187" y="-167.5" font-family="Helvetica,sans-Serif" font-size="10.00">void shutdownWorld() noexcept</text>
-<text text-anchor="start" x="176.5" y="-152.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="187" y="-152.5" font-family="Helvetica,sans-Serif" font-size="10.00">void shutdownScripts() noexcept</text>
-<text text-anchor="start" x="176.5" y="-137.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="187" y="-137.5" font-family="Helvetica,sans-Serif" font-size="10.00">void shutdownRendererAndAudio</text>
-<text text-anchor="start" x="187" y="-126.5" font-family="Helvetica,sans-Serif" font-size="10.00">() noexcept</text>
-<text text-anchor="start" x="176.5" y="-111.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="187" y="-111.5" font-family="Helvetica,sans-Serif" font-size="10.00">void shutdownPlugins() noexcept</text>
-<text text-anchor="start" x="176.5" y="-96.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="187" y="-96.5" font-family="Helvetica,sans-Serif" font-size="10.00">void shutdownInput() noexcept</text>
-<text text-anchor="start" x="176.5" y="-81.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="187" y="-81.5" font-family="Helvetica,sans-Serif" font-size="10.00">void shutdownEvents() noexcept</text>
-<text text-anchor="start" x="176.5" y="-66.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="187" y="-66.5" font-family="Helvetica,sans-Serif" font-size="10.00">void shutdownJobs() noexcept</text>
-<text text-anchor="start" x="176.5" y="-51.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="187" y="-51.5" font-family="Helvetica,sans-Serif" font-size="10.00">void shutdownStorage() noexcept</text>
-<text text-anchor="start" x="176.5" y="-36.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="187" y="-36.5" font-family="Helvetica,sans-Serif" font-size="10.00">void shutdownTimer() noexcept</text>
-<text text-anchor="start" x="176.5" y="-21.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="187" y="-21.5" font-family="Helvetica,sans-Serif" font-size="10.00">void shutdownDebug() noexcept</text>
-<text text-anchor="start" x="176.5" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="187" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">void shutdownScene() noexcept</text>
-<polygon fill="#666666" stroke="#666666" points="170,-1169.5 170,-1169.5 405,-1169.5 405,-1169.5 170,-1169.5"/>
-<polygon fill="#666666" stroke="#666666" points="170,-834.5 170,-834.5 185,-834.5 185,-834.5 170,-834.5"/>
-<polygon fill="#666666" stroke="#666666" points="185,-834.5 185,-834.5 405,-834.5 405,-834.5 185,-834.5"/>
-<polygon fill="none" stroke="#666666" points="169.5,0 169.5,-1187 404.5,-1187 404.5,0 169.5,0"/>
+<polygon fill="#999999" stroke="transparent" points="404.5,-1172 169.5,-1172 169.5,0 404.5,0 404.5,-1172"/>
+<text text-anchor="start" x="245" y="-1160" font-family="Helvetica,sans-Serif" font-size="10.00">asge::EngineCore</text>
+<text text-anchor="start" x="176.5" y="-1145" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="187" y="-1145" font-family="Helvetica,sans-Serif" font-size="10.00">std::shared_ptr&lt; world::RenderSystem</text>
+<text text-anchor="start" x="187" y="-1134" font-family="Helvetica,sans-Serif" font-size="10.00"> &gt; _render_system</text>
+<text text-anchor="start" x="176.5" y="-1119" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="187" y="-1119" font-family="Helvetica,sans-Serif" font-size="10.00">std::shared_ptr&lt; world::systems</text>
+<text text-anchor="start" x="187" y="-1108" font-family="Helvetica,sans-Serif" font-size="10.00">::CollisionSystem &gt; _collision_system</text>
+<text text-anchor="start" x="176.5" y="-1093" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="187" y="-1093" font-family="Helvetica,sans-Serif" font-size="10.00">std::shared_ptr&lt; world::systems</text>
+<text text-anchor="start" x="187" y="-1082" font-family="Helvetica,sans-Serif" font-size="10.00">::MovementSystem &gt; _movement_system</text>
+<text text-anchor="start" x="176.5" y="-1067" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="187" y="-1067" font-family="Helvetica,sans-Serif" font-size="10.00">std::shared_ptr&lt; world::systems</text>
+<text text-anchor="start" x="187" y="-1056" font-family="Helvetica,sans-Serif" font-size="10.00">::PlayerSystem &gt; _player_system</text>
+<text text-anchor="start" x="176.5" y="-1041" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="187" y="-1041" font-family="Helvetica,sans-Serif" font-size="10.00">std::unique_ptr&lt; script::LevelSpawner</text>
+<text text-anchor="start" x="187" y="-1030" font-family="Helvetica,sans-Serif" font-size="10.00"> &gt; _level_spawner</text>
+<text text-anchor="start" x="176.5" y="-1015" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="187" y="-1015" font-family="Helvetica,sans-Serif" font-size="10.00">std::atomic&lt; bool &gt; _initialized</text>
+<text text-anchor="start" x="176.5" y="-1000" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="187" y="-1000" font-family="Helvetica,sans-Serif" font-size="10.00">uint32_t _player_cpt</text>
+<text text-anchor="start" x="176.5" y="-985" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="187" y="-985" font-family="Helvetica,sans-Serif" font-size="10.00">std::vector&lt; std::pair&lt; uint32</text>
+<text text-anchor="start" x="187" y="-974" font-family="Helvetica,sans-Serif" font-size="10.00">_t, uint32_t &gt; &gt; _player_ids_conns</text>
+<text text-anchor="start" x="176.5" y="-959" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="187" y="-959" font-family="Helvetica,sans-Serif" font-size="10.00">std::thread _networkThread</text>
+<text text-anchor="start" x="176.5" y="-944" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="187" y="-944" font-family="Helvetica,sans-Serif" font-size="10.00">std::atomic&lt; bool &gt; _networkThread</text>
+<text text-anchor="start" x="187" y="-933" font-family="Helvetica,sans-Serif" font-size="10.00">Running</text>
+<text text-anchor="start" x="176.5" y="-918" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="187" y="-918" font-family="Helvetica,sans-Serif" font-size="10.00">std::mutex _net_queue_mutex</text>
+<text text-anchor="start" x="176.5" y="-903" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="187" y="-903" font-family="Helvetica,sans-Serif" font-size="10.00">std::deque&lt; network::PacketEnvelope</text>
+<text text-anchor="start" x="187" y="-892" font-family="Helvetica,sans-Serif" font-size="10.00"> &gt; _net_queue</text>
+<text text-anchor="start" x="176.5" y="-877" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="187" y="-877" font-family="Helvetica,sans-Serif" font-size="10.00">std::uint64_t _accumulated</text>
+<text text-anchor="start" x="187" y="-866" font-family="Helvetica,sans-Serif" font-size="10.00">_distance</text>
+<text text-anchor="start" x="176.5" y="-851" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="187" y="-851" font-family="Helvetica,sans-Serif" font-size="10.00">std::chrono::steady_clock</text>
+<text text-anchor="start" x="187" y="-840" font-family="Helvetica,sans-Serif" font-size="10.00">::time_point _last_tick</text>
+<text text-anchor="start" x="174" y="-825" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="187" y="-825" font-family="Helvetica,sans-Serif" font-size="10.00">EngineCore(const EngineConfig</text>
+<text text-anchor="start" x="187" y="-814" font-family="Helvetica,sans-Serif" font-size="10.00"> &amp;cfg) noexcept</text>
+<text text-anchor="start" x="174" y="-799" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="187" y="-799" font-family="Helvetica,sans-Serif" font-size="10.00">~EngineCore()</text>
+<text text-anchor="start" x="174" y="-784" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="187" y="-784" font-family="Helvetica,sans-Serif" font-size="10.00">EngineCore(const EngineCore</text>
+<text text-anchor="start" x="187" y="-773" font-family="Helvetica,sans-Serif" font-size="10.00"> &amp;)=delete</text>
+<text text-anchor="start" x="174" y="-758" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="187" y="-758" font-family="Helvetica,sans-Serif" font-size="10.00">EngineCore &amp; operator=(const</text>
+<text text-anchor="start" x="187" y="-747" font-family="Helvetica,sans-Serif" font-size="10.00"> EngineCore &amp;)=delete</text>
+<text text-anchor="start" x="174" y="-732" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="187" y="-732" font-family="Helvetica,sans-Serif" font-size="10.00">void init()</text>
+<text text-anchor="start" x="174" y="-717" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="187" y="-717" font-family="Helvetica,sans-Serif" font-size="10.00">void tick()</text>
+<text text-anchor="start" x="174" y="-702" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="187" y="-702" font-family="Helvetica,sans-Serif" font-size="10.00">void runLoop()</text>
+<text text-anchor="start" x="174" y="-687" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="187" y="-687" font-family="Helvetica,sans-Serif" font-size="10.00">void shutdown() noexcept</text>
+<text text-anchor="start" x="174" y="-672" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="187" y="-672" font-family="Helvetica,sans-Serif" font-size="10.00">void startWith(Args &amp;&amp;... args)</text>
+<text text-anchor="start" x="174" y="-657" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="187" y="-657" font-family="Helvetica,sans-Serif" font-size="10.00">Services &amp; services() noexcept</text>
+<text text-anchor="start" x="174" y="-642" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="187" y="-642" font-family="Helvetica,sans-Serif" font-size="10.00">const Services &amp; services</text>
+<text text-anchor="start" x="187" y="-631" font-family="Helvetica,sans-Serif" font-size="10.00">() const noexcept</text>
+<text text-anchor="start" x="174" y="-616" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="187" y="-616" font-family="Helvetica,sans-Serif" font-size="10.00">bool isInitialized() const</text>
+<text text-anchor="start" x="187" y="-605" font-family="Helvetica,sans-Serif" font-size="10.00"> noexcept</text>
+<text text-anchor="start" x="174" y="-590" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="187" y="-590" font-family="Helvetica,sans-Serif" font-size="10.00">bool running() const noexcept</text>
+<text text-anchor="start" x="174" y="-575" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="187" y="-575" font-family="Helvetica,sans-Serif" font-size="10.00">void setRunning(bool state)</text>
+<text text-anchor="start" x="187" y="-564" font-family="Helvetica,sans-Serif" font-size="10.00"> noexcept</text>
+<text text-anchor="start" x="174" y="-549" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="187" y="-549" font-family="Helvetica,sans-Serif" font-size="10.00">void setHeadlessMode(bool on)</text>
+<text text-anchor="start" x="174" y="-534" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="187" y="-534" font-family="Helvetica,sans-Serif" font-size="10.00">bool startServer(unsigned</text>
+<text text-anchor="start" x="187" y="-523" font-family="Helvetica,sans-Serif" font-size="10.00"> short port)</text>
+<text text-anchor="start" x="174" y="-508" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="187" y="-508" font-family="Helvetica,sans-Serif" font-size="10.00">bool connectToServer(const</text>
+<text text-anchor="start" x="187" y="-497" font-family="Helvetica,sans-Serif" font-size="10.00"> std::string &amp;addr, unsigned</text>
+<text text-anchor="start" x="187" y="-486" font-family="Helvetica,sans-Serif" font-size="10.00"> short port)</text>
+<text text-anchor="start" x="174" y="-471" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="187" y="-471" font-family="Helvetica,sans-Serif" font-size="10.00">void pollPlayer(std::optional</text>
+<text text-anchor="start" x="187" y="-460" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; std::chrono::milliseconds &gt;</text>
+<text text-anchor="start" x="187" y="-449" font-family="Helvetica,sans-Serif" font-size="10.00"> timeout)</text>
+<text text-anchor="start" x="174" y="-434" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="187" y="-434" font-family="Helvetica,sans-Serif" font-size="10.00">void setHooks(const EngineHooks &amp;hooks)</text>
+<text text-anchor="start" x="174" y="-419" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="187" y="-419" font-family="Helvetica,sans-Serif" font-size="10.00">void injectStorage(std::unique</text>
+<text text-anchor="start" x="187" y="-408" font-family="Helvetica,sans-Serif" font-size="10.00">_ptr&lt; storage::IStorage &gt; storage_backend)</text>
+<text text-anchor="start" x="176.5" y="-393" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="187" y="-393" font-family="Helvetica,sans-Serif" font-size="10.00">void initServices()</text>
+<text text-anchor="start" x="176.5" y="-378" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="187" y="-378" font-family="Helvetica,sans-Serif" font-size="10.00">void initNetwork()</text>
+<text text-anchor="start" x="176.5" y="-363" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="187" y="-363" font-family="Helvetica,sans-Serif" font-size="10.00">void initDebug()</text>
+<text text-anchor="start" x="176.5" y="-348" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="187" y="-348" font-family="Helvetica,sans-Serif" font-size="10.00">void initTimer()</text>
+<text text-anchor="start" x="176.5" y="-333" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="187" y="-333" font-family="Helvetica,sans-Serif" font-size="10.00">void initStorage()</text>
+<text text-anchor="start" x="176.5" y="-318" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="187" y="-318" font-family="Helvetica,sans-Serif" font-size="10.00">void initJobs()</text>
+<text text-anchor="start" x="176.5" y="-303" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="187" y="-303" font-family="Helvetica,sans-Serif" font-size="10.00">void initEvents()</text>
+<text text-anchor="start" x="176.5" y="-288" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="187" y="-288" font-family="Helvetica,sans-Serif" font-size="10.00">void initInput()</text>
+<text text-anchor="start" x="176.5" y="-273" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="187" y="-273" font-family="Helvetica,sans-Serif" font-size="10.00">void initPlugins()</text>
+<text text-anchor="start" x="176.5" y="-258" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="187" y="-258" font-family="Helvetica,sans-Serif" font-size="10.00">void initRendererAndAudio()</text>
+<text text-anchor="start" x="176.5" y="-243" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="187" y="-243" font-family="Helvetica,sans-Serif" font-size="10.00">void initScripts()</text>
+<text text-anchor="start" x="176.5" y="-228" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="187" y="-228" font-family="Helvetica,sans-Serif" font-size="10.00">void initWorld()</text>
+<text text-anchor="start" x="176.5" y="-213" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="187" y="-213" font-family="Helvetica,sans-Serif" font-size="10.00">void initScene()</text>
+<text text-anchor="start" x="176.5" y="-198" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="187" y="-198" font-family="Helvetica,sans-Serif" font-size="10.00">void shutdownServices() noexcept</text>
+<text text-anchor="start" x="176.5" y="-183" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="187" y="-183" font-family="Helvetica,sans-Serif" font-size="10.00">void shutdownNetwork() noexcept</text>
+<text text-anchor="start" x="176.5" y="-168" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="187" y="-168" font-family="Helvetica,sans-Serif" font-size="10.00">void shutdownWorld() noexcept</text>
+<text text-anchor="start" x="176.5" y="-153" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="187" y="-153" font-family="Helvetica,sans-Serif" font-size="10.00">void shutdownScripts() noexcept</text>
+<text text-anchor="start" x="176.5" y="-138" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="187" y="-138" font-family="Helvetica,sans-Serif" font-size="10.00">void shutdownRendererAndAudio</text>
+<text text-anchor="start" x="187" y="-127" font-family="Helvetica,sans-Serif" font-size="10.00">() noexcept</text>
+<text text-anchor="start" x="176.5" y="-112" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="187" y="-112" font-family="Helvetica,sans-Serif" font-size="10.00">void shutdownPlugins() noexcept</text>
+<text text-anchor="start" x="176.5" y="-97" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="187" y="-97" font-family="Helvetica,sans-Serif" font-size="10.00">void shutdownInput() noexcept</text>
+<text text-anchor="start" x="176.5" y="-82" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="187" y="-82" font-family="Helvetica,sans-Serif" font-size="10.00">void shutdownEvents() noexcept</text>
+<text text-anchor="start" x="176.5" y="-67" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="187" y="-67" font-family="Helvetica,sans-Serif" font-size="10.00">void shutdownJobs() noexcept</text>
+<text text-anchor="start" x="176.5" y="-52" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="187" y="-52" font-family="Helvetica,sans-Serif" font-size="10.00">void shutdownStorage() noexcept</text>
+<text text-anchor="start" x="176.5" y="-37" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="187" y="-37" font-family="Helvetica,sans-Serif" font-size="10.00">void shutdownTimer() noexcept</text>
+<text text-anchor="start" x="176.5" y="-22" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="187" y="-22" font-family="Helvetica,sans-Serif" font-size="10.00">void shutdownDebug() noexcept</text>
+<text text-anchor="start" x="176.5" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="187" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">void shutdownScene() noexcept</text>
+<polygon fill="#666666" stroke="#666666" points="170,-1155 170,-1155 405,-1155 405,-1155 170,-1155"/>
+<polygon fill="#666666" stroke="#666666" points="170,-835 170,-835 185,-835 185,-835 170,-835"/>
+<polygon fill="#666666" stroke="#666666" points="185,-835 185,-835 405,-835 405,-835 185,-835"/>
+<polygon fill="none" stroke="#666666" points="169.5,0 169.5,-1172 404.5,-1172 404.5,0 169.5,0"/>
 </a>
 </g>
 </g>
@@ -216,25 +214,25 @@ var sectionId = 'dynsection-0';
 <g id="Node000002" class="node">
 <title>Node2</title>
 <g id="a_Node000002"><a xlink:href="classasge_1_1EngineCore.html#structasge_1_1EngineCore_1_1TickStats" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="transparent" points="162,-1801.5 0,-1801.5 0,-1677.5 162,-1677.5 162,-1801.5"/>
-<text text-anchor="start" x="13" y="-1789.5" font-family="Helvetica,sans-Serif" font-size="10.00">asge::EngineCore::TickStats</text>
-<text text-anchor="start" x="4" y="-1774.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="17" y="-1774.5" font-family="Helvetica,sans-Serif" font-size="10.00">uint64_t frames</text>
-<text text-anchor="start" x="4" y="-1759.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="17" y="-1759.5" font-family="Helvetica,sans-Serif" font-size="10.00">uint64_t pkts_decoded</text>
-<text text-anchor="start" x="4" y="-1744.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="17" y="-1744.5" font-family="Helvetica,sans-Serif" font-size="10.00">uint64_t pkts_queue_popped</text>
-<text text-anchor="start" x="4" y="-1729.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="17" y="-1729.5" font-family="Helvetica,sans-Serif" font-size="10.00">double ms_decode</text>
-<text text-anchor="start" x="4" y="-1714.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="17" y="-1714.5" font-family="Helvetica,sans-Serif" font-size="10.00">double ms_render</text>
-<text text-anchor="start" x="4" y="-1699.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="17" y="-1699.5" font-family="Helvetica,sans-Serif" font-size="10.00">double ms_total</text>
-<text text-anchor="start" x="79" y="-1684.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<polygon fill="#666666" stroke="#666666" points="0,-1784.5 0,-1784.5 162,-1784.5 162,-1784.5 0,-1784.5"/>
-<polygon fill="#666666" stroke="#666666" points="0,-1694.5 0,-1694.5 15,-1694.5 15,-1694.5 0,-1694.5"/>
-<polygon fill="#666666" stroke="#666666" points="15,-1694.5 15,-1694.5 162,-1694.5 162,-1694.5 15,-1694.5"/>
-<polygon fill="none" stroke="#666666" points="0,-1677.5 0,-1801.5 162,-1801.5 162,-1677.5 0,-1677.5"/>
+<polygon fill="white" stroke="transparent" points="162,-1794 0,-1794 0,-1670 162,-1670 162,-1794"/>
+<text text-anchor="start" x="13" y="-1782" font-family="Helvetica,sans-Serif" font-size="10.00">asge::EngineCore::TickStats</text>
+<text text-anchor="start" x="4" y="-1767" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="17" y="-1767" font-family="Helvetica,sans-Serif" font-size="10.00">uint64_t frames</text>
+<text text-anchor="start" x="4" y="-1752" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="17" y="-1752" font-family="Helvetica,sans-Serif" font-size="10.00">uint64_t pkts_decoded</text>
+<text text-anchor="start" x="4" y="-1737" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="17" y="-1737" font-family="Helvetica,sans-Serif" font-size="10.00">uint64_t pkts_queue_popped</text>
+<text text-anchor="start" x="4" y="-1722" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="17" y="-1722" font-family="Helvetica,sans-Serif" font-size="10.00">double ms_decode</text>
+<text text-anchor="start" x="4" y="-1707" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="17" y="-1707" font-family="Helvetica,sans-Serif" font-size="10.00">double ms_render</text>
+<text text-anchor="start" x="4" y="-1692" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="17" y="-1692" font-family="Helvetica,sans-Serif" font-size="10.00">double ms_total</text>
+<text text-anchor="start" x="79" y="-1677" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<polygon fill="#666666" stroke="#666666" points="0,-1777 0,-1777 162,-1777 162,-1777 0,-1777"/>
+<polygon fill="#666666" stroke="#666666" points="0,-1687 0,-1687 15,-1687 15,-1687 0,-1687"/>
+<polygon fill="#666666" stroke="#666666" points="15,-1687 15,-1687 162,-1687 162,-1687 15,-1687"/>
+<polygon fill="none" stroke="#666666" points="0,-1670 0,-1794 162,-1794 162,-1670 0,-1670"/>
 </a>
 </g>
 </g>
@@ -242,144 +240,146 @@ var sectionId = 'dynsection-0';
 <g id="edge1_Node000001_Node000002" class="edge">
 <title>Node2&#45;&gt;Node1</title>
 <g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M91.89,-1677.14C108.75,-1582.16 142.25,-1393.8 171,-1234 173.06,-1222.56 175.14,-1211.01 177.23,-1199.38"/>
-<polygon fill="none" stroke="#63b8ff" points="177.3,-1199.03 174.42,-1192.41 179.42,-1187.22 182.3,-1193.83 177.3,-1199.03"/>
+<path fill="none" stroke="#63b8ff" d="M91.59,-1669.89C108.26,-1573.87 141.75,-1381.78 171,-1219 173.05,-1207.59 175.12,-1196.07 177.22,-1184.46"/>
+<polygon fill="none" stroke="#63b8ff" points="177.28,-1184.14 174.4,-1177.52 179.41,-1172.33 182.28,-1178.94 177.28,-1184.14"/>
 </a>
 </g>
-<text text-anchor="middle" x="208.5" y="-1208" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> +g_tickstats</text>
+<text text-anchor="middle" x="208.5" y="-1193" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> +g_tickstats</text>
 </g>
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
 <g id="a_Node000003"><a xlink:href="structasge_1_1Services.html" target="_top" xlink:title="RAII container owning the 12 public engine interfaces.">
-<polygon fill="white" stroke="transparent" points="394,-2245 180,-2245 180,-1234 394,-1234 394,-2245"/>
-<text text-anchor="start" x="251.5" y="-2232.5" font-family="Helvetica,sans-Serif" font-size="10.00">asge::Services</text>
-<text text-anchor="start" x="184" y="-2217.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="197" y="-2217.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::unique_ptr&lt; script::IScript</text>
-<text text-anchor="start" x="197" y="-2206.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &gt; _scripts</text>
-<text text-anchor="start" x="184" y="-2191.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="197" y="-2191.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::unique_ptr&lt; network::</text>
-<text text-anchor="start" x="197" y="-2180.5" font-family="Helvetica,sans-Serif" font-size="10.00">INetwork &gt; _network</text>
-<text text-anchor="start" x="184" y="-2165.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="197" y="-2165.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::unique_ptr&lt; world::World</text>
-<text text-anchor="start" x="197" y="-2154.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &gt; _world</text>
-<text text-anchor="start" x="184" y="-2139.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="197" y="-2139.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::unique_ptr&lt; scene::IScene</text>
-<text text-anchor="start" x="197" y="-2128.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &gt; _scene</text>
-<text text-anchor="start" x="184" y="-2113.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="197" y="-2113.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::unique_ptr&lt; storage::</text>
-<text text-anchor="start" x="197" y="-2102.5" font-family="Helvetica,sans-Serif" font-size="10.00">IStorage &gt; _storage</text>
-<text text-anchor="start" x="184" y="-2087.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="197" y="-2087.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::unique_ptr&lt; job::IJob &gt; _jobs</text>
-<text text-anchor="start" x="184" y="-2072.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="197" y="-2072.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::unique_ptr&lt; event::IEvent</text>
-<text text-anchor="start" x="197" y="-2061.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &gt; _events</text>
-<text text-anchor="start" x="184" y="-2046.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="197" y="-2046.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::unique_ptr&lt; input::IInput</text>
-<text text-anchor="start" x="197" y="-2035.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &gt; _input</text>
-<text text-anchor="start" x="184" y="-2020.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="197" y="-2020.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::unique_ptr&lt; plugin::PluginManager</text>
-<text text-anchor="start" x="197" y="-2009.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &gt; _plugins</text>
-<text text-anchor="start" x="184" y="-1994.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="197" y="-1994.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::unique_ptr&lt; audio::IAudio</text>
-<text text-anchor="start" x="197" y="-1983.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &gt; _audio</text>
-<text text-anchor="start" x="184" y="-1968.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="197" y="-1968.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::unique_ptr&lt; renderer</text>
-<text text-anchor="start" x="197" y="-1957.5" font-family="Helvetica,sans-Serif" font-size="10.00">::IRenderer &gt; _renderer</text>
-<text text-anchor="start" x="184" y="-1942.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="197" y="-1942.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::unique_ptr&lt; timer::ITimer</text>
-<text text-anchor="start" x="197" y="-1931.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &gt; _timer</text>
-<text text-anchor="start" x="184" y="-1916.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="197" y="-1916.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::unique_ptr&lt; debug::IDebug</text>
-<text text-anchor="start" x="197" y="-1905.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &gt; _debug</text>
-<text text-anchor="start" x="184" y="-1890.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="197" y="-1890.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::unique_ptr&lt; EngineConfig</text>
-<text text-anchor="start" x="197" y="-1879.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &gt; _config</text>
-<text text-anchor="start" x="184" y="-1864.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="197" y="-1864.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::unique_ptr&lt; net::GameProtocol</text>
-<text text-anchor="start" x="197" y="-1853.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &gt; _game_protocol</text>
-<text text-anchor="start" x="184" y="-1838.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="197" y="-1838.5" font-family="Helvetica,sans-Serif" font-size="10.00">uint32_t player_id</text>
-<text text-anchor="start" x="184" y="-1823.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="197" y="-1823.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::atomic&lt; bool &gt; _running</text>
-<text text-anchor="start" x="184" y="-1808.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="197" y="-1808.5" font-family="Helvetica,sans-Serif" font-size="10.00">double _net_default_rate_hz</text>
-<text text-anchor="start" x="184" y="-1793.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="197" y="-1793.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::unordered_map&lt; std::uint16</text>
-<text text-anchor="start" x="197" y="-1782.5" font-family="Helvetica,sans-Serif" font-size="10.00">_t, double &gt; _net_comp_rate_hz</text>
-<text text-anchor="start" x="184" y="-1767.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="197" y="-1767.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::unordered_map&lt; std::uint32</text>
-<text text-anchor="start" x="197" y="-1756.5" font-family="Helvetica,sans-Serif" font-size="10.00">_t, std::unordered_map&lt; std::uint16</text>
-<text text-anchor="start" x="197" y="-1745.5" font-family="Helvetica,sans-Serif" font-size="10.00">_t, double &gt; &gt; _net_last_sent</text>
-<text text-anchor="start" x="184" y="-1730.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="197" y="-1730.5" font-family="Helvetica,sans-Serif" font-size="10.00">EngineConfig &amp; config()</text>
-<text text-anchor="start" x="184" y="-1715.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="197" y="-1715.5" font-family="Helvetica,sans-Serif" font-size="10.00">net::GameProtocol &amp; protocol()</text>
-<text text-anchor="start" x="184" y="-1700.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="197" y="-1700.5" font-family="Helvetica,sans-Serif" font-size="10.00">job::IJob &amp; jobs()</text>
-<text text-anchor="start" x="184" y="-1685.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="197" y="-1685.5" font-family="Helvetica,sans-Serif" font-size="10.00">script::IScript &amp; scripts()</text>
-<text text-anchor="start" x="184" y="-1670.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="197" y="-1670.5" font-family="Helvetica,sans-Serif" font-size="10.00">renderer::IRenderer &amp; renderer()</text>
-<text text-anchor="start" x="184" y="-1655.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="197" y="-1655.5" font-family="Helvetica,sans-Serif" font-size="10.00">world::World &amp; world()</text>
-<text text-anchor="start" x="184" y="-1640.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="197" y="-1640.5" font-family="Helvetica,sans-Serif" font-size="10.00">audio::IAudio &amp; audio()</text>
-<text text-anchor="start" x="184" y="-1625.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="197" y="-1625.5" font-family="Helvetica,sans-Serif" font-size="10.00">event::IEvent &amp; events()</text>
-<text text-anchor="start" x="184" y="-1610.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="197" y="-1610.5" font-family="Helvetica,sans-Serif" font-size="10.00">debug::IDebug &amp; debug()</text>
-<text text-anchor="start" x="184" y="-1595.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="197" y="-1595.5" font-family="Helvetica,sans-Serif" font-size="10.00">timer::ITimer &amp; timer()</text>
-<text text-anchor="start" x="184" y="-1580.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="197" y="-1580.5" font-family="Helvetica,sans-Serif" font-size="10.00">storage::IStorage &amp; storage()</text>
-<text text-anchor="start" x="184" y="-1565.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="197" y="-1565.5" font-family="Helvetica,sans-Serif" font-size="10.00">network::INetwork &amp; network()</text>
-<text text-anchor="start" x="184" y="-1550.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="197" y="-1550.5" font-family="Helvetica,sans-Serif" font-size="10.00">input::IInput &amp; input()</text>
-<text text-anchor="start" x="184" y="-1535.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="197" y="-1535.5" font-family="Helvetica,sans-Serif" font-size="10.00">scene::IScene &amp; scene()</text>
-<text text-anchor="start" x="184" y="-1520.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="197" y="-1520.5" font-family="Helvetica,sans-Serif" font-size="10.00">plugin::PluginManager &amp; plugins()</text>
-<text text-anchor="start" x="184" y="-1505.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="197" y="-1505.5" font-family="Helvetica,sans-Serif" font-size="10.00">const EngineConfig &amp; config() const</text>
-<text text-anchor="start" x="184" y="-1490.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="197" y="-1490.5" font-family="Helvetica,sans-Serif" font-size="10.00">const net::GameProtocol &amp;</text>
-<text text-anchor="start" x="197" y="-1479.5" font-family="Helvetica,sans-Serif" font-size="10.00"> protocol() const</text>
-<text text-anchor="start" x="184" y="-1464.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="197" y="-1464.5" font-family="Helvetica,sans-Serif" font-size="10.00">const job::IJob &amp; jobs() const</text>
-<text text-anchor="start" x="184" y="-1449.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="197" y="-1449.5" font-family="Helvetica,sans-Serif" font-size="10.00">const script::IScript &amp; scripts() const</text>
-<text text-anchor="start" x="184" y="-1434.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="197" y="-1434.5" font-family="Helvetica,sans-Serif" font-size="10.00">const renderer::IRenderer</text>
-<text text-anchor="start" x="197" y="-1423.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &amp; renderer() const</text>
-<text text-anchor="start" x="184" y="-1408.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="197" y="-1408.5" font-family="Helvetica,sans-Serif" font-size="10.00">const world::World &amp; world() const</text>
-<text text-anchor="start" x="184" y="-1393.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="197" y="-1393.5" font-family="Helvetica,sans-Serif" font-size="10.00">const audio::IAudio &amp; audio() const</text>
-<text text-anchor="start" x="184" y="-1378.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="197" y="-1378.5" font-family="Helvetica,sans-Serif" font-size="10.00">const event::IEvent &amp; events() const</text>
-<text text-anchor="start" x="184" y="-1363.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="197" y="-1363.5" font-family="Helvetica,sans-Serif" font-size="10.00">const debug::IDebug &amp; debug() const</text>
-<text text-anchor="start" x="184" y="-1348.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="197" y="-1348.5" font-family="Helvetica,sans-Serif" font-size="10.00">const timer::ITimer &amp; timer() const</text>
-<text text-anchor="start" x="184" y="-1333.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="197" y="-1333.5" font-family="Helvetica,sans-Serif" font-size="10.00">const storage::IStorage &amp;</text>
-<text text-anchor="start" x="197" y="-1322.5" font-family="Helvetica,sans-Serif" font-size="10.00"> storage() const</text>
-<text text-anchor="start" x="184" y="-1307.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="197" y="-1307.5" font-family="Helvetica,sans-Serif" font-size="10.00">const network::INetwork &amp;</text>
-<text text-anchor="start" x="197" y="-1296.5" font-family="Helvetica,sans-Serif" font-size="10.00"> network() const</text>
-<text text-anchor="start" x="184" y="-1281.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="197" y="-1281.5" font-family="Helvetica,sans-Serif" font-size="10.00">const input::IInput &amp; input() const</text>
-<text text-anchor="start" x="184" y="-1266.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="197" y="-1266.5" font-family="Helvetica,sans-Serif" font-size="10.00">const scene::IScene &amp; scene() const</text>
-<text text-anchor="start" x="184" y="-1251.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="197" y="-1251.5" font-family="Helvetica,sans-Serif" font-size="10.00">const plugin::PluginManager</text>
-<text text-anchor="start" x="197" y="-1240.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &amp; plugins() const</text>
-<polygon fill="#666666" stroke="#666666" points="180,-2227.5 180,-2227.5 394,-2227.5 394,-2227.5 180,-2227.5"/>
-<polygon fill="#666666" stroke="#666666" points="180,-1740.5 180,-1740.5 195,-1740.5 195,-1740.5 180,-1740.5"/>
-<polygon fill="#666666" stroke="#666666" points="195,-1740.5 195,-1740.5 394,-1740.5 394,-1740.5 195,-1740.5"/>
-<polygon fill="none" stroke="#666666" points="180,-1234 180,-2245 394,-2245 394,-1234 180,-1234"/>
+<polygon fill="white" stroke="transparent" points="394,-2245 180,-2245 180,-1219 394,-1219 394,-2245"/>
+<text text-anchor="start" x="251.5" y="-2233" font-family="Helvetica,sans-Serif" font-size="10.00">asge::Services</text>
+<text text-anchor="start" x="184" y="-2218" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="197" y="-2218" font-family="Helvetica,sans-Serif" font-size="10.00">std::unique_ptr&lt; script::IScript</text>
+<text text-anchor="start" x="197" y="-2207" font-family="Helvetica,sans-Serif" font-size="10.00"> &gt; _scripts</text>
+<text text-anchor="start" x="184" y="-2192" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="197" y="-2192" font-family="Helvetica,sans-Serif" font-size="10.00">std::unique_ptr&lt; network::</text>
+<text text-anchor="start" x="197" y="-2181" font-family="Helvetica,sans-Serif" font-size="10.00">INetwork &gt; _network</text>
+<text text-anchor="start" x="184" y="-2166" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="197" y="-2166" font-family="Helvetica,sans-Serif" font-size="10.00">std::unique_ptr&lt; world::World</text>
+<text text-anchor="start" x="197" y="-2155" font-family="Helvetica,sans-Serif" font-size="10.00"> &gt; _world</text>
+<text text-anchor="start" x="184" y="-2140" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="197" y="-2140" font-family="Helvetica,sans-Serif" font-size="10.00">std::unique_ptr&lt; scene::IScene</text>
+<text text-anchor="start" x="197" y="-2129" font-family="Helvetica,sans-Serif" font-size="10.00"> &gt; _scene</text>
+<text text-anchor="start" x="184" y="-2114" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="197" y="-2114" font-family="Helvetica,sans-Serif" font-size="10.00">std::unique_ptr&lt; storage::</text>
+<text text-anchor="start" x="197" y="-2103" font-family="Helvetica,sans-Serif" font-size="10.00">IStorage &gt; _storage</text>
+<text text-anchor="start" x="184" y="-2088" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="197" y="-2088" font-family="Helvetica,sans-Serif" font-size="10.00">std::unique_ptr&lt; job::IJob &gt; _jobs</text>
+<text text-anchor="start" x="184" y="-2073" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="197" y="-2073" font-family="Helvetica,sans-Serif" font-size="10.00">std::unique_ptr&lt; event::IEvent</text>
+<text text-anchor="start" x="197" y="-2062" font-family="Helvetica,sans-Serif" font-size="10.00"> &gt; _events</text>
+<text text-anchor="start" x="184" y="-2047" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="197" y="-2047" font-family="Helvetica,sans-Serif" font-size="10.00">std::unique_ptr&lt; input::IInput</text>
+<text text-anchor="start" x="197" y="-2036" font-family="Helvetica,sans-Serif" font-size="10.00"> &gt; _input</text>
+<text text-anchor="start" x="184" y="-2021" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="197" y="-2021" font-family="Helvetica,sans-Serif" font-size="10.00">std::unique_ptr&lt; plugin::PluginManager</text>
+<text text-anchor="start" x="197" y="-2010" font-family="Helvetica,sans-Serif" font-size="10.00"> &gt; _plugins</text>
+<text text-anchor="start" x="184" y="-1995" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="197" y="-1995" font-family="Helvetica,sans-Serif" font-size="10.00">std::unique_ptr&lt; audio::IAudio</text>
+<text text-anchor="start" x="197" y="-1984" font-family="Helvetica,sans-Serif" font-size="10.00"> &gt; _audio</text>
+<text text-anchor="start" x="184" y="-1969" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="197" y="-1969" font-family="Helvetica,sans-Serif" font-size="10.00">std::unique_ptr&lt; renderer</text>
+<text text-anchor="start" x="197" y="-1958" font-family="Helvetica,sans-Serif" font-size="10.00">::IRenderer &gt; _renderer</text>
+<text text-anchor="start" x="184" y="-1943" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="197" y="-1943" font-family="Helvetica,sans-Serif" font-size="10.00">std::unique_ptr&lt; timer::ITimer</text>
+<text text-anchor="start" x="197" y="-1932" font-family="Helvetica,sans-Serif" font-size="10.00"> &gt; _timer</text>
+<text text-anchor="start" x="184" y="-1917" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="197" y="-1917" font-family="Helvetica,sans-Serif" font-size="10.00">std::unique_ptr&lt; debug::IDebug</text>
+<text text-anchor="start" x="197" y="-1906" font-family="Helvetica,sans-Serif" font-size="10.00"> &gt; _debug</text>
+<text text-anchor="start" x="184" y="-1891" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="197" y="-1891" font-family="Helvetica,sans-Serif" font-size="10.00">std::unique_ptr&lt; EngineConfig</text>
+<text text-anchor="start" x="197" y="-1880" font-family="Helvetica,sans-Serif" font-size="10.00"> &gt; _config</text>
+<text text-anchor="start" x="184" y="-1865" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="197" y="-1865" font-family="Helvetica,sans-Serif" font-size="10.00">std::unique_ptr&lt; net::GameProtocol</text>
+<text text-anchor="start" x="197" y="-1854" font-family="Helvetica,sans-Serif" font-size="10.00"> &gt; _game_protocol</text>
+<text text-anchor="start" x="184" y="-1839" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="197" y="-1839" font-family="Helvetica,sans-Serif" font-size="10.00">uint32_t player_id</text>
+<text text-anchor="start" x="184" y="-1824" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="197" y="-1824" font-family="Helvetica,sans-Serif" font-size="10.00">std::atomic&lt; bool &gt; _running</text>
+<text text-anchor="start" x="184" y="-1809" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="197" y="-1809" font-family="Helvetica,sans-Serif" font-size="10.00">std::atomic&lt; bool &gt; _gameRunning</text>
+<text text-anchor="start" x="184" y="-1794" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="197" y="-1794" font-family="Helvetica,sans-Serif" font-size="10.00">double _net_default_rate_hz</text>
+<text text-anchor="start" x="184" y="-1779" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="197" y="-1779" font-family="Helvetica,sans-Serif" font-size="10.00">std::unordered_map&lt; std::uint16</text>
+<text text-anchor="start" x="197" y="-1768" font-family="Helvetica,sans-Serif" font-size="10.00">_t, double &gt; _net_comp_rate_hz</text>
+<text text-anchor="start" x="184" y="-1753" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="197" y="-1753" font-family="Helvetica,sans-Serif" font-size="10.00">std::unordered_map&lt; std::uint32</text>
+<text text-anchor="start" x="197" y="-1742" font-family="Helvetica,sans-Serif" font-size="10.00">_t, std::unordered_map&lt; std::uint16</text>
+<text text-anchor="start" x="197" y="-1731" font-family="Helvetica,sans-Serif" font-size="10.00">_t, double &gt; &gt; _net_last_sent</text>
+<text text-anchor="start" x="184" y="-1716" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="197" y="-1716" font-family="Helvetica,sans-Serif" font-size="10.00">EngineConfig &amp; config()</text>
+<text text-anchor="start" x="184" y="-1701" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="197" y="-1701" font-family="Helvetica,sans-Serif" font-size="10.00">net::GameProtocol &amp; protocol()</text>
+<text text-anchor="start" x="184" y="-1686" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="197" y="-1686" font-family="Helvetica,sans-Serif" font-size="10.00">job::IJob &amp; jobs()</text>
+<text text-anchor="start" x="184" y="-1671" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="197" y="-1671" font-family="Helvetica,sans-Serif" font-size="10.00">script::IScript &amp; scripts()</text>
+<text text-anchor="start" x="184" y="-1656" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="197" y="-1656" font-family="Helvetica,sans-Serif" font-size="10.00">renderer::IRenderer &amp; renderer()</text>
+<text text-anchor="start" x="184" y="-1641" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="197" y="-1641" font-family="Helvetica,sans-Serif" font-size="10.00">world::World &amp; world()</text>
+<text text-anchor="start" x="184" y="-1626" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="197" y="-1626" font-family="Helvetica,sans-Serif" font-size="10.00">audio::IAudio &amp; audio()</text>
+<text text-anchor="start" x="184" y="-1611" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="197" y="-1611" font-family="Helvetica,sans-Serif" font-size="10.00">event::IEvent &amp; events()</text>
+<text text-anchor="start" x="184" y="-1596" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="197" y="-1596" font-family="Helvetica,sans-Serif" font-size="10.00">debug::IDebug &amp; debug()</text>
+<text text-anchor="start" x="184" y="-1581" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="197" y="-1581" font-family="Helvetica,sans-Serif" font-size="10.00">timer::ITimer &amp; timer()</text>
+<text text-anchor="start" x="184" y="-1566" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="197" y="-1566" font-family="Helvetica,sans-Serif" font-size="10.00">storage::IStorage &amp; storage()</text>
+<text text-anchor="start" x="184" y="-1551" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="197" y="-1551" font-family="Helvetica,sans-Serif" font-size="10.00">network::INetwork &amp; network()</text>
+<text text-anchor="start" x="184" y="-1536" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="197" y="-1536" font-family="Helvetica,sans-Serif" font-size="10.00">input::IInput &amp; input()</text>
+<text text-anchor="start" x="184" y="-1521" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="197" y="-1521" font-family="Helvetica,sans-Serif" font-size="10.00">scene::IScene &amp; scene()</text>
+<text text-anchor="start" x="184" y="-1506" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="197" y="-1506" font-family="Helvetica,sans-Serif" font-size="10.00">plugin::PluginManager &amp; plugins()</text>
+<text text-anchor="start" x="184" y="-1491" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="197" y="-1491" font-family="Helvetica,sans-Serif" font-size="10.00">const EngineConfig &amp; config() const</text>
+<text text-anchor="start" x="184" y="-1476" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="197" y="-1476" font-family="Helvetica,sans-Serif" font-size="10.00">const net::GameProtocol &amp;</text>
+<text text-anchor="start" x="197" y="-1465" font-family="Helvetica,sans-Serif" font-size="10.00"> protocol() const</text>
+<text text-anchor="start" x="184" y="-1450" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="197" y="-1450" font-family="Helvetica,sans-Serif" font-size="10.00">const job::IJob &amp; jobs() const</text>
+<text text-anchor="start" x="184" y="-1435" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="197" y="-1435" font-family="Helvetica,sans-Serif" font-size="10.00">const script::IScript &amp; scripts() const</text>
+<text text-anchor="start" x="184" y="-1420" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="197" y="-1420" font-family="Helvetica,sans-Serif" font-size="10.00">const renderer::IRenderer</text>
+<text text-anchor="start" x="197" y="-1409" font-family="Helvetica,sans-Serif" font-size="10.00"> &amp; renderer() const</text>
+<text text-anchor="start" x="184" y="-1394" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="197" y="-1394" font-family="Helvetica,sans-Serif" font-size="10.00">const world::World &amp; world() const</text>
+<text text-anchor="start" x="184" y="-1379" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="197" y="-1379" font-family="Helvetica,sans-Serif" font-size="10.00">const audio::IAudio &amp; audio() const</text>
+<text text-anchor="start" x="184" y="-1364" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="197" y="-1364" font-family="Helvetica,sans-Serif" font-size="10.00">const event::IEvent &amp; events() const</text>
+<text text-anchor="start" x="184" y="-1349" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="197" y="-1349" font-family="Helvetica,sans-Serif" font-size="10.00">const debug::IDebug &amp; debug() const</text>
+<text text-anchor="start" x="184" y="-1334" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="197" y="-1334" font-family="Helvetica,sans-Serif" font-size="10.00">const timer::ITimer &amp; timer() const</text>
+<text text-anchor="start" x="184" y="-1319" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="197" y="-1319" font-family="Helvetica,sans-Serif" font-size="10.00">const storage::IStorage &amp;</text>
+<text text-anchor="start" x="197" y="-1308" font-family="Helvetica,sans-Serif" font-size="10.00"> storage() const</text>
+<text text-anchor="start" x="184" y="-1293" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="197" y="-1293" font-family="Helvetica,sans-Serif" font-size="10.00">const network::INetwork &amp;</text>
+<text text-anchor="start" x="197" y="-1282" font-family="Helvetica,sans-Serif" font-size="10.00"> network() const</text>
+<text text-anchor="start" x="184" y="-1267" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="197" y="-1267" font-family="Helvetica,sans-Serif" font-size="10.00">const input::IInput &amp; input() const</text>
+<text text-anchor="start" x="184" y="-1252" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="197" y="-1252" font-family="Helvetica,sans-Serif" font-size="10.00">const scene::IScene &amp; scene() const</text>
+<text text-anchor="start" x="184" y="-1237" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="197" y="-1237" font-family="Helvetica,sans-Serif" font-size="10.00">const plugin::PluginManager</text>
+<text text-anchor="start" x="197" y="-1226" font-family="Helvetica,sans-Serif" font-size="10.00"> &amp; plugins() const</text>
+<polygon fill="#666666" stroke="#666666" points="180,-2228 180,-2228 394,-2228 394,-2228 180,-2228"/>
+<polygon fill="#666666" stroke="#666666" points="180,-1726 180,-1726 195,-1726 195,-1726 180,-1726"/>
+<polygon fill="#666666" stroke="#666666" points="195,-1726 195,-1726 394,-1726 394,-1726 195,-1726"/>
+<polygon fill="none" stroke="#666666" points="180,-1219 180,-2245 394,-2245 394,-1219 180,-1219"/>
 </a>
 </g>
 </g>
@@ -387,38 +387,38 @@ var sectionId = 'dynsection-0';
 <g id="edge2_Node000001_Node000003" class="edge">
 <title>Node3&#45;&gt;Node1</title>
 <g id="a_edge2_Node000001_Node000003"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M287,-1233.81C287,-1222.49 287,-1211.13 287,-1199.75"/>
-<polygon fill="none" stroke="#63b8ff" points="287,-1199.4 283,-1193.4 287,-1187.4 291,-1193.4 287,-1199.4"/>
+<path fill="none" stroke="#63b8ff" d="M287,-1218.81C287,-1207.34 287,-1195.83 287,-1184.31"/>
+<polygon fill="none" stroke="#63b8ff" points="287,-1184.3 283,-1178.3 287,-1172.3 291,-1178.3 287,-1184.3"/>
 </a>
 </g>
-<text text-anchor="middle" x="313.5" y="-1208" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;_services</text>
+<text text-anchor="middle" x="313.5" y="-1193" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;_services</text>
 </g>
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
 <g id="a_Node000004"><a xlink:href="namespaceasge.html#structasge_1_1EngineHooks" target="_top" xlink:title="Optional callbacks around engine lifetime and frame steps.">
-<polygon fill="white" stroke="transparent" points="572,-1821.5 412,-1821.5 412,-1657.5 572,-1657.5 572,-1821.5"/>
-<text text-anchor="start" x="445" y="-1809.5" font-family="Helvetica,sans-Serif" font-size="10.00">asge::EngineHooks</text>
-<text text-anchor="start" x="416" y="-1794.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="429" y="-1794.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::function&lt; void(Services</text>
-<text text-anchor="start" x="429" y="-1783.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &amp;)&gt; onInit</text>
-<text text-anchor="start" x="416" y="-1768.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="429" y="-1768.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::function&lt; void(Services</text>
-<text text-anchor="start" x="429" y="-1757.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &amp;)&gt; onLoad</text>
-<text text-anchor="start" x="416" y="-1742.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="429" y="-1742.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::function&lt; void(Services</text>
-<text text-anchor="start" x="429" y="-1731.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &amp;, double)&gt; onUpdateFixed</text>
-<text text-anchor="start" x="416" y="-1716.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="429" y="-1716.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::function&lt; void(Services</text>
-<text text-anchor="start" x="429" y="-1705.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &amp;, double)&gt; onUpdateVar</text>
-<text text-anchor="start" x="416" y="-1690.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="429" y="-1690.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::function&lt; void(Services</text>
-<text text-anchor="start" x="429" y="-1679.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &amp;)&gt; onShutdown</text>
-<text text-anchor="start" x="490" y="-1664.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<polygon fill="#666666" stroke="#666666" points="412,-1804.5 412,-1804.5 572,-1804.5 572,-1804.5 412,-1804.5"/>
-<polygon fill="#666666" stroke="#666666" points="412,-1674.5 412,-1674.5 427,-1674.5 427,-1674.5 412,-1674.5"/>
-<polygon fill="#666666" stroke="#666666" points="427,-1674.5 427,-1674.5 572,-1674.5 572,-1674.5 427,-1674.5"/>
-<polygon fill="none" stroke="#666666" points="412,-1657.5 412,-1821.5 572,-1821.5 572,-1657.5 412,-1657.5"/>
+<polygon fill="white" stroke="transparent" points="572,-1814 412,-1814 412,-1650 572,-1650 572,-1814"/>
+<text text-anchor="start" x="445" y="-1802" font-family="Helvetica,sans-Serif" font-size="10.00">asge::EngineHooks</text>
+<text text-anchor="start" x="416" y="-1787" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="429" y="-1787" font-family="Helvetica,sans-Serif" font-size="10.00">std::function&lt; void(Services</text>
+<text text-anchor="start" x="429" y="-1776" font-family="Helvetica,sans-Serif" font-size="10.00"> &amp;)&gt; onInit</text>
+<text text-anchor="start" x="416" y="-1761" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="429" y="-1761" font-family="Helvetica,sans-Serif" font-size="10.00">std::function&lt; void(Services</text>
+<text text-anchor="start" x="429" y="-1750" font-family="Helvetica,sans-Serif" font-size="10.00"> &amp;)&gt; onLoad</text>
+<text text-anchor="start" x="416" y="-1735" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="429" y="-1735" font-family="Helvetica,sans-Serif" font-size="10.00">std::function&lt; void(Services</text>
+<text text-anchor="start" x="429" y="-1724" font-family="Helvetica,sans-Serif" font-size="10.00"> &amp;, double)&gt; onUpdateFixed</text>
+<text text-anchor="start" x="416" y="-1709" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="429" y="-1709" font-family="Helvetica,sans-Serif" font-size="10.00">std::function&lt; void(Services</text>
+<text text-anchor="start" x="429" y="-1698" font-family="Helvetica,sans-Serif" font-size="10.00"> &amp;, double)&gt; onUpdateVar</text>
+<text text-anchor="start" x="416" y="-1683" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="429" y="-1683" font-family="Helvetica,sans-Serif" font-size="10.00">std::function&lt; void(Services</text>
+<text text-anchor="start" x="429" y="-1672" font-family="Helvetica,sans-Serif" font-size="10.00"> &amp;)&gt; onShutdown</text>
+<text text-anchor="start" x="490" y="-1657" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<polygon fill="#666666" stroke="#666666" points="412,-1797 412,-1797 572,-1797 572,-1797 412,-1797"/>
+<polygon fill="#666666" stroke="#666666" points="412,-1667 412,-1667 427,-1667 427,-1667 412,-1667"/>
+<polygon fill="#666666" stroke="#666666" points="427,-1667 427,-1667 572,-1667 572,-1667 427,-1667"/>
+<polygon fill="none" stroke="#666666" points="412,-1650 412,-1814 572,-1814 572,-1650 412,-1650"/>
 </a>
 </g>
 </g>
@@ -426,11 +426,11 @@ var sectionId = 'dynsection-0';
 <g id="edge3_Node000001_Node000004" class="edge">
 <title>Node4&#45;&gt;Node1</title>
 <g id="a_edge3_Node000001_Node000004"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M477.79,-1657.22C460.32,-1557.49 429.7,-1383.27 403,-1234 400.95,-1222.56 398.88,-1211.01 396.8,-1199.37"/>
-<polygon fill="none" stroke="#63b8ff" points="396.73,-1199.02 391.74,-1193.82 394.62,-1187.21 399.61,-1192.41 396.73,-1199.02"/>
+<path fill="none" stroke="#63b8ff" d="M478.13,-1649.82C460.82,-1548.82 430.18,-1371.1 403,-1219 400.96,-1207.59 398.9,-1196.06 396.81,-1184.45"/>
+<polygon fill="none" stroke="#63b8ff" points="396.75,-1184.13 391.76,-1178.93 394.63,-1172.32 399.63,-1177.52 396.75,-1184.13"/>
 </a>
 </g>
-<text text-anchor="middle" x="419" y="-1208" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;_hooks</text>
+<text text-anchor="middle" x="419" y="-1193" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;_hooks</text>
 </g>
 </g>
 </svg>
